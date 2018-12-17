@@ -1,0 +1,25 @@
+数据中心类说明
+1、《Data》类为整个数据中心中的基础数据结构，对系统基础数据做了一层简单的封闭
+2、《DataHandler》类为数据跟操作的处理器
+3、《CommonHandler》类可以认为是DataHandler类的 Demo
+4、《IPerformer》类为具体的操作处理器
+5、《IParser》类为具体的数据分析器
+6、《ICallback》类在DataHandler处理完操作后回调给调用者
+7、《DataCenter》数据的处理与分析的分发中心
+
+数据中心流程
+—> 入口
+—> DataCenter
+—> DataHandler
+—> Performer
+—> DataHandler
+-> Parser
+—> DataHandler
+—> DataCenter
+—> Callback
+—> 出口
+
+流程说明：
+使用者在调用DataCenter的perform方法后DataCenter找到相应的DataHandler处理器，DataHandler找到相应的Performer去处理使用者的操作，
+操作完成后会得到一份原始数据，DataHandler再找到对应的数据分析器Parser去分析数据，得到具体的数据后返回给DataCenter，DataCenter再通过
+Callback返回给使用者

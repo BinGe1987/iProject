@@ -1,0 +1,32 @@
+
+//
+//  Created by BinGe on 2018/11/26.
+//  Copyright © 2018 Bin. All rights reserved.
+
+
+//  配置说明：
+//  1、请把Library.pch文件配置到项目的 Build Settings -> Prefix Header -> $(SRCROOT)/Library/Library.pch
+//  2、如果项目有自己的pch文件，可以直接在项目的pch文件引入
+//
+
+
+
+#ifndef Library_h
+#define Library_h
+
+#endif /* Library_h */
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "BaseHeader.h"//基础结构
+#import "UtilsHeader.h"//基础结构
+#import "CommonHeader.h"//公众模块
+#import "EngineHeader.h"//界面引擎
+#import "DataCenter.h"//数据中心
+#import "MVPHeader.h"//mvp模式
+#import "ThirdLibraryHeader.h"//第三方库
+
+#endif
