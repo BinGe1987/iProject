@@ -17,13 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NetRequest : NSObject
 
 ///请求的接口
-- (NSDictionary *)requestUrl;
+- (NSString *)url;
 ///请求的参数
-- (NSDictionary *)requestParams;
+- (NSDictionary *)params;
 
 
 ///返回当前请求的方法（GET/POS），默认为POS
-- (RequestMethod)requestMethod;
+- (RequestMethod)method;
 ///超请的超时时间， 默认为10秒
 - (NSTimeInterval)timeout;
 

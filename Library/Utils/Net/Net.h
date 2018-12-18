@@ -22,10 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)configure:(NetConfig *)config;
 
 ///同步请求
-+ (NetResponse *)synchroRequest:(NetRequest * _Nullable)request;
++ (NetResponse *)synchroRequest:(NetRequest * _Nonnull)request;
 
 ///异步请求
-+ (void)asynchroRequest:(NetRequest * _Nullable)request completed:( void(^ _Nullable )(NetResponse * response))block;
++ (void)asynchroRequest:(NetRequest * _Nonnull)request completed:( void(^ _Nullable )(NetResponse * response))block;
 
 @end
 

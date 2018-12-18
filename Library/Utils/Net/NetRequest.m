@@ -10,17 +10,17 @@
 @implementation NetRequest
 
 ///请求的接口
-- (NSDictionary *)requestUrl {
+- (NSString *)url {
     return nil;
 }
 ///请求的参数
-- (NSDictionary *)requestParams {
+- (NSDictionary *)params {
     return nil;
 }
 
 
 ///返回当前请求的方法（GET/POS），默认为POS
-- (RequestMethod)requestMethod {
+- (RequestMethod)method {
     return RequestMethodPOST;
 }
 ///超请的超时时间， 默认为10秒

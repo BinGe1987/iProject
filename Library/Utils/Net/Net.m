@@ -21,9 +21,10 @@ singleton_implementation(Net)
 }
 
 ///同步
-+ (NetResponse *)synchroRequest:( NetRequest * _Nullable )request {
++ (NetResponse *)synchroRequest:(NetRequest * _Nonnull)request {
     NetResponse *netResponse = [NetResponse new];
-    switch (request.requestMethod) {
+    netResponse.url = request.url;
+    switch (request.method) {
         default:
         case RequestMethodPOST:{
             dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); //创建信号量
@@ -46,11 +47,11 @@ singleton_implementation(Net)
 }
 
 ///异步
-+ (void)asynchroRequest:(NetRequest *)request completed:( void(^ _Nullable )(NetResponse * response))block {
++ (void)asynchroRequest:(NetRequest * _Nonnull)request completed:( void(^ _Nullable )(NetResponse * response))block {
     NetResponse *response = [NetResponse new];
     block(response);
     NetResponse *netResponse = [NetResponse new];
-    switch (request.requestMethod) {
+    switch (request.method) {
         default:
         case RequestMethodPOST:{
             [Net post:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -72,12 +73,12 @@ singleton_implementation(Net)
 + (void)post:( NetRequest * _Nullable)netRequest completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;{
     
     NetConfig *config = [Net get].config;
-    NSString *urlString = [NSString stringWithFormat:@"%@%@", config.baseUrl, netRequest.requestUrl];
+    NSString *urlString = [NSString stringWithFormat:@"%@%@", config.baseUrl, netRequest.url];
     NSURL *url = [[NSURL alloc] initWithString:urlString];
 
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setHTTPMethod:@"POST"];
-    [request setTimeoutInterval:netRequest.timeout>0?netRequest.timeout:10];
+    [request setTimeoutInterval:netRequest.timeout];
     [request setAllHTTPHeaderFields:@{@"User-Agent": @"iOS-Client"}];
     NSString *bodyStr = @"user_name=admin&user_password=admin";
     NSData *bodyData = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];

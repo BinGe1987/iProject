@@ -10,11 +10,11 @@
 @implementation CheckLoginRequest
 
 ///请求的接口
-- (NSDictionary *)requestUrl {
-    return nil;
+- (NSString *)url {
+    return @"/abc";
 }
 ///请求的参数
-- (NSDictionary *)requestParams {
+- (NSDictionary *)params {
     return nil;
 }
 
