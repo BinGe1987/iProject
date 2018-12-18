@@ -8,5 +8,6 @@
 #ifndef NetHeader_h
 #define NetHeader_h
 
+#import "Net.h"
 
 #endif /* NetHeader_h */

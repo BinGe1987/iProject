@@ -15,10 +15,10 @@
 @implementation Module
 
 + (void)launch {
+    //初始化主页面
     AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
     app.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     app.window.backgroundColor = [UIColor whiteColor];
-    
     MainTabbarController *nv = [[MainTabbarController alloc] init];
     app.window.rootViewController = nv;
     [app.window makeKeyAndVisible];

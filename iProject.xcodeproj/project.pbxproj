@@ -35,6 +35,8 @@
 		776B55F621C10F7100793CAF /* UIView+Params.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55F521C10F7100793CAF /* UIView+Params.m */; };
 		776B55F821C11A9200793CAF /* readme-UIEngine in Resources */ = {isa = PBXBuildFile; fileRef = 776B55F721C11A9200793CAF /* readme-UIEngine */; };
 		776B55FB21C14A0800793CAF /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55FA21C14A0800793CAF /* ScrollView.m */; };
+		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
+		77B053D221C8AEB30045A489 /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D121C8AEB30045A489 /* AppDelegate+Config.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -157,6 +159,11 @@
 		776B55F721C11A9200793CAF /* readme-UIEngine */ = {isa = PBXFileReference; lastKnownFileType = text; path = "readme-UIEngine"; sourceTree = "<group>"; };
 		776B55F921C14A0800793CAF /* ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollView.h; sourceTree = "<group>"; };
 		776B55FA21C14A0800793CAF /* ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
+		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
+		77B053CD21C8A5F90045A489 /* Net.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Net.m; sourceTree = "<group>"; };
+		77B053CF21C8AC490045A489 /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
+		77B053D021C8AEB30045A489 /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
+		77B053D121C8AEB30045A489 /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -328,7 +335,10 @@
 		775B15F921C8A0A700B8D6FF /* Net */ = {
 			isa = PBXGroup;
 			children = (
+				77B053CC21C8A5F90045A489 /* Net.h */,
+				77B053CD21C8A5F90045A489 /* Net.m */,
 				775B15FC21C8A1AD00B8D6FF /* NetHeader.h */,
+				77B053CF21C8AC490045A489 /* NetRequest.h */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -531,6 +541,8 @@
 			children = (
 				77EA8E6A21B8F79F001B8959 /* AppDelegate.h */,
 				77EA8E6B21B8F79F001B8959 /* AppDelegate.m */,
+				77B053D021C8AEB30045A489 /* AppDelegate+Config.h */,
+				77B053D121C8AEB30045A489 /* AppDelegate+Config.m */,
 				7742662C21BA759800B21AE5 /* AppDelegate+Launch.h */,
 				7742662D21BA759900B21AE5 /* AppDelegate+Launch.m */,
 			);
@@ -977,6 +989,7 @@
 				77EA8F4321B90226001B8959 /* UIColor+Extends.m in Sources */,
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,
+				77B053CE21C8A5F90045A489 /* Net.m in Sources */,
 				77EA8FBE21B94BB5001B8959 /* Test.m in Sources */,
 				776B55D321BFA2C600793CAF /* UIViewController+Layout.m in Sources */,
 				774F017421B9728900CB482F /* MineViewController.m in Sources */,
@@ -1010,6 +1023,7 @@
 				77EA8F3F21B90226001B8959 /* MVPViewController.m in Sources */,
 				77EA8F4121B90226001B8959 /* PresenterViewController.m in Sources */,
 				77EA8F6321B90227001B8959 /* TextView.m in Sources */,
+				77B053D221C8AEB30045A489 /* AppDelegate+Config.m in Sources */,
 				77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */,
 				77EA8E9921B8FCF2001B8959 /* HomeViewController.m in Sources */,
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
