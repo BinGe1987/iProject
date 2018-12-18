@@ -6,12 +6,13 @@
 //
 
 #import "UIImageView+WebImage.h"
+#import "YYWebImage.h"
 
 @implementation UIImageView (WebImage)
 
 - (void)setImageWithURL:(NSURL *)imageURL {
     Log(@"set image url.");
-    
+    self.yy_imageURL = imageURL;
 }
 
 @end
