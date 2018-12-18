@@ -16,7 +16,9 @@
 
 ///配置网络环境
 - (void)configureNetworkEnvironment {
-    [Net configWithBaseUrl:@"www.baidu.com"];
+    NetConfig *config = [NetConfig new];
+    config.baseUrl = @"www.baidu.com";
+    [Net configure:config];
 }
 
 ///配置推送服务

@@ -37,6 +37,8 @@
 		776B55FB21C14A0800793CAF /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55FA21C14A0800793CAF /* ScrollView.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D221C8AEB30045A489 /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D121C8AEB30045A489 /* AppDelegate+Config.m */; };
+		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
+		77B053D821C8C53F0045A489 /* NetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D721C8C53F0045A489 /* NetConfig.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -164,6 +166,10 @@
 		77B053CF21C8AC490045A489 /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		77B053D021C8AEB30045A489 /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
 		77B053D121C8AEB30045A489 /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
+		77B053D321C8BDCA0045A489 /* NetResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetResponse.h; sourceTree = "<group>"; };
+		77B053D421C8BDCA0045A489 /* NetResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetResponse.m; sourceTree = "<group>"; };
+		77B053D621C8C53F0045A489 /* NetConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetConfig.h; sourceTree = "<group>"; };
+		77B053D721C8C53F0045A489 /* NetConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetConfig.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -337,8 +343,12 @@
 			children = (
 				77B053CC21C8A5F90045A489 /* Net.h */,
 				77B053CD21C8A5F90045A489 /* Net.m */,
-				775B15FC21C8A1AD00B8D6FF /* NetHeader.h */,
+				77B053D621C8C53F0045A489 /* NetConfig.h */,
+				77B053D721C8C53F0045A489 /* NetConfig.m */,
 				77B053CF21C8AC490045A489 /* NetRequest.h */,
+				77B053D321C8BDCA0045A489 /* NetResponse.h */,
+				77B053D421C8BDCA0045A489 /* NetResponse.m */,
+				775B15FC21C8A1AD00B8D6FF /* NetHeader.h */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -450,13 +460,6 @@
 				776B55E921BFF7DC00793CAF /* CheckLoginPerfomer.m */,
 			);
 			path = Performer;
-			sourceTree = "<group>";
-		};
-		776B55F321C00E7100793CAF /* Parser */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Parser;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -843,7 +846,6 @@
 			children = (
 				776B55F121C00E3200793CAF /* DataHandler */,
 				776B55F221C00E5000793CAF /* Performer */,
-				776B55F321C00E7100793CAF /* Parser */,
 				776B55A921BE62E100793CAF /* UserData.h */,
 				776B55AA21BE62E100793CAF /* UserData.m */,
 			);
@@ -992,6 +994,7 @@
 				77B053CE21C8A5F90045A489 /* Net.m in Sources */,
 				77EA8FBE21B94BB5001B8959 /* Test.m in Sources */,
 				776B55D321BFA2C600793CAF /* UIViewController+Layout.m in Sources */,
+				77B053D821C8C53F0045A489 /* NetConfig.m in Sources */,
 				774F017421B9728900CB482F /* MineViewController.m in Sources */,
 				776B55C121BEA10200793CAF /* FrameLayoutViewParams.m in Sources */,
 				77EA8F3921B90226001B8959 /* Presenter.m in Sources */,
@@ -1022,6 +1025,7 @@
 				775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */,
 				77EA8F3F21B90226001B8959 /* MVPViewController.m in Sources */,
 				77EA8F4121B90226001B8959 /* PresenterViewController.m in Sources */,
+				77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */,
 				77EA8F6321B90227001B8959 /* TextView.m in Sources */,
 				77B053D221C8AEB30045A489 /* AppDelegate+Config.m in Sources */,
 				77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */,

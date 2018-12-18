@@ -6,14 +6,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NetConfig.h"
+#import "NetRequest.h"
+#import "NetResponse.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Net : NSObject
 
-+ (void)configWithBaseUrl:(NSString *)baseUrl;
++ (void)configure:(NetConfig *)config;
 
-+ (id)postRequest:(NSURL *)url params:(id)params;
+///同步请求
++ (NetResponse *)synchroRequest:(_Nullable id<NetRequest>)request;
+
+///异步请求
++ (void)asynchroRequest:(_Nullable id<NetRequest>)request completed:( void(^ _Nullable )(NetResponse * response))block;
 
 @end
 
