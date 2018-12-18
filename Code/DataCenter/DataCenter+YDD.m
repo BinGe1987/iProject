@@ -9,7 +9,7 @@
 
 @implementation DataCenter (YDD)
 
-- (UserData *)getUserData {
+- (UserData *)userData {
     return (UserData *)[self getData: [UserHandler class]];
 }
 

@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface DataCenter (YDD)
 
 ///获取用户信息
-- (UserData *)getUserData;
+- (UserData *)userData;
 
 @end
 
