@@ -7,14 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JError.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JSON : NSObject
 
 ///错误信息
-@property (nonatomic, strong) JError *error;
+@property (nonatomic, strong) NSError *error;
 
 @property (nonatomic, strong) NSDictionary *source;
 

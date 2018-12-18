@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SingletonDefine.h"
 #import "NetConfig.h"
 #import "NetRequest.h"
 #import "NetResponse.h"
@@ -14,13 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Net : NSObject
 
+//singleton_interface(Net)
+
+@property (nonatomic, strong) NetConfig *config;
+
 + (void)configure:(NetConfig *)config;
 
 ///同步请求
-+ (NetResponse *)synchroRequest:(_Nullable id<NetRequest>)request;
++ (NetResponse *)synchroRequest:(NetRequest * _Nullable)request;
 
 ///异步请求
-+ (void)asynchroRequest:(_Nullable id<NetRequest>)request completed:( void(^ _Nullable )(NetResponse * response))block;
++ (void)asynchroRequest:(NetRequest * _Nullable)request completed:( void(^ _Nullable )(NetResponse * response))block;
 
 @end
 

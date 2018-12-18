@@ -39,6 +39,8 @@
 		77B053D221C8AEB30045A489 /* AppDelegate+Config.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D121C8AEB30045A489 /* AppDelegate+Config.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
 		77B053D821C8C53F0045A489 /* NetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D721C8C53F0045A489 /* NetConfig.m */; };
+		77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053DA21C8E0270045A489 /* CheckLoginRequest.m */; };
+		77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053DD21C8E0C70045A489 /* NetRequest.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -51,7 +53,6 @@
 		77EA8F2F21B90226001B8959 /* readme-DataCenter in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8ECB21B90226001B8959 /* readme-DataCenter */; };
 		77EA8F3121B90226001B8959 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8ECE21B90226001B8959 /* Data.m */; };
 		77EA8F3321B90226001B8959 /* JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8ED321B90226001B8959 /* JSON.m */; };
-		77EA8F3521B90226001B8959 /* JError.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8ED521B90226001B8959 /* JError.m */; };
 		77EA8F3721B90226001B8959 /* readme-mvp in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8EDA21B90226001B8959 /* readme-mvp */; };
 		77EA8F3921B90226001B8959 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EDC21B90226001B8959 /* Presenter.m */; };
 		77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EDE21B90226001B8959 /* BasePresenter.m */; };
@@ -163,13 +164,16 @@
 		776B55FA21C14A0800793CAF /* ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
 		77B053CD21C8A5F90045A489 /* Net.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Net.m; sourceTree = "<group>"; };
-		77B053CF21C8AC490045A489 /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		77B053D021C8AEB30045A489 /* AppDelegate+Config.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Config.h"; sourceTree = "<group>"; };
 		77B053D121C8AEB30045A489 /* AppDelegate+Config.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Config.m"; sourceTree = "<group>"; };
 		77B053D321C8BDCA0045A489 /* NetResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetResponse.h; sourceTree = "<group>"; };
 		77B053D421C8BDCA0045A489 /* NetResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetResponse.m; sourceTree = "<group>"; };
 		77B053D621C8C53F0045A489 /* NetConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetConfig.h; sourceTree = "<group>"; };
 		77B053D721C8C53F0045A489 /* NetConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetConfig.m; sourceTree = "<group>"; };
+		77B053D921C8E0270045A489 /* CheckLoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckLoginRequest.h; sourceTree = "<group>"; };
+		77B053DA21C8E0270045A489 /* CheckLoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckLoginRequest.m; sourceTree = "<group>"; };
+		77B053DC21C8E0C70045A489 /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
+		77B053DD21C8E0C70045A489 /* NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -194,8 +198,6 @@
 		77EA8ECF21B90226001B8959 /* ICallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICallback.h; sourceTree = "<group>"; };
 		77EA8ED021B90226001B8959 /* CommonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHandler.h; sourceTree = "<group>"; };
 		77EA8ED321B90226001B8959 /* JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSON.m; sourceTree = "<group>"; };
-		77EA8ED421B90226001B8959 /* JError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JError.h; sourceTree = "<group>"; };
-		77EA8ED521B90226001B8959 /* JError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JError.m; sourceTree = "<group>"; };
 		77EA8ED621B90226001B8959 /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
 		77EA8ED821B90226001B8959 /* BaseHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseHeader.h; sourceTree = "<group>"; };
 		77EA8EDA21B90226001B8959 /* readme-mvp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "readme-mvp"; sourceTree = "<group>"; };
@@ -345,7 +347,8 @@
 				77B053CD21C8A5F90045A489 /* Net.m */,
 				77B053D621C8C53F0045A489 /* NetConfig.h */,
 				77B053D721C8C53F0045A489 /* NetConfig.m */,
-				77B053CF21C8AC490045A489 /* NetRequest.h */,
+				77B053DC21C8E0C70045A489 /* NetRequest.h */,
+				77B053DD21C8E0C70045A489 /* NetRequest.m */,
 				77B053D321C8BDCA0045A489 /* NetResponse.h */,
 				77B053D421C8BDCA0045A489 /* NetResponse.m */,
 				775B15FC21C8A1AD00B8D6FF /* NetHeader.h */,
@@ -458,6 +461,8 @@
 			children = (
 				776B55E821BFF7DC00793CAF /* CheckLoginPerfomer.h */,
 				776B55E921BFF7DC00793CAF /* CheckLoginPerfomer.m */,
+				77B053D921C8E0270045A489 /* CheckLoginRequest.h */,
+				77B053DA21C8E0270045A489 /* CheckLoginRequest.m */,
 			);
 			path = Performer;
 			sourceTree = "<group>";
@@ -624,8 +629,6 @@
 			children = (
 				77EA8ED621B90226001B8959 /* JSON.h */,
 				77EA8ED321B90226001B8959 /* JSON.m */,
-				77EA8ED421B90226001B8959 /* JError.h */,
-				77EA8ED521B90226001B8959 /* JError.m */,
 				776B55D721BFBD0300793CAF /* WeakProxy.h */,
 				776B55D821BFBD0300793CAF /* WeakProxy.m */,
 			);
@@ -968,6 +971,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */,
 				77EA8F5321B90226001B8959 /* UIViewController+JSON.m in Sources */,
 				77EA8F6D21B90227001B8959 /* UIView+View.m in Sources */,
 				77EA8E9C21B8FCF9001B8959 /* TestViewController.m in Sources */,
@@ -982,6 +986,7 @@
 				776B55B621BE6BD000793CAF /* ButtonViewParams.m in Sources */,
 				776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */,
 				77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */,
+				77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */,
 				7742662E21BA759900B21AE5 /* AppDelegate+Launch.m in Sources */,
 				776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */,
 				775B15F221C7D4AC00B8D6FF /* UIViewController+ContentView.m in Sources */,
@@ -1046,7 +1051,6 @@
 				776B55FB21C14A0800793CAF /* ScrollView.m in Sources */,
 				776B55F621C10F7100793CAF /* UIView+Params.m in Sources */,
 				77EA8F5F21B90227001B8959 /* JSONModel.m in Sources */,
-				77EA8F3521B90226001B8959 /* JError.m in Sources */,
 				775B15EF21C7A2FF00B8D6FF /* BaseTabbarController.m in Sources */,
 				77EA8F5521B90226001B8959 /* FrameLayoutParams.m in Sources */,
 				77EA8F9B21B91F8C001B8959 /* NavigationController.m in Sources */,

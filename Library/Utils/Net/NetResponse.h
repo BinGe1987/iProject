@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NetResponse : NSObject
 
+@property (nonatomic, strong) NSError *error;
+
+@property (nonatomic, strong) NSDictionary *data;
+
 @end
 
 NS_ASSUME_NONNULL_END
