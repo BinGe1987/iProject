@@ -5,11 +5,11 @@
 //  Created by BinGe on 2018/12/6.
 //
 
-#import "BaseViewController.h"
+#import "MainViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MineViewController : BaseViewController
+@interface MineViewController : MainViewController
 
 @end
 

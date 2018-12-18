@@ -14,6 +14,7 @@
 		775B15EC21C78FE500B8D6FF /* ColorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15EB21C78FE500B8D6FF /* ColorUtils.m */; };
 		775B15EF21C7A2FF00B8D6FF /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15EE21C7A2FF00B8D6FF /* BaseTabbarController.m */; };
 		775B15F221C7D4AC00B8D6FF /* UIViewController+ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15F121C7D4AC00B8D6FF /* UIViewController+ContentView.m */; };
+		775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15F721C89A3D00B8D6FF /* MainViewController.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55AD21BE682C00793CAF /* Login.json in Resources */ = {isa = PBXBuildFile; fileRef = 776B55AC21BE682C00793CAF /* Login.json */; };
@@ -114,6 +115,8 @@
 		775B15EE21C7A2FF00B8D6FF /* BaseTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTabbarController.m; sourceTree = "<group>"; };
 		775B15F021C7D4AC00B8D6FF /* UIViewController+ContentView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ContentView.h"; sourceTree = "<group>"; };
 		775B15F121C7D4AC00B8D6FF /* UIViewController+ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ContentView.m"; sourceTree = "<group>"; };
+		775B15F621C89A3D00B8D6FF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		775B15F721C89A3D00B8D6FF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -471,7 +474,6 @@
 			children = (
 				77EA8F7621B90536001B8959 /* Base */,
 				77EA8F7721B9053B001B8959 /* Common */,
-				77EA8E8421B8F964001B8959 /* Launch */,
 				77EA8E8321B8F947001B8959 /* Login */,
 				77EA8E8221B8F93C001B8959 /* Main */,
 				77EA8FB821B94B67001B8959 /* Module.h */,
@@ -483,6 +485,8 @@
 		77EA8E8221B8F93C001B8959 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				775B15F621C89A3D00B8D6FF /* MainViewController.h */,
+				775B15F721C89A3D00B8D6FF /* MainViewController.m */,
 				774F017021B9725D00CB482F /* Home */,
 				774F017121B9726400CB482F /* Mine */,
 				77EA8FC421B95584001B8959 /* MainTabbarController.h */,
@@ -500,13 +504,6 @@
 				776B55AC21BE682C00793CAF /* Login.json */,
 			);
 			path = Login;
-			sourceTree = "<group>";
-		};
-		77EA8E8421B8F964001B8959 /* Launch */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Launch;
 			sourceTree = "<group>";
 		};
 		77EA8E8521B8F979001B8959 /* AppDelegate */ = {
@@ -942,6 +939,7 @@
 				77EA8E9C21B8FCF9001B8959 /* TestViewController.m in Sources */,
 				77EA8F3D21B90226001B8959 /* ViewController.m in Sources */,
 				77EA8FC221B952C2001B8959 /* MainNavController.m in Sources */,
+				775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */,
 				77EA8FAC21B92704001B8959 /* UIImageView+WebImage.m in Sources */,
 				77EA8FBA21B94B67001B8959 /* Module.m in Sources */,
 				776B55BE21BE979100793CAF /* LinearLayoutViewParams.m in Sources */,
