@@ -12,6 +12,10 @@
 #pragma mark 机型相关
 
 #pragma mark 分辨率相关的宏
+
+#define STATUSBARHIEGHT ([[UIApplication sharedApplication] statusBarFrame].size.height)
+#define NVBARHIEGHT self.navigationController.navigationBar.frame.size.height;
+
 #define SCREENWIDTH   [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
 

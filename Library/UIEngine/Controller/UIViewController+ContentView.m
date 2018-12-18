@@ -31,7 +31,6 @@ static const void *contentViewKey = &contentViewKey;
 }
 
 - (void)viewSafeAreaInsetsDidChange {
-//    self.contentView
     [self refreshLayout];
 }
 

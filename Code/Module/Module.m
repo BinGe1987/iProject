@@ -28,7 +28,7 @@
     [[DataCenter get] perform:Operation_Login_check params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         BOOL isLogin = [[DataCenter get] getUserData].isLogin;
         if (!isLogin) {
-            [Module startLoginAnimated:YES];
+//            [Module startLoginAnimated:YES];
         }
         finish(isLogin);
     }];
