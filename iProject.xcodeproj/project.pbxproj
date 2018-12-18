@@ -117,6 +117,8 @@
 		775B15F121C7D4AC00B8D6FF /* UIViewController+ContentView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ContentView.m"; sourceTree = "<group>"; };
 		775B15F621C89A3D00B8D6FF /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		775B15F721C89A3D00B8D6FF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		775B15FB21C8A18700B8D6FF /* BGHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGHeader.h; sourceTree = "<group>"; };
+		775B15FC21C8A1AD00B8D6FF /* NetHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetHeader.h; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -316,13 +318,31 @@
 		775B15E521C75DD600B8D6FF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				775B15FA21C8A15300B8D6FF /* BG */,
+				775B15F921C8A0A700B8D6FF /* Net */,
+				775B15E921C75E7C00B8D6FF /* UtilsHeader.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		775B15F921C8A0A700B8D6FF /* Net */ = {
+			isa = PBXGroup;
+			children = (
+				775B15FC21C8A1AD00B8D6FF /* NetHeader.h */,
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		775B15FA21C8A15300B8D6FF /* BG */ = {
+			isa = PBXGroup;
+			children = (
 				775B15E621C75DF600B8D6FF /* ImageUtils.h */,
 				775B15E721C75DF600B8D6FF /* ImageUtils.m */,
 				775B15EA21C78FE500B8D6FF /* ColorUtils.h */,
 				775B15EB21C78FE500B8D6FF /* ColorUtils.m */,
-				775B15E921C75E7C00B8D6FF /* UtilsHeader.h */,
+				775B15FB21C8A18700B8D6FF /* BGHeader.h */,
 			);
-			path = Utils;
+			path = BG;
 			sourceTree = "<group>";
 		};
 		776B55B721BE766200793CAF /* ViewParams */ = {
@@ -531,9 +551,9 @@
 		77EA8E8A21B8FBE2001B8959 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				775B15E521C75DD600B8D6FF /* Utils */,
 				77EA8ED121B90226001B8959 /* Base */,
 				77EA8EE821B90226001B8959 /* Common */,
+				775B15E521C75DD600B8D6FF /* Utils */,
 				77EA8EC421B90226001B8959 /* DataCenter */,
 				77EA8ED921B90226001B8959 /* MVP */,
 				77EA8EEE21B90226001B8959 /* UIEngine */,

@@ -8,8 +8,8 @@
 #ifndef UtilsHeader_h
 #define UtilsHeader_h
 
-#import "ImageUtils.h"
-#import "ColorUtils.h"
+#import "BGHeader.h"
+#import "NetHeader.h"
 
 
 #endif /* UtilsHeader_h */
