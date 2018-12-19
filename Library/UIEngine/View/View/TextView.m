@@ -25,7 +25,7 @@
     NSDictionary *attributes = @{NSFontAttributeName:self.font,};
     CGSize maxSize = CGSizeMake(SCREENWIDTH, SCREENHEIGHT);
     CGSize textSize = [self.text boundingRectWithSize:maxSize options:NSStringDrawingTruncatesLastVisibleLine attributes:attributes context:nil].size;
-    return textSize;
+    return CGSizeMake(textSize.width + self.font.pointSize/2, textSize.height + self.font.pointSize/2);
 }
 
 @end
