@@ -15,6 +15,7 @@
 #import "ButtonViewModel.h"
 #import "FrameViewModel.h"
 #import "ScrollViewModel.h"
+#import "TableViewModel.h"
 
 
 @implementation DefaultMapping
@@ -33,6 +34,9 @@
     }
     else if ([type isEqualToString:@"scroll"]) {
         return [[ScrollViewModel alloc] initWithUIModel:model];
+    }
+    else if ([type isEqualToString:@"table"]) {
+        return [[TableViewModel alloc] initWithUIModel:model];
     }
     else if ([type isEqualToString:@"label"]) {
         return [[LabelViewModel alloc] initWithUIModel:model];

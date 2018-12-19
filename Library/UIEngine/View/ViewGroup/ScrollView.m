@@ -41,11 +41,6 @@
     [self requestLayout];
 }
 
-- (void)setFrame:(CGRect)frame {
-    [super setFrame:frame];
-    Log(@"scroll view frame : (x %f, y %f, w %f, h %f)",frame.origin.x,frame.origin.y,frame.size.width,frame.size.height);
-}
-
 - (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
     [super assignmentForMaxWidth:width maxHeight:height];
     CGFloat maxWidth = width, maxHeight = height;
