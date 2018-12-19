@@ -13,6 +13,13 @@
     self = [super initWithModel:model];
     if (self) {
         self.imageSrc = [model getString:@"image_src" defaultValue:@"@AppIcon"];
+        
+        NSString *type = [model getString:@"image_scaleType" defaultValue:@"center"];
+        if ([type isEqualToString:@"full"]) {
+            self.scaleType = ImageScaleTypeFull;
+        } else {
+            self.scaleType = ImageScaleTypeCenter;
+        }
     }
     return self;
 }

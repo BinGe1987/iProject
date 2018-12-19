@@ -14,6 +14,8 @@
 #import "UIModel.h"
 #import "ViewGroupModel.h"
 #import "FrameViewModel.h"
+#import "LinearViewModel.h"
+#import "ScrollViewModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

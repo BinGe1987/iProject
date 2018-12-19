@@ -28,6 +28,20 @@
         UIImage *image = [UIImage imageNamed:imageName];
         self.imageView.image = image;
     }
+    else if ([params.imageSrc hasPrefix:@"http"]){
+        [self.imageView setImageWithURL:[NSURL URLWithString:params.imageSrc]];
+    }
+    
+    switch (params.scaleType) {
+        default:
+        case ImageScaleTypeCenter:
+            self.imageView.contentMode = UIViewContentModeScaleAspectFit;
+            break;
+        case ImageScaleTypeFull:
+            self.imageView.contentMode = UIViewContentModeScaleToFill;
+            break;
+    }
+    
 }
 
 - (Class)ViewClass {

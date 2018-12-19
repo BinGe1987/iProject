@@ -15,8 +15,8 @@
 }
 
 - (CGSize)boundingSizeNeed {
-    CGFloat width = 99;
-    CGFloat height = 99;
+    CGFloat width = 50;
+    CGFloat height = 50;
     if (self.image) {
         width = self.image.size.width + self.viewParams.paddingLeft + self.viewParams.paddingRight;
         height = self.image.size.height + self.viewParams.paddingTop + self.viewParams.paddingBottom;

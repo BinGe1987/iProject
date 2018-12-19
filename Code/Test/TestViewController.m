@@ -17,11 +17,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    UIImageView *iv = [[UIImageView alloc] initWithFrame:self.view.bounds];
-    iv.contentMode = UIViewContentModeScaleAspectFit;
-    [iv setImageWithURL:[NSURL URLWithString:@"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=517299671,1909033020&fm=200&gp=0.jpg"]];
-    [self.view addSubview:iv];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Test.json" ofType:nil];
+    [self setContentViewWithJSONPath:path];
 }
 
+- (void)onLayoutSubViewsCompleted {
+    CGFloat height = STATUSBARHIEGHT + NVBARHIEGHT;
+    ScrollView *sv = (ScrollView *)[self findViewByName:@"scroll_view"];
+    sv.contentInset = UIEdgeInsetsMake(height,0,0,0);
+    sv.contentOffset = CGPointMake(0, -height);
+}
+
+- (CGRect)safeRect {
+    CGSize size = CGSizeMake(SCREENWIDTH, SCREENHEIGHT);
+    UIEdgeInsets insets = self.view.safeAreaInsets;
+    insets.top = 0;
+    insets.bottom = self.tabBarController.tabBar.frame.size.height;
+    CGFloat width = size.width - insets.left - insets.right;
+    CGFloat height = size.height - insets.top - insets.bottom;
+    return CGRectMake(insets.left, insets.top, width, height);
+}
 
 @end

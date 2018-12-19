@@ -6,6 +6,7 @@
 //
 
 #import "Test.h"
+#import "MainNavController.h"
 #import "TestViewController.h"
 
 @implementation Test
@@ -14,7 +15,7 @@
     AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
     app.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     app.window.backgroundColor = [UIColor whiteColor];
-    UINavigationController *nv = [[UINavigationController alloc] initWithRootViewController:[[TestViewController alloc] init]];
+    UINavigationController *nv = [[MainNavController alloc] initWithRootViewController:[[TestViewController alloc] init]];
     app.window.rootViewController = nv;
     [app.window makeKeyAndVisible];
 }
