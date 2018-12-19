@@ -20,6 +20,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Test.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
     
+//    NSString *value = [Store valueForKey:@"123" defaultValue:@"456"];
+    
 //    [ProgressHUB show];
 }
 

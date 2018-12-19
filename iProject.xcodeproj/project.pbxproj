@@ -85,6 +85,7 @@
 		77B054B121CA4B500045A489 /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0549F21CA4B4F0045A489 /* IQUIView+Hierarchy.m */; };
 		77B054B221CA4B500045A489 /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054A321CA4B4F0045A489 /* IQUIViewController+Additions.m */; };
 		77B054B321CA4B500045A489 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054A521CA4B4F0045A489 /* IQKeyboardReturnKeyHandler.m */; };
+		77B054BA21CA4F670045A489 /* Store.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054B921CA4F670045A489 /* Store.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -307,6 +308,8 @@
 		77B054A321CA4B4F0045A489 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IQUIViewController+Additions.m"; sourceTree = "<group>"; };
 		77B054A421CA4B4F0045A489 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
 		77B054A521CA4B4F0045A489 /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		77B054B821CA4F670045A489 /* Store.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Store.h; sourceTree = "<group>"; };
+		77B054B921CA4F670045A489 /* Store.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Store.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -468,6 +471,7 @@
 			children = (
 				775B15FA21C8A15300B8D6FF /* BG */,
 				775B15F921C8A0A700B8D6FF /* Net */,
+				77B054B421CA4D5E0045A489 /* Store */,
 				775B15E921C75E7C00B8D6FF /* UtilsHeader.h */,
 			);
 			path = Utils;
@@ -804,6 +808,15 @@
 				77B054A421CA4B4F0045A489 /* IQUIView+Hierarchy.h */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		77B054B421CA4D5E0045A489 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				77B054B821CA4F670045A489 /* Store.h */,
+				77B054B921CA4F670045A489 /* Store.m */,
+			);
+			path = Store;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -1379,6 +1392,7 @@
 				77EA8F8D21B90A18001B8959 /* HomeHandler.m in Sources */,
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
 				77B0545821C943760045A489 /* UIImage+YYWebImage.m in Sources */,
+				77B054BA21CA4F670045A489 /* Store.m in Sources */,
 				77B0547721CA46DC0045A489 /* KSPhotoView.m in Sources */,
 				77EA8F8B21B90A18001B8959 /* LoginHandler.m in Sources */,
 				776B55ED21C00CC000793CAF /* Performer.m in Sources */,

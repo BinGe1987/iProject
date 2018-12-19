@@ -10,6 +10,6 @@
 
 #import "BGHeader.h"
 #import "NetHeader.h"
-
+#import "Store.h"
 
 #endif /* UtilsHeader_h */
