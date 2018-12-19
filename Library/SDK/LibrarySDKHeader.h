@@ -11,5 +11,6 @@
 #import "ProgressHUB.h"
 #import "UIImageView+WebImage.h"
 #import "PhotoBrowser.h"
+#import "IQKeyboardManager.h"
 
 #endif /* LibrarySDKHeader_h */

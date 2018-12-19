@@ -10,8 +10,14 @@
 @implementation AppDelegate (Config)
 
 - (void)configure {
+    [self configureKeyboardManager];
     [self configureNetworkEnvironment];
     [self configurePushService];
+}
+
+///
+- (void)configureKeyboardManager {
+    [IQKeyboardManager sharedManager].enable = YES;
 }
 
 ///配置网络环境
