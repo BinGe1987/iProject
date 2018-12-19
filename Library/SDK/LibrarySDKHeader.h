@@ -8,6 +8,7 @@
 #ifndef LibrarySDKHeader_h
 #define LibrarySDKHeader_h
 
+#import "ProgressHUB.h"
 #import "UIImageView+WebImage.h"
 
 #endif /* LibrarySDKHeader_h */

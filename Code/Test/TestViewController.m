@@ -19,6 +19,8 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Test.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
+    
+    [ProgressHUB show];
 }
 
 - (void)onLayoutSubViewsCompleted {
