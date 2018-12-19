@@ -45,8 +45,6 @@ static char shapeLayerKey;
 
 - (CGSize)boundingSize {
     CGSize need = [self boundingSizeNeed];
-    //view所需要大小+padding
-//    need = CGSizeMake(need.width, need.height);
     CGFloat width, height = 0;
     if (self.viewParams.width == FULL) {
         width = self.maxWidth;
@@ -68,10 +66,14 @@ static char shapeLayerKey;
         height = MIN(self.maxHeight, self.viewParams.height);
     }
     
-//    self.boundWidth = width - self.viewParams.paddingLeft - self.viewParams.paddingRight;
-//    self.boundHeight = height - self.viewParams.paddingTop - self.viewParams.paddingBottom;
     self.width = width;
+    if (self.width == self.maxWidth) {
+        self.width = width - self.layoutParams.marginLeft - self.layoutParams.marginRight;
+    }
     self.height = height;
+    if (self.height == self.maxHeight) {
+        self.height = height - self.layoutParams.marginTop - self.layoutParams.marginBottom;
+    }
     
     [self boundSizeChanged];
     
