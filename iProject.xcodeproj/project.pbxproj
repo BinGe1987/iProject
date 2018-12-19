@@ -89,6 +89,9 @@
 		77B054BD21CA51740045A489 /* InputViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054BC21CA51740045A489 /* InputViewModel.m */; };
 		77B054C021CA51BF0045A489 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054BF21CA51BF0045A489 /* InputView.m */; };
 		77B054C321CA52440045A489 /* InputViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054C221CA52440045A489 /* InputViewParams.m */; };
+		77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054C521CA54A20045A489 /* LabelViewParams.m */; };
+		77B054C921CA55870045A489 /* LabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054C821CA55870045A489 /* LabelView.m */; };
+		77B054CC21CA55E70045A489 /* LabelViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054CB21CA55E70045A489 /* LabelViewModel.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -319,6 +322,12 @@
 		77B054BF21CA51BF0045A489 /* InputView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
 		77B054C121CA52440045A489 /* InputViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputViewParams.h; sourceTree = "<group>"; };
 		77B054C221CA52440045A489 /* InputViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputViewParams.m; sourceTree = "<group>"; };
+		77B054C421CA54A20045A489 /* LabelViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewParams.h; sourceTree = "<group>"; };
+		77B054C521CA54A20045A489 /* LabelViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewParams.m; sourceTree = "<group>"; };
+		77B054C721CA55870045A489 /* LabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelView.h; sourceTree = "<group>"; };
+		77B054C821CA55870045A489 /* LabelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelView.m; sourceTree = "<group>"; };
+		77B054CA21CA55E70045A489 /* LabelViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelViewModel.h; sourceTree = "<group>"; };
+		77B054CB21CA55E70045A489 /* LabelViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelViewModel.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -519,6 +528,8 @@
 			children = (
 				77EA8F0621B90226001B8959 /* ViewParams.h */,
 				77EA8F0D21B90226001B8959 /* ViewParams.m */,
+				77B054C421CA54A20045A489 /* LabelViewParams.h */,
+				77B054C521CA54A20045A489 /* LabelViewParams.m */,
 				77EA8F0421B90226001B8959 /* TextViewParams.h */,
 				77EA8F0A21B90226001B8959 /* TextViewParams.m */,
 				77B054C121CA52440045A489 /* InputViewParams.h */,
@@ -568,6 +579,8 @@
 		776B55C321BEA4DB00793CAF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				77B054C721CA55870045A489 /* LabelView.h */,
+				77B054C821CA55870045A489 /* LabelView.m */,
 				77EA8F2221B90226001B8959 /* TextView.h */,
 				77EA8F1621B90226001B8959 /* TextView.m */,
 				77B054BE21CA51BF0045A489 /* InputView.h */,
@@ -1088,6 +1101,8 @@
 			children = (
 				77EA8EF221B90226001B8959 /* ViewModel.h */,
 				77EA8EF521B90226001B8959 /* ViewModel.m */,
+				77B054CA21CA55E70045A489 /* LabelViewModel.h */,
+				77B054CB21CA55E70045A489 /* LabelViewModel.m */,
 				77EA8EF621B90226001B8959 /* TextViewModel.h */,
 				77EA8EF321B90226001B8959 /* TextViewModel.m */,
 				77B054BB21CA51740045A489 /* InputViewModel.h */,
@@ -1347,6 +1362,7 @@
 				77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */,
 				77EA8F5321B90226001B8959 /* UIViewController+JSON.m in Sources */,
 				77EA8F6D21B90227001B8959 /* UIView+View.m in Sources */,
+				77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */,
 				77EA8E9C21B8FCF9001B8959 /* TestViewController.m in Sources */,
 				77EA8F3D21B90226001B8959 /* ViewController.m in Sources */,
 				77B054B321CA4B500045A489 /* IQKeyboardReturnKeyHandler.m in Sources */,
@@ -1367,6 +1383,7 @@
 				776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */,
 				77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */,
 				77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */,
+				77B054C921CA55870045A489 /* LabelView.m in Sources */,
 				7742662E21BA759900B21AE5 /* AppDelegate+Launch.m in Sources */,
 				77B054AF21CA4B500045A489 /* IQUITextFieldView+Additions.m in Sources */,
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
@@ -1405,6 +1422,7 @@
 				776B55EA21BFF7DC00793CAF /* CheckLoginPerfomer.m in Sources */,
 				77EA8F5B21B90227001B8959 /* LayoutParams.m in Sources */,
 				77EA8F5921B90227001B8959 /* TextViewParams.m in Sources */,
+				77B054CC21CA55E70045A489 /* LabelViewModel.m in Sources */,
 				77EA8F8D21B90A18001B8959 /* HomeHandler.m in Sources */,
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
 				77B0545821C943760045A489 /* UIImage+YYWebImage.m in Sources */,

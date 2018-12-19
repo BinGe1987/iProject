@@ -9,4 +9,12 @@
 
 @implementation InputViewParams
 
+-(instancetype)initWithModel:(id<UIModel>)model {
+    self = [super initWithModel:model];
+    if (self) {
+        
+    }
+    return self;
+}
+
 @end

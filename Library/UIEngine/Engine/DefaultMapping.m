@@ -9,6 +9,7 @@
 #import "DefaultMapping.h"
 #import "LinearViewModel.h"
 #import "ImageViewModel.h"
+#import "LabelViewModel.h"
 #import "TextViewModel.h"
 #import "InputViewModel.h"
 #import "ButtonViewModel.h"
@@ -32,6 +33,9 @@
     }
     else if ([type isEqualToString:@"scroll"]) {
         return [[ScrollViewModel alloc] initWithUIModel:model];
+    }
+    else if ([type isEqualToString:@"label"]) {
+        return [[LabelViewModel alloc] initWithUIModel:model];
     }
     else if ([type isEqualToString:@"text"]) {
         return [[TextViewModel alloc] initWithUIModel:model];
