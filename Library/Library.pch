@@ -27,6 +27,6 @@
 #import "EngineHeader.h"//界面引擎
 #import "DataCenter.h"//数据中心
 #import "MVPHeader.h"//mvp模式
-#import "ThirdLibraryHeader.h"//第三方库
+#import "LibrarySDKHeader.h"//第三方库
 
 #endif
