@@ -10,6 +10,7 @@
 #import "LinearViewModel.h"
 #import "ImageViewModel.h"
 #import "TextViewModel.h"
+#import "InputViewModel.h"
 #import "ButtonViewModel.h"
 #import "FrameViewModel.h"
 #import "ScrollViewModel.h"
@@ -21,7 +22,7 @@
     
     NSString *type = [model getType];
     if (!type) {
-        
+        return [[ViewModel alloc] initWithUIModel:model];
     }
     else if ([type isEqualToString:@"frame"]) {
         return [[FrameViewModel alloc] initWithUIModel:model];
@@ -35,13 +36,16 @@
     else if ([type isEqualToString:@"text"]) {
         return [[TextViewModel alloc] initWithUIModel:model];
     }
+    else if ([type isEqualToString:@"input"]) {
+        return [[InputViewModel alloc] initWithUIModel:model];
+    }
     else if ([type isEqualToString:@"image"]) {
         return [[ImageViewModel alloc] initWithUIModel:model];
     }
     else if ([type isEqualToString:@"button"]) {
         return [[ButtonViewModel alloc] initWithUIModel:model];
     }
-    return [[TextViewModel alloc] initWithUIModel:model];
+    return [[ViewModel alloc] initWithUIModel:model];
 }
 
 @end
