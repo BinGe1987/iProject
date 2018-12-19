@@ -10,5 +10,6 @@
 
 #import "ProgressHUB.h"
 #import "UIImageView+WebImage.h"
+#import "PhotoBrowser.h"
 
 #endif /* LibrarySDKHeader_h */

@@ -63,6 +63,14 @@
 		77B0545C21C9E3A70045A489 /* Test.json in Resources */ = {isa = PBXBuildFile; fileRef = 77B0545B21C9E3A70045A489 /* Test.json */; };
 		77B0546421CA30510045A489 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0546221CA30510045A489 /* MBProgressHUD.m */; };
 		77B0546721CA30940045A489 /* ProgressHUB.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0546621CA30940045A489 /* ProgressHUB.m */; };
+		77B0547721CA46DC0045A489 /* KSPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0546C21CA46DC0045A489 /* KSPhotoView.m */; };
+		77B0547821CA46DC0045A489 /* KSProgressLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0546D21CA46DC0045A489 /* KSProgressLayer.m */; };
+		77B0547921CA46DC0045A489 /* KSPhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0546E21CA46DC0045A489 /* KSPhotoItem.m */; };
+		77B0547A21CA46DC0045A489 /* KSPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0547021CA46DC0045A489 /* KSPhotoBrowser.m */; };
+		77B0547B21CA46DC0045A489 /* UIImage+KS.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0547221CA46DC0045A489 /* UIImage+KS.m */; };
+		77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0547521CA46DC0045A489 /* KSSDImageManager.m */; };
+		77B0547F21CA47560045A489 /* KSYYImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0547D21CA47560045A489 /* KSYYImageManager.m */; };
+		77B0548221CA48BB0045A489 /* PhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0548121CA48BB0045A489 /* PhotoBrowser.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -239,6 +247,23 @@
 		77B0546321CA30510045A489 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		77B0546521CA30940045A489 /* ProgressHUB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressHUB.h; sourceTree = "<group>"; };
 		77B0546621CA30940045A489 /* ProgressHUB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressHUB.m; sourceTree = "<group>"; };
+		77B0546A21CA46DC0045A489 /* UIImage+KS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+KS.h"; sourceTree = "<group>"; };
+		77B0546B21CA46DC0045A489 /* KSImageManagerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSImageManagerProtocol.h; sourceTree = "<group>"; };
+		77B0546C21CA46DC0045A489 /* KSPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoView.m; sourceTree = "<group>"; };
+		77B0546D21CA46DC0045A489 /* KSProgressLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSProgressLayer.m; sourceTree = "<group>"; };
+		77B0546E21CA46DC0045A489 /* KSPhotoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoItem.m; sourceTree = "<group>"; };
+		77B0546F21CA46DC0045A489 /* KSSDImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSSDImageManager.h; sourceTree = "<group>"; };
+		77B0547021CA46DC0045A489 /* KSPhotoBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSPhotoBrowser.m; sourceTree = "<group>"; };
+		77B0547121CA46DC0045A489 /* KSPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoView.h; sourceTree = "<group>"; };
+		77B0547221CA46DC0045A489 /* UIImage+KS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+KS.m"; sourceTree = "<group>"; };
+		77B0547321CA46DC0045A489 /* KSPhotoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoItem.h; sourceTree = "<group>"; };
+		77B0547421CA46DC0045A489 /* KSProgressLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSProgressLayer.h; sourceTree = "<group>"; };
+		77B0547521CA46DC0045A489 /* KSSDImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSSDImageManager.m; sourceTree = "<group>"; };
+		77B0547621CA46DC0045A489 /* KSPhotoBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSPhotoBrowser.h; sourceTree = "<group>"; };
+		77B0547D21CA47560045A489 /* KSYYImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KSYYImageManager.m; sourceTree = "<group>"; };
+		77B0547E21CA47560045A489 /* KSYYImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KSYYImageManager.h; sourceTree = "<group>"; };
+		77B0548021CA48BB0045A489 /* PhotoBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoBrowser.h; sourceTree = "<group>"; };
+		77B0548121CA48BB0045A489 /* PhotoBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoBrowser.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -628,6 +653,38 @@
 				77B0546221CA30510045A489 /* MBProgressHUD.m */,
 			);
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		77B0546821CA3A5B0045A489 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				77B0546921CA46DB0045A489 /* KSPhotoBrowser */,
+				77B0548021CA48BB0045A489 /* PhotoBrowser.h */,
+				77B0548121CA48BB0045A489 /* PhotoBrowser.m */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		77B0546921CA46DB0045A489 /* KSPhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				77B0546B21CA46DC0045A489 /* KSImageManagerProtocol.h */,
+				77B0546A21CA46DC0045A489 /* UIImage+KS.h */,
+				77B0547221CA46DC0045A489 /* UIImage+KS.m */,
+				77B0547421CA46DC0045A489 /* KSProgressLayer.h */,
+				77B0546D21CA46DC0045A489 /* KSProgressLayer.m */,
+				77B0547E21CA47560045A489 /* KSYYImageManager.h */,
+				77B0547D21CA47560045A489 /* KSYYImageManager.m */,
+				77B0546F21CA46DC0045A489 /* KSSDImageManager.h */,
+				77B0547521CA46DC0045A489 /* KSSDImageManager.m */,
+				77B0547121CA46DC0045A489 /* KSPhotoView.h */,
+				77B0546C21CA46DC0045A489 /* KSPhotoView.m */,
+				77B0547321CA46DC0045A489 /* KSPhotoItem.h */,
+				77B0546E21CA46DC0045A489 /* KSPhotoItem.m */,
+				77B0547621CA46DC0045A489 /* KSPhotoBrowser.h */,
+				77B0547021CA46DC0045A489 /* KSPhotoBrowser.m */,
+			);
+			path = KSPhotoBrowser;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -1055,6 +1112,7 @@
 			children = (
 				77B0546021CA2C2B0045A489 /* Progress */,
 				77B0541D21C943760045A489 /* WebImage */,
+				77B0546821CA3A5B0045A489 /* PhotoBrowser */,
 				77B0545F21CA2B2F0045A489 /* LibrarySDKHeader.h */,
 			);
 			path = SDK;
@@ -1147,6 +1205,7 @@
 				77EA8FAC21B92704001B8959 /* UIImageView+WebImage.m in Sources */,
 				77B0544F21C943760045A489 /* YYSpriteSheetImage.m in Sources */,
 				77B0545221C943760045A489 /* YYFrameImage.m in Sources */,
+				77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */,
 				77B0545A21C943760045A489 /* YYWebImageOperation.m in Sources */,
 				77EA8FBA21B94B67001B8959 /* Module.m in Sources */,
 				77B0546721CA30940045A489 /* ProgressHUB.m in Sources */,
@@ -1175,7 +1234,9 @@
 				77B0545121C943760045A489 /* YYImageCoder.m in Sources */,
 				77B053D821C8C53F0045A489 /* NetConfig.m in Sources */,
 				774F017421B9728900CB482F /* MineViewController.m in Sources */,
+				77B0548221CA48BB0045A489 /* PhotoBrowser.m in Sources */,
 				776B55C121BEA10200793CAF /* FrameLayoutViewParams.m in Sources */,
+				77B0547921CA46DC0045A489 /* KSPhotoItem.m in Sources */,
 				77EA8F3921B90226001B8959 /* Presenter.m in Sources */,
 				77B0546421CA30510045A489 /* MBProgressHUD.m in Sources */,
 				77EA8F2B21B90226001B8959 /* DataCenter.m in Sources */,
@@ -1192,8 +1253,11 @@
 				77EA8F8D21B90A18001B8959 /* HomeHandler.m in Sources */,
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
 				77B0545821C943760045A489 /* UIImage+YYWebImage.m in Sources */,
+				77B0547721CA46DC0045A489 /* KSPhotoView.m in Sources */,
 				77EA8F8B21B90A18001B8959 /* LoginHandler.m in Sources */,
 				776B55ED21C00CC000793CAF /* Performer.m in Sources */,
+				77B0547A21CA46DC0045A489 /* KSPhotoBrowser.m in Sources */,
+				77B0547821CA46DC0045A489 /* KSProgressLayer.m in Sources */,
 				775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */,
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
@@ -1214,10 +1278,12 @@
 				77EA8F6321B90227001B8959 /* TextView.m in Sources */,
 				77B0544D21C943760045A489 /* YYMemoryCache.m in Sources */,
 				77B0544C21C943760045A489 /* YYKVStorage.m in Sources */,
+				77B0547B21CA46DC0045A489 /* UIImage+KS.m in Sources */,
 				77B0545721C943760045A489 /* MKAnnotationView+YYWebImage.m in Sources */,
 				77B053D221C8AEB30045A489 /* AppDelegate+Config.m in Sources */,
 				77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */,
 				77EA8E9921B8FCF2001B8959 /* HomeViewController.m in Sources */,
+				77B0547F21CA47560045A489 /* KSYYImageManager.m in Sources */,
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
 				775B15EC21C78FE500B8D6FF /* ColorUtils.m in Sources */,
 				77B0545021C943760045A489 /* YYImage.m in Sources */,
