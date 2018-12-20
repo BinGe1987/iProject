@@ -99,6 +99,8 @@
 		77B054E521CB47910045A489 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054E421CB47910045A489 /* Reachability.m */; };
 		77B054E821CB486C0045A489 /* NetReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054E721CB486C0045A489 /* NetReachability.m */; };
 		77B054EB21CB63FD0045A489 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054EA21CB63FD0045A489 /* SecondViewController.m */; };
+		77B054EF21CB86680045A489 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054EE21CB86680045A489 /* NotificationCenter.m */; };
+		77B054F321CB8D240045A489 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054F221CB8D240045A489 /* Notification.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -349,6 +351,10 @@
 		77B054E721CB486C0045A489 /* NetReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetReachability.m; sourceTree = "<group>"; };
 		77B054E921CB63FD0045A489 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		77B054EA21CB63FD0045A489 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		77B054ED21CB86680045A489 /* NotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		77B054EE21CB86680045A489 /* NotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
+		77B054F121CB8D240045A489 /* Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		77B054F221CB8D240045A489 /* Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -928,6 +934,24 @@
 			path = Reachability;
 			sourceTree = "<group>";
 		};
+		77B054EC21CB86280045A489 /* NotificationCenter */ = {
+			isa = PBXGroup;
+			children = (
+				77B054ED21CB86680045A489 /* NotificationCenter.h */,
+				77B054EE21CB86680045A489 /* NotificationCenter.m */,
+			);
+			path = NotificationCenter;
+			sourceTree = "<group>";
+		};
+		77B054F021CB8C2F0045A489 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				77B054F121CB8D240045A489 /* Notification.h */,
+				77B054F221CB8D240045A489 /* Notification.m */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		77EA8E5E21B8F79F001B8959 = {
 			isa = PBXGroup;
 			children = (
@@ -950,6 +974,7 @@
 			children = (
 				77EA8E8521B8F979001B8959 /* AppDelegate */,
 				77EA8F7D21B909B2001B8959 /* DataCenter */,
+				77B054F021CB8C2F0045A489 /* Notification */,
 				77EA8E8121B8F8E5001B8959 /* Module */,
 				77EA8EC221B900EB001B8959 /* Resource */,
 				77EA8E8021B8F881001B8959 /* Supporting Files */,
@@ -1037,6 +1062,7 @@
 			children = (
 				77EA8ED121B90226001B8959 /* Base */,
 				77EA8EE821B90226001B8959 /* Common */,
+				77B054EC21CB86280045A489 /* NotificationCenter */,
 				775B15E521C75DD600B8D6FF /* Utils */,
 				77EA8EC421B90226001B8959 /* DataCenter */,
 				77EA8ED921B90226001B8959 /* MVP */,
@@ -1147,11 +1173,11 @@
 		77EA8EE821B90226001B8959 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				77EA8EEB21B90226001B8959 /* CommonHeader.h */,
-				77EA8EED21B90226001B8959 /* CommonDefine.h */,
 				77EA8EEA21B90226001B8959 /* SingletonDefine.h */,
 				77EA8EEC21B90226001B8959 /* UIColor+Extends.h */,
 				77EA8EE921B90226001B8959 /* UIColor+Extends.m */,
+				77EA8EED21B90226001B8959 /* CommonDefine.h */,
+				77EA8EEB21B90226001B8959 /* CommonHeader.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1437,6 +1463,7 @@
 				775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */,
 				77B054B121CA4B500045A489 /* IQUIView+Hierarchy.m in Sources */,
 				77EA8FAC21B92704001B8959 /* UIImageView+WebImage.m in Sources */,
+				77B054EF21CB86680045A489 /* NotificationCenter.m in Sources */,
 				77B0544F21C943760045A489 /* YYSpriteSheetImage.m in Sources */,
 				77B0545221C943760045A489 /* YYFrameImage.m in Sources */,
 				77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */,
@@ -1488,6 +1515,7 @@
 				77B0545521C943760045A489 /* UIButton+YYWebImage.m in Sources */,
 				776B55CC21BF81B300793CAF /* UIButton+EnlargeEdge.m in Sources */,
 				77EA8F4921B90226001B8959 /* ViewModel.m in Sources */,
+				77B054F321CB8D240045A489 /* Notification.m in Sources */,
 				77B0544A21C943760045A489 /* YYDiskCache.m in Sources */,
 				77EA8F4D21B90226001B8959 /* ViewGroupModel.m in Sources */,
 				77EA8F2D21B90226001B8959 /* CommonHandler.m in Sources */,

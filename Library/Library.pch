@@ -24,6 +24,7 @@
 #import "BaseHeader.h"//基础结构
 #import "UtilsHeader.h"//基础结构
 #import "CommonHeader.h"//公众模块
+#import "NotificationCenter.h"//通知中心
 #import "EngineHeader.h"//界面引擎
 #import "DataCenter.h"//数据中心
 #import "MVPHeader.h"//mvp模式

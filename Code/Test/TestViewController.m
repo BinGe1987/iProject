@@ -25,6 +25,8 @@
     [btn setClickBlock:^(UIButton * _Nonnull button) {
         [weakself.navigationController pushViewController:[SecondViewController new] animated:YES];
     }];
+    
+    [Notification addLoginObserver:self selector:@selector(onLayoutSubViewsCompleted)];
 }
 
 - (void)onLayoutSubViewsCompleted {

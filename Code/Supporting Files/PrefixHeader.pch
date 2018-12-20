@@ -20,6 +20,7 @@
 
 #import "AppDelegate.h"
 #import "DataCenter+YDD.h"
+#import "Notification.h"
 
 #import "Module.h"
 #import "Test.h"
