@@ -8,6 +8,9 @@
 #import "TestViewController.h"
 #import "SecondViewController.h"
 
+@interface NotificationLogin : NSObject
+@end
+
 @interface TestViewController ()
 
 @end
@@ -26,7 +29,13 @@
         [weakself.navigationController pushViewController:[SecondViewController new] animated:YES];
     }];
     
-    [Notification addLoginObserver:self selector:@selector(onLayoutSubViewsCompleted)];
+    [Notification addLoginStatusObserver:self selector:@selector(test:)];
+    [Notification postLoginStatusNotification:@"456"];
+}
+
+- (void)test:(NSNotification *)notif {
+    NSString *object = notif.object;
+    Log(@"%@",object);
 }
 
 - (void)onLayoutSubViewsCompleted {
