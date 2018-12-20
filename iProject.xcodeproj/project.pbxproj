@@ -98,6 +98,7 @@
 		77B054D821CA9C720045A489 /* TableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054D721CA9C720045A489 /* TableViewModel.m */; };
 		77B054E521CB47910045A489 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054E421CB47910045A489 /* Reachability.m */; };
 		77B054E821CB486C0045A489 /* NetReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054E721CB486C0045A489 /* NetReachability.m */; };
+		77B054EB21CB63FD0045A489 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054EA21CB63FD0045A489 /* SecondViewController.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -346,6 +347,8 @@
 		77B054E421CB47910045A489 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		77B054E621CB486C0045A489 /* NetReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetReachability.h; sourceTree = "<group>"; };
 		77B054E721CB486C0045A489 /* NetReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetReachability.m; sourceTree = "<group>"; };
+		77B054E921CB63FD0045A489 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		77B054EA21CB63FD0045A489 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1020,6 +1023,8 @@
 			children = (
 				77EA8E9A21B8FCF9001B8959 /* TestViewController.h */,
 				77EA8E9B21B8FCF9001B8959 /* TestViewController.m */,
+				77B054E921CB63FD0045A489 /* SecondViewController.h */,
+				77B054EA21CB63FD0045A489 /* SecondViewController.m */,
 				77B0545B21C9E3A70045A489 /* Test.json */,
 				77EA8FBC21B94BB5001B8959 /* Test.h */,
 				77EA8FBD21B94BB5001B8959 /* Test.m */,
@@ -1514,6 +1519,7 @@
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
 				77B054B021CA4B500045A489 /* IQUIScrollView+Additions.m in Sources */,
 				77EA8F3321B90226001B8959 /* JSON.m in Sources */,
+				77B054EB21CB63FD0045A489 /* SecondViewController.m in Sources */,
 				775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */,
 				77B0544B21C943760045A489 /* YYCache.m in Sources */,
 				77EA8F3F21B90226001B8959 /* MVPViewController.m in Sources */,

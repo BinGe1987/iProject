@@ -20,6 +20,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NetStatus)networkStatus;
 
+- (void)addNetworkObserver:(id)observer selector:(SEL)aSelector;
+
+- (void)removeNetworkObserver:(id)observer;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -29,6 +29,15 @@ singleton_implementation(Net)
     return [[Net get].reachability networkStatus];
 }
 
++ (void)addNetworkObserver:(id)observer selector:(SEL)aSelector {
+    [[Net get].reachability addNetworkObserver:observer selector:aSelector];
+}
+
++ (void)removeNetworkObserver:(id)observer {
+    [[Net get].reachability removeNetworkObserver:observer];
+}
+
+
 ///同步
 + (NetResponse *)synchroRequest:(NetRequest * _Nonnull)request {
     NetResponse *netResponse = [NetResponse new];

@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 ///获取当前的网络状态
 + (NetStatus)networkStatus;
++ (void)addNetworkObserver:(id)observer selector:(SEL)aSelector;
++ (void)removeNetworkObserver:(id)observer;
 
 ///同步请求
 + (NetResponse *)synchroRequest:(NetRequest * _Nonnull)request;

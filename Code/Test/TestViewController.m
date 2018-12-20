@@ -6,7 +6,7 @@
 //
 
 #import "TestViewController.h"
-#import "LoginViewController.h"
+#import "SecondViewController.h"
 
 @interface TestViewController ()
 
@@ -20,12 +20,11 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Test.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
     
-//    NSString *value = [Store valueForKey:@"123" defaultValue:@"456"];
-    
-//    [ProgressHUB show];
-    
-    NetStatus status = [Net networkStatus];
-    Log(@"NetStatus %ld", (long)status);
+    UIButton *btn = (UIButton *)[self findViewByName:@"btn1"];
+    WeakSelf(self)
+    [btn setClickBlock:^(UIButton * _Nonnull button) {
+        [weakself.navigationController pushViewController:[SecondViewController new] animated:YES];
+    }];
 }
 
 - (void)onLayoutSubViewsCompleted {
