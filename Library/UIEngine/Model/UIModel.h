@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)getType;
 
-- (NSString *)getString:(NSString *)key defaultValue:(NSString *)defValue;
+- (NSString *)getString:(NSString *)key defaultValue:(NSString * _Nullable)defValue;
 
 - (int)getInteger:(NSString *)key defaultValue:(int)defValue;
 

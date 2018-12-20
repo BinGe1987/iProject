@@ -27,7 +27,8 @@
                     "view_paddingBottom":"0",
                     "view_background":"#ffff00ff",
                     "image_scaleType":"center",
-                    "image_src":"https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C0%2C730%2C420/sign=2d91b252aaefce1bfe64928a9261dfee/77c6a7efce1b9d1640846bc5fedeb48f8d5464d7.jpg"
+                    "image_src":"def",
+                    "image_url":"https://gss1.bdstatic.com/-vo3dSag_xI4khGkpoWK1HF6hhy/baike/crop%3D0%2C0%2C730%2C420/sign=2d91b252aaefce1bfe64928a9261dfee/77c6a7efce1b9d1640846bc5fedeb48f8d5464d7.jpg"
                 },
                 {
                     "view_name":"btn1",

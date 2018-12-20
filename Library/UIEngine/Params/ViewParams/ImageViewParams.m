@@ -12,7 +12,8 @@
 -(instancetype)initWithModel:(id<UIModel>)model {
     self = [super initWithModel:model];
     if (self) {
-        self.imageSrc = [model getString:@"image_src" defaultValue:@"@AppIcon"];
+        self.imageSrc = [model getString:@"image_src" defaultValue:nil];
+        self.imageUrl = [model getString:@"image_url" defaultValue:nil];
         
         NSString *type = [model getString:@"image_scaleType" defaultValue:@"center"];
         if ([type isEqualToString:@"full"]) {

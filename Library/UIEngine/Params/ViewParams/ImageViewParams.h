@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) ImageScaleType scaleType;
 @property (nonatomic, strong) NSString      *imageSrc;
+@property (nonatomic, strong) NSString      *imageUrl;
 
 @end
 

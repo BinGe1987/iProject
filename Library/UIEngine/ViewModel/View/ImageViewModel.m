@@ -23,13 +23,15 @@
 }
 
 - (void)setImageViewParams:(ImageViewParams *)params {
-    if ([params.imageSrc hasPrefix:@"@"]) {
-        NSString *imageName = [params.imageSrc substringFromIndex:1];
-        UIImage *image = [UIImage imageNamed:imageName];
+    
+    //本地图片
+    if (params.imageSrc) {
+        UIImage *image = [UIImage imageNamed:params.imageSrc];
         self.imageView.image = image;
     }
-    else if ([params.imageSrc hasPrefix:@"http"]){
-        [self.imageView setImageWithURL:[NSURL URLWithString:params.imageSrc]];
+    //网络图片
+    else if (params.imageUrl){
+        [self.imageView setImageWithURL:[NSURL URLWithString:params.imageUrl]];
     }
     
     switch (params.scaleType) {

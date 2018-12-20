@@ -32,7 +32,7 @@
     return [self getString:@"view_type" defaultValue:@"text"];
 }
 
-- (NSString *)getString:(NSString *)key defaultValue:(NSString *)defValue {
+- (NSString *)getString:(NSString *)key defaultValue:(NSString * _Nullable)defValue; {
     NSString *value = defValue;
     if (self.source) {
         value = [self.source objectForKey:key];
