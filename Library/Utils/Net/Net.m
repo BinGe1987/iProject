@@ -7,17 +7,26 @@
 
 #import "Net.h"
 
+@interface Net()
+
+@property (nonatomic, strong)NetReachability *reachability;
+
+@end
 
 @implementation Net
 
 singleton_implementation(Net)
 
 - (void)initialize {
-    
+    self.reachability = [NetReachability new];
 }
 
 + (void)configure:(NetConfig *)config {
     [Net get].config = config;
+}
+
++ (NetStatus)networkStatus {
+    return [[Net get].reachability networkStatus];
 }
 
 ///同步

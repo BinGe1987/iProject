@@ -36,7 +36,7 @@
 #define UIFontBoldWithFont(_font) [UIFont boldSystemFontOfSize:_font.pointSize]
 
 #pragma mark 颜色相关宏
-///直接转入8位字符串颜色值（#FFFFFFFF），12位为透明度，后6位为颜色值
+///直接转入8位字符串颜色值（#FFFFFFFF），1、2位为透明度，后6位为颜色值
 #define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue &0xFF00) >>8))/255.0 blue:((float)(rgbValue &0xFF))/255.0 alpha:((float)((rgbValue & 0xFF000000) >> 32))/255.0]
 
 #pragma mark 时间相关宏

@@ -10,6 +10,7 @@
 #import "NetConfig.h"
 #import "NetRequest.h"
 #import "NetResponse.h"
+#import "NetReachability.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -19,7 +20,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NetConfig *config;
 
+///初始化配置，app启动时调用
 + (void)configure:(NetConfig *)config;
+
+///获取当前的网络状态
++ (NetStatus)networkStatus;
 
 ///同步请求
 + (NetResponse *)synchroRequest:(NetRequest * _Nonnull)request;

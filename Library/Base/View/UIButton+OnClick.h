@@ -13,7 +13,7 @@ typedef void (^onClickBlock)(UIButton *button);
 
 @interface UIButton (OnClick)
 
-
+///点击事情
 @property (nonatomic, assign) onClickBlock clickBlock;
 
 @end

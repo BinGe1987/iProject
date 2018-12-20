@@ -96,6 +96,8 @@
 		77B054D221CA9AB40045A489 /* TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054D121CA9AB40045A489 /* TableView.m */; };
 		77B054D521CA9B220045A489 /* TableLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054D421CA9B220045A489 /* TableLayoutParams.m */; };
 		77B054D821CA9C720045A489 /* TableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054D721CA9C720045A489 /* TableViewModel.m */; };
+		77B054E521CB47910045A489 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054E421CB47910045A489 /* Reachability.m */; };
+		77B054E821CB486C0045A489 /* NetReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054E721CB486C0045A489 /* NetReachability.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -340,6 +342,10 @@
 		77B054D421CA9B220045A489 /* TableLayoutParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableLayoutParams.m; sourceTree = "<group>"; };
 		77B054D621CA9C720045A489 /* TableViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewModel.h; sourceTree = "<group>"; };
 		77B054D721CA9C720045A489 /* TableViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewModel.m; sourceTree = "<group>"; };
+		77B054E321CB47890045A489 /* Reachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		77B054E421CB47910045A489 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		77B054E621CB486C0045A489 /* NetReachability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetReachability.h; sourceTree = "<group>"; };
+		77B054E721CB486C0045A489 /* NetReachability.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetReachability.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -499,7 +505,7 @@
 		775B15E521C75DD600B8D6FF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				775B15FA21C8A15300B8D6FF /* BG */,
+				775B15FA21C8A15300B8D6FF /* Imgae+Color */,
 				775B15F921C8A0A700B8D6FF /* Net */,
 				77B054B421CA4D5E0045A489 /* Store */,
 				775B15E921C75E7C00B8D6FF /* UtilsHeader.h */,
@@ -512,6 +518,8 @@
 			children = (
 				77B053CC21C8A5F90045A489 /* Net.h */,
 				77B053CD21C8A5F90045A489 /* Net.m */,
+				77B054E621CB486C0045A489 /* NetReachability.h */,
+				77B054E721CB486C0045A489 /* NetReachability.m */,
 				77B053D621C8C53F0045A489 /* NetConfig.h */,
 				77B053D721C8C53F0045A489 /* NetConfig.m */,
 				77B053DC21C8E0C70045A489 /* NetRequest.h */,
@@ -523,7 +531,7 @@
 			path = Net;
 			sourceTree = "<group>";
 		};
-		775B15FA21C8A15300B8D6FF /* BG */ = {
+		775B15FA21C8A15300B8D6FF /* Imgae+Color */ = {
 			isa = PBXGroup;
 			children = (
 				775B15E621C75DF600B8D6FF /* ImageUtils.h */,
@@ -532,7 +540,7 @@
 				775B15EB21C78FE500B8D6FF /* ColorUtils.m */,
 				775B15FB21C8A18700B8D6FF /* BGHeader.h */,
 			);
-			path = BG;
+			path = "Imgae+Color";
 			sourceTree = "<group>";
 		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
@@ -906,6 +914,15 @@
 				77B054D121CA9AB40045A489 /* TableView.m */,
 			);
 			path = TableView;
+			sourceTree = "<group>";
+		};
+		77B054E221CB477C0045A489 /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				77B054E321CB47890045A489 /* Reachability.h */,
+				77B054E421CB47910045A489 /* Reachability.m */,
+			);
+			path = Reachability;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -1316,6 +1333,7 @@
 		77EA8FA921B92262001B8959 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				77B054E221CB477C0045A489 /* Reachability */,
 				77B0546021CA2C2B0045A489 /* Progress */,
 				77B0541D21C943760045A489 /* WebImage */,
 				77B0546821CA3A5B0045A489 /* PhotoBrowser */,
@@ -1430,6 +1448,7 @@
 				77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */,
 				77B054C921CA55870045A489 /* LabelView.m in Sources */,
 				7742662E21BA759900B21AE5 /* AppDelegate+Launch.m in Sources */,
+				77B054E821CB486C0045A489 /* NetReachability.m in Sources */,
 				77B054AF21CA4B500045A489 /* IQUITextFieldView+Additions.m in Sources */,
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
 				776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */,
@@ -1438,6 +1457,7 @@
 				77B0544921C943760045A489 /* YYImageCache.m in Sources */,
 				77EA8F2921B90226001B8959 /* DataHandler.m in Sources */,
 				77B0545921C943760045A489 /* CALayer+YYWebImage.m in Sources */,
+				77B054E521CB47910045A489 /* Reachability.m in Sources */,
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				776B55F021C00D6000793CAF /* Parser.m in Sources */,
 				77EA8F4321B90226001B8959 /* UIColor+Extends.m in Sources */,

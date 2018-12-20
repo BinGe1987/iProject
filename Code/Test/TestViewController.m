@@ -23,6 +23,9 @@
 //    NSString *value = [Store valueForKey:@"123" defaultValue:@"456"];
     
 //    [ProgressHUB show];
+    
+    NetStatus status = [Net networkStatus];
+    Log(@"NetStatus %ld", (long)status);
 }
 
 - (void)onLayoutSubViewsCompleted {
