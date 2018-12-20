@@ -23,19 +23,22 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Test.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
     
-    UIButton *btn = (UIButton *)[self findViewByName:@"btn1"];
     WeakSelf(self)
-    [btn setClickBlock:^(UIButton * _Nonnull button) {
+    UIButton *btn1 = (UIButton *)[self findViewByName:@"btn1"];
+    [btn1 setClickBlock:^(UIButton * _Nonnull button) {
         [weakself.navigationController pushViewController:[SecondViewController new] animated:YES];
     }];
-    
+    UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];
+    [btn2 setClickBlock:^(UIButton * _Nonnull button) {
+        [Notification postLoginStatusNotification:button];
+    }];
     [Notification addLoginStatusObserver:self selector:@selector(test:)];
-    [Notification postLoginStatusNotification:@"456"];
 }
 
-- (void)test:(NSNotification *)notif {
-    NSString *object = notif.object;
-    Log(@"%@",object);
+
+- (void)test:(id)notif {
+    NSString *object = notif;
+    Log(@"TestViewController %@",object);
 }
 
 - (void)onLayoutSubViewsCompleted {

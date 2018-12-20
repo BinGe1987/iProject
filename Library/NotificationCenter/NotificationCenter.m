@@ -21,4 +21,8 @@
     [[NSNotificationCenter defaultCenter] removeObserver:observer];
 }
 
++ (void)removeObserver:(id)observer name:(NSString *)name {
+    [[NSNotificationCenter defaultCenter] removeObserver:observer name:name object:nil];
+}
+
 @end

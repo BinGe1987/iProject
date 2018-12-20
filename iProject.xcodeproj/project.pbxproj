@@ -101,6 +101,8 @@
 		77B054EB21CB63FD0045A489 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054EA21CB63FD0045A489 /* SecondViewController.m */; };
 		77B054EF21CB86680045A489 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054EE21CB86680045A489 /* NotificationCenter.m */; };
 		77B054F321CB8D240045A489 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054F221CB8D240045A489 /* Notification.m */; };
+		77B054FB21CBC5F10045A489 /* Notification+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054FA21CBC5F10045A489 /* Notification+Category.m */; };
+		77B054FF21CBE6910045A489 /* EventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054FE21CBE6910045A489 /* EventBus.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -355,6 +357,11 @@
 		77B054EE21CB86680045A489 /* NotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
 		77B054F121CB8D240045A489 /* Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
 		77B054F221CB8D240045A489 /* Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		77B054F821CBBAE30045A489 /* NotificationDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationDefine.h; sourceTree = "<group>"; };
+		77B054F921CBC5F10045A489 /* Notification+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Notification+Category.h"; sourceTree = "<group>"; };
+		77B054FA21CBC5F10045A489 /* Notification+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Notification+Category.m"; sourceTree = "<group>"; };
+		77B054FD21CBE6910045A489 /* EventBus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventBus.h; sourceTree = "<group>"; };
+		77B054FE21CBE6910045A489 /* EventBus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventBus.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -948,8 +955,20 @@
 			children = (
 				77B054F121CB8D240045A489 /* Notification.h */,
 				77B054F221CB8D240045A489 /* Notification.m */,
+				77B054F921CBC5F10045A489 /* Notification+Category.h */,
+				77B054FA21CBC5F10045A489 /* Notification+Category.m */,
+				77B054F821CBBAE30045A489 /* NotificationDefine.h */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		77B054FC21CBE6360045A489 /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				77B054FD21CBE6910045A489 /* EventBus.h */,
+				77B054FE21CBE6910045A489 /* EventBus.m */,
+			);
+			path = EventBus;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -1063,6 +1082,7 @@
 				77EA8ED121B90226001B8959 /* Base */,
 				77EA8EE821B90226001B8959 /* Common */,
 				77B054EC21CB86280045A489 /* NotificationCenter */,
+				77B054FC21CBE6360045A489 /* EventBus */,
 				775B15E521C75DD600B8D6FF /* Utils */,
 				77EA8EC421B90226001B8959 /* DataCenter */,
 				77EA8ED921B90226001B8959 /* MVP */,
@@ -1496,6 +1516,7 @@
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,
 				77B053CE21C8A5F90045A489 /* Net.m in Sources */,
+				77B054FF21CBE6910045A489 /* EventBus.m in Sources */,
 				77EA8FBE21B94BB5001B8959 /* Test.m in Sources */,
 				77B054A821CA4B500045A489 /* IQTitleBarButtonItem.m in Sources */,
 				776B55D321BFA2C600793CAF /* UIViewController+Layout.m in Sources */,
@@ -1584,6 +1605,7 @@
 				77B0545421C943760045A489 /* _YYWebImageSetter.m in Sources */,
 				77EA8F8921B90A18001B8959 /* UserHandler.m in Sources */,
 				776B55FB21C14A0800793CAF /* ScrollView.m in Sources */,
+				77B054FB21CBC5F10045A489 /* Notification+Category.m in Sources */,
 				776B55F621C10F7100793CAF /* UIView+Params.m in Sources */,
 				77EA8F5F21B90227001B8959 /* JSONModel.m in Sources */,
 				77B054D221CA9AB40045A489 /* TableView.m in Sources */,

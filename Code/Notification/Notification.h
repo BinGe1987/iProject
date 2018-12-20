@@ -6,18 +6,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "NotificationDefine.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Notification : NSObject
 
-///登录相关的通知
-+ (void)addLoginStatusObserver:(id)observer selector:(SEL)selector;
-+ (void)postLoginStatusNotification:(id)object;
-
++ (void)addObserver:(id)observer selector:(SEL)selector name:(nullable NSNotificationName)name;
 + (void)removeObserver:(id)observer;
 
 @end
 
 NS_ASSUME_NONNULL_END
+
 

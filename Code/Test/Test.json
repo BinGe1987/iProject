@@ -47,6 +47,22 @@
                     "text_color":"#ffff0000"
                 },
                 {
+                    "view_name":"btn2",
+                    "view_type":"button",
+                    "view_width":"full",
+                    "view_height":"auto",
+                    "view_paddingLeft":"20",
+                    "view_paddingTop":"20",
+                    "view_paddingRight":"20",
+                    "view_paddingBottom":"20",
+                    "view_background":"#ff00ffff",
+                    "layout_marginLeft":"20",
+                    "layout_marginRight":"20",
+                    "text_src":"btn2",
+                    "text_size":"35",
+                    "text_color":"#ffff0000"
+                },
+                {
                     "view_name":"input_view1",
                     "view_type":"input",
                     "view_width":"full",

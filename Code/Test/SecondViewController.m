@@ -22,6 +22,16 @@
     Log(@"NetStatus %ld", (long)status);
     [Net addNetworkObserver:self selector:@selector(netChangedLisenter:)];
     
+    [Notification addLoginStatusObserver:self selector:@selector(test:)];
+    UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];
+    [btn2 setClickBlock:^(UIButton * _Nonnull button) {
+        [Notification postLoginStatusNotification:button];
+    }];
+}
+
+- (void)test:(id)notif {
+    NSString *object = notif;
+    Log(@"SecondViewController %@",object);
 }
 
 - (void)netChangedLisenter:(id)status {
@@ -32,7 +42,8 @@
 - (void)dealloc
 {
     Log(@"removeNetworkObserver");
-//    [Net removeNetworkObserver:self];
+    [Net removeNetworkObserver:self];
+    [Notification removeObserver:self];
 }
 
 @end
