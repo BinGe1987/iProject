@@ -36,12 +36,20 @@
     [[EventBus get] addObserver:observer selector:selector event:name forceThread:thread];
 }
 
++ (void)postEvent:(EventName)name {
+    [EventBus postEvent:name data:nil];
+}
+
 + (void)postEvent:(EventName)name data:(nullable id)data {
     [EventBus postEvent:name data:data forceThread:EventForceThreadCurrent];
 }
 
 + (void)postEvent:(EventName)name data:(nullable id)data forceThread:(EventForceThread)thread {
     [[EventBus get] postEvent:name data:data forceThread:thread];
+}
+
++ (void)removeObserver:(id)observer {
+    [[EventBus get] removeObserver:observer];
 }
 
 #pragma mark 单例内部方法
@@ -85,7 +93,9 @@ static EventBus *eventBus;
     }
 }
 
-
+- (void)removeObserver:(id)observer {
+    [self.eventMap removeObjectForKey:observer];
+}
 
 - (NSMutableDictionary *)dictionaryWithObserver:(id)observer {
     NSMapTable *map = self.eventMap;

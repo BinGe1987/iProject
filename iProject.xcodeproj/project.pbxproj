@@ -106,6 +106,8 @@
 		77B0550B21CCD1420045A489 /* ConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0550A21CCD1420045A489 /* ConfigData.m */; };
 		77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0550D21CCD34C0045A489 /* ConfigPerformer.m */; };
 		77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551121CCDB0A0045A489 /* LaunchModule.m */; };
+		77B0551621CCE51D0045A489 /* EventBus+Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551521CCE51D0045A489 /* EventBus+Module.m */; };
+		77B0551921CCE6580045A489 /* Module+Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551821CCE6580045A489 /* Module+Public.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -371,6 +373,10 @@
 		77B0550D21CCD34C0045A489 /* ConfigPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ConfigPerformer.m; path = Code/DataCenter/Config/ConfigPerformer.m; sourceTree = SOURCE_ROOT; };
 		77B0551021CCDB0A0045A489 /* LaunchModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchModule.h; sourceTree = "<group>"; };
 		77B0551121CCDB0A0045A489 /* LaunchModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchModule.m; sourceTree = "<group>"; };
+		77B0551421CCE51D0045A489 /* EventBus+Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventBus+Module.h"; sourceTree = "<group>"; };
+		77B0551521CCE51D0045A489 /* EventBus+Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EventBus+Module.m"; sourceTree = "<group>"; };
+		77B0551721CCE6580045A489 /* Module+Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Module+Public.h"; sourceTree = "<group>"; };
+		77B0551821CCE6580045A489 /* Module+Public.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Module+Public.m"; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -997,6 +1003,15 @@
 			path = Launch;
 			sourceTree = "<group>";
 		};
+		77B0551321CCE4EA0045A489 /* EventBus */ = {
+			isa = PBXGroup;
+			children = (
+				77B0551421CCE51D0045A489 /* EventBus+Module.h */,
+				77B0551521CCE51D0045A489 /* EventBus+Module.m */,
+			);
+			path = EventBus;
+			sourceTree = "<group>";
+		};
 		77EA8E5E21B8F79F001B8959 = {
 			isa = PBXGroup;
 			children = (
@@ -1019,6 +1034,7 @@
 			children = (
 				77EA8E8521B8F979001B8959 /* AppDelegate */,
 				77EA8F7D21B909B2001B8959 /* DataCenter */,
+				77B0551321CCE4EA0045A489 /* EventBus */,
 				77EA8E8121B8F8E5001B8959 /* Module */,
 				77EA8EC221B900EB001B8959 /* Resource */,
 				77EA8E8021B8F881001B8959 /* Supporting Files */,
@@ -1047,6 +1063,8 @@
 				77EA8E8221B8F93C001B8959 /* Main */,
 				77EA8FB821B94B67001B8959 /* Module.h */,
 				77EA8FB921B94B67001B8959 /* Module.m */,
+				77B0551721CCE6580045A489 /* Module+Public.h */,
+				77B0551821CCE6580045A489 /* Module+Public.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -1502,6 +1520,7 @@
 				77B054EF21CB86680045A489 /* NotificationCenter.m in Sources */,
 				77B0544F21C943760045A489 /* YYSpriteSheetImage.m in Sources */,
 				77B0545221C943760045A489 /* YYFrameImage.m in Sources */,
+				77B0551921CCE6580045A489 /* Module+Public.m in Sources */,
 				77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */,
 				77B0545A21C943760045A489 /* YYWebImageOperation.m in Sources */,
 				77EA8FBA21B94B67001B8959 /* Module.m in Sources */,
@@ -1576,6 +1595,7 @@
 				77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */,
 				77B054C321CA52440045A489 /* InputViewParams.m in Sources */,
 				77EA8F5D21B90227001B8959 /* ViewParams.m in Sources */,
+				77B0551621CCE51D0045A489 /* EventBus+Module.m in Sources */,
 				776B55D921BFBD0300793CAF /* WeakProxy.m in Sources */,
 				77EA8F6921B90227001B8959 /* ImageView.m in Sources */,
 				77EA8F3121B90226001B8959 /* Data.m in Sources */,

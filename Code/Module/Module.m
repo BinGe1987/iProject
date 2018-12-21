@@ -11,8 +11,14 @@
 @implementation Module
 
 + (void)launch {
-    [Module configure];
+    //LaunModule在start之后会一起停留在启动页，直接收到App启动完成才会显示关闭启动页。
     [LaunchModule start];
+    
+    //Module配置
+    [Module configure];
+    
+    //从服务器获取Module配置
+    [Module getConfigurationFromServer];
 }
 
 + (void)configure {
@@ -23,13 +29,8 @@
 
 + (void)getConfigurationFromServer {
     [DataCenter perform:Operation_GetConfig params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-        Log(@"");
+        [EventBus postEvent:EventAppLaunchCompleted];
     }];
 }
-
-//+ (void)startLoginAnimated:(BOOL)flag {
-//    UIViewController *vc = [UIViewController topViewController];
-//    [vc.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
-//}
 
 @end

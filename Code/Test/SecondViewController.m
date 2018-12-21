@@ -42,7 +42,6 @@
 {
     Log(@"removeNetworkObserver");
     [Net removeNetworkObserver:self];
-    [Notification removeObserver:self];
 }
 
 @end

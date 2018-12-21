@@ -20,9 +20,9 @@
 
 #import "AppDelegate.h"
 #import "DataCenter+YDD.h"
-#import "Notification+Category.h"
+#import "EventBus+Module.h"
 
-#import "Module.h"
+#import "Module+Public.h"
 #import "Test.h"
 
 #endif

@@ -11,7 +11,10 @@
 @implementation LaunchModule
 
 + (void)start {
+    [LaunchModule setupMain];
+    [LaunchModule showLaunchImage];
     
+    [EventBus addObserver:self selector:@selector(launchFinish) event:EventAppLaunchCompleted];
 }
 
 + (void)setupMain {
@@ -33,20 +36,19 @@
     [app.window bringSubviewToFront:launchImageView];
 }
 
-+ (void)launchFinish:(void (^ _Nullable)(void))finish {
-    //     0.2 秒的延迟执行，避免因不做延迟，导致动画执行卡顿
++ (void)launchFinish {
+    [EventBus removeObserver:self];
+    
     AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
     UIImageView *launchImageView = [app.window viewWithTag:1];
     if (launchImageView) {
+        //0.2 秒的延迟执行，避免因不做延迟，导致动画执行卡顿
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:0.5 animations:^{
                 launchImageView.alpha = 0.0;
                 launchImageView.transform = CGAffineTransformMakeScale(1.0, 1.0);
             } completion:^(BOOL finished) {
                 [launchImageView removeFromSuperview];
-                if (finish) {
-                    finish();
-                }
             }];
         });
     }
