@@ -30,15 +30,14 @@
     }];
     UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];
     [btn2 setClickBlock:^(UIButton * _Nonnull button) {
-        [Notification postLoginStatusNotification:button];
+         [EventBus postEvent:@"abc" data:@"456"];
     }];
-    [Notification addLoginStatusObserver:self selector:@selector(test:)];
+    [EventBus addObserver:self selector:@selector(test:) event:@"abc"];
 }
 
 
-- (void)test:(id)notif {
-    NSString *object = notif;
-    Log(@"TestViewController %@",object);
+- (void)test:(id)data {
+    Log(@"TestViewController %@",data);
 }
 
 - (void)onLayoutSubViewsCompleted {

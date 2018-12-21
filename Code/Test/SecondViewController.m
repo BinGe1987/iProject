@@ -22,16 +22,15 @@
     Log(@"NetStatus %ld", (long)status);
     [Net addNetworkObserver:self selector:@selector(netChangedLisenter:)];
     
-    [Notification addLoginStatusObserver:self selector:@selector(test:)];
     UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];
     [btn2 setClickBlock:^(UIButton * _Nonnull button) {
-        [Notification postLoginStatusNotification:button];
+        [EventBus postEvent:@"abc" data:@"456"];
     }];
+    [EventBus addObserver:self selector:@selector(test:) event:@"abc"];
 }
 
-- (void)test:(id)notif {
-    NSString *object = notif;
-    Log(@"SecondViewController %@",object);
+- (void)test:(id)data {
+    Log(@"SecondViewController %@",data);
 }
 
 - (void)netChangedLisenter:(id)status {
