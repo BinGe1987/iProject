@@ -7,6 +7,8 @@
 
 ///app启动并初始化完成事件
 #define EventAppLaunchCompleted (@"EventAppLaunchCompleted")
+///登录状态改变
+#define EventLoginStatusChanged (@"EventLoginStatusChanged")
 
 #import "EventBus.h"
 

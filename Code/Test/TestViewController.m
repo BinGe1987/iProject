@@ -33,6 +33,15 @@
          [EventBus postEvent:@"abc" data:@"456"];
     }];
     [EventBus addObserver:self selector:@selector(test:) event:@"abc"];
+    
+//    NSString *a = AppInfo.BundleIdentifier;
+//    NSString *b = AppInfo.Build;
+//    NSString *c = AppInfo.DisplayName;
+//    NSString *d = AppInfo.Version;
+//    NSString *e = AppInfo.Device;
+//    NSString *f = AppInfo.SystemVersion;
+//    NSString *g = AppInfo.UUID;
+    
 }
 
 

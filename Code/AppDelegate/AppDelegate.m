@@ -18,7 +18,7 @@
 #pragma mark 调试模式
 ///调试模式启动
 - (void)schemeDebugDidFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //配置基本设置
+    //配置基本设置+第三方库
     [AppDelegate configure];
     //启动module
     [Module launch];

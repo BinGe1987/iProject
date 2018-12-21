@@ -108,6 +108,9 @@
 		77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551121CCDB0A0045A489 /* LaunchModule.m */; };
 		77B0551621CCE51D0045A489 /* EventBus+Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551521CCE51D0045A489 /* EventBus+Module.m */; };
 		77B0551921CCE6580045A489 /* Module+Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551821CCE6580045A489 /* Module+Public.m */; };
+		77B0551C21CD247E0045A489 /* MainModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551B21CD247E0045A489 /* MainModule.m */; };
+		77B0552121CD27480045A489 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0552021CD27480045A489 /* MainNavigationController.m */; };
+		77B0552821CD82510045A489 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0552721CD82510045A489 /* AppInfo.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -160,7 +163,6 @@
 		77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FB121B94ADE001B8959 /* BaseNavigationController.m */; };
 		77EA8FBA21B94B67001B8959 /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FB921B94B67001B8959 /* Module.m */; };
 		77EA8FBE21B94BB5001B8959 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FBD21B94BB5001B8959 /* Test.m */; };
-		77EA8FC221B952C2001B8959 /* MainNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FC121B952C2001B8959 /* MainNavController.m */; };
 		77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FC521B95584001B8959 /* MainTabbarController.m */; };
 		77EA8FC921B96A7D001B8959 /* home_logout.json in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8FC821B96A7D001B8959 /* home_logout.json */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
@@ -377,6 +379,12 @@
 		77B0551521CCE51D0045A489 /* EventBus+Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EventBus+Module.m"; sourceTree = "<group>"; };
 		77B0551721CCE6580045A489 /* Module+Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Module+Public.h"; sourceTree = "<group>"; };
 		77B0551821CCE6580045A489 /* Module+Public.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Module+Public.m"; sourceTree = "<group>"; };
+		77B0551A21CD247E0045A489 /* MainModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModule.h; sourceTree = "<group>"; };
+		77B0551B21CD247E0045A489 /* MainModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModule.m; sourceTree = "<group>"; };
+		77B0551F21CD27480045A489 /* MainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		77B0552021CD27480045A489 /* MainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
+		77B0552621CD82510045A489 /* AppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		77B0552721CD82510045A489 /* AppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -489,8 +497,6 @@
 		77EA8FB921B94B67001B8959 /* Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
 		77EA8FBC21B94BB5001B8959 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		77EA8FBD21B94BB5001B8959 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
-		77EA8FC021B952C2001B8959 /* MainNavController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavController.h; sourceTree = "<group>"; };
-		77EA8FC121B952C2001B8959 /* MainNavController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavController.m; sourceTree = "<group>"; };
 		77EA8FC421B95584001B8959 /* MainTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarController.h; sourceTree = "<group>"; };
 		77EA8FC521B95584001B8959 /* MainTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabbarController.m; sourceTree = "<group>"; };
 		77EA8FC821B96A7D001B8959 /* home_logout.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home_logout.json; sourceTree = "<group>"; };
@@ -1012,6 +1018,34 @@
 			path = EventBus;
 			sourceTree = "<group>";
 		};
+		77B0551D21CD27200045A489 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				77B0551E21CD272C0045A489 /* Controller */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		77B0551E21CD272C0045A489 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				77EA8FC421B95584001B8959 /* MainTabbarController.h */,
+				77EA8FC521B95584001B8959 /* MainTabbarController.m */,
+				77B0551F21CD27480045A489 /* MainNavigationController.h */,
+				77B0552021CD27480045A489 /* MainNavigationController.m */,
+				775B15F621C89A3D00B8D6FF /* MainViewController.h */,
+				775B15F721C89A3D00B8D6FF /* MainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		77B0552321CD27AC0045A489 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		77EA8E5E21B8F79F001B8959 = {
 			isa = PBXGroup;
 			children = (
@@ -1057,7 +1091,7 @@
 			isa = PBXGroup;
 			children = (
 				77EA8F7621B90536001B8959 /* Base */,
-				77EA8F7721B9053B001B8959 /* Common */,
+				77B0552321CD27AC0045A489 /* Common */,
 				77B0550F21CCDAE10045A489 /* Launch */,
 				77EA8E8321B8F947001B8959 /* Login */,
 				77EA8E8221B8F93C001B8959 /* Main */,
@@ -1072,12 +1106,11 @@
 		77EA8E8221B8F93C001B8959 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				77B0551D21CD27200045A489 /* Base */,
 				774F017021B9725D00CB482F /* Home */,
 				774F017121B9726400CB482F /* Mine */,
-				77EA8FC421B95584001B8959 /* MainTabbarController.h */,
-				77EA8FC521B95584001B8959 /* MainTabbarController.m */,
-				775B15F621C89A3D00B8D6FF /* MainViewController.h */,
-				775B15F721C89A3D00B8D6FF /* MainViewController.m */,
+				77B0551A21CD247E0045A489 /* MainModule.h */,
+				77B0551B21CD247E0045A489 /* MainModule.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1170,6 +1203,8 @@
 				77EA8ED221B90226001B8959 /* Objects */,
 				77EA8F9821B91F0B001B8959 /* Controller */,
 				77EA8ED721B90226001B8959 /* View */,
+				77B0552621CD82510045A489 /* AppInfo.h */,
+				77B0552721CD82510045A489 /* AppInfo.m */,
 				77EA8ED821B90226001B8959 /* BaseHeader.h */,
 			);
 			path = Base;
@@ -1345,15 +1380,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		77EA8F7721B9053B001B8959 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				77EA8FC021B952C2001B8959 /* MainNavController.h */,
-				77EA8FC121B952C2001B8959 /* MainNavController.m */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
 		77EA8F7821B9070F001B8959 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -1513,7 +1539,6 @@
 				77EA8E9C21B8FCF9001B8959 /* TestViewController.m in Sources */,
 				77EA8F3D21B90226001B8959 /* ViewController.m in Sources */,
 				77B054B321CA4B500045A489 /* IQKeyboardReturnKeyHandler.m in Sources */,
-				77EA8FC221B952C2001B8959 /* MainNavController.m in Sources */,
 				775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */,
 				77B054B121CA4B500045A489 /* IQUIView+Hierarchy.m in Sources */,
 				77EA8FAC21B92704001B8959 /* UIImageView+WebImage.m in Sources */,
@@ -1580,6 +1605,7 @@
 				77B054CC21CA55E70045A489 /* LabelViewModel.m in Sources */,
 				77EA8F8D21B90A18001B8959 /* HomeHandler.m in Sources */,
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
+				77B0551C21CD247E0045A489 /* MainModule.m in Sources */,
 				77B0545821C943760045A489 /* UIImage+YYWebImage.m in Sources */,
 				77B054BA21CA4F670045A489 /* Store.m in Sources */,
 				77B0547721CA46DC0045A489 /* KSPhotoView.m in Sources */,
@@ -1625,6 +1651,7 @@
 				77B054A721CA4B500045A489 /* IQToolbar.m in Sources */,
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
 				775B15EC21C78FE500B8D6FF /* ColorUtils.m in Sources */,
+				77B0552121CD27480045A489 /* MainNavigationController.m in Sources */,
 				77B054A621CA4B500045A489 /* IQTextView.m in Sources */,
 				77B0545021C943760045A489 /* YYImage.m in Sources */,
 				77EA8F7321B90227001B8959 /* UIEngine.m in Sources */,
@@ -1640,6 +1667,7 @@
 				77EA8F4B21B90226001B8959 /* FrameViewModel.m in Sources */,
 				77EA8F4521B90226001B8959 /* ImageViewModel.m in Sources */,
 				776B55D621BFAB7E00793CAF /* UIButton+OnClick.m in Sources */,
+				77B0552821CD82510045A489 /* AppInfo.m in Sources */,
 				77B0545421C943760045A489 /* _YYWebImageSetter.m in Sources */,
 				77EA8F8921B90A18001B8959 /* UserHandler.m in Sources */,
 				776B55FB21C14A0800793CAF /* ScrollView.m in Sources */,

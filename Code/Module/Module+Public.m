@@ -6,12 +6,13 @@
 //
 
 #import "Module+Public.h"
+#import "LoginViewController.h"
 
 @implementation Module (Public)
 
-//+ (void)startLoginAnimated:(BOOL)flag {
-//    UIViewController *vc = [UIViewController topViewController];
-//    [vc.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
-//}
++ (void)login {
+    UIViewController *vc = [UIViewController topViewController];
+    [vc.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
+}
 
 @end

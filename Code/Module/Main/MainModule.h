@@ -1,17 +1,17 @@
 //
-//  Module+Public.h
+//  MainModule.h
 //  APP
 //
 //  Created by BinGe on 2018/12/21.
 //
 
-#import "Module.h"
+#import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Module (Public)
+@interface MainModule : NSObject
 
-+ (void)login;
+- (void)setup;
 
 @end
 

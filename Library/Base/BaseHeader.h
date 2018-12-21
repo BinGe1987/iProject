@@ -9,6 +9,7 @@
 #ifndef BaseHeader_h
 #define BaseHeader_h
 
+#import "AppInfo.h"
 #import "WeakProxy.h"
 #import "BaseControllerHeader.h"
 #import "BaseViewHeader.h"
