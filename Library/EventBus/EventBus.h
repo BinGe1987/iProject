@@ -7,9 +7,15 @@
 
 #import <Foundation/Foundation.h>
 
+typedef NSString *EventName NS_EXTENSIBLE_STRING_ENUM;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface EventBus : NSObject
+
++ (void)addObserver:(id)observer selector:(SEL)selector event:(EventName)name;
+
++ (void)postEvent:(EventName)name data:(nullable id)data;
 
 @end
 
