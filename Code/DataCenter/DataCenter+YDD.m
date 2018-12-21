@@ -9,6 +9,10 @@
 
 @implementation DataCenter (YDD)
 
+- (ConfigData *)configData {
+    return (ConfigData *)[self getData: [ConfigHandler class]];
+}
+
 - (UserData *)userData {
     return (UserData *)[self getData: [UserHandler class]];
 }

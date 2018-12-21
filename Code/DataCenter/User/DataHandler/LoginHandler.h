@@ -9,9 +9,6 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-///自动登录
-#define Operation_Login_check (@"Operation_Login_check")
-
 @interface LoginHandler : DataHandler<HandlerDelegate>
 
 @end

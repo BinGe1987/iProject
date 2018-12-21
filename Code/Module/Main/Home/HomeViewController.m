@@ -21,7 +21,7 @@
 
     UIButton *btn = (UIButton *)[self findViewByName:@"btn1"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [Module startLoginAnimated:YES];
+//        [Module startLoginAnimated:YES];
     }];
 }
 

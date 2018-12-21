@@ -61,6 +61,10 @@ singleton_implementation(DataCenter)
     TOCK
 }
 
++ (void)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callbak {
+    [[DataCenter get] perform:operation params:params callback:callbak];
+}
+
 - (void)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callbak {
     
     [self.operationQueue addOperationWithBlock:^{

@@ -6,37 +6,30 @@
 //
 
 #import "Module.h"
-
-#import "MainNavController.h"
-#import "MainTabbarController.h"
-#import "LoginViewController.h"
-#import "ViewController.h"
+#import "LaunchModule.h"
 
 @implementation Module
 
 + (void)launch {
-    //初始化主页面
-    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    app.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    app.window.backgroundColor = [UIColor whiteColor];
-    MainTabbarController *nv = [[MainTabbarController alloc] init];
-    app.window.rootViewController = nv;
-    [app.window makeKeyAndVisible];
+    [Module configure];
+    [LaunchModule start];
 }
 
-+ (void)checkLogin:(void (^)(BOOL isLogin))finish {
-    [[DataCenter get] perform:Operation_Login_check params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-        BOOL isLogin = [DataCenter get].userData.isLogin;
-        if (!isLogin) {
-//            [Module startLoginAnimated:YES];
-        }
-        finish(isLogin);
++ (void)configure {
+    NetConfig *config = [NetConfig new];
+    config.baseUrl = @"www.baidu.com";
+    [Net configure:config];
+}
+
++ (void)getConfigurationFromServer {
+    [DataCenter perform:Operation_GetConfig params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+        Log(@"");
     }];
 }
 
-+ (void)startLoginAnimated:(BOOL)flag {
-    UIViewController *vc = [UIViewController topViewController];
-    [vc.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
-}
+//+ (void)startLoginAnimated:(BOOL)flag {
+//    UIViewController *vc = [UIViewController topViewController];
+//    [vc.navigationController pushViewController:[[LoginViewController alloc] init] animated:YES];
+//}
 
 @end

@@ -9,27 +9,8 @@
 
 @implementation AppDelegate (Config)
 
-- (void)configure {
-    [self configureKeyboardManager];
-    [self configureNetworkEnvironment];
-    [self configurePushService];
-}
-
-///
-- (void)configureKeyboardManager {
++ (void)configure {
     [IQKeyboardManager sharedManager].enable = YES;
-}
-
-///配置网络环境
-- (void)configureNetworkEnvironment {
-    NetConfig *config = [NetConfig new];
-    config.baseUrl = @"www.baidu.com";
-    [Net configure:config];
-}
-
-///配置推送服务
-- (void)configurePushService {
-    
 }
 
 @end

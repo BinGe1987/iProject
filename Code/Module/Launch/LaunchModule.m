@@ -1,27 +1,42 @@
 //
-//  AppDelegate+Launch.m
-//  iProject
+//  LaunchModule.m
+//  APP
 //
-//  Created by BinGe on 2018/12/7.
+//  Created by BinGe on 2018/12/21.
 //
 
-#import "AppDelegate+Launch.h"
+#import "LaunchModule.h"
+#import "MainTabbarController.h"
 
-@implementation AppDelegate (Launch)
+@implementation LaunchModule
 
-- (void)launch {
-    // 注:要在[self.window makeKeyAndVisible]之后添加imageView
-    // 这里因为在Scheme已经设置了makeKeyAndVisible，所以这里不需要
-    UIImageView *launchImageView = [[UIImageView alloc] initWithFrame:self.window.bounds];
-    launchImageView.tag = 1;
-    launchImageView.image = [AppDelegate launchImage];
-    [self.window addSubview:launchImageView];
-    [self.window bringSubviewToFront:launchImageView];
++ (void)start {
+    
 }
 
-- (void)launchFinish:(void (^ _Nullable )(void))finish {
-//     0.2 秒的延迟执行，避免因不做延迟，导致动画执行卡顿
-    UIImageView *launchImageView = [self.window viewWithTag:1];
++ (void)setupMain {
+    //初始化主页面
+    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    app.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    app.window.backgroundColor = [UIColor whiteColor];
+    MainTabbarController *nv = [[MainTabbarController alloc] init];
+    app.window.rootViewController = nv;
+    [app.window makeKeyAndVisible];
+}
+
++ (void)showLaunchImage {
+    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    UIImageView *launchImageView = [[UIImageView alloc] initWithFrame:app.window.bounds];
+    launchImageView.tag = 1;
+    launchImageView.image = [LaunchModule launchImage];
+    [app.window addSubview:launchImageView];
+    [app.window bringSubviewToFront:launchImageView];
+}
+
++ (void)launchFinish:(void (^ _Nullable)(void))finish {
+    //     0.2 秒的延迟执行，避免因不做延迟，导致动画执行卡顿
+    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    UIImageView *launchImageView = [app.window viewWithTag:1];
     if (launchImageView) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
             [UIView animateWithDuration:0.5 animations:^{

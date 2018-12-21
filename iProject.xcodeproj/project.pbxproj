@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7742662E21BA759900B21AE5 /* AppDelegate+Launch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7742662D21BA759900B21AE5 /* AppDelegate+Launch.m */; };
 		774F017421B9728900CB482F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774F017321B9728900CB482F /* MineViewController.m */; };
 		775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E221C3DDBA00B8D6FF /* UIViewController+Util.m */; };
 		775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E721C75DF600B8D6FF /* ImageUtils.m */; };
@@ -103,6 +102,10 @@
 		77B054F321CB8D240045A489 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054F221CB8D240045A489 /* Notification.m */; };
 		77B054FB21CBC5F10045A489 /* Notification+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054FA21CBC5F10045A489 /* Notification+Category.m */; };
 		77B054FF21CBE6910045A489 /* EventBus.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B054FE21CBE6910045A489 /* EventBus.m */; };
+		77B0550821CCD0D90045A489 /* ConfigHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0550721CCD0D90045A489 /* ConfigHandler.m */; };
+		77B0550B21CCD1420045A489 /* ConfigData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0550A21CCD1420045A489 /* ConfigData.m */; };
+		77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0550D21CCD34C0045A489 /* ConfigPerformer.m */; };
+		77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551121CCDB0A0045A489 /* LaunchModule.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -165,8 +168,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7742662C21BA759800B21AE5 /* AppDelegate+Launch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Launch.h"; sourceTree = "<group>"; };
-		7742662D21BA759900B21AE5 /* AppDelegate+Launch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Launch.m"; sourceTree = "<group>"; };
 		774F017221B9728900CB482F /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		774F017321B9728900CB482F /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		775B15E121C3DDBA00B8D6FF /* UIViewController+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Util.h"; sourceTree = "<group>"; };
@@ -362,6 +363,14 @@
 		77B054FA21CBC5F10045A489 /* Notification+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Notification+Category.m"; sourceTree = "<group>"; };
 		77B054FD21CBE6910045A489 /* EventBus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventBus.h; sourceTree = "<group>"; };
 		77B054FE21CBE6910045A489 /* EventBus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EventBus.m; sourceTree = "<group>"; };
+		77B0550621CCD0D90045A489 /* ConfigHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConfigHandler.h; path = Code/DataCenter/Config/ConfigHandler.h; sourceTree = SOURCE_ROOT; };
+		77B0550721CCD0D90045A489 /* ConfigHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ConfigHandler.m; path = Code/DataCenter/Config/ConfigHandler.m; sourceTree = SOURCE_ROOT; };
+		77B0550921CCD1420045A489 /* ConfigData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConfigData.h; path = Code/DataCenter/Config/ConfigData.h; sourceTree = SOURCE_ROOT; };
+		77B0550A21CCD1420045A489 /* ConfigData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ConfigData.m; path = Code/DataCenter/Config/ConfigData.m; sourceTree = SOURCE_ROOT; };
+		77B0550C21CCD34C0045A489 /* ConfigPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConfigPerformer.h; path = Code/DataCenter/Config/ConfigPerformer.h; sourceTree = SOURCE_ROOT; };
+		77B0550D21CCD34C0045A489 /* ConfigPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ConfigPerformer.m; path = Code/DataCenter/Config/ConfigPerformer.m; sourceTree = SOURCE_ROOT; };
+		77B0551021CCDB0A0045A489 /* LaunchModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LaunchModule.h; sourceTree = "<group>"; };
+		77B0551121CCDB0A0045A489 /* LaunchModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchModule.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -965,6 +974,29 @@
 			path = EventBus;
 			sourceTree = "<group>";
 		};
+		77B0550521CCCDEE0045A489 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				77B0550621CCD0D90045A489 /* ConfigHandler.h */,
+				77B0550721CCD0D90045A489 /* ConfigHandler.m */,
+				77B0550C21CCD34C0045A489 /* ConfigPerformer.h */,
+				77B0550D21CCD34C0045A489 /* ConfigPerformer.m */,
+				77B0550921CCD1420045A489 /* ConfigData.h */,
+				77B0550A21CCD1420045A489 /* ConfigData.m */,
+			);
+			name = Config;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		77B0550F21CCDAE10045A489 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				77B0551021CCDB0A0045A489 /* LaunchModule.h */,
+				77B0551121CCDB0A0045A489 /* LaunchModule.m */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
 		77EA8E5E21B8F79F001B8959 = {
 			isa = PBXGroup;
 			children = (
@@ -1010,6 +1042,7 @@
 			children = (
 				77EA8F7621B90536001B8959 /* Base */,
 				77EA8F7721B9053B001B8959 /* Common */,
+				77B0550F21CCDAE10045A489 /* Launch */,
 				77EA8E8321B8F947001B8959 /* Login */,
 				77EA8E8221B8F93C001B8959 /* Main */,
 				77EA8FB821B94B67001B8959 /* Module.h */,
@@ -1048,8 +1081,6 @@
 				77EA8E6B21B8F79F001B8959 /* AppDelegate.m */,
 				77B053D021C8AEB30045A489 /* AppDelegate+Config.h */,
 				77B053D121C8AEB30045A489 /* AppDelegate+Config.m */,
-				7742662C21BA759800B21AE5 /* AppDelegate+Launch.h */,
-				7742662D21BA759900B21AE5 /* AppDelegate+Launch.m */,
 			);
 			path = AppDelegate;
 			sourceTree = "<group>";
@@ -1321,6 +1352,7 @@
 		77EA8F7D21B909B2001B8959 /* DataCenter */ = {
 			isa = PBXGroup;
 			children = (
+				77B0550521CCCDEE0045A489 /* Config */,
 				77EA8F7F21B90A18001B8959 /* User */,
 				77EA8F8521B90A18001B8959 /* Home */,
 				776B55A621BE628900793CAF /* DataCenter+YDD.h */,
@@ -1483,7 +1515,6 @@
 				77B054D821CA9C720045A489 /* TableViewModel.m in Sources */,
 				77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */,
 				77B054C921CA55870045A489 /* LabelView.m in Sources */,
-				7742662E21BA759900B21AE5 /* AppDelegate+Launch.m in Sources */,
 				77B054E821CB486C0045A489 /* NetReachability.m in Sources */,
 				77B054AF21CA4B500045A489 /* IQUITextFieldView+Additions.m in Sources */,
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
@@ -1542,6 +1573,7 @@
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,
+				77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */,
 				77B054C321CA52440045A489 /* InputViewParams.m in Sources */,
 				77EA8F5D21B90227001B8959 /* ViewParams.m in Sources */,
 				776B55D921BFBD0300793CAF /* WeakProxy.m in Sources */,
@@ -1553,6 +1585,7 @@
 				77B054B021CA4B500045A489 /* IQUIScrollView+Additions.m in Sources */,
 				77EA8F3321B90226001B8959 /* JSON.m in Sources */,
 				77B054EB21CB63FD0045A489 /* SecondViewController.m in Sources */,
+				77B0550B21CCD1420045A489 /* ConfigData.m in Sources */,
 				775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */,
 				77B0544B21C943760045A489 /* YYCache.m in Sources */,
 				77EA8F3F21B90226001B8959 /* MVPViewController.m in Sources */,
@@ -1578,6 +1611,7 @@
 				77EA8F4721B90226001B8959 /* TextViewModel.m in Sources */,
 				77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */,
 				77B054A921CA4B500045A489 /* IQBarButtonItem.m in Sources */,
+				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,
 				776B55B321BE6B1500793CAF /* Button.m in Sources */,
@@ -1598,6 +1632,7 @@
 				77EA8F9B21B91F8C001B8959 /* NavigationController.m in Sources */,
 				77B054AA21CA4B500045A489 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				77B054AB21CA4B500045A489 /* IQPreviousNextView.m in Sources */,
+				77B0550821CCD0D90045A489 /* ConfigHandler.m in Sources */,
 				77EA8F6721B90227001B8959 /* LinearLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

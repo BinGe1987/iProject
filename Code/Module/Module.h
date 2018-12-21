@@ -13,10 +13,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 启动，appdelegate启动时调用
 + (void)launch;
-///检查登录,在启动页时做此操作
-+ (void)checkLogin:(void (^)(BOOL isLogin))finish;
-///打开登录页
-+ (void)startLoginAnimated:(BOOL)flag;
+
+
+/////获取网络配置信息
+//+ (void)configure:(void (^)(void))finish;
+/////打开登录页
+//+ (void)startLoginAnimated:(BOOL)flag;
 
 @end
 

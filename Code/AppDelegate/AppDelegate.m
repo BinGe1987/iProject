@@ -6,7 +6,6 @@
 //
 
 #import "AppDelegate.h"
-#import "AppDelegate+Launch.h"
 #import "AppDelegate+Config.h"
 
 
@@ -19,20 +18,10 @@
 #pragma mark 调试模式
 ///调试模式启动
 - (void)schemeDebugDidFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    //配置基本设置，详见（AppDelegate+Config）
-    [self configure];
-    
-    //module中是整个app的页面逻辑
+    //配置基本设置
+    [AppDelegate configure];
+    //启动module
     [Module launch];
-    ///先显示启动页，并hold住
-    [self launch];
-    ///检查登录状态
-    WeakSelf(self)
-    [Module checkLogin:^(BOOL isLogin) {
-        ///播放启动页结束动画
-        [weakself launchFinish:nil];
-    }];
 }
 
 #pragma mark 测试模式
