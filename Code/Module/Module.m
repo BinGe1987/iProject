@@ -28,7 +28,7 @@
 }
 
 + (void)getConfigurationFromServer {
-    [DataCenter perform:Operation_GetConfig params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+    [DataCenter perform:OperationGetConfig params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         [EventBus postEvent:EventAppLaunchCompleted];
     }];
 }

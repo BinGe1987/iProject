@@ -21,7 +21,7 @@
     self = [super init];
     if (self) {
         self.data = [ConfigData new];
-        [self bind:Operation_GetConfig performer:[ConfigPerformer new] parser:self];
+        [self bind:OperationGetConfig performer:[ConfigPerformer new] parser:self];
     }
     return self;
 }

@@ -14,9 +14,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 ///获取配置信息
-#define Operation_GetConfig (@"Operation_GetConfig")
+#define OperationGetConfig (@"OperationGetConfig")
 ///自动登录
-#define Operation_LoginCheck (@"Operation_LoginCheck")
+#define OperationLoginCheck (@"OperationLoginCheck")
 
 @interface DataCenter (YDD)
 

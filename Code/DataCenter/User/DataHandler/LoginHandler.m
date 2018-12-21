@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        [self bind:Operation_LoginCheck performer:[CheckLoginPerfomer new] parser:nil];
+        [self bind:OperationLoginCheck performer:[CheckLoginPerfomer new] parser:nil];
     }
     return self;
 }
