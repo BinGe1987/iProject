@@ -24,7 +24,8 @@
     
     UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];
     [btn2 setClickBlock:^(UIButton * _Nonnull button) {
-        [EventBus postEvent:@"abc" data:@"456"];
+//        [EventBus postEvent:@"abc" data:@"456"];
+        [self abc:@"123" cba:@"456"];
     }];
     [EventBus addObserver:self selector:@selector(test:) event:@"abc"];
 }
@@ -42,6 +43,10 @@
 {
     Log(@"removeNetworkObserver");
     [Net removeNetworkObserver:self];
+}
+
+- (void)abc:(NSString *)aaa cba:(NSString *)bbb {
+    
 }
 
 @end

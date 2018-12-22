@@ -113,6 +113,7 @@
 		77B0552B21CE8AE30045A489 /* BaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0552A21CE8AE30045A489 /* BaseModule.m */; };
 		77B0552E21CE8B280045A489 /* AppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0552D21CE8B280045A489 /* AppModule.m */; };
 		77B0553221CE96ED0045A489 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0553121CE96EC0045A489 /* Aspects.m */; };
+		77B0553821CEAE530045A489 /* Aspects+My.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0553721CEAE530045A489 /* Aspects+My.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -391,6 +392,8 @@
 		77B0552D21CE8B280045A489 /* AppModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppModule.m; sourceTree = "<group>"; };
 		77B0553021CE96EC0045A489 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
 		77B0553121CE96EC0045A489 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		77B0553621CEAE530045A489 /* Aspects+My.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Aspects+My.h"; sourceTree = "<group>"; };
+		77B0553721CEAE530045A489 /* Aspects+My.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Aspects+My.m"; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1049,6 +1052,8 @@
 			children = (
 				77B0553021CE96EC0045A489 /* Aspects.h */,
 				77B0553121CE96EC0045A489 /* Aspects.m */,
+				77B0553621CEAE530045A489 /* Aspects+My.h */,
+				77B0553721CEAE530045A489 /* Aspects+My.m */,
 			);
 			path = Aspects;
 			sourceTree = "<group>";
@@ -1160,6 +1165,7 @@
 			isa = PBXGroup;
 			children = (
 				77EA8ED121B90226001B8959 /* Base */,
+				77B0552F21CE96D00045A489 /* Aspects */,
 				77EA8EE821B90226001B8959 /* Common */,
 				77B054EC21CB86280045A489 /* Notification */,
 				77B054FC21CBE6360045A489 /* EventBus */,
@@ -1207,7 +1213,6 @@
 			isa = PBXGroup;
 			children = (
 				77EA8ED221B90226001B8959 /* Objects */,
-				77B0552F21CE96D00045A489 /* Aspects */,
 				77EA8F9821B91F0B001B8959 /* Controller */,
 				77EA8ED721B90226001B8959 /* View */,
 				77B0552621CD82510045A489 /* AppInfo.h */,
@@ -1668,6 +1673,7 @@
 				77EA8F4721B90226001B8959 /* TextViewModel.m in Sources */,
 				77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */,
 				77B054A921CA4B500045A489 /* IQBarButtonItem.m in Sources */,
+				77B0553821CEAE530045A489 /* Aspects+My.m in Sources */,
 				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,

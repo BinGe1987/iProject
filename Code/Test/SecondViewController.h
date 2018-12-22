@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SecondViewController : BaseViewController
 
+- (void)abc:(NSString *)aaa cba:(NSString *)bbb;
+
 @end
 
 NS_ASSUME_NONNULL_END
