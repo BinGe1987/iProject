@@ -107,10 +107,12 @@
 		77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0550D21CCD34C0045A489 /* ConfigPerformer.m */; };
 		77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551121CCDB0A0045A489 /* LaunchModule.m */; };
 		77B0551621CCE51D0045A489 /* EventBus+Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551521CCE51D0045A489 /* EventBus+Module.m */; };
-		77B0551921CCE6580045A489 /* Module+Public.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551821CCE6580045A489 /* Module+Public.m */; };
 		77B0551C21CD247E0045A489 /* MainModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0551B21CD247E0045A489 /* MainModule.m */; };
 		77B0552121CD27480045A489 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0552021CD27480045A489 /* MainNavigationController.m */; };
 		77B0552821CD82510045A489 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0552721CD82510045A489 /* AppInfo.m */; };
+		77B0552B21CE8AE30045A489 /* BaseModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0552A21CE8AE30045A489 /* BaseModule.m */; };
+		77B0552E21CE8B280045A489 /* AppModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0552D21CE8B280045A489 /* AppModule.m */; };
+		77B0553221CE96ED0045A489 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0553121CE96EC0045A489 /* Aspects.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -377,14 +379,18 @@
 		77B0551121CCDB0A0045A489 /* LaunchModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LaunchModule.m; sourceTree = "<group>"; };
 		77B0551421CCE51D0045A489 /* EventBus+Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EventBus+Module.h"; sourceTree = "<group>"; };
 		77B0551521CCE51D0045A489 /* EventBus+Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EventBus+Module.m"; sourceTree = "<group>"; };
-		77B0551721CCE6580045A489 /* Module+Public.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Module+Public.h"; sourceTree = "<group>"; };
-		77B0551821CCE6580045A489 /* Module+Public.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Module+Public.m"; sourceTree = "<group>"; };
 		77B0551A21CD247E0045A489 /* MainModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainModule.h; sourceTree = "<group>"; };
 		77B0551B21CD247E0045A489 /* MainModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainModule.m; sourceTree = "<group>"; };
 		77B0551F21CD27480045A489 /* MainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
 		77B0552021CD27480045A489 /* MainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 		77B0552621CD82510045A489 /* AppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
 		77B0552721CD82510045A489 /* AppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		77B0552921CE8AE30045A489 /* BaseModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModule.h; sourceTree = "<group>"; };
+		77B0552A21CE8AE30045A489 /* BaseModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModule.m; sourceTree = "<group>"; };
+		77B0552C21CE8B280045A489 /* AppModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppModule.h; sourceTree = "<group>"; };
+		77B0552D21CE8B280045A489 /* AppModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppModule.m; sourceTree = "<group>"; };
+		77B0553021CE96EC0045A489 /* Aspects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		77B0553121CE96EC0045A489 /* Aspects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -996,8 +1002,7 @@
 				77B0550921CCD1420045A489 /* ConfigData.h */,
 				77B0550A21CCD1420045A489 /* ConfigData.m */,
 			);
-			name = Config;
-			path = "New Group";
+			path = Config;
 			sourceTree = "<group>";
 		};
 		77B0550F21CCDAE10045A489 /* Launch */ = {
@@ -1039,11 +1044,13 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		77B0552321CD27AC0045A489 /* Common */ = {
+		77B0552F21CE96D00045A489 /* Aspects */ = {
 			isa = PBXGroup;
 			children = (
+				77B0553021CE96EC0045A489 /* Aspects.h */,
+				77B0553121CE96EC0045A489 /* Aspects.m */,
 			);
-			path = Common;
+			path = Aspects;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -1091,14 +1098,13 @@
 			isa = PBXGroup;
 			children = (
 				77EA8F7621B90536001B8959 /* Base */,
-				77B0552321CD27AC0045A489 /* Common */,
 				77B0550F21CCDAE10045A489 /* Launch */,
 				77EA8E8321B8F947001B8959 /* Login */,
 				77EA8E8221B8F93C001B8959 /* Main */,
 				77EA8FB821B94B67001B8959 /* Module.h */,
 				77EA8FB921B94B67001B8959 /* Module.m */,
-				77B0551721CCE6580045A489 /* Module+Public.h */,
-				77B0551821CCE6580045A489 /* Module+Public.m */,
+				77B0552C21CE8B280045A489 /* AppModule.h */,
+				77B0552D21CE8B280045A489 /* AppModule.m */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -1201,6 +1207,7 @@
 			isa = PBXGroup;
 			children = (
 				77EA8ED221B90226001B8959 /* Objects */,
+				77B0552F21CE96D00045A489 /* Aspects */,
 				77EA8F9821B91F0B001B8959 /* Controller */,
 				77EA8ED721B90226001B8959 /* View */,
 				77B0552621CD82510045A489 /* AppInfo.h */,
@@ -1376,6 +1383,8 @@
 			isa = PBXGroup;
 			children = (
 				77EA8F7821B9070F001B8959 /* Controller */,
+				77B0552921CE8AE30045A489 /* BaseModule.h */,
+				77B0552A21CE8AE30045A489 /* BaseModule.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1545,7 +1554,6 @@
 				77B054EF21CB86680045A489 /* NotificationCenter.m in Sources */,
 				77B0544F21C943760045A489 /* YYSpriteSheetImage.m in Sources */,
 				77B0545221C943760045A489 /* YYFrameImage.m in Sources */,
-				77B0551921CCE6580045A489 /* Module+Public.m in Sources */,
 				77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */,
 				77B0545A21C943760045A489 /* YYWebImageOperation.m in Sources */,
 				77EA8FBA21B94B67001B8959 /* Module.m in Sources */,
@@ -1564,6 +1572,7 @@
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
 				776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */,
 				77B054AE21CA4B500045A489 /* IQNSArray+Sort.m in Sources */,
+				77B0552B21CE8AE30045A489 /* BaseModule.m in Sources */,
 				775B15F221C7D4AC00B8D6FF /* UIViewController+ContentView.m in Sources */,
 				77B0544921C943760045A489 /* YYImageCache.m in Sources */,
 				77EA8F2921B90226001B8959 /* DataHandler.m in Sources */,
@@ -1651,6 +1660,7 @@
 				77B054A721CA4B500045A489 /* IQToolbar.m in Sources */,
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
 				775B15EC21C78FE500B8D6FF /* ColorUtils.m in Sources */,
+				77B0553221CE96ED0045A489 /* Aspects.m in Sources */,
 				77B0552121CD27480045A489 /* MainNavigationController.m in Sources */,
 				77B054A621CA4B500045A489 /* IQTextView.m in Sources */,
 				77B0545021C943760045A489 /* YYImage.m in Sources */,
@@ -1680,6 +1690,7 @@
 				77EA8F9B21B91F8C001B8959 /* NavigationController.m in Sources */,
 				77B054AA21CA4B500045A489 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				77B054AB21CA4B500045A489 /* IQPreviousNextView.m in Sources */,
+				77B0552E21CE8B280045A489 /* AppModule.m in Sources */,
 				77B0550821CCD0D90045A489 /* ConfigHandler.m in Sources */,
 				77EA8F6721B90227001B8959 /* LinearLayout.m in Sources */,
 			);

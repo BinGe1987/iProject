@@ -21,7 +21,7 @@
     //配置基本设置+第三方库
     [AppDelegate configure];
     //启动module
-    [Module launch];
+//    [Module launch];
 }
 
 #pragma mark 测试模式

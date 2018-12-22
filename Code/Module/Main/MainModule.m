@@ -9,7 +9,7 @@
 
 @implementation MainModule
 
-- (void)setup {
++ (void)setup {
     
 }
 

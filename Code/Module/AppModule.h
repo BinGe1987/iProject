@@ -1,16 +1,15 @@
 //
-//  MainModule.h
+//  AppModule.h
 //  APP
 //
-//  Created by BinGe on 2018/12/21.
+//  Created by BinGe on 2018/12/22.
 //
 
 #import "BaseModule.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MainModule : BaseModule
-
+@interface AppModule : BaseModule
 
 @end
 
