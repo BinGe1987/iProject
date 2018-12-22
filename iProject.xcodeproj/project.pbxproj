@@ -164,7 +164,6 @@
 		77EA8FA321B92022001B8959 /* TabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FA221B92022001B8959 /* TabbarController.m */; };
 		77EA8FAC21B92704001B8959 /* UIImageView+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FAB21B92704001B8959 /* UIImageView+WebImage.m */; };
 		77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FB121B94ADE001B8959 /* BaseNavigationController.m */; };
-		77EA8FBA21B94B67001B8959 /* Module.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FB921B94B67001B8959 /* Module.m */; };
 		77EA8FBE21B94BB5001B8959 /* Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FBD21B94BB5001B8959 /* Test.m */; };
 		77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FC521B95584001B8959 /* MainTabbarController.m */; };
 		77EA8FC921B96A7D001B8959 /* home_logout.json in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8FC821B96A7D001B8959 /* home_logout.json */; };
@@ -502,8 +501,6 @@
 		77EA8FAF21B92825001B8959 /* BaseViewHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewHeader.h; sourceTree = "<group>"; };
 		77EA8FB021B94ADE001B8959 /* BaseNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
 		77EA8FB121B94ADE001B8959 /* BaseNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
-		77EA8FB821B94B67001B8959 /* Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Module.h; sourceTree = "<group>"; };
-		77EA8FB921B94B67001B8959 /* Module.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Module.m; sourceTree = "<group>"; };
 		77EA8FBC21B94BB5001B8959 /* Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test.h; sourceTree = "<group>"; };
 		77EA8FBD21B94BB5001B8959 /* Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test.m; sourceTree = "<group>"; };
 		77EA8FC421B95584001B8959 /* MainTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarController.h; sourceTree = "<group>"; };
@@ -1106,8 +1103,6 @@
 				77B0550F21CCDAE10045A489 /* Launch */,
 				77EA8E8321B8F947001B8959 /* Login */,
 				77EA8E8221B8F93C001B8959 /* Main */,
-				77EA8FB821B94B67001B8959 /* Module.h */,
-				77EA8FB921B94B67001B8959 /* Module.m */,
 				77B0552C21CE8B280045A489 /* AppModule.h */,
 				77B0552D21CE8B280045A489 /* AppModule.m */,
 			);
@@ -1561,7 +1556,6 @@
 				77B0545221C943760045A489 /* YYFrameImage.m in Sources */,
 				77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */,
 				77B0545A21C943760045A489 /* YYWebImageOperation.m in Sources */,
-				77EA8FBA21B94B67001B8959 /* Module.m in Sources */,
 				77B0546721CA30940045A489 /* ProgressHUB.m in Sources */,
 				776B55BE21BE979100793CAF /* LinearLayoutViewParams.m in Sources */,
 				77EA8F5721B90226001B8959 /* LinearLayoutParams.m in Sources */,

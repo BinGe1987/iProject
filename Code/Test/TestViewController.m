@@ -42,9 +42,11 @@
 //    NSString *f = AppInfo.SystemVersion;
 //    NSString *g = AppInfo.UUID;
     
-    [SecondViewController hookSelector:@selector(abc:cba:) block:^(id arg1, id arg2, id arg3) {
+    [SecondViewController hookAfterSelector:@selector(abc:cba:) block:^(id arg1, id arg2, id arg3) {
         
     }];
+    
+    
 }
 
 

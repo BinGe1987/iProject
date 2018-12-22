@@ -22,6 +22,7 @@
 #import "DataCenter+YDD.h"
 #import "EventBus+Module.h"
 
+#import "AppModule.h"
 #import "Test.h"
 
 #endif
