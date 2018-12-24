@@ -9,7 +9,7 @@
 
 @protocol IParser <NSObject>
 
-- (id)parse:(_Nonnull id)operation withSource:(id)source;
+- (id _Nullable )parse:(_Nonnull id)operation withSource:(id _Nullable )source;
 
 @end
 

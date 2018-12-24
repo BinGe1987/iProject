@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabs>
+    <tab>
+        <type>index</type>
+        <controller>HomeViewController</controller>
+        <icon_normal>tab_home_unselected</icon_normal>
+        <icon_selected>tab_home_selected</icon_selected>
+    </tab>
+    <tab>
+        <type>discover</type>
+        <controller>MineViewController</controller>
+        <icon_normal>tab_discover_unselected</icon_normal>
+        <icon_selected>tab_discover_selected</icon_selected>
+    </tab>
+    <tab>
+        <type>order</type>
+        <controller>MineViewController</controller>
+        <icon_normal>tab_order_unselected</icon_normal>
+        <icon_selected>tab_order_selected</icon_selected>
+    </tab>
+    <tab>
+        <type>mine</type>
+        <controller>MineViewController</controller>
+        <icon_normal>tab_mine_unselected</icon_normal>
+        <icon_selected>tab_mine_selected</icon_selected>
+    </tab>
+</tabs>

@@ -118,6 +118,8 @@
 		77B0557421D0D5720045A489 /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0556621D0D5720045A489 /* IQKeyboardReturnKeyHandler.m */; };
 		77B0557621D0DE6A0045A489 /* collocation.json in Resources */ = {isa = PBXBuildFile; fileRef = 77B0557521D0DE690045A489 /* collocation.json */; };
 		77B0557C21D110600045A489 /* UIImage+WebImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0557B21D110600045A489 /* UIImage+WebImage.m */; };
+		77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77B0557D21D120DE0045A489 /* TabMapping.xml */; };
+		77B0558221D122460045A489 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0558121D122460045A489 /* XMLDictionary.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -404,6 +406,9 @@
 		77B0557521D0DE690045A489 /* collocation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = collocation.json; sourceTree = "<group>"; };
 		77B0557A21D110600045A489 /* UIImage+WebImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebImage.h"; sourceTree = "<group>"; };
 		77B0557B21D110600045A489 /* UIImage+WebImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebImage.m"; sourceTree = "<group>"; };
+		77B0557D21D120DE0045A489 /* TabMapping.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TabMapping.xml; sourceTree = "<group>"; };
+		77B0558021D122460045A489 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		77B0558121D122460045A489 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -560,6 +565,7 @@
 		775B15E521C75DD600B8D6FF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				77B0557F21D122460045A489 /* XMLDictionary */,
 				775B15FA21C8A15300B8D6FF /* Imgae+Color */,
 				775B15F921C8A0A700B8D6FF /* Net */,
 				77B054B421CA4D5E0045A489 /* Store */,
@@ -1088,6 +1094,15 @@
 			path = Categories;
 			sourceTree = "<group>";
 		};
+		77B0557F21D122460045A489 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				77B0558021D122460045A489 /* XMLDictionary.h */,
+				77B0558121D122460045A489 /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
 		77EA8E5E21B8F79F001B8959 = {
 			isa = PBXGroup;
 			children = (
@@ -1151,6 +1166,7 @@
 				774F017121B9726400CB482F /* Mine */,
 				77B0551A21CD247E0045A489 /* MainModule.h */,
 				77B0551B21CD247E0045A489 /* MainModule.m */,
+				77B0557D21D120DE0045A489 /* TabMapping.xml */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -1554,6 +1570,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
+				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
 				77EA8F3721B90226001B8959 /* readme-mvp in Resources */,
 				77B0556D21D0D5720045A489 /* IQKeyboardManager.bundle in Resources */,
 				77EA8FC921B96A7D001B8959 /* home_logout.json in Resources */,
@@ -1641,6 +1658,7 @@
 				776B55CC21BF81B300793CAF /* UIButton+EnlargeEdge.m in Sources */,
 				77EA8F4921B90226001B8959 /* ViewModel.m in Sources */,
 				77B054F321CB8D240045A489 /* Notification.m in Sources */,
+				77B0558221D122460045A489 /* XMLDictionary.m in Sources */,
 				77B0544A21C943760045A489 /* YYDiskCache.m in Sources */,
 				77EA8F4D21B90226001B8959 /* ViewGroupModel.m in Sources */,
 				77EA8F2D21B90226001B8959 /* CommonHandler.m in Sources */,

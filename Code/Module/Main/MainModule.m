@@ -7,6 +7,7 @@
 
 #import "MainModule.h"
 #import "MainTabbarController.h"
+#import "MainNavigationController.h"
 
 @implementation MainModule
 
@@ -27,9 +28,38 @@
 }
 
 - (void)getConfigurationCompleted:(ConfigData *)config {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"TabMapping" ofType:@"xml"];
+    NSDictionary *xmlDoc = [NSDictionary dictionaryWithXMLFile:filePath];
+    
     AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
     MainTabbarController *main = (MainTabbarController *)app.window.rootViewController;
     
+    for (TabData *data in config.tabArray) {
+        NSString *type = data.type;
+
+        for (NSDictionary *tabDic in [xmlDoc objectForKey:@"tab"]) {
+            if ([type isEqualToString:[tabDic objectForKey:@"type"]]) {
+                
+                NSString *controllerName = [tabDic objectForKey:@"controller"];
+                Class cls = NSClassFromString(controllerName);
+                UIViewController *vc = [[cls alloc] init];
+                UIImage *nornal, *selected;
+                if ((!data.imageNormal) || ([data.imageNormal isEqualToString:@""])) {
+                    nornal = [UIImage imageNamed:[tabDic objectForKey:@"icon_normal"]];
+                } else {
+                    
+                }
+                if ((!data.imageSelected) || ([data.imageSelected isEqualToString:@""])) {
+                    selected = [UIImage imageNamed:[tabDic objectForKey:@"icon_selected"]];
+                } else {
+                    
+                }
+                UIColor *cNormal = [UIColor colorWithString:data.titleColorNormal];
+                UIColor *cSelected = [UIColor colorWithString:data.titleColorSelected];
+                [main addTab:data.title selectedColor:cSelected unselectedColor:cNormal selectedImage:selected unselectedImage:nornal controller:vc];
+            }
+        }
+    }
 }
 
 

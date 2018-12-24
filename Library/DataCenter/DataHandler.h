@@ -12,7 +12,7 @@
 @protocol HandlerDelegate <NSObject>
 
 @required
-- (id)getData;
+- (id _Nullable )getData;
 
 @end
 

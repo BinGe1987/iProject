@@ -19,7 +19,7 @@
  @param callback 操作后回调
  @return 操作后返回data数据
  */
-- (id)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callback;
+- (id _Nullable )perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callback;
 
 
 /**

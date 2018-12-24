@@ -11,5 +11,6 @@
 #import "BGHeader.h"
 #import "NetHeader.h"
 #import "Store.h"
+#import "XMLDictionary.h"
 
 #endif /* UtilsHeader_h */

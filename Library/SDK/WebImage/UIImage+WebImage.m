@@ -11,7 +11,7 @@
 @implementation UIImage (WebImage)
 
 + (UIImage *)imageURL:(NSURL *)url {
-    YYWebImageManager *manager = [YYWebImageManager sharedManager];
+//    YYWebImageManager *manager = [YYWebImageManager sharedManager];
 //    UIImage *image = []
 //    manager.cache setImage:<#(nullable UIImage *)#> imageData:<#(nullable NSData *)#> forKey:<#(nonnull NSString *)#> withType:<#(YYImageCacheType)#>
     YYImage *image = [YYImage imageWithData: [NSData dataWithContentsOfURL:url]];

@@ -13,9 +13,9 @@
 
 - (void)onLayout;
 
-- (void)addView:(UIView *)subView;
+- (void)addView:(UIView *_Nonnull)subView;
 
-- (void)removeView:(UIView *)subView;
+- (void)removeView:(UIView *_Nonnull)subView;
 
 @end
 

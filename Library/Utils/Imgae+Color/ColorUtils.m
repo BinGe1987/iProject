@@ -12,6 +12,9 @@
 + (UIColor *)colorWithString:(NSString *)color {
     NSString *cString = [[color stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     if ([cString hasPrefix:@"#"]) cString = [cString substringFromIndex:1];
+    if ([cString length] == 6) {
+        cString = [NSString stringWithFormat:@"FF%@", cString];
+    }
     if ([cString length] != 8) return [UIColor blackColor];
     NSRange range;
     range.length = 2;
