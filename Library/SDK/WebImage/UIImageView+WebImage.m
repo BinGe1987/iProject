@@ -14,4 +14,9 @@
     self.yy_imageURL = imageURL;
 }
 
+//- (void)test {
+//    YYImageCache *cache = [YYWebImageManager sharedManager].cache;
+//    cache.
+//}
+
 @end

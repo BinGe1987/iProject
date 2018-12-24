@@ -17,35 +17,35 @@
 {
     self = [super init];
     if (self) {
-        UIColor *selected = [UIColor redColor];
-        UIColor *unselected = [UIColor greenColor];
-        [self addTab:@"首页"
-            selectedColor:selected
-          unselectedColor:unselected
-            selectedImage:[UIImage imageNamed:@"icon_tabbar_home_selected"]
-          unselectedImage:[UIImage imageNamed:@"icon_tabbar_home_unselected"]
-          controller:[[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]]];
-        
-        [self addTab:@"发现"
-            selectedColor:selected
-          unselectedColor:unselected
-            selectedImage:[UIImage imageNamed:@"icon_tabbar_selected"]
-          unselectedImage:[UIImage imageNamed:@"icon_tabbar_unselected"]
-          controller:[[BaseNavigationController alloc] initWithRootViewController:[[MineViewController alloc] init]]];
-        
-        [self addTab:@"订单"
-       selectedColor:selected
-     unselectedColor:unselected
-       selectedImage:[UIImage imageNamed:@"icon_tabbar_selected"]
-     unselectedImage:[UIImage imageNamed:@"icon_tabbar_unselected"]
-          controller:[[BaseNavigationController alloc] initWithRootViewController:[[MineViewController alloc] init]]];
-        
-        [self addTab:@"我的"
-            selectedColor:selected
-          unselectedColor:unselected
-            selectedImage:[UIImage imageNamed:@"icon_tabbar_mine_selected"]
-          unselectedImage:[UIImage imageNamed:@"icon_tabbar_mine_unselected"]
-          controller:[[BaseNavigationController alloc] initWithRootViewController:[[MineViewController alloc] init]]];
+//        UIColor *selected = [UIColor redColor];
+//        UIColor *unselected = [UIColor greenColor];
+//        [self addTab:@"首页"
+//            selectedColor:selected
+//          unselectedColor:unselected
+//            selectedImage:[UIImage imageNamed:@"icon_tabbar_home_selected"]
+//          unselectedImage:[UIImage imageNamed:@"icon_tabbar_home_unselected"]
+//          controller:[[BaseNavigationController alloc] initWithRootViewController:[[HomeViewController alloc] init]]];
+//        
+//        [self addTab:@"发现"
+//            selectedColor:selected
+//          unselectedColor:unselected
+//            selectedImage:[UIImage imageNamed:@"icon_tabbar_selected"]
+//          unselectedImage:[UIImage imageNamed:@"icon_tabbar_unselected"]
+//          controller:[[BaseNavigationController alloc] initWithRootViewController:[[MineViewController alloc] init]]];
+//        
+//        [self addTab:@"订单"
+//       selectedColor:selected
+//     unselectedColor:unselected
+//       selectedImage:[UIImage imageNamed:@"icon_tabbar_selected"]
+//     unselectedImage:[UIImage imageNamed:@"icon_tabbar_unselected"]
+//          controller:[[BaseNavigationController alloc] initWithRootViewController:[[MineViewController alloc] init]]];
+//        
+//        [self addTab:@"我的"
+//            selectedColor:selected
+//          unselectedColor:unselected
+//            selectedImage:[UIImage imageNamed:@"icon_tabbar_mine_selected"]
+//          unselectedImage:[UIImage imageNamed:@"icon_tabbar_mine_unselected"]
+//          controller:[[BaseNavigationController alloc] initWithRootViewController:[[MineViewController alloc] init]]];
         
     }
     return self;
@@ -53,6 +53,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+}
+
+- (void)onConfigChanged:(ConfigData *)config {
+    for (TabData *td in config.tabArray) {
+        [self addTab:td];
+    }
+}
+
+- (void)addTab:(TabData *)tabData
+{
+    if ([tabData.type isEqualToString:@"index"]) {
+//        HomeViewController 
+    }
+    else if ([tabData.type isEqualToString:@"discover"]) {
+        
+    }
+    else if ([tabData.type isEqualToString:@"order"]) {
+        
+    }
+    else if ([tabData.type isEqualToString:@"mine"]) {
+        
+    }
 }
 
 @end

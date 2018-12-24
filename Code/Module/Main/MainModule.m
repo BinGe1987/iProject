@@ -27,6 +27,8 @@
 }
 
 - (void)getConfigurationCompleted:(ConfigData *)config {
+    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    MainTabbarController *main = (MainTabbarController *)app.window.rootViewController;
     
 }
 

@@ -27,7 +27,7 @@
 }
 
 - (id)parse:(_Nonnull id)operation withSource:(id)source {
-    
+    [self.data setData:source];
     return [self getData];
 }
 

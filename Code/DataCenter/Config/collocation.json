@@ -1,0 +1,81 @@
+{
+  "status": "2",
+  "list": [
+    {
+      "tabId": 1,
+      "tabName": "首页",
+      "type": "index",
+      "icon": "",
+      "selectedIcon": "",
+      "textColor": "#55b4b2",
+      "selectedTextColor": "#55b4b2",
+      "statusBarColor": "#999999",
+      "isPullToRefresh": false,
+      "titleComponent_backup": {
+        "id": 10001,
+        "isHead": true,
+        "name": "IndexTitle",
+        "type": "title",
+        "title": "首页"
+      },
+      "components": []
+    },
+    {
+      "tabId": 2,
+      "tabName": "发现",
+      "type": "discover",
+      "icon": "",
+      "selectedIcon": "",
+      "textColor": "#55b4b2",
+      "selectedTextColor": "#55b4b2",
+      "statusBarColor": "#999999",
+      "isPullToRefresh": false,
+      "titleComponent_backup": {
+        "id": 10002,
+        "isHead": true,
+        "name": "DiscoverTitle",
+        "type": "title",
+        "title": "发现"
+      },
+      "components": []
+    },
+    {
+      "tabId": 3,
+      "tabName": "订单",
+      "type": "order",
+      "icon": "",
+      "selectedIcon": "",
+      "textColor": "#55b4b2",
+      "selectedTextColor": "#55b4b2",
+      "statusBarColor": "#999999",
+      "isPullToRefresh": false,
+      "titleComponent": {
+        "id": 10003,
+        "isHead": true,
+        "name": "OrderTitle",
+        "type": "title",
+        "title": "订单"
+      },
+      "components": []
+    },
+    {
+      "tabId": 4,
+      "tabName": "我的",
+      "type": "mine",
+      "icon": "",
+      "selectedIcon": "",
+      "textColor": "#55b4b2",
+      "selectedTextColor": "#55b4b2",
+      "statusBarColor": "#999999",
+      "isPullToRefresh": false,
+      "titleComponent": {
+        "id": 10004,
+        "isHead": true,
+        "name": "MineTitle",
+        "type": "title",
+        "title": "我的"
+      },
+      "components": []
+    }
+  ]
+}

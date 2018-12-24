@@ -11,7 +11,12 @@
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
     sleep(1);
-    return nil;
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"collocation.json" ofType:nil];
+    Data *json = [[Data alloc] initWithPath:path];
+    if (!json.error) {
+        
+    }
+    return json;
 }
 
 @end
