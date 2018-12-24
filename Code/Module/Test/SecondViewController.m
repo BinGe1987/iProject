@@ -18,8 +18,8 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Test.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
     
-    NetStatus status = [Net networkStatus];
-    Log(@"NetStatus %ld", (long)status);
+//    NetStatus status = [Net networkStatus];
+//    Log(@"NetStatus %ld", (long)status);
     [Net addNetworkObserver:self selector:@selector(netChangedLisenter:)];
     
     UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];

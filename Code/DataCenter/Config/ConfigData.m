@@ -9,4 +9,13 @@
 
 @implementation ConfigData
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.tabArray = [NSMutableArray new];
+    }
+    return self;
+}
+
 @end

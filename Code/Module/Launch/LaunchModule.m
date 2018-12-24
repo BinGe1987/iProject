@@ -6,41 +6,26 @@
 //
 
 #import "LaunchModule.h"
-#import "MainTabbarController.h"
 
 @implementation LaunchModule
 
-+ (void)start {
-    [LaunchModule setupMain];
-    [LaunchModule showLaunchImage];
-    
-    [EventBus addObserver:self selector:@selector(launchFinish) event:EventAppLaunchCompleted];
+- (void)setup:(BuildConfiguration)buildConfiguration {
+    [self show];
 }
 
-+ (void)setupMain {
-    //初始化主页面
-    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
-    app.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    app.window.backgroundColor = [UIColor whiteColor];
-    MainTabbarController *nv = [[MainTabbarController alloc] init];
-    app.window.rootViewController = nv;
-    [app.window makeKeyAndVisible];
-}
-
-+ (void)showLaunchImage {
+- (void)show {
     AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
     UIImageView *launchImageView = [[UIImageView alloc] initWithFrame:app.window.bounds];
     launchImageView.tag = 1;
-    launchImageView.image = [LaunchModule launchImage];
+    launchImageView.image = [self launchImage];
     [app.window addSubview:launchImageView];
     [app.window bringSubviewToFront:launchImageView];
 }
 
-+ (void)launchFinish {
-    [EventBus removeObserver:self];
-    
+- (void)finishAnimated {
     AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
     UIImageView *launchImageView = [app.window viewWithTag:1];
+    WeakSelf(self)
     if (launchImageView) {
         //0.2 秒的延迟执行，避免因不做延迟，导致动画执行卡顿
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -49,12 +34,17 @@
                 launchImageView.transform = CGAffineTransformMakeScale(1.0, 1.0);
             } completion:^(BOOL finished) {
                 [launchImageView removeFromSuperview];
+                [weakself launchCompleted];
             }];
         });
     }
 }
 
-+ (UIImage *)launchImage {
+- (void)launchCompleted {
+    
+}
+
+- (UIImage *)launchImage {
     UIImage *lauchImage = nil;
     NSString *viewOrientation = nil;
     CGSize viewSize = [UIScreen mainScreen].bounds.size;

@@ -9,7 +9,7 @@
 
 @implementation BaseModule
 
-+ (void)setup {
+- (void)setup:(BuildConfiguration)buildConfiguration {
     
 }
 

@@ -8,7 +8,12 @@
 
 #pragma mark APP相关的宏
 
-#define APPDELEGATE (AppDelegate*)[UIApplication sharedApplication].delegate
+
+typedef enum : NSUInteger {
+    BuildConfigurationWithTest,
+    BuildConfigurationWithDebug,
+    BuildConfigurationWithRelease,
+}BuildConfiguration;
 
 #import <UIKit/UIKit.h>
 

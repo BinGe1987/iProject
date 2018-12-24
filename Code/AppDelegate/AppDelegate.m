@@ -6,36 +6,25 @@
 //
 
 #import "AppDelegate.h"
-#import "AppDelegate+Config.h"
 
+@interface AppDelegate()
 
-@interface AppDelegate ()
+@property (nonatomic, strong) AppModule *appModule;
 
 @end
 
 @implementation AppDelegate
 
-#pragma mark 调试模式
-///调试模式启动
-- (void)schemeDebugDidFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    //配置基本设置+第三方库
-    [AppDelegate configure];
-    //启动module
-    [AppModule setup];
-}
-
-#pragma mark 测试模式
-///测试模式启动
-- (void)schemeTestDidFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    [Test test];
-}
-
-#pragma mark 系统方法
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    self.appModule = [AppModule new];
 #ifdef TEST
-    [self schemeTestDidFinishLaunchingWithOptions:launchOptions];
+    [[TestModule new] setup:BuildConfigurationWithTest];
 #else
-    [self schemeDebugDidFinishLaunchingWithOptions:launchOptions];
+#ifdef DEBUG
+    [self.appModule setup:BuildConfigurationWithDebug];
+#else
+    [self.appModule setup:BuildConfigurationWithRelease];
+#endif
 #endif
     return YES;
 }

@@ -9,4 +9,9 @@
 
 @implementation ConfigPerformer
 
+- (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
+    sleep(1);
+    return nil;
+}
+
 @end

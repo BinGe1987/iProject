@@ -23,6 +23,6 @@
 #import "EventBus+Module.h"
 
 #import "AppModule.h"
-#import "Test.h"
+#import "TestModule.h"
 
 #endif

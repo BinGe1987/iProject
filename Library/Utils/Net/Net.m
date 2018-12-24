@@ -66,8 +66,6 @@ singleton_implementation(Net)
 
 ///异步
 + (void)asynchroRequest:(NetRequest * _Nonnull)request completed:( void(^ _Nullable )(NetResponse * response))block {
-    NetResponse *response = [NetResponse new];
-    block(response);
     NetResponse *netResponse = [NetResponse new];
     switch (request.method) {
         default:
@@ -88,7 +86,7 @@ singleton_implementation(Net)
     }
 }
 
-+ (void)post:( NetRequest * _Nullable)netRequest completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler;{
++ (void)post:( NetRequest * _Nullable)netRequest completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler {
     
     NetConfig *config = [Net get].config;
     NSString *urlString = [NSString stringWithFormat:@"%@%@", config.baseUrl, netRequest.url];

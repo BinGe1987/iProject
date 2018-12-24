@@ -5,13 +5,17 @@
 //  Created by BinGe on 2018/12/21.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseModule.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LaunchModule : NSObject
+@interface LaunchModule : BaseModule
 
-+ (void)start;
+- (void)show;
+
+- (void)finishAnimated;
+
+- (void)launchCompleted;
 
 @end
 

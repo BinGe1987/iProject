@@ -5,13 +5,13 @@
 //  Created by BinGe on 2018/12/6.
 //
 
-#import "Test.h"
+#import "TestModule.h"
 #import "MainNavigationController.h"
 #import "TestViewController.h"
 
-@implementation Test
+@implementation TestModule
 
-+ (void)test {
+- (void)setup:(BuildConfiguration)buildConfiguration {
     AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
     app.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     app.window.backgroundColor = [UIColor whiteColor];

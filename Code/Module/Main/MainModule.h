@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MainModule : BaseModule
 
+- (void)getConfigurationFromServer;
+
+- (void)getConfigurationCompleted:(ConfigData *)config;
 
 @end
 
