@@ -6,6 +6,7 @@
 //
 
 #import "Data.h"
+#import "ComponentData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *imageNormal;
 @property (nonatomic, strong) NSString *imageSelected;
+
+@property (nonatomic, strong) ComponentData *titleComponent;
 
 @end
 

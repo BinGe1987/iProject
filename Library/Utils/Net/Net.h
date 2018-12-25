@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///异步请求
 + (void)asynchroRequest:(NetRequest * _Nonnull)request completed:( void(^ _Nullable )(NetResponse * response))block;
 
++ (UIImage *)requestImageWithURL:(NSURL *)url;
+
 @end
 
 NS_ASSUME_NONNULL_END

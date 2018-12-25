@@ -39,24 +39,28 @@
 
         for (NSDictionary *tabDic in [xmlDoc objectForKey:@"tab"]) {
             if ([type isEqualToString:[tabDic objectForKey:@"type"]]) {
-                
-                NSString *controllerName = [tabDic objectForKey:@"controller"];
-                Class cls = NSClassFromString(controllerName);
-                UIViewController *vc = [[cls alloc] init];
                 UIImage *nornal, *selected;
-                if ((!data.imageNormal) || ([data.imageNormal isEqualToString:@""])) {
+                if ([NSString isEmpty:data.imageNormal]) {
                     nornal = [UIImage imageNamed:[tabDic objectForKey:@"icon_normal"]];
                 } else {
-                    
+                    nornal = [Net requestImageWithURL:[NSURL URLWithString:data.imageNormal]];
                 }
                 if ((!data.imageSelected) || ([data.imageSelected isEqualToString:@""])) {
                     selected = [UIImage imageNamed:[tabDic objectForKey:@"icon_selected"]];
                 } else {
-                    
+                    selected = [Net requestImageWithURL:[NSURL URLWithString:data.imageSelected]];
                 }
                 UIColor *cNormal = [UIColor colorWithString:data.titleColorNormal];
                 UIColor *cSelected = [UIColor colorWithString:data.titleColorSelected];
-                [main addTab:data.title selectedColor:cSelected unselectedColor:cNormal selectedImage:selected unselectedImage:nornal controller:vc];
+                
+                NSString *controllerName = [tabDic objectForKey:@"controller"];
+                Class cls = NSClassFromString(controllerName);
+                UIViewController *vc = [[cls alloc] init];
+                MainNavigationController *nv = [[MainNavigationController alloc] initWithRootViewController:vc];
+                nv.navigationBar.topItem.title = data.titleComponent.title;
+                
+                
+                [main addTab:data.title selectedColor:cSelected unselectedColor:cNormal selectedImage:selected unselectedImage:nornal controller:nv];
             }
         }
     }

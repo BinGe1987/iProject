@@ -23,6 +23,14 @@
     self.imageNormal = [data stringWithKey:@"icon" defaultValue:nil];
     self.imageSelected= [data stringWithKey:@"selectedIcon" defaultValue:nil];
     
+    if (![NSString isEmpty:self.imageNormal]) {
+        [Net requestImageWithURL:[NSURL URLWithString:self.imageNormal]];
+    }
+    if (![NSString isEmpty:self.imageSelected]) {
+        [Net requestImageWithURL:[NSURL URLWithString:self.imageSelected]];
+    }
+ 
+    self.titleComponent = [ComponentData withData:[self jsonWithKey:@"titleComponent"]];
 }
 
 

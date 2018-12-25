@@ -6,6 +6,7 @@
 //
 
 #import "Net.h"
+#import "YYWebImage.h"
 
 @interface Net()
 
@@ -102,6 +103,23 @@ singleton_implementation(Net)
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:completionHandler];
     [task resume];
+}
+
++ (UIImage *)requestImageWithURL:(NSURL *)url {
+    __strong UIImage *img = [[YYWebImageManager sharedManager].cache getImageForKey:[url absoluteString]];
+    if (img) {
+        return img;
+    }
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); //创建信号量
+    [[YYWebImageManager sharedManager] requestImageWithURL:url options:YYWebImageOptionAvoidSetImage progress:nil transform:nil completion:^(UIImage * _Nullable image, NSURL * _Nonnull url, YYWebImageFromType from, YYWebImageStage stage, NSError * _Nullable error) {
+        if (stage == YYWebImageStageFinished && !error) {
+            [[YYWebImageManager sharedManager].cache setImage:image imageData:nil forKey:[url absoluteString] withType:YYImageCacheTypeAll];
+        }
+        dispatch_semaphore_signal(semaphore);//发送信号
+    }];
+    dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);  //等待
+    img = [[YYWebImageManager sharedManager].cache getImageForKey:[url absoluteString]];
+    return img;
 }
 
 @end

@@ -5,8 +5,8 @@
       "tabId": 1,
       "tabName": "首页",
       "type": "index",
-      "icon": "",
-      "selectedIcon": "",
+      "icon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_home_normal.png",
+      "selectedIcon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_home_selected.png",
       "textColor": "#55b4b2",
       "selectedTextColor": "#55b4b2",
       "statusBarColor": "#999999",
@@ -16,7 +16,7 @@
         "isHead": true,
         "name": "IndexTitle",
         "type": "title",
-        "title": "首页"
+        "title": "<首页>"
       },
       "components": []
     },
