@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0BC21D2119A009D1EE8 /* TableViewSection.m */; };
+		7734C0C021D223F5009D1EE8 /* UITableView+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0BF21D223F5009D1EE8 /* UITableView+Adapter.m */; };
 		774F017421B9728900CB482F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774F017321B9728900CB482F /* MineViewController.m */; };
 		775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E221C3DDBA00B8D6FF /* UIViewController+Util.m */; };
 		775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E721C75DF600B8D6FF /* ImageUtils.m */; };
@@ -125,6 +127,8 @@
 		77B0559121D1F7800045A489 /* HomePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0559021D1F7800045A489 /* HomePresenter.m */; };
 		77B0559521D1FB250045A489 /* ViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0559421D1FB250045A489 /* ViewHandler.m */; };
 		77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0559721D1FCA20045A489 /* HomeViewHandler.m */; };
+		77B0559E21D205540045A489 /* TableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0559D21D205540045A489 /* TableViewAdapter.m */; };
+		77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B055A021D20E410045A489 /* HomeViewAdpater.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -184,6 +188,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7734C0BB21D2119A009D1EE8 /* TableViewSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewSection.h; sourceTree = "<group>"; };
+		7734C0BC21D2119A009D1EE8 /* TableViewSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSection.m; sourceTree = "<group>"; };
+		7734C0BE21D223F5009D1EE8 /* UITableView+Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Adapter.h"; sourceTree = "<group>"; };
+		7734C0BF21D223F5009D1EE8 /* UITableView+Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Adapter.m"; sourceTree = "<group>"; };
 		774F017221B9728900CB482F /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		774F017321B9728900CB482F /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		775B15E121C3DDBA00B8D6FF /* UIViewController+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Util.h"; sourceTree = "<group>"; };
@@ -423,6 +431,10 @@
 		77B0559421D1FB250045A489 /* ViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewHandler.m; sourceTree = "<group>"; };
 		77B0559621D1FCA20045A489 /* HomeViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewHandler.h; sourceTree = "<group>"; };
 		77B0559721D1FCA20045A489 /* HomeViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewHandler.m; sourceTree = "<group>"; };
+		77B0559C21D205540045A489 /* TableViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewAdapter.h; sourceTree = "<group>"; };
+		77B0559D21D205540045A489 /* TableViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewAdapter.m; sourceTree = "<group>"; };
+		77B0559F21D20E410045A489 /* HomeViewAdpater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewAdpater.h; sourceTree = "<group>"; };
+		77B055A021D20E410045A489 /* HomeViewAdpater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewAdpater.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -555,6 +567,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7734C0C121D223FB009D1EE8 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				7734C0BE21D223F5009D1EE8 /* UITableView+Adapter.h */,
+				7734C0BF21D223F5009D1EE8 /* UITableView+Adapter.m */,
+				77B0559C21D205540045A489 /* TableViewAdapter.h */,
+				77B0559D21D205540045A489 /* TableViewAdapter.m */,
+				7734C0BB21D2119A009D1EE8 /* TableViewSection.h */,
+				7734C0BC21D2119A009D1EE8 /* TableViewSection.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
 		774F017021B9725D00CB482F /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,6 +589,8 @@
 				77B0559021D1F7800045A489 /* HomePresenter.m */,
 				77B0559621D1FCA20045A489 /* HomeViewHandler.h */,
 				77B0559721D1FCA20045A489 /* HomeViewHandler.m */,
+				77B0559F21D20E410045A489 /* HomeViewAdpater.h */,
+				77B055A021D20E410045A489 /* HomeViewAdpater.m */,
 				77FAFCD821C28C2D002A90B0 /* Home.json */,
 			);
 			path = Home;
@@ -1310,6 +1337,7 @@
 		77EA8ED721B90226001B8959 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7734C0C121D223FB009D1EE8 /* UITableView */,
 				776B55D421BFAB7E00793CAF /* UIButton+OnClick.h */,
 				776B55D521BFAB7E00793CAF /* UIButton+OnClick.m */,
 				776B55CA21BF81B300793CAF /* UIButton+EnlargeEdge.h */,
@@ -1643,6 +1671,7 @@
 				77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */,
 				776B55B621BE6BD000793CAF /* ButtonViewParams.m in Sources */,
 				776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */,
+				7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */,
 				77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */,
 				77B054D821CA9C720045A489 /* TableViewModel.m in Sources */,
 				77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */,
@@ -1674,6 +1703,7 @@
 				77B054D521CA9B220045A489 /* TableLayoutParams.m in Sources */,
 				77B0548221CA48BB0045A489 /* PhotoBrowser.m in Sources */,
 				77B054CF21CA9A890045A489 /* TableViewParams.m in Sources */,
+				7734C0C021D223F5009D1EE8 /* UITableView+Adapter.m in Sources */,
 				776B55C121BEA10200793CAF /* FrameLayoutViewParams.m in Sources */,
 				77B0547921CA46DC0045A489 /* KSPhotoItem.m in Sources */,
 				77B0556F21D0D5720045A489 /* IQNSArray+Sort.m in Sources */,
@@ -1707,6 +1737,7 @@
 				776B55ED21C00CC000793CAF /* Performer.m in Sources */,
 				77B0547A21CA46DC0045A489 /* KSPhotoBrowser.m in Sources */,
 				77B0547821CA46DC0045A489 /* KSProgressLayer.m in Sources */,
+				77B0559E21D205540045A489 /* TableViewAdapter.m in Sources */,
 				775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */,
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
@@ -1767,6 +1798,7 @@
 				77EA8F4B21B90226001B8959 /* FrameViewModel.m in Sources */,
 				77EA8F4521B90226001B8959 /* ImageViewModel.m in Sources */,
 				776B55D621BFAB7E00793CAF /* UIButton+OnClick.m in Sources */,
+				77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */,
 				77B0552821CD82510045A489 /* AppInfo.m in Sources */,
 				77B0545421C943760045A489 /* _YYWebImageSetter.m in Sources */,
 				77EA8F8921B90A18001B8959 /* UserHandler.m in Sources */,

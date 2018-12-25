@@ -8,6 +8,7 @@
 #ifndef BaseViewHeader_h
 #define BaseViewHeader_h
 
+#import "UITableView+Adapter.h"
 #import "UIButton+OnClick.h"
 #import "UIButton+EnlargeEdge.h"
 

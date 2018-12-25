@@ -6,10 +6,10 @@
 //
 
 #import "HomeViewHandler.h"
+#import "HomeViewAdpater.h"
 
-@interface HomeViewHandler()<UITableViewDelegate, UITableViewDataSource>
+@interface HomeViewHandler()
 
-@property (nonatomic, strong) NSMutableArray *datas;
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
@@ -18,43 +18,22 @@
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
-    self.tableView = (UITableView *)view;
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
-    self.datas = [NSMutableArray array];
+    NSMutableArray *datas = [NSMutableArray array];
     for(int i = 0; i < 20; i++) {
-        [self.datas addObject:[NSString stringWithFormat:@"table item %i", i]];
+        [datas addObject:[NSString stringWithFormat:@"table item %i", i]];
     }
+    TableViewSection *section1 = [[TableViewSection alloc] initWithDictionary: @{@"name": @"123", @"array": datas,
+                                                                                 @"height" : [NSNumber numberWithFloat:40],
+                                                                                 @"headerHeight" : [NSNumber numberWithFloat:60],
+                                                                                 @"footerHeight" : [NSNumber numberWithFloat:0]}];
+    TableViewSection *section2 = [[TableViewSection alloc] initWithDictionary: @{@"name": @"123", @"array": datas,
+                                                                                 @"height" : [NSNumber numberWithFloat:100],
+                                                                                 @"headerHeight" : [NSNumber numberWithFloat:40],
+                                                                                 @"footerHeight" : [NSNumber numberWithFloat:40]}];
+    HomeViewAdpater *adapter = [HomeViewAdpater AdapterWithSourceData:@[section1,section2]];
+    self.tableView = (UITableView *)view;
+    [self.tableView setAdapter:adapter];
     return self;
 }
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return [self.datas count];
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 100;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 10;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 10;
-}
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * showUserInfoCellIdentifier = @"ShowUserInfoCell";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
-    if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
-                                       reuseIdentifier:showUserInfoCellIdentifier];
-    }
-    return cell;
-}
 @end

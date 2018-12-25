@@ -12,7 +12,7 @@
             "view_width":"full",
             "view_height":"full",
             "view_visibility":"visible",
-            "view_background":"#ffffffff",
+            "view_background":"#fff0f0f0",
         }
     ]
 }
