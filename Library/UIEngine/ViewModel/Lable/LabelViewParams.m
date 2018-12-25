@@ -20,7 +20,7 @@
         self.text = text;
         
         NSString *color = [model getString:@"text_color" defaultValue:@"#ff000000"];
-        self.textColor = [UIColor colorWithString:color];
+        self.textColor = [ColorUtils colorWithString:color];
     }
     return self;
 }

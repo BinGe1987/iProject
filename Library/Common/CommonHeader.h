@@ -11,7 +11,6 @@
 
 #import "SingletonDefine.h"
 #import "CommonDefine.h"
-#import "UIColor+Extends.h"
 
 
 #endif /* CommonHeader_h */

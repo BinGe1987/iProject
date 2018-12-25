@@ -50,8 +50,8 @@
                 } else {
                     selected = [Net requestImageWithURL:[NSURL URLWithString:data.imageSelected]];
                 }
-                UIColor *cNormal = [UIColor colorWithString:data.titleColorNormal];
-                UIColor *cSelected = [UIColor colorWithString:data.titleColorSelected];
+                UIColor *cNormal = [ColorUtils colorWithString:data.titleColorNormal];
+                UIColor *cSelected = [ColorUtils colorWithString:data.titleColorSelected];
                 
                 NSString *controllerName = [tabDic objectForKey:@"controller"];
                 Class cls = NSClassFromString(controllerName);

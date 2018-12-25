@@ -36,7 +36,7 @@
     NSString *background = viewParams.background;
     if (background) {
         if ([background hasPrefix:@"#"]) {
-            self.view.backgroundColor = [UIColor colorWithString:background];
+            self.view.backgroundColor = [ColorUtils colorWithString:background];
         }
     }
 }

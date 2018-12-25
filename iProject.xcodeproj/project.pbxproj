@@ -147,7 +147,6 @@
 		77EA8F3D21B90226001B8959 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EE221B90226001B8959 /* ViewController.m */; };
 		77EA8F3F21B90226001B8959 /* MVPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EE421B90226001B8959 /* MVPViewController.m */; };
 		77EA8F4121B90226001B8959 /* PresenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EE521B90226001B8959 /* PresenterViewController.m */; };
-		77EA8F4321B90226001B8959 /* UIColor+Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EE921B90226001B8959 /* UIColor+Extends.m */; };
 		77EA8F4521B90226001B8959 /* ImageViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EF121B90226001B8959 /* ImageViewModel.m */; };
 		77EA8F4721B90226001B8959 /* TextViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EF321B90226001B8959 /* TextViewModel.m */; };
 		77EA8F4921B90226001B8959 /* ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8EF521B90226001B8959 /* ViewModel.m */; };
@@ -473,10 +472,8 @@
 		77EA8EE521B90226001B8959 /* PresenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresenterViewController.m; sourceTree = "<group>"; };
 		77EA8EE621B90226001B8959 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		77EA8EE721B90226001B8959 /* MVPViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MVPViewController.h; sourceTree = "<group>"; };
-		77EA8EE921B90226001B8959 /* UIColor+Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extends.m"; sourceTree = "<group>"; };
 		77EA8EEA21B90226001B8959 /* SingletonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonDefine.h; sourceTree = "<group>"; };
 		77EA8EEB21B90226001B8959 /* CommonHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonHeader.h; sourceTree = "<group>"; };
-		77EA8EEC21B90226001B8959 /* UIColor+Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extends.h"; sourceTree = "<group>"; };
 		77EA8EED21B90226001B8959 /* CommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonDefine.h; sourceTree = "<group>"; };
 		77EA8EF121B90226001B8959 /* ImageViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewModel.m; sourceTree = "<group>"; };
 		77EA8EF221B90226001B8959 /* ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewModel.h; sourceTree = "<group>"; };
@@ -1385,8 +1382,6 @@
 			isa = PBXGroup;
 			children = (
 				77EA8EEA21B90226001B8959 /* SingletonDefine.h */,
-				77EA8EEC21B90226001B8959 /* UIColor+Extends.h */,
-				77EA8EE921B90226001B8959 /* UIColor+Extends.m */,
 				77EA8EED21B90226001B8959 /* CommonDefine.h */,
 				77EA8EEB21B90226001B8959 /* CommonHeader.h */,
 			);
@@ -1688,7 +1683,6 @@
 				77B054E521CB47910045A489 /* Reachability.m in Sources */,
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				776B55F021C00D6000793CAF /* Parser.m in Sources */,
-				77EA8F4321B90226001B8959 /* UIColor+Extends.m in Sources */,
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,
 				77B053CE21C8A5F90045A489 /* Net.m in Sources */,
