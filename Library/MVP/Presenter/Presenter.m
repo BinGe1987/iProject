@@ -10,16 +10,17 @@
 @implementation Presenter
 
 - (instancetype)initWithView:(UIView *)view {
-    self = [super init];
-    if (self) {
-        self.view = view;
-    }
-    return self;
+    return [super init];
 }
 
-- (void)dealloc
-{
-    Log(@"Presenter dealloc");
-}
+- (void)willAppear:(BOOL)animated {}
+
+- (void)didAppear:(BOOL)animated {}
+
+- (void)willDisappear:(BOOL)animated {}
+
+- (void)didDisappear:(BOOL)animated {}
+
+- (void)dealloc {}
 
 @end

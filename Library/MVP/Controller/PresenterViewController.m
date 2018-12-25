@@ -27,9 +27,37 @@
     }
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    for (Presenter *p in self.presenters) {
+        [p willAppear:animated];
+    }
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    for (Presenter *p in self.presenters) {
+        [p didAppear:animated];
+    }
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    for (Presenter *p in self.presenters) {
+        [p willDisappear:animated];
+    }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [super viewDidDisappear:animated];
+    for (Presenter *p in self.presenters) {
+        [p didDisappear:animated];
+    }
+}
+
 - (void)dealloc
 {
-    Log(@"");
+    
 }
 
 @end

@@ -6,14 +6,24 @@
 //
 
 #import "BasePresenter.h"
+#import "ViewHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface Presenter : BasePresenter
 
-@property (nonatomic, strong) UIView *view;
+@property (nonatomic, strong) ViewHandler *handler;
 
 - (instancetype)initWithView:(UIView *)view;
+
+- (void)willAppear:(BOOL)animated;
+
+- (void)didAppear:(BOOL)animated;
+
+- (void)willDisappear:(BOOL)animated;
+
+- (void)didDisappear:(BOOL)animated;
+
 
 @end
 
