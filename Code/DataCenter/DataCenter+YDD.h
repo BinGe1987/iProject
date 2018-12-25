@@ -13,10 +13,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#pragma make 全局
 ///获取配置信息
 #define OperationGetConfig (@"OperationGetConfig")
 ///自动登录
 #define OperationLoginCheck (@"OperationLoginCheck")
+
+#pragma make 首页相关
+///获取首面信息
+#define OperationGetHomeData (@"OperationGetHomeData")
 
 @interface DataCenter (YDD)
 
@@ -25,6 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 ///获取用户信息
 - (UserData *)userData;
+
+//获取首页数据
+- (HomeData *)homeData;
 
 @end
 

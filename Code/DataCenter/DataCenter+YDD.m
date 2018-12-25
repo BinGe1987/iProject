@@ -17,4 +17,8 @@
     return (UserData *)[self getData: [UserHandler class]];
 }
 
+- (HomeData *)homeData {
+    return (HomeData *)[self getData: [HomeHandler class]];
+}
+
 @end

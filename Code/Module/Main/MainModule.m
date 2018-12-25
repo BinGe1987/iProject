@@ -9,7 +9,21 @@
 #import "MainTabbarController.h"
 #import "MainNavigationController.h"
 
+#import "HomeModule.h"
+
+@interface MainModule()
+
+@property (nonatomic, strong) HomeModule *homeModule;
+
+@end
+
 @implementation MainModule
+
+- (instancetype)init {
+    self = [super init];
+    self.homeModule = [HomeModule new];
+    return self;
+}
 
 - (void)setup:(BuildConfiguration)buildConfiguration {
     AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
@@ -18,12 +32,15 @@
     MainTabbarController *nv = [[MainTabbarController alloc] init];
     app.window.rootViewController = nv;
     [app.window makeKeyAndVisible];
+    
+    [self.homeModule setup:buildConfiguration];
 }
 
 - (void)getConfigurationFromServer {
     //LaunModule在setup之后会一起停留在启动页，直接收到App启动完成才会显示关闭启动页。
     [DataCenter perform:OperationGetConfig params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         [self getConfigurationCompleted:data];
+        [self.homeModule prepareGetHomeData];
     }];
 }
 

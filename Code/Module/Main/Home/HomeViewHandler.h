@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeViewHandler : ViewHandler
 
-
+- (void)setData:(id)data;
 
 @end
 

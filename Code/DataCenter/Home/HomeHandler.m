@@ -6,19 +6,34 @@
 //
 
 #import "HomeHandler.h"
+#import "HomePerformer.h"
 
-@interface HomeHandler()
+
+@interface HomeHandler()<IParser>
+
+@property (nonatomic, strong) HomeData *data;
 
 @end
 
 @implementation HomeHandler
 
-- (id)getData {
-    return nil;
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.data = [HomeData new];
+        [self bind:OperationGetHomeData performer:[HomePerformer new] parser:self];
+    }
+    return self;
 }
 
-- (id)getDataTYpe {
-    return nil;
+- (id)parse:(id)operation withSource:(id)source {
+    [self.data setData:source];
+    return [self getData];
+}
+
+- (id)getData {
+    return self.data;
 }
 
 @end

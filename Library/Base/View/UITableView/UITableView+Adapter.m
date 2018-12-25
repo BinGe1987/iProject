@@ -15,6 +15,7 @@ static const void *AdapterKey = &AdapterKey;
     objc_setAssociatedObject(self, AdapterKey, adapter, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     self.delegate = adapter;
     self.dataSource = adapter;
+    [self reloadData];
 }
 
 - (TableViewAdapter *)adapter {

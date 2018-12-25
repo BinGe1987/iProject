@@ -6,6 +6,7 @@
 //
 
 #import "DataHandler.h"
+#import "HomeData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

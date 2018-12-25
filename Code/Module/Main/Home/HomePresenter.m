@@ -18,6 +18,12 @@
     self = [super initWithView:view];
     self.handler = [[HomeViewHandler alloc] initWithView:view];
     self.handler.delegate = self;
+    
+    WeakSelf(self)
+    [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+        [weakself.handler setData:data];
+    }];
+    
     return self;
 }
 

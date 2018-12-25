@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0BC21D2119A009D1EE8 /* TableViewSection.m */; };
 		7734C0C021D223F5009D1EE8 /* UITableView+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0BF21D223F5009D1EE8 /* UITableView+Adapter.m */; };
+		7734C0C721D22CFE009D1EE8 /* HomeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0C621D22CFE009D1EE8 /* HomeData.m */; };
+		7734C0CB21D22D17009D1EE8 /* BannerData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0CA21D22D17009D1EE8 /* BannerData.m */; };
+		7734C0D521D22E7F009D1EE8 /* TechData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0D421D22E7F009D1EE8 /* TechData.m */; };
+		7734C0D821D22ED5009D1EE8 /* ClubData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0D721D22ED5009D1EE8 /* ClubData.m */; };
+		7734C0DB21D22EFD009D1EE8 /* ClassifyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0DA21D22EFD009D1EE8 /* ClassifyData.m */; };
+		7734C0DE21D22FDD009D1EE8 /* HomePerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0DD21D22FDD009D1EE8 /* HomePerformer.m */; };
+		7734C0E121D2318E009D1EE8 /* HomeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C0E021D2318E009D1EE8 /* HomeModule.m */; };
 		774F017421B9728900CB482F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774F017321B9728900CB482F /* MineViewController.m */; };
 		775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E221C3DDBA00B8D6FF /* UIViewController+Util.m */; };
 		775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E721C75DF600B8D6FF /* ImageUtils.m */; };
@@ -191,6 +198,20 @@
 		7734C0BC21D2119A009D1EE8 /* TableViewSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSection.m; sourceTree = "<group>"; };
 		7734C0BE21D223F5009D1EE8 /* UITableView+Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Adapter.h"; sourceTree = "<group>"; };
 		7734C0BF21D223F5009D1EE8 /* UITableView+Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Adapter.m"; sourceTree = "<group>"; };
+		7734C0C521D22CFE009D1EE8 /* HomeData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeData.h; sourceTree = "<group>"; };
+		7734C0C621D22CFE009D1EE8 /* HomeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeData.m; sourceTree = "<group>"; };
+		7734C0C921D22D17009D1EE8 /* BannerData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerData.h; sourceTree = "<group>"; };
+		7734C0CA21D22D17009D1EE8 /* BannerData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerData.m; sourceTree = "<group>"; };
+		7734C0D321D22E7F009D1EE8 /* TechData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TechData.h; sourceTree = "<group>"; };
+		7734C0D421D22E7F009D1EE8 /* TechData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechData.m; sourceTree = "<group>"; };
+		7734C0D621D22ED5009D1EE8 /* ClubData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubData.h; sourceTree = "<group>"; };
+		7734C0D721D22ED5009D1EE8 /* ClubData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubData.m; sourceTree = "<group>"; };
+		7734C0D921D22EFD009D1EE8 /* ClassifyData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyData.h; sourceTree = "<group>"; };
+		7734C0DA21D22EFD009D1EE8 /* ClassifyData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyData.m; sourceTree = "<group>"; };
+		7734C0DC21D22FDD009D1EE8 /* HomePerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomePerformer.h; sourceTree = "<group>"; };
+		7734C0DD21D22FDD009D1EE8 /* HomePerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomePerformer.m; sourceTree = "<group>"; };
+		7734C0DF21D2318E009D1EE8 /* HomeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeModule.h; sourceTree = "<group>"; };
+		7734C0E021D2318E009D1EE8 /* HomeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeModule.m; sourceTree = "<group>"; };
 		774F017221B9728900CB482F /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		774F017321B9728900CB482F /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		775B15E121C3DDBA00B8D6FF /* UIViewController+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Util.h"; sourceTree = "<group>"; };
@@ -577,9 +598,33 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
+		7734C0C821D22D0B009D1EE8 /* SubDatas */ = {
+			isa = PBXGroup;
+			children = (
+				7734C0C921D22D17009D1EE8 /* BannerData.h */,
+				7734C0CA21D22D17009D1EE8 /* BannerData.m */,
+			);
+			path = SubDatas;
+			sourceTree = "<group>";
+		};
+		7734C0D221D22E66009D1EE8 /* BaseData */ = {
+			isa = PBXGroup;
+			children = (
+				7734C0D321D22E7F009D1EE8 /* TechData.h */,
+				7734C0D421D22E7F009D1EE8 /* TechData.m */,
+				7734C0D621D22ED5009D1EE8 /* ClubData.h */,
+				7734C0D721D22ED5009D1EE8 /* ClubData.m */,
+				7734C0D921D22EFD009D1EE8 /* ClassifyData.h */,
+				7734C0DA21D22EFD009D1EE8 /* ClassifyData.m */,
+			);
+			path = BaseData;
+			sourceTree = "<group>";
+		};
 		774F017021B9725D00CB482F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7734C0DF21D2318E009D1EE8 /* HomeModule.h */,
+				7734C0E021D2318E009D1EE8 /* HomeModule.m */,
 				77EA8E9721B8FCF2001B8959 /* HomeViewController.h */,
 				77EA8E9821B8FCF2001B8959 /* HomeViewController.m */,
 				77B0558F21D1F77F0045A489 /* HomePresenter.h */,
@@ -1508,6 +1553,7 @@
 		77EA8F7D21B909B2001B8959 /* DataCenter */ = {
 			isa = PBXGroup;
 			children = (
+				7734C0D221D22E66009D1EE8 /* BaseData */,
 				77B0550521CCCDEE0045A489 /* Config */,
 				77EA8F7F21B90A18001B8959 /* User */,
 				77EA8F8521B90A18001B8959 /* Home */,
@@ -1531,8 +1577,13 @@
 		77EA8F8521B90A18001B8959 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				7734C0C821D22D0B009D1EE8 /* SubDatas */,
 				77EA8F8721B90A18001B8959 /* HomeHandler.h */,
 				77EA8F8621B90A18001B8959 /* HomeHandler.m */,
+				7734C0DC21D22FDD009D1EE8 /* HomePerformer.h */,
+				7734C0DD21D22FDD009D1EE8 /* HomePerformer.m */,
+				7734C0C521D22CFE009D1EE8 /* HomeData.h */,
+				7734C0C621D22CFE009D1EE8 /* HomeData.m */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -1646,6 +1697,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */,
+				7734C0DE21D22FDD009D1EE8 /* HomePerformer.m in Sources */,
 				77EA8F5321B90226001B8959 /* UIViewController+JSON.m in Sources */,
 				77EA8F6D21B90227001B8959 /* UIView+View.m in Sources */,
 				77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */,
@@ -1656,6 +1708,8 @@
 				77B054EF21CB86680045A489 /* NotificationCenter.m in Sources */,
 				77B0544F21C943760045A489 /* YYSpriteSheetImage.m in Sources */,
 				77B0545221C943760045A489 /* YYFrameImage.m in Sources */,
+				7734C0D521D22E7F009D1EE8 /* TechData.m in Sources */,
+				7734C0CB21D22D17009D1EE8 /* BannerData.m in Sources */,
 				77B0556A21D0D5720045A489 /* IQBarButtonItem.m in Sources */,
 				77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */,
 				77B0545A21C943760045A489 /* YYWebImageOperation.m in Sources */,
@@ -1672,6 +1726,7 @@
 				77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */,
 				77B054C921CA55870045A489 /* LabelView.m in Sources */,
 				77B054E821CB486C0045A489 /* NetReachability.m in Sources */,
+				7734C0E121D2318E009D1EE8 /* HomeModule.m in Sources */,
 				77B0556C21D0D5720045A489 /* IQPreviousNextView.m in Sources */,
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
 				776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */,
@@ -1747,6 +1802,7 @@
 				77B0558521D1CC510045A489 /* NSString+Utils.m in Sources */,
 				77EA8F6921B90227001B8959 /* ImageView.m in Sources */,
 				77EA8F3121B90226001B8959 /* Data.m in Sources */,
+				7734C0C721D22CFE009D1EE8 /* HomeData.m in Sources */,
 				77EA8F7121B90227001B8959 /* DefaultMapping.m in Sources */,
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
@@ -1785,12 +1841,14 @@
 				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,
+				7734C0DB21D22EFD009D1EE8 /* ClassifyData.m in Sources */,
 				776B55B321BE6B1500793CAF /* Button.m in Sources */,
 				776B55BB21BE966800793CAF /* GroupViewParams.m in Sources */,
 				77EA8F7B21B90732001B8959 /* BaseViewController.m in Sources */,
 				77B0559121D1F7800045A489 /* HomePresenter.m in Sources */,
 				77EA8F4B21B90226001B8959 /* FrameViewModel.m in Sources */,
 				77EA8F4521B90226001B8959 /* ImageViewModel.m in Sources */,
+				7734C0D821D22ED5009D1EE8 /* ClubData.m in Sources */,
 				776B55D621BFAB7E00793CAF /* UIButton+OnClick.m in Sources */,
 				77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */,
 				77B0552821CD82510045A489 /* AppInfo.m in Sources */,

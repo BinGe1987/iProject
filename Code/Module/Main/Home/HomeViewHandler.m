@@ -18,6 +18,11 @@
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
+    self.tableView = (UITableView *)view;
+    return self;
+}
+
+- (void)setData:(id)data {
     NSMutableArray *datas = [NSMutableArray array];
     for(int i = 0; i < 20; i++) {
         [datas addObject:[NSString stringWithFormat:@"table item %i", i]];
@@ -31,9 +36,7 @@
                                                                                  @"headerHeight" : [NSNumber numberWithFloat:40],
                                                                                  @"footerHeight" : [NSNumber numberWithFloat:40]}];
     HomeViewAdpater *adapter = [HomeViewAdpater AdapterWithSourceData:@[section1,section2]];
-    self.tableView = (UITableView *)view;
     [self.tableView setAdapter:adapter];
-    return self;
 }
 
 @end

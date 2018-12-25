@@ -17,4 +17,8 @@
     return self;
 }
 
+- (void)setData:(id)data {
+    
+}
+
 @end
