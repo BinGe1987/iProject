@@ -16,7 +16,7 @@
         "isHead": true,
         "name": "IndexTitle",
         "type": "title",
-        "title": "<首页>"
+        "title": "首页"
       },
       "components": []
     },

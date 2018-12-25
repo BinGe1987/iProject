@@ -174,7 +174,6 @@
 		77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FB121B94ADE001B8959 /* BaseNavigationController.m */; };
 		77EA8FBE21B94BB5001B8959 /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FBD21B94BB5001B8959 /* TestModule.m */; };
 		77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FC521B95584001B8959 /* MainTabbarController.m */; };
-		77EA8FC921B96A7D001B8959 /* home_logout.json in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8FC821B96A7D001B8959 /* home_logout.json */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -527,7 +526,6 @@
 		77EA8FBD21B94BB5001B8959 /* TestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
 		77EA8FC421B95584001B8959 /* MainTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarController.h; sourceTree = "<group>"; };
 		77EA8FC521B95584001B8959 /* MainTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabbarController.m; sourceTree = "<group>"; };
-		77EA8FC821B96A7D001B8959 /* home_logout.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = home_logout.json; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -553,7 +551,6 @@
 			children = (
 				77EA8E9721B8FCF2001B8959 /* HomeViewController.h */,
 				77EA8E9821B8FCF2001B8959 /* HomeViewController.m */,
-				77EA8FC821B96A7D001B8959 /* home_logout.json */,
 				77FAFCD821C28C2D002A90B0 /* Home.json */,
 			);
 			path = Home;
@@ -1583,7 +1580,6 @@
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
 				77EA8F3721B90226001B8959 /* readme-mvp in Resources */,
 				77B0556D21D0D5720045A489 /* IQKeyboardManager.bundle in Resources */,
-				77EA8FC921B96A7D001B8959 /* home_logout.json in Resources */,
 				77B0544821C943760045A489 /* README.md in Resources */,
 				776B55AD21BE682C00793CAF /* Login.json in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
