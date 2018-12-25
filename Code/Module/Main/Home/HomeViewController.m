@@ -18,11 +18,6 @@
     [super viewDidLoad];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Home.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
-
-    UIButton *btn = (UIButton *)[self findViewByName:@"btn1"];
-    [btn setClickBlock:^(UIButton * _Nonnull button) {
-//        [Module startLoginAnimated:YES];
-    }];
 }
 
 - (void)onLayoutSubViewsCompleted {
