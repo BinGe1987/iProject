@@ -16,15 +16,12 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"HomeNavigation.json" ofType:nil];
     JSON *json = [[JSON alloc] initWithPath:path];
-    if (!json.error) {
-        JSONModel *model = [[JSONModel alloc] initWithJSON:json.source];
-        ViewGroup *vg = (ViewGroup *)[[UIEngine get]parse:model];
-//        vg.backgroundColor = [UIColor redColor];
-        CGRect rect = view.frame;
-        [vg layoutWithMaxWidth:view.bounds.size.width maxHeight:view.bounds.size.height completed:nil];
-        vg.frame = rect;
-        [view addSubview:vg];
-    }
+    JSONModel *model = [[JSONModel alloc] initWithJSON:json.source];
+    ViewGroup *vg = (ViewGroup *)[[UIEngine get]parse:model];
+    CGRect rect = view.frame;
+    [vg layoutWithMaxWidth:view.bounds.size.width maxHeight:view.bounds.size.height completed:nil];
+    vg.frame = rect;
+    [view addSubview:vg];
     
     UISearchBar *searchBar = [[UISearchBar alloc] init];
     searchBar.frame=CGRectMake(0,0, SCREENWIDTH - ScaleValue(93) - ScaleValue(69),ScaleValue(26));
@@ -41,7 +38,7 @@
     }
     
     
-    [view addSubview:searchBar];
+    [vg addSubview:searchBar];
     
     
     return self;
