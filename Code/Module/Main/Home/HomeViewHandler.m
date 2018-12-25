@@ -19,23 +19,25 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.tableView = (UITableView *)view;
+    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    WeakSelf(self)
+    [self.tableView setHeadRefreshHandler:^{
+        if (weakself.delegate) {
+            [weakself.delegate onViewAction:@"action_refresh_head"];
+        }
+    }];
+    [self.tableView setFootRefreshHandler:^{
+        if (weakself.delegate) {
+            [weakself.delegate onViewAction:@"action_refresh_foot"];
+        }
+    }];
     return self;
 }
 
 - (void)setData:(id)data {
-    NSMutableArray *datas = [NSMutableArray array];
-    for(int i = 0; i < 20; i++) {
-        [datas addObject:[NSString stringWithFormat:@"table item %i", i]];
-    }
-    TableViewSection *section1 = [[TableViewSection alloc] initWithDictionary: @{@"name": @"123", @"array": datas,
-                                                                                 @"height" : [NSNumber numberWithFloat:40],
-                                                                                 @"headerHeight" : [NSNumber numberWithFloat:60],
-                                                                                 @"footerHeight" : [NSNumber numberWithFloat:0]}];
-    TableViewSection *section2 = [[TableViewSection alloc] initWithDictionary: @{@"name": @"123", @"array": datas,
-                                                                                 @"height" : [NSNumber numberWithFloat:100],
-                                                                                 @"headerHeight" : [NSNumber numberWithFloat:40],
-                                                                                 @"footerHeight" : [NSNumber numberWithFloat:40]}];
-    HomeViewAdpater *adapter = [HomeViewAdpater AdapterWithSourceData:@[section1,section2]];
+    HomeData *homeData = (HomeData *)data;
+    TableViewSection *bannerSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"banner", @"array": @[homeData.banner], @"height" : [NSNumber numberWithFloat:ScaleValue(138)]}];
+    HomeViewAdpater *adapter = [HomeViewAdpater AdapterWithSourceData:@[bannerSection]];
     [self.tableView setAdapter:adapter];
 }
 

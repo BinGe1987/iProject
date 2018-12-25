@@ -20,6 +20,10 @@
 #define SCREENWIDTH   [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT  [UIScreen mainScreen].bounds.size.height
 
+#define SCREENSCALE   SCREENWIDTH/375.0
+
+#define ScaleValue(value)   value * SCREENSCALE
+
 #ifdef DEBUG
 #define Log(...) NSLog(@"%s 第%d行 \n%@\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
 #else

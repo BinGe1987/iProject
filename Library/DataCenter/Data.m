@@ -14,11 +14,20 @@
 }
 
 - (instancetype)initWithData:(Data *)data {
-    self = [super init];
+    self = [self init];
     [self setData:data];
     return self;
 }
 
+- (instancetype)init {
+    self = [super init];
+    [self initialize];
+    return self;
+}
+
+- (void)initialize {
+    
+}
 
 - (void)setData:(Data *)data {
     self.source = data.source;

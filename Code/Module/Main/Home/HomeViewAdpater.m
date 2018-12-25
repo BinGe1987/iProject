@@ -6,18 +6,22 @@
 //
 
 #import "HomeViewAdpater.h"
+#import "BannerUITableViewCell.h"
 
 @implementation HomeViewAdpater
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * showUserInfoCellIdentifier = @"TableViewAdapterCell";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
-    if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:showUserInfoCellIdentifier];
+    TableViewSection *section = [self.data objectAtIndex:indexPath.section];
+    if ([section.name isEqualToString:@"banner"]) {
+        return [self bannerCell:tableView cellForRowAtIndexPath:indexPath];
     }
-    cell.textLabel.text = @"789";
-    
+    return nil;
+}
+
+- (UITableViewCell *)bannerCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    BannerUITableViewCell * cell = [BannerUITableViewCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
+    [cell setData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 

@@ -10,7 +10,7 @@
 @implementation HomePerformer
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
-
+//    sleep(2);
     return [Data new];
 }
 

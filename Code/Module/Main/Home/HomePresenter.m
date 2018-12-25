@@ -24,11 +24,15 @@
         [weakself.handler setData:data];
     }];
     
+    
     return self;
 }
 
-- (void)onViewAction:(id)action withTarget:(id)target {
-    
+- (void)onViewAction:(id)action {
+    WeakSelf(self)
+    [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+        [weakself.handler setData:data];
+    }];
 }
 
 - (void)willAppear:(BOOL)animated {

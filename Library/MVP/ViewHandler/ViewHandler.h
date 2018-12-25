@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ViewHandlerDelegate <NSObject>
 
-- (void)onViewAction:(id)action withTarget:(id)target;
+- (void)onViewAction:(id)action;
 
 @end
 

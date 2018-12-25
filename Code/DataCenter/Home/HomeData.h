@@ -15,13 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeData : Data
 
-@property (nonatomic, strong) NSArray *banner;
+@property (nonatomic, strong) NSMutableArray *banner;
 
-@property (nonatomic, strong) NSArray *classify;
+@property (nonatomic, strong) NSMutableArray *classify;
 
-@property (nonatomic, strong) NSArray *tech;
+@property (nonatomic, strong) NSMutableArray *tech;
 
-@property (nonatomic, strong) NSArray *club;
+@property (nonatomic, strong) NSMutableArray *club;
 
 @end
 

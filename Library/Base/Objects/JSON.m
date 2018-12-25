@@ -31,6 +31,7 @@
     return self;
 }
 
+
 - (NSString *)stringWithKey:(NSString *)key {
     return [self stringWithKey:key defaultValue:nil];
 }
