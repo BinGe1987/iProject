@@ -14,8 +14,8 @@
 #pragma mark 分辨率相关的宏
 
 #define STATUSBARHIEGHT ([[UIApplication sharedApplication] statusBarFrame].size.height)
-#define NVBARHIEGHT self.navigationController.navigationBar.frame.size.height;
-#define TABBARHIEGHT self.tabBarController.tabBar.frame.size.height;
+#define NVBARHIEGHT  self.navigationController.navigationBar.frame.size.height
+#define TABBARHIEGHT self.tabBarController.tabBar.frame.size.height
 
 #define SCREENWIDTH   [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT  [UIScreen mainScreen].bounds.size.height

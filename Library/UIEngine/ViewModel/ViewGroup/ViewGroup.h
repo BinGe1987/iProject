@@ -23,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewGroup : UIView<ViewGroupDelegate>
 
-- (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^)(void))block;
+- (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^ _Nullable )(void))block;
 
 @end
 

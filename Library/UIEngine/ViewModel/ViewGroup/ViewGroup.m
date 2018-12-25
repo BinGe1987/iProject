@@ -45,7 +45,9 @@
     [self assignmentForMaxWidth:width maxHeight:height];
     [self boundingSize];
     [self refreshLayout];
-    block();
+    if (block) {
+        block();
+    }
     
 }
 

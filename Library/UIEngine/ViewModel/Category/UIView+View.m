@@ -34,8 +34,10 @@ static char shapeLayerKey;
 - (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
     //>=0，证明非 FULL 或 ATUO
     if (self.viewParams.visibility != ViewVisibilityGone) {
-        self.maxWidth = MIN(width, self.viewParams.width >= 0 ? self.viewParams.width : width);
-        self.maxHeight = MIN(height, self.viewParams.height >= 0 ? self.viewParams.height : height);
+        CGFloat maxWidth = MIN(width, self.viewParams.width >= 0 ? self.viewParams.width : width);
+        CGFloat maxHeight = MIN(height, self.viewParams.height >= 0 ? self.viewParams.height : height);
+        self.maxWidth = maxWidth;
+        self.maxHeight = maxHeight;
     } else {
         self.maxWidth = 0;
         self.maxHeight = 0;

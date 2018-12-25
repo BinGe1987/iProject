@@ -6,6 +6,7 @@
 //
 
 #import "HomeViewController.h"
+#import "HomeNvPresenter.h"
 #import "HomePresenter.h"
 
 @interface HomeViewController ()
@@ -21,6 +22,10 @@
     
     HomePresenter *prsenter = [[HomePresenter alloc] initWithView:[self findViewByName:@"table"]];
     [self addPresenter:prsenter];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 30, NVBARHIEGHT)];
+    self.navigationItem.titleView = view;
+    [self addPresenter:[[HomeNvPresenter alloc] initWithView:view]];
 }
 
 - (void)onLayoutSubViewsCompleted {

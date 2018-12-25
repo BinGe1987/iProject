@@ -1,0 +1,21 @@
+{
+    "view_name":"title_view",
+    "view_type":"frame",
+    "view_width":"full",
+    "view_height":"44",
+    "view_background":"#ffff00ff",
+    "subviews":[
+        {
+            "view_name":"code",
+            "view_type":"button",
+            "view_width":"30",
+            "view_height":"30",
+            "view_paddingLeft":"20",
+            "view_paddingTop":"20",
+            "view_paddingRight":"20",
+            "view_paddingBottom":"20",
+            "view_background":"#ff00ffff",
+            "layout_gravity":"center|right",
+        }
+    ]
+}

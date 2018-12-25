@@ -34,7 +34,7 @@
         if (params.gravity & FrameLayoutGravityCenter) {
             r.origin.x = self.width / 2 - subView.width / 2
                     + subView.layoutParams.marginLeft - subView.layoutParams.marginRight;
-            r.origin.y = self.width / 2 - subView.height / 2
+            r.origin.y = self.height / 2 - subView.height / 2
                     + subView.layoutParams.marginTop - subView.layoutParams.marginBottom;
         }
         if (params.gravity & FrameLayoutGravityLeft) {
