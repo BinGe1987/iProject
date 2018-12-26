@@ -22,8 +22,15 @@
 }
 
 - (void)setButtonViewParams:(ButtonViewParams *)params {
+    self.button.titleLabel.font = params.font;
     [self.button setTitle:params.text forState:UIControlStateNormal];
     [self.button setTitleColor:params.textColor forState:UIControlStateNormal];
+    if (params.imageNormal) {
+        [self.button setImage:params.imageNormal forState:UIControlStateNormal];
+    }
+    if (params.imageSelected) {
+        [self.button setImage:params.imageSelected forState:UIControlStateSelected];
+    }
 }
 
 - (Class)ViewClass {

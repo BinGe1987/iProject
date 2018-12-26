@@ -12,7 +12,11 @@
 -(instancetype)initWithModel:(id<UIModel>)model {
     self = [super initWithModel:model];
     if (self) {
+        
         self.imageSrc = [model getString:@"image_src" defaultValue:nil];
+        if ([self.imageSrc hasPrefix:@"@"]) {
+            self.imageSrc = [self.imageSrc substringFromIndex:1];
+        }
         self.imageUrl = [model getString:@"image_url" defaultValue:nil];
         
         NSString *type = [model getString:@"image_scaleType" defaultValue:@"center"];
