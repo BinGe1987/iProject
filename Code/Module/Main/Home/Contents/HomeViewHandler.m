@@ -19,7 +19,8 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.tableView = (UITableView *)view;
-    self.tableView.tableFooterView = [[UIView alloc]initWithFrame:CGRectZero];
+    self.tableView.showsVerticalScrollIndicator = FALSE; //垂直滚动条
+    self.tableView.showsHorizontalScrollIndicator = FALSE;//水平滚动条
     WeakSelf(self)
     [self.tableView setHeadRefreshHandler:^{
         if (weakself.delegate) {

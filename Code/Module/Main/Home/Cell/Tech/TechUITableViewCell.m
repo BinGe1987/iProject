@@ -34,6 +34,10 @@
 }
 
 - (void)setData:(id)data {
+    if (data == self.cellData) {
+        return;
+    }
+    self.cellData = data;
     CGSize size = CGSizeMake(ScaleValue(84), self.scrollView.height);
     id<ViewGroupDelegate> delegate = (id<ViewGroupDelegate>)self.scrollView;
     for (TechData *tech in data) {

@@ -6,6 +6,7 @@
 //
 
 #import "DataCenter.h"
+#import "Data+Update.h"
 #import "ConfigHandler.h"
 #import "LoginHandler.h"
 #import "UserHandler.h"

@@ -11,6 +11,13 @@
 #import "TechUITableViewCell.h"
 #import "ClubTableViewCell.h"
 
+@interface HomeViewAdpater()
+
+@property (nonatomic, strong) UIView *header1;
+@property (nonatomic, strong) UIView *header2;
+
+@end
+
 @implementation HomeViewAdpater
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -33,16 +40,21 @@
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
     TableViewSection *sec = [self.data objectAtIndex:section];
     if ([sec.name isEqualToString:@"tech"]) {
-        CGSize size = CGSizeMake(tableView.width, sec.headerHeight);
-        UIView *view = [UIView viewWithJSON:@"TechCellHeader.json" size:size];
-        return view;
+        if (!self.header1) {
+            CGSize size = CGSizeMake(tableView.width, sec.headerHeight);
+            UIView *view = [UIView viewWithJSON:@"TechCellHeader.json" size:size];
+            self.header1 = view;
+        }
+        return self.header1;
     }
     else if ([sec.name isEqualToString:@"club"]) {
-        CGSize size = CGSizeMake(tableView.width, sec.headerHeight);
-        UIView *view = [UIView viewWithJSON:@"ClubCellHeader.json" size:size];
-        return view;
+        if (!self.header2) {
+            CGSize size = CGSizeMake(tableView.width, sec.headerHeight);
+            UIView *view = [UIView viewWithJSON:@"ClubCellHeader.json" size:size];
+            self.header2 = view;
+        }
+        return self.header2;
     }
-    
     return [UIView new];
 }
 

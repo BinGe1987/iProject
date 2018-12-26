@@ -21,6 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSArray *array;
 
+///代码这个section只有一个section
+@property (nonatomic, assign) BOOL oneCell;
+
 - (instancetype)initWithDictionary:(NSDictionary *)dic;
 
 @end

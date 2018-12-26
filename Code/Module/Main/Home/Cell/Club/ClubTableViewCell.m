@@ -33,7 +33,7 @@
 - (void)setData:(id)data {
     UIImageView *iv = (UIImageView *)[self.itemView findViewByName:@"image"];
     ClubData *club = (ClubData *)data;
-    if (![NSString isEmpty:club.imageUrl]) {
+    if ([NSString isEmpty:club.imageUrl]) {
 //        iv.image = [UIImage imageNamed:@""];
     }
 }

@@ -69,16 +69,9 @@
     }
     
     //商家
-    //技师
     NSArray *club = @[@{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
                       ];
-    for (NSDictionary *dic in tech) {
+    for (NSDictionary *dic in club) {
         ClubData *data = [ClubData new];
         data.name = [dic objectForKey:@"name"];
         data.imageUrl = [dic objectForKey:@"image"];

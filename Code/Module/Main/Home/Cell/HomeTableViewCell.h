@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeTableViewCell : UITableViewCell
 
+@property (nonatomic, assign) id cellData;
+
 + (instancetype)tableView:(UITableView *)tableView cellWithSize:(CGSize)size;
 
 - (void)setData:(id)data;

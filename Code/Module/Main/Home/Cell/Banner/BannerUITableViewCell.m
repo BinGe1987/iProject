@@ -33,7 +33,10 @@
 
 - (void)setData:(id)data {
     
-    
+    if (data == self.cellData) {
+        return;
+    }
+    self.cellData = data;
     NSMutableArray *array = [NSMutableArray new];
     for (NSString *imageUrl in data) {
         UIImage *image = [UIImage imageWithContentsOfFile:imageUrl];

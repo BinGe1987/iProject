@@ -2,23 +2,22 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"full",
-    "view_background":"#ff00ff00",
     "subviews":[
         {
             "view_type":"linear",
             "view_width":"auto",
             "view_height":"auto",
-            "view_orientation":"V",
-            "layout_gravity":"center",
+            "view_orientation":"H",
+            "layout_gravity":"center|left",
             "subviews":[
                 {
                     "view_name":"image",
                     "view_type":"image",
-                    "view_width":"58",
-                    "view_height":"58",
-                    "view_borderRadius":"29",
+                    "view_width":"90",
+                    "view_height":"78",
+                    "view_borderRadius":"3",
                     "view_borderWidth":"1",
-                    "view_borderColor":"#ffffb925",
+                    "view_borderColor":"#00ffb925",
                     "image_src":"@default_club",
                 },
                 {
@@ -28,7 +27,7 @@
                     "view_height":"26",
                     "text_size":"12",
                     "text_color":"#ff3e3e3e",
-                    "text_src":"技师",
+                    "text_src":"",
                 }
             ]
         }

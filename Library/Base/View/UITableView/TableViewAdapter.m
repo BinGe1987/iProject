@@ -37,11 +37,12 @@
 
 #pragma mark 头部
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return [UIView new];
+    return [[UIView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
     TableViewSection *tvSection = [self.data objectAtIndex:section];
-    return tvSection.headerHeight;
+    CGFloat height = tvSection.headerHeight ? tvSection.headerHeight : 0;
+    return height;
 }
 
 
@@ -51,7 +52,7 @@
     return tvSection.footerHeight;
 }
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
-    return [UIView new];
+    return [[UIView alloc] initWithFrame:CGRectMake(0, 0, 1, 0.01)];
 }
 
 

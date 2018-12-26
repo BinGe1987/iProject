@@ -33,12 +33,12 @@
 
 - (void)addView:(UIView *)view {
     [self addSubview:view];
-    [self requestLayout];
+//    [self requestLayout];
 }
 
 - (void)removeView:(UIView *)view {
     [view removeFromSuperview];
-    [self requestLayout];
+//    [self requestLayout];
 }
 
 - (void)assignmentForMaxSize:(CGSize)size {
