@@ -109,11 +109,11 @@ static char shapeLayerKey;
             break;
     }
     
-    if (width == self.maxWidth) {
+    if (width == self.superview.maxWidth) {
         width = width - self.layoutParams.marginLeft - self.layoutParams.marginRight;
     }
     
-    if (height == self.maxHeight) {
+    if (height == self.superview.maxHeight) {
         height = height - self.layoutParams.marginTop - self.layoutParams.marginBottom;
     }
     
