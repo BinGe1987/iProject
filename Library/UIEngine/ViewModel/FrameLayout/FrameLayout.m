@@ -31,6 +31,8 @@
         r.size.height = subView.height;
         
         FrameLayoutParams *params = (FrameLayoutParams *)subView.layoutParams;
+        r.origin.x = subView.layoutParams.marginLeft;
+        r.origin.y = subView.layoutParams.marginTop;
         if (params.gravity & FrameLayoutGravityCenter) {
             r.origin.x = self.width / 2 - subView.width / 2
                     + subView.layoutParams.marginLeft - subView.layoutParams.marginRight;

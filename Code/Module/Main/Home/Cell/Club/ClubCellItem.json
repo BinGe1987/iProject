@@ -5,10 +5,14 @@
     "subviews":[
         {
             "view_type":"linear",
-            "view_width":"auto",
-            "view_height":"auto",
+            "view_width":"full",
+            "view_height":"full",
             "view_orientation":"H",
-            "layout_gravity":"center|left",
+            "view_background":"#0000ff00",
+            "layout_marginLeft":"12",
+            "layout_marginRight":"12",
+            "layout_marginTop":"14",
+            "layout_marginBottom":"14",
             "subviews":[
                 {
                     "view_name":"image",
@@ -30,6 +34,15 @@
                     "text_src":"",
                 }
             ]
-        }
+        },
+        {
+            "view_type":"view",
+            "view_width":"full",
+            "view_height":"1",
+            "view_background":"#fff0f0f0",
+            "layout_marginLeft":"12",
+            "layout_marginRight":"12",
+            "layout_gravity":"bottom",
+        },
     ]
 }

@@ -70,6 +70,15 @@
     
     //商家
     NSArray *club = @[@{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
+                      @{@"name":@"小摩豆",@"image":@""},
                       ];
     for (NSDictionary *dic in club) {
         ClubData *data = [ClubData new];
