@@ -1,0 +1,34 @@
+{
+    "view_type":"frame",
+    "view_width":"full",
+    "view_height":"full",
+    "subviews":[
+        {
+            "view_type":"label",
+            "view_width":"auto",
+            "view_height":"auto",
+            "text_size":"18",
+            "text_color":"#ff55b4b2",
+            "text_src":"头牌技师",
+            "layout_gravity":"center",
+        },
+        {
+            "view_type":"view",
+            "view_width":"36",
+            "view_height":"0.5",
+            "view_background":"#ff55b4b2",
+            "layout_marginRight":"100",
+            "layout_gravity":"center",
+        },
+        {
+            "view_type":"view",
+            "view_width":"36",
+            "view_height":"0.5",
+            "view_background":"#ff55b4b2",
+            "layout_marginLeft":"100",
+            "layout_gravity":"center",
+        },
+    ]
+}
+
+
