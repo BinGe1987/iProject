@@ -41,8 +41,8 @@
     [self requestLayout];
 }
 
-- (void)assignmentForMaxSize:(CGSize)size superViewSize:(CGSize)superViewSize {
-    [super assignmentForMaxSize:size superViewSize:superViewSize];
+- (void)assignmentForMaxSize:(CGSize)size {
+    [super assignmentForMaxSize:size];
     CGFloat width = size.width, height = size.height;
     CGFloat maxWidth = width, maxHeight = height;
     if (self.orientation == ScrollOrientationVertical) {
@@ -51,7 +51,7 @@
         maxWidth = 10000000;
     }
     for (UIView *view in self.subviews) {
-        [view assignmentForMaxSize:CGSizeMake(maxWidth, maxHeight) superViewSize:size];
+        [view assignmentForMaxSize:CGSizeMake(maxWidth, maxHeight)];
         if (self.orientation == ScrollOrientationVertical) {
             maxHeight -= view.boundingSize.height;
         } else {

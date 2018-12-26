@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIView *)findViewByName:(NSString *)name;
 
-- (void)assignmentForMaxSize:(CGSize)size superViewSize:(CGSize)superViewSize;
+- (void)assignmentForMaxSize:(CGSize)size;
 
 ///给view的size最大值赋值
 //- (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height;

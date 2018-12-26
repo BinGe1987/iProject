@@ -31,7 +31,7 @@ static char shapeLayerKey;
     return nil;
 }
 
-- (void)assignmentForMaxSize:(CGSize)size superViewSize:(CGSize)superViewSize {
+- (void)assignmentForMaxSize:(CGSize)size {
     CGFloat maxWidth, maxHeight;
     ViewParams *vp = self.viewParams;
     if (self.viewParams.visibility != ViewVisibilityGone) {
@@ -42,7 +42,7 @@ static char shapeLayerKey;
                 maxWidth = size.width;
                 break;
             case PERCENT:
-                maxWidth = superViewSize.width;
+                maxWidth = self.superview.maxWidth * vp.width / 100.0;
                 break;
             case VALUE:
                 maxWidth = vp.width;
@@ -57,7 +57,7 @@ static char shapeLayerKey;
                 maxHeight = size.height;
                 break;
             case PERCENT:
-                maxHeight = superViewSize.height;
+                maxHeight = self.superview.maxHeight * vp.height / 100.0;
                 break;
             case VALUE:
                 maxHeight = vp.height;
@@ -87,7 +87,7 @@ static char shapeLayerKey;
             width = maxWidth;
             break;
         case PERCENT:
-            width = maxWidth * vp.width / 100.0;
+            width = maxWidth;
             break;
         case VALUE:
             width = MIN(maxWidth, vp.width);
@@ -102,7 +102,7 @@ static char shapeLayerKey;
             height = maxHeight;
             break;
         case PERCENT:
-            height = maxHeight * vp.height / 100.0;
+            height = maxHeight;
             break;
         case VALUE:
             height = MIN(maxHeight, vp.height);

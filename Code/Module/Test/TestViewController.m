@@ -46,14 +46,10 @@
 //
 //    }];
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 390, 44)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 414, 138)];
     view.backgroundColor = [UIColor redColor];
-//    self.navigationItem.titleView = view;
-//    [self addPresenter:[[HomeNvPresenter alloc] initWithView:view]];
-    
-    UIView *titleView = [UIView viewWithJSON:@"HomeNavigation.json" size:view.bounds.size];
+    UIView *titleView = [UIView viewWithJSON:@"ClassifyCell.json" size:view.bounds.size];
     [view addSubview:titleView];
-    
     [self.view addSubview:view];
 }
 
