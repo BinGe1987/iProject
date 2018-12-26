@@ -36,27 +36,12 @@
 
 
 - (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^)(void))block {
-//    WeakSelf(self)
-//    dispatch_async(dispatch_get_global_queue(0,0),^{
-//        ///初始化所有view的最大宽高
-//        [weakself assignmentForMaxWidth:width maxHeight:height];
-//        ///计算所有view的实际宽高
-//        [weakself boundingSize];
-//        dispatch_async(dispatch_get_main_queue(),^{
-//            ///开始布局
-//            [weakself refreshLayout];
-//            block();
-//        });
-//    });
-    
-//    [self assignmentForMaxWidth:width maxHeight:height];
     [self assignmentForMaxSize:CGSizeMake(width, height)];
     [self boundingSize];
     [self refreshLayout];
     if (block) {
         block();
     }
-    
 }
 
 - (void)refreshLayout {

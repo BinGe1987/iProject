@@ -18,6 +18,7 @@
 
 - (void)initialize {
     self.textView = (LabelView *)self.view;
+    self.textView.textAlignment = NSTextAlignmentCenter;
     [self setTextViewParams:(LabelViewParams *)self.textView.viewParams];
 }
 
