@@ -16,7 +16,7 @@
         NSInteger textSize = [model getInteger:@"text_size" defaultValue:12];
         self.font = UIFontMake(textSize);
         
-        NSString *text = [model getString:@"text_src" defaultValue:@"Empty Text"];
+        NSString *text = [model getString:@"text_src" defaultValue:@""];
         self.text = text;
         
         NSString *color = [model getString:@"text_color" defaultValue:@"#ff000000"];

@@ -26,7 +26,8 @@
     self.inputView.textColor = params.textColor;
     
     self.inputView.placeholder = params.placeholder;
-    [self.inputView setValue:[UIColor redColor] forKeyPath:@"_placeholderLabel.textColor"];
+    [self.inputView setValue:params.placeholderColor forKeyPath:@"_placeholderLabel.textColor"];
+    [self.inputView setValue:params.font forKeyPath:@"_placeholderLabel.font"];
     
     NSInteger left = params.paddingLeft;
     NSInteger right = params.paddingRight;

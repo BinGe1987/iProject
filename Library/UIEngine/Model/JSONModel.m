@@ -44,12 +44,12 @@
 }
 
 - (int)getInteger:(NSString *)key defaultValue:(int)defValue {
-    NSString *value = [self getString:key defaultValue:@"0"];
+    NSString *value = [self getString:key defaultValue:[NSString stringWithFormat:@"%d", defValue]];
     return [value intValue];
 }
 
 - (CGFloat)getFloat:(NSString *)key defaultValue:(CGFloat)defValue {
-    NSString *value = [self getString:key defaultValue:@"0"];
+    NSString *value = [self getString:key defaultValue:[NSString stringWithFormat:@"%fl", defValue]];
     return [value floatValue];
 }
 
