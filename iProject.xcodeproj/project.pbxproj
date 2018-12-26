@@ -169,6 +169,9 @@
 		77CEA4B621D3A76500B388E4 /* TechCellHeader.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4B521D3A76500B388E4 /* TechCellHeader.json */; };
 		77CEA4B821D3AF5500B388E4 /* TechCellList.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4B721D3AF5500B388E4 /* TechCellList.json */; };
 		77CEA4BA21D3B1D000B388E4 /* TechCellListItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4B921D3B1D000B388E4 /* TechCellListItem.json */; };
+		77CEA4BE21D3BD4300B388E4 /* ClubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4BD21D3BD4300B388E4 /* ClubTableViewCell.m */; };
+		77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4BF21D3BD8700B388E4 /* ClubCellHeader.json */; };
+		77CEA4C221D3BF5B00B388E4 /* ClubCellItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4C121D3BF5B00B388E4 /* ClubCellItem.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -553,6 +556,10 @@
 		77CEA4B521D3A76500B388E4 /* TechCellHeader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TechCellHeader.json; sourceTree = "<group>"; };
 		77CEA4B721D3AF5500B388E4 /* TechCellList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TechCellList.json; sourceTree = "<group>"; };
 		77CEA4B921D3B1D000B388E4 /* TechCellListItem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TechCellListItem.json; sourceTree = "<group>"; };
+		77CEA4BC21D3BD4300B388E4 /* ClubTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTableViewCell.h; sourceTree = "<group>"; };
+		77CEA4BD21D3BD4300B388E4 /* ClubTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTableViewCell.m; sourceTree = "<group>"; };
+		77CEA4BF21D3BD8700B388E4 /* ClubCellHeader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ClubCellHeader.json; sourceTree = "<group>"; };
+		77CEA4C121D3BF5B00B388E4 /* ClubCellItem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ClubCellItem.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -852,6 +859,7 @@
 				7734C13421D27036009D1EE8 /* Banner */,
 				77CEA4AB21D3578B00B388E4 /* Classify */,
 				77CEA4AE21D3906700B388E4 /* Tech */,
+				77CEA4BB21D3BCD400B388E4 /* Club */,
 				7734C13121D26ED3009D1EE8 /* HomeTableViewCell.h */,
 				7734C13221D26ED3009D1EE8 /* HomeTableViewCell.m */,
 			);
@@ -1503,6 +1511,17 @@
 			path = Constant;
 			sourceTree = "<group>";
 		};
+		77CEA4BB21D3BCD400B388E4 /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA4BC21D3BD4300B388E4 /* ClubTableViewCell.h */,
+				77CEA4BD21D3BD4300B388E4 /* ClubTableViewCell.m */,
+				77CEA4BF21D3BD8700B388E4 /* ClubCellHeader.json */,
+				77CEA4C121D3BF5B00B388E4 /* ClubCellItem.json */,
+			);
+			path = Club;
+			sourceTree = "<group>";
+		};
 		77EA8E5E21B8F79F001B8959 = {
 			isa = PBXGroup;
 			children = (
@@ -1982,12 +2001,14 @@
 			files = (
 				77CEA4BA21D3B1D000B388E4 /* TechCellListItem.json in Resources */,
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
+				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
 				77CEA4B821D3AF5500B388E4 /* TechCellList.json in Resources */,
 				77CEA4B621D3A76500B388E4 /* TechCellHeader.json in Resources */,
 				77EA8F3721B90226001B8959 /* readme-mvp in Resources */,
+				77CEA4C221D3BF5B00B388E4 /* ClubCellItem.json in Resources */,
 				77B0556D21D0D5720045A489 /* IQKeyboardManager.bundle in Resources */,
 				77B0544821C943760045A489 /* README.md in Resources */,
 				7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */,
@@ -2111,6 +2132,7 @@
 				77B0551C21CD247E0045A489 /* MainModule.m in Sources */,
 				77B0545821C943760045A489 /* UIImage+YYWebImage.m in Sources */,
 				77B054BA21CA4F670045A489 /* Store.m in Sources */,
+				77CEA4BE21D3BD4300B388E4 /* ClubTableViewCell.m in Sources */,
 				77B0547721CA46DC0045A489 /* KSPhotoView.m in Sources */,
 				77EA8F8B21B90A18001B8959 /* LoginHandler.m in Sources */,
 				776B55ED21C00CC000793CAF /* Performer.m in Sources */,

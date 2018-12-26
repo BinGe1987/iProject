@@ -39,7 +39,8 @@
     TableViewSection *bannerSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"banner", @"array": @[homeData.banner], @"height" : [NSNumber numberWithFloat:ScaleValue(138)]}];
     TableViewSection *classifySection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"classify", @"array": @[homeData.classify], @"height" : [NSNumber numberWithFloat:ScaleValue(75)]}];
     TableViewSection *techSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"tech", @"array": @[homeData.tech],@"headerHeight": [NSNumber numberWithFloat:ScaleValue(43)], @"height" : [NSNumber numberWithFloat:ScaleValue(100)]}];
-    HomeViewAdpater *adapter = [HomeViewAdpater AdapterWithSourceData:@[bannerSection, classifySection, techSection]];
+    TableViewSection *clubSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"club", @"array": homeData.club,@"headerHeight": [NSNumber numberWithFloat:ScaleValue(43)], @"height" : [NSNumber numberWithFloat:ScaleValue(100)]}];
+    HomeViewAdpater *adapter = [HomeViewAdpater AdapterWithSourceData:@[bannerSection, classifySection, techSection, clubSection]];
     [self.tableView setAdapter:adapter];
 }
 
