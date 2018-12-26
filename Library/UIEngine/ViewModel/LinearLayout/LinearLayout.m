@@ -10,11 +10,12 @@
 
 @implementation LinearLayout
 
-- (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
-    [super assignmentForMaxWidth:width maxHeight:height];
+- (void)assignmentForMaxSize:(CGSize)size superViewSize:(CGSize)superViewSize {
+    [super assignmentForMaxSize:size superViewSize:superViewSize];
+    CGFloat width = size.width, height = size.height;
     CGFloat maxWidth = width, maxHeight = height;
     for (UIView *view in self.subviews) {
-        [view assignmentForMaxWidth:maxWidth maxHeight:maxHeight];
+        [view assignmentForMaxSize:CGSizeMake(maxWidth, maxHeight) superViewSize:size];
         if (self.orientation == OrientationVertical) {
             maxHeight -= view.boundingSize.height;
         } else {
@@ -22,6 +23,19 @@
         }
     }
 }
+
+//- (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
+//    [super assignmentForMaxWidth:width maxHeight:height];
+//    CGFloat maxWidth = width, maxHeight = height;
+//    for (UIView *view in self.subviews) {
+//        [view assignmentForMaxWidth:maxWidth maxHeight:maxHeight];
+//        if (self.orientation == OrientationVertical) {
+//            maxHeight -= view.boundingSize.height;
+//        } else {
+//            maxWidth -= view.boundingSize.width;
+//        }
+//    }
+//}
 
 - (CGSize)boundingSizeNeed {
     CGSize size = self.orientation == OrientationVertical ? [self boundingSizeVertical]:[self boundingSizeHorizontal];

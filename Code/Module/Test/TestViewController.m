@@ -46,12 +46,15 @@
 //
 //    }];
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 30, NVBARHIEGHT)];
-    self.navigationItem.titleView = view;
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 390, 44)];
+    view.backgroundColor = [UIColor redColor];
+//    self.navigationItem.titleView = view;
 //    [self addPresenter:[[HomeNvPresenter alloc] initWithView:view]];
     
     UIView *titleView = [UIView viewWithJSON:@"HomeNavigation.json" size:view.bounds.size];
     [view addSubview:titleView];
+    
+    [self.view addSubview:view];
 }
 
 

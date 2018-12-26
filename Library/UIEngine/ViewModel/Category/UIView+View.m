@@ -31,11 +31,40 @@ static char shapeLayerKey;
     return nil;
 }
 
-- (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
-    //>=0，证明非 FULL 或 ATUO
+- (void)assignmentForMaxSize:(CGSize)size superViewSize:(CGSize)superViewSize {
+    CGFloat maxWidth, maxHeight;
+    ViewParams *vp = self.viewParams;
     if (self.viewParams.visibility != ViewVisibilityGone) {
-        CGFloat maxWidth = MIN(width, self.viewParams.width >= 0 ? self.viewParams.width : width);
-        CGFloat maxHeight = MIN(height, self.viewParams.height >= 0 ? self.viewParams.height : height);
+        switch (vp.widthValueType) {
+            default:
+            case AUTO:
+            case FULL:
+                maxWidth = size.width;
+                break;
+            case PERCENT:
+                maxWidth = superViewSize.width;
+                break;
+            case VALUE:
+                maxWidth = vp.width;
+                break;
+                
+        }
+        
+        switch (vp.heightValueType) {
+            default:
+            case AUTO:
+            case FULL:
+                maxHeight = size.height;
+                break;
+            case PERCENT:
+                maxHeight = superViewSize.height;
+                break;
+            case VALUE:
+                maxHeight = vp.height;
+                break;
+                
+        }
+        
         self.maxWidth = maxWidth;
         self.maxHeight = maxHeight;
     } else {
@@ -44,30 +73,41 @@ static char shapeLayerKey;
     }
 }
 
-
 - (CGSize)boundingSize {
     CGSize need = [self boundingSizeNeed];
+    ViewParams *vp = self.viewParams;
+    CGFloat maxWidth = self.maxWidth, maxHeight = self.maxHeight;
     CGFloat width, height = 0;
-    if (self.viewParams.width == FULL) {
-        width = self.maxWidth;
+    switch (vp.widthValueType) {
+        default:
+        case AUTO:
+            width = MIN(maxWidth, need.width);
+            break;
+        case FULL:
+            width = maxWidth;
+            break;
+        case PERCENT:
+            width = maxWidth * vp.width / 100.0;
+            break;
+        case VALUE:
+            width = MIN(maxWidth, vp.width);
+            break;
     }
-    else if (self.viewParams.width == AUTO) {
-        width = MIN(self.maxWidth, need.width);
+    switch (vp.heightValueType) {
+        default:
+        case AUTO:
+            height = MIN(maxHeight, need.height);
+            break;
+        case FULL:
+            height = maxHeight;
+            break;
+        case PERCENT:
+            height = maxHeight * vp.height / 100.0;
+            break;
+        case VALUE:
+            height = MIN(maxHeight, vp.height);
+            break;
     }
-    else {
-        width = MIN(self.maxWidth, self.viewParams.width);
-    }
-    
-    if (self.viewParams.height == FULL) {
-        height = self.maxHeight;
-    }
-    else if (self.viewParams.height == AUTO) {
-        height = MIN(self.maxHeight, need.height);
-    }
-    else {
-        height = MIN(self.maxHeight, self.viewParams.height);
-    }
-    
     
     if (width == self.maxWidth) {
         width = width - self.layoutParams.marginLeft - self.layoutParams.marginRight;

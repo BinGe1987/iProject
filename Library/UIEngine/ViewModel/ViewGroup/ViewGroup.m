@@ -20,12 +20,19 @@
     [self requestLayout];
 }
 
-- (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
-    [super assignmentForMaxWidth:width maxHeight:height];
+- (void)assignmentForMaxSize:(CGSize)size superViewSize:(CGSize)superViewSize {
+    [super assignmentForMaxSize:size superViewSize:superViewSize];
     for (UIView *view in self.subviews) {
-        [view assignmentForMaxWidth:self.maxWidth maxHeight:self.maxHeight];
+        [view assignmentForMaxSize:CGSizeMake(self.maxWidth, self.maxHeight) superViewSize:size];
     }
 }
+
+//- (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
+//    [super assignmentForMaxWidth:width maxHeight:height];
+//    for (UIView *view in self.subviews) {
+//        [view assignmentForMaxWidth:self.maxWidth maxHeight:self.maxHeight];
+//    }
+//}
 
 
 - (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^)(void))block {
@@ -42,7 +49,8 @@
 //        });
 //    });
     
-    [self assignmentForMaxWidth:width maxHeight:height];
+//    [self assignmentForMaxWidth:width maxHeight:height];
+    [self assignmentForMaxSize:CGSizeMake(width, height) superViewSize:CGSizeMake(width, height)];
     [self boundingSize];
     [self refreshLayout];
     if (block) {

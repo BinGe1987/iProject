@@ -1,0 +1,41 @@
+{
+    "view_name":"root_view",
+    "view_type":"linear",
+    "view_orientation":"H",
+    "view_width":"full",
+    "view_height":"full",
+    "view_background":"#ff000000",
+    "subviews":[
+        {
+            "view_name":"classify1",
+            "view_type":"frame",
+            "view_width":"33.33%",
+            "view_height":"full",
+            "view_background":"#fff0ff0f",
+            "subviews":[
+                
+            ]
+        },
+        {
+            "view_name":"classify2",
+            "view_type":"frame",
+            "view_width":"33.33%",
+            "view_height":"full",
+            "view_background":"#fff00fff",
+            "subviews":[
+                
+            ]
+        },
+        {
+            "view_name":"classify3",
+            "view_type":"frame",
+            "view_width":"33.33%",
+            "view_height":"full",
+            "view_background":"#fff0ffff",
+            "subviews":[
+                
+            ]
+        }
+    ]
+}
+

@@ -11,8 +11,10 @@
 
 typedef enum : NSUInteger {
     FULL = -1,
-    AUTO = -2
-} ViewDimension;
+    AUTO = -2,
+    PERCENT = 0,
+    VALUE = 1
+} SizeValueType;
 
 typedef enum : NSUInteger {
     ViewVisibilityVisible,
@@ -29,10 +31,14 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *name;
 ///view的类型，提供给mapping文件返回所对应的 ViewModel
 @property (nonatomic, assign) NSInteger type;
+
+@property (nonatomic, assign) SizeValueType widthValueType;
 ///view的宽度
-@property (nonatomic, assign) NSInteger width;
+@property (nonatomic, assign) CGFloat width;
+
+@property (nonatomic, assign) SizeValueType heightValueType;
 ///view的高度
-@property (nonatomic, assign) NSInteger height;
+@property (nonatomic, assign) CGFloat height;
 ///view内左边距
 @property (nonatomic, assign) NSInteger paddingLeft;
 ///view内上边距

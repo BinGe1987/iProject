@@ -15,8 +15,30 @@
     if (self) {
         self.name = [model getString:@"view_name" defaultValue:@""];
         
-        self.width = [self getWHValue:[model getString:@"view_width" defaultValue:@"auto"]];
-        self.height = [self getWHValue:[model getString:@"view_height" defaultValue:@"auto"]];
+        NSString *width = [model getString:@"view_width" defaultValue:@"auto"];
+        if ([width isEqualToString:@"auto"]) {
+            self.widthValueType = AUTO;
+        } else if ([width isEqualToString:@"full"]) {
+            self.widthValueType = FULL;
+        } else if ([width hasSuffix:@"%"]) {
+            self.widthValueType = PERCENT;
+            self.width = [[width substringToIndex:[width length] -1] floatValue];
+        } else {
+            self.widthValueType = VALUE;
+            self.width = [width floatValue];
+        }
+        NSString *height = [model getString:@"view_height" defaultValue:@"auto"];
+        if ([height isEqualToString:@"auto"]) {
+            self.heightValueType = AUTO;
+        } else if ([height isEqualToString:@"full"]) {
+            self.heightValueType = FULL;
+        } else if ([height hasSuffix:@"%"]) {
+            self.heightValueType = PERCENT;
+            self.height = [[height substringToIndex:[width length] -1] floatValue];
+        } else {
+            self.heightValueType = VALUE;
+            self.height = [height floatValue];
+        }
         
         self.paddingLeft = [model getInteger:@"view_paddingLeft" defaultValue:0];
         self.paddingTop = [model getInteger:@"view_paddingTop" defaultValue:0];
@@ -44,20 +66,6 @@
         self.borderColor = [ColorUtils colorWithString:colorString];
     }
     return self;
-}
-
-- (NSInteger)getWHValue:(NSString *)stringValue {
-    NSInteger value;
-    if ([stringValue isEqualToString:@"full"]) {
-        value = FULL;
-    }
-    else if ([stringValue isEqualToString:@"auto"]) {
-        value = AUTO;
-    }
-    else {
-        value = [stringValue integerValue];
-    }
-    return value;
 }
 
 @end

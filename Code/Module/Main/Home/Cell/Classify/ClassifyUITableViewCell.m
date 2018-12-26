@@ -7,6 +7,7 @@
 
 #import "ClassifyUITableViewCell.h"
 
+
 @implementation ClassifyUITableViewCell
 
 + (instancetype)tableView:(UITableView *)tableView cellWithSize:(CGSize)size {
@@ -20,9 +21,8 @@
 }
 
 - (void)initWithSize:(CGSize)size {
-//    self.bannerView = [[BannerView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
-//    [self.contentView addSubview:self.bannerView];
-    self.contentView.backgroundColor = [UIColor redColor];
+    UIView *view = [UIView viewWithJSON:@"ClassifyCell.json" size:size];
+    [self.contentView addSubview:view];
 }
 
 - (void)setData:(id)data {

@@ -36,7 +36,6 @@
 		7734C12521D23A45009D1EE8 /* Image.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7734C11321D23A45009D1EE8 /* Image.bundle */; };
 		7734C12821D23A93009D1EE8 /* UITableView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C12721D23A93009D1EE8 /* UITableView+Refresh.m */; };
 		7734C12A21D2577A009D1EE8 /* banner in Resources */ = {isa = PBXBuildFile; fileRef = 7734C12921D2577A009D1EE8 /* banner */; };
-		7734C12D21D2690F009D1EE8 /* Banner.json in Resources */ = {isa = PBXBuildFile; fileRef = 7734C12C21D2690F009D1EE8 /* Banner.json */; };
 		7734C13021D26963009D1EE8 /* BannerUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C12F21D26963009D1EE8 /* BannerUITableViewCell.m */; };
 		7734C13321D26ED3009D1EE8 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C13221D26ED3009D1EE8 /* HomeTableViewCell.m */; };
 		7734C13721D2704B009D1EE8 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C13621D2704B009D1EE8 /* BannerView.m */; };
@@ -165,6 +164,7 @@
 		77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B055A021D20E410045A489 /* HomeViewAdpater.m */; };
 		77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4A421D3188E00B388E4 /* UIView+JSON.m */; };
 		77CEA4AA21D3578400B388E4 /* ClassifyUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4A921D3578400B388E4 /* ClassifyUITableViewCell.m */; };
+		77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4AC21D3599F00B388E4 /* ClassifyCell.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -283,7 +283,6 @@
 		7734C12621D23A93009D1EE8 /* UITableView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Refresh.h"; sourceTree = "<group>"; };
 		7734C12721D23A93009D1EE8 /* UITableView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Refresh.m"; sourceTree = "<group>"; };
 		7734C12921D2577A009D1EE8 /* banner */ = {isa = PBXFileReference; lastKnownFileType = folder; path = banner; sourceTree = "<group>"; };
-		7734C12C21D2690F009D1EE8 /* Banner.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Banner.json; sourceTree = "<group>"; };
 		7734C12E21D26963009D1EE8 /* BannerUITableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerUITableViewCell.h; sourceTree = "<group>"; };
 		7734C12F21D26963009D1EE8 /* BannerUITableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerUITableViewCell.m; sourceTree = "<group>"; };
 		7734C13121D26ED3009D1EE8 /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
@@ -542,6 +541,7 @@
 		77CEA4A421D3188E00B388E4 /* UIView+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSON.m"; sourceTree = "<group>"; };
 		77CEA4A821D3578400B388E4 /* ClassifyUITableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyUITableViewCell.h; sourceTree = "<group>"; };
 		77CEA4A921D3578400B388E4 /* ClassifyUITableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyUITableViewCell.m; sourceTree = "<group>"; };
+		77CEA4AC21D3599F00B388E4 /* ClassifyCell.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ClassifyCell.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -853,7 +853,6 @@
 				7734C12F21D26963009D1EE8 /* BannerUITableViewCell.m */,
 				7734C13521D2704B009D1EE8 /* BannerView.h */,
 				7734C13621D2704B009D1EE8 /* BannerView.m */,
-				7734C12C21D2690F009D1EE8 /* Banner.json */,
 			);
 			path = Banner;
 			sourceTree = "<group>";
@@ -1466,6 +1465,7 @@
 			children = (
 				77CEA4A821D3578400B388E4 /* ClassifyUITableViewCell.h */,
 				77CEA4A921D3578400B388E4 /* ClassifyUITableViewCell.m */,
+				77CEA4AC21D3599F00B388E4 /* ClassifyCell.json */,
 			);
 			path = Classify;
 			sourceTree = "<group>";
@@ -1956,7 +1956,7 @@
 				7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */,
 				776B55AD21BE682C00793CAF /* Login.json in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
-				7734C12D21D2690F009D1EE8 /* Banner.json in Resources */,
+				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
 				77EA8F5121B90226001B8959 /* demo.json in Resources */,
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,
