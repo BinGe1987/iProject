@@ -23,6 +23,13 @@
     
 }
 
+- (void)addSubview:(UIView *)view
+{
+    if (view && ![view isKindOfClass:[NSClassFromString(@"_UITableViewCellSeparatorView") class]]) {
+        [super addSubview:view];
+    }
+}
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 }

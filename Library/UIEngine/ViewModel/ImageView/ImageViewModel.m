@@ -19,6 +19,7 @@
 
 - (void)initialize {
     self.imageView = (ImageView *)self.view;
+    self.imageView.contentMode = UIViewContentModeScaleAspectFit;
     [self setImageViewParams:(ImageViewParams *)self.imageView.viewParams];
 }
 

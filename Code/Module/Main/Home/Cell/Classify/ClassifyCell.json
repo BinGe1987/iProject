@@ -4,68 +4,55 @@
     "view_orientation":"H",
     "view_width":"full",
     "view_height":"full",
-    "view_background":"#ff000000",
     "subviews":[
         {
             "view_name":"classify1",
             "view_type":"frame",
             "view_width":"33.33%",
             "view_height":"full",
-            "view_background":"#fff0ff0f",
             "subviews":[
                 {
                     "view_name":"image1",
                     "view_type":"image",
                     "view_width":"full",
                     "view_height":"full",
-                    "view_paddingLeft":"0",
-                    "view_paddingTop":"0",
-                    "view_paddingRight":"0",
-                    "view_paddingBottom":"0",
-                    "view_background":"#ffff00f0",
+                    "layout_marginLeft":"10",
+                    "layout_marginRight":"5",
                     "image_src":"@水疗"
                 }
             ]
         },
         {
-            "view_name":"classify2",
+            "view_name":"classify1",
             "view_type":"frame",
             "view_width":"33.33%",
             "view_height":"full",
-            "view_background":"#fff00fff",
             "subviews":[
                 {
                     "view_name":"image1",
                     "view_type":"image",
                     "view_width":"full",
                     "view_height":"full",
-                    "view_paddingLeft":"0",
-                    "view_paddingTop":"0",
-                    "view_paddingRight":"0",
-                    "view_paddingBottom":"0",
-                    "view_background":"#ffff00f0",
-                    "image_src":"@水疗"
+                    "layout_marginLeft":"5",
+                    "layout_marginRight":"5",
+                    "image_src":"@推拿"
                 }
             ]
         },
         {
-            "view_name":"classify3",
+            "view_name":"classify1",
             "view_type":"frame",
             "view_width":"33.33%",
             "view_height":"full",
-            "view_background":"#fff0ffff",
             "subviews":[
                 {
                     "view_name":"image1",
                     "view_type":"image",
                     "view_width":"full",
                     "view_height":"full",
-                    "view_paddingLeft":"0",
-                    "view_paddingTop":"0",
-                    "view_paddingRight":"0",
-                    "view_paddingBottom":"0",
-                    "view_background":"#ffff00f0",
-                    "image_src":"@水疗"
+                    "layout_marginLeft":"5",
+                    "layout_marginRight":"10",
+                    "image_src":"@浴足"
                 }
             ]
         }

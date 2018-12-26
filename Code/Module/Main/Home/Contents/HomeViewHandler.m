@@ -37,7 +37,7 @@
 - (void)setData:(id)data {
     HomeData *homeData = (HomeData *)data;
     TableViewSection *bannerSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"banner", @"array": @[homeData.banner], @"height" : [NSNumber numberWithFloat:ScaleValue(138)]}];
-    TableViewSection *classifySection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"classify", @"array": @[homeData.classify], @"height" : [NSNumber numberWithFloat:ScaleValue(125)]}];
+    TableViewSection *classifySection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"classify", @"array": @[homeData.classify], @"height" : [NSNumber numberWithFloat:ScaleValue(75)]}];
     HomeViewAdpater *adapter = [HomeViewAdpater AdapterWithSourceData:@[bannerSection, classifySection]];
     [self.tableView setAdapter:adapter];
 }

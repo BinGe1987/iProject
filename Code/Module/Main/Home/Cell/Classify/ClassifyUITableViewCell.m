@@ -27,12 +27,5 @@
 
 - (void)setData:(id)data {
     
-    
-//    NSMutableArray *array = [NSMutableArray new];
-//    for (NSString *imageUrl in data) {
-//        UIImage *image = [UIImage imageWithContentsOfFile:imageUrl];
-//        [array addObject:image];
-//    }
-//    [self.bannerView setImages:array];
 }
 @end
