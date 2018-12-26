@@ -179,7 +179,7 @@
         //小圆点的数量
         _pageControl.numberOfPages = _dataArray.count - 2;
         
-        _pageControl.currentPageIndicatorTintColor  = [UIColor redColor];
+        _pageControl.currentPageIndicatorTintColor  = [UIColor whiteColor];
         
         //不让用户交互
         _pageControl.userInteractionEnabled = NO;
