@@ -48,6 +48,13 @@ NS_ASSUME_NONNULL_BEGIN
 ///view的透明度
 @property (nonatomic, assign) ViewVisibility visibility;
 
+///
+@property (nonatomic, assign) CGFloat borderRadius;
+///
+@property (nonatomic, assign) CGFloat borderWidth;
+///
+@property (nonatomic, strong) UIColor *borderColor;
+
 
 -(instancetype)initWithModel:(id<UIModel>)model;
 

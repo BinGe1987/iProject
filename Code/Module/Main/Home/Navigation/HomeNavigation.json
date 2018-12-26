@@ -3,7 +3,7 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"44",
-    "view_background":"#00ff00ff",
+    "view_background":"#ffff00ff",
     "subviews":[
         {
             "view_name":"qr_code",
@@ -14,9 +14,10 @@
             "view_paddingTop":"20",
             "view_paddingRight":"20",
             "view_paddingBottom":"20",
-            "view_background":"#ff00ffff",
+            "view_background":"#fff0ff0f",
             "layout_gravity":"center|right",
         },
+        
         {
             "view_name":"",
             "view_type":"linear",
@@ -45,9 +46,26 @@
                     "view_paddingTop":"20",
                     "view_paddingRight":"20",
                     "view_paddingBottom":"20",
-                    "view_background":"#ff00ffff",
+                    "view_background":"#ff000fff",
                 }
             ]
+        },
+        {
+            "view_name":"search",
+            "view_type":"input",
+            "view_width":"full",
+            "view_height":"26",
+            "view_borderRadius":"12",
+            "view_borderWidth":"0.5",
+            "view_borderColor":"#ff2e2e2e",
+            "view_background":"#0000ffff",
+            "text_color":"#ff000000",
+            "text_placeholderColor":"#ffd6d6d6",
+            "text_placeholder":"搜索一下附近吧...",
+            "layout_marginLeft":"84",
+            "layout_marginRight":"60",
+            "layout_gravity":"center|left",
+            
         }
         
     ]

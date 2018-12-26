@@ -18,6 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString      *text;
 
 @property (nonatomic,strong) UIColor        *textColor;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -13,6 +13,6 @@
 #import "UIEngine.h"
 #import "JSONModel.h"
 
-#import "ImageView.h"
+#import "UIView+JSON.h"
 
 #endif /* EngineHeader_h */

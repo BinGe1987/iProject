@@ -20,19 +20,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Test.json" ofType:nil];
-    [self setContentViewWithJSONPath:path];
-    
-    WeakSelf(self)
-    UIButton *btn1 = (UIButton *)[self findViewByName:@"btn1"];
-    [btn1 setClickBlock:^(UIButton * _Nonnull button) {
-        [weakself.navigationController pushViewController:[SecondViewController new] animated:YES];
-    }];
-    UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];
-    [btn2 setClickBlock:^(UIButton * _Nonnull button) {
-         [EventBus postEvent:@"abc" data:@"456"];
-    }];
-    [EventBus addObserver:self selector:@selector(test:) event:@"abc"];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Test.json" ofType:nil];
+//    [self setContentViewWithJSONPath:path];
+//
+//    WeakSelf(self)
+//    UIButton *btn1 = (UIButton *)[self findViewByName:@"btn1"];
+//    [btn1 setClickBlock:^(UIButton * _Nonnull button) {
+//        [weakself.navigationController pushViewController:[SecondViewController new] animated:YES];
+//    }];
+//    UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];
+//    [btn2 setClickBlock:^(UIButton * _Nonnull button) {
+//         [EventBus postEvent:@"abc" data:@"456"];
+//    }];
+//    [EventBus addObserver:self selector:@selector(test:) event:@"abc"];
     
 //    NSString *a = AppInfo.BundleIdentifier;
 //    NSString *b = AppInfo.Build;
@@ -42,11 +42,16 @@
 //    NSString *f = AppInfo.SystemVersion;
 //    NSString *g = AppInfo.UUID;
     
-    [SecondViewController hookAfterSelector:@selector(abc:cba:) block:^(id arg1, id arg2, id arg3) {
-        
-    }];
+//    [SecondViewController hookAfterSelector:@selector(abc:cba:) block:^(id arg1, id arg2, id arg3) {
+//
+//    }];
     
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 30, NVBARHIEGHT)];
+    self.navigationItem.titleView = view;
+//    [self addPresenter:[[HomeNvPresenter alloc] initWithView:view]];
     
+    UIView *titleView = [UIView viewWithJSON:@"HomeNavigation.json" size:view.bounds.size];
+    [view addSubview:titleView];
 }
 
 

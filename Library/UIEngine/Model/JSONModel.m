@@ -48,6 +48,11 @@
     return [value intValue];
 }
 
+- (CGFloat)getFloat:(NSString *)key defaultValue:(CGFloat)defValue {
+    NSString *value = [self getString:key defaultValue:@"0"];
+    return [value floatValue];
+}
+
 - (NSArray *)getChildModels {
     NSMutableArray *newArray = [[NSMutableArray alloc] init];
     NSArray *array = [self.source objectForKey:@"subviews"];

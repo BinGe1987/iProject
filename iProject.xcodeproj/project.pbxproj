@@ -163,6 +163,7 @@
 		77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0559721D1FCA20045A489 /* HomeViewHandler.m */; };
 		77B0559E21D205540045A489 /* TableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0559D21D205540045A489 /* TableViewAdapter.m */; };
 		77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B055A021D20E410045A489 /* HomeViewAdpater.m */; };
+		77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4A421D3188E00B388E4 /* UIView+JSON.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -536,6 +537,8 @@
 		77B0559D21D205540045A489 /* TableViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewAdapter.m; sourceTree = "<group>"; };
 		77B0559F21D20E410045A489 /* HomeViewAdpater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewAdpater.h; sourceTree = "<group>"; };
 		77B055A021D20E410045A489 /* HomeViewAdpater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewAdpater.m; sourceTree = "<group>"; };
+		77CEA4A321D3188E00B388E4 /* UIView+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JSON.h"; sourceTree = "<group>"; };
+		77CEA4A421D3188E00B388E4 /* UIView+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSON.m"; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -949,6 +952,8 @@
 				776B55F521C10F7100793CAF /* UIView+Params.m */,
 				77EA8F1921B90226001B8959 /* UIView+View.h */,
 				77EA8F2021B90226001B8959 /* UIView+View.m */,
+				77CEA4A321D3188E00B388E4 /* UIView+JSON.h */,
+				77CEA4A421D3188E00B388E4 /* UIView+JSON.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1997,6 +2002,7 @@
 				7734C0E121D2318E009D1EE8 /* HomeModule.m in Sources */,
 				77B0556C21D0D5720045A489 /* IQPreviousNextView.m in Sources */,
 				7734C12821D23A93009D1EE8 /* UITableView+Refresh.m in Sources */,
+				77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */,
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
 				776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */,
 				77B0552B21CE8AE30045A489 /* BaseModule.m in Sources */,

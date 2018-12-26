@@ -20,6 +20,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (int)getInteger:(NSString *)key defaultValue:(int)defValue;
 
+- (CGFloat)getFloat:(NSString *)key defaultValue:(CGFloat)defValue;
+
 - (NSArray *)getChildModels;
 
 @end

@@ -19,10 +19,10 @@
     [super viewDidLoad];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Home.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
-    
+
     HomePresenter *prsenter = [[HomePresenter alloc] initWithView:[self findViewByName:@"table"]];
     [self addPresenter:prsenter];
-    
+
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 30, NVBARHIEGHT)];
     self.navigationItem.titleView = view;
     [self addPresenter:[[HomeNvPresenter alloc] initWithView:view]];

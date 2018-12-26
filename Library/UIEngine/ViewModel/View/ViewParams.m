@@ -37,6 +37,11 @@
         else {
             self.visibility = ViewVisibilityVisible;
         }
+        
+        self.borderRadius = [model getFloat:@"view_borderRadius" defaultValue:0];
+        self.borderWidth = [model getFloat:@"view_borderWidth" defaultValue:0];
+        NSString *colorString = [model getString:@"view_borderColor" defaultValue:@"#ff000000"];
+        self.borderColor = [ColorUtils colorWithString:colorString];
     }
     return self;
 }

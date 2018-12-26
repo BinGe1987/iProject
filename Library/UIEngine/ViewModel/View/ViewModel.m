@@ -39,6 +39,15 @@
             self.view.backgroundColor = [ColorUtils colorWithString:background];
         }
     }
+    
+    self.view.layer.borderColor = viewParams.borderColor.CGColor;
+    if (viewParams.borderWidth) {
+        self.view.layer.borderWidth = viewParams.borderWidth;
+        self.view.layer.masksToBounds = YES;
+    }
+    if (viewParams.borderRadius) {
+        self.view.layer.cornerRadius = viewParams.borderRadius;
+    }
 }
 
 - (void)initialize {

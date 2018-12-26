@@ -11,6 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface InputViewParams : LabelViewParams
 
+@property (nonatomic, strong) NSString      *placeholder;
+
+@property (nonatomic,strong) UIColor        *placeholderColor;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

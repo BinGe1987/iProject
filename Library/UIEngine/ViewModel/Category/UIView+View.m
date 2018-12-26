@@ -68,15 +68,17 @@ static char shapeLayerKey;
         height = MIN(self.maxHeight, self.viewParams.height);
     }
     
-    self.width = width;
-    if (self.width == self.maxWidth) {
-        self.width = width - self.layoutParams.marginLeft - self.layoutParams.marginRight;
-    }
-    self.height = height;
-    if (self.height == self.maxHeight) {
-        self.height = height - self.layoutParams.marginTop - self.layoutParams.marginBottom;
+    
+    if (width == self.maxWidth) {
+        width = width - self.layoutParams.marginLeft - self.layoutParams.marginRight;
     }
     
+    if (height == self.maxHeight) {
+        height = height - self.layoutParams.marginTop - self.layoutParams.marginBottom;
+    }
+    
+    self.width = width;
+    self.height = height;
     [self boundSizeChanged];
     
     return CGSizeMake(width, height);
