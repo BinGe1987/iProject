@@ -11,9 +11,9 @@
 
 - (void)initialize {
     self.banner     = [NSMutableArray new];
+    self.classify   = [NSMutableArray new];
     self.tech       = [NSMutableArray new];
-    self.banner     = [NSMutableArray new];
-    self.banner     = [NSMutableArray new];
+    self.club       = [NSMutableArray new];
 }
 
 - (void)setData:(Data *)data {

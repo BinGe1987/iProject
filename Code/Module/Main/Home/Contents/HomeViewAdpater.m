@@ -7,6 +7,7 @@
 
 #import "HomeViewAdpater.h"
 #import "BannerUITableViewCell.h"
+#import "ClassifyUITableViewCell.h"
 
 @implementation HomeViewAdpater
 
@@ -15,12 +16,22 @@
     if ([section.name isEqualToString:@"banner"]) {
         return [self bannerCell:tableView cellForRowAtIndexPath:indexPath];
     }
+    else if ([section.name isEqualToString:@"classify"]){
+        return [self classifyCell:tableView cellForRowAtIndexPath:indexPath];
+    }
     return nil;
 }
 
 - (UITableViewCell *)bannerCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     BannerUITableViewCell * cell = [BannerUITableViewCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
+    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    return cell;
+}
+
+- (UITableViewCell *)classifyCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    ClassifyUITableViewCell * cell = [ClassifyUITableViewCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
     [cell setData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
