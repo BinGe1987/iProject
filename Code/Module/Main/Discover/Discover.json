@@ -1,6 +1,6 @@
 {
     "view_name":"root_view",
-    "view_type":"frame",
+    "view_type":"linear",
     "view_orientation":"vertical",
     "view_width":"full",
     "view_height":"full",

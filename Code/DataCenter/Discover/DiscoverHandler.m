@@ -29,7 +29,7 @@
 }
 
 - (id)parse:(id)operation withSource:(id)source {
-//    [self.data setData:source];
+    [self.data setData:source];
     return [self getData];
 }
 

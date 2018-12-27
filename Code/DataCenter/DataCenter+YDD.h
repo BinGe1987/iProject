@@ -11,6 +11,7 @@
 #import "LoginHandler.h"
 #import "UserHandler.h"
 #import "HomeHandler.h"
+#import "DiscoverHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -38,6 +39,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 //获取首页数据
 - (HomeData *)homeData;
+
+//获取发现页数据
+- (DiscoverData *)discoverData;
 
 @end
 

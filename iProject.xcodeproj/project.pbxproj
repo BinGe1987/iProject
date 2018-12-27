@@ -192,6 +192,8 @@
 		77CEA4FC21D4C2FF00B388E4 /* DiscoverClubPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4FB21D4C2FF00B388E4 /* DiscoverClubPerformer.m */; };
 		77CEA4FF21D4C30D00B388E4 /* DiscoverTechPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4FE21D4C30D00B388E4 /* DiscoverTechPerformer.m */; };
 		77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA50121D4C3CB00B388E4 /* ListData.m */; };
+		77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA50421D4C87D00B388E4 /* DiscoverClubViewHandler.m */; };
+		77CEA50821D4CA1700B388E4 /* DiscoverClubAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA50721D4CA1700B388E4 /* DiscoverClubAdapter.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -615,6 +617,10 @@
 		77CEA4FE21D4C30D00B388E4 /* DiscoverTechPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechPerformer.m; sourceTree = "<group>"; };
 		77CEA50021D4C3CB00B388E4 /* ListData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListData.h; sourceTree = "<group>"; };
 		77CEA50121D4C3CB00B388E4 /* ListData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListData.m; sourceTree = "<group>"; };
+		77CEA50321D4C87D00B388E4 /* DiscoverClubViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverClubViewHandler.h; sourceTree = "<group>"; };
+		77CEA50421D4C87D00B388E4 /* DiscoverClubViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverClubViewHandler.m; sourceTree = "<group>"; };
+		77CEA50621D4CA1700B388E4 /* DiscoverClubAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverClubAdapter.h; sourceTree = "<group>"; };
+		77CEA50721D4CA1700B388E4 /* DiscoverClubAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverClubAdapter.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1588,6 +1594,8 @@
 				77CEA4C921D48B3C00B388E4 /* DiscoverViewController.h */,
 				77CEA4CA21D48B3C00B388E4 /* DiscoverViewController.m */,
 				77CEA4CC21D48BD000B388E4 /* Discover.json */,
+				77CEA4DD21D4990700B388E4 /* DiscoverClub.json */,
+				77CEA4DB21D498F200B388E4 /* DiscoverTech.json */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -1624,7 +1632,10 @@
 			children = (
 				77CEA4E221D4B64F00B388E4 /* DiscoverClubPresenter.h */,
 				77CEA4E321D4B64F00B388E4 /* DiscoverClubPresenter.m */,
-				77CEA4DD21D4990700B388E4 /* DiscoverClub.json */,
+				77CEA50321D4C87D00B388E4 /* DiscoverClubViewHandler.h */,
+				77CEA50421D4C87D00B388E4 /* DiscoverClubViewHandler.m */,
+				77CEA50621D4CA1700B388E4 /* DiscoverClubAdapter.h */,
+				77CEA50721D4CA1700B388E4 /* DiscoverClubAdapter.m */,
 			);
 			path = Club;
 			sourceTree = "<group>";
@@ -1634,7 +1645,6 @@
 			children = (
 				77CEA4E521D4B69700B388E4 /* DiscoverTechPresenter.h */,
 				77CEA4E621D4B69700B388E4 /* DiscoverTechPresenter.m */,
-				77CEA4DB21D498F200B388E4 /* DiscoverTech.json */,
 			);
 			path = Tech;
 			sourceTree = "<group>";
@@ -2340,6 +2350,7 @@
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
 				775B15EC21C78FE500B8D6FF /* ColorUtils.m in Sources */,
 				77B0553221CE96ED0045A489 /* Aspects.m in Sources */,
+				77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */,
 				7734C13721D2704B009D1EE8 /* BannerView.m in Sources */,
 				77B0556821D0D5720045A489 /* IQToolbar.m in Sources */,
 				77CEA4FC21D4C2FF00B388E4 /* DiscoverClubPerformer.m in Sources */,
@@ -2372,6 +2383,7 @@
 				77B0545421C943760045A489 /* _YYWebImageSetter.m in Sources */,
 				77EA8F8921B90A18001B8959 /* UserHandler.m in Sources */,
 				77B0557121D0D5720045A489 /* IQUIScrollView+Additions.m in Sources */,
+				77CEA50821D4CA1700B388E4 /* DiscoverClubAdapter.m in Sources */,
 				776B55FB21C14A0800793CAF /* ScrollView.m in Sources */,
 				77B054FB21CBC5F10045A489 /* Notification+Category.m in Sources */,
 				776B55F621C10F7100793CAF /* UIView+Params.m in Sources */,

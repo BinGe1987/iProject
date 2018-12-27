@@ -21,4 +21,8 @@
     return (HomeData *)[self getData: [HomeHandler class]];
 }
 
+- (DiscoverData *)discoverData {
+    return (DiscoverData *)[self getData: [DiscoverHandler class]];
+}
+
 @end

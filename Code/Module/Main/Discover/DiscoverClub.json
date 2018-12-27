@@ -1,12 +1,11 @@
 {
-    "view_name":"page_tech",
-    "view_type":"frame",
+    "view_name":"page_club",
+    "view_type":"linear",
     "view_width":"full",
     "view_height":"full",
-    "view_background":"#fff555ff",
     "subviews":[
         {
-            "view_name":"table_tech",
+            "view_name":"table",
             "view_type":"table",
             "view_width":"full",
             "view_height":"full",
