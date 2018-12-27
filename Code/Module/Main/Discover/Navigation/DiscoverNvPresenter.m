@@ -7,6 +7,7 @@
 
 #import "DiscoverNvPresenter.h"
 #import "DiscoverNvViewHandler.h"
+//#import "<#header#>"
 
 @interface DiscoverNvPresenter()<ViewHandlerDelegate>
 
@@ -22,7 +23,11 @@
 }
 
 - (void)onViewAction:(id)action {
-    
+    NSInteger index = [action integerValue];
+    [self.handler.view currentViewController];
+    if (self.delegate) {
+        [self.delegate onPresenterEvent:action];
+    }
 }
 
 - (void)viewPager:(id)viewPager pageIndexDidChanged:(NSInteger)index {

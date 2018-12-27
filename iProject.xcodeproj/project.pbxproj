@@ -194,6 +194,7 @@
 		77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA50121D4C3CB00B388E4 /* ListData.m */; };
 		77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA50421D4C87D00B388E4 /* DiscoverClubViewHandler.m */; };
 		77CEA50821D4CA1700B388E4 /* DiscoverClubAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA50721D4CA1700B388E4 /* DiscoverClubAdapter.m */; };
+		77CEA51121D4DBAD00B388E4 /* UIView+Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA51021D4DBAD00B388E4 /* UIView+Controller.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -621,6 +622,8 @@
 		77CEA50421D4C87D00B388E4 /* DiscoverClubViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverClubViewHandler.m; sourceTree = "<group>"; };
 		77CEA50621D4CA1700B388E4 /* DiscoverClubAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverClubAdapter.h; sourceTree = "<group>"; };
 		77CEA50721D4CA1700B388E4 /* DiscoverClubAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverClubAdapter.m; sourceTree = "<group>"; };
+		77CEA50F21D4DBAD00B388E4 /* UIView+Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Controller.h"; sourceTree = "<group>"; };
+		77CEA51021D4DBAD00B388E4 /* UIView+Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Controller.m"; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1848,6 +1851,8 @@
 			isa = PBXGroup;
 			children = (
 				7734C0C121D223FB009D1EE8 /* UITableView */,
+				77CEA50F21D4DBAD00B388E4 /* UIView+Controller.h */,
+				77CEA51021D4DBAD00B388E4 /* UIView+Controller.m */,
 				776B55D421BFAB7E00793CAF /* UIButton+OnClick.h */,
 				776B55D521BFAB7E00793CAF /* UIButton+OnClick.m */,
 				776B55CA21BF81B300793CAF /* UIButton+EnlargeEdge.h */,
@@ -2302,6 +2307,7 @@
 				77B0547821CA46DC0045A489 /* KSProgressLayer.m in Sources */,
 				77B0559E21D205540045A489 /* TableViewAdapter.m in Sources */,
 				775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */,
+				77CEA51121D4DBAD00B388E4 /* UIView+Controller.m in Sources */,
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,

@@ -10,7 +10,15 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol PresenterDelegate <NSObject>
+
+- (void)onPresenterEvent:(id)event;
+
+@end
+
 @interface Presenter : BasePresenter
+
+@property (nonatomic, assign) id<PresenterDelegate> delegate;
 
 @property (nonatomic, strong) ViewHandler *handler;
 

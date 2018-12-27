@@ -17,6 +17,23 @@
     
     [self currentSelected:0];
     
+    WeakSelf(self)
+    UIButton *club = (UIButton *)[view findViewByName:@"club"];
+    [club setClickBlock:^(UIButton * _Nonnull button) {
+        [weakself currentSelected:0];
+        if (weakself.delegate) {
+            [weakself.delegate onViewAction:@"0"];
+        }
+    }];
+    
+    UIButton *tech = (UIButton *)[view findViewByName:@"tech"];
+    [tech setClickBlock:^(UIButton * _Nonnull button) {
+        [weakself currentSelected:1];
+        if (weakself.delegate) {
+            [weakself.delegate onViewAction:@"1"];
+        }
+    }];
+    
     return self;
 }
 

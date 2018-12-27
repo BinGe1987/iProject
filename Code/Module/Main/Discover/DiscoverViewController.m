@@ -10,7 +10,7 @@
 #import "DiscoverClubPresenter.h"
 #import "DiscoverTechPresenter.h"
 
-@interface DiscoverViewController ()
+@interface DiscoverViewController ()<PresenterDelegate, ViewPagerDelegate>
 
 @property (nonatomic, strong) DiscoverNvPresenter *nvPresenter;
 
@@ -24,19 +24,29 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 20, NVBARHIEGHT)];
     self.navigationItem.titleView = view;
     self.nvPresenter = [[DiscoverNvPresenter alloc] initWithView:view];
+    self.nvPresenter.delegate = self;
     [self addPresenter:self.nvPresenter];
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Discover.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
     
     ViewPager *pager = (ViewPager *)[self findViewByName:@"pager"];
-    pager.viewPagerDelegate = self.nvPresenter;
+    pager.viewPagerDelegate = self;
     
     DiscoverClubPresenter *club = [[DiscoverClubPresenter alloc] initWithView:[self findViewByName:@"page_club"]];
     [self addPresenter:club];
     DiscoverTechPresenter *tech = [[DiscoverTechPresenter alloc] initWithView:[self findViewByName:@"page_tech"]];
     [self addPresenter:tech];
     
+}
+
+- (void)viewPager:(id)viewPager pageIndexDidChanged:(NSInteger)index {
+    [self.nvPresenter viewPager:viewPager pageIndexDidChanged:index];
+}
+
+- (void)onPresenterEvent:(id)event {
+    ViewPager *pager = (ViewPager *)[self findViewByName:@"pager"];
+    [pager scrollToPage:[event integerValue]];
 }
 
 - (void)onLayoutSubViewsCompleted {

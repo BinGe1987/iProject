@@ -26,6 +26,12 @@
     return self;
 }
 
+- (void)scrollToPage:(NSInteger)index {
+    CGPoint offset = self.contentOffset;
+    offset.x = index * self.frame.size.width;
+    [self setContentOffset:offset animated:YES];
+}
+
 - (UIView *)pageWithIndex:(NSInteger)index {
     for (UIView * page in self.subviews) {
         if (page.frame.origin.x == index * self.frame.size.width) {

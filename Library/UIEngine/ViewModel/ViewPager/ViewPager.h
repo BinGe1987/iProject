@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) id<ViewPagerDelegate> viewPagerDelegate;
 
+- (void)scrollToPage:(NSInteger)index;
+
 - (UIView *)pageWithIndex:(NSInteger)index;
 
 @end
