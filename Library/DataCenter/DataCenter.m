@@ -36,29 +36,39 @@ singleton_implementation(DataCenter)
     [self addSubHandlers];
 }
 
+- (NSArray *)getDataHandlerClassForInit {
+    return nil;
+}
+
 - (void)addSubHandlers {
     self.commonHandler = [[CommonHandler alloc] init];
     [self.handlers addObject:self.commonHandler];
-    
-    ///这一部份代码会查出所有DataHandler的子类，初始化后添加到Handler数组中！！！
     TICK
-    int numClasses;
-    Class *classes = NULL;
-    numClasses = objc_getClassList(NULL, 0);
-    if (numClasses > 0) {
-        classes = (__unsafe_unretained Class *)malloc(sizeof(Class) * numClasses);
-        numClasses = objc_getClassList(classes, numClasses);
-        for (int i = 0; i < numClasses; i++) {
-            if (class_getSuperclass(classes[i]) == [DataHandler class]){
-                Class cls = classes[i];
-                id handler = [[cls alloc] init];
-                [self.handlers addObject:handler];
-                Log(@"DataCenter add handler --> %@", cls);
-            }
-        }
-        free(classes);
+    for (Class handlerCls in [self getDataHandlerClassForInit]) {
+        DataHandler *handler = [[handlerCls alloc] init];
+        [self.handlers addObject:handler];
     }
     TOCK
+    
+//    ///这一部份代码会查出所有DataHandler的子类，初始化后添加到Handler数组中！！！
+//    TICK
+//    int numClasses;
+//    Class *classes = NULL;
+//    numClasses = objc_getClassList(NULL, 0);
+//    if (numClasses > 0) {
+//        classes = (__unsafe_unretained Class *)malloc(sizeof(Class) * numClasses);
+//        numClasses = objc_getClassList(classes, numClasses);
+//        for (int i = 0; i < numClasses; i++) {
+//            if (class_getSuperclass(classes[i]) == [DataHandler class]){
+//                Class cls = classes[i];
+//                id handler = [[cls alloc] init];
+//                [self.handlers addObject:handler];
+//                Log(@"DataCenter add handler --> %@", cls);
+//            }
+//        }
+//        free(classes);
+//    }
+//    TOCK
 }
 
 + (void)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callbak {
@@ -88,6 +98,7 @@ singleton_implementation(DataCenter)
             return;
         }
     }
+    @throw [NSException exceptionWithName:operation reason:@"找不到对应DataHandler处理" userInfo:nil];
 }
 
 - (void)handData :(_Nonnull id)operation data:(_Nullable id)data callback:(_Nullable ICallback)callbak {
