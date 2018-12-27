@@ -1,18 +1,15 @@
 {
     "view_name":"page_club",
     "view_type":"frame",
-    "view_orientation":"vertical",
     "view_width":"full",
     "view_height":"full",
-    "view_background":"#ffffffff",
+    "view_background":"#fff555ff",
     "subviews":[
         {
             "view_name":"table_club",
             "view_type":"table",
             "view_width":"full",
             "view_height":"full",
-            "view_visibility":"visible",
-            "view_background":"#fff0f0f0",
         }
     ]
 }

@@ -10,9 +10,9 @@
 @implementation ViewPagerModel
 
 - (void)initialize {
-//    ViewPager *scrollView = (ViewPager *)self.view;
-//    ViewPagerParams *params = (ViewPagerParams *)scrollView.viewParams;
-//    scrollView.orientation = params.orientation;
+    ViewPager *scrollView = (ViewPager *)self.view;
+    ViewPagerParams *params = (ViewPagerParams *)scrollView.viewParams;
+    scrollView.orientation = params.orientation;
 }
 
 

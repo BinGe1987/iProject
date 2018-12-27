@@ -11,8 +11,6 @@
             "view_type":"pager",
             "view_width":"full",
             "view_height":"full",
-            "view_visibility":"visible",
-            "view_background":"#fff0f0f0",
             "subviews":[
                 {"include":"@DiscoverClub.json"},
                 {"include":"@DiscoverTech.json"},

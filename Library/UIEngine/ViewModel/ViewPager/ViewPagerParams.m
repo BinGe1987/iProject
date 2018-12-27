@@ -9,4 +9,10 @@
 
 @implementation ViewPagerParams
 
+-(instancetype)initWithModel:(id<UIModel>)model {
+    self = [super initWithModel:model];
+    self.orientation = ScrollOrientationHorizontal;
+    return self;
+}
+
 @end
