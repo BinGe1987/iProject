@@ -21,8 +21,12 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationLoginCheck (@"OperationLoginCheck")
 
 #pragma make 首页相关
-///获取首面信息
+///获取首页信息
 #define OperationGetHomeData (@"OperationGetHomeData")
+
+///获取发现页信息
+#define OperationGetDiscoverClubData (@"OperationGetDiscoverClubData")
+#define OperationGetDiscoverTechData (@"OperationGetDiscoverTechData")
 
 @interface DataCenter (YDD)
 
