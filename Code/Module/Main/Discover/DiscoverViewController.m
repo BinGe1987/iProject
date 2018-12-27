@@ -22,7 +22,6 @@
     [super viewDidLoad];
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 20, NVBARHIEGHT)];
-    view.backgroundColor = [UIColor redColor];
     self.navigationItem.titleView = view;
     self.nvPresenter = [[DiscoverNvPresenter alloc] initWithView:view];
     [self addPresenter:self.nvPresenter];

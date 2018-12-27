@@ -1,0 +1,46 @@
+{
+    "view_name":"title_view",
+    "view_type":"frame",
+    "view_width":"full",
+    "view_height":"44",
+    "view_background":"#00ff00ff",
+    "subviews":[
+        {
+            "view_name":"",
+            "view_type":"linear",
+            "view_width":"auto",
+            "view_height":"auto",
+            "view_background":"#00ffff00",
+            "layout_gravity":"center",
+            "subviews":[
+                {
+                    "view_name":"club",
+                    "view_type":"button",
+                    "view_width":"auto",
+                    "view_height":"20",
+                    "view_paddingTop":"20",
+                    "view_paddingBottom":"20",
+                    "text_size":"17",
+                    "text_src":"推荐商家",
+                    "text_color":"#ff55b4b2",
+                    "layout_marginLeft":"15",
+                    "layout_marginRight":"15",
+                },
+                {
+                    "view_name":"tech",
+                    "view_type":"button",
+                    "view_width":"auto",
+                    "view_height":"20",
+                    "view_paddingTop":"20",
+                    "view_paddingBottom":"20",
+                    "text_size":"17",
+                    "text_src":"推荐技师",
+                    "text_color":"#ffababab",
+                    "layout_marginLeft":"15",
+                    "layout_marginRight":"15",
+                }
+            ]
+        }
+        
+    ]
+}

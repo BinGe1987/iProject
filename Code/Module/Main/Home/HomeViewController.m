@@ -17,6 +17,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Home.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
 

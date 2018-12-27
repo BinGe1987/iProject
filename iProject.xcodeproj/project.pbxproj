@@ -185,6 +185,8 @@
 		77CEA4E421D4B64F00B388E4 /* DiscoverClubPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4E321D4B64F00B388E4 /* DiscoverClubPresenter.m */; };
 		77CEA4E721D4B69700B388E4 /* DiscoverTechPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4E621D4B69700B388E4 /* DiscoverTechPresenter.m */; };
 		77CEA4EA21D4B79300B388E4 /* DiscoverNvPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4E921D4B79300B388E4 /* DiscoverNvPresenter.m */; };
+		77CEA4EE21D4BB3A00B388E4 /* DiscoverNvViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4ED21D4BB3A00B388E4 /* DiscoverNvViewHandler.m */; };
+		77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4EF21D4BC1600B388E4 /* DiscoverNavigation.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -595,6 +597,9 @@
 		77CEA4E621D4B69700B388E4 /* DiscoverTechPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechPresenter.m; sourceTree = "<group>"; };
 		77CEA4E821D4B79300B388E4 /* DiscoverNvPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverNvPresenter.h; sourceTree = "<group>"; };
 		77CEA4E921D4B79300B388E4 /* DiscoverNvPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverNvPresenter.m; sourceTree = "<group>"; };
+		77CEA4EC21D4BB3A00B388E4 /* DiscoverNvViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverNvViewHandler.h; sourceTree = "<group>"; };
+		77CEA4ED21D4BB3A00B388E4 /* DiscoverNvViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverNvViewHandler.m; sourceTree = "<group>"; };
+		77CEA4EF21D4BC1600B388E4 /* DiscoverNavigation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiscoverNavigation.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1560,10 +1565,9 @@
 		77CEA4C821D48A0300B388E4 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				77CEA4EB21D4BB2000B388E4 /* Navigation */,
 				77CEA4C921D48B3C00B388E4 /* DiscoverViewController.h */,
 				77CEA4CA21D48B3C00B388E4 /* DiscoverViewController.m */,
-				77CEA4E821D4B79300B388E4 /* DiscoverNvPresenter.h */,
-				77CEA4E921D4B79300B388E4 /* DiscoverNvPresenter.m */,
 				77CEA4E221D4B64F00B388E4 /* DiscoverClubPresenter.h */,
 				77CEA4E321D4B64F00B388E4 /* DiscoverClubPresenter.m */,
 				77CEA4E521D4B69700B388E4 /* DiscoverTechPresenter.h */,
@@ -1588,6 +1592,18 @@
 				77CEA4D921D4974D00B388E4 /* ViewPagerLayoutParams.m */,
 			);
 			path = ViewPager;
+			sourceTree = "<group>";
+		};
+		77CEA4EB21D4BB2000B388E4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA4E821D4B79300B388E4 /* DiscoverNvPresenter.h */,
+				77CEA4E921D4B79300B388E4 /* DiscoverNvPresenter.m */,
+				77CEA4EC21D4BB3A00B388E4 /* DiscoverNvViewHandler.h */,
+				77CEA4ED21D4BB3A00B388E4 /* DiscoverNvViewHandler.m */,
+				77CEA4EF21D4BC1600B388E4 /* DiscoverNavigation.json */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -2087,6 +2103,7 @@
 				77B0544821C943760045A489 /* README.md in Resources */,
 				7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */,
 				776B55AD21BE682C00793CAF /* Login.json in Resources */,
+				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
@@ -2202,6 +2219,7 @@
 				77B0558221D122460045A489 /* XMLDictionary.m in Sources */,
 				7734C13321D26ED3009D1EE8 /* HomeTableViewCell.m in Sources */,
 				77B0544A21C943760045A489 /* YYDiskCache.m in Sources */,
+				77CEA4EE21D4BB3A00B388E4 /* DiscoverNvViewHandler.m in Sources */,
 				77EA8F4D21B90226001B8959 /* ViewGroupModel.m in Sources */,
 				77EA8F2D21B90226001B8959 /* CommonHandler.m in Sources */,
 				776B55EA21BFF7DC00793CAF /* CheckLoginPerfomer.m in Sources */,
