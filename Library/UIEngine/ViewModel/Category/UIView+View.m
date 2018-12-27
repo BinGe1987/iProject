@@ -24,7 +24,7 @@ static char shapeLayerKey;
         return superView;
     }
     for (UIView *view in superView.subviews) {
-        if (![view isKindOfClass:[UIScrollView class]]) {
+        if (![view isKindOfClass:[UITableView class]]) {
             UIView *realView = [self findViewByName:name withSuperView:view];
             if (realView) {
                 return realView;

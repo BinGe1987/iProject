@@ -11,7 +11,17 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol ViewPagerDelegate <NSObject>
+
+- (void)viewPager:(id)viewPager pageIndexDidChanged:(NSInteger)index;
+
+@end
+
 @interface ViewPager : ScrollView
+
+@property (nonatomic, assign) id<ViewPagerDelegate> viewPagerDelegate;
+
+- (UIView *)pageWithIndex:(NSInteger)index;
 
 @end
 

@@ -11,7 +11,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ScrollView : UIScrollView<ViewGroupDelegate>
+@interface ScrollView : UIScrollView<ViewGroupDelegate, UIScrollViewDelegate>
 
 //滑动布局的方向
 @property (nonatomic, assign) ScrollOrientation orientation;

@@ -16,6 +16,7 @@
 #import "FrameViewModel.h"
 #import "LinearViewModel.h"
 #import "ScrollViewModel.h"
+#import "ViewPagerModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -18,11 +18,21 @@
 {
     self = [super init];
     if (self) {
-//        self.showsVerticalScrollIndicator = NO;
-//        self.showsHorizontalScrollIndicator= NO;
+        self.showsVerticalScrollIndicator = NO;
+        self.showsHorizontalScrollIndicator= NO;
         self.pagingEnabled = YES;
+        self.delegate = self;
     }
     return self;
+}
+
+- (UIView *)pageWithIndex:(NSInteger)index {
+    for (UIView * page in self.subviews) {
+        if (page.frame.origin.x == index * self.frame.size.width) {
+            return page;
+        }
+    }
+    return nil;
 }
 
 - (void)assignmentForMaxSize:(CGSize)size {
@@ -31,11 +41,13 @@
     CGFloat maxWidth = width, maxHeight = height;
     for (UIView *view in self.subviews) {
         [view assignmentForMaxSize:CGSizeMake(maxWidth, maxHeight)];
-//        if (self.orientation == ScrollOrientationVertical) {
-//            maxHeight -= view.boundingSize.height;
-//        } else {
-//            maxWidth -= view.boundingSize.width;
-//        }
+    }
+}
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    int pageNo= scrollView.contentOffset.x/scrollView.frame.size.width;
+    if (self.viewPagerDelegate) {
+        [self.viewPagerDelegate viewPager:self pageIndexDidChanged:pageNo];
     }
 }
 

@@ -7,7 +7,7 @@
 
 #import "ScrollView.h"
 
-@interface ScrollView()<UIScrollViewDelegate>
+@interface ScrollView()
 
 @end
 
@@ -21,14 +21,6 @@
         self.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
     }
     return self;
-}
-
-- (void)scrollViewDidChangeAdjustedContentInset:(UIScrollView *)scrollView API_AVAILABLE(ios(11.0), tvos(11.0)) {
-    Log(@"scrollViewDidChangeAdjustedContentInset : %f",scrollView.contentOffset.y);
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    Log(@"scrollViewDidScroll : %f",scrollView.contentOffset.y);
 }
 
 - (void)addView:(UIView *)view {
