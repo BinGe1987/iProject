@@ -21,6 +21,9 @@
         NSString *color = [model getString:@"text_color" defaultValue:@"#ff000000"];
         self.textColor = [ColorUtils colorWithString:color];
         
+        NSString *colorSelected = [model getString:@"text_color_selected" defaultValue:@"#ff000000"];
+        self.textColorSelected = [ColorUtils colorWithString:colorSelected];
+        
         NSString *imageNormal = [model getString:@"button_imageNormal" defaultValue:nil];
         if (imageNormal) {
             if ([imageNormal hasPrefix:@"@"]) {

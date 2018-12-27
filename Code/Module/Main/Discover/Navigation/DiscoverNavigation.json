@@ -22,7 +22,8 @@
                     "view_paddingBottom":"20",
                     "text_size":"17",
                     "text_src":"推荐商家",
-                    "text_color":"#ff55b4b2",
+                    "text_color":"#ffababab",
+                    "text_color_selected":"#ff55b4b2",
                     "layout_marginLeft":"15",
                     "layout_marginRight":"15",
                 },
@@ -36,6 +37,7 @@
                     "text_size":"17",
                     "text_src":"推荐技师",
                     "text_color":"#ffababab",
+                    "text_color_selected":"#ff55b4b2",
                     "layout_marginLeft":"15",
                     "layout_marginRight":"15",
                 }

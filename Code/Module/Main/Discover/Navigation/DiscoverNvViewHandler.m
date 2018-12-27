@@ -15,7 +15,26 @@
     UIView *titleView = [UIView viewWithJSON:@"DiscoverNavigation.json" size:view.bounds.size];
     [view addSubview:titleView];
     
+    [self currentSelected:0];
+    
     return self;
+}
+
+- (void)currentSelected:(NSInteger)index {
+    UIButton *clubBtn = (UIButton *)[self.view findViewByName:@"club"];
+    UIButton *techBtn = (UIButton *)[self.view findViewByName:@"tech"];
+    switch (index) {
+        case 0:
+            clubBtn.selected = YES;
+            techBtn.selected = NO;
+            break;
+        case 1:
+            clubBtn.selected = NO;
+            techBtn.selected = YES;
+            break;
+        default:
+            break;
+    }
 }
 
 @end

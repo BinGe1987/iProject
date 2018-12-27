@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString      *text;
 
 @property (nonatomic,strong) UIColor        *textColor;
+@property (nonatomic,strong) UIColor        *textColorSelected;
 
 @property (nonatomic,strong) UIImage        *imageNormal;
 @property (nonatomic,strong) UIImage        *imageSelected;

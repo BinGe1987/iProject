@@ -26,7 +26,8 @@
 }
 
 - (void)viewPager:(id)viewPager pageIndexDidChanged:(NSInteger)index {
-
+    DiscoverNvViewHandler *handler = (DiscoverNvViewHandler *)self.handler;
+    [handler currentSelected:index];
 }
 
 @end

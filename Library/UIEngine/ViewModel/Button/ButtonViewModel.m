@@ -25,6 +25,7 @@
     self.button.titleLabel.font = params.font;
     [self.button setTitle:params.text forState:UIControlStateNormal];
     [self.button setTitleColor:params.textColor forState:UIControlStateNormal];
+    [self.button setTitleColor:params.textColorSelected forState:UIControlStateSelected];
     if (params.imageNormal) {
         [self.button setImage:params.imageNormal forState:UIControlStateNormal];
     }
