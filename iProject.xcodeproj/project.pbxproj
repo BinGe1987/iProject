@@ -174,6 +174,8 @@
 		77CEA4C221D3BF5B00B388E4 /* ClubCellItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4C121D3BF5B00B388E4 /* ClubCellItem.json */; };
 		77CEA4C521D3D98600B388E4 /* Data+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4C421D3D98600B388E4 /* Data+Update.m */; };
 		77CEA4C721D481D500B388E4 /* Test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4C621D481D500B388E4 /* Test2.json */; };
+		77CEA4CB21D48B3C00B388E4 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4CA21D48B3C00B388E4 /* DiscoverViewController.m */; };
+		77CEA4CD21D48BD000B388E4 /* Discover.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4CC21D48BD000B388E4 /* Discover.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -565,6 +567,9 @@
 		77CEA4C321D3D98600B388E4 /* Data+Update.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Data+Update.h"; sourceTree = "<group>"; };
 		77CEA4C421D3D98600B388E4 /* Data+Update.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Data+Update.m"; sourceTree = "<group>"; };
 		77CEA4C621D481D500B388E4 /* Test2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test2.json; sourceTree = "<group>"; };
+		77CEA4C921D48B3C00B388E4 /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
+		77CEA4CA21D48B3C00B388E4 /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
+		77CEA4CC21D48BD000B388E4 /* Discover.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Discover.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1527,6 +1532,16 @@
 			path = Club;
 			sourceTree = "<group>";
 		};
+		77CEA4C821D48A0300B388E4 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA4C921D48B3C00B388E4 /* DiscoverViewController.h */,
+				77CEA4CA21D48B3C00B388E4 /* DiscoverViewController.m */,
+				77CEA4CC21D48BD000B388E4 /* Discover.json */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
 		77EA8E5E21B8F79F001B8959 = {
 			isa = PBXGroup;
 			children = (
@@ -1588,6 +1603,7 @@
 			children = (
 				77B0551D21CD27200045A489 /* Base */,
 				774F017021B9725D00CB482F /* Home */,
+				77CEA4C821D48A0300B388E4 /* Discover */,
 				774F017121B9726400CB482F /* Mine */,
 				77B0551A21CD247E0045A489 /* MainModule.h */,
 				77B0551B21CD247E0045A489 /* MainModule.m */,
@@ -2027,6 +2043,7 @@
 				77EA8F5121B90226001B8959 /* demo.json in Resources */,
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,
 				776B55F821C11A9200793CAF /* readme-UIEngine in Resources */,
+				77CEA4CD21D48BD000B388E4 /* Discover.json in Resources */,
 				77EA8F2F21B90226001B8959 /* readme-DataCenter in Resources */,
 				77CEA4C721D481D500B388E4 /* Test2.json in Resources */,
 				77FAFCD921C28C2D002A90B0 /* Home.json in Resources */,
@@ -2105,6 +2122,7 @@
 				77B0545121C943760045A489 /* YYImageCoder.m in Sources */,
 				77B053D821C8C53F0045A489 /* NetConfig.m in Sources */,
 				774F017421B9728900CB482F /* MineViewController.m in Sources */,
+				77CEA4CB21D48B3C00B388E4 /* DiscoverViewController.m in Sources */,
 				77B054D521CA9B220045A489 /* TableLayoutParams.m in Sources */,
 				77B0548221CA48BB0045A489 /* PhotoBrowser.m in Sources */,
 				77B054CF21CA9A890045A489 /* TableViewParams.m in Sources */,

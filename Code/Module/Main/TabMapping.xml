@@ -8,7 +8,7 @@
     </tab>
     <tab>
         <type>discover</type>
-        <controller>MineViewController</controller>
+        <controller>DiscoverViewController</controller>
         <icon_normal>tab_discover_unselected</icon_normal>
         <icon_selected>tab_discover_selected</icon_selected>
     </tab>

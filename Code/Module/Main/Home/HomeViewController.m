@@ -19,8 +19,6 @@
     [super viewDidLoad];
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Home.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
-    
-    [self findViewByName:@"123"];
 
     HomePresenter *prsenter = [[HomePresenter alloc] initWithView:[self findViewByName:@"table"]];
     [self addPresenter:prsenter];
