@@ -1,15 +1,84 @@
 {
     "view_name":"page_club",
-    "view_type":"linear",
+    "view_type":"frame",
     "view_width":"full",
     "view_height":"full",
     "subviews":[
         {
+            "layout_marginTop":"30",
             "view_name":"table",
             "view_type":"table",
             "view_width":"full",
             "view_height":"full",
-        }
+        },
+        {
+            "view_name":"tools",
+            "view_type":"linear",
+            "view_width":"full",
+            "view_height":"30",
+            "view_orientation":"V",
+            "view_background":"#ffffffff",
+            "subviews":[
+                {
+                    "view_type":"view",
+                    "view_width":"full",
+                    "view_height":"0.5",
+                    "view_background":"#ffededed",
+                },
+                {
+                    "view_type":"linear",
+                    "view_width":"full",
+                    "view_height":"full",
+                    "view_orientation":"H",
+                    "subviews":[
+                        {
+                            "view_name":"",
+                            "view_type":"button",
+                            "view_width":"33.33%",
+                            "view_height":"full",
+                            "text_size":"13",
+                            "text_src":"附近",
+                            "text_color":"#ff2e2e2e",
+                        },
+                        {
+                            "view_type":"view",
+                            "view_width":"0.5",
+                            "view_height":"full",
+                            "view_background":"#ffededed",
+                            "layout_marginTop":"5",
+                            "layout_marginBottom":"3",
+                        },
+                        {
+                            "view_name":"",
+                            "view_type":"button",
+                            "view_width":"33.33%",
+                            "view_height":"full",
+                            "text_size":"13",
+                            "text_src":"服务类别",
+                            "text_color":"#ff2e2e2e",
+                        },
+                        {
+                            "view_type":"view",
+                            "view_width":"0.5",
+                            "view_height":"full",
+                            "view_background":"#ffededed",
+                            "layout_marginTop":"5",
+                            "layout_marginBottom":"3",
+                        },
+                        {
+                            "view_name":"",
+                            "view_type":"button",
+                            "view_width":"33.33%",
+                            "view_height":"full",
+                            "text_size":"13",
+                            "text_src":"智能排序",
+                            "text_color":"#ff2e2e2e",
+                        }
+                    ]
+                },
+            ]
+        },
+        
     ]
 }
 

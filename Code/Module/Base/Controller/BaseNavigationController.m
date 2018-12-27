@@ -14,7 +14,7 @@
     
     self.navigationBar.translucent = NO;
     [self.navigationBar setBackgroundImage:[ImageUtils imageWithColorHex:@"#ffffffff" size:CGSizeMake(10, 10)] forBarMetrics:UIBarMetricsDefault];
-//    [self.navigationBar setShadowImage:[UIImage new]];
+    [self.navigationBar setShadowImage:[UIImage new]];
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {
