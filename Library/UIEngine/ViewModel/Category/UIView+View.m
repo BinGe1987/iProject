@@ -19,13 +19,20 @@ static char shapeLayerKey;
 }
 
 - (UIView *)findViewByName:(NSString *)name withSuperView:(UIView *)superView {
+    if ([NSString isEmpty:name]) return nil;
     if (superView.viewParams &&  [superView.viewParams.name isEqualToString:name]) {
         return superView;
     }
     for (UIView *view in superView.subviews) {
-        UIView *realView = [self findViewByName:name withSuperView:view];
-        if (realView) {
-            return realView;
+        if (![view isKindOfClass:[UIScrollView class]]) {
+            UIView *realView = [self findViewByName:name withSuperView:view];
+            if (realView) {
+                return realView;
+            }
+        } else {
+            if (view.viewParams &&  [view.viewParams.name isEqualToString:name]) {
+                return view;
+            }
         }
     }
     return nil;
