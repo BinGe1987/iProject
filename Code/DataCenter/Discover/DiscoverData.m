@@ -60,6 +60,8 @@
         data.name = [dic objectForKey:@"name"];
         data.imageUrl = [dic objectForKey:@"image"];
         [self.tech addData:data];
+        
+        
     }
 }
 

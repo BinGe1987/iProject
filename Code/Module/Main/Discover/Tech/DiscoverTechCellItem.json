@@ -13,6 +13,49 @@
             "view_height":"full",
             "image_scaleType":"full",
             "image_src":"@default_head_girl",
+        },
+        {
+            "view_name":"club_name",
+            "view_type":"label",
+            "view_width":"auto",
+            "view_height":"18",
+            "text_size":"14",
+            "text_color":"#ffffffff",
+            "text_src":"休闲养生演示会所",
+            "layout_marginLeft":"6",
+            "layout_marginTop":"6",
+        },
+        {
+            "view_type":"frame",
+            "view_width":"full",
+            "view_height":"48",
+            "view_background":"#E6ffffff",
+            "layout_gravity":"bottom",
+            "subviews":[
+                {
+                    "view_name":"name",
+                    "view_type":"label",
+                    "view_width":"auto",
+                    "view_height":"18",
+                    "text_size":"15",
+                    "text_color":"#ff2e2e2e",
+                    "text_src":"技师 01",
+                    "layout_marginLeft":"6",
+                    "layout_marginTop":"6",
+                },
+                {
+                    "view_name":"",
+                    "view_type":"label",
+                    "view_width":"auto",
+                    "view_height":"18",
+                    "text_size":"11",
+                    "text_color":"#ff808080",
+                    "text_src":"0浏览",
+                    "layout_marginRight":"7",
+                    "layout_marginTop":"7",
+                    "layout_gravity":"right|top",
+                },
+            ]
         }
     ]
 }

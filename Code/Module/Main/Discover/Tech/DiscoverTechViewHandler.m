@@ -20,7 +20,8 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.collectionView = (UICollectionView *)view;
-    
+    self.collectionView.showsVerticalScrollIndicator = NO;
+    self.collectionView.showsHorizontalScrollIndicator = NO;
     return self;
 }
 
