@@ -1,61 +1,73 @@
 {
     "view_name":"root_view",
     "view_type":"linear",
-    "view_orientation":"H",
+    "view_orientation":"V",
     "view_width":"full",
     "view_height":"full",
     "subviews":[
         {
-            "view_name":"classify1",
-            "view_type":"frame",
-            "view_width":"33.33%",
+            "view_name":"root_view",
+            "view_type":"linear",
+            "view_orientation":"H",
+            "view_width":"full",
             "view_height":"full",
+            "layout_marginLeft":"5",
+            "layout_marginRight":"5",
             "subviews":[
                 {
-                    "view_name":"image1",
-                    "view_type":"image",
-                    "view_width":"full",
+                    "view_name":"classify1",
+                    "view_type":"frame",
+                    "view_width":"33.33%",
                     "view_height":"full",
-                    "layout_marginLeft":"10",
-                    "layout_marginRight":"5",
-                    "image_src":"@水疗"
-                }
-            ]
-        },
-        {
-            "view_name":"classify1",
-            "view_type":"frame",
-            "view_width":"33.33%",
-            "view_height":"full",
-            "subviews":[
+                    "subviews":[
+                        {
+                            "view_name":"image1",
+                            "view_type":"image",
+                            "view_width":"full",
+                            "view_height":"full",
+                            "layout_marginLeft":"5",
+                            "layout_marginRight":"5",
+                            "image_src":"@水疗"
+                        }
+                    ]
+                },
                 {
-                    "view_name":"image1",
-                    "view_type":"image",
-                    "view_width":"full",
+                    "view_name":"classify1",
+                    "view_type":"frame",
+                    "view_width":"33.33%",
                     "view_height":"full",
-                    "layout_marginLeft":"5",
-                    "layout_marginRight":"5",
-                    "image_src":"@推拿"
-                }
-            ]
-        },
-        {
-            "view_name":"classify1",
-            "view_type":"frame",
-            "view_width":"33.33%",
-            "view_height":"full",
-            "subviews":[
+                    "subviews":[
+                        {
+                            "view_name":"image1",
+                            "view_type":"image",
+                            "view_width":"full",
+                            "view_height":"full",
+                            "layout_marginLeft":"5",
+                            "layout_marginRight":"5",
+                            "image_src":"@推拿"
+                        }
+                    ]
+                },
                 {
-                    "view_name":"image1",
-                    "view_type":"image",
-                    "view_width":"full",
+                    "view_name":"classify1",
+                    "view_type":"frame",
+                    "view_width":"33.33%",
                     "view_height":"full",
-                    "layout_marginLeft":"5",
-                    "layout_marginRight":"10",
-                    "image_src":"@浴足"
+                    "subviews":[
+                        {
+                            "view_name":"image1",
+                            "view_type":"image",
+                            "view_width":"full",
+                            "view_height":"full",
+                            "layout_marginLeft":"5",
+                            "layout_marginRight":"5",
+                            "image_src":"@浴足"
+                        }
+                    ]
                 }
             ]
         }
     ]
 }
+
 
