@@ -29,7 +29,12 @@
 }
 
 - (id)parse:(id)operation withSource:(id)source {
-    [self.data setData:source];
+    if ([operation isEqualToString:OperationGetDiscoverClubData]) {
+        [self.data setClubData:source];
+    }
+    else if ([operation isEqualToString:OperationGetDiscoverTechData]) {
+        [self.data setTechData:source];
+    }
     return [self getData];
 }
 

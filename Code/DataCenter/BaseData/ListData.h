@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)addData:(id)data;
 
+- (void)clear;
+
 - (NSArray *)list;
 
 @end

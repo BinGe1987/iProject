@@ -19,17 +19,24 @@
 {
     self = [super init];
     if (self) {
-        self.array = [NSMutableArray new];
+        self.array = [[NSMutableArray alloc] init];
     }
     return self;
 }
 
+- (void)clear {
+    [self.array removeAllObjects];
+}
+
 - (void)addData:(id)data {
+//    Log(@"%@", data);
+//    Log(@"%ld", self.array.count);
+    Log(@"%@", self);
     [self.array addObject:data];
 }
 
 - (NSArray *)list {
-    return [self.array copy];
+    return self.array;
 }
 
 @end

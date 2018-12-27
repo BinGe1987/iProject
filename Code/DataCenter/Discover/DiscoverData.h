@@ -15,6 +15,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) ListData *club;
 @property (nonatomic, strong) ListData *tech;
 
+
+- (void)setClubData:(Data *)data;
+
+- (void)setTechData:(Data *)data;
+
 @end
 
 NS_ASSUME_NONNULL_END
