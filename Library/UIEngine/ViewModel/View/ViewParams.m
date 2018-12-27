@@ -68,4 +68,9 @@
     return self;
 }
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"name = %@ ", self.name];
+}
+
 @end

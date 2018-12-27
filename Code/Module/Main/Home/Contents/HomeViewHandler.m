@@ -24,12 +24,12 @@
     WeakSelf(self)
     [self.tableView setHeadRefreshHandler:^{
         if (weakself.delegate) {
-            [weakself.delegate onViewAction:@"action_refresh_head"];
+//            [weakself.delegate onViewAction:@"action_refresh_head"];
         }
     }];
     [self.tableView setFootRefreshHandler:^{
         if (weakself.delegate) {
-            [weakself.delegate onViewAction:@"action_refresh_foot"];
+//            [weakself.delegate onViewAction:@"action_refresh_foot"];
         }
     }];
     return self;

@@ -15,11 +15,15 @@
     CGFloat width = size.width, height = size.height;
     CGFloat maxWidth = width, maxHeight = height;
     for (UIView *view in self.subviews) {
-        [view assignmentForMaxSize:CGSizeMake(maxWidth, maxHeight)];
+        LayoutParams *lp = view.layoutParams;
+        CGFloat viewMaxWidth = maxWidth - lp.marginLeft - lp.marginRight;
+        CGFloat viewMaxHeight = maxHeight - lp.marginTop - lp.marginBottom;
+        [view assignmentForMaxSize:CGSizeMake(viewMaxWidth, viewMaxHeight)];
+        CGSize size = view.boundingSize;
         if (self.orientation == OrientationVertical) {
-            maxHeight -= view.boundingSize.height;
+            maxHeight = maxHeight - size.height - view.layoutParams.marginTop - view.layoutParams.marginBottom;
         } else {
-            maxWidth -= view.boundingSize.width;
+            maxWidth = maxWidth - size.width - view.layoutParams.marginLeft - view.layoutParams.marginRight;
         }
     }
 }

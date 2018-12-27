@@ -176,4 +176,10 @@ static char shapeLayerKey;
     CGPathRelease(dotteShapePath);
 }
 
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@ %@", self.viewParams, [super description]];
+}
+
 @end

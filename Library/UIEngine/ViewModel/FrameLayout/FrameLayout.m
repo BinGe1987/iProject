@@ -52,15 +52,6 @@
             r.origin.y = self.height - subView.height - subView.layoutParams.marginBottom;
         }
         subView.frame = r;
-        
-//        //大小
-//        CGRect b = subView.bounds;
-//        b.origin.x = subView.viewParams.paddingLeft;
-//        b.origin.y = subView.viewParams.paddingTop;
-//        b.size.width = subView.boundWidth;
-//        b.size.height = subView.boundHeight;
-//        subView.bounds = b;
-//
     }
 }
 

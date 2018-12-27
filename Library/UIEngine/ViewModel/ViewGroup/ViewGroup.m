@@ -23,16 +23,12 @@
 - (void)assignmentForMaxSize:(CGSize)size {
     [super assignmentForMaxSize:size];
     for (UIView *view in self.subviews) {
-        [view assignmentForMaxSize:CGSizeMake(self.maxWidth, self.maxHeight)];
+        LayoutParams *lp = view.layoutParams;
+        CGFloat maxWidth = self.maxWidth - lp.marginLeft - lp.marginRight;
+        CGFloat maxHeight = self.maxHeight - lp.marginTop - lp.marginBottom;
+        [view assignmentForMaxSize:CGSizeMake(maxWidth, maxHeight)];
     }
 }
-
-//- (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
-//    [super assignmentForMaxWidth:width maxHeight:height];
-//    for (UIView *view in self.subviews) {
-//        [view assignmentForMaxWidth:self.maxWidth maxHeight:self.maxHeight];
-//    }
-//}
 
 
 - (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^)(void))block {
