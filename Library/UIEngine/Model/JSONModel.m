@@ -24,12 +24,25 @@
     return self;
 }
 
+-(instancetype)initWithJSONFileName:(NSString *)name; {
+    self = [super init];
+    if (self) {
+        if ([name hasPrefix:@"@"]) {
+            name = [name substringFromIndex:1];
+        }
+        NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:nil];
+        JSON *json = [[JSON alloc] initWithPath:path];
+        self.source = json.source;
+    }
+    return self;
+}
+
 - (id)getSource {
     return self.source;
 }
 
 - (NSString *)getType {
-    return [self getString:@"view_type" defaultValue:@"text"];
+    return [self getString:@"view_type" defaultValue:nil];
 }
 
 - (NSString *)getString:(NSString *)key defaultValue:(NSString * _Nullable)defValue; {
@@ -58,6 +71,10 @@
     NSArray *array = [self.source objectForKey:@"subviews"];
     for (NSDictionary *json in array) {
         JSONModel *model = [[JSONModel alloc] initWithJSON:json];
+        NSString *include = [model getString:@"include" defaultValue:nil];
+        if (include) {
+            model = [[JSONModel alloc] initWithJSONFileName:include];
+        }
         [newArray addObject:model];
     }
     return newArray;

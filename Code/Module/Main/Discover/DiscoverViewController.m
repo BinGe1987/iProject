@@ -18,6 +18,12 @@
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Discover.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
+    
+    UIView *clubPage = [self findViewByName:@"page_club"];
+    
+    UIView *techPage = [self findViewByName:@"page_tech"];
+    
+    
 }
 
 

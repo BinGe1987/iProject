@@ -29,19 +29,6 @@
     }
 }
 
-//- (void)assignmentForMaxWidth:(CGFloat)width maxHeight:(CGFloat)height {
-//    [super assignmentForMaxWidth:width maxHeight:height];
-//    CGFloat maxWidth = width, maxHeight = height;
-//    for (UIView *view in self.subviews) {
-//        [view assignmentForMaxWidth:maxWidth maxHeight:maxHeight];
-//        if (self.orientation == OrientationVertical) {
-//            maxHeight -= view.boundingSize.height;
-//        } else {
-//            maxWidth -= view.boundingSize.width;
-//        }
-//    }
-//}
-
 - (CGSize)boundingSizeNeed {
     CGSize size = self.orientation == OrientationVertical ? [self boundingSizeVertical]:[self boundingSizeHorizontal];
     size.width = size.width + self.viewParams.paddingLeft + self.viewParams.paddingRight;

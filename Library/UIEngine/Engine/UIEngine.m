@@ -49,11 +49,24 @@ singleton_implementation(UIEngine)
                 ViewGroupModel *parent = (ViewGroupModel *)vm;
                 for (id<UIModel> child in [model getChildModels] ) {
                     ViewModel *childVM = [self getViewModel:child];
-                    [parent addChildViewModel:childVM];
+                    if (childVM) {
+                        [parent addChildViewModel:childVM];
+                    }
                 }
             }
             return vm;
+        } else {
+            
         }
+    }
+    return nil;
+}
+
+- (ViewModel *)checkInclude:(id<UIModel>)model {
+    NSString *include = [model getString:@"include" defaultValue:nil];
+    if (![NSString isEmpty:include]) {
+        
+//        JSONModel *model = [[JSONModel alloc] initWithJSON:json.source];
     }
     return nil;
 }

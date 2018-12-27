@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///用一个本地json的文件路径生成界面
 - (void)setContentViewWithJSONPath:(NSString *)path;
 
+- (void)setContentViewWithJSONFileName:(NSString *)name;
+
 
 @end
 

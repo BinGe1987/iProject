@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 -(instancetype)initWithJSON:(NSDictionary *)json;
 
+-(instancetype)initWithJSONFileName:(NSString *)name;
+
 @end
 
 NS_ASSUME_NONNULL_END

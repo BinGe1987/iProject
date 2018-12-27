@@ -19,4 +19,10 @@
     }
 }
 
+- (void)setContentViewWithJSONFileName:(NSString *)name {
+    JSONModel *model = [[JSONModel alloc] initWithJSONFileName:name];
+    UIView *view = [[UIEngine get]parse:model];
+    [self setContentView:view];
+}
+
 @end

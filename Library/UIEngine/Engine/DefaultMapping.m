@@ -16,6 +16,7 @@
 #import "FrameViewModel.h"
 #import "ScrollViewModel.h"
 #import "TableViewModel.h"
+#import "ViewPagerModel.h"
 
 
 @implementation DefaultMapping
@@ -24,6 +25,9 @@
     
     NSString *type = [model getType];
     if (!type) {
+        return nil;
+    }
+    else if ([type isEqualToString:@"view"]) {
         return [[ViewModel alloc] initWithUIModel:model];
     }
     else if ([type isEqualToString:@"frame"]) {
@@ -52,6 +56,9 @@
     }
     else if ([type isEqualToString:@"button"]) {
         return [[ButtonViewModel alloc] initWithUIModel:model];
+    }
+    else if ([type isEqualToString:@"pager"]) {
+        return [[ViewPagerModel alloc] initWithUIModel:model];
     }
     return [[ViewModel alloc] initWithUIModel:model];
 }
