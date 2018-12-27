@@ -12,6 +12,7 @@
 
 - (void)assignmentForMaxSize:(CGSize)size {
     [super assignmentForMaxSize:size];
+    size = self.boundingSize;
     CGFloat width = size.width, height = size.height;
     CGFloat maxWidth = width, maxHeight = height;
     for (UIView *view in self.subviews) {

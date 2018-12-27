@@ -173,6 +173,7 @@
 		77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4BF21D3BD8700B388E4 /* ClubCellHeader.json */; };
 		77CEA4C221D3BF5B00B388E4 /* ClubCellItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4C121D3BF5B00B388E4 /* ClubCellItem.json */; };
 		77CEA4C521D3D98600B388E4 /* Data+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4C421D3D98600B388E4 /* Data+Update.m */; };
+		77CEA4C721D481D500B388E4 /* Test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4C621D481D500B388E4 /* Test2.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -563,6 +564,7 @@
 		77CEA4C121D3BF5B00B388E4 /* ClubCellItem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ClubCellItem.json; sourceTree = "<group>"; };
 		77CEA4C321D3D98600B388E4 /* Data+Update.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Data+Update.h"; sourceTree = "<group>"; };
 		77CEA4C421D3D98600B388E4 /* Data+Update.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Data+Update.m"; sourceTree = "<group>"; };
+		77CEA4C621D481D500B388E4 /* Test2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test2.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1623,6 +1625,7 @@
 				77B054E921CB63FD0045A489 /* SecondViewController.h */,
 				77B054EA21CB63FD0045A489 /* SecondViewController.m */,
 				77B0545B21C9E3A70045A489 /* Test.json */,
+				77CEA4C621D481D500B388E4 /* Test2.json */,
 				77EA8FBC21B94BB5001B8959 /* TestModule.h */,
 				77EA8FBD21B94BB5001B8959 /* TestModule.m */,
 			);
@@ -2025,6 +2028,7 @@
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,
 				776B55F821C11A9200793CAF /* readme-UIEngine in Resources */,
 				77EA8F2F21B90226001B8959 /* readme-DataCenter in Resources */,
+				77CEA4C721D481D500B388E4 /* Test2.json in Resources */,
 				77FAFCD921C28C2D002A90B0 /* Home.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

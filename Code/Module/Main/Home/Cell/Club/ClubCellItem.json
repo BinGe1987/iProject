@@ -62,7 +62,7 @@
                                     "view_name":"star",
                                     "view_type":"label",
                                     "view_width":"auto",
-                                    "view_height":"18",
+                                    "view_height":"full",
                                     "text_size":"12",
                                     "text_color":"#ffffb925",
                                     "text_src":"5.0",
@@ -81,7 +81,7 @@
                             ]
                         },
                         {
-                            "view_name":"linear_star",
+                            "view_name":"linear_location",
                             "view_type":"linear",
                             "view_width":"auto",
                             "view_height":"18",
@@ -101,7 +101,7 @@
                                     "view_name":"evaluate",
                                     "view_type":"label",
                                     "view_width":"auto",
-                                    "view_height":"18",
+                                    "view_height":"full",
                                     "text_size":"10",
                                     "text_color":"#ff999999",
                                     "text_src":"福田 上沙 3.5km",

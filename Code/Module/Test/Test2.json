@@ -1,0 +1,67 @@
+{
+    "view_name":"root",
+    "view_type":"frame",
+    "view_width":"full",
+    "view_height":"full",
+    "subviews":[
+        {
+            "view_name":"linear1",
+            "view_type":"linear",
+            "view_width":"full",
+            "view_height":"full",
+            "view_orientation":"H",
+            "view_background":"#000000ff",
+            "layout_marginLeft":"12",
+            "layout_marginRight":"12",
+            "layout_marginTop":"14",
+            "layout_marginBottom":"14",
+            "subviews":[
+                
+                {
+                    "view_name":"frame1",
+                    "view_type":"frame",
+                    "view_width":"full",
+                    "view_height":"full",
+                    "view_background":"#fff0ff00",
+                    "layout_marginLeft":"12",
+                    "subviews":[
+                        
+                        {
+                            "view_name":"linear_location",
+                            "view_type":"linear",
+                            "view_width":"auto",
+                            "view_height":"18",
+                            "view_background":"#ff00fff0",
+                            "view_orientation":"H",
+                            "layout_marginTop":"22",
+                            "layout_gravity":"right|top",
+                            "subviews":[
+                                {
+                                    "view_name":"image",
+                                    "view_type":"image",
+                                    "view_width":"7",
+                                    "view_height":"18",
+                                    "image_src":"@location2",
+                                },
+                                {
+                                    "view_name":"evaluate",
+                                    "view_type":"label",
+                                    "view_width":"auto",
+                                    "view_background":"#ff0fff00",
+                                    "view_height":"full",
+                                    "text_size":"10",
+                                    "text_color":"#ff999999",
+                                    "text_src":"福田 上沙 3.5km",
+                                    "layout_marginLeft":"2",
+                                },
+                            ]
+                        },
+                        
+                    ]
+                },
+            ]
+        },
+        
+    ]
+}
+

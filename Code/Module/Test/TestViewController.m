@@ -48,7 +48,7 @@
     
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 200, 414, 106)];
     view.backgroundColor = [UIColor redColor];
-    UIView *subView = [UIView viewWithJSON:@"ClubCellItem.json" size:view.bounds.size];
+    UIView *subView = [UIView viewWithJSON:@"Test2.json" size:view.bounds.size];
     [view addSubview:subView];
     [self.view addSubview:view];
 }
