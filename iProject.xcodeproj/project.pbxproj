@@ -195,6 +195,11 @@
 		77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA50421D4C87D00B388E4 /* DiscoverClubViewHandler.m */; };
 		77CEA50821D4CA1700B388E4 /* DiscoverClubAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA50721D4CA1700B388E4 /* DiscoverClubAdapter.m */; };
 		77CEA51121D4DBAD00B388E4 /* UIView+Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA51021D4DBAD00B388E4 /* UIView+Controller.m */; };
+		77CEA51421D4F99A00B388E4 /* DiscoverTechViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA51321D4F99A00B388E4 /* DiscoverTechViewHandler.m */; };
+		77CEA51B21D4FA6900B388E4 /* CollectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA51A21D4FA6900B388E4 /* CollectionViewModel.m */; };
+		77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA51D21D4FA8100B388E4 /* CollectionLayoutParams.m */; };
+		77CEA52121D4FA9100B388E4 /* CollectionViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA52021D4FA9100B388E4 /* CollectionViewParams.m */; };
+		77CEA52421D4FAA200B388E4 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA52321D4FAA200B388E4 /* CollectionView.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -624,6 +629,16 @@
 		77CEA50721D4CA1700B388E4 /* DiscoverClubAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverClubAdapter.m; sourceTree = "<group>"; };
 		77CEA50F21D4DBAD00B388E4 /* UIView+Controller.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Controller.h"; sourceTree = "<group>"; };
 		77CEA51021D4DBAD00B388E4 /* UIView+Controller.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Controller.m"; sourceTree = "<group>"; };
+		77CEA51221D4F99A00B388E4 /* DiscoverTechViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTechViewHandler.h; sourceTree = "<group>"; };
+		77CEA51321D4F99A00B388E4 /* DiscoverTechViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechViewHandler.m; sourceTree = "<group>"; };
+		77CEA51921D4FA6900B388E4 /* CollectionViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewModel.h; sourceTree = "<group>"; };
+		77CEA51A21D4FA6900B388E4 /* CollectionViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewModel.m; sourceTree = "<group>"; };
+		77CEA51C21D4FA8100B388E4 /* CollectionLayoutParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionLayoutParams.h; sourceTree = "<group>"; };
+		77CEA51D21D4FA8100B388E4 /* CollectionLayoutParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionLayoutParams.m; sourceTree = "<group>"; };
+		77CEA51F21D4FA9100B388E4 /* CollectionViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewParams.h; sourceTree = "<group>"; };
+		77CEA52021D4FA9100B388E4 /* CollectionViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewParams.m; sourceTree = "<group>"; };
+		77CEA52221D4FAA200B388E4 /* CollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
+		77CEA52321D4FAA200B388E4 /* CollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1648,6 +1663,8 @@
 			children = (
 				77CEA4E521D4B69700B388E4 /* DiscoverTechPresenter.h */,
 				77CEA4E621D4B69700B388E4 /* DiscoverTechPresenter.m */,
+				77CEA51221D4F99A00B388E4 /* DiscoverTechViewHandler.h */,
+				77CEA51321D4F99A00B388E4 /* DiscoverTechViewHandler.m */,
 			);
 			path = Tech;
 			sourceTree = "<group>";
@@ -1665,6 +1682,21 @@
 				77CEA4F521D4C2BF00B388E4 /* DiscoverData.m */,
 			);
 			path = Discover;
+			sourceTree = "<group>";
+		};
+		77CEA51521D4FA2100B388E4 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA51921D4FA6900B388E4 /* CollectionViewModel.h */,
+				77CEA51A21D4FA6900B388E4 /* CollectionViewModel.m */,
+				77CEA51C21D4FA8100B388E4 /* CollectionLayoutParams.h */,
+				77CEA51D21D4FA8100B388E4 /* CollectionLayoutParams.m */,
+				77CEA51F21D4FA9100B388E4 /* CollectionViewParams.h */,
+				77CEA52021D4FA9100B388E4 /* CollectionViewParams.m */,
+				77CEA52221D4FAA200B388E4 /* CollectionView.h */,
+				77CEA52321D4FAA200B388E4 /* CollectionView.m */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -1935,6 +1967,7 @@
 				77B054DF21CB356E0045A489 /* FrameLayout */,
 				77B054E021CB35860045A489 /* ScrollView */,
 				77B054E121CB35970045A489 /* TableView */,
+				77CEA51521D4FA2100B388E4 /* CollectionView */,
 				77CEA4CE21D496B100B388E4 /* ViewPager */,
 			);
 			path = ViewModel;
@@ -2245,6 +2278,7 @@
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				776B55F021C00D6000793CAF /* Parser.m in Sources */,
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
+				77CEA52421D4FAA200B388E4 /* CollectionView.m in Sources */,
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,
 				77B053CE21C8A5F90045A489 /* Net.m in Sources */,
 				77B054FF21CBE6910045A489 /* EventBus.m in Sources */,
@@ -2271,6 +2305,7 @@
 				77EA8F2B21B90226001B8959 /* DataCenter.m in Sources */,
 				7734C11421D23A45009D1EE8 /* UIScrollView+KafkaConfiguration.m in Sources */,
 				77B0557421D0D5720045A489 /* IQKeyboardReturnKeyHandler.m in Sources */,
+				77CEA51421D4F99A00B388E4 /* DiscoverTechViewHandler.m in Sources */,
 				776B55AB21BE62E100793CAF /* UserData.m in Sources */,
 				77B054BD21CA51740045A489 /* InputViewModel.m in Sources */,
 				77B0556B21D0D5720045A489 /* IQUIView+IQKeyboardToolbar.m in Sources */,
@@ -2280,6 +2315,7 @@
 				77EA8F4921B90226001B8959 /* ViewModel.m in Sources */,
 				77B0559521D1FB250045A489 /* ViewHandler.m in Sources */,
 				7734C12221D23A45009D1EE8 /* KafkaReplicatorLayer.m in Sources */,
+				77CEA51B21D4FA6900B388E4 /* CollectionViewModel.m in Sources */,
 				77B054F321CB8D240045A489 /* Notification.m in Sources */,
 				77B0558221D122460045A489 /* XMLDictionary.m in Sources */,
 				7734C13321D26ED3009D1EE8 /* HomeTableViewCell.m in Sources */,
@@ -2311,6 +2347,7 @@
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
+				77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */,
 				77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */,
 				77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,
@@ -2326,6 +2363,7 @@
 				77EA8F3121B90226001B8959 /* Data.m in Sources */,
 				7734C0C721D22CFE009D1EE8 /* HomeData.m in Sources */,
 				77EA8F7121B90227001B8959 /* DefaultMapping.m in Sources */,
+				77CEA52121D4FA9100B388E4 /* CollectionViewParams.m in Sources */,
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
 				77B0553F21D0BE910045A489 /* LoginModule.m in Sources */,

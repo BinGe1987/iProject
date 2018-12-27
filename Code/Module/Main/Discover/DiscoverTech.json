@@ -3,11 +3,10 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"full",
-    "view_background":"#fff555ff",
     "subviews":[
         {
-            "view_name":"table",
-            "view_type":"table",
+            "view_name":"collection",
+            "view_type":"collection",
             "view_width":"full",
             "view_height":"full",
         }

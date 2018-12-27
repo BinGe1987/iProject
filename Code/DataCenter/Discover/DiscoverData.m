@@ -35,6 +35,32 @@
         data.imageUrl = [dic objectForKey:@"image"];
         [self.club addData:data];
     }
+    
+    //tech
+    //技师
+    NSArray *tech = @[@{@"name":@"沐沐",@"number":@"25",@"image":@""},
+                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
+                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
+                      @{@"name":@"果果",@"number":@"9",@"image":@""},
+                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
+                      @{@"name":@"沐沐",@"number":@"25",@"image":@""},
+                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
+                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
+                      @{@"name":@"果果",@"number":@"9",@"image":@""},
+                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
+                      @{@"name":@"沐沐",@"number":@"25",@"image":@""},
+                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
+                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
+                      @{@"name":@"果果",@"number":@"9",@"image":@""},
+                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
+                      ];
+    for (NSDictionary *dic in tech) {
+        TechData *data = [TechData new];
+        data.number = [dic objectForKey:@"number"];
+        data.name = [dic objectForKey:@"name"];
+        data.imageUrl = [dic objectForKey:@"image"];
+        [self.tech addData:data];
+    }
 }
 
 @end

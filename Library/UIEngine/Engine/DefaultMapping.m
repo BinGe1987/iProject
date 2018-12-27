@@ -17,6 +17,7 @@
 #import "ScrollViewModel.h"
 #import "TableViewModel.h"
 #import "ViewPagerModel.h"
+#import "CollectionViewModel.h"
 
 
 @implementation DefaultMapping
@@ -59,6 +60,9 @@
     }
     else if ([type isEqualToString:@"pager"]) {
         return [[ViewPagerModel alloc] initWithUIModel:model];
+    }
+    else if ([type isEqualToString:@"collection"]) {
+        return [[CollectionViewModel alloc] initWithUIModel:model];
     }
     return [[ViewModel alloc] initWithUIModel:model];
 }
