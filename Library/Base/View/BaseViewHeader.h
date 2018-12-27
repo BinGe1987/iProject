@@ -9,6 +9,7 @@
 #define BaseViewHeader_h
 
 #import "UIView+Controller.h"
+#import "UICollectionView+Adapter.h"
 #import "UITableView+Adapter.h"
 #import "UITableView+Refresh.h"
 #import "UIButton+OnClick.h"

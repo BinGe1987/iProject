@@ -41,7 +41,7 @@
             self.imageView.contentMode = UIViewContentModeScaleAspectFit;
             break;
         case ImageScaleTypeFull:
-            self.imageView.contentMode = UIViewContentModeScaleToFill;
+            self.imageView.contentMode = UIViewContentModeScaleAspectFill;
             break;
     }
     

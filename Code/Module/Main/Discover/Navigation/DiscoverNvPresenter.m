@@ -23,7 +23,6 @@
 }
 
 - (void)onViewAction:(id)action {
-    NSInteger index = [action integerValue];
     [self.handler.view currentViewController];
     if (self.delegate) {
         [self.delegate onPresenterEvent:action];

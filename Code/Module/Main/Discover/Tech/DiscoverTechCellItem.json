@@ -1,0 +1,18 @@
+{
+    "view_type":"frame",
+    "view_width":"full",
+    "view_height":"full",
+    "view_borderRadius":"5",
+    "view_borderWidth":"1",
+    "view_borderColor":"#00ffb925",
+    "subviews":[
+        {
+            "view_name":"image",
+            "view_type":"image",
+            "view_width":"full",
+            "view_height":"full",
+            "image_scaleType":"full",
+            "image_src":"@default_head_girl",
+        }
+    ]
+}

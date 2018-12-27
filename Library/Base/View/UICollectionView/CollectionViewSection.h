@@ -1,15 +1,15 @@
 //
-//  TableViewSection.h
+//  CollectionViewSection.h
 //  APP
 //
-//  Created by BinGe on 2018/12/25.
+//  Created by BinGe on 2018/12/27.
 //
 
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TableViewSection : NSObject
+@interface CollectionViewSection : NSObject
 
 @property (nonatomic, strong) NSString *name;
 
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSArray *array;
 
-- (instancetype)initWithDictionary:(NSDictionary *)dic;
+@property (nonatomic, assign) CGSize itemSize;
 
 @end
 

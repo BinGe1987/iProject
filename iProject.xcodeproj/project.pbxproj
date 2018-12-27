@@ -200,6 +200,12 @@
 		77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA51D21D4FA8100B388E4 /* CollectionLayoutParams.m */; };
 		77CEA52121D4FA9100B388E4 /* CollectionViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA52021D4FA9100B388E4 /* CollectionViewParams.m */; };
 		77CEA52421D4FAA200B388E4 /* CollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA52321D4FAA200B388E4 /* CollectionView.m */; };
+		77CEA52821D506F100B388E4 /* UICollectionView+Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA52721D506F100B388E4 /* UICollectionView+Adapter.m */; };
+		77CEA52B21D5071200B388E4 /* CollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA52A21D5071200B388E4 /* CollectionViewAdapter.m */; };
+		77CEA52E21D50B7B00B388E4 /* CollectionViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA52D21D50B7B00B388E4 /* CollectionViewSection.m */; };
+		77CEA53121D50D3600B388E4 /* DiscoverTechAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA53021D50D3600B388E4 /* DiscoverTechAdapter.m */; };
+		77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA53321D5125700B388E4 /* DiscoverTechCell.m */; };
+		77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA53521D515A100B388E4 /* DiscoverTechCellItem.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -639,6 +645,17 @@
 		77CEA52021D4FA9100B388E4 /* CollectionViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewParams.m; sourceTree = "<group>"; };
 		77CEA52221D4FAA200B388E4 /* CollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionView.h; sourceTree = "<group>"; };
 		77CEA52321D4FAA200B388E4 /* CollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionView.m; sourceTree = "<group>"; };
+		77CEA52621D506F100B388E4 /* UICollectionView+Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Adapter.h"; sourceTree = "<group>"; };
+		77CEA52721D506F100B388E4 /* UICollectionView+Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Adapter.m"; sourceTree = "<group>"; };
+		77CEA52921D5071200B388E4 /* CollectionViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewAdapter.h; sourceTree = "<group>"; };
+		77CEA52A21D5071200B388E4 /* CollectionViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewAdapter.m; sourceTree = "<group>"; };
+		77CEA52C21D50B7B00B388E4 /* CollectionViewSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewSection.h; sourceTree = "<group>"; };
+		77CEA52D21D50B7B00B388E4 /* CollectionViewSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewSection.m; sourceTree = "<group>"; };
+		77CEA52F21D50D3600B388E4 /* DiscoverTechAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTechAdapter.h; sourceTree = "<group>"; };
+		77CEA53021D50D3600B388E4 /* DiscoverTechAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechAdapter.m; sourceTree = "<group>"; };
+		77CEA53221D5125700B388E4 /* DiscoverTechCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTechCell.h; sourceTree = "<group>"; };
+		77CEA53321D5125700B388E4 /* DiscoverTechCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechCell.m; sourceTree = "<group>"; };
+		77CEA53521D515A100B388E4 /* DiscoverTechCellItem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiscoverTechCellItem.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1665,6 +1682,11 @@
 				77CEA4E621D4B69700B388E4 /* DiscoverTechPresenter.m */,
 				77CEA51221D4F99A00B388E4 /* DiscoverTechViewHandler.h */,
 				77CEA51321D4F99A00B388E4 /* DiscoverTechViewHandler.m */,
+				77CEA52F21D50D3600B388E4 /* DiscoverTechAdapter.h */,
+				77CEA53021D50D3600B388E4 /* DiscoverTechAdapter.m */,
+				77CEA53221D5125700B388E4 /* DiscoverTechCell.h */,
+				77CEA53321D5125700B388E4 /* DiscoverTechCell.m */,
+				77CEA53521D515A100B388E4 /* DiscoverTechCellItem.json */,
 			);
 			path = Tech;
 			sourceTree = "<group>";
@@ -1697,6 +1719,19 @@
 				77CEA52321D4FAA200B388E4 /* CollectionView.m */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		77CEA52521D506C400B388E4 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA52621D506F100B388E4 /* UICollectionView+Adapter.h */,
+				77CEA52721D506F100B388E4 /* UICollectionView+Adapter.m */,
+				77CEA52921D5071200B388E4 /* CollectionViewAdapter.h */,
+				77CEA52A21D5071200B388E4 /* CollectionViewAdapter.m */,
+				77CEA52C21D50B7B00B388E4 /* CollectionViewSection.h */,
+				77CEA52D21D50B7B00B388E4 /* CollectionViewSection.m */,
+			);
+			path = UICollectionView;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -1882,6 +1917,7 @@
 		77EA8ED721B90226001B8959 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				77CEA52521D506C400B388E4 /* UICollectionView */,
 				7734C0C121D223FB009D1EE8 /* UITableView */,
 				77CEA50F21D4DBAD00B388E4 /* UIView+Controller.h */,
 				77CEA51021D4DBAD00B388E4 /* UIView+Controller.m */,
@@ -2192,6 +2228,7 @@
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
+				77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */,
 				77CEA4B821D3AF5500B388E4 /* TechCellList.json in Resources */,
 				77CEA4B621D3A76500B388E4 /* TechCellHeader.json in Resources */,
 				77EA8F3721B90226001B8959 /* readme-mvp in Resources */,
@@ -2261,6 +2298,7 @@
 				77B054D821CA9C720045A489 /* TableViewModel.m in Sources */,
 				77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */,
 				77B054C921CA55870045A489 /* LabelView.m in Sources */,
+				77CEA52B21D5071200B388E4 /* CollectionViewAdapter.m in Sources */,
 				77B054E821CB486C0045A489 /* NetReachability.m in Sources */,
 				7734C0E121D2318E009D1EE8 /* HomeModule.m in Sources */,
 				77B0556C21D0D5720045A489 /* IQPreviousNextView.m in Sources */,
@@ -2299,6 +2337,7 @@
 				7734C0C021D223F5009D1EE8 /* UITableView+Adapter.m in Sources */,
 				776B55C121BEA10200793CAF /* FrameLayoutViewParams.m in Sources */,
 				77B0547921CA46DC0045A489 /* KSPhotoItem.m in Sources */,
+				77CEA52E21D50B7B00B388E4 /* CollectionViewSection.m in Sources */,
 				77B0556F21D0D5720045A489 /* IQNSArray+Sort.m in Sources */,
 				77EA8F3921B90226001B8959 /* Presenter.m in Sources */,
 				77B0546421CA30510045A489 /* MBProgressHUD.m in Sources */,
@@ -2331,6 +2370,7 @@
 				77EA8F8D21B90A18001B8959 /* HomeHandler.m in Sources */,
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
 				77B0551C21CD247E0045A489 /* MainModule.m in Sources */,
+				77CEA53121D50D3600B388E4 /* DiscoverTechAdapter.m in Sources */,
 				77B0545821C943760045A489 /* UIImage+YYWebImage.m in Sources */,
 				77B054BA21CA4F670045A489 /* Store.m in Sources */,
 				77CEA4BE21D3BD4300B388E4 /* ClubTableViewCell.m in Sources */,
@@ -2394,8 +2434,10 @@
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
 				775B15EC21C78FE500B8D6FF /* ColorUtils.m in Sources */,
 				77B0553221CE96ED0045A489 /* Aspects.m in Sources */,
+				77CEA52821D506F100B388E4 /* UICollectionView+Adapter.m in Sources */,
 				77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */,
 				7734C13721D2704B009D1EE8 /* BannerView.m in Sources */,
+				77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */,
 				77B0556821D0D5720045A489 /* IQToolbar.m in Sources */,
 				77CEA4FC21D4C2FF00B388E4 /* DiscoverClubPerformer.m in Sources */,
 				77B0552121CD27480045A489 /* MainNavigationController.m in Sources */,
