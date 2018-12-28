@@ -43,7 +43,7 @@
     label.text = [NSString stringWithFormat:@"¥%.2f", order.transAmount];
     
     label = (UILabel *)[view findViewByName:@"reduce_amount"];
-    label.text = [NSString stringWithFormat:@"-¥%.2f", order.reduceAmount];
+    label.text = [NSString stringWithFormat:@"- ¥%.2f", order.reduceAmount];
     
     label = (UILabel *)[view findViewByName:@"pay_amount"];
     label.text = [NSString stringWithFormat:@"¥%.2f", order.payAmount];
