@@ -26,6 +26,23 @@
     self.textView.font = params.font;
     self.textView.text = params.text;
     self.textView.textColor = params.textColor;
+    
+    if (params.textGravity & TextGravityCenter) {
+        self.textView.textAlignment = NSTextAlignmentCenter;
+    }
+    if (params.textGravity & TextGravityLeft) {
+        self.textView.textAlignment = NSTextAlignmentLeft;
+    }
+    else if (params.textGravity & TextGravityRight) {
+        self.textView.textAlignment = NSTextAlignmentRight;
+    }
+    if (params.textGravity & TextGravityTop) {
+        
+    }
+    else if (params.textGravity & TextGravityBottom) {
+        
+    }
+    
 }
 
 - (Class)ViewClass {

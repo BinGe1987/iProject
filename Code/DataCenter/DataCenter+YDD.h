@@ -12,6 +12,7 @@
 #import "UserHandler.h"
 #import "HomeHandler.h"
 #import "DiscoverHandler.h"
+#import "OrderHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

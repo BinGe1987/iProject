@@ -83,7 +83,7 @@
     }
     
 #warning TODO 调试
-    main.selectedIndex = 2;
+//    main.selectedIndex = 2;
 }
 
 

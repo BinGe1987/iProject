@@ -19,9 +19,34 @@
         cell.backgroundColor = [UIColor clearColor];
         UIView *view = [UIView viewWithJSON:@"OrderCellItem.json" size:CGSizeMake(tableView.width, data.height)];
         [cell.contentView addSubview:view];
+        view.tag = 100;
         
     }
+    
+    UIView *view = [cell.contentView viewWithTag:100];
+    [self view:view setData:[data.array objectAtIndex:indexPath.row]];
+    
     return cell;
+}
+
+- (void)view:(UIView *)view setData:(OrderData *)order {
+    UILabel *label = (UILabel *)[view findViewByName:@"pay_time"];
+    label.text = order.payTime;
+    
+    label = (UILabel *)[view findViewByName:@"pay_type"];
+    label.text = order.payType;
+    
+    label = (UILabel *)[view findViewByName:@"write_off_code"];
+    label.text = order.writeOffCode;
+    
+    label = (UILabel *)[view findViewByName:@"trans_amount"];
+    label.text = [NSString stringWithFormat:@"¥%.2f", order.transAmount];
+    
+    label = (UILabel *)[view findViewByName:@"reduce_amount"];
+    label.text = [NSString stringWithFormat:@"-¥%.2f", order.reduceAmount];
+    
+    label = (UILabel *)[view findViewByName:@"pay_amount"];
+    label.text = [NSString stringWithFormat:@"¥%.2f", order.payAmount];
 }
 
 @end

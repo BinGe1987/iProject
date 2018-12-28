@@ -21,6 +21,35 @@
         
         NSString *color = [model getString:@"text_color" defaultValue:@"#ff000000"];
         self.textColor = [ColorUtils colorWithString:color];
+        
+        NSString *textGravity = [model getString:@"text_gravity" defaultValue:nil];
+        if (textGravity) {
+            if (self) {
+                NSArray  *array = [[textGravity stringByReplacingOccurrencesOfString:@" " withString:@""]
+                                   componentsSeparatedByString:@"|"];
+                for (NSString *g in array) {
+                    if ([g isEqualToString:@"center"]) {
+                        self.textGravity |= TextGravityCenter;
+                    }
+                    else if ([g isEqualToString:@"left"]) {
+                        self.textGravity |= TextGravityLeft;
+                    }
+                    else if ([g isEqualToString:@"top"]) {
+                        self.textGravity |= TextGravityTop;
+                    }
+                    else if ([g isEqualToString:@"right"]) {
+                        self.textGravity |= TextGravityRight;
+                    }
+                    else if ([g isEqualToString:@"bottom"]) {
+                        self.textGravity |= TextGravityBottom;
+                    }
+                    else {
+                        Log(@"wrong gravity : %@", g);
+                    }
+                }
+                
+            }
+        }
     }
     return self;
 }
