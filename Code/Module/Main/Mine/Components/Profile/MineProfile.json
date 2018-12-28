@@ -5,7 +5,6 @@
     "view_height":"171",
     "view_background":"#00000ff0",
     "subviews":[
-        
         {
             "view_name":"info",
             "view_type":"frame",
@@ -22,6 +21,152 @@
             "layout_gravity":"center|top",
             "layout_marginTop":"30",
             "subviews":[
+                {
+                    "view_name":"btn_welfare",
+                    "view_type":"button",
+                    "view_width":"60",
+                    "view_height":"18",
+                    "view_background":"#004abdcf",
+                    "view_backgroundSelected":"#d7f1f4",
+                    "view_borderRadius":"9",
+                    "view_borderColor":"#a3a3a3",
+                    "view_borderWidth":"0.5",
+                    "view_masksToBounds":"YES",
+                    "text_src":"会员福利",
+                    "text_color":"#a3a3a3",
+                    "text_size":"10",
+                    "layout_gravity":" left|top",
+                    "layout_marginLeft":"10",
+                    "layout_marginTop":"10",
+                },
+                {
+                    "view_name":"btn_welfare",
+                    "view_type":"button",
+                    "view_width":"60",
+                    "view_height":"18",
+                    "view_background":"#004abdcf",
+                    "view_backgroundSelected":"#d7f1f4",
+                    "view_borderRadius":"9",
+                    "view_borderColor":"#a3a3a3",
+                    "view_borderWidth":"0.5",
+                    "view_masksToBounds":"YES",
+                    "text_src":"充值福利",
+                    "text_color":"#a3a3a3",
+                    "text_size":"10",
+                    "layout_gravity":" right|top",
+                    "layout_marginRight":"10",
+                    "layout_marginTop":"10",
+                },
+                {
+                    "view_name":"label_phone",
+                    "view_type":"label",
+                    "view_width":"full",
+                    "view_height":"auto",
+                    "text_src":"138****0000",
+                    "text_color":"#000000",
+                    "text_size":"15",
+                    "layout_gravity":" center|top",
+                    "layout_marginTop":"35",
+                },
+                {
+                    "view_type":"label",
+                    "view_width":"full",
+                    "view_height":"auto",
+                    "text_src":"累计充值越多，消费享受的折扣就越高哦~",
+                    "text_color":"#a3a3a3",
+                    "text_size":"10",
+                    "layout_gravity":" center|top",
+                    "layout_marginTop":"58",
+                },
+                
+                
+                
+                
+                {
+                    "view_type":"linear",
+                    "view_width":"full",
+                    "view_height":"60",
+                    "view_orientation":"H",
+                    "layout_gravity":"bottom",
+                    "subviews":[
+                        {
+                            "view_type":"frame",
+                            "view_width":"50%",
+                            "view_height":"60",
+                            "subviews":[
+                                {
+                                    "view_type":"linear",
+                                    "view_width":"full",
+                                    "view_height":"auto",
+                                    "view_orientation":"V",
+                                    "layout_gravity":"center",
+                                    "layout_marginLeft":"20",
+                                    "layout_marginRight":"10",
+                                    "subviews":[
+                                        {
+                                            "view_name":"label_1",
+                                            "view_type":"label",
+                                            "view_width":"full",
+                                            "view_height":"auto",
+                                            "text_src":"￥0.0",
+                                            "text_color":"#000000",
+                                            "text_size":"19",
+                                        },
+                                        {
+                                            "view_type":"label",
+                                            "view_width":"full",
+                                            "view_height":"auto",
+                                            "text_src":"累计充值",
+                                            "text_color":"#a3a3a3",
+                                            "text_size":"10",
+                                            "layout_marginTop":"5",
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                        {
+                            "view_type":"frame",
+                            "view_width":"50%",
+                            "view_height":"60",
+                            "subviews":[
+                                {
+                                    "view_type":"linear",
+                                    "view_width":"full",
+                                    "view_height":"auto",
+                                    "view_orientation":"V",
+                                    "layout_gravity":"center",
+                                    "layout_marginLeft":"10",
+                                    "layout_marginRight":"20",
+                                    "subviews":[
+                                        {
+                                            "view_name":"label_1",
+                                            "view_type":"label",
+                                            "view_width":"full",
+                                            "view_height":"auto",
+                                            "text_src":"0.0",
+                                            "text_color":"#000000",
+                                            "text_size":"19",
+                                        },
+                                        {
+                                            "view_type":"label",
+                                            "view_width":"full",
+                                            "view_height":"auto",
+                                            "text_src":"账户余额",
+                                            "text_color":"#a3a3a3",
+                                            "text_size":"10",
+                                            "layout_marginTop":"5",
+                                        },
+                                    ]
+                                },
+                            ]
+                        },
+                    ]
+                },
+                
+                
+                
+                
                 
             ]
         },
