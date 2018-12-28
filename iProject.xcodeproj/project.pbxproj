@@ -206,6 +206,7 @@
 		77CEA53121D50D3600B388E4 /* DiscoverTechAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA53021D50D3600B388E4 /* DiscoverTechAdapter.m */; };
 		77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA53321D5125700B388E4 /* DiscoverTechCell.m */; };
 		77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA53521D515A100B388E4 /* DiscoverTechCellItem.json */; };
+		77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA53721D5CB3700B388E4 /* Handler.xml */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -656,6 +657,7 @@
 		77CEA53221D5125700B388E4 /* DiscoverTechCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTechCell.h; sourceTree = "<group>"; };
 		77CEA53321D5125700B388E4 /* DiscoverTechCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechCell.m; sourceTree = "<group>"; };
 		77CEA53521D515A100B388E4 /* DiscoverTechCellItem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiscoverTechCellItem.json; sourceTree = "<group>"; };
+		77CEA53721D5CB3700B388E4 /* Handler.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Handler.xml; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -2105,6 +2107,7 @@
 				776B55A721BE628900793CAF /* DataCenter+YDD.m */,
 				77CEA4C321D3D98600B388E4 /* Data+Update.h */,
 				77CEA4C421D3D98600B388E4 /* Data+Update.m */,
+				77CEA53721D5CB3700B388E4 /* Handler.xml */,
 			);
 			path = DataCenter;
 			sourceTree = "<group>";
@@ -2240,6 +2243,7 @@
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
+				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
 				77EA8F5121B90226001B8959 /* demo.json in Resources */,
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,

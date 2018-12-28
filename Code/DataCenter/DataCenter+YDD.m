@@ -9,19 +9,6 @@
 
 @implementation DataCenter (YDD)
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
-- (NSArray *)getDataHandlerClassForInit {
-    return @[
-             [LoginHandler class],
-             [ConfigHandler class],
-             [UserHandler class],
-             [HomeHandler class],
-             [DiscoverHandler class],
-             ];
-}
-#pragma clang diagnostic pop
-
 - (ConfigData *)configData {
     return (ConfigData *)[self getData: [ConfigHandler class]];
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tabs>
+    <tab>ConfigHandler</tab>
+    <tab>LoginHandler</tab>
+    <tab>UserHandler</tab>
+    <tab>HomeHandler</tab>
+    <tab>DiscoverHandler</tab>
+</tabs>

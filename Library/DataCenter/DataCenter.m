@@ -27,48 +27,49 @@
 
 singleton_implementation(DataCenter)
 
++ (void)loadHandlers:(NSString *)handlerXML {
+    NSArray *array = [NSArray new];
+    [[self get] addSubHandlers:array];
+}
+
 - (void)initialize {
     Log(@"UIEngine initialize %@", self);
     self.operationQueue = [[NSOperationQueue alloc] init];
     self.operationQueue.maxConcurrentOperationCount = 3;
     
     self.handlers = [[NSMutableArray alloc] init];
-    [self addSubHandlers];
+    [self addSubHandlers:nil];
 }
 
-- (NSArray *)getDataHandlerClassForInit {
-    return nil;
-}
-
-- (void)addSubHandlers {
+- (void)addSubHandlers:(NSArray *)handlers {
     self.commonHandler = [[CommonHandler alloc] init];
     [self.handlers addObject:self.commonHandler];
-    TICK
-    for (Class handlerCls in [self getDataHandlerClassForInit]) {
-        DataHandler *handler = [[handlerCls alloc] init];
-        [self.handlers addObject:handler];
-    }
-    TOCK
-    
-//    ///这一部份代码会查出所有DataHandler的子类，初始化后添加到Handler数组中！！！
 //    TICK
-//    int numClasses;
-//    Class *classes = NULL;
-//    numClasses = objc_getClassList(NULL, 0);
-//    if (numClasses > 0) {
-//        classes = (__unsafe_unretained Class *)malloc(sizeof(Class) * numClasses);
-//        numClasses = objc_getClassList(classes, numClasses);
-//        for (int i = 0; i < numClasses; i++) {
-//            if (class_getSuperclass(classes[i]) == [DataHandler class]){
-//                Class cls = classes[i];
-//                id handler = [[cls alloc] init];
-//                [self.handlers addObject:handler];
-//                Log(@"DataCenter add handler --> %@", cls);
-//            }
-//        }
-//        free(classes);
+//    for (Class handlerCls in handlers) {
+//        DataHandler *handler = [[handlerCls alloc] init];
+//        [self.handlers addObject:handler];
 //    }
 //    TOCK
+    
+    ///这一部份代码会查出所有DataHandler的子类，初始化后添加到Handler数组中！！！
+    TICK
+    int numClasses;
+    Class *classes = NULL;
+    numClasses = objc_getClassList(NULL, 0);
+    if (numClasses > 0) {
+        classes = (__unsafe_unretained Class *)malloc(sizeof(Class) * numClasses);
+        numClasses = objc_getClassList(classes, numClasses);
+        for (int i = 0; i < numClasses; i++) {
+            if (class_getSuperclass(classes[i]) == [DataHandler class]){
+                Class cls = classes[i];
+                id handler = [[cls alloc] init];
+                [self.handlers addObject:handler];
+                Log(@"DataCenter add handler --> %@", cls);
+            }
+        }
+        free(classes);
+    }
+    TOCK
 }
 
 + (void)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callbak {

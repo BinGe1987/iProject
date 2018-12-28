@@ -18,7 +18,7 @@
         NSArray  *array = [[gravityValue stringByReplacingOccurrencesOfString:@" " withString:@""]
                            componentsSeparatedByString:@"|"];
         for (NSString *g in array) {
-            Log(@"%@", g);
+//            Log(@"%@", g);
             if ([g isEqualToString:@"center"]) {
                 self.gravity |= FrameLayoutGravityCenter;
             }

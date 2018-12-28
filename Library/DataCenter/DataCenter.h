@@ -19,10 +19,10 @@ typedef void (^Callback)(id operation, id data);
 
 singleton_interface(DataCenter)
 
++ (void)loadHandlers:(NSString *)handlerXML;
+
 /// 操作处理请求入口
 + (void)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callbak;
-
-- (NSArray *)getDataHandlerClassForInit;
 
 /// 操作处理请求入口
 - (void)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callbak;
