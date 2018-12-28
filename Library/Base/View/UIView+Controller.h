@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UIViewController *)currentViewController;
 
+- (void)pushController:(NSString *)controllerClass withData:(id)data animated:(BOOL)animated;
+
 @end
 
 NS_ASSUME_NONNULL_END

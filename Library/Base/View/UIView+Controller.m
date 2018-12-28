@@ -23,4 +23,16 @@
     return nil;
 }
 
+- (void)pushController:(NSString *)controllerClass withData:(id)data animated:(BOOL)animated{
+    UIViewController *vc = [[NSClassFromString(controllerClass) alloc] init];
+//    vc.intent = data;
+    UIViewController *current = [self currentViewController];
+    if ([current isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *nv = (UINavigationController *)current;
+        [nv pushViewController:vc animated:animated];
+    } else {
+        [current.navigationController pushViewController:vc animated:animated];
+    }
+}
+
 @end

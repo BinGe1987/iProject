@@ -35,5 +35,8 @@
     return CGRectMake(insets.left, insets.top, width, height);
 }
 
+-(void)dealloc {
+    
+}
 
 @end
