@@ -95,7 +95,7 @@
 
 - (void)initBackgroundParams:(id<UIModel>)model {
     self.background = [model getString:@"view_background" defaultValue:nil];
-    self.backgroundSelected = [model getString:@"view_background_selected" defaultValue:nil];
+    self.backgroundSelected = [model getString:@"view_backgroundSelected" defaultValue:nil];
 }
 
 - (NSString *)description

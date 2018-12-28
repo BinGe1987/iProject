@@ -1,12 +1,10 @@
 {
-    "view_name":"mine_welfare",
+    "view_name":"mine_recharge",
     "view_type":"frame",
     "view_width":"full",
     "view_height":"auto",
     "subviews":[
-        
         {
-            "view_name":"info",
             "view_type":"frame",
             "view_width":"343",
             "view_height":"108",
@@ -22,7 +20,18 @@
             "layout_marginTop":"10",
             "layout_marginBottom":"10",
             "subviews":[
-                
+                {
+                    "view_name":"recharge",
+                    "view_type":"button",
+                    "view_width":"full",
+                    "view_height":"full",
+                    "view_background":"#00000000",
+                    "view_backgroundSelected":"#01ffffff",
+                    "text_src":"立即充值，消费享受更多折扣！",
+                    "text_color":"#ffb89967",
+                    "text_size":"15",
+                    "layout_gravity":"center",
+                },
             ]
         }
     ]

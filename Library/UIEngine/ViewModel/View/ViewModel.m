@@ -27,12 +27,8 @@
 }
 
 - (void)setupViewParams:(ViewParams *)viewParams {
-    ///设置view的透明度
     self.view.alpha = viewParams.alpha;
-    
     [self.view setVisibility:viewParams.visibility];
-    
-    ///设置view的背景
     NSString *background = viewParams.background;
     if (background) {
         if ([background hasPrefix:@"#"]) {
@@ -40,12 +36,12 @@
         }
         else if ([background hasPrefix:@"@"]) {
             background = [background substringFromIndex:1];
-            self.view.backgroundColor =  [UIColor colorWithPatternImage:[UIImage imageNamed:background]];
+            UIImage *image = [UIImage imageNamed:background];
+            self.view.layer.contents = (id)image.CGImage;
         }
     }
     
     self.view.layer.masksToBounds = viewParams.masksToBounds;
-    
     self.view.layer.borderColor = viewParams.borderColor.CGColor;
     if (viewParams.borderWidth) {
         self.view.layer.borderWidth = viewParams.borderWidth;
@@ -54,7 +50,6 @@
         self.view.layer.cornerRadius = viewParams.borderRadius;
     }
     
-    // 阴影
     if (viewParams.shadowColor) {
         self.view.layer.shadowColor = viewParams.shadowColor.CGColor;
         self.view.layer.shadowOffset = CGSizeMake(viewParams.shadowOffsetX, viewParams.shadowOffsetY);
