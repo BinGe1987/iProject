@@ -38,6 +38,10 @@
         if ([background hasPrefix:@"#"]) {
             self.view.backgroundColor = [ColorUtils colorWithString:background];
         }
+        else if ([background hasPrefix:@"@"]) {
+            background = [background substringFromIndex:1];
+            self.view.backgroundColor =  [UIColor colorWithPatternImage:[UIImage imageNamed:background]];
+        }
     }
     
     self.view.layer.masksToBounds = viewParams.masksToBounds;

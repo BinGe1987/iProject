@@ -4,7 +4,39 @@
     "view_width":"full",
     "view_height":"auto",
     "subviews":[
-        
+        {
+            "view_type":"frame",
+            "view_width":"full",
+            "view_height":"30",
+            "layout_marginTop":"10",
+            "subviews":[
+                {
+                    "view_type":"label",
+                    "view_width":"auto",
+                    "view_height":"auto",
+                    "text_size":"18",
+                    "text_color":"#ff66b3ff",
+                    "text_src":"福利特区",
+                    "layout_gravity":"center",
+                },
+                {
+                    "view_type":"view",
+                    "view_width":"36",
+                    "view_height":"0.5",
+                    "view_background":"#ff66b3ff",
+                    "layout_marginRight":"80",
+                    "layout_gravity":"center",
+                },
+                {
+                    "view_type":"view",
+                    "view_width":"36",
+                    "view_height":"0.5",
+                    "view_background":"#ff66b3ff",
+                    "layout_marginLeft":"80",
+                    "layout_gravity":"center",
+                },
+            ]
+        },
         {
             "view_name":"info",
             "view_type":"frame",
@@ -19,7 +51,7 @@
             "view_shadowRadius":"5",
             "view_masksToBounds":"NO",
             "layout_gravity":"center",
-            "layout_marginTop":"10",
+            "layout_marginTop":"40",
             "layout_marginBottom":"10",
             "subviews":[
                 

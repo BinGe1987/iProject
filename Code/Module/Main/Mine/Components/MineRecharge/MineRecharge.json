@@ -11,7 +11,7 @@
             "view_width":"343",
             "view_height":"108",
             "view_borderRadius":"8",
-            "view_background":"#ffffffff",
+            "view_background":"@recharge",
             "view_shadowColor":"#ff000000",
             "view_shadowOpacity":"0.1",
             "view_shadowOffsetX":"0",
