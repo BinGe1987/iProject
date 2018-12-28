@@ -74,7 +74,7 @@
                 Class cls = NSClassFromString(controllerName);
                 UIViewController *vc = [[cls alloc] init];
                 MainNavigationController *nv = [[MainNavigationController alloc] initWithRootViewController:vc];
-                nv.navigationBar.topItem.title = data.titleComponent.title;
+//                nv.navigationBar.topItem.title = data.titleComponent.title;
                 
                 
                 [main addTab:data.title selectedColor:cSelected unselectedColor:cNormal selectedImage:selected unselectedImage:nornal controller:nv];
@@ -82,8 +82,8 @@
         }
     }
     
-//#warning TODO 调试
-//    main.selectedIndex = 1;
+#warning TODO 调试
+    main.selectedIndex = 3;
 }
 
 

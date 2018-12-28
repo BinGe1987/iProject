@@ -1,0 +1,16 @@
+{
+    "view_name":"root_view",
+    "view_type":"frame",
+    "view_width":"full",
+    "view_height":"full",
+    "subviews":[
+        {
+            "view_name":"scroll",
+            "view_type":"scroll",
+            "view_orientation":"vertical",
+            "view_width":"full",
+            "view_height":"full",
+        }
+    ]
+}
+

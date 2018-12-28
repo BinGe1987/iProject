@@ -30,6 +30,10 @@
     [self addPresenter:[[HomeNvPresenter alloc] initWithView:view]];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+}
+
 - (void)onLayoutSubViewsCompleted {
     CGFloat topHeight = STATUSBARHIEGHT + NVBARHIEGHT;
     ScrollView *sv = (ScrollView *)[self findViewByName:@"table"];
