@@ -186,7 +186,13 @@ static char shapeLayerKey;
 
 - (NSString *)description
 {
-    return [NSString stringWithFormat:@"%@ (%f,%f))", self.viewParams, self.frame.size.width, self.frame.size.height];
+    return [NSString stringWithFormat:@"%@ (x:%f, y:%f)(w:%f,h:%f)",
+            self.viewParams,
+            self.frame.origin.x,
+            self.frame.origin.y,
+            self.frame.size.width,
+            self.frame.size.height
+            ];
 }
 
 @end

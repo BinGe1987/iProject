@@ -75,6 +75,7 @@
         
         NSInteger ml = subView.layoutParams.marginLeft;
         NSInteger mt = subView.layoutParams.marginTop;
+        NSInteger mb = subView.layoutParams.marginBottom;
         
         CGRect r = subView.frame;
         r.origin.x = ml;
@@ -84,13 +85,7 @@
         r.size.height = subView.height;
         subView.frame = r;
         top = (r.origin.y + r.size.height);
-        
-//        CGRect b = subView.bounds;
-//        b.origin.x = subView.viewParams.paddingLeft;
-//        b.origin.y = subView.viewParams.paddingTop;
-//        b.size.width = subView.boundWidth;
-//        b.size.height = subView.boundHeight;
-//        subView.bounds = b;
+        top += mb;
         
         maxWidth = MAX(maxWidth, subView.width);
         maxHeight += subView.height;
