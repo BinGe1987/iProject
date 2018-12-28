@@ -23,9 +23,9 @@
     return nil;
 }
 
-- (void)pushController:(NSString *)controllerClass withData:(id)data animated:(BOOL)animated{
+- (void)pushController:(NSString *)controllerClass data:(id __nullable)data animated:(BOOL)animated{
     UIViewController *vc = [[NSClassFromString(controllerClass) alloc] init];
-//    vc.intent = data;
+    vc.intentData = data;
     UIViewController *current = [self currentViewController];
     if ([current isKindOfClass:[UINavigationController class]]) {
         UINavigationController *nv = (UINavigationController *)current;
@@ -33,6 +33,27 @@
     } else {
         [current.navigationController pushViewController:vc animated:animated];
     }
+}
+
+- (void)popControllerAnimated:(BOOL)animated {
+    UIViewController *current = [self currentViewController];
+    if ([current isKindOfClass:[UINavigationController class]]) {
+        
+    } else {
+        [current.navigationController popViewControllerAnimated:animated];
+    }
+}
+
+- (void)presentViewController:(NSString *)controllerClass data:(id __nullable)data animated:(BOOL)animated completion:(void(^ __nullable)(void))completion {
+    UIViewController *vc = [[NSClassFromString(controllerClass) alloc] init];
+    vc.intentData = data;
+    UIViewController *current = [self currentViewController];
+    [current presentViewController:vc animated:animated completion:completion];
+}
+
+- (void)dismissViewControllernimated:(BOOL)animated completion:(void(^ __nullable)(void))completion {
+    UIViewController *vc = [self currentViewController];
+    [vc dismissViewControllerAnimated:animated completion:completion];
 }
 
 @end

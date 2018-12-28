@@ -20,9 +20,9 @@
     [self setContentViewWithJSONPath:path];
     
     UIButton *btn = (UIButton *)[self findViewByName:@"btn2"];
-    WeakSelf(self)
+//    WeakSelf(self)
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [weakself.navigationController popViewControllerAnimated:YES];
+        [button popControllerAnimated:YES];
     }];
 }
 

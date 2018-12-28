@@ -8,16 +8,18 @@
 #import "UIViewController+Data.h"
 
 
-static const void *DataKey = &DataKey;
+static const void *intentDataKey = &intentDataKey;
+
+static const void *onClickBlockKey1 = &onClickBlockKey1;
 
 @implementation UIViewController (Data)
 
-- (void)setIntent:(id)intent {
-    objc_setAssociatedObject(self, DataKey, intent, OBJC_ASSOCIATION_COPY_NONATOMIC);
+- (void)setIntentData:(NSObject *)intent {
+    objc_setAssociatedObject(self, intentDataKey, intent, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(id)intent{
-    return objc_getAssociatedObject(self, DataKey);
+-(NSObject *)intentData{
+    return objc_getAssociatedObject(self, intentDataKey);
 }
 
 @end
