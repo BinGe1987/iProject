@@ -215,6 +215,7 @@
 		77CEA54D21D5FD0F00B388E4 /* MineLevel.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA54C21D5FD0F00B388E4 /* MineLevel.json */; };
 		77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA54E21D5FD8900B388E4 /* MineNavigation2.json */; };
 		77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA55021D5FE0F00B388E4 /* MineWelfare.json */; };
+		77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA55321D600EC00B388E4 /* MineRecharge.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -676,6 +677,7 @@
 		77CEA54C21D5FD0F00B388E4 /* MineLevel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineLevel.json; sourceTree = "<group>"; };
 		77CEA54E21D5FD8900B388E4 /* MineNavigation2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineNavigation2.json; sourceTree = "<group>"; };
 		77CEA55021D5FE0F00B388E4 /* MineWelfare.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineWelfare.json; sourceTree = "<group>"; };
+		77CEA55321D600EC00B388E4 /* MineRecharge.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineRecharge.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1782,6 +1784,7 @@
 				77CEA54621D5D84800B388E4 /* Profile */,
 				77CEA54721D5D85600B388E4 /* Level */,
 				77CEA54821D5D86D00B388E4 /* Navigation */,
+				77CEA55221D600D400B388E4 /* MineRecharge */,
 				77CEA54921D5D87B00B388E4 /* Welfare */,
 			);
 			path = Components;
@@ -1817,6 +1820,14 @@
 				77CEA55021D5FE0F00B388E4 /* MineWelfare.json */,
 			);
 			path = Welfare;
+			sourceTree = "<group>";
+		};
+		77CEA55221D600D400B388E4 /* MineRecharge */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA55321D600EC00B388E4 /* MineRecharge.json */,
+			);
+			path = MineRecharge;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -2327,6 +2338,7 @@
 				77B0544821C943760045A489 /* README.md in Resources */,
 				77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */,
 				7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */,
+				77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */,
 				776B55AD21BE682C00793CAF /* Login.json in Resources */,
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,

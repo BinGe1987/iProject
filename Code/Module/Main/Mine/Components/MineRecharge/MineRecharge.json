@@ -1,5 +1,5 @@
 {
-    "view_name":"mine_navigation",
+    "view_name":"mine_welfare",
     "view_type":"frame",
     "view_width":"full",
     "view_height":"auto",
@@ -9,7 +9,7 @@
             "view_name":"info",
             "view_type":"frame",
             "view_width":"343",
-            "view_height":"66",
+            "view_height":"108",
             "view_borderRadius":"8",
             "view_background":"#ffffffff",
             "view_shadowColor":"#ff000000",
@@ -27,4 +27,5 @@
         }
     ]
 }
+
 

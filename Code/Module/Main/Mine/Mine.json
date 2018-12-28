@@ -32,6 +32,7 @@
                 {"include":"MineProfile.json"},
                 {"include":"MineLevel.json"},
                 {"include":"MineNavigation2.json"},
+                {"include":"MineRecharge.json"},
                 {"include":"MineWelfare.json"},
             ]
         }
