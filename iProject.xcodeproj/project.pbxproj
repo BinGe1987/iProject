@@ -219,6 +219,11 @@
 		77CEA55821D649D300B388E4 /* Order.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA55721D649D300B388E4 /* Order.json */; };
 		77CEA55B21D64A6500B388E4 /* OrderPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA55A21D64A6500B388E4 /* OrderPresenter.m */; };
 		77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA55D21D64AA000B388E4 /* OrderViewHandler.m */; };
+		77CEA56221D64C1400B388E4 /* OrderHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA56121D64C1400B388E4 /* OrderHandler.m */; };
+		77CEA56521D64C2C00B388E4 /* OrderPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA56421D64C2C00B388E4 /* OrderPerformer.m */; };
+		77CEA56821D64C3800B388E4 /* OrderData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA56721D64C3800B388E4 /* OrderData.m */; };
+		77CEA56B21D655A500B388E4 /* OrderTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA56A21D655A500B388E4 /* OrderTableViewAdapter.m */; };
+		77CEA56E21D6588C00B388E4 /* OrderCellItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA56D21D6588C00B388E4 /* OrderCellItem.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -686,6 +691,15 @@
 		77CEA55A21D64A6500B388E4 /* OrderPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderPresenter.m; sourceTree = "<group>"; };
 		77CEA55C21D64AA000B388E4 /* OrderViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderViewHandler.h; sourceTree = "<group>"; };
 		77CEA55D21D64AA000B388E4 /* OrderViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewHandler.m; sourceTree = "<group>"; };
+		77CEA56021D64C1400B388E4 /* OrderHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderHandler.h; sourceTree = "<group>"; };
+		77CEA56121D64C1400B388E4 /* OrderHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderHandler.m; sourceTree = "<group>"; };
+		77CEA56321D64C2C00B388E4 /* OrderPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderPerformer.h; sourceTree = "<group>"; };
+		77CEA56421D64C2C00B388E4 /* OrderPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderPerformer.m; sourceTree = "<group>"; };
+		77CEA56621D64C3800B388E4 /* OrderData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderData.h; sourceTree = "<group>"; };
+		77CEA56721D64C3800B388E4 /* OrderData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderData.m; sourceTree = "<group>"; };
+		77CEA56921D655A500B388E4 /* OrderTableViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderTableViewAdapter.h; sourceTree = "<group>"; };
+		77CEA56A21D655A500B388E4 /* OrderTableViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderTableViewAdapter.m; sourceTree = "<group>"; };
+		77CEA56D21D6588C00B388E4 /* OrderCellItem.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = OrderCellItem.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1776,7 +1790,10 @@
 				77CEA55A21D64A6500B388E4 /* OrderPresenter.m */,
 				77CEA55C21D64AA000B388E4 /* OrderViewHandler.h */,
 				77CEA55D21D64AA000B388E4 /* OrderViewHandler.m */,
+				77CEA56921D655A500B388E4 /* OrderTableViewAdapter.h */,
+				77CEA56A21D655A500B388E4 /* OrderTableViewAdapter.m */,
 				77CEA55721D649D300B388E4 /* Order.json */,
+				77CEA56D21D6588C00B388E4 /* OrderCellItem.json */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -1841,6 +1858,19 @@
 				77CEA55321D600EC00B388E4 /* MineRecharge.json */,
 			);
 			path = MineRecharge;
+			sourceTree = "<group>";
+		};
+		77CEA55F21D64BEC00B388E4 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA56021D64C1400B388E4 /* OrderHandler.h */,
+				77CEA56121D64C1400B388E4 /* OrderHandler.m */,
+				77CEA56321D64C2C00B388E4 /* OrderPerformer.h */,
+				77CEA56421D64C2C00B388E4 /* OrderPerformer.m */,
+				77CEA56621D64C3800B388E4 /* OrderData.h */,
+				77CEA56721D64C3800B388E4 /* OrderData.m */,
+			);
+			path = Order;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
@@ -2211,6 +2241,7 @@
 				77EA8F7F21B90A18001B8959 /* User */,
 				77EA8F8521B90A18001B8959 /* Home */,
 				77CEA4F321D4C28E00B388E4 /* Discover */,
+				77CEA55F21D64BEC00B388E4 /* Order */,
 				776B55A621BE628900793CAF /* DataCenter+YDD.h */,
 				776B55A721BE628900793CAF /* DataCenter+YDD.m */,
 				77CEA4C321D3D98600B388E4 /* Data+Update.h */,
@@ -2341,6 +2372,7 @@
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
 				77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */,
+				77CEA56E21D6588C00B388E4 /* OrderCellItem.json in Resources */,
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
 				77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */,
 				77CEA4B821D3AF5500B388E4 /* TechCellList.json in Resources */,
@@ -2393,6 +2425,7 @@
 				7734C11E21D23A45009D1EE8 /* KafkaNativeHeader.m in Sources */,
 				775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */,
 				77EA8FAC21B92704001B8959 /* UIImageView+WebImage.m in Sources */,
+				77CEA56221D64C1400B388E4 /* OrderHandler.m in Sources */,
 				7734C12421D23A45009D1EE8 /* KafkaRefreshDefaults.m in Sources */,
 				77B054EF21CB86680045A489 /* NotificationCenter.m in Sources */,
 				77B0544F21C943760045A489 /* YYSpriteSheetImage.m in Sources */,
@@ -2413,6 +2446,7 @@
 				77CEA4E721D4B69700B388E4 /* DiscoverTechPresenter.m in Sources */,
 				776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */,
 				7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */,
+				77CEA56821D64C3800B388E4 /* OrderData.m in Sources */,
 				7734C12121D23A45009D1EE8 /* KafkaReplicatorHeader.m in Sources */,
 				77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */,
 				77B054D821CA9C720045A489 /* TableViewModel.m in Sources */,
@@ -2467,6 +2501,7 @@
 				77CEA51421D4F99A00B388E4 /* DiscoverTechViewHandler.m in Sources */,
 				776B55AB21BE62E100793CAF /* UserData.m in Sources */,
 				77B054BD21CA51740045A489 /* InputViewModel.m in Sources */,
+				77CEA56521D64C2C00B388E4 /* OrderPerformer.m in Sources */,
 				77B0556B21D0D5720045A489 /* IQUIView+IQKeyboardToolbar.m in Sources */,
 				77B0545521C943760045A489 /* UIButton+YYWebImage.m in Sources */,
 				776B55CC21BF81B300793CAF /* UIButton+EnlargeEdge.m in Sources */,
@@ -2530,6 +2565,7 @@
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
 				77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */,
+				77CEA56B21D655A500B388E4 /* OrderTableViewAdapter.m in Sources */,
 				77B0553F21D0BE910045A489 /* LoginModule.m in Sources */,
 				77B0557321D0D5720045A489 /* IQUIViewController+Additions.m in Sources */,
 				77EA8F3321B90226001B8959 /* JSON.m in Sources */,

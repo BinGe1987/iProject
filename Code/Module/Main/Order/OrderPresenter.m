@@ -19,10 +19,10 @@
     self.handler = [[OrderViewHandler alloc] initWithView:view];
     self.handler.delegate = self;
     
-//    WeakSelf(self)
-//    [[DataCenter get] perform:OperationGetOrderData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-//        [weakself.handler setData:data];
-//    }];
+    WeakSelf(self)
+    [[DataCenter get] perform:OperationGetOrderData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+        [weakself.handler setData:data];
+    }];
     
     return self;
 }
