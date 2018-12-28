@@ -20,6 +20,7 @@
                     "view_type":"image",
                     "view_width":"90",
                     "view_height":"78",
+                    "view_masksToBounds":"YES",
                     "view_borderRadius":"3",
                     "view_borderWidth":"1",
                     "view_borderColor":"#00ffb925",

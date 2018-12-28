@@ -20,7 +20,7 @@
         
         self.fixTop = [model getBool:@"layout_fixTop" defaultValue:NO];
         if (self.fixTop) {
-            self.marginTop += (STATUSBARHIEGHT + 44);
+            self.marginTop += STATUSBARHIEGHT;
         }
     }
     return self;

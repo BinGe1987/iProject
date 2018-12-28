@@ -1,0 +1,28 @@
+{
+    "view_name":"mine_navigation",
+    "view_type":"frame",
+    "view_width":"full",
+    "view_height":"86",
+    "subviews":[
+        
+        {
+            "view_name":"info",
+            "view_type":"frame",
+            "view_width":"343",
+            "view_height":"66",
+            "view_borderRadius":"8",
+            "view_background":"#ffffffff",
+            "view_shadowColor":"#ff000000",
+            "view_shadowOpacity":"0.1",
+            "view_shadowOffsetX":"0",
+            "view_shadowOffsetY":"0",
+            "view_shadowRadius":"5",
+            "view_masksToBounds":"NO",
+            "layout_gravity":"center",
+            "subviews":[
+                
+            ]
+        }
+    ]
+}
+

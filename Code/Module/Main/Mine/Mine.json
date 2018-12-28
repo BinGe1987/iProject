@@ -15,7 +15,7 @@
                     {
                         "view_type":"image",
                         "view_width":"full",
-                        "view_height":"150",
+                        "view_height":"135",
                         "image_scaleType":"full",
                         "image_src":"@mine_profile_bg",
                         "layout_fixTop":"YES",
@@ -29,9 +29,10 @@
             "view_width":"full",
             "view_height":"full",
             "subviews":[
-                {
-                    
-                }
+                {"include":"MineProfile.json"},
+                {"include":"MineLevel.json"},
+                {"include":"MineNavigation2.json"},
+                {"include":"MineWelfare.json"},
             ]
         }
     ]

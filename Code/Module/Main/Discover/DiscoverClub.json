@@ -19,6 +19,7 @@
             "view_orientation":"V",
             "view_background":"#ffffffff",
             "layout_fixTop":"YES",
+            "layout_marginTop":"44",
             "subviews":[
                 {
                     "view_type":"view",

@@ -40,13 +40,22 @@
         }
     }
     
+    self.view.layer.masksToBounds = viewParams.masksToBounds;
+    
     self.view.layer.borderColor = viewParams.borderColor.CGColor;
     if (viewParams.borderWidth) {
         self.view.layer.borderWidth = viewParams.borderWidth;
     }
     if (viewParams.borderRadius) {
         self.view.layer.cornerRadius = viewParams.borderRadius;
-        self.view.layer.masksToBounds = YES;
+    }
+    
+    // 阴影
+    if (viewParams.shadowColor) {
+        self.view.layer.shadowColor = viewParams.shadowColor.CGColor;
+        self.view.layer.shadowOffset = CGSizeMake(viewParams.shadowOffsetX, viewParams.shadowOffsetY);
+        self.view.layer.shadowRadius = viewParams.shadowRadius;
+        self.view.layer.shadowOpacity = viewParams.shadowOpacity;
     }
 }
 

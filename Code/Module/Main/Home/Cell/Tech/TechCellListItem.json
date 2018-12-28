@@ -16,6 +16,7 @@
                     "view_width":"58",
                     "view_height":"58",
                     "view_borderRadius":"29",
+                    "view_masksToBounds":"YES",
                     "view_borderWidth":"1",
                     "view_borderColor":"#ffffb925",
                     "image_src":"@default_head_girl",

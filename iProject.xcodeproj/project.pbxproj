@@ -211,6 +211,10 @@
 		77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA53E21D5CEED00B388E4 /* Mine.json */; };
 		77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA54121D5D2C800B388E4 /* MineNvPresenter.m */; };
 		77CEA54421D5D30D00B388E4 /* MineNavigation.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA54321D5D30D00B388E4 /* MineNavigation.json */; };
+		77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA54A21D5ED8300B388E4 /* MineProfile.json */; };
+		77CEA54D21D5FD0F00B388E4 /* MineLevel.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA54C21D5FD0F00B388E4 /* MineLevel.json */; };
+		77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA54E21D5FD8900B388E4 /* MineNavigation2.json */; };
+		77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA55021D5FE0F00B388E4 /* MineWelfare.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -668,6 +672,10 @@
 		77CEA54021D5D2C800B388E4 /* MineNvPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineNvPresenter.h; sourceTree = "<group>"; };
 		77CEA54121D5D2C800B388E4 /* MineNvPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineNvPresenter.m; sourceTree = "<group>"; };
 		77CEA54321D5D30D00B388E4 /* MineNavigation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineNavigation.json; sourceTree = "<group>"; };
+		77CEA54A21D5ED8300B388E4 /* MineProfile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineProfile.json; sourceTree = "<group>"; };
+		77CEA54C21D5FD0F00B388E4 /* MineLevel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineLevel.json; sourceTree = "<group>"; };
+		77CEA54E21D5FD8900B388E4 /* MineNavigation2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineNavigation2.json; sourceTree = "<group>"; };
+		77CEA55021D5FE0F00B388E4 /* MineWelfare.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineWelfare.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1782,6 +1790,7 @@
 		77CEA54621D5D84800B388E4 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				77CEA54A21D5ED8300B388E4 /* MineProfile.json */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -1789,6 +1798,7 @@
 		77CEA54721D5D85600B388E4 /* Level */ = {
 			isa = PBXGroup;
 			children = (
+				77CEA54C21D5FD0F00B388E4 /* MineLevel.json */,
 			);
 			path = Level;
 			sourceTree = "<group>";
@@ -1796,6 +1806,7 @@
 		77CEA54821D5D86D00B388E4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				77CEA54E21D5FD8900B388E4 /* MineNavigation2.json */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -1803,6 +1814,7 @@
 		77CEA54921D5D87B00B388E4 /* Welfare */ = {
 			isa = PBXGroup;
 			children = (
+				77CEA55021D5FE0F00B388E4 /* MineWelfare.json */,
 			);
 			path = Welfare;
 			sourceTree = "<group>";
@@ -2299,6 +2311,7 @@
 				77CEA4BA21D3B1D000B388E4 /* TechCellListItem.json in Resources */,
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
 				77CEA4DE21D4990700B388E4 /* DiscoverClub.json in Resources */,
+				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
 				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
 				77CEA54421D5D30D00B388E4 /* MineNavigation.json in Resources */,
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
@@ -2312,8 +2325,10 @@
 				77CEA4C221D3BF5B00B388E4 /* ClubCellItem.json in Resources */,
 				77B0556D21D0D5720045A489 /* IQKeyboardManager.bundle in Resources */,
 				77B0544821C943760045A489 /* README.md in Resources */,
+				77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */,
 				7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */,
 				776B55AD21BE682C00793CAF /* Login.json in Resources */,
+				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
@@ -2323,6 +2338,7 @@
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,
 				776B55F821C11A9200793CAF /* readme-UIEngine in Resources */,
 				77CEA4CD21D48BD000B388E4 /* Discover.json in Resources */,
+				77CEA54D21D5FD0F00B388E4 /* MineLevel.json in Resources */,
 				77EA8F2F21B90226001B8959 /* readme-DataCenter in Resources */,
 				77CEA4C721D481D500B388E4 /* Test2.json in Resources */,
 				77FAFCD921C28C2D002A90B0 /* Home.json in Resources */,

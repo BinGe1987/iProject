@@ -26,46 +26,35 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewParams : NSObject
 
-
-///view的名字，可以通过名字获取view对象
+#pragma mark VIEW属性
 @property (nonatomic, strong) NSString *name;
-///view的类型，提供给mapping文件返回所对应的 ViewModel
 @property (nonatomic, assign) NSInteger type;
-
-@property (nonatomic, assign) SizeValueType widthValueType;
-///view的宽度
-@property (nonatomic, assign) CGFloat width;
-
-@property (nonatomic, assign) SizeValueType heightValueType;
-///view的高度
-@property (nonatomic, assign) CGFloat height;
-///view内左边距
-@property (nonatomic, assign) NSInteger paddingLeft;
-///view内上边距
-@property (nonatomic, assign) NSInteger paddingTop;
-///view内右边距
-@property (nonatomic, assign) NSInteger paddingRight;
-///view内下边距
-@property (nonatomic, assign) NSInteger paddingBottom;
-///
-@property (nonatomic, strong) NSString *background;
-///
-@property (nonatomic, strong) NSString *backgroundSelected;
-///view的透明度
 @property (nonatomic, assign) CGFloat alpha;
-///view的透明度
+@property (nonatomic, assign) BOOL masksToBounds;
 @property (nonatomic, assign) ViewVisibility visibility;
-
-///
+#pragma mark 背景相关属性
+@property (nonatomic, strong) NSString *background;
+@property (nonatomic, strong) NSString *backgroundSelected;
+#pragma mark 大小关属性
+@property (nonatomic, assign) SizeValueType widthValueType;
+@property (nonatomic, assign) CGFloat width;
+@property (nonatomic, assign) SizeValueType heightValueType;
+@property (nonatomic, assign) CGFloat height;
+#pragma mark 内边距相关属性
+@property (nonatomic, assign) NSInteger paddingLeft;
+@property (nonatomic, assign) NSInteger paddingTop;
+@property (nonatomic, assign) NSInteger paddingRight;
+@property (nonatomic, assign) NSInteger paddingBottom;
+#pragma mark 圆角相关属性
 @property (nonatomic, assign) CGFloat borderRadius;
-///
 @property (nonatomic, assign) CGFloat borderWidth;
-///
 @property (nonatomic, strong) UIColor *borderColor;
-
-
-///是否修复顶部偏移
-@property (nonatomic, assign) BOOL fixTop;
+#pragma mark 阴影相关属性
+@property (nonatomic, assign) CGFloat shadowOffsetX;
+@property (nonatomic, assign) CGFloat shadowOffsetY;
+@property (nonatomic, assign) CGFloat shadowOpacity;
+@property (nonatomic, assign) CGFloat shadowRadius;
+@property (nonatomic, strong) UIColor *shadowColor;
 
 
 -(instancetype)initWithModel:(id<UIModel>)model;

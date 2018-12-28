@@ -62,6 +62,7 @@
             "view_height":"26",
             "view_paddingLeft":"20",
             "view_paddingRight":"20",
+            "view_masksToBounds":"YES",
             "view_borderRadius":"12",
             "view_borderWidth":"0.5",
             "view_borderColor":"#ff2e2e2e",
