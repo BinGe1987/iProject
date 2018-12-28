@@ -3,13 +3,15 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"auto",
+    "view_background":"#ffffffff",
     "subviews":[
         
         {
             "view_name":"info",
-            "view_type":"frame",
+            "view_type":"linear",
             "view_width":"343",
             "view_height":"66",
+            "view_orientation":"H",
             "view_borderRadius":"8",
             "view_background":"#ffffffff",
             "view_shadowColor":"#ff000000",
@@ -22,6 +24,120 @@
             "layout_marginTop":"10",
             "layout_marginBottom":"10",
             "subviews":[
+                
+                {
+                    "view_name":"info",
+                    "view_type":"linear",
+                    "view_width":"full",
+                    "view_height":"full",
+                    "view_orientation":"H",
+                    "layout_marginLeft":"10",
+                    "layout_marginRight":"10",
+                    "subviews":[
+                        {
+                            "view_type":"frame",
+                            "view_width":"25%",
+                            "view_height":"full",
+                            "subviews":[
+                                {
+                                    "view_type":"label",
+                                    "view_width":"auto",
+                                    "view_height":"auto",
+                                    "text_src":"收藏",
+                                    "text_color":"#292929",
+                                    "text_size":"13",
+                                    "layout_gravity":"center",
+                                    "layout_marginTop":"15",
+                                },
+                                {
+                                    "view_type":"image",
+                                    "view_width":"auto",
+                                    "view_height":"auto",
+                                    "image_src":"@favorite",
+                                    "layout_gravity":"center",
+                                    "layout_marginBottom":"10",
+                                },
+                            ]
+                        },
+                        {
+                            "view_type":"frame",
+                            "view_width":"25%",
+                            "view_height":"full",
+                            "subviews":[
+                                {
+                                    "view_type":"label",
+                                    "view_width":"auto",
+                                    "view_height":"auto",
+                                    "text_src":"会员",
+                                    "text_color":"#292929",
+                                    "text_size":"13",
+                                    "layout_gravity":"center",
+                                    "layout_marginTop":"15",
+                                },
+                                {
+                                    "view_type":"image",
+                                    "view_width":"auto",
+                                    "view_height":"auto",
+                                    "image_src":"@member",
+                                    "layout_gravity":"center",
+                                    "layout_marginBottom":"10",
+                                },
+                            ]
+                        },
+                        {
+                            "view_type":"frame",
+                            "view_width":"25%",
+                            "view_height":"full",
+                            "subviews":[
+                                {
+                                    "view_type":"label",
+                                    "view_width":"auto",
+                                    "view_height":"auto",
+                                    "text_src":"领取vip",
+                                    "text_color":"#292929",
+                                    "text_size":"13",
+                                    "layout_gravity":"center",
+                                    "layout_marginTop":"15",
+                                },
+                                {
+                                    "view_type":"image",
+                                    "view_width":"auto",
+                                    "view_height":"auto",
+                                    "image_src":"@gift",
+                                    "layout_gravity":"center",
+                                    "layout_marginBottom":"10",
+                                },
+                            ]
+                        },
+                        {
+                            "view_type":"frame",
+                            "view_width":"25%",
+                            "view_height":"full",
+                            "subviews":[
+                                {
+                                    "view_type":"label",
+                                    "view_width":"auto",
+                                    "view_height":"auto",
+                                    "text_src":"积分兑换",
+                                    "text_color":"#292929",
+                                    "text_size":"13",
+                                    "layout_gravity":"center",
+                                    "layout_marginTop":"15",
+                                },
+                                {
+                                    "view_type":"image",
+                                    "view_width":"auto",
+                                    "view_height":"auto",
+                                    "image_src":"@exchange",
+                                    "layout_gravity":"center",
+                                    "layout_marginBottom":"10",
+                                },
+                            ]
+                        },
+                        
+                    ]
+                },
+                
                 
             ]
         }

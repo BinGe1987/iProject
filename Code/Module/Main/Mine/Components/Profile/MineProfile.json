@@ -3,8 +3,24 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"171",
-    "view_background":"#00000ff0",
+    "view_background":"#ffffffff",
     "subviews":[
+        {
+            "view_name":"bg",
+            "view_type":"frame",
+            "view_width":"full",
+            "view_height":"auto",
+            "view_background":"#ff3c465f",
+            "subviews":[
+                {
+                    "view_type":"image",
+                    "view_width":"full",
+                    "view_height":"75",
+                    "image_scaleType":"full",
+                    "image_src":"@mine_profile_bg",
+                },
+            ]
+        },
         {
             "view_name":"info",
             "view_type":"frame",

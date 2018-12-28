@@ -3,6 +3,7 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"auto",
+    "view_background":"#ffffffff",
     "subviews":[
         {
             "view_type":"frame",

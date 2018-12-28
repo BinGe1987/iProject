@@ -6,23 +6,6 @@
     "view_background":"#003c465f",
     "subviews":[
         {
-            "view_name":"bg",
-            "view_type":"frame",
-            "view_width":"full",
-            "view_height":"auto",
-            "view_background":"#ff3c465f",
-            "subviews":[
-                    {
-                        "view_type":"image",
-                        "view_width":"full",
-                        "view_height":"135",
-                        "image_scaleType":"full",
-                        "image_src":"@mine_profile_bg",
-                        "layout_fixTop":"YES",
-                    },
-                ]
-        },
-        {
             "view_name":"scroll",
             "view_type":"scroll",
             "view_orientation":"vertical",

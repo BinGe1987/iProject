@@ -3,6 +3,7 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"auto",
+    "view_background":"#ffffffff",
     "subviews":[
         {
             "view_type":"frame",
@@ -50,9 +51,9 @@
             "view_shadowOffsetY":"0",
             "view_shadowRadius":"5",
             "view_masksToBounds":"NO",
-            "layout_gravity":"center",
-            "layout_marginTop":"40",
-            "layout_marginBottom":"10",
+            "layout_gravity":"center|top",
+            "layout_marginTop":"50",
+            "layout_marginBottom":"20",
             "subviews":[
                 
             ]
