@@ -25,9 +25,13 @@ NS_ASSUME_NONNULL_BEGIN
 ///获取首页信息
 #define OperationGetHomeData (@"OperationGetHomeData")
 
+#pragma make 发现页相关
 ///获取发现页信息
 #define OperationGetDiscoverClubData (@"OperationGetDiscoverClubData")
 #define OperationGetDiscoverTechData (@"OperationGetDiscoverTechData")
+
+#pragma make  订单相关
+#define OperationGetOrderData (@"OperationGetOrderData")
 
 @interface DataCenter (YDD)
 

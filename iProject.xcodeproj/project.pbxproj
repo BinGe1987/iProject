@@ -216,6 +216,9 @@
 		77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA54E21D5FD8900B388E4 /* MineNavigation2.json */; };
 		77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA55021D5FE0F00B388E4 /* MineWelfare.json */; };
 		77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA55321D600EC00B388E4 /* MineRecharge.json */; };
+		77CEA55821D649D300B388E4 /* Order.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA55721D649D300B388E4 /* Order.json */; };
+		77CEA55B21D64A6500B388E4 /* OrderPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA55A21D64A6500B388E4 /* OrderPresenter.m */; };
+		77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA55D21D64AA000B388E4 /* OrderViewHandler.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -678,6 +681,11 @@
 		77CEA54E21D5FD8900B388E4 /* MineNavigation2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineNavigation2.json; sourceTree = "<group>"; };
 		77CEA55021D5FE0F00B388E4 /* MineWelfare.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineWelfare.json; sourceTree = "<group>"; };
 		77CEA55321D600EC00B388E4 /* MineRecharge.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineRecharge.json; sourceTree = "<group>"; };
+		77CEA55721D649D300B388E4 /* Order.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Order.json; sourceTree = "<group>"; };
+		77CEA55921D64A6500B388E4 /* OrderPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderPresenter.h; sourceTree = "<group>"; };
+		77CEA55A21D64A6500B388E4 /* OrderPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderPresenter.m; sourceTree = "<group>"; };
+		77CEA55C21D64AA000B388E4 /* OrderViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderViewHandler.h; sourceTree = "<group>"; };
+		77CEA55D21D64AA000B388E4 /* OrderViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewHandler.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1764,6 +1772,11 @@
 			children = (
 				77CEA53A21D5CE8900B388E4 /* OrderViewController.h */,
 				77CEA53B21D5CE8900B388E4 /* OrderViewController.m */,
+				77CEA55921D64A6500B388E4 /* OrderPresenter.h */,
+				77CEA55A21D64A6500B388E4 /* OrderPresenter.m */,
+				77CEA55C21D64AA000B388E4 /* OrderViewHandler.h */,
+				77CEA55D21D64AA000B388E4 /* OrderViewHandler.m */,
+				77CEA55721D649D300B388E4 /* Order.json */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -2335,6 +2348,7 @@
 				77EA8F3721B90226001B8959 /* readme-mvp in Resources */,
 				77CEA4C221D3BF5B00B388E4 /* ClubCellItem.json in Resources */,
 				77B0556D21D0D5720045A489 /* IQKeyboardManager.bundle in Resources */,
+				77CEA55821D649D300B388E4 /* Order.json in Resources */,
 				77B0544821C943760045A489 /* README.md in Resources */,
 				77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */,
 				7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */,
@@ -2498,6 +2512,7 @@
 				77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */,
 				77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,
+				77CEA55B21D64A6500B388E4 /* OrderPresenter.m in Sources */,
 				77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */,
 				77B054C321CA52440045A489 /* InputViewParams.m in Sources */,
 				77B0557C21D110600045A489 /* UIImage+WebImage.m in Sources */,
@@ -2514,6 +2529,7 @@
 				77CEA52121D4FA9100B388E4 /* CollectionViewParams.m in Sources */,
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
+				77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */,
 				77B0553F21D0BE910045A489 /* LoginModule.m in Sources */,
 				77B0557321D0D5720045A489 /* IQUIViewController+Additions.m in Sources */,
 				77EA8F3321B90226001B8959 /* JSON.m in Sources */,
