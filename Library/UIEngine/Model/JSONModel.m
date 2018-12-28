@@ -66,6 +66,17 @@
     return [value floatValue];
 }
 
+- (BOOL)getBool:(NSString *)key defaultValue:(BOOL)defValue {
+    NSString *value = [self getString:key defaultValue:nil];
+    if ([NSString isEmpty:value]) {
+        return NO;
+    }
+    if ([value isEqualToString:@"YES"]) {
+        return YES;
+    }
+    return NO;
+}
+
 - (NSArray *)getChildModels {
     NSMutableArray *newArray = [[NSMutableArray alloc] init];
     NSArray *array = [self.source objectForKey:@"subviews"];

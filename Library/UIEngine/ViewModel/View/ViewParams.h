@@ -64,6 +64,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *borderColor;
 
 
+///是否修复顶部偏移
+@property (nonatomic, assign) BOOL fixTop;
+
+
 -(instancetype)initWithModel:(id<UIModel>)model;
 
 @end

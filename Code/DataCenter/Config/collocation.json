@@ -1,81 +1,121 @@
 {
-  "status": "2",
-  "list": [
-    {
-      "tabId": 1,
-      "tabName": "首页",
-      "type": "index",
-      "icon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_home_normal.png",
-      "selectedIcon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_home_selected.png",
-      "textColor": "#55b4b2",
-      "selectedTextColor": "#55b4b2",
-      "statusBarColor": "#999999",
-      "isPullToRefresh": false,
-      "titleComponent_backup": {
-        "id": 10001,
-        "isHead": true,
-        "name": "IndexTitle",
-        "type": "title",
-        "title": "首页"
-      },
-      "components": []
-    },
-    {
-      "tabId": 2,
-      "tabName": "发现",
-      "type": "discover",
-      "icon": "",
-      "selectedIcon": "",
-      "textColor": "#55b4b2",
-      "selectedTextColor": "#55b4b2",
-      "statusBarColor": "#999999",
-      "isPullToRefresh": false,
-      "titleComponent_backup": {
-        "id": 10002,
-        "isHead": true,
-        "name": "DiscoverTitle",
-        "type": "title",
-        "title": "发现"
-      },
-      "components": []
-    },
-    {
-      "tabId": 3,
-      "tabName": "订单",
-      "type": "order",
-      "icon": "",
-      "selectedIcon": "",
-      "textColor": "#55b4b2",
-      "selectedTextColor": "#55b4b2",
-      "statusBarColor": "#999999",
-      "isPullToRefresh": false,
-      "titleComponent": {
-        "id": 10003,
-        "isHead": true,
-        "name": "OrderTitle",
-        "type": "title",
-        "title": "订单"
-      },
-      "components": []
-    },
-    {
-      "tabId": 4,
-      "tabName": "我的",
-      "type": "mine",
-      "icon": "",
-      "selectedIcon": "",
-      "textColor": "#55b4b2",
-      "selectedTextColor": "#55b4b2",
-      "statusBarColor": "#999999",
-      "isPullToRefresh": false,
-      "titleComponent": {
-        "id": 10004,
-        "isHead": true,
-        "name": "MineTitle",
-        "type": "title",
-        "title": "我的"
-      },
-      "components": []
-    }
-  ]
+    "status": "2",
+    "list": [
+        {
+            "tabId": 1,
+            "tabName": "首页",
+            "type": "index",
+            "icon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_home_normal.png",
+            "selectedIcon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_home_selected.png",
+            "textColor": "#55b4b2",
+            "selectedTextColor": "#55b4b2",
+            "statusBarColor": "#ffffff",
+            "isDarkStatusIcon": true,
+            "isPullToRefresh": false,
+            "titleComponent_backup": {
+                "id": 10001,
+                "isHead": true,
+                "name": "IndexTitle",
+                "type": "title",
+                "title": "首页"
+            },
+            "components": []
+        },
+        {
+            "tabId": 2,
+            "tabName": "发现",
+            "type": "discover",
+            "icon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_discover_normal.png",
+            "selectedIcon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_discover_selected.png",
+            "textColor": "#55b4b2",
+            "selectedTextColor": "#55b4b2",
+            "statusBarColor": "#999999",
+            "isDarkStatusIcon": false,
+            "isPullToRefresh": false,
+            "titleComponent_backup": {
+                "id": 10002,
+                "isHead": true,
+                "name": "DiscoverTitle",
+                "type": "title",
+                "title": "发现"
+            },
+            "components": []
+        },
+        {
+            "tabId": 3,
+            "tabName": "订单",
+            "type": "order",
+            "icon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_order_normal.png",
+            "selectedIcon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_order_selected.png",
+            "textColor": "#55b4b2",
+            "selectedTextColor": "#55b4b2",
+            "statusBarColor": "#999999",
+            "isDarkStatusIcon": false,
+            "isPullToRefresh": false,
+            "titleComponent": {
+                "id": 10003,
+                "isHead": true,
+                "name": "OrderTitle",
+                "type": "title",
+                "title": "订单"
+            },
+            "components": []
+        },
+        {
+            "tabId": 4,
+            "tabName": "我的",
+            "type": "mine",
+            "icon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_mine_normal.png",
+            "selectedIcon": "http://pk32xkytj.bkt.clouddn.com/tab_icon_mine_selected.png",
+            "textColor": "#55b4b2",
+            "selectedTextColor": "#55b4b2",
+            "statusBarColor": "#3c465f",
+            "isDarkStatusIcon": false,
+            "isPullToRefresh": false,
+            "titleComponent_backup": {
+                "id": 10004,
+                "isHead": true,
+                "name": "MineTitle",
+                "type": "title",
+                "title": "我的"
+            },
+            "components": [
+                {
+                    "id": 40001,
+                    "isHead": true,
+                    "name": "MineProfile",
+                    "type": "config",
+                    "title": "个人资料"
+                },
+                {
+                    "id": 40002,
+                    "isHead": false,
+                    "name": "MineLevel",
+                    "type": "config",
+                    "title": "会员/充值等级"
+                },
+                {
+                    "id": 40003,
+                    "isHead": false,
+                    "name": "MineNavigation",
+                    "type": "config",
+                    "title": "导航条"
+                },
+                {
+                    "id": 40004,
+                    "isHead": false,
+                    "name": "MineRechargeGuidance",
+                    "type": "config",
+                    "title": "充值引导"
+                },
+                {
+                    "id": 40005,
+                    "isHead": false,
+                    "name": "MineWelfare",
+                    "type": "config",
+                    "title": "福利专区"
+                }
+            ]
+        }
+    ]
 }

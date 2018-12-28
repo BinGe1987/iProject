@@ -3,14 +3,36 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"full",
-    "view_background":"#ff3c465f",
+    "view_background":"#003c465f",
     "subviews":[
+        {
+            "view_name":"bg",
+            "view_type":"frame",
+            "view_width":"full",
+            "view_height":"auto",
+            "view_background":"#ff3c465f",
+            "subviews":[
+                    {
+                        "view_type":"image",
+                        "view_width":"full",
+                        "view_height":"150",
+                        "image_scaleType":"full",
+                        "image_src":"@mine_profile_bg",
+                        "layout_fixTop":"YES",
+                    },
+                ]
+        },
         {
             "view_name":"scroll",
             "view_type":"scroll",
             "view_orientation":"vertical",
             "view_width":"full",
             "view_height":"full",
+            "subviews":[
+                {
+                    
+                }
+            ]
         }
     ]
 }

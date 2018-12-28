@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)getString:(NSString *)key defaultValue:(NSString * _Nullable)defValue;
 
+- (BOOL)getBool:(NSString *)key defaultValue:(BOOL)defValue;
+
 - (int)getInteger:(NSString *)key defaultValue:(int)defValue;
 
 - (CGFloat)getFloat:(NSString *)key defaultValue:(CGFloat)defValue;

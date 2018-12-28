@@ -65,6 +65,8 @@
         self.borderWidth = [model getFloat:@"view_borderWidth" defaultValue:0];
         NSString *colorString = [model getString:@"view_borderColor" defaultValue:@"#ff000000"];
         self.borderColor = [ColorUtils colorWithString:colorString];
+        
+        self.fixTop = [model getBool:@"view_fixTop" defaultValue:NO];
     }
     return self;
 }

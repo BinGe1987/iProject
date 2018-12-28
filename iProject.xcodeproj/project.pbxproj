@@ -1031,6 +1031,7 @@
 			isa = PBXGroup;
 			children = (
 				77CEA53D21D5CEB400B388E4 /* Navigation */,
+				77CEA54521D5D80C00B388E4 /* Components */,
 				774F017221B9728900CB482F /* MineViewController.h */,
 				774F017321B9728900CB482F /* MineViewController.m */,
 				77CEA53E21D5CEED00B388E4 /* Mine.json */,
@@ -1765,6 +1766,45 @@
 				77CEA54321D5D30D00B388E4 /* MineNavigation.json */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		77CEA54521D5D80C00B388E4 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA54621D5D84800B388E4 /* Profile */,
+				77CEA54721D5D85600B388E4 /* Level */,
+				77CEA54821D5D86D00B388E4 /* Navigation */,
+				77CEA54921D5D87B00B388E4 /* Welfare */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		77CEA54621D5D84800B388E4 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		77CEA54721D5D85600B388E4 /* Level */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Level;
+			sourceTree = "<group>";
+		};
+		77CEA54821D5D86D00B388E4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		77CEA54921D5D87B00B388E4 /* Welfare */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Welfare;
 			sourceTree = "<group>";
 		};
 		77EA8E5E21B8F79F001B8959 = {
