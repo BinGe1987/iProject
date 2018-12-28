@@ -22,6 +22,7 @@
     self.tableView.showsVerticalScrollIndicator = FALSE; //垂直滚动条
     self.tableView.showsHorizontalScrollIndicator = FALSE;//水平滚动条
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+
     WeakSelf(self)
     [self.tableView setHeadRefreshHandler:^{
         if (weakself.delegate) {
@@ -38,7 +39,7 @@
 
 - (void)setData:(id)data {
     ListData *list = (ListData *)data;
-    TableViewSection *orderSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"order", @"array": list.list, @"height" : [NSNumber numberWithFloat:(ScaleValue(217) + 10)]}];
+    TableViewSection *orderSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"order", @"array": list.list, @"height" : [NSNumber numberWithFloat:(ScaleValue(217) + 10)], @"headerHeight": @"5",@"footerHeight": @"10"}];
     OrderTableViewAdapter *adapter = [OrderTableViewAdapter AdapterWithSourceData:@[orderSection]];
     [self.tableView setAdapter:adapter];
 }

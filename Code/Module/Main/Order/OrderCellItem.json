@@ -11,8 +11,8 @@
             "view_borderRadius":"11",
             "layout_marginLeft":"10",
             "layout_marginRight":"10",
-            "layout_marginTop":"8",
-            "layout_marginBottom":"2",
+            "layout_marginTop":"5",
+            "layout_marginBottom":"5",
             "subviews":[
                 {
                     "view_type":"image",
@@ -47,7 +47,7 @@
                     "view_type":"frame",
                     "view_width":"full",
                     "view_height":"full",
-                    "layout_marginTop":"40",
+                    "layout_marginTop":"48",
                     "layout_marginBottom":"60",
                     "layout_marginLeft":"15",
                     "layout_marginRight":"15",

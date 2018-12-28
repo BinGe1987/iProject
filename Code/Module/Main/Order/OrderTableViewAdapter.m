@@ -15,6 +15,7 @@
     UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         cell.backgroundColor = [UIColor clearColor];
         UIView *view = [UIView viewWithJSON:@"OrderCellItem.json" size:CGSizeMake(tableView.width, data.height)];
         [cell.contentView addSubview:view];
