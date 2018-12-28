@@ -18,6 +18,7 @@
             "view_height":"30",
             "view_orientation":"V",
             "view_background":"#ffffffff",
+            "layout_fixTop":"YES",
             "subviews":[
                 {
                     "view_type":"view",

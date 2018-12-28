@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LayoutParams : NSObject
 
+@property (nonatomic, assign) BOOL fixTop;
+
 ///view的外左边距
 @property (nonatomic, assign) NSInteger marginLeft;
 ///view的外上边距

@@ -58,11 +58,6 @@
     sv = (UIScrollView *)[club findViewByName:@"table"];
     sv.contentInset = UIEdgeInsetsMake(topHeight,0,0,0);
     sv.contentOffset = CGPointMake(0, -topHeight);
-    
-    UIView *view = [self findViewByName:@"tools"];
-    CGRect frame = view.frame;
-    frame.origin.y = topHeight;
-    view.frame = frame;
 
     UIView *tech = [self findViewByName:@"page_tech"];
     sv = (UIScrollView *)[tech findViewByName:@"collection"];

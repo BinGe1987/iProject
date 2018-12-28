@@ -15,8 +15,8 @@
     for (UIView *view in self.subviews) {
         CGSize size = [view boundingSize];
         
-        width = MAX(width, size.width);
-        height = MAX(height, size.height);
+        width = MAX(width, size.width + view.layoutParams.marginLeft + view.layoutParams.marginRight);
+        height = MAX(height, size.height + view.layoutParams.marginTop + view.layoutParams.marginBottom);
     }
     width = width + self.viewParams.paddingLeft + self.viewParams.paddingRight;
     height = height + self.viewParams.paddingTop + self.viewParams.paddingBottom;
