@@ -32,6 +32,13 @@
     if (params.imageSelected) {
         [self.button setImage:params.imageSelected forState:UIControlStateSelected];
     }
+    
+    if (params.backgroundSelected) {
+        self.button.backgroundColor = [UIColor clearColor];
+        [self.button setBackgroundImage:[ImageUtils imageWithColorHex:params.background size:CGSizeMake(10, 10)] forState:UIControlStateNormal];
+        [self.button setBackgroundImage:[ImageUtils imageWithColorHex:params.backgroundSelected size:CGSizeMake(10, 10)] forState:UIControlStateSelected];
+    }
+//    self.button.selected = YES;
 }
 
 - (Class)ViewClass {

@@ -45,7 +45,8 @@
         self.paddingRight = [model getInteger:@"view_paddingRight" defaultValue:0];
         self.paddingBottom = [model getInteger:@"view_paddingBottom" defaultValue:0];
         
-        self.background = [model getString:@"view_background" defaultValue:@"#00FFFFFF"];
+        self.background = [model getString:@"view_background" defaultValue:nil];
+        self.backgroundSelected = [model getString:@"view_background_selected" defaultValue:nil];
         
         self.alpha = [[model getString:@"view_alpha" defaultValue:@"1"] floatValue];
         

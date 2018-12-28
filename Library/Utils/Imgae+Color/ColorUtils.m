@@ -20,6 +20,10 @@
     range.length = 2;
     range.location = 0;
     NSString *aString = [cString substringWithRange:range];
+    if ([aString isEqualToString:@"00"]) {
+        return [UIColor clearColor];
+    }
+    
     range.location = 2;
     NSString *rString = [cString substringWithRange:range];
     range.location = 4;

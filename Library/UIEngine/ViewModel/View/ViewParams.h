@@ -47,8 +47,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger paddingRight;
 ///view内下边距
 @property (nonatomic, assign) NSInteger paddingBottom;
-///view只有background，如果是button，会有background_down,background_keep等状态
+///
 @property (nonatomic, strong) NSString *background;
+///
+@property (nonatomic, strong) NSString *backgroundSelected;
 ///view的透明度
 @property (nonatomic, assign) CGFloat alpha;
 ///view的透明度

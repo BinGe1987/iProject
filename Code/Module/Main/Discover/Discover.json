@@ -12,8 +12,9 @@
             "view_width":"full",
             "view_height":"full",
             "subviews":[
+                {"include":"@DiscoverTech.json"},
                 {"include":"@DiscoverClub.json"},
-                {"include":"@DiscoverTech.json"},            ]
+            ]
         }
     ]
 }

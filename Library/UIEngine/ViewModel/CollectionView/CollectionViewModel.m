@@ -15,7 +15,7 @@
 @implementation CollectionViewModel
 
 - (void)initialize {
-//    CollectionView *view = (CollectionView *)self.view;
+    CollectionView *view = (CollectionView *)self.view;
 //    CollectionViewParams *params = (CollectionViewParams *)view.viewParams;
     
     
