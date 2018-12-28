@@ -82,8 +82,8 @@
         }
     }
     
-#warning TODO 调试
-    main.selectedIndex = 1;
+//#warning TODO 调试
+//    main.selectedIndex = 1;
 }
 
 
