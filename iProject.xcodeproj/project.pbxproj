@@ -209,6 +209,8 @@
 		77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA53721D5CB3700B388E4 /* Handler.xml */; };
 		77CEA53C21D5CE8900B388E4 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA53B21D5CE8900B388E4 /* OrderViewController.m */; };
 		77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA53E21D5CEED00B388E4 /* Mine.json */; };
+		77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA54121D5D2C800B388E4 /* MineNvPresenter.m */; };
+		77CEA54421D5D30D00B388E4 /* MineNavigation.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA54321D5D30D00B388E4 /* MineNavigation.json */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -663,6 +665,9 @@
 		77CEA53A21D5CE8900B388E4 /* OrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
 		77CEA53B21D5CE8900B388E4 /* OrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		77CEA53E21D5CEED00B388E4 /* Mine.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Mine.json; sourceTree = "<group>"; };
+		77CEA54021D5D2C800B388E4 /* MineNvPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineNvPresenter.h; sourceTree = "<group>"; };
+		77CEA54121D5D2C800B388E4 /* MineNvPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineNvPresenter.m; sourceTree = "<group>"; };
+		77CEA54321D5D30D00B388E4 /* MineNavigation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = MineNavigation.json; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1755,6 +1760,9 @@
 		77CEA53D21D5CEB400B388E4 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
+				77CEA54021D5D2C800B388E4 /* MineNvPresenter.h */,
+				77CEA54121D5D2C800B388E4 /* MineNvPresenter.m */,
+				77CEA54321D5D30D00B388E4 /* MineNavigation.json */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -2252,6 +2260,7 @@
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
 				77CEA4DE21D4990700B388E4 /* DiscoverClub.json in Resources */,
 				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
+				77CEA54421D5D30D00B388E4 /* MineNavigation.json in Resources */,
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
 				77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */,
@@ -2417,6 +2426,7 @@
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
 				77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */,
+				77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */,
 				77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */,
 				77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,

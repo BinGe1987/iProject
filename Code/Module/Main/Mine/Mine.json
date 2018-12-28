@@ -3,6 +3,7 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"full",
+    "view_background":"#ff3c465f",
     "subviews":[
         {
             "view_name":"scroll",

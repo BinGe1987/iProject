@@ -1,0 +1,35 @@
+{
+    "view_name":"title_view",
+    "view_type":"frame",
+    "view_width":"full",
+    "view_height":"44",
+    "view_background":"#00ff00ff",
+    "subviews":[
+        {
+            "view_name":"setting",
+            "view_type":"button",
+            "view_width":"22",
+            "view_height":"22",
+            "view_paddingLeft":"20",
+            "view_paddingTop":"20",
+            "view_paddingRight":"20",
+            "view_paddingBottom":"20",
+            "view_background":"#00f0ff0f",
+            "button_imageNormal":"@mine_set",
+            "layout_gravity":"center|left",
+        },
+        {
+            "view_name":"qr_code",
+            "view_type":"button",
+            "view_width":"22",
+            "view_height":"22",
+            "view_paddingLeft":"20",
+            "view_paddingTop":"20",
+            "view_paddingRight":"20",
+            "view_paddingBottom":"20",
+            "view_background":"#00f0ff0f",
+            "button_imageNormal":"@pay_code",
+            "layout_gravity":"center|right",
+        },
+    ]
+}

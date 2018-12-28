@@ -6,6 +6,7 @@
 //
 
 #import "MineViewController.h"
+#import "MineNvPresenter.h"
 
 @implementation MineViewController
 
@@ -19,9 +20,9 @@
 //    HomePresenter *prsenter = [[HomePresenter alloc] initWithView:[self findViewByName:@"table"]];
 //    [self addPresenter:prsenter];
 //    
-//    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 20, NVBARHIEGHT)];
-//    self.navigationItem.titleView = view;
-//    [self addPresenter:[[HomeNvPresenter alloc] initWithView:view]];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 30, NVBARHIEGHT)];
+    self.navigationItem.titleView = view;
+    [self addPresenter:[[MineNvPresenter alloc] initWithView:view]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
