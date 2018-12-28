@@ -14,7 +14,7 @@
     </tab>
     <tab>
         <type>order</type>
-        <controller>MineViewController</controller>
+        <controller>OrderViewController</controller>
         <icon_normal>tab_order_unselected</icon_normal>
         <icon_selected>tab_order_selected</icon_selected>
     </tab>

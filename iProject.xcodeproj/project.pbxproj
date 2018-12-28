@@ -207,6 +207,7 @@
 		77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA53321D5125700B388E4 /* DiscoverTechCell.m */; };
 		77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA53521D515A100B388E4 /* DiscoverTechCellItem.json */; };
 		77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA53721D5CB3700B388E4 /* Handler.xml */; };
+		77CEA53C21D5CE8900B388E4 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA53B21D5CE8900B388E4 /* OrderViewController.m */; };
 		77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E6B21B8F79F001B8959 /* AppDelegate.m */; };
 		77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77EA8E7321B8F7AB001B8959 /* Assets.xcassets */; };
 		77EA8E7A21B8F7AB001B8959 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8E7921B8F7AB001B8959 /* main.m */; };
@@ -658,6 +659,8 @@
 		77CEA53321D5125700B388E4 /* DiscoverTechCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechCell.m; sourceTree = "<group>"; };
 		77CEA53521D515A100B388E4 /* DiscoverTechCellItem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiscoverTechCellItem.json; sourceTree = "<group>"; };
 		77CEA53721D5CB3700B388E4 /* Handler.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Handler.xml; sourceTree = "<group>"; };
+		77CEA53A21D5CE8900B388E4 /* OrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		77CEA53B21D5CE8900B388E4 /* OrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		77EA8E6721B8F79F001B8959 /* APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77EA8E6A21B8F79F001B8959 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		77EA8E6B21B8F79F001B8959 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -1736,6 +1739,15 @@
 			path = UICollectionView;
 			sourceTree = "<group>";
 		};
+		77CEA53921D5CE6C00B388E4 /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				77CEA53A21D5CE8900B388E4 /* OrderViewController.h */,
+				77CEA53B21D5CE8900B388E4 /* OrderViewController.m */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
 		77EA8E5E21B8F79F001B8959 = {
 			isa = PBXGroup;
 			children = (
@@ -1798,6 +1810,7 @@
 				77B0551D21CD27200045A489 /* Base */,
 				774F017021B9725D00CB482F /* Home */,
 				77CEA4C821D48A0300B388E4 /* Discover */,
+				77CEA53921D5CE6C00B388E4 /* Order */,
 				774F017121B9726400CB482F /* Mine */,
 				77B0551A21CD247E0045A489 /* MainModule.h */,
 				77B0551B21CD247E0045A489 /* MainModule.m */,
@@ -2401,6 +2414,7 @@
 				77EA8F5D21B90227001B8959 /* ViewParams.m in Sources */,
 				77B0551621CCE51D0045A489 /* EventBus+Module.m in Sources */,
 				776B55D921BFBD0300793CAF /* WeakProxy.m in Sources */,
+				77CEA53C21D5CE8900B388E4 /* OrderViewController.m in Sources */,
 				77CEA4F621D4C2BF00B388E4 /* DiscoverData.m in Sources */,
 				77B0558521D1CC510045A489 /* NSString+Utils.m in Sources */,
 				77EA8F6921B90227001B8959 /* ImageView.m in Sources */,
