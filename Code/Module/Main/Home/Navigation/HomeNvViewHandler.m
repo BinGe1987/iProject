@@ -17,9 +17,7 @@
     
     UIButton *button = (UIButton *)[titleView findViewByName:@"qr_code"];
     [button setClickBlock:^(UIButton * _Nonnull button) {
-        NSString *data = @"abc";
-//        [button pushController:@"LoginViewController" data:data animated:YES];
-        [button presentViewController:@"LoginViewController" data:data animated:YES completion:nil];
+        [MVPViewController pushSelf];
     }];
     
     return self;

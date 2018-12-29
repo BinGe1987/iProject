@@ -1957,11 +1957,11 @@
 		77EA8E8321B8F947001B8959 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				77B0553D21D0BE910045A489 /* LoginModule.h */,
+				77B0553E21D0BE910045A489 /* LoginModule.m */,
 				77EA8E9421B8FCEA001B8959 /* LoginViewController.h */,
 				77EA8E9521B8FCEA001B8959 /* LoginViewController.m */,
 				776B55AC21BE682C00793CAF /* Login.json */,
-				77B0553D21D0BE910045A489 /* LoginModule.h */,
-				77B0553E21D0BE910045A489 /* LoginModule.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
