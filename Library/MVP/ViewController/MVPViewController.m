@@ -9,6 +9,11 @@
 
 @implementation MVPViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.view.backgroundColor =[UIColor whiteColor];
+}
+
 + (void)pushSelf {
     [MVPViewController pushMVPControllerName:@"MVPViewController"];
 }

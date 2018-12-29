@@ -52,7 +52,21 @@
 //    [view addSubview:subView];
 //    [self.view addSubview:view];
 
-    [self setContentViewWithJSONFileName:@"Discover.json"];
+//    [self setContentViewWithJSONFileName:@"Discover.json"];
+    [self test1];
+    [self test2];
+}
+
+-(void)test1 {
+    TICK
+    XMLObject *object = [XMLParser dictionaryFromXML:@"Login.xml"];
+    TOCK
+}
+-(void)test2 {
+    TICK
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Login.json" ofType:nil];
+    JSON *json = [[JSON alloc] initWithPath:path];
+    TOCK
 }
 
 

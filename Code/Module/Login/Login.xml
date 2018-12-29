@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view:width="full"
+    view:height="full">
+    <TextView
+        view:width="10"
+        view:height="10"/>
+</FrameLayout>
+    
+
+
+
+

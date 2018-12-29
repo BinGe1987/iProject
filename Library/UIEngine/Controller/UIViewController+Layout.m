@@ -42,7 +42,7 @@ static const void *displayLinkKey = &displayLinkKey;
         ViewGroup *vg = (ViewGroup *)self.contentView;
         if (vg.isNeedRefrealLayout) {
             [vg refreshLayoutCompleted];
-            Log(@"refresh layout。");
+//            Log(@"refresh layout。");
             CGRect safeRect = self.safeRect;
             self.contentView.frame = safeRect;
             WeakSelf(self)

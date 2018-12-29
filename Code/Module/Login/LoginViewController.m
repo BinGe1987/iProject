@@ -19,11 +19,11 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Login.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
     
-    UIButton *btn = (UIButton *)[self findViewByName:@"btn2"];
-//    WeakSelf(self)
+    UIButton *btn = (UIButton *)[self findViewByName:@"btn_login"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
         [button dismissViewControllerAnimated:YES completion:nil];
     }];
+
 }
 
 - (CGRect)safeRect {

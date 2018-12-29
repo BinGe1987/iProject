@@ -28,3 +28,5 @@ ScrollView属性说明：
 "view_borderColor":"#ffffb925",
 "view_masksToBounds":"YES",
 
+//这个属性可以让view的marginTop自动加上状态栏的高度
+"layout_fixTop":"YES",

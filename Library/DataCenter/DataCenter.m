@@ -64,7 +64,7 @@ singleton_implementation(DataCenter)
                 Class cls = classes[i];
                 id handler = [[cls alloc] init];
                 [self.handlers addObject:handler];
-                Log(@"DataCenter add handler --> %@", cls);
+//                Log(@"DataCenter add handler --> %@", cls);
             }
         }
         free(classes);

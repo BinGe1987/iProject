@@ -12,5 +12,6 @@
 #import "NetHeader.h"
 #import "Store.h"
 #import "XMLDictionary.h"
+#import "XMLParser.h"
 
 #endif /* UtilsHeader_h */

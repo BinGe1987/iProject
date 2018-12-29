@@ -140,7 +140,7 @@ static char shapeLayerKey;
 }
 
 - (void)requestLayout {
-    Log(@"requestLayout");
+//    Log(@"requestLayout");
     requestLayout = 1;
 }
 

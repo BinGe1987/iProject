@@ -50,17 +50,17 @@
     WeakSelf(self)
     //hook自动登录完成
     [self.login hookAfterSelector:@selector(loginCheckCompleted) block:^(id info) {
-        Log(@"AppModule: hook自动登录完成");
+//        Log(@"AppModule: hook自动登录完成");
         [weakself.main getConfigurationFromServer];
         //hook获取配置信息完成
         [weakself.main hookAfterSelector:@selector(getConfigurationCompleted:) block:^() {
-            Log(@"AppModule: hook获取配置信息完成");
+//            Log(@"AppModule: hook获取配置信息完成");
             
             //启动页退出动画
             [weakself.launch finishAnimated];
             //hook启动页动画结束
             [weakself.launch hookAfterSelector:@selector(launchCompleted) block:^() {
-                Log(@"AppModule: hook启动页动画结束");
+//                Log(@"AppModule: hook启动页动画结束");
                 
             }];
             
