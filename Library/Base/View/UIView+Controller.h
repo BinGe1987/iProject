@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)presentViewController:(NSString *)controllerClass data:(id __nullable)data animated:(BOOL)animated completion:(void(^ __nullable)(void))completion;
 
-- (void)dismissViewControllernimated:(BOOL)animated completion:(void(^ __nullable)(void))completion;
+- (void)dismissViewControllerAnimated:(BOOL)animated completion:(void(^ __nullable)(void))completion;
 
 @end
 

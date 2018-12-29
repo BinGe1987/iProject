@@ -22,7 +22,7 @@
     UIButton *btn = (UIButton *)[self findViewByName:@"btn2"];
 //    WeakSelf(self)
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [button dismissViewControllernimated:YES completion:nil];
+        [button dismissViewControllerAnimated:YES completion:nil];
     }];
 }
 

@@ -51,7 +51,7 @@
     [current presentViewController:vc animated:animated completion:completion];
 }
 
-- (void)dismissViewControllernimated:(BOOL)animated completion:(void(^ __nullable)(void))completion {
+- (void)dismissViewControllerAnimated:(BOOL)animated completion:(void(^ __nullable)(void))completion {
     UIViewController *vc = [self currentViewController];
     [vc dismissViewControllerAnimated:animated completion:completion];
 }
