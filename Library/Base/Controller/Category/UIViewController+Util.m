@@ -34,7 +34,11 @@
 
 + (UIViewController *)getTopViewController:(UIViewController *)vc {
     if ([vc isKindOfClass:[UINavigationController class]]) {
-        return [UIViewController getTopViewController:[(UINavigationController *)vc topViewController]];
+        UIViewController *top = [(UINavigationController *)vc topViewController];
+        if (top) {
+            return [UIViewController getTopViewController:top];
+        }
+        return vc;
     } else if ([vc isKindOfClass:[UITabBarController class]]) {
         UIViewController *selvc = [(UITabBarController *)vc selectedViewController];
         if (selvc) {
