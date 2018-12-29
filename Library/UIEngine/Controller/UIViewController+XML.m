@@ -11,8 +11,11 @@
 @implementation UIViewController (XML)
 
 - (void)setContentViewWithXML:(NSString *)xml {
+    TICK
     XMLModel *model = [[XMLModel alloc] initWithXML:xml];
     ViewGroup *vg = (ViewGroup *)[[UIEngine get]parse:model];
+    TOCK
+    
     [self setContentView:vg];
 }
 
