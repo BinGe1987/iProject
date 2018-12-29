@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		771CA36721D7E95E00B00F11 /* ProgressHUB+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA36621D7E95E00B00F11 /* ProgressHUB+Utils.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -289,6 +290,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		771CA36521D7E95E00B00F11 /* ProgressHUB+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProgressHUB+Utils.h"; sourceTree = "<group>"; };
+		771CA36621D7E95E00B00F11 /* ProgressHUB+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUB+Utils.m"; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -1274,6 +1277,8 @@
 				77B0546121CA30440045A489 /* MBProgressHUD */,
 				77B0546521CA30940045A489 /* ProgressHUB.h */,
 				77B0546621CA30940045A489 /* ProgressHUB.m */,
+				771CA36521D7E95E00B00F11 /* ProgressHUB+Utils.h */,
+				771CA36621D7E95E00B00F11 /* ProgressHUB+Utils.m */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -2630,6 +2635,7 @@
 				77EA8F3F21B90226001B8959 /* MVPViewController.m in Sources */,
 				77EA8F4121B90226001B8959 /* PresenterViewController.m in Sources */,
 				77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */,
+				771CA36721D7E95E00B00F11 /* ProgressHUB+Utils.m in Sources */,
 				77EA8F6321B90227001B8959 /* TextView.m in Sources */,
 				77B0544D21C943760045A489 /* YYMemoryCache.m in Sources */,
 				77B0544C21C943760045A489 /* YYKVStorage.m in Sources */,

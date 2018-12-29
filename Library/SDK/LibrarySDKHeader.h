@@ -8,7 +8,7 @@
 #ifndef LibrarySDKHeader_h
 #define LibrarySDKHeader_h
 
-#import "ProgressHUB.h"
+#import "ProgressHUB+Utils.h"
 #import "UIImageView+WebImage.h"
 #import "PhotoBrowser.h"
 #import "IQKeyboardManager.h"

@@ -20,9 +20,24 @@
     
     UIButton *btn = (UIButton *)[self findViewByName:@"btn_login"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [button dismissViewControllerAnimated:YES completion:nil];
+//        [button dismissViewControllerAnimated:YES completion:nil];
+//        [ProgressHUB loadingTitle:@"请输入用户名"];
+        
+        UIView *imageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 400)];
+        imageView.backgroundColor = [UIColor redColor];
+        
+        [ProgressHUB showView:imageView];
+        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
+            sleep(3);
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                [ProgressHUB dismiss];
+                
+            });
+        });
     }];
 
+    
 }
 
 - (CGRect)safeRect {
