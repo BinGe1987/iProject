@@ -53,22 +53,12 @@
 //    [self.view addSubview:view];
 
 //    [self setContentViewWithJSONFileName:@"Discover.json"];
-    [self test1];
-    [self test2];
-}
 
--(void)test1 {
     TICK
-    XMLObject *object = [XMLParser dictionaryFromXML:@"Login.xml"];
+    UIView *view = [UIView viewWithXML:@"Login.xml" size:CGSizeMake(SCREENWIDTH, SCREENHEIGHT)];
+    [self.view addSubview:view];
     TOCK
 }
--(void)test2 {
-    TICK
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Login.json" ofType:nil];
-    JSON *json = [[JSON alloc] initWithPath:path];
-    TOCK
-}
-
 
 
 - (void)test:(id)data {

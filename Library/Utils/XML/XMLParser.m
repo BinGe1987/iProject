@@ -11,8 +11,6 @@
 @interface XMLParser()<NSXMLParserDelegate>
 
 @property (nonatomic, strong) XMLObject *data;
-
-//@property (nonatomic, strong) XMLObject *parent;
 @property (nonatomic, strong) XMLObject *current;
 
 
@@ -20,7 +18,7 @@
 
 @implementation XMLParser
 
-+ (XMLObject *)dictionaryFromXML:(NSString *)xml {
++ (XMLObject *)objectFromXML:(NSString *)xml {
     NSString *filePath = [[NSBundle mainBundle] pathForResource:xml ofType:nil];
     XMLParser *parser = [XMLParser new];
     NSData *data = [NSData dataWithContentsOfFile:filePath];

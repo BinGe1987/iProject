@@ -28,40 +28,40 @@
     if (!type) {
         return nil;
     }
-    else if ([type isEqualToString:@"view"]) {
+    else if ([type isEqualToString:@"View"] || [type isEqualToString:@"view"]) {
         return [[ViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"frame"]) {
+    else if ([type isEqualToString:@"FrameLayout"] || [type isEqualToString:@"frame"]) {
         return [[FrameViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"linear"]) {
+    else if ([type isEqualToString:@"LinearLayout"] || [type isEqualToString:@"linear"]) {
         return [[LinearViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"scroll"]) {
+    else if ([type isEqualToString:@"ScrollView"] || [type isEqualToString:@"scroll"]) {
         return [[ScrollViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"table"]) {
+    else if ([type isEqualToString:@"TableView"] || [type isEqualToString:@"table"]) {
         return [[TableViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"label"]) {
+    else if ([type isEqualToString:@"Lable"] || [type isEqualToString:@"label"]) {
         return [[LabelViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"text"]) {
+    else if ([type isEqualToString:@"TextView"] || [type isEqualToString:@"text"]) {
         return [[TextViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"input"]) {
+    else if ([type isEqualToString:@"InputView"] || [type isEqualToString:@"input"]) {
         return [[InputViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"image"]) {
+    else if ([type isEqualToString:@"ImageView"] || [type isEqualToString:@"image"]) {
         return [[ImageViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"button"]) {
+    else if ([type isEqualToString:@"button"] || [type isEqualToString:@"button"]) {
         return [[ButtonViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"pager"]) {
+    else if ([type isEqualToString:@"ViewPager"] || [type isEqualToString:@"pager"]) {
         return [[ViewPagerModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"collection"]) {
+    else if ([type isEqualToString:@"CollectionView"] || [type isEqualToString:@"collection"]) {
         return [[CollectionViewModel alloc] initWithUIModel:model];
     }
     return [[ViewModel alloc] initWithUIModel:model];

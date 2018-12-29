@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FrameLayout
-    view:width="full"
-    view:height="full">
+    view_width="full"
+    view_height="full">
     <TextView
-        view:width="10"
-        view:height="10"/>
+        view_width="100"
+        view_height="100"
+        view_background="#00ff00"
+        />
 </FrameLayout>
     
 

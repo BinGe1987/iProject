@@ -14,5 +14,6 @@
 #import "JSONModel.h"
 
 #import "UIView+JSON.h"
+#import "UIView+XML.h"
 
 #endif /* EngineHeader_h */

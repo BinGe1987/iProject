@@ -1,18 +1,17 @@
 //
-//  XMLParser.h
+//  XMLModel.h
 //  APP
 //
 //  Created by BinGe on 2018/12/29.
 //
 
 #import <Foundation/Foundation.h>
-#import "XMLObject.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface XMLParser : NSObject
+@interface XMLModel : NSObject<UIModel>
 
-+ (XMLObject *)objectFromXML:(NSString *)xml;
+-(instancetype)initWithXML:(NSString *)xml;
 
 @end
 
