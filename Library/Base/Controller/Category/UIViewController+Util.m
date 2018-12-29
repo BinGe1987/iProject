@@ -9,6 +9,20 @@
 
 @implementation UIViewController (Util)
 
++ (void)pushSelfAnimated:(BOOL)animated data:(id __nullable)data {
+    UIViewController *topController = [UIViewController topViewController];
+    UIViewController *vc = [[[self class] alloc] init];
+    vc.intentData = data;
+    [topController.navigationController pushViewController:vc animated:animated];
+}
+
++ (void)presentSelfAnimated:(BOOL)animated data:(id __nullable)data completion:(void(^ __nullable)(void))completion {
+    UIViewController *topController = [UIViewController topViewController];
+    UIViewController *vc = [[[self class] alloc] init];
+    vc.intentData = data;
+    [topController presentViewController:vc animated:animated completion:completion];
+}
+
 + (UIViewController *)topViewController {
     UIViewController *resultVC;
     resultVC = [UIViewController getTopViewController:[[UIApplication sharedApplication].keyWindow rootViewController]];
@@ -22,7 +36,12 @@
     if ([vc isKindOfClass:[UINavigationController class]]) {
         return [UIViewController getTopViewController:[(UINavigationController *)vc topViewController]];
     } else if ([vc isKindOfClass:[UITabBarController class]]) {
-        return [UIViewController getTopViewController:[(UITabBarController *)vc selectedViewController]];
+        UIViewController *selvc = [(UITabBarController *)vc selectedViewController];
+        if (selvc) {
+            return [UIViewController getTopViewController:selvc];
+        } else {
+            return vc;
+        }
     } else {
         return vc;
     }

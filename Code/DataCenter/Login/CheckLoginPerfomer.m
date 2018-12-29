@@ -11,6 +11,7 @@
 @implementation CheckLoginPerfomer
 
 - (id)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callback {
+    sleep(1);
     NetResponse *response = [Net synchroRequest:[CheckLoginRequest new]];
     Data *data = [Data new];
     data.source = response.data;

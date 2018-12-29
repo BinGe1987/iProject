@@ -6,6 +6,7 @@
 //
 
 #import "DataHandler.h"
+#import "LoginData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

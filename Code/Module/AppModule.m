@@ -10,6 +10,7 @@
 #import "MainModule.h"
 #import "LaunchModule.h"
 #import "LoginModule.h"
+#import "LoginViewController.h"
 
 @interface AppModule()
 
@@ -54,11 +55,13 @@
         //hook获取配置信息完成
         [weakself.main hookAfterSelector:@selector(getConfigurationCompleted:) block:^() {
             Log(@"AppModule: hook获取配置信息完成");
+            
             //启动页退出动画
             [weakself.launch finishAnimated];
             //hook启动页动画结束
             [weakself.launch hookAfterSelector:@selector(launchCompleted) block:^() {
                 Log(@"AppModule: hook启动页动画结束");
+                
             }];
             
         }];
