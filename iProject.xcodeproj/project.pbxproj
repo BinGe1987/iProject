@@ -58,7 +58,6 @@
 		775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15F721C89A3D00B8D6FF /* MainViewController.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
-		776B55AD21BE682C00793CAF /* Login.json in Resources */ = {isa = PBXBuildFile; fileRef = 776B55AC21BE682C00793CAF /* Login.json */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
 		776B55B321BE6B1500793CAF /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55B221BE6B1500793CAF /* Button.m */; };
 		776B55B621BE6BD000793CAF /* ButtonViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55B521BE6BD000793CAF /* ButtonViewParams.m */; };
@@ -76,6 +75,7 @@
 		776B55F621C10F7100793CAF /* UIView+Params.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55F521C10F7100793CAF /* UIView+Params.m */; };
 		776B55F821C11A9200793CAF /* readme-UIEngine in Resources */ = {isa = PBXBuildFile; fileRef = 776B55F721C11A9200793CAF /* readme-UIEngine */; };
 		776B55FB21C14A0800793CAF /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55FA21C14A0800793CAF /* ScrollView.m */; };
+		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
 		77B053D821C8C53F0045A489 /* NetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D721C8C53F0045A489 /* NetConfig.m */; };
@@ -395,7 +395,6 @@
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
 		776B55AA21BE62E100793CAF /* UserData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserData.m; sourceTree = "<group>"; };
-		776B55AC21BE682C00793CAF /* Login.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Login.json; sourceTree = "<group>"; };
 		776B55AE21BE6A9500793CAF /* ButtonViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ButtonViewModel.h; sourceTree = "<group>"; };
 		776B55AF21BE6A9500793CAF /* ButtonViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ButtonViewModel.m; sourceTree = "<group>"; };
 		776B55B121BE6B1500793CAF /* Button.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
@@ -429,6 +428,8 @@
 		776B55F721C11A9200793CAF /* readme-UIEngine */ = {isa = PBXFileReference; lastKnownFileType = text; path = "readme-UIEngine"; sourceTree = "<group>"; };
 		776B55F921C14A0800793CAF /* ScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollView.h; sourceTree = "<group>"; };
 		776B55FA21C14A0800793CAF /* ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
+		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
+		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
 		77B053CD21C8A5F90045A489 /* Net.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Net.m; sourceTree = "<group>"; };
 		77B053D321C8BDCA0045A489 /* NetResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetResponse.h; sourceTree = "<group>"; };
@@ -1989,7 +1990,6 @@
 				77B0553E21D0BE910045A489 /* LoginModule.m */,
 				77EA8E9421B8FCEA001B8959 /* LoginViewController.h */,
 				77EA8E9521B8FCEA001B8959 /* LoginViewController.m */,
-				776B55AC21BE682C00793CAF /* Login.json */,
 				7723E1C321D73F6500B77890 /* Login.xml */,
 			);
 			path = Login;
@@ -2219,6 +2219,8 @@
 			children = (
 				77EA8F0121B90226001B8959 /* UIViewController+JSON.h */,
 				77EA8F0221B90226001B8959 /* UIViewController+JSON.m */,
+				77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */,
+				77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */,
 				775B15F021C7D4AC00B8D6FF /* UIViewController+ContentView.h */,
 				775B15F121C7D4AC00B8D6FF /* UIViewController+ContentView.m */,
 				776B55D121BFA2C600793CAF /* UIViewController+Layout.h */,
@@ -2426,7 +2428,6 @@
 				77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */,
 				7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */,
 				77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */,
-				776B55AD21BE682C00793CAF /* Login.json in Resources */,
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
@@ -2568,6 +2569,7 @@
 				77B054CC21CA55E70045A489 /* LabelViewModel.m in Sources */,
 				77CEA4F921D4C2DD00B388E4 /* DiscoverHandler.m in Sources */,
 				77EA8F8D21B90A18001B8959 /* HomeHandler.m in Sources */,
+				77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */,
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
 				77B0551C21CD247E0045A489 /* MainModule.m in Sources */,
 				77CEA53121D50D3600B388E4 /* DiscoverTechAdapter.m in Sources */,

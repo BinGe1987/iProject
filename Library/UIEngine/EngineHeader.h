@@ -10,6 +10,7 @@
 #define EngineHeader_h
 
 #import "UIViewController+JSON.h"
+#import "UIViewController+XML.h"
 #import "UIEngine.h"
 #import "JSONModel.h"
 

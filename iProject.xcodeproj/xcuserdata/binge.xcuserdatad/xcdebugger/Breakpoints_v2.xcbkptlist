@@ -89,11 +89,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Library/Utils/XML/XMLParser.m"
-            timestampString = "567771576.676085"
+            timestampString = "567794244.030524"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "XMLParser"
             landmarkType = "3">
          </BreakpointContent>

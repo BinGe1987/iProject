@@ -2,11 +2,100 @@
 <FrameLayout
     view_width="full"
     view_height="full">
-    <TextView
-        view_width="100"
-        view_height="100"
-        view_background="#00ff00"
-        />
+    <Label
+        view_width="auto"
+        view_height="auto"
+        text_src="登录"
+        text_color="#2e2e2e"
+        text_size="20"
+        layout_fixTop="YES"
+        layout_margin="19"
+        layout_marginTop="12"/>
+    <LinearLayout
+        view_width="full"
+        view_height="28"
+        view_orietation="v"
+        layout_margin="43"
+        layout_fixTop="YES"
+        layout_marginTop="250">
+        <LinearLayout
+            view_width="full"
+            view_height="full"
+            view_orientation="h">
+            <Label
+                view_height="full"
+                view_width="30"
+                text_src="+86"
+                text_color="#2e2e2e"
+                text_size="13"/>
+            <InputView
+                view_height="28"
+                view_width="full"
+                text_placeholder="在这里输入手机号"
+                text_size="13"
+                layout_marginLeft="10"/>
+        </LinearLayout>
+        <View
+            view_height="0.5"
+            view_width="full"
+            view_background="#d6d6d6"/>
+    </LinearLayout>
+
+    <LinearLayout
+        view_width="full"
+        view_height="28"
+        view_orietation="v"
+        layout_margin="43"
+        layout_fixTop="YES"
+        layout_marginTop="320">
+        <LinearLayout
+            view_width="full"
+            view_height="full"
+            view_orientation="h">
+            <InputView
+                view_height="28"
+                view_width="full"
+                text_placeholder="请输入验证码"
+                text_size="13"
+                layout_marginLeft="2"
+                layout_marginRight="106"/>
+            <Button
+                view_name="btn_code"
+                view_width="96"
+                view_height="28"
+                view_background="#0055b4b2"
+                view_backgroundSelected="#aaffb4b2"
+                view_borderRadius="8"
+                view_borderWidth="1"
+                view_borderColor="#55b4b2"
+                view_masksToBounds="YES"
+                text_src="获取验证码"
+                text_size="13"
+                text_color="#2e2e2e"
+                layout_marginLeft="10"/>
+        </LinearLayout>
+        <View
+            view_height="0.5"
+            view_width="full"
+            view_background="#d6d6d6"
+            layout_marginRight="106"/>
+    </LinearLayout>
+    
+    <Button
+        view_name="btn_login"
+        view_width="222"
+        view_height="34"
+        view_background="#55b4b2"
+        view_backgroundSelected="#aaffb4b2"
+        view_borderRadius="8"
+        view_masksToBounds="YES"
+        text_src="登录"
+        text_color="#ffffff"
+        layout_marginTop="400"
+        layout_gravity="center|top"
+        layout_fixTop="YES"/>
+    
+        
 </FrameLayout>
     
 

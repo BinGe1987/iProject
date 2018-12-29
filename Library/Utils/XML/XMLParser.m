@@ -30,7 +30,6 @@
 }
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser {
-    Log(@"parserDidStartDocument");
     self.data = [XMLObject new];
     self.current = self.data;
 }
@@ -42,23 +41,17 @@
     object.parent = self.current;
     [self.current.childs addObject:object];
     self.current = object;
-    
-    Log("didStartElement : %@", elementName);
 }
 
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
-    Log("foundCharacters : %@", elementName);
-//    self.current = self.current.parent;
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
-//    self.cu
     self.current = self.current.parent;
 }
 
 //step 5：解析结束
 - (void)parserDidEndDocument:(NSXMLParser *)parser {
-    Log(@"parserDidEndDocument");
 }
 
 

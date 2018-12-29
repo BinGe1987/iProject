@@ -12,8 +12,8 @@
 -(instancetype)initWithModel:(id<UIModel>)model {
     self = [super initWithModel:model];
     if (self) {
-        NSString *orientation = [model getString:@"view_orientation" defaultValue:@"horizontal"];
-        if (orientation &&([orientation isEqualToString:@"horizontal"]||[orientation isEqualToString:@"H"])) {
+        NSString *orientation = [model getString:@"view_orientation" defaultValue:@"v"];
+        if (orientation &&([orientation isEqualToString:@"horizontal"]||[orientation isEqualToString:@"H"]||[orientation isEqualToString:@"h"])) {
             self.orientation = OrientationHorizontal;
         } else {
             self.orientation = OrientationVertical;

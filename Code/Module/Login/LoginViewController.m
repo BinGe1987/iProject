@@ -16,8 +16,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Login.json" ofType:nil];
-    [self setContentViewWithJSONPath:path];
+    [self setContentViewWithXML:@"Login.xml"];
     
     UIButton *btn = (UIButton *)[self findViewByName:@"btn_login"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {

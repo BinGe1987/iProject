@@ -43,7 +43,7 @@
     else if ([type isEqualToString:@"TableView"] || [type isEqualToString:@"table"]) {
         return [[TableViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"Lable"] || [type isEqualToString:@"label"]) {
+    else if ([type isEqualToString:@"Label"] || [type isEqualToString:@"label"]) {
         return [[LabelViewModel alloc] initWithUIModel:model];
     }
     else if ([type isEqualToString:@"TextView"] || [type isEqualToString:@"text"]) {
@@ -55,7 +55,7 @@
     else if ([type isEqualToString:@"ImageView"] || [type isEqualToString:@"image"]) {
         return [[ImageViewModel alloc] initWithUIModel:model];
     }
-    else if ([type isEqualToString:@"button"] || [type isEqualToString:@"button"]) {
+    else if ([type isEqualToString:@"Button"] || [type isEqualToString:@"button"]) {
         return [[ButtonViewModel alloc] initWithUIModel:model];
     }
     else if ([type isEqualToString:@"ViewPager"] || [type isEqualToString:@"pager"]) {
