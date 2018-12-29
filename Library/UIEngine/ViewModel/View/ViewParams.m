@@ -87,10 +87,21 @@
 }
 
 - (void)initPaddingParams:(id<UIModel>)model {
-    self.paddingLeft = [model getInteger:@"view_paddingLeft" defaultValue:0];
-    self.paddingTop = [model getInteger:@"view_paddingTop" defaultValue:0];
-    self.paddingRight = [model getInteger:@"view_paddingRight" defaultValue:0];
-    self.paddingBottom = [model getInteger:@"view_paddingBottom" defaultValue:0];
+    NSInteger padding = [model getInteger:@"view_padding" defaultValue:0];
+    if (padding) {
+        self.paddingLeft = padding;
+        self.paddingTop = padding;
+        self.paddingRight = padding;
+        self.paddingBottom = padding;
+    }
+    else {
+        self.paddingLeft = [model getInteger:@"view_paddingLeft" defaultValue:0];
+        self.paddingTop = [model getInteger:@"view_paddingTop" defaultValue:0];
+        self.paddingRight = [model getInteger:@"view_paddingRight" defaultValue:0];
+        self.paddingBottom = [model getInteger:@"view_paddingBottom" defaultValue:0];
+    }
+    
+    
 }
 
 - (void)initBackgroundParams:(id<UIModel>)model {

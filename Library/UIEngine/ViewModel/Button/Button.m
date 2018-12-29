@@ -18,10 +18,10 @@
 }
 
 - (void)boundSizeChanged {
-//    [self setEnlargeEdgeWithTop:self.viewParams.paddingTop
-//                          right:self.viewParams.paddingRight
-//                         bottom:self.viewParams.paddingBottom
-//                           left:self.viewParams.paddingLeft];
+    [self setEnlargeEdgeWithTop:self.viewParams.paddingTop
+                          right:self.viewParams.paddingRight
+                         bottom:self.viewParams.paddingBottom
+                           left:self.viewParams.paddingLeft];
 }
 
 - (CGSize)boundingTextSize {
