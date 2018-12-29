@@ -30,28 +30,28 @@
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     for (Presenter *p in self.presenters) {
-        [p willAppear:animated];
+        [p willAppear];
     }
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     for (Presenter *p in self.presenters) {
-        [p didAppear:animated];
+        [p didAppear];
     }
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     for (Presenter *p in self.presenters) {
-        [p willDisappear:animated];
+        [p willDisappear];
     }
 }
 
 - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
     for (Presenter *p in self.presenters) {
-        [p didDisappear:animated];
+        [p didDisappear];
     }
 }
 

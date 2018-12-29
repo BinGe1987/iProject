@@ -2083,7 +2083,7 @@
 		77EA8ED921B90226001B8959 /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				77EA8EE121B90226001B8959 /* Controller */,
+				77EA8EE121B90226001B8959 /* ViewController */,
 				77EA8EDB21B90226001B8959 /* Presenter */,
 				77B0559221D1FB0B0045A489 /* ViewHandler */,
 				77EA8EE021B90226001B8959 /* MVPHeader.h */,
@@ -2103,7 +2103,7 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		77EA8EE121B90226001B8959 /* Controller */ = {
+		77EA8EE121B90226001B8959 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				77EA8EE321B90226001B8959 /* PresenterViewController.h */,
@@ -2111,7 +2111,7 @@
 				77EA8EE721B90226001B8959 /* MVPViewController.h */,
 				77EA8EE421B90226001B8959 /* MVPViewController.m */,
 			);
-			path = Controller;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		77EA8EE821B90226001B8959 /* Common */ = {

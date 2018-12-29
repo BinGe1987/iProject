@@ -6,7 +6,6 @@
 //
 
 #import "LoginModule.h"
-#import "LoginViewController.h"
 
 @implementation LoginModule
 
@@ -16,8 +15,9 @@
         
         LoginData *user = (LoginData *)data;
         if (!user.isLogin) {
-            [LoginViewController presentSelfAnimated:NO data:nil completion:nil];
+            [MVPViewController presentMVPControllerName:@"LoginViewController" animated:NO data:nil completion:nil];
         }
+        
         [self loginCheckCompleted];
     }];
 }

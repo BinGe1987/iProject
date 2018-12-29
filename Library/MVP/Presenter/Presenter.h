@@ -24,13 +24,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithView:(UIView *)view;
 
-- (void)willAppear:(BOOL)animated;
+- (void)willAppear;
 
-- (void)didAppear:(BOOL)animated;
+- (void)didAppear;
 
-- (void)willDisappear:(BOOL)animated;
+- (void)willDisappear;
 
-- (void)didDisappear:(BOOL)animated;
+- (void)didDisappear;
 
 
 @end

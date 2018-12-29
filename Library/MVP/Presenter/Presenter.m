@@ -13,13 +13,13 @@
     return [super init];
 }
 
-- (void)willAppear:(BOOL)animated {}
+- (void)willAppear {}
 
-- (void)didAppear:(BOOL)animated {}
+- (void)didAppear {}
 
-- (void)willDisappear:(BOOL)animated {}
+- (void)willDisappear {}
 
-- (void)didDisappear:(BOOL)animated {}
+- (void)didDisappear {}
 
 - (void)dealloc {}
 
