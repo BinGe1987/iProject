@@ -17,6 +17,8 @@
         
         NSString *color = [model getString:@"text_placeholderColor" defaultValue:@"#ffd6d6d6"];
         self.placeholderColor = [ColorUtils colorWithString:color];
+        
+        self.inputType = [model getString:@"text_inputType" defaultValue:nil];
     }
     return self;
 }

@@ -35,6 +35,10 @@
     self.inputView.leftViewMode = UITextFieldViewModeAlways;
     self.inputView.rightView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, right, 0)];
     self.inputView.rightViewMode = UITextFieldViewModeAlways;
+    
+    if (params.inputType && [params.inputType isEqualToString:@"number"]) {
+        self.inputView.keyboardType = UIKeyboardTypeNumberPad;
+    }
 }
 
 - (Class)ViewClass {

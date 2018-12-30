@@ -34,6 +34,7 @@
                 view_width="full"
                 text_placeholder="在这里输入手机号"
                 text_size="13"
+                text_inputType="number"
                 layout_marginLeft="10"/>
         </LinearLayout>
         <View
@@ -58,6 +59,7 @@
                 view_width="full"
                 text_placeholder="请输入验证码"
                 text_size="13"
+                text_inputType="number"
                 layout_marginLeft="2"
                 layout_marginRight="106"/>
             <Button
