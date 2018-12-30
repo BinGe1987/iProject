@@ -9,10 +9,13 @@
 #import "SecondViewController.h"
 
 @interface NotificationLogin : NSObject
+
+
+
 @end
 
 @interface TestViewController ()
-
+@property (nonatomic, strong) DropdownMenu *menu;
 @end
 
 @implementation TestViewController
@@ -55,9 +58,12 @@
 //    [self setContentViewWithJSONFileName:@"Discover.json"];
 
     TICK
-    UIView *view = [UIView viewWithXML:@"Login.xml" size:CGSizeMake(SCREENWIDTH, SCREENHEIGHT)];
-    [self.view addSubview:view];
+//    UIView *view = [UIView viewWithXML:@"Login.xml" size:CGSizeMake(SCREENWIDTH, SCREENHEIGHT)];
+//    [self.view addSubview:view];
     TOCK
+    
+    self.menu = [DropdownMenu new];
+    [self.menu test:self.view];
 }
 
 

@@ -11,6 +11,10 @@
 		771CA36A21D8A8E100B00F11 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA36921D8A8E100B00F11 /* Utils.m */; };
 		771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA36C21D8AC1C00B00F11 /* LoginPresenter.m */; };
 		771CA37021D8AC9400B00F11 /* LoginViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA36F21D8AC9400B00F11 /* LoginViewHandler.m */; };
+		771CA37521D8B48B00B00F11 /* MKDropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA37321D8B48B00B00F11 /* MKDropdownMenu.m */; };
+		771CA37821D8B51100B00F11 /* DropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA37721D8B51100B00F11 /* DropdownMenu.m */; };
+		771CA37D21D8B62900B00F11 /* JSDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA37A21D8B62900B00F11 /* JSDropDownMenu.m */; };
+		771CA37E21D8B62900B00F11 /* ico_make.png in Resources */ = {isa = PBXBuildFile; fileRef = 771CA37B21D8B62900B00F11 /* ico_make.png */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -287,6 +291,13 @@
 		771CA36C21D8AC1C00B00F11 /* LoginPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPresenter.m; sourceTree = "<group>"; };
 		771CA36E21D8AC9400B00F11 /* LoginViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewHandler.h; sourceTree = "<group>"; };
 		771CA36F21D8AC9400B00F11 /* LoginViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewHandler.m; sourceTree = "<group>"; };
+		771CA37321D8B48B00B00F11 /* MKDropdownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDropdownMenu.m; sourceTree = "<group>"; };
+		771CA37421D8B48B00B00F11 /* MKDropdownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDropdownMenu.h; sourceTree = "<group>"; };
+		771CA37621D8B51100B00F11 /* DropdownMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropdownMenu.h; sourceTree = "<group>"; };
+		771CA37721D8B51100B00F11 /* DropdownMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropdownMenu.m; sourceTree = "<group>"; };
+		771CA37A21D8B62900B00F11 /* JSDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSDropDownMenu.m; sourceTree = "<group>"; };
+		771CA37B21D8B62900B00F11 /* ico_make.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ico_make.png; sourceTree = "<group>"; };
+		771CA37C21D8B62900B00F11 /* JSDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSDropDownMenu.h; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -820,6 +831,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		771CA37121D8B47C00B00F11 /* DropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				771CA37921D8B62900B00F11 /* JSDropDownMenu */,
+				771CA37221D8B48B00B00F11 /* MKDropdownMenu */,
+				771CA37621D8B51100B00F11 /* DropdownMenu.h */,
+				771CA37721D8B51100B00F11 /* DropdownMenu.m */,
+			);
+			path = DropdownMenu;
+			sourceTree = "<group>";
+		};
+		771CA37221D8B48B00B00F11 /* MKDropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				771CA37321D8B48B00B00F11 /* MKDropdownMenu.m */,
+				771CA37421D8B48B00B00F11 /* MKDropdownMenu.h */,
+			);
+			path = MKDropdownMenu;
+			sourceTree = "<group>";
+		};
+		771CA37921D8B62900B00F11 /* JSDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				771CA37A21D8B62900B00F11 /* JSDropDownMenu.m */,
+				771CA37B21D8B62900B00F11 /* ico_make.png */,
+				771CA37C21D8B62900B00F11 /* JSDropDownMenu.h */,
+			);
+			path = JSDropDownMenu;
+			sourceTree = "<group>";
+		};
 		7723E1B421D6715D00B77890 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -2240,6 +2281,7 @@
 		77EA8FA921B92262001B8959 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				771CA37121D8B47C00B00F11 /* DropdownMenu */,
 				7734C0E221D23A45009D1EE8 /* KafkaRefresh */,
 				77B054E221CB477C0045A489 /* Reachability */,
 				77B0546021CA2C2B0045A489 /* Progress */,
@@ -2317,6 +2359,7 @@
 				77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */,
 				77CEA56E21D6588C00B388E4 /* OrderCellItem.json in Resources */,
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
+				771CA37E21D8B62900B00F11 /* ico_make.png in Resources */,
 				77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */,
 				77CEA4B821D3AF5500B388E4 /* TechCellList.json in Resources */,
 				77CEA4B621D3A76500B388E4 /* TechCellHeader.json in Resources */,
@@ -2410,6 +2453,7 @@
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */,
 				776B55F021C00D6000793CAF /* Parser.m in Sources */,
+				771CA37521D8B48B00B00F11 /* MKDropdownMenu.m in Sources */,
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
 				77CEA52421D4FAA200B388E4 /* CollectionView.m in Sources */,
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,
@@ -2439,6 +2483,7 @@
 				77EA8F2B21B90226001B8959 /* DataCenter.m in Sources */,
 				7734C11421D23A45009D1EE8 /* UIScrollView+KafkaConfiguration.m in Sources */,
 				77CEA51421D4F99A00B388E4 /* DiscoverTechViewHandler.m in Sources */,
+				771CA37821D8B51100B00F11 /* DropdownMenu.m in Sources */,
 				776B55AB21BE62E100793CAF /* UserData.m in Sources */,
 				771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */,
 				77B054BD21CA51740045A489 /* InputViewModel.m in Sources */,
@@ -2549,6 +2594,7 @@
 				77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */,
 				77B0553821CEAE530045A489 /* Aspects+My.m in Sources */,
 				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,
+				771CA37D21D8B62900B00F11 /* JSDropDownMenu.m in Sources */,
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,
 				7734C11C21D23A45009D1EE8 /* KafkaReplicatorFooter.m in Sources */,
