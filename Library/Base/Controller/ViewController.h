@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ViewController : UIViewController
 
+- (void)endEditingWithViewTouch:(UIView *)view;
+
 @end
 
 NS_ASSUME_NONNULL_END

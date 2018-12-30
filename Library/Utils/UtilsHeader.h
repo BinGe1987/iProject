@@ -8,6 +8,7 @@
 #ifndef UtilsHeader_h
 #define UtilsHeader_h
 
+#import "Utils.h"
 #import "BGHeader.h"
 #import "NetHeader.h"
 #import "Store.h"

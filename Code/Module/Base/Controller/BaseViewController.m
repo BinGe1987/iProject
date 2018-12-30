@@ -21,14 +21,6 @@
     self.extendedLayoutIncludesOpaqueBars = YES;
 }
 
-- (void)endEditingWithViewTouch:(UIView *)view {
-    view.userInteractionEnabled = YES;
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fingerTapped:)];
-    [view addGestureRecognizer:singleTap];
-}
 
--(void)fingerTapped:(UITapGestureRecognizer *)gestureRecognizer {
-    [self.view endEditing:YES];
-}
 
 @end

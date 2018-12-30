@@ -6,6 +6,7 @@
 //
 
 #import "LoginViewController.h"
+#import "LoginPresenter.h"
 
 @interface LoginViewController ()
 
@@ -19,17 +20,7 @@
     [self setContentViewWithXML:@"Login.xml"];
     [self endEditingWithViewTouch:self.view];//键盘回收
     
-    UIButton *btn = (UIButton *)[self findViewByName:@"btn_login"];
-    [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [ProgressHUB loadingTitle:@"正在登录"];
-        dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
-            sleep(3);
-            [ProgressHUB dismiss];
-        });
-    }];
-
-    
-    
+    [self addPresenter:[[LoginPresenter alloc] initWithView:self.view]];
 }
 
 - (CGRect)safeRect {
