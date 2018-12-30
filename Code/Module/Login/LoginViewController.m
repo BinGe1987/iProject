@@ -23,7 +23,7 @@
 //        [button dismissViewControllerAnimated:YES completion:nil];
 //        [ProgressHUB loadingTitle:@"请输入用户名"];
         
-        UIView *imageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 200, 400)];
+        UIView *imageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
         imageView.backgroundColor = [UIColor redColor];
         
         [ProgressHUB showView:imageView];

@@ -10,7 +10,7 @@
 @implementation GlobalModule
 
 - (void)setup:(BuildConfiguration)buildConfiguration {
-    [IQKeyboardManager sharedManager].enable = YES;
+//    [IQKeyboardManager sharedManager].enable = YES;
     
     NetConfig *config = [NetConfig new];
     config.baseUrl = @"www.baidu.com";
