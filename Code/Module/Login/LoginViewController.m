@@ -21,14 +21,10 @@
     
     UIButton *btn = (UIButton *)[self findViewByName:@"btn_login"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        UIView *imageView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, SCREENHEIGHT)];
-        imageView.backgroundColor = [UIColor redColor];
-        [ProgressHUB showView:imageView];
+        [ProgressHUB loadingTitle:@"正在登录"];
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0), ^{
             sleep(3);
-            dispatch_async(dispatch_get_main_queue(), ^{
-                [ProgressHUB dismiss];
-            });
+            [ProgressHUB dismiss];
         });
     }];
 

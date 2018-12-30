@@ -35,7 +35,9 @@
 }
 
 + (void)dismiss {
-    [MBProgressHUD hideHUDForView:TOP_WINDOW animated:YES];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [MBProgressHUD hideHUDForView:TOP_WINDOW animated:YES];
+    });
 }
 
 
