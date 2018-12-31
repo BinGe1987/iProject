@@ -58,17 +58,6 @@
 
 - (NSInteger)menu:(DOPDropDownMenu *)menu numberOfRowsInColumn:(NSInteger)column
 {
-//    if (column >= 0) {
-//        DropdownMenuItem *item = self.menuItems[column];
-//        return item.childItems.count;
-//    }
-//    if (column == 0) {
-//        return self.classifys.count;
-//    }else if (column == 1){
-//        return self.areas.count;
-//    }else {
-//        return self.sorts.count;
-//    }
     if (column >= 0) {
         NSArray *arr = self.menuItems[column];
         return arr.count;
@@ -78,17 +67,9 @@
 
 - (NSString *)menu:(DOPDropDownMenu *)menu titleForRowAtIndexPath:(DOPIndexPath *)indexPath
 {
-//    DropdownMenuItem *item = self.menuItems[indexPath.column];
     NSArray *arr = self.menuItems[indexPath.column];
     DropdownMenuItem *item = arr[indexPath.row];
     return item.name;
-//    if (indexPath.column == 0) {
-//        return item.childItems[indexPath.row].name;
-//    } else if (indexPath.column == 1){
-//        return self.areas[indexPath.row];
-//    } else {
-//        return self.sorts[indexPath.row];
-//    }
 }
 
 // new datasource
@@ -113,15 +94,19 @@
 
 - (NSString *)menu:(DOPDropDownMenu *)menu detailTextForRowAtIndexPath:(DOPIndexPath *)indexPath
 {
-    if (indexPath.column < 2) {
-        return [@(arc4random()%1000) stringValue];
-    }
-    return nil;
+//    if (indexPath.column < 2) {
+//        NSString *value = [@(arc4random()%1000) stringValue];
+//        return value;
+//    }
+    NSArray *arr = self.menuItems[indexPath.column];
+    DropdownMenuItem *item = arr[indexPath.row];
+    return item.childItems.count ? [NSString stringWithFormat:@"%ld", item.childItems.count] : nil;
 }
 
 - (NSString *)menu:(DOPDropDownMenu *)menu detailTextForItemsInRowAtIndexPath:(DOPIndexPath *)indexPath
 {
-    return [@(arc4random()%1000) stringValue];
+//    return [@(arc4random()%1000) stringValue];
+    return nil;
 }
 
 - (NSInteger)menu:(DOPDropDownMenu *)menu numberOfItemsInRow:(NSInteger)row column:(NSInteger)column
