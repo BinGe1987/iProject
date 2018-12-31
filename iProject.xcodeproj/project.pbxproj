@@ -12,7 +12,6 @@
 		771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA36C21D8AC1C00B00F11 /* LoginPresenter.m */; };
 		771CA37021D8AC9400B00F11 /* LoginViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA36F21D8AC9400B00F11 /* LoginViewHandler.m */; };
 		771CA37821D8B51100B00F11 /* DropdownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA37721D8B51100B00F11 /* DropdownMenu.m */; };
-		771CA38421D9376900B00F11 /* DropdownMenuObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA38321D9376900B00F11 /* DropdownMenuObject.m */; };
 		771CA38921D94EB800B00F11 /* DOPDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA38721D94EB800B00F11 /* DOPDropDownMenu.m */; };
 		771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771CA38821D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets */; };
 		771CA39321D9A5B000B00F11 /* DropdownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39221D9A5B000B00F11 /* DropdownMenuItem.m */; };
@@ -294,8 +293,6 @@
 		771CA36F21D8AC9400B00F11 /* LoginViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewHandler.m; sourceTree = "<group>"; };
 		771CA37621D8B51100B00F11 /* DropdownMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropdownMenu.h; sourceTree = "<group>"; };
 		771CA37721D8B51100B00F11 /* DropdownMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropdownMenu.m; sourceTree = "<group>"; };
-		771CA38221D9376900B00F11 /* DropdownMenuObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropdownMenuObject.h; sourceTree = "<group>"; };
-		771CA38321D9376900B00F11 /* DropdownMenuObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropdownMenuObject.m; sourceTree = "<group>"; };
 		771CA38621D94EB800B00F11 /* DOPDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DOPDropDownMenu.h; sourceTree = "<group>"; };
 		771CA38721D94EB800B00F11 /* DOPDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DOPDropDownMenu.m; sourceTree = "<group>"; };
 		771CA38821D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "DOPDropDownMenu-Enhanced.xcassets"; sourceTree = "<group>"; };
@@ -840,8 +837,6 @@
 				771CA38521D94EB800B00F11 /* DOPDropDownMenu - Enhanced */,
 				771CA37621D8B51100B00F11 /* DropdownMenu.h */,
 				771CA37721D8B51100B00F11 /* DropdownMenu.m */,
-				771CA38221D9376900B00F11 /* DropdownMenuObject.h */,
-				771CA38321D9376900B00F11 /* DropdownMenuObject.m */,
 				771CA39121D9A5B000B00F11 /* DropdownMenuItem.h */,
 				771CA39221D9A5B000B00F11 /* DropdownMenuItem.m */,
 			);
@@ -2449,7 +2444,6 @@
 				77B054E521CB47910045A489 /* Reachability.m in Sources */,
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */,
-				771CA38421D9376900B00F11 /* DropdownMenuObject.m in Sources */,
 				776B55F021C00D6000793CAF /* Parser.m in Sources */,
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
 				77CEA52421D4FAA200B388E4 /* CollectionView.m in Sources */,

@@ -63,16 +63,22 @@
     TOCK
     
     self.menu = [[DropdownMenu alloc] initWithFrame:self.view.bounds];
-    DropdownMenuObject *object = [DropdownMenuObject new];
-    object.item = [NSMutableArray arrayWithObjects:@"智能排序", @"离我最近", @"评价最高", @"最新发布", @"人气最高", @"价格最低", @"价格最高", nil];
-    DropdownMenuObject *object2 = [DropdownMenuObject new];
-    object2.item = @[@"1",@"2",@"3",@"4",@"5",@"6"];
-    DropdownMenuObject *object3 = [DropdownMenuObject new];
-    object3.item = @[@"1",@"2",@"3",@"4",@"5",@"6",@"1",@"2",@"3",@"4",@"5",@"6",@"1",@"2",@"3",@"4",@"5",@"6"];
-    self.menu.menuObjects = @[object];
-    [self.view addSubview:self.menu];
+    DropdownMenuItem *item11  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
+    DropdownMenuItem *item12  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
+    DropdownMenuItem *item13  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
+    NSArray *item1 = @[item11,item12, item13];
     
-    DropdownMenuItem *item  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
+    DropdownMenuItem *itema1  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema1"];
+    DropdownMenuItem *itema2  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema2"];
+    DropdownMenuItem *itema3  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema3"];
+    item11.childItems = @[itema1,itema2,itema3];
+    
+//    DropdownMenuItem *item2  = [[DropdownMenuItem alloc] initWithID:2 name:@"456"];
+//    DropdownMenuItem *item3  = [[DropdownMenuItem alloc] initWithID:3 name:@"789"];
+    
+    self.menu.menuItems = @[item1,item1,item1];
+    
+    [self.view addSubview:self.menu];
     
 }
 

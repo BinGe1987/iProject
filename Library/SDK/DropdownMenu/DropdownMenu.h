@@ -6,17 +6,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DropdownMenuObject.h"
 #import "DropdownMenuItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DropdownMenu : UIView
 
-@property (nonatomic, strong) NSArray<DropdownMenuObject *> *menuObjects;
-
-//- (void)test :(UIView *)view;
-
+@property (nonatomic, strong) NSArray *menuItems;
 
 @end
 
