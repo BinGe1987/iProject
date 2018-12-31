@@ -62,8 +62,18 @@
 //    [self.view addSubview:view];
     TOCK
     
-    self.menu = [DropdownMenu new];
-    [self.menu test:self.view];
+    self.menu = [[DropdownMenu alloc] initWithFrame:self.view.bounds];
+    DropdownMenuObject *object = [DropdownMenuObject new];
+    object.item = [NSMutableArray arrayWithObjects:@"智能排序", @"离我最近", @"评价最高", @"最新发布", @"人气最高", @"价格最低", @"价格最高", nil];
+    DropdownMenuObject *object2 = [DropdownMenuObject new];
+    object2.item = @[@"1",@"2",@"3",@"4",@"5",@"6"];
+    DropdownMenuObject *object3 = [DropdownMenuObject new];
+    object3.item = @[@"1",@"2",@"3",@"4",@"5",@"6",@"1",@"2",@"3",@"4",@"5",@"6",@"1",@"2",@"3",@"4",@"5",@"6"];
+    self.menu.menuObjects = @[object];
+    [self.view addSubview:self.menu];
+    
+    DropdownMenuItem *item  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
+    
 }
 
 

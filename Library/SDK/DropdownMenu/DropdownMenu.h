@@ -5,13 +5,18 @@
 //  Created by BinGe on 2018/12/30.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "DropdownMenuObject.h"
+#import "DropdownMenuItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface DropdownMenu : NSObject
+@interface DropdownMenu : UIView
 
-- (void)test :(UIView *)view;
+@property (nonatomic, strong) NSArray<DropdownMenuObject *> *menuObjects;
+
+//- (void)test :(UIView *)view;
+
 
 @end
 

@@ -6,165 +6,160 @@
 //
 
 #import "DropdownMenu.h"
-#import "JSDropDownMenu.h"
-@interface DropdownMenu ()<JSDropDownMenuDataSource,JSDropDownMenuDelegate>{
+#import "DOPDropDownMenu.h"
+@interface DropdownMenu ()<DOPDropDownMenuDataSource,DOPDropDownMenuDelegate>
 
-NSMutableArray *_data1;
-NSMutableArray *_data2;
-NSMutableArray *_data3;
+@property (nonatomic, strong) NSArray *classifys;
+@property (nonatomic, strong) NSArray *cates;
+@property (nonatomic, strong) NSArray *movices;
+@property (nonatomic, strong) NSArray *hostels;
+@property (nonatomic, strong) NSArray *areas;
 
-NSInteger _currentData1Index;
-NSInteger _currentData2Index;
-NSInteger _currentData3Index;
+@property (nonatomic, strong) NSArray *sorts;
+@property (nonatomic, weak) DOPDropDownMenu *menu;
+@property (nonatomic, weak) DOPDropDownMenu *menuB;
 
-}
 @end
 
 @implementation DropdownMenu
 
-- (void)test :(UIView *)view {
-    NSArray *food = @[@"全部美食", @"火锅", @"川菜", @"西餐", @"自助餐"];
-    NSArray *travel = @[@"全部旅游", @"周边游", @"景点门票", @"国内游", @"境外游"];
+-(void)setMenuObjects:(NSArray<DropdownMenuObject *> *)menuObjects {
+    _menuObjects = menuObjects;
     
-    _data1 = [NSMutableArray arrayWithObjects:@{@"title":@"美食", @"data":food}, @{@"title":@"旅游", @"data":travel}, nil];
-    _data2 = [NSMutableArray arrayWithObjects:@"智能排序", @"离我最近", @"评价最高", @"最新发布", @"人气最高", @"价格最低", @"价格最高", nil];
-    _data3 = [NSMutableArray arrayWithObjects:@"不限人数", @"单人餐", @"双人餐", @"3~4人餐", nil];
-//    DropdownMenu 
-    JSDropDownMenu *menu = [[JSDropDownMenu alloc] initWithOrigin:CGPointMake(0, 64) andHeight:45];
-    menu.indicatorColor = [UIColor colorWithRed:175.0f/255.0f green:175.0f/255.0f blue:175.0f/255.0f alpha:1.0];
-    menu.separatorColor = [UIColor colorWithRed:210.0f/255.0f green:210.0f/255.0f blue:210.0f/255.0f alpha:1.0];
-    menu.textColor = [UIColor colorWithRed:83.f/255.0f green:83.f/255.0f blue:83.f/255.0f alpha:1.0f];
-    menu.dataSource = self;
+    // 数据
+    self.classifys = @[@"美食",@"今日新单",@"电影",@"酒店"];
+    self.cates = @[@"自助餐",@"快餐",@"火锅",@"日韩料理",@"西餐",@"烧烤小吃"];
+    self.movices = @[@"内地剧",@"港台剧",@"英美剧"];
+    self.hostels = @[@"经济酒店",@"商务酒店",@"连锁酒店",@"度假酒店",@"公寓酒店"];
+    self.areas = @[@"全城",@"芙蓉区",@"雨花区",@"天心区",@"开福区",@"岳麓区"];
+    self.sorts = @[@"默认排序",@"离我最近",@"好评优先",@"人气优先",@"默认排序",@"离我最近",@"好评优先",@"默认排序",@"离我最近",@"好评优先",@"人气优先",@"默认排序",@"离我最近",@"好评优先",@"默认排序",@"离我最近",@"好评优先",@"人气优先",@"默认排序",@"离我最近",@"好评优先",@"人气优先",@"最新发布"];
+    
+    // 添加下拉菜单
+    DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 64) andHeight:44];
     menu.delegate = self;
-    
-    [view addSubview:menu];
+    menu.dataSource = self;
+    [self addSubview:menu];
+    _menu = menu;
+    //当下拉菜单收回时的回调，用于网络请求新的数据
+    _menu.finishedBlock=^(DOPIndexPath *indexPath){
+        if (indexPath.item >= 0) {
+            NSLog(@"收起:点击了 %ld - %ld - %ld 项目",indexPath.column,indexPath.row,indexPath.item);
+        }else {
+            NSLog(@"收起:点击了 %ld - %ld 项目",indexPath.column,indexPath.row);
+        }
+    };
+    //     创建menu 第一次显示 不会调用点击代理，可以用这个手动调用
+    //    [menu selectDefalutIndexPath];
+    [menu selectIndexPath:[DOPIndexPath indexPathWithCol:0 row:0 item:0]]
 }
 
-- (NSInteger)numberOfColumnsInMenu:(JSDropDownMenu *)menu {
-    
+
+
+- (void)menuReloadData
+{
+    self.classifys = @[@"美食",@"今日新单",@"电影"];
+    [_menu reloadData];
+}
+- (IBAction)selectIndexPathAction:(id)sender {
+    [_menu selectIndexPath:[DOPIndexPath indexPathWithCol:0 row:2 item:2]];
+}
+
+- (NSInteger)numberOfColumnsInMenu:(DOPDropDownMenu *)menu
+{
     return 3;
 }
 
--(BOOL)displayByCollectionViewInColumn:(NSInteger)column{
-    
-    if (column==2) {
-        
-        return YES;
-    }
-    
-    return NO;
-}
-
--(BOOL)haveRightTableViewInColumn:(NSInteger)column{
-    
-    if (column==0) {
-        return YES;
-    }
-    return NO;
-}
-
--(CGFloat)widthRatioOfLeftColumn:(NSInteger)column{
-    
-    if (column==0) {
-        return 0.3;
-    }
-    
-    return 1;
-}
-
--(NSInteger)currentLeftSelectedRow:(NSInteger)column{
-    
-    if (column==0) {
-        
-        return _currentData1Index;
-        
-    }
-    if (column==1) {
-        
-        return _currentData2Index;
-    }
-    
-    return 0;
-}
-
-- (NSInteger)menu:(JSDropDownMenu *)menu numberOfRowsInColumn:(NSInteger)column leftOrRight:(NSInteger)leftOrRight leftRow:(NSInteger)leftRow{
-    
-    if (column==0) {
-        if (leftOrRight==0) {
-            
-            return _data1.count;
-        } else{
-            
-            NSDictionary *menuDic = [_data1 objectAtIndex:leftRow];
-            return [[menuDic objectForKey:@"data"] count];
-        }
-    } else if (column==1){
-        
-        return _data2.count;
-        
-    } else if (column==2){
-        
-        return _data3.count;
-    }
-    
-    return 0;
-}
-
-- (NSString *)menu:(JSDropDownMenu *)menu titleForColumn:(NSInteger)column{
-    
-    switch (column) {
-        case 0: return [[_data1[0] objectForKey:@"data"] objectAtIndex:0];
-            break;
-        case 1: return _data2[0];
-            break;
-        case 2: return _data3[0];
-            break;
-        default:
-            return nil;
-            break;
+- (NSInteger)menu:(DOPDropDownMenu *)menu numberOfRowsInColumn:(NSInteger)column
+{
+    if (column == 0) {
+        return self.classifys.count;
+    }else if (column == 1){
+        return self.areas.count;
+    }else {
+        return self.sorts.count;
     }
 }
 
-- (NSString *)menu:(JSDropDownMenu *)menu titleForRowAtIndexPath:(JSIndexPath *)indexPath {
-    
-    if (indexPath.column==0) {
-        if (indexPath.leftOrRight==0) {
-            NSDictionary *menuDic = [_data1 objectAtIndex:indexPath.row];
-            return [menuDic objectForKey:@"title"];
-        } else{
-            NSInteger leftRow = indexPath.leftRow;
-            NSDictionary *menuDic = [_data1 objectAtIndex:leftRow];
-            return [[menuDic objectForKey:@"data"] objectAtIndex:indexPath.row];
-        }
-    } else if (indexPath.column==1) {
-        
-        return _data2[indexPath.row];
-        
-    } else {
-        
-        return _data3[indexPath.row];
-    }
-}
-
-- (void)menu:(JSDropDownMenu *)menu didSelectRowAtIndexPath:(JSIndexPath *)indexPath {
-    
+- (NSString *)menu:(DOPDropDownMenu *)menu titleForRowAtIndexPath:(DOPIndexPath *)indexPath
+{
     if (indexPath.column == 0) {
-        
-        if(indexPath.leftOrRight==0){
-            
-            _currentData1Index = indexPath.row;
-            
-            return;
-        }
-        
-    } else if(indexPath.column == 1){
-        
-        _currentData2Index = indexPath.row;
-        
-    } else{
-        
-        _currentData3Index = indexPath.row;
+        return self.classifys[indexPath.row];
+    } else if (indexPath.column == 1){
+        return self.areas[indexPath.row];
+    } else {
+        return self.sorts[indexPath.row];
     }
 }
+
+// new datasource
+
+- (NSString *)menu:(DOPDropDownMenu *)menu imageNameForRowAtIndexPath:(DOPIndexPath *)indexPath
+{
+    //    if (indexPath.column == 0 || indexPath.column == 1) {
+    //        return [NSString stringWithFormat:@"ic_filter_category_%ld",indexPath.row];
+    //    }
+    return nil;
+}
+
+- (NSString *)menu:(DOPDropDownMenu *)menu imageNameForItemsInRowAtIndexPath:(DOPIndexPath *)indexPath
+{
+    //    if (indexPath.column == 0 && indexPath.item >= 0) {
+    //        return [NSString stringWithFormat:@"ic_filter_category_%ld",indexPath.item];
+    //    }
+    return nil;
+}
+
+// new datasource
+
+- (NSString *)menu:(DOPDropDownMenu *)menu detailTextForRowAtIndexPath:(DOPIndexPath *)indexPath
+{
+    if (indexPath.column < 2) {
+        return [@(arc4random()%1000) stringValue];
+    }
+    return nil;
+}
+
+- (NSString *)menu:(DOPDropDownMenu *)menu detailTextForItemsInRowAtIndexPath:(DOPIndexPath *)indexPath
+{
+    return [@(arc4random()%1000) stringValue];
+}
+
+- (NSInteger)menu:(DOPDropDownMenu *)menu numberOfItemsInRow:(NSInteger)row column:(NSInteger)column
+{
+    if (column == 0) {
+        if (row == 0) {
+            return self.cates.count;
+        } else if (row == 2){
+            return self.movices.count;
+        } else if (row == 3){
+            return self.hostels.count;
+        }
+    }
+    return 0;
+}
+
+- (NSString *)menu:(DOPDropDownMenu *)menu titleForItemsInRowAtIndexPath:(DOPIndexPath *)indexPath
+{
+    if (indexPath.column == 0) {
+        if (indexPath.row == 0) {
+            return self.cates[indexPath.item];
+        } else if (indexPath.row == 2){
+            return self.movices[indexPath.item];
+        } else if (indexPath.row == 3){
+            return self.hostels[indexPath.item];
+        }
+    }
+    return nil;
+}
+
+- (void)menu:(DOPDropDownMenu *)menu didSelectRowAtIndexPath:(DOPIndexPath *)indexPath
+{
+    if (indexPath.item >= 0) {
+        NSLog(@"点击了 %ld - %ld - %ld 项目",indexPath.column,indexPath.row,indexPath.item);
+    }else {
+        NSLog(@"点击了 %ld - %ld 项目",indexPath.column,indexPath.row);
+    }
+}
+
 
 @end
