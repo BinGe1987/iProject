@@ -50,7 +50,6 @@
     };
     //     创建menu 第一次显示 不会调用点击代理，可以用这个手动调用
     //    [menu selectDefalutIndexPath];
-    [menu selectIndexPath:[DOPIndexPath indexPathWithCol:0 row:0 item:0]]
 }
 
 
