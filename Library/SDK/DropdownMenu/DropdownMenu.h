@@ -16,6 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithFrame:(CGRect)frame andMenuHeight:(NSInteger)height;
 
+- (instancetype)initWithFrame:(CGRect)frame andDropdownViewHeight:(NSInteger)height;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -62,7 +62,30 @@
 //    [self.view addSubview:view];
     TOCK
     
-    DropdownMenu *menu = [[DropdownMenu alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 64) andMenuHeight:44];
+//    DropdownMenu *menu = [[DropdownMenu alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 64) andMenuHeight:44];
+//    DropdownMenuItem *item11  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
+//    DropdownMenuItem *item12  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
+//    DropdownMenuItem *item13  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
+//    NSArray *item1 = @[item11,item12, item13];
+//
+//    DropdownMenuItem *itema1  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema1"];
+//    DropdownMenuItem *itema2  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema2"];
+//    DropdownMenuItem *itema3  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema3"];
+//    item11.childItems = @[itema1,itema2,itema3];
+//
+////    DropdownMenuItem *item2  = [[DropdownMenuItem alloc] initWithID:2 name:@"456"];
+////    DropdownMenuItem *item3  = [[DropdownMenuItem alloc] initWithID:3 name:@"789"];
+//
+//    DropdownMenuItem *item21  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
+//    DropdownMenuItem *item22  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
+//    DropdownMenuItem *item23  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
+//    NSArray *item2 = @[item21,item22, item23,item21,item22, item23,item21,item22, item23,item21,item22, item23,item21,item22, item23];
+//
+//    menu.menuItems = @[item1,item2];
+//
+//    [self.view addSubview:menu];
+    
+    DropdownMenu *menu = [[DropdownMenu alloc] initWithFrame:CGRectMake(0, 64, SCREENWIDTH, 30) andDropdownViewHeight:400];
     DropdownMenuItem *item11  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
     DropdownMenuItem *item12  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
     DropdownMenuItem *item13  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
@@ -73,16 +96,12 @@
     DropdownMenuItem *itema3  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema3"];
     item11.childItems = @[itema1,itema2,itema3];
     
-//    DropdownMenuItem *item2  = [[DropdownMenuItem alloc] initWithID:2 name:@"456"];
-//    DropdownMenuItem *item3  = [[DropdownMenuItem alloc] initWithID:3 name:@"789"];
-    
     DropdownMenuItem *item21  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
     DropdownMenuItem *item22  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
     DropdownMenuItem *item23  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
     NSArray *item2 = @[item21,item22, item23,item21,item22, item23,item21,item22, item23,item21,item22, item23,item21,item22, item23];
     
-    menu.menuItems = @[item1,item2];
-    
+    menu.menuItems = @[item1,item2,item2];
     [self.view addSubview:menu];
     
 }

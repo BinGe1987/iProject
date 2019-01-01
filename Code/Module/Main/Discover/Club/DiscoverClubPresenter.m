@@ -20,6 +20,28 @@
     self.handler = [[DiscoverClubViewHandler alloc] initWithView:[view findViewByName:@"table"]];
     self.handler.delegate = self;
     
+    UIView *menuView = [view findViewByName:@"layout_menu"];
+    
+    DropdownMenu *menu = [[DropdownMenu alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 30) andDropdownViewHeight:400];
+    DropdownMenuItem *item11  = [[DropdownMenuItem alloc] initWithID:1 name:@"附近"];
+    DropdownMenuItem *item12  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
+    DropdownMenuItem *item13  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
+    NSArray *item1 = @[item11,item12, item13];
+    
+    DropdownMenuItem *itema1  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema1"];
+    DropdownMenuItem *itema2  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema2"];
+    DropdownMenuItem *itema3  = [[DropdownMenuItem alloc] initWithID:1 name:@"itema3"];
+    item11.childItems = @[itema1,itema2,itema3];
+    
+    DropdownMenuItem *item21  = [[DropdownMenuItem alloc] initWithID:1 name:@"全部分类"];
+    DropdownMenuItem *item22  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
+    DropdownMenuItem *item23  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
+    NSArray *item2 = @[item21,item22, item23,item21,item22, item23,item21,item22, item23,item21,item22, item23,item21,item22, item23];
+    
+    menu.menuItems = @[item1,item2,item2];
+    
+    [menuView addSubview:menu];
+    
     WeakSelf(self)
     [[DataCenter get] perform:OperationGetDiscoverClubData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         [weakself.handler setData:data];

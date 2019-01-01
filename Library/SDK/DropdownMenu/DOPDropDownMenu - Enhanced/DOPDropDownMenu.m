@@ -359,6 +359,75 @@
     return [self initWithOrigin:origin width:width andHeight:height dropViewHeight:(IS_IPHONE_4_OR_LESS ? 200 : kTableViewHeight)];
 }
 
+- (instancetype)initWithFrame:(CGRect)frame dropViewHeight:(CGFloat)dropViewHeight {
+    self = [self initWithFrame:frame];
+    if (self) {
+        CGFloat width = frame.size.width;
+        CGFloat height = frame.size.height;
+        
+        _origin = frame.origin;
+        _currentSelectedMenudIndex = -1;
+        self.show = NO;
+        _fontSize = 14;
+        _cellStyle = UITableViewCellStyleValue1;
+        _separatorColor = kSeparatorColor;
+        _separatorHeighPercent = 0.5;
+        _textColor = kTextColor;
+        _textSelectedColor = kTextSelectColor;
+        _detailTextFont = [UIFont systemFontOfSize:11];
+        _detailTextColor = kDetailTextColor;
+        _indicatorColor = kTextColor;
+        //        _tableViewHeight = IS_IPHONE_4_OR_LESS ? 200 : kTableViewHeight;
+        _tableViewHeight = dropViewHeight;
+        _dropDownViewWidth = dropViewHeight;
+        _showBottomImage = YES;
+        _isClickHaveItemValid = YES;
+        _indicatorAlignType = DOPIndicatorAlignTypeRight;
+        CGSize dropDownViewSize = CGSizeMake(_dropDownViewWidth, [UIScreen mainScreen].bounds.size.height);
+        
+        //lefttableView init
+        _leftTableView = [[UITableView alloc] initWithFrame:CGRectMake(_origin.x, self.frame.origin.y + self.frame.size.height, dropDownViewSize.width/2, 0) style:UITableViewStylePlain];
+        _leftTableView.rowHeight = kTableViewCellHeight;
+        _leftTableView.dataSource = self;
+        _leftTableView.delegate = self;
+        _leftTableView.separatorColor = kSeparatorColor;
+        _leftTableView.separatorInset = UIEdgeInsetsZero;
+        _leftTableView.tableFooterView = [[UIView alloc]init];
+        
+        //righttableView init
+        _rightTableView = [[UITableView alloc] initWithFrame:CGRectMake(_origin.x + _dropDownViewWidth/2, self.frame.origin.y + self.frame.size.height, dropDownViewSize.width/2, 0) style:UITableViewStylePlain];
+        _rightTableView.rowHeight = kTableViewCellHeight;
+        _rightTableView.dataSource = self;
+        _rightTableView.delegate = self;
+        _rightTableView.separatorColor = kSeparatorColor;
+        _rightTableView.separatorInset = UIEdgeInsetsZero;
+        //_rightTableView.tableFooterView = [[UIView alloc]init];
+        
+        _buttomImageView = [[UIImageView alloc]initWithFrame:CGRectMake(_origin.x, self.frame.origin.y + self.frame.size.height, dropDownViewSize.width, kButtomImageViewHeight)];
+        _buttomImageView.image = [UIImage imageNamed:@"icon_chose_bottom"];
+        
+        //self tapped
+        self.backgroundColor = [UIColor whiteColor];
+        UIGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(menuTapped:)];
+        [self addGestureRecognizer:tapGesture];
+        
+        //background init and tapped
+        _backGroundView = [[UIView alloc] initWithFrame:CGRectMake(_origin.x, _origin.y + height, dropDownViewSize.width, dropDownViewSize.height)];
+        _backGroundView.backgroundColor = [UIColor colorWithWhite:0.0 alpha:0.0];
+        _backGroundView.opaque = NO;
+        UIGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(backgroundTapped:)];
+        [_backGroundView addGestureRecognizer:gesture];
+        
+        //add bottom shadow
+        UIView *bottomShadow = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height-0.5, width, 0.5)];
+        bottomShadow.backgroundColor = kSeparatorColor;
+        bottomShadow.hidden = YES;
+        [self addSubview:bottomShadow];
+        //        _bottomShadow = bottomShadow;
+    }
+    return self;
+}
+
 - (instancetype)initWithOrigin:(CGPoint)origin width:(CGFloat)width andHeight:(CGFloat)height dropViewHeight:(CGFloat)dropViewHeight {
     self = [self initWithFrame:CGRectMake(origin.x, origin.y, width, height)];
     if (self) {

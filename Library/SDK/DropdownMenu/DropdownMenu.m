@@ -16,6 +16,15 @@
 
 @implementation DropdownMenu
 
+- (instancetype)initWithFrame:(CGRect)frame andDropdownViewHeight:(NSInteger)height {
+    self = [super initWithFrame:frame];
+//    DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithFrame:frame dropViewHeight:400];
+    DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 0) width:frame.size.width andHeight:30 dropViewHeight:400];
+    [self addSubview:menu];
+    _menu = menu;
+    return self;
+}
+
 - (instancetype)initWithFrame:(CGRect)frame andMenuHeight:(NSInteger)height
 {
     self = [super initWithFrame:frame];
@@ -48,7 +57,7 @@
 - (void)menuReloadData
 {
     [_menu reloadData];
-    [_menu selectIndexPath:[DOPIndexPath indexPathWithCol:0 row:0 item:2]];
+//    [_menu selectIndexPath:[DOPIndexPath indexPathWithCol:0 row:0 item:2]];
 }
 
 - (NSInteger)numberOfColumnsInMenu:(DOPDropDownMenu *)menu

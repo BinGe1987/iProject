@@ -140,6 +140,9 @@ typedef NS_ENUM(NSInteger, DOPIndicatorAlignType) {
 - (instancetype)initWithOrigin:(CGPoint)origin width:(CGFloat)width andHeight:(CGFloat)height;
 
 - (instancetype)initWithOrigin:(CGPoint)origin width:(CGFloat)width andHeight:(CGFloat)height dropViewHeight:(CGFloat)dropViewHeight;
+
+- (instancetype)initWithFrame:(CGRect)frame dropViewHeight:(CGFloat)dropViewHeight;
+
 // 获取title
 - (NSString *)titleForRowAtIndexPath:(DOPIndexPath *)indexPath;
 
