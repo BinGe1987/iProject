@@ -62,7 +62,7 @@
 //    [self.view addSubview:view];
     TOCK
     
-    self.menu = [[DropdownMenu alloc] initWithFrame:self.view.bounds];
+    DropdownMenu *menu = [[DropdownMenu alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame) - 64) andMenuHeight:44];
     DropdownMenuItem *item11  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
     DropdownMenuItem *item12  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
     DropdownMenuItem *item13  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
@@ -79,11 +79,11 @@
     DropdownMenuItem *item21  = [[DropdownMenuItem alloc] initWithID:1 name:@"123"];
     DropdownMenuItem *item22  = [[DropdownMenuItem alloc] initWithID:1 name:@"456"];
     DropdownMenuItem *item23  = [[DropdownMenuItem alloc] initWithID:1 name:@"789"];
-    NSArray *item2 = @[item21,item22, item23];
+    NSArray *item2 = @[item21,item22, item23,item21,item22, item23,item21,item22, item23,item21,item22, item23,item21,item22, item23];
     
-    self.menu.menuItems = @[item1,item2];
+    menu.menuItems = @[item1,item2];
     
-    [self.view addSubview:self.menu];
+    [self.view addSubview:menu];
     
 }
 

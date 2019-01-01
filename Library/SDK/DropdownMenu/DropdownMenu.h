@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSArray *menuItems;
 
+- (instancetype)initWithFrame:(CGRect)frame andMenuHeight:(NSInteger)height;
+
 @end
 
 NS_ASSUME_NONNULL_END

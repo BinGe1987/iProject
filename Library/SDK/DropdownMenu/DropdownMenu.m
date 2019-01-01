@@ -16,12 +16,12 @@
 
 @implementation DropdownMenu
 
-- (instancetype)initWithFrame:(CGRect)frame
+- (instancetype)initWithFrame:(CGRect)frame andMenuHeight:(NSInteger)height
 {
     self = [super initWithFrame:frame];
     if (self) {
         // 添加下拉菜单
-        DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 64) andHeight:44];
+        DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 0) width:frame.size.width andHeight:height dropViewHeight:(frame.size.height - height)];
         [self addSubview:menu];
          _menu = menu;
     }

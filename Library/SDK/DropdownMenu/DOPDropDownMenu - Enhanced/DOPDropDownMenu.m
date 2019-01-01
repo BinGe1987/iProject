@@ -356,6 +356,10 @@
 }
 
 - (instancetype)initWithOrigin:(CGPoint)origin width:(CGFloat)width andHeight:(CGFloat)height {
+    return [self initWithOrigin:origin width:width andHeight:height dropViewHeight:(IS_IPHONE_4_OR_LESS ? 200 : kTableViewHeight)];
+}
+
+- (instancetype)initWithOrigin:(CGPoint)origin width:(CGFloat)width andHeight:(CGFloat)height dropViewHeight:(CGFloat)dropViewHeight {
     self = [self initWithFrame:CGRectMake(origin.x, origin.y, width, height)];
     if (self) {
         _origin = origin;
@@ -370,8 +374,8 @@
         _detailTextFont = [UIFont systemFontOfSize:11];
         _detailTextColor = kDetailTextColor;
         _indicatorColor = kTextColor;
-//        _tableViewHeight = IS_IPHONE_4_OR_LESS ? 200 : kTableViewHeight;
-        _tableViewHeight = [UIScreen mainScreen].bounds.size.height - origin.y - height;
+        //        _tableViewHeight = IS_IPHONE_4_OR_LESS ? 200 : kTableViewHeight;
+        _tableViewHeight = dropViewHeight;
         _dropDownViewWidth = [UIScreen mainScreen].bounds.size.width;
         _showBottomImage = YES;
         _isClickHaveItemValid = YES;
@@ -416,7 +420,7 @@
         bottomShadow.backgroundColor = kSeparatorColor;
         bottomShadow.hidden = YES;
         [self addSubview:bottomShadow];
-//        _bottomShadow = bottomShadow;
+        //        _bottomShadow = bottomShadow;
     }
     return self;
 }
