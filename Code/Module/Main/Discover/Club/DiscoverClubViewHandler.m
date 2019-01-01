@@ -19,6 +19,7 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.tableView = (UITableView *)view;
+//    self.tableView.userInteractionEnabled = NO;
     self.tableView.showsVerticalScrollIndicator = FALSE; //垂直滚动条
     self.tableView.showsHorizontalScrollIndicator = FALSE;//水平滚动条
     return self;

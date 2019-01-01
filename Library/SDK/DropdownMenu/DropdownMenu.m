@@ -17,9 +17,8 @@
 @implementation DropdownMenu
 
 - (instancetype)initWithFrame:(CGRect)frame andDropdownViewHeight:(NSInteger)height {
-    self = [super initWithFrame:frame];
-//    DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithFrame:frame dropViewHeight:400];
-    DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 0) width:frame.size.width andHeight:30 dropViewHeight:400];
+    self = [super initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height + height)];
+    DOPDropDownMenu *menu = [[DOPDropDownMenu alloc] initWithOrigin:CGPointMake(0, 0) width:frame.size.width andHeight:30 dropViewHeight:height];
     [self addSubview:menu];
     _menu = menu;
     return self;

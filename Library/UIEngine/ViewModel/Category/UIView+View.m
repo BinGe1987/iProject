@@ -38,6 +38,17 @@ static char shapeLayerKey;
     return nil;
 }
 
+- (UIView *)getRootView {
+    return [self getRootView:self];
+}
+
+- (UIView *)getRootView:(UIView *)view {
+    if (view.superview) {
+        return [self getRootView:view.superview];
+    }
+    return view;
+}
+
 - (void)assignmentForMaxSize:(CGSize)size {
     CGFloat maxWidth, maxHeight;
     ViewParams *vp = self.viewParams;

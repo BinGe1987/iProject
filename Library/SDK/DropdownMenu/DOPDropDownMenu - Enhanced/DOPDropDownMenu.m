@@ -408,6 +408,8 @@
         
         //self tapped
         self.backgroundColor = [UIColor whiteColor];
+        self.exclusiveTouch = YES;
+        self.userInteractionEnabled = YES;
         UIGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(menuTapped:)];
         [self addGestureRecognizer:tapGesture];
         
@@ -476,6 +478,8 @@
         self.backgroundColor = [UIColor whiteColor];
         UIGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(menuTapped:)];
         [self addGestureRecognizer:tapGesture];
+//        self.exclusiveTouch = YES;
+        self.userInteractionEnabled = YES;
         
         //background init and tapped
         _backGroundView = [[UIView alloc] initWithFrame:CGRectMake(origin.x, origin.y + height, dropDownViewSize.width, dropDownViewSize.height)];
@@ -739,7 +743,6 @@
             _leftTableView.frame = CGRectMake(self.origin.x, self.frame.origin.y + self.frame.size.height, _dropDownViewWidth, 0);
             _rightTableView.frame = CGRectMake(self.origin.x + _dropDownViewWidth/2, self.frame.origin.y + self.frame.size.height, _dropDownViewWidth/2, 0);
             [self.superview addSubview:_leftTableView];
-            
         }
         
         if (_showBottomImage) {
@@ -749,6 +752,11 @@
         
         NSInteger num = [_leftTableView numberOfRowsInSection:0];
         CGFloat tableViewHeight = num * kTableViewCellHeight > _tableViewHeight+1 ? _tableViewHeight:num*kTableViewCellHeight+1;
+        
+//        NSInteger num2 = [_rightTableView numberOfRowsInSection:0];
+//        CGFloat tableViewHeight2 = num2 * kTableViewCellHeight > _tableViewHeight+1 ? _tableViewHeight:num2*kTableViewCellHeight+1;
+//
+//        tableViewHeight = MAX(tableViewHeight, tableViewHeight2);
         
         [UIView animateWithDuration:0.2 animations:^{
             if (haveItems) {

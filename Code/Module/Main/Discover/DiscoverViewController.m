@@ -10,7 +10,7 @@
 #import "DiscoverClubPresenter.h"
 #import "DiscoverTechPresenter.h"
 
-@interface DiscoverViewController ()<PresenterDelegate, ViewPagerDelegate>
+@interface DiscoverViewController ()<PresenterDelegate, ViewPagerDelegate, UIGestureRecognizerDelegate>
 
 @property (nonatomic, strong) DiscoverNvPresenter *nvPresenter;
 
@@ -40,6 +40,20 @@
     
 }
 
+//- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+//    UIView *view = [super hitTest:point withEvent:event];
+//    if (view == nil) {
+//        for (UIView *subView in self.subviews) {
+//            CGPoint tp = [subView convertPoint:point fromView:self];
+//            if (CGRectContainsPoint(subView.bounds, tp)) {
+//                view = subView;
+//            }
+//        }
+//    }
+//    
+//    return view;
+//}
+
 - (void)viewPager:(id)viewPager pageIndexDidChanged:(NSInteger)index {
     [self.nvPresenter viewPager:viewPager pageIndexDidChanged:index];
 }
@@ -48,6 +62,8 @@
     ViewPager *pager = (ViewPager *)[self findViewByName:@"pager"];
     [pager scrollToPage:[event integerValue]];
 }
+
+
 
 - (void)onLayoutSubViewsCompleted {
     CGFloat topHeight = STATUSBARHIEGHT + NVBARHIEGHT;
