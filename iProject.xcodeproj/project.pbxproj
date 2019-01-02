@@ -43,6 +43,7 @@
 		771CA3ED21DCEFC000B00F11 /* CommentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3EC21DCEFC000B00F11 /* CommentData.m */; };
 		771CA3F021DCF07A00B00F11 /* ClubDetailCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3EF21DCF07A00B00F11 /* ClubDetailCommentCell.m */; };
 		771CA3F221DCF0D700B00F11 /* ClubDetailComment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3F121DCF0D700B00F11 /* ClubDetailComment.xml */; };
+		771CA3F421DD0AB200B00F11 /* TechDetail.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3F321DD0AB200B00F11 /* TechDetail.xml */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -374,6 +375,7 @@
 		771CA3EE21DCF07A00B00F11 /* ClubDetailCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailCommentCell.h; sourceTree = "<group>"; };
 		771CA3EF21DCF07A00B00F11 /* ClubDetailCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailCommentCell.m; sourceTree = "<group>"; };
 		771CA3F121DCF0D700B00F11 /* ClubDetailComment.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailComment.xml; sourceTree = "<group>"; };
+		771CA3F321DD0AB200B00F11 /* TechDetail.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechDetail.xml; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -961,6 +963,7 @@
 			children = (
 				771CA3A121DC98AE00B00F11 /* TechDetailViewController.h */,
 				771CA3A221DC98AE00B00F11 /* TechDetailViewController.m */,
+				771CA3F321DD0AB200B00F11 /* TechDetail.xml */,
 			);
 			path = TechDetail;
 			sourceTree = "<group>";
@@ -2605,6 +2608,7 @@
 				77CEA4C721D481D500B388E4 /* Test2.json in Resources */,
 				77FAFCD921C28C2D002A90B0 /* Home.json in Resources */,
 				77CEA4DC21D498F200B388E4 /* DiscoverTech.json in Resources */,
+				771CA3F421DD0AB200B00F11 /* TechDetail.xml in Resources */,
 				771CA3D721DCC2ED00B00F11 /* ClubDetailAd.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
