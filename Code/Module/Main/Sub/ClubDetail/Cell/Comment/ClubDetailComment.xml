@@ -8,7 +8,7 @@
         view_width="full"
         view_height="full"
         layout_marginTop="4"
-        view_background="#ffffff">
+        view_background="#ffffffff">
         
         <Label
             view_width="auto"
@@ -41,9 +41,125 @@
         view_width="full"
         view_height="full"
         layout_marginBottom="24"
+        layout_marginTop="46"
         view_background="#00ff0fff">
         
-        
+        <ImageView
+            view_width="52"
+            view_height="52"
+            view_borderRadius="26"
+            view_masksToBounds="YES"
+            image_src="@default_head_girl"
+            layout_marginLeft="18"
+            layout_marginTop="18"/>
+            
+        <Label
+            view_width="auto"
+            view_height="auto"
+            text_size="15"
+            text_color="#2e2e2e"
+            text_src="N/A"
+            layout_gravity="left|top"
+            layout_marginTop="15"
+            layout_marginLeft="85" />
+            
+        <Label
+            view_width="auto"
+            view_height="auto"
+            text_size="15"
+            text_color="#999999"
+            text_src="2019-01-01 00:00:00"
+            layout_gravity="right|top"
+            layout_marginTop="15"
+            layout_marginRight="15" />
+            
+        <Label
+            view_width="auto"
+            view_height="auto"
+            text_size="12"
+            text_color="#ffb925"
+            text_src="技师：--【--】"
+            layout_gravity="left|top"
+            layout_marginTop="40"
+            layout_marginLeft="85" />
+            
+        <Label
+            view_width="auto"
+            view_height="auto"
+            text_size="15"
+            text_color="#2e2e2e"
+            text_src="暂无评论"
+            layout_gravity="left|top"
+            layout_marginTop="60"
+            layout_marginLeft="85" />
+
+        <LinearLayout
+            view_width="272sp"
+            view_height="65sp"
+            layout_marginTop="110"
+            layout_marginLeft="81"
+            view_orientation="H" >
+            <ImageView
+                view_width="65sp"
+                view_height="65sp"
+                view_masksToBounds="YES"
+                layout_marginLeft="4"
+                image_src="@default_club"
+                image_scaleType="full"/>
+            <ImageView
+                view_width="65sp"
+                view_height="65sp"
+                view_masksToBounds="YES"
+                layout_marginLeft="4"
+                image_src="@default_club"
+                image_scaleType="full"/>
+            <ImageView
+                view_width="65sp"
+                view_height="65sp"
+                view_masksToBounds="YES"
+                layout_marginLeft="4"
+                image_src="@default_club"
+                image_scaleType="full"/>
+            <ImageView
+                view_width="65sp"
+                view_height="65sp"
+                view_masksToBounds="YES"
+                layout_marginLeft="4"
+                image_src="@default_club"
+                image_scaleType="full"/>
+        </LinearLayout>
+        <LinearLayout
+            view_width="auto"
+            view_height="auto"
+            layout_gravity="right|bottom"
+            layout_marginRight="16"
+            layout_marginBottom="30"
+            view_orientation="H" >
+            <ImageView
+                view_width="auto"
+                view_height="auto"
+                image_src="@icon_like"/>
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_size="14"
+                text_color="#5f5f5f"
+                text_src="0"
+                layout_marginLeft="5"/>
+                
+            <ImageView
+                view_width="auto"
+                view_height="auto"
+                layout_marginLeft="15"
+                image_src="@icon_comment"/>
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_size="14"
+                text_color="#5f5f5f"
+                text_src="0"
+                layout_marginLeft="5"/>
+        </LinearLayout>
     </FrameLayout>
 </FrameLayout>
 

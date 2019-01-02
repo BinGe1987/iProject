@@ -70,7 +70,11 @@
         self.width = [[width substringToIndex:[width length] -1] floatValue];
     } else {
         self.widthValueType = VALUE;
-        self.width = [width floatValue];
+        if ([width hasSuffix:@"sp"]) {
+            self.width = [[width substringToIndex:[width length] -2] floatValue] * SCREENSCALE;
+        } else {
+            self.width = [width floatValue];
+        }
     }
     NSString *height = [model getString:@"view_height" defaultValue:@"auto"];
     if ([height isEqualToString:@"auto"]) {
