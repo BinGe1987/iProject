@@ -34,6 +34,11 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma make  订单相关
 #define OperationGetOrderData (@"OperationGetOrderData")
 
+#pragma make 二级页面
+///获取会所主页数据
+#define OperationGetClubDetailData (@"OperationGetClubDetailData")
+
+
 @interface DataCenter (YDD)
 
 ///获取配置信息

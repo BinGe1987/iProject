@@ -6,12 +6,16 @@
 //
 
 #import "ClubDetailController.h"
+#import "ClubDetailPresenter.h"
 
 @implementation ClubDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setContentViewWithXML:@"ClubDetail.xml"];
+    
+    ClubDetailPresenter *prsenter = [[ClubDetailPresenter alloc] initWithView:[self findViewByName:@"table"]];
+    [self addPresenter:prsenter];
 }
 
 

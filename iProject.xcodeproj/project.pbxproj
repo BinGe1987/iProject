@@ -20,6 +20,13 @@
 		771CA39F21DC758200B00F11 /* ClubDetail.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA39E21DC758200B00F11 /* ClubDetail.xml */; };
 		771CA3A321DC98AE00B00F11 /* TechDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3A221DC98AE00B00F11 /* TechDetailViewController.m */; };
 		771CA3A721DC9C6000B00F11 /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3A621DC9C6000B00F11 /* ClassifyViewController.m */; };
+		771CA3AA21DC9F9200B00F11 /* ClubDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3A921DC9F9200B00F11 /* ClubDetailPresenter.m */; };
+		771CA3AD21DCA01A00B00F11 /* ClubDetailViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3AC21DCA01A00B00F11 /* ClubDetailViewHandler.m */; };
+		771CA3B021DCA17E00B00F11 /* ClubDetailAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3AF21DCA17E00B00F11 /* ClubDetailAdapter.m */; };
+		771CA3B421DCA20B00B00F11 /* ClubHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3B321DCA20B00B00F11 /* ClubHandler.m */; };
+		771CA3B721DCA25400B00F11 /* ClubDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3B621DCA25400B00F11 /* ClubDetailData.m */; };
+		771CA3BA21DCA26D00B00F11 /* ClubDetailPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3B921DCA26D00B00F11 /* ClubDetailPerformer.m */; };
+		771CA3BD21DCA2C100B00F11 /* ClubDetailParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3BC21DCA2C100B00F11 /* ClubDetailParser.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -312,6 +319,20 @@
 		771CA3A221DC98AE00B00F11 /* TechDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechDetailViewController.m; sourceTree = "<group>"; };
 		771CA3A521DC9C6000B00F11 /* ClassifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
 		771CA3A621DC9C6000B00F11 /* ClassifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
+		771CA3A821DC9F9200B00F11 /* ClubDetailPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailPresenter.h; sourceTree = "<group>"; };
+		771CA3A921DC9F9200B00F11 /* ClubDetailPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailPresenter.m; sourceTree = "<group>"; };
+		771CA3AB21DCA01A00B00F11 /* ClubDetailViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailViewHandler.h; sourceTree = "<group>"; };
+		771CA3AC21DCA01A00B00F11 /* ClubDetailViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailViewHandler.m; sourceTree = "<group>"; };
+		771CA3AE21DCA17E00B00F11 /* ClubDetailAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailAdapter.h; sourceTree = "<group>"; };
+		771CA3AF21DCA17E00B00F11 /* ClubDetailAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailAdapter.m; sourceTree = "<group>"; };
+		771CA3B221DCA20B00B00F11 /* ClubHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubHandler.h; sourceTree = "<group>"; };
+		771CA3B321DCA20B00B00F11 /* ClubHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubHandler.m; sourceTree = "<group>"; };
+		771CA3B521DCA25400B00F11 /* ClubDetailData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailData.h; sourceTree = "<group>"; };
+		771CA3B621DCA25400B00F11 /* ClubDetailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailData.m; sourceTree = "<group>"; };
+		771CA3B821DCA26D00B00F11 /* ClubDetailPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailPerformer.h; sourceTree = "<group>"; };
+		771CA3B921DCA26D00B00F11 /* ClubDetailPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailPerformer.m; sourceTree = "<group>"; };
+		771CA3BB21DCA2C100B00F11 /* ClubDetailParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailParser.h; sourceTree = "<group>"; };
+		771CA3BC21DCA2C100B00F11 /* ClubDetailParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailParser.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -882,6 +903,12 @@
 			children = (
 				771CA39921DC695400B00F11 /* ClubDetailController.h */,
 				771CA39A21DC695400B00F11 /* ClubDetailController.m */,
+				771CA3A821DC9F9200B00F11 /* ClubDetailPresenter.h */,
+				771CA3A921DC9F9200B00F11 /* ClubDetailPresenter.m */,
+				771CA3AB21DCA01A00B00F11 /* ClubDetailViewHandler.h */,
+				771CA3AC21DCA01A00B00F11 /* ClubDetailViewHandler.m */,
+				771CA3AE21DCA17E00B00F11 /* ClubDetailAdapter.h */,
+				771CA3AF21DCA17E00B00F11 /* ClubDetailAdapter.m */,
 				771CA39E21DC758200B00F11 /* ClubDetail.xml */,
 			);
 			path = ClubDetail;
@@ -903,6 +930,21 @@
 				771CA3A621DC9C6000B00F11 /* ClassifyViewController.m */,
 			);
 			path = Classify;
+			sourceTree = "<group>";
+		};
+		771CA3B121DCA1EB00B00F11 /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				771CA3B221DCA20B00B00F11 /* ClubHandler.h */,
+				771CA3B321DCA20B00B00F11 /* ClubHandler.m */,
+				771CA3B821DCA26D00B00F11 /* ClubDetailPerformer.h */,
+				771CA3B921DCA26D00B00F11 /* ClubDetailPerformer.m */,
+				771CA3BB21DCA2C100B00F11 /* ClubDetailParser.h */,
+				771CA3BC21DCA2C100B00F11 /* ClubDetailParser.m */,
+				771CA3B521DCA25400B00F11 /* ClubDetailData.h */,
+				771CA3B621DCA25400B00F11 /* ClubDetailData.m */,
+			);
+			path = Club;
 			sourceTree = "<group>";
 		};
 		7723E1B421D6715D00B77890 /* Category */ = {
@@ -2275,6 +2317,7 @@
 				77EA8F8521B90A18001B8959 /* Home */,
 				77CEA4F321D4C28E00B388E4 /* Discover */,
 				77CEA55F21D64BEC00B388E4 /* Order */,
+				771CA3B121DCA1EB00B00F11 /* Club */,
 				776B55A621BE628900793CAF /* DataCenter+YDD.h */,
 				776B55A721BE628900793CAF /* DataCenter+YDD.m */,
 				77CEA4C321D3D98600B388E4 /* Data+Update.h */,
@@ -2477,6 +2520,7 @@
 				776B55B621BE6BD000793CAF /* ButtonViewParams.m in Sources */,
 				77CEA4E721D4B69700B388E4 /* DiscoverTechPresenter.m in Sources */,
 				776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */,
+				771CA3AA21DC9F9200B00F11 /* ClubDetailPresenter.m in Sources */,
 				7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */,
 				77CEA56821D64C3800B388E4 /* OrderData.m in Sources */,
 				7734C12121D23A45009D1EE8 /* KafkaReplicatorHeader.m in Sources */,
@@ -2487,6 +2531,7 @@
 				77CEA52B21D5071200B388E4 /* CollectionViewAdapter.m in Sources */,
 				77B054E821CB486C0045A489 /* NetReachability.m in Sources */,
 				7734C0E121D2318E009D1EE8 /* HomeModule.m in Sources */,
+				771CA3B421DCA20B00B00F11 /* ClubHandler.m in Sources */,
 				7734C12821D23A93009D1EE8 /* UITableView+Refresh.m in Sources */,
 				77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */,
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
@@ -2497,6 +2542,7 @@
 				77EA8F2921B90226001B8959 /* DataHandler.m in Sources */,
 				77B0545921C943760045A489 /* CALayer+YYWebImage.m in Sources */,
 				77CEA4DA21D4974D00B388E4 /* ViewPagerLayoutParams.m in Sources */,
+				771CA3BD21DCA2C100B00F11 /* ClubDetailParser.m in Sources */,
 				77B054E521CB47910045A489 /* Reachability.m in Sources */,
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */,
@@ -2541,6 +2587,7 @@
 				776B55CC21BF81B300793CAF /* UIButton+EnlargeEdge.m in Sources */,
 				77CEA4FF21D4C30D00B388E4 /* DiscoverTechPerformer.m in Sources */,
 				77EA8F4921B90226001B8959 /* ViewModel.m in Sources */,
+				771CA3B021DCA17E00B00F11 /* ClubDetailAdapter.m in Sources */,
 				77B0559521D1FB250045A489 /* ViewHandler.m in Sources */,
 				7734C12221D23A45009D1EE8 /* KafkaReplicatorLayer.m in Sources */,
 				77CEA51B21D4FA6900B388E4 /* CollectionViewModel.m in Sources */,
@@ -2561,6 +2608,7 @@
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
 				77B0551C21CD247E0045A489 /* MainModule.m in Sources */,
 				771CA39B21DC695400B00F11 /* ClubDetailController.m in Sources */,
+				771CA3AD21DCA01A00B00F11 /* ClubDetailViewHandler.m in Sources */,
 				77CEA53121D50D3600B388E4 /* DiscoverTechAdapter.m in Sources */,
 				771CA36A21D8A8E100B00F11 /* Utils.m in Sources */,
 				77B0545821C943760045A489 /* UIImage+YYWebImage.m in Sources */,
@@ -2646,6 +2694,7 @@
 				77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */,
 				77B0553821CEAE530045A489 /* Aspects+My.m in Sources */,
 				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,
+				771CA3B721DCA25400B00F11 /* ClubDetailData.m in Sources */,
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,
 				7734C11C21D23A45009D1EE8 /* KafkaReplicatorFooter.m in Sources */,
@@ -2683,6 +2732,7 @@
 				77CEA4B121D3909900B388E4 /* TechUITableViewCell.m in Sources */,
 				77B0550821CCD0D90045A489 /* ConfigHandler.m in Sources */,
 				77EA8F6721B90227001B8959 /* LinearLayout.m in Sources */,
+				771CA3BA21DCA26D00B00F11 /* ClubDetailPerformer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
