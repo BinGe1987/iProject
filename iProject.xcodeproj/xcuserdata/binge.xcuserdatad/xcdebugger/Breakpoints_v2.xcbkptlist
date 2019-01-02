@@ -72,13 +72,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Code/Module/Main/Sub/ClubDetail/ClubDetailPresenter.m"
-            timestampString = "568108172.774043"
+            filePath = "Code/DataCenter/Club/ClubDetailPerformer.m"
+            timestampString = "568109473.6044199"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "-initWithView:"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "-perform:params:callback:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Code/DataCenter/Club/ClubDetailPerformer.m"
+            timestampString = "568109473.6048549"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "19"
+            endingLineNumber = "19"
+            landmarkName = "-parse:withSource:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

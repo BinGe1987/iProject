@@ -1,18 +1,16 @@
 //
-//  ClubDetailParser.h
+//  Performer+Parser.h
 //  APP
 //
 //  Created by BinGe on 2019/1/2.
 //
 
+#import "Performer.h"
 #import "Parser.h"
-#import "ClubDetailData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ClubDetailParser : Parser
-
-
+@interface Performer (Parser)<IParser>
 
 @end
 

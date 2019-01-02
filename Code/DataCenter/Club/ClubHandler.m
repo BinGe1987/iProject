@@ -7,7 +7,6 @@
 
 #import "ClubHandler.h"
 #import "ClubDetailPerformer.h"
-#import "ClubDetailParser.h"
 
 @implementation ClubHandler
 
@@ -15,13 +14,9 @@
 {
     self = [super init];
     if (self) {
-        [self bind:OperationGetClubDetailData performer:[ClubDetailPerformer new] parser:[ClubDetailParser new]];
+        [self bind:OperationGetClubDetailData performer:[ClubDetailPerformer class]];
     }
     return self;
-}
-
-- (id)getData {
-    return nil;
 }
 
 @end

@@ -26,7 +26,7 @@
 		771CA3B421DCA20B00B00F11 /* ClubHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3B321DCA20B00B00F11 /* ClubHandler.m */; };
 		771CA3B721DCA25400B00F11 /* ClubDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3B621DCA25400B00F11 /* ClubDetailData.m */; };
 		771CA3BA21DCA26D00B00F11 /* ClubDetailPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3B921DCA26D00B00F11 /* ClubDetailPerformer.m */; };
-		771CA3BD21DCA2C100B00F11 /* ClubDetailParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3BC21DCA2C100B00F11 /* ClubDetailParser.m */; };
+		771CA3C021DCA7A100B00F11 /* Performer+Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3BF21DCA7A100B00F11 /* Performer+Parser.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -331,8 +331,8 @@
 		771CA3B621DCA25400B00F11 /* ClubDetailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailData.m; sourceTree = "<group>"; };
 		771CA3B821DCA26D00B00F11 /* ClubDetailPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailPerformer.h; sourceTree = "<group>"; };
 		771CA3B921DCA26D00B00F11 /* ClubDetailPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailPerformer.m; sourceTree = "<group>"; };
-		771CA3BB21DCA2C100B00F11 /* ClubDetailParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailParser.h; sourceTree = "<group>"; };
-		771CA3BC21DCA2C100B00F11 /* ClubDetailParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailParser.m; sourceTree = "<group>"; };
+		771CA3BE21DCA7A100B00F11 /* Performer+Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Performer+Parser.h"; sourceTree = "<group>"; };
+		771CA3BF21DCA7A100B00F11 /* Performer+Parser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Performer+Parser.m"; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -939,8 +939,6 @@
 				771CA3B321DCA20B00B00F11 /* ClubHandler.m */,
 				771CA3B821DCA26D00B00F11 /* ClubDetailPerformer.h */,
 				771CA3B921DCA26D00B00F11 /* ClubDetailPerformer.m */,
-				771CA3BB21DCA2C100B00F11 /* ClubDetailParser.h */,
-				771CA3BC21DCA2C100B00F11 /* ClubDetailParser.m */,
 				771CA3B521DCA25400B00F11 /* ClubDetailData.h */,
 				771CA3B621DCA25400B00F11 /* ClubDetailData.m */,
 			);
@@ -2087,6 +2085,8 @@
 				776B55EF21C00D6000793CAF /* Parser.m */,
 				776B55EB21C00CC000793CAF /* Performer.h */,
 				776B55EC21C00CC000793CAF /* Performer.m */,
+				771CA3BE21DCA7A100B00F11 /* Performer+Parser.h */,
+				771CA3BF21DCA7A100B00F11 /* Performer+Parser.m */,
 				77EA8ECC21B90226001B8959 /* DataHandler.h */,
 				77EA8EC521B90226001B8959 /* DataHandler.m */,
 				77EA8ED021B90226001B8959 /* CommonHandler.h */,
@@ -2542,7 +2542,6 @@
 				77EA8F2921B90226001B8959 /* DataHandler.m in Sources */,
 				77B0545921C943760045A489 /* CALayer+YYWebImage.m in Sources */,
 				77CEA4DA21D4974D00B388E4 /* ViewPagerLayoutParams.m in Sources */,
-				771CA3BD21DCA2C100B00F11 /* ClubDetailParser.m in Sources */,
 				77B054E521CB47910045A489 /* Reachability.m in Sources */,
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */,
@@ -2552,6 +2551,7 @@
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,
 				77B053CE21C8A5F90045A489 /* Net.m in Sources */,
 				77B054FF21CBE6910045A489 /* EventBus.m in Sources */,
+				771CA3C021DCA7A100B00F11 /* Performer+Parser.m in Sources */,
 				77EA8FBE21B94BB5001B8959 /* TestModule.m in Sources */,
 				776B55D321BFA2C600793CAF /* UIViewController+Layout.m in Sources */,
 				77B0553C21D0787B0045A489 /* GlobalModule.m in Sources */,

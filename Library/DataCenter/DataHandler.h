@@ -8,6 +8,7 @@
 #import <Foundation/Foundation.h>
 #import "Performer.h"
 #import "Parser.h"
+#import "Performer+Parser.h"
 
 @protocol HandlerDelegate <NSObject>
 
@@ -37,6 +38,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)parseData:(id)operation withSourceData:(id)source;
 
 - (void)bind:(id)operation performer:(_Nullable id<IPerformer>)performer parser:(_Nullable id<IParser>)parser;
+
+- (void)bind:(id)operation performer:(Class)performerPlusClas;
 
 
 @end

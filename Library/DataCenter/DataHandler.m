@@ -27,11 +27,11 @@
 {
     self = [super init];
     if (self) {
-        if (![self conformsToProtocol: @protocol(HandlerDelegate)]) {
-            Log(@"DataHandler子类必须实现HandlerDelegate协议。");
-            [self doesNotRecognizeSelector:_cmd];
-            return nil;
-        }
+//        if (![self conformsToProtocol: @protocol(HandlerDelegate)]) {
+//            Log(@"DataHandler子类必须实现HandlerDelegate协议。");
+//            [self doesNotRecognizeSelector:_cmd];
+//            return nil;
+//        }
         self.performers = [[NSMutableDictionary alloc] init];
         self.parsers = [[NSMutableDictionary alloc] init];
         self.delegate = (id<HandlerDelegate>)self;
@@ -80,6 +80,18 @@
     }
     if (parser) {
         [self.parsers setObject:parser forKey:key];
+    }
+    
+}
+
+- (void)bind:(id)operation performer:(Class)performerPlusClass {
+    NSString *key = [NSString stringWithFormat:@"%@",operation];
+    Performer *performer = [[performerPlusClass alloc] init];
+    if (performer) {
+        [self.performers setObject:performer forKey:key];
+    }
+    if (performer) {
+        [self.parsers setObject:performer forKey:key];
     }
     
 }
