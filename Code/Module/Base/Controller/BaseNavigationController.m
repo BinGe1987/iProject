@@ -18,6 +18,7 @@
     
     [self.navigationBar setTintColor:UIColorMain];
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor clearColor]}forState:UIControlStateNormal];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorMain}];
 
 }
 

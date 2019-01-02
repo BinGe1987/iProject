@@ -1,16 +1,15 @@
 //
-//  ClubHandler.h
+//  ProjectData.h
 //  APP
 //
 //  Created by BinGe on 2019/1/2.
 //
 
-#import "DataHandler.h"
-#import "ClubDetailData.h"
+#import "Data.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ClubHandler : DataHandler
+@interface ProjectData : Data
 
 @end
 

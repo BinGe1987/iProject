@@ -13,6 +13,7 @@
 #import "HomeHandler.h"
 #import "DiscoverHandler.h"
 #import "OrderHandler.h"
+#import "ClubHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
