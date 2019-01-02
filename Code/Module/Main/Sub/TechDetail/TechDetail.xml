@@ -5,7 +5,7 @@
     view_height="full"
     view_background="#ffffffff">
     <ScrollView
-        view_name="table"
+        view_name="scroll"
         view_width="full"
         view_height="full"
         view_background="#ffffffff" />

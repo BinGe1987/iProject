@@ -6,6 +6,7 @@
 //
 
 #import "TechDetailController.h"
+#import "TechDetailPresenter.h"
 
 @interface TechDetailController ()
 
@@ -16,11 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setContentViewWithXML:@"TechDetail.xml"];
+    
+    [self addPresenter:[[TechDetailPresenter alloc] initWithView:[self findViewByName:@"scroll"]]];
 }
 
 - (void)onLayoutSubViewsCompleted {
     CGFloat topHeight = STATUSBARHIEGHT + NVBARHIEGHT;
-    ScrollView *sv = (ScrollView *)[self findViewByName:@"table"];
+    ScrollView *sv = (ScrollView *)[self findViewByName:@"scroll"];
     sv.contentInset = UIEdgeInsetsMake(topHeight,0,0,0);
     sv.contentOffset = CGPointMake(0, -topHeight);
 }

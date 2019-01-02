@@ -47,6 +47,8 @@
 		771CA3F921DD0CA500B00F11 /* TechHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3F821DD0CA500B00F11 /* TechHandler.m */; };
 		771CA3FC21DD0CB700B00F11 /* TechDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3FB21DD0CB700B00F11 /* TechDetailData.m */; };
 		771CA3FF21DD0D1800B00F11 /* TechDetailPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3FE21DD0D1800B00F11 /* TechDetailPerformer.m */; };
+		771CA40221DD0ED600B00F11 /* TechDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA40121DD0ED600B00F11 /* TechDetailPresenter.m */; };
+		771CA40521DD0EED00B00F11 /* TechDetailViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA40421DD0EED00B00F11 /* TechDetailViewHandler.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -385,6 +387,10 @@
 		771CA3FB21DD0CB700B00F11 /* TechDetailData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechDetailData.m; sourceTree = "<group>"; };
 		771CA3FD21DD0D1800B00F11 /* TechDetailPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TechDetailPerformer.h; sourceTree = "<group>"; };
 		771CA3FE21DD0D1800B00F11 /* TechDetailPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechDetailPerformer.m; sourceTree = "<group>"; };
+		771CA40021DD0ED600B00F11 /* TechDetailPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TechDetailPresenter.h; sourceTree = "<group>"; };
+		771CA40121DD0ED600B00F11 /* TechDetailPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechDetailPresenter.m; sourceTree = "<group>"; };
+		771CA40321DD0EED00B00F11 /* TechDetailViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TechDetailViewHandler.h; sourceTree = "<group>"; };
+		771CA40421DD0EED00B00F11 /* TechDetailViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechDetailViewHandler.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -972,6 +978,10 @@
 			children = (
 				771CA3A121DC98AE00B00F11 /* TechDetailController.h */,
 				771CA3A221DC98AE00B00F11 /* TechDetailController.m */,
+				771CA40021DD0ED600B00F11 /* TechDetailPresenter.h */,
+				771CA40121DD0ED600B00F11 /* TechDetailPresenter.m */,
+				771CA40321DD0EED00B00F11 /* TechDetailViewHandler.h */,
+				771CA40421DD0EED00B00F11 /* TechDetailViewHandler.m */,
 				771CA3F321DD0AB200B00F11 /* TechDetail.xml */,
 			);
 			path = TechDetail;
@@ -2753,6 +2763,7 @@
 				77B0559521D1FB250045A489 /* ViewHandler.m in Sources */,
 				7734C12221D23A45009D1EE8 /* KafkaReplicatorLayer.m in Sources */,
 				77CEA51B21D4FA6900B388E4 /* CollectionViewModel.m in Sources */,
+				771CA40521DD0EED00B00F11 /* TechDetailViewHandler.m in Sources */,
 				77B054F321CB8D240045A489 /* Notification.m in Sources */,
 				77B0558221D122460045A489 /* XMLDictionary.m in Sources */,
 				7734C13321D26ED3009D1EE8 /* HomeTableViewCell.m in Sources */,
@@ -2795,6 +2806,7 @@
 				77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */,
 				771CA3A721DC9C6000B00F11 /* ClassifyViewController.m in Sources */,
 				77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */,
+				771CA40221DD0ED600B00F11 /* TechDetailPresenter.m in Sources */,
 				77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,
 				77CEA55B21D64A6500B388E4 /* OrderPresenter.m in Sources */,
