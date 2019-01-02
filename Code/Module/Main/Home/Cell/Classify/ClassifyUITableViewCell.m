@@ -22,6 +22,18 @@
 
 - (void)initWithSize:(CGSize)size {
     UIView *view = [UIView viewWithJSON:@"ClassifyCell.json" size:size];
+    UIButton *btn1 = (UIButton *)[view findViewByName:@"classify_hydrotherapy"];
+    [btn1 setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"ClassifyViewController" animated:YES data:nil];
+    }];
+    UIButton *btn2 = (UIButton *)[view findViewByName:@"classify_tuina"];
+    [btn2 setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"ClassifyViewController" animated:YES data:nil];
+    }];
+    UIButton *btn3 = (UIButton *)[view findViewByName:@"classify_bathing"];
+    [btn3 setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"ClassifyViewController" animated:YES data:nil];
+    }];
     [self.contentView addSubview:view];
 }
 

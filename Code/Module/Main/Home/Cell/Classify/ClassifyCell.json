@@ -28,6 +28,12 @@
                             "layout_marginLeft":"5",
                             "layout_marginRight":"5",
                             "image_src":"@水疗"
+                        },
+                        {
+                            "view_name":"classify_hydrotherapy",
+                            "view_type":"button",
+                            "view_width":"full",
+                            "view_height":"full",
                         }
                     ]
                 },
@@ -45,6 +51,12 @@
                             "layout_marginLeft":"5",
                             "layout_marginRight":"5",
                             "image_src":"@推拿"
+                        },
+                        {
+                            "view_name":"classify_tuina",
+                            "view_type":"button",
+                            "view_width":"full",
+                            "view_height":"full",
                         }
                     ]
                 },
@@ -62,6 +74,12 @@
                             "layout_marginLeft":"5",
                             "layout_marginRight":"5",
                             "image_src":"@浴足"
+                        },
+                        {
+                            "view_name":"classify_bathing",
+                            "view_type":"button",
+                            "view_width":"full",
+                            "view_height":"full",
                         }
                     ]
                 }

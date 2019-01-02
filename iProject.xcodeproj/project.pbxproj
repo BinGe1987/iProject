@@ -17,6 +17,9 @@
 		771CA39321D9A5B000B00F11 /* DropdownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39221D9A5B000B00F11 /* DropdownMenuItem.m */; };
 		771CA39621DC59E500B00F11 /* DescoverClubMenuViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39521DC59E500B00F11 /* DescoverClubMenuViewHandler.m */; };
 		771CA39B21DC695400B00F11 /* ClubDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39A21DC695400B00F11 /* ClubDetailController.m */; };
+		771CA39F21DC758200B00F11 /* ClubDetail.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA39E21DC758200B00F11 /* ClubDetail.xml */; };
+		771CA3A321DC98AE00B00F11 /* TechDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3A221DC98AE00B00F11 /* TechDetailViewController.m */; };
+		771CA3A721DC9C6000B00F11 /* ClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3A621DC9C6000B00F11 /* ClassifyViewController.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -304,6 +307,11 @@
 		771CA39521DC59E500B00F11 /* DescoverClubMenuViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescoverClubMenuViewHandler.m; sourceTree = "<group>"; };
 		771CA39921DC695400B00F11 /* ClubDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailController.h; sourceTree = "<group>"; };
 		771CA39A21DC695400B00F11 /* ClubDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailController.m; sourceTree = "<group>"; };
+		771CA39E21DC758200B00F11 /* ClubDetail.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = ClubDetail.xml; sourceTree = "<group>"; };
+		771CA3A121DC98AE00B00F11 /* TechDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TechDetailViewController.h; sourceTree = "<group>"; };
+		771CA3A221DC98AE00B00F11 /* TechDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TechDetailViewController.m; sourceTree = "<group>"; };
+		771CA3A521DC9C6000B00F11 /* ClassifyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyViewController.h; sourceTree = "<group>"; };
+		771CA3A621DC9C6000B00F11 /* ClassifyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewController.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -862,10 +870,39 @@
 		771CA39821DC692900B00F11 /* Sub */ = {
 			isa = PBXGroup;
 			children = (
-				771CA39921DC695400B00F11 /* ClubDetailController.h */,
-				771CA39A21DC695400B00F11 /* ClubDetailController.m */,
+				771CA3A421DC9C4D00B00F11 /* Classify */,
+				771CA39D21DC730800B00F11 /* ClubDetail */,
+				771CA3A021DC989900B00F11 /* TechDetail */,
 			);
 			path = Sub;
+			sourceTree = "<group>";
+		};
+		771CA39D21DC730800B00F11 /* ClubDetail */ = {
+			isa = PBXGroup;
+			children = (
+				771CA39921DC695400B00F11 /* ClubDetailController.h */,
+				771CA39A21DC695400B00F11 /* ClubDetailController.m */,
+				771CA39E21DC758200B00F11 /* ClubDetail.xml */,
+			);
+			path = ClubDetail;
+			sourceTree = "<group>";
+		};
+		771CA3A021DC989900B00F11 /* TechDetail */ = {
+			isa = PBXGroup;
+			children = (
+				771CA3A121DC98AE00B00F11 /* TechDetailViewController.h */,
+				771CA3A221DC98AE00B00F11 /* TechDetailViewController.m */,
+			);
+			path = TechDetail;
+			sourceTree = "<group>";
+		};
+		771CA3A421DC9C4D00B00F11 /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				771CA3A521DC9C6000B00F11 /* ClassifyViewController.h */,
+				771CA3A621DC9C6000B00F11 /* ClassifyViewController.m */,
+			);
+			path = Classify;
 			sourceTree = "<group>";
 		};
 		7723E1B421D6715D00B77890 /* Category */ = {
@@ -2384,6 +2421,7 @@
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
 				7723E1C421D73F6500B77890 /* Login.xml in Resources */,
+				771CA39F21DC758200B00F11 /* ClubDetail.xml in Resources */,
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
 				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
@@ -2493,6 +2531,7 @@
 				77EA8F2B21B90226001B8959 /* DataCenter.m in Sources */,
 				7734C11421D23A45009D1EE8 /* UIScrollView+KafkaConfiguration.m in Sources */,
 				77CEA51421D4F99A00B388E4 /* DiscoverTechViewHandler.m in Sources */,
+				771CA3A321DC98AE00B00F11 /* TechDetailViewController.m in Sources */,
 				771CA37821D8B51100B00F11 /* DropdownMenu.m in Sources */,
 				776B55AB21BE62E100793CAF /* UserData.m in Sources */,
 				771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */,
@@ -2543,6 +2582,7 @@
 				77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */,
 				7723E1CE21D77F6B00B77890 /* UIView+XML.m in Sources */,
 				77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */,
+				771CA3A721DC9C6000B00F11 /* ClassifyViewController.m in Sources */,
 				77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */,
 				77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,

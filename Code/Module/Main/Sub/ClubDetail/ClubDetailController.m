@@ -11,7 +11,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self.navigationController.navigationBar setBackgroundImage:[ImageUtils imageWithColorHex:@"#11000000" size:CGSizeMake(10, 10)] forBarMetrics:UIBarMetricsDefault];
+    [self setContentViewWithXML:@"ClubDetail.xml"];
 }
 
 

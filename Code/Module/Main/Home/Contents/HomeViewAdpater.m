@@ -87,7 +87,10 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    [tableView pushController:@"ClubDetailController" data:nil animated:YES];
+    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    if ([data.name isEqualToString:@"club"]) {
+        [tableView pushController:@"ClubDetailController" data:nil animated:YES];
+    }
 }
 
 @end

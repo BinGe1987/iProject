@@ -9,6 +9,13 @@
 
 @implementation UIViewController (Util)
 
++ (void)pushController:(NSString *)controller animated:(BOOL)animated data:(id __nullable)data {
+    UIViewController *topController = [UIViewController topViewController];
+    UIViewController *vc = [[NSClassFromString(controller) alloc] init];
+    vc.intentData = data;
+    [topController.navigationController pushViewController:vc animated:animated];
+}
+
 + (void)pushSelfAnimated:(BOOL)animated data:(id __nullable)data {
     UIViewController *topController = [UIViewController topViewController];
     UIViewController *vc = [[[self class] alloc] init];

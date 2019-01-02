@@ -31,6 +31,12 @@
                     "text_src":"技师",
                 }
             ]
+        },
+        {
+            "view_name":"btn",
+            "view_type":"button",
+            "view_width":"full",
+            "view_height":"full",
         }
     ]
 }

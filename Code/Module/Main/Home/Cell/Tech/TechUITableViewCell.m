@@ -45,6 +45,10 @@
         UILabel *lable = (UILabel *)[view findViewByName:@"name"];
         lable.text = tech.name;
         [delegate addView:view];
+        UIButton *btn = (UIButton *)[view findViewByName:@"btn"];
+        [btn setClickBlock:^(UIButton * _Nonnull button) {
+            [UIViewController pushController:@"TechDetailViewController" animated:YES data:nil];
+        }];
     }
     [delegate onLayout];
     
