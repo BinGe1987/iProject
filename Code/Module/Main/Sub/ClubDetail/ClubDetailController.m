@@ -23,6 +23,8 @@
     ScrollView *sv = (ScrollView *)[self findViewByName:@"table"];
     sv.contentInset = UIEdgeInsetsMake(topHeight,0,0,0);
     sv.contentOffset = CGPointMake(0, -topHeight);
+    
+    UIView *root = [self.view findViewByName:@"root"];
 }
 
 - (CGRect)safeRect {

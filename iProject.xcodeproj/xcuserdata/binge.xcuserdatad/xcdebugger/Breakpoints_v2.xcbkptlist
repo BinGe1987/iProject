@@ -73,7 +73,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/Module/Main/Sub/ClubDetail/ClubDetailViewHandler.m"
-            timestampString = "568128722.4951071"
+            timestampString = "568131394.5447299"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -85,11 +85,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Library/UIEngine/ViewModel/Category/UIView+JSON.m"
-            timestampString = "568124039.391647"
+            timestampString = "568131394.545224"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "14"
@@ -101,11 +101,11 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Library/UIEngine/ViewModel/Category/UIView+JSON.m"
-            timestampString = "568124039.391711"
+            timestampString = "568131394.545368"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
@@ -121,7 +121,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Library/UIEngine/Model/XMLModel.m"
-            timestampString = "568128722.495313"
+            timestampString = "568131394.545491"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"

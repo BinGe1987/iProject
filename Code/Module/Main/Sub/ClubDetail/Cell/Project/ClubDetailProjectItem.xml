@@ -3,6 +3,56 @@
     view_width="full"
     view_height="84">
     
+    <ImageView
+        view_width="82"
+        view_height="62"
+        layout_gravity="center|left"
+        layout_marginLeft="14"
+        image_src="@default_club"
+        image_scaleType="full"
+        view_masksToBounds="YES"
+        view_borderRadius="3" />
+    
+    <Label
+        view_width="auto"
+        view_height="auto"
+        text_size="16"
+        text_color="#2e2e2e"
+        text_src="项目名字"
+        layout_marginTop="12"
+        layout_marginLeft="110"/>
         
+    <Label
+        view_width="auto"
+        view_height="auto"
+        text_size="14"
+        text_color="#ffb925"
+        text_src="¥--/--分钟"
+        layout_gravity="bottom|left"
+        layout_marginBottom="14"
+        layout_marginLeft="110"/>
+        
+    <Label
+        view_width="auto"
+        view_height="16"
+        view_borderRadius="3"
+        view_borderWidth="1"
+        view_borderColor="#4abdcf"
+        view_padding="5"
+        text_src="减--"
+        text_size="10"
+        text_color="#4abdcf"
+        layout_gravity="center|left"
+        layout_marginLeft="210" />
+        
+    <Label
+        view_width="auto"
+        view_height="auto"
+        text_size="12"
+        text_color="#999999"
+        text_src="门市价：¥--"
+        layout_gravity="center|left"
+        layout_marginLeft="110"/>
+    
 </FrameLayout>
 

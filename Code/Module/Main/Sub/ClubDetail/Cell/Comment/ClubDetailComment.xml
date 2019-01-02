@@ -35,5 +35,15 @@
             layout_marginRight="12"
             layout_marginTop="15"/>
     </FrameLayout>
+    
+<!--  评论信息  -->
+    <FrameLayout
+        view_width="full"
+        view_height="full"
+        layout_marginBottom="24"
+        view_background="#00ff0fff">
+        
+        
+    </FrameLayout>
 </FrameLayout>
 
