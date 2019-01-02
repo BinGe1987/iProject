@@ -15,7 +15,7 @@
         
         LoginData *user = (LoginData *)data;
         if (!user.isLogin) {
-//            [MVPViewController presentMVPControllerName:@"LoginViewController" animated:NO data:nil completion:nil];
+            [MVPViewController presentMVPControllerName:@"LoginViewController" animated:NO data:nil completion:nil];
         }
         
         [self loginCheckCompleted];
