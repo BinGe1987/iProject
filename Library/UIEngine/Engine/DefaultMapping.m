@@ -18,6 +18,7 @@
 #import "TableViewModel.h"
 #import "ViewPagerModel.h"
 #import "CollectionViewModel.h"
+#import "CustomViewModel.h"
 
 
 @implementation DefaultMapping
@@ -63,6 +64,9 @@
     }
     else if ([type isEqualToString:@"CollectionView"] || [type isEqualToString:@"collection"]) {
         return [[CollectionViewModel alloc] initWithUIModel:model];
+    }
+    else if ([type isEqualToString:@"CustomView"] || [type isEqualToString:@"custom"]) {
+        return [[CustomViewModel alloc] initWithUIModel:model];
     }
     return [[ViewModel alloc] initWithUIModel:model];
 }

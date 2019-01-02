@@ -140,7 +140,8 @@
         for (int i = 0; i < _dataArray.count; i++)
         {
             UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(_width * i, 0, _width, _height)];
-            
+            imageView.contentMode = UIViewContentModeScaleAspectFill;
+            imageView.layer.masksToBounds = YES;
             imageView.image = _dataArray[i];
             
             //添加手势
