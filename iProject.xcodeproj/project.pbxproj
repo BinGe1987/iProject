@@ -40,6 +40,9 @@
 		771CA3E321DCDCAA00B00F11 /* ClubDetailProject.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */; };
 		771CA3E521DCDF8A00B00F11 /* ClubDetailTechItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E421DCDF8A00B00F11 /* ClubDetailTechItem.xml */; };
 		771CA3E921DCED0500B00F11 /* ClubDetailProjectItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */; };
+		771CA3ED21DCEFC000B00F11 /* CommentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3EC21DCEFC000B00F11 /* CommentData.m */; };
+		771CA3F021DCF07A00B00F11 /* ClubDetailCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3EF21DCF07A00B00F11 /* ClubDetailCommentCell.m */; };
+		771CA3F221DCF0D700B00F11 /* ClubDetailComment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3F121DCF0D700B00F11 /* ClubDetailComment.xml */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -366,6 +369,11 @@
 		771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailProject.xml; sourceTree = "<group>"; };
 		771CA3E421DCDF8A00B00F11 /* ClubDetailTechItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailTechItem.xml; sourceTree = "<group>"; };
 		771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailProjectItem.xml; sourceTree = "<group>"; };
+		771CA3EB21DCEFC000B00F11 /* CommentData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentData.h; sourceTree = "<group>"; };
+		771CA3EC21DCEFC000B00F11 /* CommentData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentData.m; sourceTree = "<group>"; };
+		771CA3EE21DCF07A00B00F11 /* ClubDetailCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailCommentCell.h; sourceTree = "<group>"; };
+		771CA3EF21DCF07A00B00F11 /* ClubDetailCommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailCommentCell.m; sourceTree = "<group>"; };
+		771CA3F121DCF0D700B00F11 /* ClubDetailComment.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailComment.xml; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -987,6 +995,7 @@
 				771CA3D221DCC1D800B00F11 /* Ad */,
 				771CA3D821DCC42B00B00F11 /* Tech */,
 				771CA3DE21DCC8DD00B00F11 /* Project */,
+				771CA3EA21DCEF9700B00F11 /* Comment */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1040,6 +1049,16 @@
 				771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */,
 			);
 			path = Project;
+			sourceTree = "<group>";
+		};
+		771CA3EA21DCEF9700B00F11 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				771CA3EE21DCF07A00B00F11 /* ClubDetailCommentCell.h */,
+				771CA3EF21DCF07A00B00F11 /* ClubDetailCommentCell.m */,
+				771CA3F121DCF0D700B00F11 /* ClubDetailComment.xml */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 		7723E1B421D6715D00B77890 /* Category */ = {
@@ -1118,6 +1137,8 @@
 				7734C0DA21D22EFD009D1EE8 /* ClassifyData.m */,
 				771CA3C121DCABC700B00F11 /* ProjectData.h */,
 				771CA3C221DCABC700B00F11 /* ProjectData.m */,
+				771CA3EB21DCEFC000B00F11 /* CommentData.h */,
+				771CA3EC21DCEFC000B00F11 /* CommentData.m */,
 			);
 			path = BaseData;
 			sourceTree = "<group>";
@@ -2577,6 +2598,7 @@
 				77EA8F5121B90226001B8959 /* demo.json in Resources */,
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,
 				776B55F821C11A9200793CAF /* readme-UIEngine in Resources */,
+				771CA3F221DCF0D700B00F11 /* ClubDetailComment.xml in Resources */,
 				77CEA4CD21D48BD000B388E4 /* Discover.json in Resources */,
 				77CEA54D21D5FD0F00B388E4 /* MineLevel.json in Resources */,
 				77EA8F2F21B90226001B8959 /* readme-DataCenter in Resources */,
@@ -2797,6 +2819,7 @@
 				77B0553221CE96ED0045A489 /* Aspects.m in Sources */,
 				77CEA52821D506F100B388E4 /* UICollectionView+Adapter.m in Sources */,
 				77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */,
+				771CA3F021DCF07A00B00F11 /* ClubDetailCommentCell.m in Sources */,
 				7734C13721D2704B009D1EE8 /* BannerView.m in Sources */,
 				77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */,
 				77CEA4FC21D4C2FF00B388E4 /* DiscoverClubPerformer.m in Sources */,
@@ -2811,6 +2834,7 @@
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,
 				7734C11C21D23A45009D1EE8 /* KafkaReplicatorFooter.m in Sources */,
+				771CA3ED21DCEFC000B00F11 /* CommentData.m in Sources */,
 				7734C0DB21D22EFD009D1EE8 /* ClassifyData.m in Sources */,
 				771CA39621DC59E500B00F11 /* DescoverClubMenuViewHandler.m in Sources */,
 				776B55B321BE6B1500793CAF /* Button.m in Sources */,

@@ -9,6 +9,7 @@
 #import "ListData.h"
 #import "ClubData.h"
 #import "ProjectData.h"
+#import "CommentData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -18,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) ClubData *clubData;
 @property (nonatomic, strong) ListData *techList;
 @property (nonatomic, strong) ListData *projectList;
+@property (nonatomic, strong) ListData *commentList;
 
 @end
 

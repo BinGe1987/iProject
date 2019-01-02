@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_width="full"
+    view_height="full"
+    view_background="#f0f0f0">
+    
+    <FrameLayout
+        view_width="full"
+        view_height="full"
+        layout_marginTop="4"
+        view_background="#ffffff">
+        
+        <Label
+            view_width="auto"
+            view_height="auto"
+            text_size="17"
+            text_color="#2e2e2e"
+            text_src="用户评价"
+            layout_marginTop="12"
+            layout_marginLeft="12"/>
+        <Label
+            view_width="auto"
+            view_height="auto"
+            text_size="11"
+            text_color="#999999"
+            text_src="全部"
+            layout_gravity="right|top"
+            layout_marginTop="15"
+            layout_marginRight="28" />
+        <ImageView
+            view_width="13"
+            view_height="13"
+            image_src="@arrow1"
+            layout_gravity="right|top"
+            layout_marginRight="12"
+            layout_marginTop="15"/>
+    </FrameLayout>
+    <Button
+        view_width="full"
+        view_height="34"
+        view_background="#55b4b2"
+        layout_gravity="bottom"
+        text_src="发表评论"
+        text_size="14"
+        text_color="#ffffff" />
+</FrameLayout>
+

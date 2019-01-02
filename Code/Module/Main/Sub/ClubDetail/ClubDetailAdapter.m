@@ -11,6 +11,7 @@
 #import "ClubDetailAdCell.h"
 #import "ClubDetailTechCell.h"
 #import "ClubDetailProjectCell.h"
+#import "ClubDetailCommentCell.h"
 
 @implementation ClubDetailAdapter
 
@@ -30,6 +31,9 @@
     }
     else if ([section.name isEqualToString:@"project"]){
         return [self projectCell:tableView cellForRowAtIndexPath:indexPath];
+    }
+    else if ([section.name isEqualToString:@"comment"]){
+        return [self commentCell:tableView cellForRowAtIndexPath:indexPath];
     }
     return nil;
 }
@@ -65,6 +69,13 @@
 - (UITableViewCell *)projectCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubDetailProjectCell * cell = [ClubDetailProjectCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
+    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    return cell;
+}
+
+- (UITableViewCell *)commentCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    ClubDetailCommentCell * cell = [ClubDetailCommentCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
     [cell setData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }

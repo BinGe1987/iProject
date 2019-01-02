@@ -60,6 +60,8 @@
     
     detail.projectList = [ListData new];
     
+    detail.commentList = [ListData new];
+    
     return detail;
 }
 
