@@ -1,16 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FrameLayout
     view_width="full"
-    view_height="full">
+    view_height="full"
+    view_background="#00000000">
     
-    <TextView
+    <Label
+        view_name="label_clubName"
         view_width="auto"
-        view_height="auto"
+        view_height="20"
         text_size="21"
         text_color="#2e2e2e"
         text_src="休闲养生演示会所"
         layout_margin="16"/>
         
-    
-    
+    <Button
+        view_width="auto"
+        view_height="16"
+        view_borderRadius="3"
+        view_borderWidth="1"
+        view_borderColor="#4abdcf"
+        view_padding="10"
+        text_src="0人收藏"
+        text_size="11"
+        text_color="#4abdcf"
+        layout_margin="16"
+        layout_gravity="top|right" />
+        
+    <ImageView
+        view_width="12"
+        view_height="12"
+        image_src="@star"
+        layout_marginLeft="16"
+        layout_marginTop="48"/>
+    <Label
+        view_width="auto"
+        view_height="15"
+        text_size="12"
+        text_color="#ffb925"
+        text_src="5.0"
+        layout_marginLeft="33"
+        layout_marginTop="47"/>
+    <Label
+        view_width="auto"
+        view_height="15"
+        text_size="12"
+        text_color="#ffb925"
+        text_src="¥356/人"
+        layout_marginLeft="60"
+        layout_marginTop="47"/>
+<!--    地址    -->
+    <ImageView
+        view_width="13"
+        view_height="13"
+        image_src="@icon_club"
+        layout_marginLeft="16"
+        layout_marginTop="70"/>
+    <Label
+        view_width="auto"
+        view_height="15"
+        text_size="13"
+        text_color="#2e2e2e"
+        text_src="会所地址（xxxxxx）"
+        layout_marginLeft="33"
+        layout_marginTop="69"/>
+    <ImageView
+        view_width="13"
+        view_height="13"
+        image_src="@arrow2"
+        layout_gravity="right|top"
+        layout_marginRight="16"
+        layout_marginTop="70"/>
+<!--    营业时间    -->
+    <ImageView
+        view_width="13"
+        view_height="13"
+        image_src="@icon_time"
+        layout_marginLeft="16"
+        layout_marginTop="105"/>
+    <Label
+        view_width="auto"
+        view_height="15"
+        text_size="13"
+        text_color="#2e2e2e"
+        text_src="营业时间: 12:00 - 00:00"
+        layout_marginLeft="33"
+        layout_marginTop="104"/>
 </FrameLayout>
