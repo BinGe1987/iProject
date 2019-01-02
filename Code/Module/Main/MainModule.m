@@ -76,6 +76,9 @@
                 MainNavigationController *nv = [[MainNavigationController alloc] initWithRootViewController:vc];
 //                nv.navigationBar.topItem.title = data.titleComponent.title;
                 
+                CGFloat scale = nornal.scale / 2.0;
+                nornal = [ImageUtils scaleImage:nornal toScale:scale];
+                selected = [ImageUtils scaleImage:selected toScale:scale];
                 
                 [main addTab:data.title selectedColor:cSelected unselectedColor:cNormal selectedImage:selected unselectedImage:nornal controller:nv];
             }

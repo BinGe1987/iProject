@@ -16,6 +16,7 @@
 		771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771CA38821D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets */; };
 		771CA39321D9A5B000B00F11 /* DropdownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39221D9A5B000B00F11 /* DropdownMenuItem.m */; };
 		771CA39621DC59E500B00F11 /* DescoverClubMenuViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39521DC59E500B00F11 /* DescoverClubMenuViewHandler.m */; };
+		771CA39B21DC695400B00F11 /* ClubDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39A21DC695400B00F11 /* ClubDetailController.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -301,6 +302,8 @@
 		771CA39221D9A5B000B00F11 /* DropdownMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropdownMenuItem.m; sourceTree = "<group>"; };
 		771CA39421DC59E500B00F11 /* DescoverClubMenuViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DescoverClubMenuViewHandler.h; sourceTree = "<group>"; };
 		771CA39521DC59E500B00F11 /* DescoverClubMenuViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescoverClubMenuViewHandler.m; sourceTree = "<group>"; };
+		771CA39921DC695400B00F11 /* ClubDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailController.h; sourceTree = "<group>"; };
+		771CA39A21DC695400B00F11 /* ClubDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailController.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -854,6 +857,15 @@
 				771CA38821D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets */,
 			);
 			path = "DOPDropDownMenu - Enhanced";
+			sourceTree = "<group>";
+		};
+		771CA39821DC692900B00F11 /* Sub */ = {
+			isa = PBXGroup;
+			children = (
+				771CA39921DC695400B00F11 /* ClubDetailController.h */,
+				771CA39A21DC695400B00F11 /* ClubDetailController.m */,
+			);
+			path = Sub;
 			sourceTree = "<group>";
 		};
 		7723E1B421D6715D00B77890 /* Category */ = {
@@ -1911,6 +1923,7 @@
 				77CEA4C821D48A0300B388E4 /* Discover */,
 				77CEA53921D5CE6C00B388E4 /* Order */,
 				774F017121B9726400CB482F /* Mine */,
+				771CA39821DC692900B00F11 /* Sub */,
 				77B0551A21CD247E0045A489 /* MainModule.h */,
 				77B0551B21CD247E0045A489 /* MainModule.m */,
 				77B0557D21D120DE0045A489 /* TabMapping.xml */,
@@ -2508,6 +2521,7 @@
 				77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */,
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
 				77B0551C21CD247E0045A489 /* MainModule.m in Sources */,
+				771CA39B21DC695400B00F11 /* ClubDetailController.m in Sources */,
 				77CEA53121D50D3600B388E4 /* DiscoverTechAdapter.m in Sources */,
 				771CA36A21D8A8E100B00F11 /* Utils.m in Sources */,
 				77B0545821C943760045A489 /* UIImage+YYWebImage.m in Sources */,

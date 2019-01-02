@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 ///将16进制颜色（#ffffffff）转成UIImage
 + (UIImage *)imageWithColorHex:(NSString *)colorString size:(CGSize)size;
 
++ (UIImage *)scaleImage:(UIImage *)image toScale:(float)scaleSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

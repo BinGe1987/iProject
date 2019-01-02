@@ -27,5 +27,13 @@
     return [ImageUtils imageWithColor:color size:size];
 }
 
++ (UIImage *)scaleImage:(UIImage *)image toScale:(float)scaleSize {
+    UIGraphicsBeginImageContextWithOptions(CGSizeMake(image.size.width * scaleSize, image.size.height * scaleSize), NO, 0);
+    [image drawInRect:CGRectIntegral(CGRectMake(0, 0, image.size.width * scaleSize, image.size.height * scaleSize))];
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return [scaledImage imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
 
 @end

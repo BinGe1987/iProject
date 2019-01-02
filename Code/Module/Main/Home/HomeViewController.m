@@ -31,6 +31,7 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
+    [self.navigationController.navigationBar setBackgroundImage:[ImageUtils imageWithColorHex:@"#ffffffff" size:CGSizeMake(10, 10)] forBarMetrics:UIBarMetricsDefault];
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 }
 

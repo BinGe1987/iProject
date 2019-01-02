@@ -86,4 +86,8 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView pushController:@"ClubDetailController" data:nil animated:YES];
+}
+
 @end
