@@ -39,6 +39,7 @@
 		771CA3E121DCC91500B00F11 /* ClubDetailProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3E021DCC91500B00F11 /* ClubDetailProjectCell.m */; };
 		771CA3E321DCDCAA00B00F11 /* ClubDetailProject.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */; };
 		771CA3E521DCDF8A00B00F11 /* ClubDetailTechItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E421DCDF8A00B00F11 /* ClubDetailTechItem.xml */; };
+		771CA3E921DCED0500B00F11 /* ClubDetailProjectItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -364,6 +365,7 @@
 		771CA3E021DCC91500B00F11 /* ClubDetailProjectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailProjectCell.m; sourceTree = "<group>"; };
 		771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailProject.xml; sourceTree = "<group>"; };
 		771CA3E421DCDF8A00B00F11 /* ClubDetailTechItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailTechItem.xml; sourceTree = "<group>"; };
+		771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailProjectItem.xml; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -1035,6 +1037,7 @@
 				771CA3DF21DCC91500B00F11 /* ClubDetailProjectCell.h */,
 				771CA3E021DCC91500B00F11 /* ClubDetailProjectCell.m */,
 				771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */,
+				771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -2570,6 +2573,7 @@
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
 				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
+				771CA3E921DCED0500B00F11 /* ClubDetailProjectItem.xml in Resources */,
 				77EA8F5121B90226001B8959 /* demo.json in Resources */,
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,
 				776B55F821C11A9200793CAF /* readme-UIEngine in Resources */,

@@ -58,6 +58,8 @@
         [detail.techList addData:data];
     }
     
+    detail.projectList = [ListData new];
+    
     return detail;
 }
 

@@ -33,8 +33,8 @@
     TableViewSection *profileSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"profile", @"array": @[detailData.clubData], @"height" : [NSNumber numberWithFloat:125]}];
     TableViewSection *adSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"ad", @"array": @[@""], @"height" : [NSNumber numberWithFloat:ScaleValue(31)]}];
     TableViewSection *techSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"tech", @"array": @[detailData.techList.list], @"height" : [NSNumber numberWithFloat:157]}];
-//    TableViewSection *clubSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"club", @"array": homeData.club,@"headerHeight": [NSNumber numberWithFloat:ScaleValue(28)], @"height" : [NSNumber numberWithFloat:106]}];
-    ClubDetailAdapter *adapter = [ClubDetailAdapter AdapterWithSourceData:@[bannerSection,profileSection,adSection,techSection]];
+    TableViewSection *projectSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"project", @"array": @[detailData.projectList.list], @"height" : [NSNumber numberWithFloat:312]}];
+    ClubDetailAdapter *adapter = [ClubDetailAdapter AdapterWithSourceData:@[bannerSection,profileSection,adSection,techSection,projectSection]];
     [self.tableView setAdapter:adapter];
 }
 

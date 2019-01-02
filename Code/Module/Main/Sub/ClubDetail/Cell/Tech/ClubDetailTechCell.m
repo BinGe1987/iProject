@@ -38,16 +38,12 @@
 - (void)setData:(id)data {
     LinearLayout *linearView = (LinearLayout *)[self.contentView findViewByName:@"linear"];
 //    CGSize size = CGSizeMake(ScaleValue(84), linearView.height);
-//    for (TechData *tech in data) {
-//        UIView *view = [UIView viewWithXML:@"ClubDetailTechItem.xml" size:size];
-//        UILabel *lable = (UILabel *)[view findViewByName:@"name"];
-//        lable.text = tech.name;
-//        [linearView addView:view];
-//        UIButton *btn = (UIButton *)[view findViewByName:@"btn"];
-//        [btn setClickBlock:^(UIButton * _Nonnull button) {
-//            [UIViewController pushController:@"TechDetailViewController" animated:YES data:nil];
-//        }];
-//    }
+    for (UIView *chidView in linearView.subviews) {
+        UIButton *btn = (UIButton *)[chidView findViewByName:@"btn"];
+        [btn setClickBlock:^(UIButton * _Nonnull button) {
+            [UIViewController pushController:@"TechDetailViewController" animated:YES data:nil];
+        }];
+    }
     [linearView onLayout];
 }
 
