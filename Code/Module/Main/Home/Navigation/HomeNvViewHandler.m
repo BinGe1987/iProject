@@ -15,6 +15,9 @@
     UIView *titleView = [UIView viewWithJSON:@"HomeNavigation.json" size:view.bounds.size];
     [view addSubview:titleView];
     
+    UIView *search = [view findViewByName:@"search"];
+    search.userInteractionEnabled = NO;
+    
     UIButton *button = (UIButton *)[titleView findViewByName:@"qr_code"];
     [button setClickBlock:^(UIButton * _Nonnull button) {
         [MVPViewController pushSelf];

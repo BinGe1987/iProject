@@ -33,4 +33,8 @@ static NSString *identifier = @"DiscoverTechAdapter_Cell";
     return cell;
 }
 
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    [UIViewController pushController:@"TechDetailController" animated:YES data:nil];
+}
+
 @end

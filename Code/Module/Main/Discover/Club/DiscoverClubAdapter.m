@@ -21,5 +21,10 @@
     return cell;
 }
 
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+//    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    [UIViewController pushController:@"ClubDetailController" animated:YES data:nil];
+}
+
 
 @end
