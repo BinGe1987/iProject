@@ -18,6 +18,9 @@
 -(instancetype)initWithXML:(NSString *)xml {
     self = [super init];
     if (self) {
+        if ([xml hasPrefix:@"@"]) {
+            xml = [xml substringFromIndex:1];
+        }
         XMLObject *xmlObject = [XMLParser objectFromXML:xml];
         self.source = xmlObject;
     }
@@ -73,9 +76,9 @@
     NSMutableArray *newArray = [[NSMutableArray alloc] init];
     for (XMLObject *object in self.source.childs) {
         XMLModel *model = [[XMLModel alloc] initWithXMLObject:object];
-        NSString *include = [model getString:@"include" defaultValue:nil];
-        if (include) {
-            model = [[XMLModel alloc] initWithXML:include];
+        if (object.name && [object.name isEqualToString:@"include"]) {
+            NSString *name = object.attribute[@"name"];
+            model = [[XMLModel alloc] initWithXML:name];
         }
         [newArray addObject:model];
     }

@@ -54,15 +54,15 @@
         view_height="13"
         image_src="@icon_club"
         layout_marginLeft="16"
-        layout_marginTop="70"/>
+        layout_marginTop="76"/>
     <Label
         view_width="auto"
         view_height="15"
         text_size="13"
         text_color="#2e2e2e"
-        text_src="会所地址（xxxxxx）"
+        text_src="会所地址 距离0公里"
         layout_marginLeft="33"
-        layout_marginTop="69"/>
+        layout_marginTop="75"/>
     <ImageView
         view_width="13"
         view_height="13"

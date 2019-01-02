@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_width="25%"
+    view_height="full">
+    <LinearLayout
+        view_width="67"
+        view_height="auto"
+        view_orientation="V"
+        layout_gravity="center">
+        <ImageView
+            view_width="full"
+            view_height="67"
+            view_borderRadius="33.5"
+            view_masksToBounds="YES"
+            view_borderWidth="1"
+            view_borderColor="#ffffb925"
+            image_src="@default_head_girl"/>
+        <Label
+            view_name="name"
+            view_type="label"
+            view_width="full"
+            view_height="26"
+            text_size="12"
+            text_color="#ff3e3e3e"
+            text_src="技师" />
+    </LinearLayout>
+    <Button
+        view_name="btn"
+        view_width="full"
+        view_height="full"
+        />
+</FrameLayout>
+

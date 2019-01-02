@@ -35,7 +35,22 @@
             layout_gravity="right|top"
             layout_marginRight="12"
             layout_marginTop="15"/>
-        
+        <LinearLayout
+            view_name="linear"
+            view_width="full"
+            view_height="full"
+            view_orientation="H"
+            layout_marginTop="35"
+            layout_marginLeft="22"
+            layout_marginRight="22"
+            >
+            <include name="@ClubDetailTechItem.xml"/>
+            <include name="@ClubDetailTechItem.xml"/>
+            <include name="@ClubDetailTechItem.xml"/>
+            <include name="@ClubDetailTechItem.xml"/>
+        </LinearLayout>
     </FrameLayout>
+    
+    
     
 </FrameLayout>
