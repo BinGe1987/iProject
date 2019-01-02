@@ -10,7 +10,7 @@
 @implementation ClubDetailProjectCell
 
 + (instancetype)tableView:(UITableView *)tableView cellWithSize:(CGSize)size {
-    static NSString *identifier = @"TableViewAdapterClubDetailCell_tech";
+    static NSString *identifier = @"TableViewAdapterClubDetailCell_project";
     ClubDetailProjectCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil){
         cell = [[ClubDetailProjectCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];

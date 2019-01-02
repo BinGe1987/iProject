@@ -9,5 +9,21 @@
         view_height="full"
         view_background="#ffffffff"
     />
+    
+    <FrameLayout
+        view_width="full"
+        view_height="80"
+        layout_gravity="bottom"
+        layout_marginBottom="-56"
+        view_background="#55b4b2">
+        <Button
+            view_width="full"
+            view_height="34"
+            text_src="发表评论"
+            text_size="14"
+            text_color="#ffffff" />
+    </FrameLayout>
+    
+    
         
 </FrameLayout>

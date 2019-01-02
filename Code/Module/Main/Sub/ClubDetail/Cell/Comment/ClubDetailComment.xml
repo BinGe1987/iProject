@@ -35,13 +35,5 @@
             layout_marginRight="12"
             layout_marginTop="15"/>
     </FrameLayout>
-    <Button
-        view_width="full"
-        view_height="34"
-        view_background="#55b4b2"
-        layout_gravity="bottom"
-        text_src="发表评论"
-        text_size="14"
-        text_color="#ffffff" />
 </FrameLayout>
 

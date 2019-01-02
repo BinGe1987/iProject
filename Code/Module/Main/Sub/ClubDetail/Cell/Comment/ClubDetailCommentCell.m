@@ -10,7 +10,7 @@
 @implementation ClubDetailCommentCell
 
 + (instancetype)tableView:(UITableView *)tableView cellWithSize:(CGSize)size {
-    static NSString *identifier = @"TableViewAdapterClubDetailCell_tech";
+    static NSString *identifier = @"TableViewAdapterClubDetailCell_Comment";
     ClubDetailCommentCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (cell == nil){
         cell = [[ClubDetailCommentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
