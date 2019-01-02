@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_width="full"
+    view_height="full">
+    
+    <TextView
+        view_width="auto"
+        view_height="auto"
+        text_size="21"
+        text_color="#2e2e2e"
+        text_src="休闲养生演示会所"
+        layout_margin="16"/>
+        
+    
+    
+</FrameLayout>

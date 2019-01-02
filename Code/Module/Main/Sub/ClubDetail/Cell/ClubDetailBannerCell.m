@@ -11,6 +11,7 @@
 @interface ClubDetailBannerCell()
 
 @property (nonatomic, strong) BannerView *bannerView;
+@property (nonatomic, strong) ListData *bannerList;
 
 @end
 
@@ -26,6 +27,12 @@
     return cell;
 }
 
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    return self;
+}
+
 - (void)initWithSize:(CGSize)size {
     self.bannerView = [[BannerView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
     [self.contentView addSubview:self.bannerView];
@@ -33,10 +40,10 @@
 
 - (void)setData:(id)data {
     
-    if (self.cellData) {
+    if (self.bannerList) {
         return;
     }
-    self.cellData = data;
+    self.bannerList = data;
     NSMutableArray *array = [NSMutableArray new];
     for (NSString *imageUrl in data) {
         UIImage *image = [UIImage imageWithContentsOfFile:imageUrl];

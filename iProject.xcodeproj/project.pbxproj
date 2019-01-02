@@ -29,6 +29,9 @@
 		771CA3C021DCA7A100B00F11 /* Performer+Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3BF21DCA7A100B00F11 /* Performer+Parser.m */; };
 		771CA3C321DCABC800B00F11 /* ProjectData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3C221DCABC700B00F11 /* ProjectData.m */; };
 		771CA3C721DCAE3500B00F11 /* ClubDetailBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3C621DCAE3500B00F11 /* ClubDetailBannerCell.m */; };
+		771CA3CA21DCB1D100B00F11 /* ClubDetailProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3C921DCB1D100B00F11 /* ClubDetailProfileCell.m */; };
+		771CA3CD21DCB2AB00B00F11 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3CC21DCB2AB00B00F11 /* TableViewCell.m */; };
+		771CA3CF21DCB54800B00F11 /* ClubDetailProfile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3CE21DCB54800B00F11 /* ClubDetailProfile.xml */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -339,6 +342,11 @@
 		771CA3C221DCABC700B00F11 /* ProjectData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectData.m; sourceTree = "<group>"; };
 		771CA3C521DCAE3500B00F11 /* ClubDetailBannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailBannerCell.h; sourceTree = "<group>"; };
 		771CA3C621DCAE3500B00F11 /* ClubDetailBannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailBannerCell.m; sourceTree = "<group>"; };
+		771CA3C821DCB1D100B00F11 /* ClubDetailProfileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailProfileCell.h; sourceTree = "<group>"; };
+		771CA3C921DCB1D100B00F11 /* ClubDetailProfileCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailProfileCell.m; sourceTree = "<group>"; };
+		771CA3CB21DCB2AB00B00F11 /* TableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		771CA3CC21DCB2AB00B00F11 /* TableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		771CA3CE21DCB54800B00F11 /* ClubDetailProfile.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailProfile.xml; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -957,6 +965,9 @@
 			children = (
 				771CA3C521DCAE3500B00F11 /* ClubDetailBannerCell.h */,
 				771CA3C621DCAE3500B00F11 /* ClubDetailBannerCell.m */,
+				771CA3C821DCB1D100B00F11 /* ClubDetailProfileCell.h */,
+				771CA3C921DCB1D100B00F11 /* ClubDetailProfileCell.m */,
+				771CA3CE21DCB54800B00F11 /* ClubDetailProfile.xml */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1009,6 +1020,8 @@
 				77B0559D21D205540045A489 /* TableViewAdapter.m */,
 				7734C0BB21D2119A009D1EE8 /* TableViewSection.h */,
 				7734C0BC21D2119A009D1EE8 /* TableViewSection.m */,
+				771CA3CB21DCB2AB00B00F11 /* TableViewCell.h */,
+				771CA3CC21DCB2AB00B00F11 /* TableViewCell.m */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -2462,6 +2475,7 @@
 				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
 				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
 				77CEA54421D5D30D00B388E4 /* MineNavigation.json in Resources */,
+				771CA3CF21DCB54800B00F11 /* ClubDetailProfile.xml in Resources */,
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
 				77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */,
@@ -2538,6 +2552,7 @@
 				77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */,
 				776B55B621BE6BD000793CAF /* ButtonViewParams.m in Sources */,
 				77CEA4E721D4B69700B388E4 /* DiscoverTechPresenter.m in Sources */,
+				771CA3CD21DCB2AB00B00F11 /* TableViewCell.m in Sources */,
 				776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */,
 				771CA3AA21DC9F9200B00F11 /* ClubDetailPresenter.m in Sources */,
 				7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */,
@@ -2565,6 +2580,7 @@
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */,
 				776B55F021C00D6000793CAF /* Parser.m in Sources */,
+				771CA3CA21DCB1D100B00F11 /* ClubDetailProfileCell.m in Sources */,
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
 				77CEA52421D4FAA200B388E4 /* CollectionView.m in Sources */,
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,

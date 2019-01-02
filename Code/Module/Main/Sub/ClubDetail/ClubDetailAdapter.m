@@ -7,6 +7,7 @@
 
 #import "ClubDetailAdapter.h"
 #import "ClubDetailBannerCell.h"
+#import "ClubDetailProfileCell.h"
 
 @implementation ClubDetailAdapter
 
@@ -15,9 +16,9 @@
     if ([section.name isEqualToString:@"banner"]) {
         return [self bannerCell:tableView cellForRowAtIndexPath:indexPath];
     }
-//    else if ([section.name isEqualToString:@"classify"]){
-//        return [self classifyCell:tableView cellForRowAtIndexPath:indexPath];
-//    }
+    else if ([section.name isEqualToString:@"profile"]){
+        return [self profileCell:tableView cellForRowAtIndexPath:indexPath];
+    }
 //    else if ([section.name isEqualToString:@"tech"]){
 //        return [self techCell:tableView cellForRowAtIndexPath:indexPath];
 //    }
@@ -30,6 +31,13 @@
 - (UITableViewCell *)bannerCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubDetailBannerCell * cell = [ClubDetailBannerCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
+    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    return cell;
+}
+
+- (UITableViewCell *)profileCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    ClubDetailProfileCell * cell = [ClubDetailProfileCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
     [cell setData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
