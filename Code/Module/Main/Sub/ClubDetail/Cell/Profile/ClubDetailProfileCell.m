@@ -19,14 +19,7 @@
     return cell;
 }
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
-    return self;
-}
-
 - (void)initWithSize:(CGSize)size {
-//    self.contentView.backgroundColor = [UIColor redColor];
     UIView *view = [UIView viewWithXML:@"ClubDetailProfile.xml" size:size];
     [self.contentView addSubview:view];
 }

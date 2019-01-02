@@ -73,11 +73,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/DataCenter/Club/ClubDetailPerformer.m"
-            timestampString = "568115236.624746"
+            timestampString = "568117199.595662"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "-parse:withSource:"
             landmarkType = "7">
          </BreakpointContent>
@@ -89,11 +89,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/Module/Main/Sub/ClubDetail/ClubDetailViewHandler.m"
-            timestampString = "568115236.624962"
+            timestampString = "568117199.595775"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
             landmarkName = "-setData:"
             landmarkType = "7">
          </BreakpointContent>

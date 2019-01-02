@@ -27,12 +27,6 @@
     return cell;
 }
 
-- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
-    return self;
-}
-
 - (void)initWithSize:(CGSize)size {
     self.bannerView = [[BannerView alloc] initWithFrame:CGRectMake(0, 0, size.width, size.height)];
     [self.contentView addSubview:self.bannerView];

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FrameLayout
     view_width="full"
-    view_height="full">
+    view_height="full"
+    view_background="#ffffffff">
     <TableView
         view_name="table"
         view_width="full"

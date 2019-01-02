@@ -32,6 +32,32 @@
     detail.clubData = [ClubData new];
     detail.clubData.name = @"休闲养生演示会所";
     
+    //技师
+    detail.techList = [ListData new];
+    NSArray *tech = @[@{@"name":@"沐沐",@"number":@"25",@"image":@""},
+                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
+                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
+                      @{@"name":@"果果",@"number":@"9",@"image":@""},
+                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
+                      @{@"name":@"沐沐",@"number":@"25",@"image":@""},
+                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
+                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
+                      @{@"name":@"果果",@"number":@"9",@"image":@""},
+                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
+                      @{@"name":@"沐沐",@"number":@"25",@"image":@""},
+                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
+                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
+                      @{@"name":@"果果",@"number":@"9",@"image":@""},
+                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
+                      ];
+    for (NSDictionary *dic in tech) {
+        TechData *data = [TechData new];
+        data.number = [dic objectForKey:@"number"];
+        data.name = [dic objectForKey:@"name"];
+        data.imageUrl = [dic objectForKey:@"image"];
+        [detail.techList addData:data];
+    }
+    
     return detail;
 }
 
