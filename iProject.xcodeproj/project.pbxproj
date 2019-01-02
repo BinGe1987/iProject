@@ -15,6 +15,7 @@
 		771CA38921D94EB800B00F11 /* DOPDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA38721D94EB800B00F11 /* DOPDropDownMenu.m */; };
 		771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 771CA38821D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets */; };
 		771CA39321D9A5B000B00F11 /* DropdownMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39221D9A5B000B00F11 /* DropdownMenuItem.m */; };
+		771CA39621DC59E500B00F11 /* DescoverClubMenuViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA39521DC59E500B00F11 /* DescoverClubMenuViewHandler.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -298,6 +299,8 @@
 		771CA38821D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "DOPDropDownMenu-Enhanced.xcassets"; sourceTree = "<group>"; };
 		771CA39121D9A5B000B00F11 /* DropdownMenuItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DropdownMenuItem.h; sourceTree = "<group>"; };
 		771CA39221D9A5B000B00F11 /* DropdownMenuItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropdownMenuItem.m; sourceTree = "<group>"; };
+		771CA39421DC59E500B00F11 /* DescoverClubMenuViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DescoverClubMenuViewHandler.h; sourceTree = "<group>"; };
+		771CA39521DC59E500B00F11 /* DescoverClubMenuViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DescoverClubMenuViewHandler.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -1683,6 +1686,8 @@
 			children = (
 				77CEA4E221D4B64F00B388E4 /* DiscoverClubPresenter.h */,
 				77CEA4E321D4B64F00B388E4 /* DiscoverClubPresenter.m */,
+				771CA39421DC59E500B00F11 /* DescoverClubMenuViewHandler.h */,
+				771CA39521DC59E500B00F11 /* DescoverClubMenuViewHandler.m */,
 				77CEA50321D4C87D00B388E4 /* DiscoverClubViewHandler.h */,
 				77CEA50421D4C87D00B388E4 /* DiscoverClubViewHandler.m */,
 				77CEA50621D4CA1700B388E4 /* DiscoverClubAdapter.h */,
@@ -2591,6 +2596,7 @@
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,
 				7734C11C21D23A45009D1EE8 /* KafkaReplicatorFooter.m in Sources */,
 				7734C0DB21D22EFD009D1EE8 /* ClassifyData.m in Sources */,
+				771CA39621DC59E500B00F11 /* DescoverClubMenuViewHandler.m in Sources */,
 				776B55B321BE6B1500793CAF /* Button.m in Sources */,
 				77CEA4D421D4970A00B388E4 /* ViewPagerModel.m in Sources */,
 				776B55BB21BE966800793CAF /* GroupViewParams.m in Sources */,
