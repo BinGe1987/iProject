@@ -1,17 +1,17 @@
 //
-//  TechDetailViewController.m
+//  TechDetailController.m
 //  APP
 //
 //  Created by BinGe on 2019/1/2.
 //
 
-#import "TechDetailViewController.h"
+#import "TechDetailController.h"
 
-@interface TechDetailViewController ()
+@interface TechDetailController ()
 
 @end
 
-@implementation TechDetailViewController
+@implementation TechDetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

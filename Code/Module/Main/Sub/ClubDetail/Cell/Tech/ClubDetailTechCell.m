@@ -41,7 +41,7 @@
     for (UIView *chidView in linearView.subviews) {
         UIButton *btn = (UIButton *)[chidView findViewByName:@"btn"];
         [btn setClickBlock:^(UIButton * _Nonnull button) {
-            [UIViewController pushController:@"TechDetailViewController" animated:YES data:nil];
+            [UIViewController pushController:@"TechDetailController" animated:YES data:nil];
         }];
     }
     [linearView onLayout];

@@ -1,5 +1,5 @@
 //
-//  TechDetailViewController.h
+//  TechDetailController.h
 //  APP
 //
 //  Created by BinGe on 2019/1/2.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TechDetailViewController : BaseViewController
+@interface TechDetailController : BaseViewController
 
 @end
 

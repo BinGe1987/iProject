@@ -4,7 +4,7 @@
     view_width="full"
     view_height="full"
     view_background="#ffffffff">
-    <TableView
+    <ScrollView
         view_name="table"
         view_width="full"
         view_height="full"
