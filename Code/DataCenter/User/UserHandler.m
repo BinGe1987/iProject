@@ -29,10 +29,10 @@
 - (id _Nullable )parse:(_Nonnull id)operation withSource:(id _Nullable )source {
     if ([source isSuccess]) {
         if ([operation isEqualToString:OperationLogin]) {
-            [self.userData setData:source];
+            [self.userData setLoginData:source];
         }
         else if ([operation isEqualToString:OperationLoginCheck]) {
-            [self.userData setData:source];
+            [self.userData setLoginData:source];
         }
         //保存token到本地
         [Store setValue:self.userData.token forKey:@"token"];

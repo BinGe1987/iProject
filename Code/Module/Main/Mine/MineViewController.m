@@ -6,6 +6,7 @@
 //
 
 #import "MineViewController.h"
+#import "MinePresenter.h"
 #import "MineNvPresenter.h"
 
 @implementation MineViewController
@@ -17,9 +18,9 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Mine.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
     
-//    HomePresenter *prsenter = [[HomePresenter alloc] initWithView:[self findViewByName:@"table"]];
-//    [self addPresenter:prsenter];
-//    
+    MinePresenter *prsenter = [[MinePresenter alloc] initWithView:[self findViewByName:@"scroll"]];
+    [self addPresenter:prsenter];
+
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 30, NVBARHIEGHT)];
     self.navigationItem.titleView = view;
     [self addPresenter:[[MineNvPresenter alloc] initWithView:view]];

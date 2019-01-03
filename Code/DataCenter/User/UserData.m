@@ -9,8 +9,8 @@
 
 @implementation UserData
 
-- (void)setData:(Data *)data {
-    [super setData:data];
+- (void)setLoginData:(id)data {
+    [self setData:data];
     JSON *json = [data jsonWithKey:@"respData"];
     self.token =    [json stringWithKey:@"token"];
     self.userID =   [json stringWithKey:@"userId"];
@@ -18,6 +18,10 @@
     self.phone =    [json stringWithKey:@"phoneNum"];
     self.gender =   [json stringWithKey:@"gender" defaultValue:@"male"];
     self.level =    [json stringWithKey:@"level"];
+}
+
+- (void)setMineData:(id)data {
+    [self setData:data];
 }
 
 - (BOOL)isLogin {

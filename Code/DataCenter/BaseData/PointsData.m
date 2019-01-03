@@ -1,0 +1,12 @@
+//
+//  PointsData.m
+//  APP
+//
+//  Created by BinGe on 2019/1/3.
+//
+
+#import "PointsData.h"
+
+@implementation PointsData
+
+@end

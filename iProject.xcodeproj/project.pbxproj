@@ -138,6 +138,11 @@
 		776B55FB21C14A0800793CAF /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55FA21C14A0800793CAF /* ScrollView.m */; };
 		77A389D721DE196800042B04 /* VerifyCodePerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D621DE196800042B04 /* VerifyCodePerformer.m */; };
 		77A389DA21DE3F2200042B04 /* LoginPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D921DE3F2200042B04 /* LoginPerformer.m */; };
+		77A389DD21DE4DAB00042B04 /* MinePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389DC21DE4DAB00042B04 /* MinePresenter.m */; };
+		77A389E021DE4E0E00042B04 /* MineViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389DF21DE4E0E00042B04 /* MineViewHandler.m */; };
+		77A389E321DE50ED00042B04 /* MemberData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E221DE50ED00042B04 /* MemberData.m */; };
+		77A389E621DE554C00042B04 /* RechargeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E521DE554C00042B04 /* RechargeData.m */; };
+		77A389E921DE563500042B04 /* PointsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E821DE563500042B04 /* PointsData.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -588,6 +593,16 @@
 		77A389D621DE196800042B04 /* VerifyCodePerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyCodePerformer.m; sourceTree = "<group>"; };
 		77A389D821DE3F2200042B04 /* LoginPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPerformer.h; sourceTree = "<group>"; };
 		77A389D921DE3F2200042B04 /* LoginPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPerformer.m; sourceTree = "<group>"; };
+		77A389DB21DE4DAB00042B04 /* MinePresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MinePresenter.h; sourceTree = "<group>"; };
+		77A389DC21DE4DAB00042B04 /* MinePresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MinePresenter.m; sourceTree = "<group>"; };
+		77A389DE21DE4E0E00042B04 /* MineViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewHandler.h; sourceTree = "<group>"; };
+		77A389DF21DE4E0E00042B04 /* MineViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewHandler.m; sourceTree = "<group>"; };
+		77A389E121DE50ED00042B04 /* MemberData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MemberData.h; sourceTree = "<group>"; };
+		77A389E221DE50ED00042B04 /* MemberData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MemberData.m; sourceTree = "<group>"; };
+		77A389E421DE554C00042B04 /* RechargeData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RechargeData.h; sourceTree = "<group>"; };
+		77A389E521DE554C00042B04 /* RechargeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RechargeData.m; sourceTree = "<group>"; };
+		77A389E721DE563500042B04 /* PointsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointsData.h; sourceTree = "<group>"; };
+		77A389E821DE563500042B04 /* PointsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointsData.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1302,6 +1317,12 @@
 				771CA3C221DCABC700B00F11 /* ProjectData.m */,
 				771CA3EB21DCEFC000B00F11 /* CommentData.h */,
 				771CA3EC21DCEFC000B00F11 /* CommentData.m */,
+				77A389E121DE50ED00042B04 /* MemberData.h */,
+				77A389E221DE50ED00042B04 /* MemberData.m */,
+				77A389E421DE554C00042B04 /* RechargeData.h */,
+				77A389E521DE554C00042B04 /* RechargeData.m */,
+				77A389E721DE563500042B04 /* PointsData.h */,
+				77A389E821DE563500042B04 /* PointsData.m */,
 			);
 			path = BaseData;
 			sourceTree = "<group>";
@@ -1501,6 +1522,10 @@
 				77CEA54521D5D80C00B388E4 /* Components */,
 				774F017221B9728900CB482F /* MineViewController.h */,
 				774F017321B9728900CB482F /* MineViewController.m */,
+				77A389DB21DE4DAB00042B04 /* MinePresenter.h */,
+				77A389DC21DE4DAB00042B04 /* MinePresenter.m */,
+				77A389DE21DE4E0E00042B04 /* MineViewHandler.h */,
+				77A389DF21DE4E0E00042B04 /* MineViewHandler.m */,
 				77CEA53E21D5CEED00B388E4 /* Mine.json */,
 			);
 			path = Mine;
@@ -2839,6 +2864,7 @@
 				77B054E821CB486C0045A489 /* NetReachability.m in Sources */,
 				7734C0E121D2318E009D1EE8 /* HomeModule.m in Sources */,
 				771CA3B421DCA20B00B00F11 /* ClubHandler.m in Sources */,
+				77A389E021DE4E0E00042B04 /* MineViewHandler.m in Sources */,
 				7734C12821D23A93009D1EE8 /* UITableView+Refresh.m in Sources */,
 				771CA40921DD172E00B00F11 /* CustomViewModel.m in Sources */,
 				77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */,
@@ -2922,6 +2948,7 @@
 				77CEA4F921D4C2DD00B388E4 /* DiscoverHandler.m in Sources */,
 				77EA8F8D21B90A18001B8959 /* HomeHandler.m in Sources */,
 				77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */,
+				77A389E921DE563500042B04 /* PointsData.m in Sources */,
 				77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */,
 				77B0551C21CD247E0045A489 /* MainModule.m in Sources */,
 				771CA39B21DC695400B00F11 /* ClubDetailController.m in Sources */,
@@ -2974,6 +3001,7 @@
 				771CA3FC21DD0CB700B00F11 /* TechDetailData.m in Sources */,
 				77CEA52121D4FA9100B388E4 /* CollectionViewParams.m in Sources */,
 				771CA41C21DDC1A100B00F11 /* CommentPresenter.m in Sources */,
+				77A389E321DE50ED00042B04 /* MemberData.m in Sources */,
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
 				77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */,
@@ -2983,6 +3011,7 @@
 				77B054EB21CB63FD0045A489 /* SecondViewController.m in Sources */,
 				77B0550B21CCD1420045A489 /* ConfigData.m in Sources */,
 				775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */,
+				77A389E621DE554C00042B04 /* RechargeData.m in Sources */,
 				7734C11721D23A45009D1EE8 /* KafkaFootRefreshControl.m in Sources */,
 				771CA43D21DDFB7300B00F11 /* HttpRequest.m in Sources */,
 				77CEA4EA21D4B79300B388E4 /* DiscoverNvPresenter.m in Sources */,
@@ -3042,6 +3071,7 @@
 				77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */,
 				7734C11921D23A45009D1EE8 /* KafkaCategories.m in Sources */,
 				771CA3F921DD0CA500B00F11 /* TechHandler.m in Sources */,
+				77A389DD21DE4DAB00042B04 /* MinePresenter.m in Sources */,
 				77B0552821CD82510045A489 /* AppInfo.m in Sources */,
 				7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */,
 				77B0545421C943760045A489 /* _YYWebImageSetter.m in Sources */,
