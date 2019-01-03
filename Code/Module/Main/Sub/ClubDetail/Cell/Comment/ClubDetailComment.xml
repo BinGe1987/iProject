@@ -34,6 +34,10 @@
             layout_gravity="right|top"
             layout_marginRight="12"
             layout_marginTop="15"/>
+        <Button
+            view_name="btn_allComment"
+            view_width="full"
+            view_height="44"/>
     </FrameLayout>
     
 <!--  评论信息  -->

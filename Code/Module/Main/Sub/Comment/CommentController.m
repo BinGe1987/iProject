@@ -15,7 +15,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    self.navigationController.navigationBar.topItem.title = @"全部评论";
     self.title = @"全部评论";
 }
 

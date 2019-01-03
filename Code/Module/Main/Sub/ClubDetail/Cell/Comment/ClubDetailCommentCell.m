@@ -22,6 +22,10 @@
 - (void)initWithSize:(CGSize)size {
     UIView *view = [UIView viewWithXML:@"ClubDetailComment.xml" size:size];
     [self.contentView addSubview:view];
+    UIButton *btn = (UIButton *)[view findViewByName:@"btn_allComment"];
+    [btn setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"CommentController" animated:YES data:nil];
+    }];
 }
 
 - (void)setData:(id)data {
