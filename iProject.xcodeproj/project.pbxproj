@@ -53,6 +53,7 @@
 		771CA40C21DD174100B00F11 /* CustomViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA40B21DD174100B00F11 /* CustomViewParams.m */; };
 		771CA40F21DD237700B00F11 /* TechProfile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA40E21DD237700B00F11 /* TechProfile.xml */; };
 		771CA41121DDAC9800B00F11 /* TechDetailComment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA41021DDAC9800B00F11 /* TechDetailComment.xml */; };
+		771CA41521DDB2E500B00F11 /* CommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA41421DDB2E500B00F11 /* CommentController.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -401,6 +402,8 @@
 		771CA40B21DD174100B00F11 /* CustomViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewParams.m; sourceTree = "<group>"; };
 		771CA40E21DD237700B00F11 /* TechProfile.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechProfile.xml; sourceTree = "<group>"; };
 		771CA41021DDAC9800B00F11 /* TechDetailComment.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechDetailComment.xml; sourceTree = "<group>"; };
+		771CA41321DDB2E500B00F11 /* CommentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentController.h; sourceTree = "<group>"; };
+		771CA41421DDB2E500B00F11 /* CommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentController.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -962,6 +965,7 @@
 				771CA3A421DC9C4D00B00F11 /* Classify */,
 				771CA39D21DC730800B00F11 /* ClubDetail */,
 				771CA3A021DC989900B00F11 /* TechDetail */,
+				771CA41221DDB1CF00B00F11 /* Comment */,
 			);
 			path = Sub;
 			sourceTree = "<group>";
@@ -1126,6 +1130,15 @@
 				7734C13621D2704B009D1EE8 /* BannerView.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		771CA41221DDB1CF00B00F11 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				771CA41321DDB2E500B00F11 /* CommentController.h */,
+				771CA41421DDB2E500B00F11 /* CommentController.m */,
+			);
+			path = Comment;
 			sourceTree = "<group>";
 		};
 		7723E1B421D6715D00B77890 /* Category */ = {
@@ -2852,6 +2865,7 @@
 				77EA8F5D21B90227001B8959 /* ViewParams.m in Sources */,
 				77B0551621CCE51D0045A489 /* EventBus+Module.m in Sources */,
 				776B55D921BFBD0300793CAF /* WeakProxy.m in Sources */,
+				771CA41521DDB2E500B00F11 /* CommentController.m in Sources */,
 				77CEA53C21D5CE8900B388E4 /* OrderViewController.m in Sources */,
 				77CEA4F621D4C2BF00B388E4 /* DiscoverData.m in Sources */,
 				77B0558521D1CC510045A489 /* NSString+Utils.m in Sources */,

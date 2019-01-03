@@ -15,7 +15,7 @@
             view_name="banner"
             view_class="BannerView"
             view_width="full"
-            view_height="376sp"/>
+            view_height="375sp"/>
             
         <include name="TechProfile.xml"/>
         
@@ -60,6 +60,11 @@
                 layout_gravity="right|top"
                 layout_marginRight="12"
                 layout_marginTop="15"/>
+                
+            <Button
+                view_name="btn_allComment1"
+                view_width="full"
+                view_height="full"/>
         </FrameLayout>
         
         <include name="TechDetailComment.xml"/>
@@ -74,6 +79,7 @@
         <include name="TechDetailComment.xml"/>
         
         <Button
+            view_name="btn_allComment2"
             view_width="full"
             view_height="34"
             text_src="查看全部评论"

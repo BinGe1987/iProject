@@ -22,7 +22,8 @@
     WeakSelf(self)
     [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         ClubDetailData *detail = (ClubDetailData *)data;
-        [view currentViewController].navigationController.navigationBar.topItem.title = detail.clubData.name;
+//        [view currentViewController].navigationController.navigationBar.topItem.title = detail.clubData.name;
+        [view currentViewController].title = detail.clubData.name;
         [weakself.handler setData:data];
     }];
     

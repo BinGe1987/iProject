@@ -13,6 +13,15 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     
+    UIButton *btn1 = (UIButton *)[view findViewByName:@"btn_allComment1"];
+    [btn1 setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"CommentController" animated:YES data:nil];
+    }];
+    UIButton *btn2 = (UIButton *)[view findViewByName:@"btn_allComment2"];
+    [btn2 setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"CommentController" animated:YES data:nil];
+    }];
+    
     return self;
 }
 

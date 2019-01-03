@@ -24,6 +24,12 @@
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     [self.tableView setHeadRefreshHandler:^{
     }];
+    
+    UIButton *btn = (UIButton *)[view findViewByName:@"btn_allComment"];
+    [btn setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"CommentController" animated:YES data:nil];
+    }];
+    
     return self;
 }
 
