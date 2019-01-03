@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        [self bind:OperationGetClubDetailData performer:[ClubDetailPerformer class]];
+        [self bind:OperationGetClubDetailData performerPlus:[ClubDetailPerformer class]];
     }
     return self;
 }

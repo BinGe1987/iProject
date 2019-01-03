@@ -12,6 +12,7 @@
 @property (nonatomic, strong) NSTimer *timer;
 
 @property (nonatomic, strong) UIButton *btnCode;
+@property (nonatomic, strong) UIButton *btnLogin;
 
 @end
 
@@ -34,14 +35,32 @@
     [self.btnCode setClickBlock:^(UIButton * _Nonnull button) {
         NSString *phone = phoneField.text;
         if (![Utils validateContactNumber:phone]) {
-            [ProgressHUB toast:@"请输入正确的手机号码！"];
+            [ProgressHUB toast:@"请输入正确的手机号码"];
         } else {
             [Store setValue:phone forKey:@"login_phone"];
             [codeField becomeFirstResponder];
             [weakself startCount];
         }
     }];
+    
+    self.btnLogin = (UIButton *)[view findViewByName:@"btn_login"];
+    [self.btnLogin setClickBlock:^(UIButton * _Nonnull button) {
+        NSString *phone = phoneField.text;
+        NSString *code = codeField.text;
+        if (![Utils validateContactNumber:phone]) {
+            [ProgressHUB toast:@"请输入正确的手机号码"];
+        } else if ([NSString isEmpty:code]){
+            [ProgressHUB toast:@"请输入验证码"];
+        } else {
+            [weakself.delegate onViewAction:@"Login" data:@{@"loginName":phone, @"code":code}];
+        }
+    }];
+    
     return self;
+}
+
+- (void)loginSuccess:(UserData *)user {
+    
 }
 
 - (void)error:(NSString *)error {

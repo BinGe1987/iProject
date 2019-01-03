@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        [self bind:OperationGetTechDetailData performer:[TechDetailPerformer class]];
+        [self bind:OperationGetTechDetailData performerPlus:[TechDetailPerformer class]];
     }
     return self;
 }

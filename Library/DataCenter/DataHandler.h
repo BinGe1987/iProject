@@ -28,18 +28,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (id<IPerformer>)getPerformer:(id)operation;
 
-//- (BOOL)bindOperation:(id)operation withPerformer:(id<IPerformer>)performer;
+- (BOOL)bind:(id)operation performer:(id<IPerformer>)performer;
 
 #pragma -mark IParser 判断、绑定、处理
 - (BOOL)isContainsParser:(id)operation;
 
-//- (BOOL)bindParser:(id)operation withParser:(id<IParser>)parser;
+- (BOOL)bind:(id)operation parser:(id<IParser>)parser;
 
 - (id)parseData:(id)operation withSourceData:(id)source;
 
 - (void)bind:(id)operation performer:(_Nullable id<IPerformer>)performer parser:(_Nullable id<IParser>)parser;
 
-- (void)bind:(id)operation performer:(Class)performerPlusClas;
+- (void)bind:(id)operation performerPlus:(Class)performerPlusClas;
 
 
 @end

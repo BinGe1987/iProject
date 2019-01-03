@@ -34,6 +34,17 @@
             }
         }];
     }
+    
+    else if ([action isEqualToString:@"Login"]) {
+        [DataCenter perform:OperationLogin params:data callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+            if (data.isSuccess) {
+                
+            } else {
+                LoginViewHandler *handler = (LoginViewHandler *)self.handler;
+                [handler error:data.errorMessage];
+            }
+        }];
+    }
 }
 
 @end

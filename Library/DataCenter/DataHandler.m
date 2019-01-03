@@ -52,7 +52,7 @@
     return [self.performers objectForKey:key];
 }
 
-- (BOOL)bindOperation:(id)operation withPerformer:(id<IPerformer>)performer {
+- (BOOL)bind:(id)operation performer:(id<IPerformer>)performer {
     NSString *key = [NSString stringWithFormat:@"%@",operation];
     [self.performers setObject:performer forKey:key];
     return YES;
@@ -64,7 +64,7 @@
     return [self.parsers objectForKey:key];
 }
 
-- (BOOL)bindParser:(id)operation withParser:(id<IParser>)parser {
+- (BOOL)bind:(id)operation parser:(id<IParser>)parser {
     NSString *key = [NSString stringWithFormat:@"%@",operation];
     [self.parsers setObject:parser forKey:key];
     return YES;
@@ -87,7 +87,7 @@
     
 }
 
-- (void)bind:(id)operation performer:(Class)performerPlusClass {
+- (void)bind:(id)operation performerPlus:(Class)performerPlusClass {
     NSString *key = [NSString stringWithFormat:@"%@",operation];
     Performer *performer = [[performerPlusClass alloc] init];
     if (performer) {

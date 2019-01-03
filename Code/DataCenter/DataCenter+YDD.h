@@ -24,6 +24,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationGetConfig                      (@"OperationGetConfig")
 
 #pragma make  登录相关
+#define OperationLogin                          (@"OperationLogin")
 #define OperationLoginCheck                     (@"OperationLoginCheck")
 #define OperationLoginVerifyCode                (@"OperationLoginVerifyCode")
 

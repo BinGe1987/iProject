@@ -6,6 +6,7 @@
 //
 
 #import "LoginHandler.h"
+#import "LoginPerformer.h"
 #import "CheckLoginPerfomer.h"
 #import "VerifyCodePerformer.h"
 
@@ -22,17 +23,16 @@
     self = [super init];
     if (self) {
         self.loginData = [LoginData new];
-        [self bind:OperationLoginCheck performer:[CheckLoginPerfomer new] parser:self];
-        
-        [self bind:OperationLoginVerifyCode performer:[VerifyCodePerformer class]];
+        [self bind:OperationLoginCheck performer:[CheckLoginPerfomer new]];
+        [self bind:OperationLogin performer:[LoginPerformer new]];
+        [self bind:OperationLoginVerifyCode performerPlus:[VerifyCodePerformer class]];
         
     }
     return self;
 }
 
 - (id)parse:(id)operation withSource:(id)source {
-    
-    return self.loginData;
+    return source;
 }
 
 -(id)getData {

@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LoginViewHandler : ViewHandler
 
+- (void)loginSuccess:(UserData *)user;
+
 - (void)error:(NSString *)error;
 
 @end

@@ -137,6 +137,7 @@
 		776B55F821C11A9200793CAF /* readme-UIEngine in Resources */ = {isa = PBXBuildFile; fileRef = 776B55F721C11A9200793CAF /* readme-UIEngine */; };
 		776B55FB21C14A0800793CAF /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55FA21C14A0800793CAF /* ScrollView.m */; };
 		77A389D721DE196800042B04 /* VerifyCodePerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D621DE196800042B04 /* VerifyCodePerformer.m */; };
+		77A389DA21DE3F2200042B04 /* LoginPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D921DE3F2200042B04 /* LoginPerformer.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -585,6 +586,8 @@
 		776B55FA21C14A0800793CAF /* ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
 		77A389D521DE196800042B04 /* VerifyCodePerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyCodePerformer.h; sourceTree = "<group>"; };
 		77A389D621DE196800042B04 /* VerifyCodePerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyCodePerformer.m; sourceTree = "<group>"; };
+		77A389D821DE3F2200042B04 /* LoginPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPerformer.h; sourceTree = "<group>"; };
+		77A389D921DE3F2200042B04 /* LoginPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPerformer.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1235,6 +1238,8 @@
 			children = (
 				77EA8F8321B90A18001B8959 /* LoginHandler.h */,
 				77EA8F8421B90A18001B8959 /* LoginHandler.m */,
+				77A389D821DE3F2200042B04 /* LoginPerformer.h */,
+				77A389D921DE3F2200042B04 /* LoginPerformer.m */,
 				77A389D521DE196800042B04 /* VerifyCodePerformer.h */,
 				77A389D621DE196800042B04 /* VerifyCodePerformer.m */,
 				776B55E821BFF7DC00793CAF /* CheckLoginPerfomer.h */,
@@ -2854,6 +2859,7 @@
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
 				77CEA52421D4FAA200B388E4 /* CollectionView.m in Sources */,
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,
+				77A389DA21DE3F2200042B04 /* LoginPerformer.m in Sources */,
 				77B053CE21C8A5F90045A489 /* Net.m in Sources */,
 				77B054FF21CBE6910045A489 /* EventBus.m in Sources */,
 				771CA3C021DCA7A100B00F11 /* Performer+Parser.m in Sources */,

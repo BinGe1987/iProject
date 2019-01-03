@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        [self bind:OperationGetCommentListData performer:[CommentListPerformer class]];
+        [self bind:OperationGetCommentListData performerPlus:[CommentListPerformer class]];
     }
     return self;
 }
