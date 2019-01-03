@@ -24,6 +24,23 @@
     hud.detailsLabel.text = detail;
 }
 
++ (void)toast:(NSString *)title {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:TOP_WINDOW animated:YES];
+    hud.mode = MBProgressHUDModeText;
+    hud.label.text = title;
+    CGFloat offsetTop = [UIScreen mainScreen].bounds.size.height * 0.55 / 2;
+    hud.offset = CGPointMake(0.f, offsetTop);
+    hud.removeFromSuperViewOnHide = YES;
+    [hud hideAnimated:YES afterDelay:2.0];
+}
+
++ (void)errorTitle:(NSString *)title {
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:TOP_WINDOW animated:YES];
+    hud.label.text = title;
+    hud.removeFromSuperViewOnHide = YES;
+    [hud hideAnimated:YES afterDelay:1.5];
+}
+
 + (void)showView:(UIView *)view {
     UIImageView *imageView = [[UIImageView alloc] initWithImage:[ImageUtils imageWithColor:[UIColor whiteColor] size:view.bounds.size]];
     [imageView addSubview:view];
@@ -39,6 +56,5 @@
         [MBProgressHUD hideHUDForView:TOP_WINDOW animated:YES];
     });
 }
-
 
 @end

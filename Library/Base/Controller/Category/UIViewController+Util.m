@@ -23,6 +23,13 @@
     [topController.navigationController pushViewController:vc animated:animated];
 }
 
++ (void)presentController:(NSString *)controller animated:(BOOL)animated data:(id __nullable)data completion:(void(^ __nullable)(void))completion {
+    UIViewController *topController = [UIViewController topViewController];
+    UIViewController *vc = [[NSClassFromString(controller) alloc] init];
+    vc.intentData = data;
+    [topController presentViewController:vc animated:animated completion:completion];
+}
+
 + (void)presentSelfAnimated:(BOOL)animated data:(id __nullable)data completion:(void(^ __nullable)(void))completion {
     UIViewController *topController = [UIViewController topViewController];
     UIViewController *vc = [[[self class] alloc] init];

@@ -30,6 +30,7 @@
                 text_color="#2e2e2e"
                 text_size="13"/>
             <InputView
+                view_name="input_phone"
                 view_height="28"
                 view_width="full"
                 text_placeholder="在这里输入手机号"
@@ -55,6 +56,7 @@
             view_height="full"
             view_orientation="h">
             <InputView
+                view_name="input_code"
                 view_height="28"
                 view_width="full"
                 text_placeholder="请输入验证码"

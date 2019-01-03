@@ -6,17 +6,22 @@
 //
 
 #import "CheckLoginPerfomer.h"
-#import "CheckLoginRequest.h"
+#import "NetRequest.h"
 
 @implementation CheckLoginPerfomer
 
 - (id)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callback {
-    sleep(1);
-    NetResponse *response = [Net synchroRequest:[CheckLoginRequest new]];
-    Data *data = [Data new];
-    data.source = response.data;
-    data.error = response.error;
-    return data;
+    
+    NSString *api = params[@"api"];
+    NSString *url = [URLConstant URLWithApi:api];
+    
+    HttpRequest *request = [HttpRequest new];
+    request.url = url;
+    request.data = params;
+    
+    HttpResponse *response = [Http post:request];
+    
+    return nil;
 }
 
 @end

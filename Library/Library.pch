@@ -32,5 +32,6 @@
 #import "DataCenter.h"//数据中心
 #import "MVPHeader.h"//mvp模式
 #import "LibrarySDKHeader.h"//第三方库
+#import "Http.h"
 
 #endif

@@ -16,6 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NetRequest : NSObject
 
+@property (nonatomic, strong) NSString *requestUrl;
+@property (nonatomic, strong) NSDictionary *requestData;
+
 ///请求的接口
 - (NSString *)url;
 ///请求的参数

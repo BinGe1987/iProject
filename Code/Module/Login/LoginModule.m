@@ -10,12 +10,16 @@
 @implementation LoginModule
 
 - (void)setup:(BuildConfiguration)buildConfiguration {
-    NSDictionary *params = @{};
+    NSString *token = [Store valueForKey:@"token" defaultValue:@""];
+    NSDictionary *params = @{
+                             @"api":API_CHECK_LOGIN,
+                             @"token":token,
+                             };
     [DataCenter perform:OperationLoginCheck params:params callback:^(id  _Nonnull operation, id  _Nullable data) {
         
         LoginData *user = (LoginData *)data;
         if (!user.isLogin) {
-//            [MVPViewController presentMVPControllerName:@"LoginViewController" animated:NO data:nil completion:nil];
+            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
         }
         
         [self loginCheckCompleted];

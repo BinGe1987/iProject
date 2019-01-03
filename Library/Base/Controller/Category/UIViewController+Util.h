@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)pushSelfAnimated:(BOOL)animated data:(id __nullable)data;
 
++ (void)presentController:(NSString *)controller animated:(BOOL)animated data:(id __nullable)data completion:(void(^ __nullable)(void))completion;
+
 + (void)presentSelfAnimated:(BOOL)animated data:(id __nullable)data completion:(void(^ __nullable)(void))completion;
 
 + (UIViewController *)topViewController;

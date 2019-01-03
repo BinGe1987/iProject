@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SingletonDefine.h"
 #import "NetConfig.h"
 #import "NetRequest.h"
 #import "NetResponse.h"

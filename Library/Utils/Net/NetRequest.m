@@ -11,11 +11,11 @@
 
 ///请求的接口
 - (NSString *)url {
-    return nil;
+    return self.requestUrl;
 }
 ///请求的参数
 - (NSDictionary *)params {
-    return nil;
+    return self.requestData;
 }
 
 

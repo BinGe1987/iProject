@@ -64,6 +64,10 @@
 		771CA42C21DDD94800B00F11 /* CommentFilterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42B21DDD94800B00F11 /* CommentFilterData.m */; };
 		771CA42F21DDE15300B00F11 /* CommentAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42E21DDE15300B00F11 /* CommentAdapter.m */; };
 		771CA43221DDE25400B00F11 /* CommentItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA43121DDE25400B00F11 /* CommentItemCell.m */; };
+		771CA43621DDF26600B00F11 /* URLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA43521DDF26600B00F11 /* URLConstant.m */; };
+		771CA43A21DDFB5B00B00F11 /* Http.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA43921DDFB5B00B00F11 /* Http.m */; };
+		771CA43D21DDFB7300B00F11 /* HttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA43C21DDFB7300B00F11 /* HttpRequest.m */; };
+		771CA44021DDFB9500B00F11 /* HttpResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA43F21DDFB9500B00F11 /* HttpResponse.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -136,7 +140,6 @@
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
 		77B053D821C8C53F0045A489 /* NetConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D721C8C53F0045A489 /* NetConfig.m */; };
-		77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053DA21C8E0270045A489 /* CheckLoginRequest.m */; };
 		77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053DD21C8E0C70045A489 /* NetRequest.m */; };
 		77B0544821C943760045A489 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 77B0541E21C943760045A489 /* README.md */; };
 		77B0544921C943760045A489 /* YYImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0542021C943760045A489 /* YYImageCache.m */; };
@@ -432,6 +435,14 @@
 		771CA42E21DDE15300B00F11 /* CommentAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentAdapter.m; sourceTree = "<group>"; };
 		771CA43021DDE25400B00F11 /* CommentItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentItemCell.h; sourceTree = "<group>"; };
 		771CA43121DDE25400B00F11 /* CommentItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentItemCell.m; sourceTree = "<group>"; };
+		771CA43421DDF26600B00F11 /* URLConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = URLConstant.h; sourceTree = "<group>"; };
+		771CA43521DDF26600B00F11 /* URLConstant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = URLConstant.m; sourceTree = "<group>"; };
+		771CA43821DDFB5B00B00F11 /* Http.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Http.h; sourceTree = "<group>"; };
+		771CA43921DDFB5B00B00F11 /* Http.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Http.m; sourceTree = "<group>"; };
+		771CA43B21DDFB7300B00F11 /* HttpRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpRequest.h; sourceTree = "<group>"; };
+		771CA43C21DDFB7300B00F11 /* HttpRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpRequest.m; sourceTree = "<group>"; };
+		771CA43E21DDFB9500B00F11 /* HttpResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HttpResponse.h; sourceTree = "<group>"; };
+		771CA43F21DDFB9500B00F11 /* HttpResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HttpResponse.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -579,8 +590,6 @@
 		77B053D421C8BDCA0045A489 /* NetResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetResponse.m; sourceTree = "<group>"; };
 		77B053D621C8C53F0045A489 /* NetConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetConfig.h; sourceTree = "<group>"; };
 		77B053D721C8C53F0045A489 /* NetConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetConfig.m; sourceTree = "<group>"; };
-		77B053D921C8E0270045A489 /* CheckLoginRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckLoginRequest.h; sourceTree = "<group>"; };
-		77B053DA21C8E0270045A489 /* CheckLoginRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheckLoginRequest.m; sourceTree = "<group>"; };
 		77B053DC21C8E0C70045A489 /* NetRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetRequest.h; sourceTree = "<group>"; };
 		77B053DD21C8E0C70045A489 /* NetRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetRequest.m; sourceTree = "<group>"; };
 		77B0541E21C943760045A489 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
@@ -1194,6 +1203,19 @@
 			path = Comment;
 			sourceTree = "<group>";
 		};
+		771CA43721DDFB4B00B00F11 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				771CA43821DDFB5B00B00F11 /* Http.h */,
+				771CA43921DDFB5B00B00F11 /* Http.m */,
+				771CA43B21DDFB7300B00F11 /* HttpRequest.h */,
+				771CA43C21DDFB7300B00F11 /* HttpRequest.m */,
+				771CA43E21DDFB9500B00F11 /* HttpResponse.h */,
+				771CA43F21DDFB9500B00F11 /* HttpResponse.m */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 		7723E1B421D6715D00B77890 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -1212,8 +1234,6 @@
 				77EA8F8421B90A18001B8959 /* LoginHandler.m */,
 				776B55E821BFF7DC00793CAF /* CheckLoginPerfomer.h */,
 				776B55E921BFF7DC00793CAF /* CheckLoginPerfomer.m */,
-				77B053D921C8E0270045A489 /* CheckLoginRequest.h */,
-				77B053DA21C8E0270045A489 /* CheckLoginRequest.m */,
 				7723E1B821D70DDE00B77890 /* LoginData.h */,
 				7723E1B921D70DDE00B77890 /* LoginData.m */,
 			);
@@ -1483,6 +1503,7 @@
 				77B0557F21D122460045A489 /* XMLDictionary */,
 				775B15FA21C8A15300B8D6FF /* Imgae+Color */,
 				775B15F921C8A0A700B8D6FF /* Net */,
+				771CA43721DDFB4B00B00F11 /* Http */,
 				77B054B421CA4D5E0045A489 /* Store */,
 				771CA36821D8A8E100B00F11 /* Utils.h */,
 				771CA36921D8A8E100B00F11 /* Utils.m */,
@@ -1965,6 +1986,8 @@
 			isa = PBXGroup;
 			children = (
 				77CEA4B421D3A60F00B388E4 /* ColorConstant.h */,
+				771CA43421DDF26600B00F11 /* URLConstant.h */,
+				771CA43521DDF26600B00F11 /* URLConstant.m */,
 				77CEA4B321D3A58A00B388E4 /* ConstantHeader.h */,
 			);
 			path = Constant;
@@ -2757,6 +2780,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				771CA3C721DCAE3500B00F11 /* ClubDetailBannerCell.m in Sources */,
+				771CA43A21DDFB5B00B00F11 /* Http.m in Sources */,
 				7734C11621D23A45009D1EE8 /* KafkaRefreshControl.m in Sources */,
 				7734C12321D23A45009D1EE8 /* KafkaArcLayer.m in Sources */,
 				7723E1CB21D74B4F00B77890 /* XMLObject.m in Sources */,
@@ -2793,13 +2817,13 @@
 				77CEA4E721D4B69700B388E4 /* DiscoverTechPresenter.m in Sources */,
 				771CA3CD21DCB2AB00B00F11 /* TableViewCell.m in Sources */,
 				776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */,
+				771CA43621DDF26600B00F11 /* URLConstant.m in Sources */,
 				771CA3AA21DC9F9200B00F11 /* ClubDetailPresenter.m in Sources */,
 				7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */,
 				77CEA56821D64C3800B388E4 /* OrderData.m in Sources */,
 				7734C12121D23A45009D1EE8 /* KafkaReplicatorHeader.m in Sources */,
 				77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */,
 				77B054D821CA9C720045A489 /* TableViewModel.m in Sources */,
-				77B053DB21C8E0270045A489 /* CheckLoginRequest.m in Sources */,
 				77B054C921CA55870045A489 /* LabelView.m in Sources */,
 				77CEA52B21D5071200B388E4 /* CollectionViewAdapter.m in Sources */,
 				77B054E821CB486C0045A489 /* NetReachability.m in Sources */,
@@ -2921,6 +2945,7 @@
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,
 				77CEA55B21D64A6500B388E4 /* OrderPresenter.m in Sources */,
 				77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */,
+				771CA44021DDFB9500B00F11 /* HttpResponse.m in Sources */,
 				77B054C321CA52440045A489 /* InputViewParams.m in Sources */,
 				77B0557C21D110600045A489 /* UIImage+WebImage.m in Sources */,
 				77EA8F5D21B90227001B8959 /* ViewParams.m in Sources */,
@@ -2948,6 +2973,7 @@
 				77B0550B21CCD1420045A489 /* ConfigData.m in Sources */,
 				775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */,
 				7734C11721D23A45009D1EE8 /* KafkaFootRefreshControl.m in Sources */,
+				771CA43D21DDFB7300B00F11 /* HttpRequest.m in Sources */,
 				77CEA4EA21D4B79300B388E4 /* DiscoverNvPresenter.m in Sources */,
 				77B0544B21C943760045A489 /* YYCache.m in Sources */,
 				7734C11A21D23A45009D1EE8 /* KafkaNativeFooter.m in Sources */,

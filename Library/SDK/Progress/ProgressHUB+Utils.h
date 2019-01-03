@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)loadingTitle:(NSString *)title;
 + (void)loadingTitle:(NSString *)title detailText:(NSString *)detail;
 
++ (void)toast:(NSString *)title;
+
++ (void)errorTitle:(NSString *)title;
+
 + (void)showView:(UIView *)view;
 
 + (void)dismiss;
