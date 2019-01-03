@@ -15,32 +15,35 @@
 #import "OrderHandler.h"
 #import "ClubHandler.h"
 #import "TechHandler.h"
+#import "CommentListHandler.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma make 全局
 ///获取配置信息
-#define OperationGetConfig (@"OperationGetConfig")
+#define OperationGetConfig                      (@"OperationGetConfig")
 ///自动登录
-#define OperationLoginCheck (@"OperationLoginCheck")
+#define OperationLoginCheck                     (@"OperationLoginCheck")
 
 #pragma make 首页相关
 ///获取首页信息
-#define OperationGetHomeData (@"OperationGetHomeData")
+#define OperationGetHomeData                    (@"OperationGetHomeData")
 
 #pragma make 发现页相关
 ///获取发现页信息
-#define OperationGetDiscoverClubData (@"OperationGetDiscoverClubData")
-#define OperationGetDiscoverTechData (@"OperationGetDiscoverTechData")
+#define OperationGetDiscoverClubData            (@"OperationGetDiscoverClubData")
+#define OperationGetDiscoverTechData            (@"OperationGetDiscoverTechData")
 
 #pragma make  订单相关
-#define OperationGetOrderData (@"OperationGetOrderData")
+#define OperationGetOrderData                   (@"OperationGetOrderData")
 
 #pragma make 二级页面
 ///获取会所主页数据
-#define OperationGetClubDetailData (@"OperationGetClubDetailData")
+#define OperationGetClubDetailData              (@"OperationGetClubDetailData")
 ///获取技师主页数据
-#define OperationGetTechDetailData (@"OperationGetTechDetailData")
+#define OperationGetTechDetailData              (@"OperationGetTechDetailData")
+///获取评论列表数据
+#define OperationGetCommentListData             (@"OperationGetCommentListData")
 
 
 @interface DataCenter (YDD)

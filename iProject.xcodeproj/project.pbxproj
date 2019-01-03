@@ -56,6 +56,11 @@
 		771CA41521DDB2E500B00F11 /* CommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA41421DDB2E500B00F11 /* CommentController.m */; };
 		771CA41721DDBA7A00B00F11 /* Comment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA41621DDBA7A00B00F11 /* Comment.xml */; };
 		771CA41921DDBE5900B00F11 /* CommentItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA41821DDBE5900B00F11 /* CommentItem.xml */; };
+		771CA41C21DDC1A100B00F11 /* CommentPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA41B21DDC1A100B00F11 /* CommentPresenter.m */; };
+		771CA41F21DDC23E00B00F11 /* CommentViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA41E21DDC23E00B00F11 /* CommentViewHandler.m */; };
+		771CA42321DDC2F500B00F11 /* CommentListHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42221DDC2F500B00F11 /* CommentListHandler.m */; };
+		771CA42621DDC30E00B00F11 /* CommentListPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42521DDC30E00B00F11 /* CommentListPerformer.m */; };
+		771CA42921DDC32400B00F11 /* CommentListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42821DDC32400B00F11 /* CommentListData.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -408,6 +413,16 @@
 		771CA41421DDB2E500B00F11 /* CommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentController.m; sourceTree = "<group>"; };
 		771CA41621DDBA7A00B00F11 /* Comment.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Comment.xml; sourceTree = "<group>"; };
 		771CA41821DDBE5900B00F11 /* CommentItem.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = CommentItem.xml; sourceTree = "<group>"; };
+		771CA41A21DDC1A100B00F11 /* CommentPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentPresenter.h; sourceTree = "<group>"; };
+		771CA41B21DDC1A100B00F11 /* CommentPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentPresenter.m; sourceTree = "<group>"; };
+		771CA41D21DDC23E00B00F11 /* CommentViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentViewHandler.h; sourceTree = "<group>"; };
+		771CA41E21DDC23E00B00F11 /* CommentViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentViewHandler.m; sourceTree = "<group>"; };
+		771CA42121DDC2F500B00F11 /* CommentListHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListHandler.h; sourceTree = "<group>"; };
+		771CA42221DDC2F500B00F11 /* CommentListHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListHandler.m; sourceTree = "<group>"; };
+		771CA42421DDC30E00B00F11 /* CommentListPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListPerformer.h; sourceTree = "<group>"; };
+		771CA42521DDC30E00B00F11 /* CommentListPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListPerformer.m; sourceTree = "<group>"; };
+		771CA42721DDC32400B00F11 /* CommentListData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListData.h; sourceTree = "<group>"; };
+		771CA42821DDC32400B00F11 /* CommentListData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListData.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -1141,8 +1156,25 @@
 			children = (
 				771CA41321DDB2E500B00F11 /* CommentController.h */,
 				771CA41421DDB2E500B00F11 /* CommentController.m */,
+				771CA41A21DDC1A100B00F11 /* CommentPresenter.h */,
+				771CA41B21DDC1A100B00F11 /* CommentPresenter.m */,
+				771CA41D21DDC23E00B00F11 /* CommentViewHandler.h */,
+				771CA41E21DDC23E00B00F11 /* CommentViewHandler.m */,
 				771CA41621DDBA7A00B00F11 /* Comment.xml */,
 				771CA41821DDBE5900B00F11 /* CommentItem.xml */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		771CA42021DDC2D000B00F11 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				771CA42121DDC2F500B00F11 /* CommentListHandler.h */,
+				771CA42221DDC2F500B00F11 /* CommentListHandler.m */,
+				771CA42421DDC30E00B00F11 /* CommentListPerformer.h */,
+				771CA42521DDC30E00B00F11 /* CommentListPerformer.m */,
+				771CA42721DDC32400B00F11 /* CommentListData.h */,
+				771CA42821DDC32400B00F11 /* CommentListData.m */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -2527,6 +2559,7 @@
 				77CEA55F21D64BEC00B388E4 /* Order */,
 				771CA3B121DCA1EB00B00F11 /* Club */,
 				771CA3F621DD0C8600B00F11 /* Tech */,
+				771CA42021DDC2D000B00F11 /* Comment */,
 				776B55A621BE628900793CAF /* DataCenter+YDD.h */,
 				776B55A721BE628900793CAF /* DataCenter+YDD.m */,
 				77CEA4C321D3D98600B388E4 /* Data+Update.h */,
@@ -2761,6 +2794,7 @@
 				77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */,
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
 				776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */,
+				771CA42921DDC32400B00F11 /* CommentListData.m in Sources */,
 				77B0552B21CE8AE30045A489 /* BaseModule.m in Sources */,
 				775B15F221C7D4AC00B8D6FF /* UIViewController+ContentView.m in Sources */,
 				77B0544921C943760045A489 /* YYImageCache.m in Sources */,
@@ -2786,7 +2820,9 @@
 				77B0545121C943760045A489 /* YYImageCoder.m in Sources */,
 				7723E1D121D780C000B77890 /* XMLModel.m in Sources */,
 				771CA38921D94EB800B00F11 /* DOPDropDownMenu.m in Sources */,
+				771CA42321DDC2F500B00F11 /* CommentListHandler.m in Sources */,
 				77B053D821C8C53F0045A489 /* NetConfig.m in Sources */,
+				771CA41F21DDC23E00B00F11 /* CommentViewHandler.m in Sources */,
 				771CA3D521DCC1FC00B00F11 /* ClubDetailAdCell.m in Sources */,
 				774F017421B9728900CB482F /* MineViewController.m in Sources */,
 				77CEA4CB21D48B3C00B388E4 /* DiscoverViewController.m in Sources */,
@@ -2828,6 +2864,7 @@
 				77EA8F4D21B90226001B8959 /* ViewGroupModel.m in Sources */,
 				77EA8F2D21B90226001B8959 /* CommonHandler.m in Sources */,
 				776B55EA21BFF7DC00793CAF /* CheckLoginPerfomer.m in Sources */,
+				771CA42621DDC30E00B00F11 /* CommentListPerformer.m in Sources */,
 				77EA8F5B21B90227001B8959 /* LayoutParams.m in Sources */,
 				77EA8F5921B90227001B8959 /* TextViewParams.m in Sources */,
 				77B054CC21CA55E70045A489 /* LabelViewModel.m in Sources */,
@@ -2884,6 +2921,7 @@
 				7723E1C821D746CE00B77890 /* XMLParser.m in Sources */,
 				771CA3FC21DD0CB700B00F11 /* TechDetailData.m in Sources */,
 				77CEA52121D4FA9100B388E4 /* CollectionViewParams.m in Sources */,
+				771CA41C21DDC1A100B00F11 /* CommentPresenter.m in Sources */,
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
 				77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */,
