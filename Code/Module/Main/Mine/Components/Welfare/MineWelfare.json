@@ -66,6 +66,7 @@
                     "layout_marginLeft":"9",
                 },
                 {
+                    "view_name":"label_points",
                     "view_type":"label",
                     "view_width":"auto",
                     "view_height":"auto",

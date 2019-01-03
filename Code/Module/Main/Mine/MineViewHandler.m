@@ -29,11 +29,17 @@
     
     //累计充值
     UILabel *totalRecharge = (UILabel *)[self.view findViewByName:@"label_totalRecharge"];
-    totalRecharge.text = [NSString stringWithFormat:@"￥%@", user.recharge.totalRechargeAmount];
+    totalRecharge.text = user.recharge.totalRechargeAmount;
     
     //累计充值
     UILabel *amount = (UILabel *)[self.view findViewByName:@"label_amount"];
-    amount.text = [NSString stringWithFormat:@"%@", user.recharge.amount];
+    amount.text = user.recharge.amount;
+    
+    //我的积分
+    UILabel *points = (UILabel *)[self.view findViewByName:@"label_points"];
+//    points.text = @"1231231231231231";
+    points.text = [NSString stringWithFormat:@"我的积分: %@", user.points.nowPoints];
+    Log(@"text : %@", user.points.nowPoints);
 }
 
 @end
