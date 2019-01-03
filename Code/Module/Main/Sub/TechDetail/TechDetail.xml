@@ -9,14 +9,97 @@
         view_width="full"
         view_height="full"
         view_orientation="V"
+        view_scrollIndicator="NO"
         view_background="#ffffffff">
         <CustomView
             view_name="banner"
             view_class="BannerView"
             view_width="full"
-            view_height="376sp"
-            view_background="#ff00ff00"/>
+            view_height="376sp"/>
+            
+        <include name="TechProfile.xml"/>
+        
+        <Button
+            view_width="full"
+            view_height="34"
+            view_background="#55b4b2"
+            view_borderRadius="8"
+            layout_marginTop="20"
+            layout_marginBottom="25"
+            layout_marginLeft="77"
+            layout_marginRight="77"
+            layout_gravity="center"
+            text_src="电话预约"
+            text_color="#ffffff"/>
+            
+        <FrameLayout
+            view_width="full"
+            view_height="44">
+            
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_size="17"
+                text_color="#2e2e2e"
+                text_src="用户评价"
+                layout_marginTop="12"
+                layout_marginLeft="12"/>
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_size="11"
+                text_color="#999999"
+                text_src="全部"
+                layout_gravity="right|top"
+                layout_marginTop="15"
+                layout_marginRight="28" />
+            <ImageView
+                view_width="13"
+                view_height="13"
+                image_src="@arrow1"
+                layout_gravity="right|top"
+                layout_marginRight="12"
+                layout_marginTop="15"/>
+        </FrameLayout>
+        
+        <include name="TechDetailComment.xml"/>
+        
+        <View
+            view_width="full"
+            view_height="0.5"
+            view_background="#eeeeee"
+            layout_marginLeft="85"
+            layout_marginRight="15"/>
+        
+        <include name="TechDetailComment.xml"/>
+        
+        <Button
+            view_width="full"
+            view_height="34"
+            text_src="查看全部评论"
+            text_color="#5a9ef7"/>
+        
+        <View
+            view_width="full"
+            view_height="34"/>
     </ScrollView>
+    
+    <FrameLayout
+        view_width="full"
+        view_height="100"
+        layout_gravity="bottom"
+        layout_marginBottom="-66"
+        view_background="#55b4b2">
+    </FrameLayout>
+    <Button
+        view_name="btn_comment"
+        view_width="full"
+        view_height="34"
+        text_src="发表评论"
+        text_size="14"
+        layout_gravity="bottom"
+        view_background="#55b4b2"
+        text_color="#ffffff" />
     
 </FrameLayout>
 

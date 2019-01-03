@@ -30,3 +30,6 @@ ScrollView属性说明：
 
 //这个属性可以让view的marginTop自动加上状态栏的高度
 "layout_fixTop":"YES",
+
+//scrollview 显不显示滚动条的属性（YES/NO）
+view_scrollIndicator

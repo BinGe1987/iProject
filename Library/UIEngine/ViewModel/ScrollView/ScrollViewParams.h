@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 //线性布局的方向
 @property (nonatomic, assign) ScrollOrientation orientation;
+//显不显示滚动条
+@property (nonatomic, assign) BOOL scrollIndicator;
 
 @end
 

@@ -86,7 +86,11 @@
         self.height = [[height substringToIndex:[width length] -1] floatValue];
     } else {
         self.heightValueType = VALUE;
-        self.height = [height floatValue];
+        if ([height hasSuffix:@"sp"]) {
+            self.height = [[height substringToIndex:[height length] -2] floatValue] * SCREENSCALE;
+        } else {
+            self.height = [height floatValue];
+        }
     }
 }
 

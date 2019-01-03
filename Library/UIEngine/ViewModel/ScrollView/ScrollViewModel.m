@@ -13,6 +13,9 @@
     ScrollView *scrollView = (ScrollView *)self.view;
     ScrollViewParams *params = (ScrollViewParams *)scrollView.viewParams;
     scrollView.orientation = params.orientation;
+    
+    scrollView.showsVerticalScrollIndicator = params.scrollIndicator;
+    scrollView.showsHorizontalScrollIndicator = params.scrollIndicator;
 }
 
 

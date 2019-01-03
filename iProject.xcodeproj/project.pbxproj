@@ -51,6 +51,8 @@
 		771CA40521DD0EED00B00F11 /* TechDetailViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA40421DD0EED00B00F11 /* TechDetailViewHandler.m */; };
 		771CA40921DD172E00B00F11 /* CustomViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA40821DD172E00B00F11 /* CustomViewModel.m */; };
 		771CA40C21DD174100B00F11 /* CustomViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA40B21DD174100B00F11 /* CustomViewParams.m */; };
+		771CA40F21DD237700B00F11 /* TechProfile.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA40E21DD237700B00F11 /* TechProfile.xml */; };
+		771CA41121DDAC9800B00F11 /* TechDetailComment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA41021DDAC9800B00F11 /* TechDetailComment.xml */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -397,6 +399,8 @@
 		771CA40821DD172E00B00F11 /* CustomViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewModel.m; sourceTree = "<group>"; };
 		771CA40A21DD174100B00F11 /* CustomViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewParams.h; sourceTree = "<group>"; };
 		771CA40B21DD174100B00F11 /* CustomViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomViewParams.m; sourceTree = "<group>"; };
+		771CA40E21DD237700B00F11 /* TechProfile.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechProfile.xml; sourceTree = "<group>"; };
+		771CA41021DDAC9800B00F11 /* TechDetailComment.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechDetailComment.xml; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -989,6 +993,8 @@
 				771CA40321DD0EED00B00F11 /* TechDetailViewHandler.h */,
 				771CA40421DD0EED00B00F11 /* TechDetailViewHandler.m */,
 				771CA3F321DD0AB200B00F11 /* TechDetail.xml */,
+				771CA40E21DD237700B00F11 /* TechProfile.xml */,
+				771CA41021DDAC9800B00F11 /* TechDetailComment.xml */,
 			);
 			path = TechDetail;
 			sourceTree = "<group>";
@@ -2657,8 +2663,10 @@
 				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
 				771CA3E921DCED0500B00F11 /* ClubDetailProjectItem.xml in Resources */,
+				771CA40F21DD237700B00F11 /* TechProfile.xml in Resources */,
 				77EA8F5121B90226001B8959 /* demo.json in Resources */,
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,
+				771CA41121DDAC9800B00F11 /* TechDetailComment.xml in Resources */,
 				776B55F821C11A9200793CAF /* readme-UIEngine in Resources */,
 				771CA3F221DCF0D700B00F11 /* ClubDetailComment.xml in Resources */,
 				77CEA4CD21D48BD000B388E4 /* Discover.json in Resources */,

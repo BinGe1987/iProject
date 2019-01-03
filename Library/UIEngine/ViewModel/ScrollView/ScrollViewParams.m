@@ -18,6 +18,8 @@
         } else {
             self.orientation = ScrollOrientationVertical;
         }
+        NSString *scrollIndicator = [model getString:@"view_scrollIndicator" defaultValue:@"YES"];
+        self.scrollIndicator = [scrollIndicator isEqualToString:@"YES"];
     }
     return self;
 }
