@@ -27,7 +27,7 @@
     return self;
 }
 
-- (void)onViewAction:(id)action {
+- (void)onViewAction:(id)action data:(id)data {
     
 }
 

@@ -22,7 +22,7 @@
     [club setClickBlock:^(UIButton * _Nonnull button) {
         [weakself currentSelected:0];
         if (weakself.delegate) {
-            [weakself.delegate onViewAction:@"0"];
+            [weakself.delegate onViewAction:@"0" data:nil];
         }
     }];
     
@@ -30,7 +30,7 @@
     [tech setClickBlock:^(UIButton * _Nonnull button) {
         [weakself currentSelected:1];
         if (weakself.delegate) {
-            [weakself.delegate onViewAction:@"1"];
+            [weakself.delegate onViewAction:@"1" data:nil];
         }
     }];
     

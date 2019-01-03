@@ -21,10 +21,13 @@
     return self;
 }
 
-- (void)onViewAction:(id)action {
+- (void)onViewAction:(id)action data:(id)data {
+    
     //倒数，获取验证码
-    if ([action isEqualToString:@"count"]) {
-        
+    if ([action isEqualToString:@"startCount"]) {
+        [DataCenter perform:OperationLoginVerifyCode params:data callback:^(id  _Nonnull operation, id  _Nullable data) {
+            
+        }];
     }
 }
 

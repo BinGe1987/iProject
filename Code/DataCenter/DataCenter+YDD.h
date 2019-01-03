@@ -22,8 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma make 全局
 ///获取配置信息
 #define OperationGetConfig                      (@"OperationGetConfig")
-///自动登录
+
+#pragma make  登录相关
 #define OperationLoginCheck                     (@"OperationLoginCheck")
+#define OperationLoginVerifyCode                (@"OperationLoginVerifyCode")
 
 #pragma make 首页相关
 ///获取首页信息

@@ -46,6 +46,9 @@
 
 static int timeValue;
 - (void)startCount {
+    NSString *localPhone = [Store valueForKey:@"login_phone" defaultValue:nil];
+    [self.delegate onViewAction:@"startCount" data:localPhone];
+    
     [self resetCount];
     
     self.btnCode.selected = YES;
@@ -56,6 +59,8 @@ static int timeValue;
     
     [self.btnCode setTitle:@"重新获取" forState:UIControlStateNormal];
     [self.btnCode setTitle:[NSString stringWithFormat:@"%dS", timeValue+1] forState:UIControlStateSelected];
+    
+   
 }
 
 - (void)count {
@@ -65,7 +70,7 @@ static int timeValue;
     [self.btnCode setTitle:[NSString stringWithFormat:@"%dS", timeValue] forState:UIControlStateSelected];
     timeValue--;
     
-    [self.delegate onViewAction:@"count"];
+    
 }
 
 - (void)resetCount {

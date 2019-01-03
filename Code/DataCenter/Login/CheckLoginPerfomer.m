@@ -19,7 +19,7 @@
     request.url = url;
     request.data = params;
     
-    HttpResponse *response = [Http post:request];
+//    HttpResponse *response = [Http post:request];
     
     return nil;
 }

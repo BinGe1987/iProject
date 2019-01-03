@@ -12,7 +12,7 @@
 - (void)setup:(BuildConfiguration)buildConfiguration {
     NSString *token = [Store valueForKey:@"token" defaultValue:@""];
     NSDictionary *params = @{
-                             @"api":API_CHECK_LOGIN,
+                             @"api":API_CheckLogin,
                              @"token":token,
                              };
     [DataCenter perform:OperationLoginCheck params:params callback:^(id  _Nonnull operation, id  _Nullable data) {

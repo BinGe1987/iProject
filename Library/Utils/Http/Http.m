@@ -31,13 +31,30 @@
 
     NSURL *url = [[NSURL alloc] initWithString:httpRequest.url];
     
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+//    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
+//    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+//    [request setHTTPMethod:@"POST"];
+//    [request setTimeoutInterval:httpRequest.timeout];
+//    [request setAllHTTPHeaderFields:@{@"User-Agent": @"iOS-Client"}];
+//    NSMutableString *bodyString = [[NSMutableString alloc] init];
+//    for (NSString *key in httpRequest.data) {
+//        [bodyString appendString:[NSString stringWithFormat:@"%@=%@&", key, httpRequest.data[key]]];
+//    }
+    NSString *bodyStr = @"which=userLogin&phoneNum=13570466564";
+    NSData *postData = [bodyStr dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    NSString *postLength = [NSString stringWithFormat:@"%lu",(unsigned long)[postData length]];
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
+    [request setTimeoutInterval:10];
+    [request setURL:[NSURL URLWithString:httpRequest.url]];
     [request setHTTPMethod:@"POST"];
-    [request setTimeoutInterval:httpRequest.timeout];
-    [request setAllHTTPHeaderFields:@{@"User-Agent": @"iOS-Client"}];
-    NSString *bodyStr = @"user_name=admin&user_password=admin";
-    NSData *bodyData = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
-    [request setHTTPBody:bodyData];
+    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
+    [request setValue:postLength forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody:postData];
+    
+    
+//    NSData *bodyData = [bodyStr dataUsingEncoding:NSUTF8StringEncoding];
+//    [request setHTTPBody:bodyData];
     NSURLSession *session = [NSURLSession sharedSession];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:completionHandler];
     [task resume];

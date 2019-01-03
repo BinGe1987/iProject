@@ -27,7 +27,7 @@
     return self;
 }
 
-- (void)onViewAction:(id)action {
+- (void)onViewAction:(id)action data:(id)data {
 //    WeakSelf(self)
 //    [[DataCenter get] perform:OperationGetOrderData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
 //        [weakself.handler setData:data];

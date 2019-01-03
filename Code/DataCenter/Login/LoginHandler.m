@@ -7,6 +7,7 @@
 
 #import "LoginHandler.h"
 #import "CheckLoginPerfomer.h"
+#import "VerifyCodePerformer.h"
 
 @interface LoginHandler()<IParser>
 
@@ -22,6 +23,8 @@
     if (self) {
         self.loginData = [LoginData new];
         [self bind:OperationLoginCheck performer:[CheckLoginPerfomer new] parser:self];
+        
+        [self bind:OperationLoginVerifyCode performer:[VerifyCodePerformer class]];
         
     }
     return self;
