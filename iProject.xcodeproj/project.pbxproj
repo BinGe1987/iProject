@@ -143,6 +143,7 @@
 		77A389E321DE50ED00042B04 /* MemberData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E221DE50ED00042B04 /* MemberData.m */; };
 		77A389E621DE554C00042B04 /* RechargeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E521DE554C00042B04 /* RechargeData.m */; };
 		77A389E921DE563500042B04 /* PointsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E821DE563500042B04 /* PointsData.m */; };
+		77A389EC21DE59C400042B04 /* UserPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389EB21DE59C400042B04 /* UserPerformer.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -603,6 +604,8 @@
 		77A389E521DE554C00042B04 /* RechargeData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RechargeData.m; sourceTree = "<group>"; };
 		77A389E721DE563500042B04 /* PointsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PointsData.h; sourceTree = "<group>"; };
 		77A389E821DE563500042B04 /* PointsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointsData.m; sourceTree = "<group>"; };
+		77A389EA21DE59C400042B04 /* UserPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPerformer.h; sourceTree = "<group>"; };
+		77A389EB21DE59C400042B04 /* UserPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPerformer.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -2647,6 +2650,8 @@
 			children = (
 				77EA8F8021B90A18001B8959 /* UserHandler.h */,
 				77EA8F8121B90A18001B8959 /* UserHandler.m */,
+				77A389EA21DE59C400042B04 /* UserPerformer.h */,
+				77A389EB21DE59C400042B04 /* UserPerformer.m */,
 				776B55A921BE62E100793CAF /* UserData.h */,
 				776B55AA21BE62E100793CAF /* UserData.m */,
 			);
@@ -3049,6 +3054,7 @@
 				77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */,
 				77B0553821CEAE530045A489 /* Aspects+My.m in Sources */,
 				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,
+				77A389EC21DE59C400042B04 /* UserPerformer.m in Sources */,
 				771CA3B721DCA25400B00F11 /* ClubDetailData.m in Sources */,
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,

@@ -120,7 +120,7 @@
                                     "layout_marginRight":"10",
                                     "subviews":[
                                         {
-                                            "view_name":"label_1",
+                                            "view_name":"label_totalRecharge",
                                             "view_type":"label",
                                             "view_width":"full",
                                             "view_height":"auto",
@@ -156,7 +156,7 @@
                                     "layout_marginRight":"20",
                                     "subviews":[
                                         {
-                                            "view_name":"label_1",
+                                            "view_name":"label_amount",
                                             "view_type":"label",
                                             "view_width":"full",
                                             "view_height":"auto",
@@ -187,6 +187,7 @@
             ]
         },
         {
+            "view_name":"image_avatar",
             "view_type":"image",
             "view_width":"60",
             "view_height":"60",

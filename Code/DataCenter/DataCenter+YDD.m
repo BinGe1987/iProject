@@ -25,4 +25,8 @@
     return (DiscoverData *)[self getData: [DiscoverHandler class]];
 }
 
++ (NSString *)token {
+    return [DataCenter get].userData.token;
+}
+
 @end

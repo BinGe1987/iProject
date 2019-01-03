@@ -74,7 +74,7 @@
                                     "view_type":"label",
                                     "view_width":"auto",
                                     "view_height":"auto",
-                                    "text_src":"会员等级",
+                                    "text_src":"充值等级",
                                     "text_color":"#292929",
                                     "text_size":"13",
                                     "layout_gravity":"center|top",

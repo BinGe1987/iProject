@@ -37,7 +37,15 @@
 }
 
 - (NSString *)stringWithKey:(NSString *)key defaultValue:(NSString * _Nullable)defaultValue {
-    return [self.source objectForKey:key];
+    NSString *value = [self.source objectForKey:key];
+    if ([value isKindOfClass:[NSNull class]]) {
+        return defaultValue;
+    }
+    if (value) {
+        return [NSString stringWithFormat:@"%@", value];
+    } else {
+        return defaultValue;
+    }
 }
 
 - (NSInteger)integerWithKey:(NSString *)key {

@@ -28,6 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationLoginCheck                     (@"OperationLoginCheck")
 #define OperationLoginVerifyCode                (@"OperationLoginVerifyCode")
 
+#pragma make  我的页面相关
+#define OperationGetMineData                   (@"OperationGetMineData")
+
 #pragma make 首页相关
 ///获取首页信息
 #define OperationGetHomeData                    (@"OperationGetHomeData")
@@ -50,6 +53,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 @interface DataCenter (YDD)
+
+///token
++ (NSString *)token;
 
 ///获取配置信息
 - (ConfigData *)configData;

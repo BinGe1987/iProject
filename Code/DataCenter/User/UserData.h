@@ -21,7 +21,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *gender;       //性别 male：男；female：女
 @property (nonatomic, copy) NSString *level;        //会员等级 common：普通用户；first：初级；mid：中级；high:高级
 @property (nonatomic, copy) NSString *avatarUrl;    ///用户头像Url
-@property (nonatomic, copy) NSString *amount;       ///当前余额
 
 
 @property (nonatomic, strong) MemberData *member;       //用户的会员信息

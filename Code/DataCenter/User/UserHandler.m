@@ -6,6 +6,7 @@
 //
 
 #import "UserHandler.h"
+#import "UserPerformer.h"
 
 @interface UserHandler()<IParser>
 
@@ -22,6 +23,8 @@
         self.userData = [[UserData alloc] init];
         [self bind:OperationLoginCheck parser:self];
         [self bind:OperationLogin parser:self];
+        [self bind:OperationGetMineData performer:[UserPerformer new]];
+        [self bind:OperationGetMineData parser:self];
     }
     return self;
 }
@@ -30,15 +33,17 @@
     if ([source isSuccess]) {
         if ([operation isEqualToString:OperationLogin]) {
             [self.userData setLoginData:source];
+            [Store setValue:self.userData.token forKey:@"token"];
+            [EventBus postEvent:EventLoginStatusChanged data:self.userData forceThread:YES];
         }
         else if ([operation isEqualToString:OperationLoginCheck]) {
             [self.userData setLoginData:source];
+            [Store setValue:self.userData.token forKey:@"token"];
+            [EventBus postEvent:EventLoginStatusChanged data:self.userData forceThread:YES];
         }
-        //保存token到本地
-        [Store setValue:self.userData.token forKey:@"token"];
-        //广播登录状态改变事件
-        [EventBus postEvent:EventLoginStatusChanged data:self.userData forceThread:YES];
-        
+        else if ([operation isEqualToString:OperationGetMineData]) {
+            [self.userData setMineData:source];
+        }
         return self.userData;
     }
     return source;

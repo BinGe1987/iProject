@@ -14,12 +14,14 @@
     self = [super initWithView:view];
     self.handler = [[MineViewHandler alloc] initWithView:view];
     [self.handler setData:[[DataCenter get] userData]];
-    [EventBus addObserver:self selector:@selector(loginStatusChanged:) event:EventLoginStatusChanged];
+    WeakSelf(self)
+    [DataCenter perform:OperationGetMineData params:nil callback:^(id  _Nonnull operation, Data * _Nullable data) {
+        if (data.isSuccess) {
+            [weakself.handler setData:[[DataCenter get] userData]];
+        }
+    }];
+    
     return self;
-}
-
-- (void)loginStatusChanged:(UserData *)userData {
-    [self.handler setData:userData];
 }
 
 @end
