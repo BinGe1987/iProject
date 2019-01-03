@@ -10,24 +10,19 @@
 @implementation VerifyCodePerformer
 
 - (id)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callback {
-    
-    
     NSString *url = [URLConstant URLWithApi:API_VerifyCode];
-    
     HttpRequest *request = [HttpRequest new];
     request.url = url;
-    request.data = @{@"which":@"userLogin",
-                     @"phoneNum":params
-                     };
-    
+    request.data = @{@"which":@"userLogin", @"phoneNum":params };
     HttpResponse *response = [Http post:request];
-    
-    return nil;
+    Data *data = [Data new];
+    data.source = response.data;
+    data.error = response.error;
+    return data;
 }
 
 - (id)parse:(_Nonnull id)operation withSource:(id)source {
-    
-    return nil;
+    return source;
 }
 
 @end

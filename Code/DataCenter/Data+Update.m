@@ -18,4 +18,23 @@ static const void *IsDataUpdatedKey = &IsDataUpdatedKey;
     return [objc_getAssociatedObject(self, &IsDataUpdatedKey) boolValue];
 }
 
+- (NSInteger)statusCode {
+    NSInteger code = [self integerWithKey:@"statusCode"];
+    return code;
+}
+
+- (BOOL)isSuccess {
+    return self.statusCode == 200;
+}
+
+- (NSString *)errorMessage {
+    if (self.error) {
+        return self.error.localizedDescription;
+    }
+    else {
+        NSString *msg = [self stringWithKey:@"msg"];
+        return msg;
+    }
+}
+
 @end

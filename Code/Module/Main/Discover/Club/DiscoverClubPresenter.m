@@ -27,7 +27,7 @@
     self.menuViewHandler.delegate = self;
     
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetDiscoverClubData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+    [[DataCenter get] perform:OperationGetDiscoverClubData params:nil callback:^(id  _Nonnull operation, Data *  _Nullable data) {
         [weakself.handler setData:data];
     }];
     
@@ -37,7 +37,7 @@
 
 - (void)onViewAction:(id)action data:(id)data {
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+    [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, Data *  _Nullable data) {
         [weakself.handler setData:data];
     }];
 }

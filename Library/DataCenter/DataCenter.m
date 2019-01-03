@@ -90,7 +90,7 @@ singleton_implementation(DataCenter)
         if ([handler isContainsPerformer: operation]) {
             id<IPerformer> performer = [handler getPerformer:operation];
             if ([performer isAsynchronous]) {
-                [performer perform:operation params:params callback:^(id  _Nonnull operation, id  _Nullable data) {
+                [performer perform:operation params:params callback:^(id  _Nonnull operation, Data *  _Nullable data) {
                     [self handData:operation data:data callback:callbak];
                 }];
             } else {

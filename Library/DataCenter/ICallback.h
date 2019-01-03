@@ -6,10 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Data.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void (^ICallback)(_Nonnull id operation, _Nullable id data);
+typedef void (^ICallback)(_Nonnull id operation,  Data * _Nullable data);
 
 /**
   DataCenter处理完操作后会回调实现此接口的使用者

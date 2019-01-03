@@ -15,7 +15,7 @@
                              @"api":API_CheckLogin,
                              @"token":token,
                              };
-    [DataCenter perform:OperationLoginCheck params:params callback:^(id  _Nonnull operation, id  _Nullable data) {
+    [DataCenter perform:OperationLoginCheck params:params callback:^(id  _Nonnull operation, Data *  _Nullable data) {
         
         LoginData *user = (LoginData *)data;
         if (!user.isLogin) {

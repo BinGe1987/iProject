@@ -14,6 +14,12 @@ NS_ASSUME_NONNULL_BEGIN
 //数据是否有更新
 @property (nonatomic, assign) BOOL isDataUpdated;
 
+- (NSInteger)statusCode;
+
+- (BOOL)isSuccess;
+
+- (NSString *)errorMessage;
+
 @end
 
 NS_ASSUME_NONNULL_END

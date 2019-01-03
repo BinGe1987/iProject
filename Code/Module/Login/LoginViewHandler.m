@@ -44,6 +44,11 @@
     return self;
 }
 
+- (void)error:(NSString *)error {
+    [ProgressHUB toast:error];
+    [self resetCount];
+}
+
 static int timeValue;
 - (void)startCount {
     NSString *localPhone = [Store valueForKey:@"login_phone" defaultValue:nil];
