@@ -10,7 +10,10 @@
 @implementation TableViewModel
 
 - (void)initialize {
-    
+    ScrollView *scrollView = (ScrollView *)self.view;
+    ScrollViewParams *params = (ScrollViewParams *)scrollView.viewParams;
+    scrollView.showsVerticalScrollIndicator = params.scrollIndicator;
+    scrollView.showsHorizontalScrollIndicator = params.scrollIndicator;
 }
 
 

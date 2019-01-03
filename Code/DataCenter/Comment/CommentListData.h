@@ -6,10 +6,13 @@
 //
 
 #import "Data.h"
+#import "CommentFilterData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface CommentListData : ListData
+
+@property (nonatomic, strong) ListData *filters;
 
 @end
 

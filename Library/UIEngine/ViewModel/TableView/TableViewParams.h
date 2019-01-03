@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewParams : GroupViewParams
 
+//显不显示滚动条
+@property (nonatomic, assign) BOOL scrollIndicator;
+
 @end
 
 NS_ASSUME_NONNULL_END

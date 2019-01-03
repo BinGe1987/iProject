@@ -59,8 +59,9 @@ singleton_implementation(DataCenter)
     if (numClasses > 0) {
         classes = (__unsafe_unretained Class *)malloc(sizeof(Class) * numClasses);
         numClasses = objc_getClassList(classes, numClasses);
+        Class handlerClass = [DataHandler class];
         for (int i = 0; i < numClasses; i++) {
-            if (class_getSuperclass(classes[i]) == [DataHandler class]){
+            if (class_getSuperclass(classes[i]) == handlerClass){
                 Class cls = classes[i];
                 id handler = [[cls alloc] init];
                 [self.handlers addObject:handler];
@@ -125,6 +126,10 @@ singleton_implementation(DataCenter)
         }
     }
     return nil;
+}
+
+- (void)registerDataHandler:(Class)handlerClass {
+    
 }
 
 @end

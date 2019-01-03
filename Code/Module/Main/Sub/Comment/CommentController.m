@@ -22,13 +22,6 @@
     [self addPresenter:[[CommentPresenter alloc] initWithView:[self.view findViewByName:@"root"]]];
 }
 
-- (void)onLayoutSubViewsCompleted {
-    CGFloat topHeight = STATUSBARHIEGHT + NVBARHIEGHT;
-    ScrollView *sv = (ScrollView *)[self findViewByName:@"table"];
-    sv.contentInset = UIEdgeInsetsMake(topHeight,0,0,0);
-    sv.contentOffset = CGPointMake(0, -topHeight);
-}
-
 - (CGRect)safeRect {
     CGSize size = CGSizeMake(SCREENWIDTH, SCREENHEIGHT);
     UIEdgeInsets insets = self.view.safeAreaInsets;

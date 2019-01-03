@@ -35,6 +35,9 @@
         self.performers = [[NSMutableDictionary alloc] init];
         self.parsers = [[NSMutableDictionary alloc] init];
         self.delegate = (id<HandlerDelegate>)self;
+        
+        
+        
     }
     return self;
 }

@@ -104,7 +104,7 @@
 //    menu.menuItems = @[item1,item2,item2];
 //    [self.view addSubview:menu];
 //
-    [UIViewController pushController:@"TechDetailController" animated:YES data:nil];
+    [UIViewController pushController:@"CommentController" animated:YES data:nil];
     
 }
 

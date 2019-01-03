@@ -117,16 +117,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Code/DataCenter/Comment/CommentListPerformer.m"
-            timestampString = "568181775.649709"
+            filePath = "Code/Module/Main/Sub/Comment/CommentAdapter.m"
+            timestampString = "568191633.3067729"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "-parse:withSource:"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "-commentCell:cellForRowAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

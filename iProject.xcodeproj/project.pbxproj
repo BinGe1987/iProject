@@ -61,6 +61,9 @@
 		771CA42321DDC2F500B00F11 /* CommentListHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42221DDC2F500B00F11 /* CommentListHandler.m */; };
 		771CA42621DDC30E00B00F11 /* CommentListPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42521DDC30E00B00F11 /* CommentListPerformer.m */; };
 		771CA42921DDC32400B00F11 /* CommentListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42821DDC32400B00F11 /* CommentListData.m */; };
+		771CA42C21DDD94800B00F11 /* CommentFilterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42B21DDD94800B00F11 /* CommentFilterData.m */; };
+		771CA42F21DDE15300B00F11 /* CommentAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42E21DDE15300B00F11 /* CommentAdapter.m */; };
+		771CA43221DDE25400B00F11 /* CommentItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA43121DDE25400B00F11 /* CommentItemCell.m */; };
 		7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B621D6717A00B77890 /* UIViewController+Data.m */; };
 		7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7723E1B921D70DDE00B77890 /* LoginData.m */; };
 		7723E1C421D73F6500B77890 /* Login.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7723E1C321D73F6500B77890 /* Login.xml */; };
@@ -423,6 +426,12 @@
 		771CA42521DDC30E00B00F11 /* CommentListPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListPerformer.m; sourceTree = "<group>"; };
 		771CA42721DDC32400B00F11 /* CommentListData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListData.h; sourceTree = "<group>"; };
 		771CA42821DDC32400B00F11 /* CommentListData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListData.m; sourceTree = "<group>"; };
+		771CA42A21DDD94800B00F11 /* CommentFilterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentFilterData.h; sourceTree = "<group>"; };
+		771CA42B21DDD94800B00F11 /* CommentFilterData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentFilterData.m; sourceTree = "<group>"; };
+		771CA42D21DDE15300B00F11 /* CommentAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentAdapter.h; sourceTree = "<group>"; };
+		771CA42E21DDE15300B00F11 /* CommentAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentAdapter.m; sourceTree = "<group>"; };
+		771CA43021DDE25400B00F11 /* CommentItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentItemCell.h; sourceTree = "<group>"; };
+		771CA43121DDE25400B00F11 /* CommentItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentItemCell.m; sourceTree = "<group>"; };
 		7723E1B521D6717A00B77890 /* UIViewController+Data.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Data.h"; sourceTree = "<group>"; };
 		7723E1B621D6717A00B77890 /* UIViewController+Data.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Data.m"; sourceTree = "<group>"; };
 		7723E1B821D70DDE00B77890 /* LoginData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginData.h; sourceTree = "<group>"; };
@@ -1160,6 +1169,10 @@
 				771CA41B21DDC1A100B00F11 /* CommentPresenter.m */,
 				771CA41D21DDC23E00B00F11 /* CommentViewHandler.h */,
 				771CA41E21DDC23E00B00F11 /* CommentViewHandler.m */,
+				771CA42D21DDE15300B00F11 /* CommentAdapter.h */,
+				771CA42E21DDE15300B00F11 /* CommentAdapter.m */,
+				771CA43021DDE25400B00F11 /* CommentItemCell.h */,
+				771CA43121DDE25400B00F11 /* CommentItemCell.m */,
 				771CA41621DDBA7A00B00F11 /* Comment.xml */,
 				771CA41821DDBE5900B00F11 /* CommentItem.xml */,
 			);
@@ -1175,6 +1188,8 @@
 				771CA42521DDC30E00B00F11 /* CommentListPerformer.m */,
 				771CA42721DDC32400B00F11 /* CommentListData.h */,
 				771CA42821DDC32400B00F11 /* CommentListData.m */,
+				771CA42A21DDD94800B00F11 /* CommentFilterData.h */,
+				771CA42B21DDD94800B00F11 /* CommentFilterData.m */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -2746,6 +2761,7 @@
 				7734C12321D23A45009D1EE8 /* KafkaArcLayer.m in Sources */,
 				7723E1CB21D74B4F00B77890 /* XMLObject.m in Sources */,
 				77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */,
+				771CA42C21DDD94800B00F11 /* CommentFilterData.m in Sources */,
 				7734C0DE21D22FDD009D1EE8 /* HomePerformer.m in Sources */,
 				77EA8F5321B90226001B8959 /* UIViewController+JSON.m in Sources */,
 				77EA8F6D21B90227001B8959 /* UIView+View.m in Sources */,
@@ -3007,6 +3023,8 @@
 				77CEA4B121D3909900B388E4 /* TechUITableViewCell.m in Sources */,
 				771CA3DB21DCC45500B00F11 /* ClubDetailTechCell.m in Sources */,
 				77B0550821CCD0D90045A489 /* ConfigHandler.m in Sources */,
+				771CA42F21DDE15300B00F11 /* CommentAdapter.m in Sources */,
+				771CA43221DDE25400B00F11 /* CommentItemCell.m in Sources */,
 				77EA8F6721B90227001B8959 /* LinearLayout.m in Sources */,
 				771CA3BA21DCA26D00B00F11 /* ClubDetailPerformer.m in Sources */,
 			);

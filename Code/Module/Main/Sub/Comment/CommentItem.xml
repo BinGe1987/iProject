@@ -120,4 +120,14 @@
             text_src="0"
             layout_marginLeft="5"/>
     </LinearLayout>
+    
+    <View
+        view_name="line"
+        view_width="full"
+        view_height="0.5"
+        view_background="#19000000"
+        layout_marginLeft="85"
+        layout_marginRight="15"
+        view_visibility="invisible"/>
+    
 </FrameLayout>
