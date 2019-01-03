@@ -137,7 +137,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/DataCenter/Login/LoginPerformer.m"
-            timestampString = "568216087.133375"
+            timestampString = "568216757.364223"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "22"
@@ -175,22 +175,6 @@
             startingLineNumber = "54"
             endingLineNumber = "54"
             landmarkName = "+post:completionHandler:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Code/DataCenter/User/UserHandler.m"
-            timestampString = "568216087.133504"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "-parse:withSource:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

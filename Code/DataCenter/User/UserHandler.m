@@ -28,10 +28,16 @@
 
 - (id _Nullable )parse:(_Nonnull id)operation withSource:(id _Nullable )source {
     if ([source isSuccess]) {
-        
-        [self.userData setData:source];
-        
+        if ([operation isEqualToString:OperationLogin]) {
+            [self.userData setData:source];
+        }
+        else if ([operation isEqualToString:OperationLoginCheck]) {
+            [self.userData setData:source];
+        }
+        //保存token到本地
         [Store setValue:self.userData.token forKey:@"token"];
+        //广播登录状态改变事件
+        [EventBus postEvent:EventLoginStatusChanged data:self.userData forceThread:YES];
         
         return self.userData;
     }

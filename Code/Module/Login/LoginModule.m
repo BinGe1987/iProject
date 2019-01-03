@@ -11,17 +11,10 @@
 
 - (void)setup:(BuildConfiguration)buildConfiguration {
     NSString *token = [Store valueForKey:@"token" defaultValue:@""];
-    NSDictionary *params = @{
-                             @"api":API_CheckLogin,
-                             @"token":token,
-                             };
-    [DataCenter perform:OperationLoginCheck params:params callback:^(id  _Nonnull operation, Data *  _Nullable data) {
-        
-        LoginData *user = (LoginData *)data;
-        if (!user.isLogin) {
+    [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+        if (![data isSuccess]) {
             [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
         }
-        
         [self loginCheckCompleted];
     }];
 }
