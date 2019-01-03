@@ -28,7 +28,11 @@
 
 - (id _Nullable )parse:(_Nonnull id)operation withSource:(id _Nullable )source {
     if ([source isSuccess]) {
+        
         [self.userData setData:source];
+        
+        [Store setValue:self.userData.token forKey:@"token"];
+        
         return self.userData;
     }
     return source;

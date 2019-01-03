@@ -37,8 +37,9 @@
     
     else if ([action isEqualToString:@"Login"]) {
         [DataCenter perform:OperationLogin params:data callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+            LoginViewHandler *handler = (LoginViewHandler *)self.handler;
             if (data.isSuccess) {
-                
+                [handler loginSuccess:(UserData *)data];
             } else {
                 LoginViewHandler *handler = (LoginViewHandler *)self.handler;
                 [handler error:data.errorMessage];

@@ -52,6 +52,7 @@
         } else if ([NSString isEmpty:code]){
             [ProgressHUB toast:@"请输入验证码"];
         } else {
+            [ProgressHUB loading];
             [weakself.delegate onViewAction:@"Login" data:@{@"loginName":phone, @"code":code}];
         }
     }];
@@ -60,10 +61,12 @@
 }
 
 - (void)loginSuccess:(UserData *)user {
-    
+    [ProgressHUB dismiss];
+    [self.view dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)error:(NSString *)error {
+    [ProgressHUB dismiss];
     [ProgressHUB toast:error];
     [self resetCount];
 }

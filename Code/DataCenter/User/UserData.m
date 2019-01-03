@@ -9,8 +9,14 @@
 
 @implementation UserData
 
+- (void)setData:(Data *)data {
+    [super setData:data];
+    JSON *json = [data jsonWithKey:@"respData"];
+    self.token = [json stringWithKey:@"token"];
+}
+
 - (BOOL)isLogin {
-    return NO;
+    return self.isSuccess;
 }
 
 @end
