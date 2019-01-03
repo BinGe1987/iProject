@@ -10,7 +10,8 @@
 @implementation Store
 
 + (void)setValue:(id)value forKey:(NSString *)key {
-    
+    NSUserDefaults *local = [NSUserDefaults standardUserDefaults];
+    [local setObject:value forKey:key];
 }
 
 + (id)valueForKey:(NSString *)key {
@@ -18,7 +19,8 @@
 }
 
 + (id)valueForKey:(NSString *)key defaultValue:(_Nullable id)value {
-    id obj = nil;
+    NSUserDefaults *local = [NSUserDefaults standardUserDefaults];
+    NSString *obj = [local objectForKey:key];
     return obj ? obj : value;
 }
 

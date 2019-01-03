@@ -20,7 +20,7 @@
     [self setContentViewWithXML:@"Login.xml"];
     [self endEditingWithViewTouch:self.view];//键盘回收
     
-    [self addPresenter:[[LoginPresenter alloc] initWithView:self.view]];
+    [self addPresenter:[[LoginPresenter alloc] initWithView:[self.view findViewByName:@"content_login"]]];
 }
 
 - (CGRect)safeRect {

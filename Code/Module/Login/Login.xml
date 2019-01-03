@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FrameLayout
+    view_name="content_login"
     view_width="full"
     view_height="full"
     view_background="#ffffff">
@@ -69,8 +70,7 @@
                 view_width="96"
                 view_height="28"
                 view_background="#0055b4b2"
-                view_backgroundSelected="#aaffb4b2"
-                view_borderRadius="8"
+                view_borderRadius="5"
                 view_borderWidth="1"
                 view_borderColor="#55b4b2"
                 view_masksToBounds="YES"
