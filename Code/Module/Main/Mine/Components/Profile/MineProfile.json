@@ -38,7 +38,7 @@
             "layout_marginTop":"30",
             "subviews":[
                 {
-                    "view_name":"btn_welfare",
+                    "view_name":"btn_memberWelfare",
                     "view_type":"button",
                     "view_width":"60",
                     "view_height":"18",

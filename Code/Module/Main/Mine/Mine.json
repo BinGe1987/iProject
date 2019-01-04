@@ -5,6 +5,7 @@
     "view_height":"full",
     "view_background":"#003c465f",
     "subviews":[
+        
         {
             "view_name":"scroll",
             "view_type":"scroll",
@@ -12,13 +13,34 @@
             "view_width":"full",
             "view_height":"full",
             "subviews":[
+                {
+                    "view_type":"view",
+                    "view_width":"full",
+                    "view_background":"#ff3c465f",
+                    "view_height":"10000",
+                    "layout_marginTop":"-10000",
+                    
+                },
                 {"include":"MineProfile.json"},
                 {"include":"MineLevel.json"},
                 {"include":"MineNavigation2.json"},
                 {"include":"MineRecharge.json"},
                 {"include":"MineWelfare.json"},
             ]
-        }
+        },
+        {
+            "view_type":"view",
+            "view_width":"full",
+            "view_background":"#ff3c465f",
+            "view_height":"44",
+        },
+        {
+            "view_type":"view",
+            "view_width":"full",
+            "view_background":"#ff3c465f",
+            "view_height":"44",
+            "layout_fixTop":"YES",
+        },
     ]
 }
 

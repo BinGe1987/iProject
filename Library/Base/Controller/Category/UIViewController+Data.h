@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Data)
 
-@property (nonatomic, strong) NSObject *intentData;
+@property (nonatomic, assign) id intentData;
 
 
 @end

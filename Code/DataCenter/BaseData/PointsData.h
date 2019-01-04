@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PointsData : Data
 
 ///当前可用积分
-@property (nonatomic, copy) NSString *nowPoints;
+@property (nonatomic, assign) NSInteger nowPoints;
 ///本月获取积分
-@property (nonatomic, copy) NSString *monthPoints;
+@property (nonatomic, assign) NSInteger monthPoints;
 
 @end
 

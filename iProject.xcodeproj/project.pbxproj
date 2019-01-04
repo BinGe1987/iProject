@@ -144,6 +144,7 @@
 		77A389E621DE554C00042B04 /* RechargeData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E521DE554C00042B04 /* RechargeData.m */; };
 		77A389E921DE563500042B04 /* PointsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E821DE563500042B04 /* PointsData.m */; };
 		77A389EC21DE59C400042B04 /* UserPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389EB21DE59C400042B04 /* UserPerformer.m */; };
+		77A389F021DEFE2E00042B04 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389EF21DEFE2E00042B04 /* WebViewController.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -606,6 +607,8 @@
 		77A389E821DE563500042B04 /* PointsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PointsData.m; sourceTree = "<group>"; };
 		77A389EA21DE59C400042B04 /* UserPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserPerformer.h; sourceTree = "<group>"; };
 		77A389EB21DE59C400042B04 /* UserPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPerformer.m; sourceTree = "<group>"; };
+		77A389EE21DEFE2E00042B04 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		77A389EF21DEFE2E00042B04 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1023,6 +1026,7 @@
 		771CA39821DC692900B00F11 /* Sub */ = {
 			isa = PBXGroup;
 			children = (
+				77A389ED21DEFE0800042B04 /* Web */,
 				771CA3A421DC9C4D00B00F11 /* Classify */,
 				771CA39D21DC730800B00F11 /* ClubDetail */,
 				771CA3A021DC989900B00F11 /* TechDetail */,
@@ -1593,6 +1597,15 @@
 				7723E1CD21D77F6B00B77890 /* UIView+XML.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		77A389ED21DEFE0800042B04 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				77A389EE21DEFE2E00042B04 /* WebViewController.h */,
+				77A389EF21DEFE2E00042B04 /* WebViewController.m */,
+			);
+			path = Web;
 			sourceTree = "<group>";
 		};
 		77B0541D21C943760045A489 /* WebImage */ = {
@@ -2978,6 +2991,7 @@
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
+				77A389F021DEFE2E00042B04 /* WebViewController.m in Sources */,
 				77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */,
 				7723E1CE21D77F6B00B77890 /* UIView+XML.m in Sources */,
 				77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */,

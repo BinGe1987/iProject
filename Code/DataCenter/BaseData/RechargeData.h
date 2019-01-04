@@ -11,14 +11,14 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface RechargeData : Data
 
-///当前余额
-@property (nonatomic, copy) NSString *amount;
 ///充值称号
 @property (nonatomic, copy) NSString *rechargeTitle;
+///当前余额
+@property (nonatomic, assign) CGFloat amount;
 ///累计充值金额
-@property (nonatomic, copy) NSString *totalRechargeAmount;
+@property (nonatomic, assign) CGFloat totalRechargeAmount;
 ///离下一级还需要充值金额
-@property (nonatomic, copy) NSString *nextLevelAmount;
+@property (nonatomic, assign) CGFloat nextLevelAmount;
 
 @end
 

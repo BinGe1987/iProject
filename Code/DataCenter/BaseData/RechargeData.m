@@ -12,10 +12,12 @@
 - (void)setData:(Data *)data {
     [super setData:data];
     JSON *json = [data jsonWithKey:@"respData"];
-    self.totalRechargeAmount =  [json stringWithKey:@"totalRechargeAmount" defaultValue:@"0.0"];
-    self.amount =               [json stringWithKey:@"amount" defaultValue:@"0.0"];
+    
     self.rechargeTitle =        [json stringWithKey:@"rechargeTitle"];
-    self.nextLevelAmount =      [json stringWithKey:@"nextLevelAmount" defaultValue:@"0.0"];
+    
+    self.amount =               [json integerWithKey:@"amount"];
+    self.totalRechargeAmount =  [json integerWithKey:@"totalRechargeAmount"];
+    self.nextLevelAmount =      [json integerWithKey:@"nextLevelAmount"];
 }
 
 @end

@@ -13,10 +13,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self.navigationController.navigationBar setBackgroundImage:[ImageUtils imageWithColorHex:@"#ff3c465f" size:CGSizeMake(10, 10)] forBarMetrics:UIBarMetricsDefault];
+    
+//    [self.navigationController.navigationBar setBackgroundImage:[ImageUtils imageWithColorHex:@"#ff3c465f" size:CGSizeMake(10, 10)] forBarMetrics:UIBarMetricsDefault];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.translucent = YES;
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Mine.json" ofType:nil];
     [self setContentViewWithJSONPath:path];
+    
+//    self.view.backgroundColor = [ColorUtils colorWithString:@"#ff3c465f"];
     
     MinePresenter *prsenter = [[MinePresenter alloc] initWithView:[self findViewByName:@"scroll"]];
     [self addPresenter:prsenter];
@@ -24,10 +29,16 @@
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 30, NVBARHIEGHT)];
     self.navigationItem.titleView = view;
     [self addPresenter:[[MineNvPresenter alloc] initWithView:view]];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    
 }
 
 - (void)onLayoutSubViewsCompleted {
