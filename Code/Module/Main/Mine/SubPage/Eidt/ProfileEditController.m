@@ -1,22 +1,22 @@
 //
-//  WebViewController.m
+//  ProfileEditController.m
 //  APP
 //
 //  Created by BinGe on 2019/1/4.
 //
 
-#import "WebViewController.h"
+#import "ProfileEditController.h"
 
-@interface WebViewController ()
+@interface ProfileEditController ()
 
 @end
 
-@implementation WebViewController
+@implementation ProfileEditController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.intentData[@"title"];
-    [self setContentViewWithXML:@"WebVewController.xml"];
+    self.title = @"个人信息";
+    [self setContentViewWithXML:@"ProfileEditController.xml"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

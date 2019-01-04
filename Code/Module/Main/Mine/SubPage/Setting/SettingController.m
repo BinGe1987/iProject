@@ -1,26 +1,27 @@
 //
-//  WebViewController.m
+//  SettingController.m
 //  APP
 //
 //  Created by BinGe on 2019/1/4.
 //
 
-#import "WebViewController.h"
+#import "SettingController.h"
 
-@interface WebViewController ()
+@interface SettingController ()
 
 @end
 
-@implementation WebViewController
+@implementation SettingController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.intentData[@"title"];
-    [self setContentViewWithXML:@"WebVewController.xml"];
+    self.title = @"设置";
+    [self setContentViewWithXML:@"SettingController.xml"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 }
+
 
 @end

@@ -150,6 +150,12 @@
 		77A389FA21DF17D500042B04 /* NavigationLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389F921DF17D500042B04 /* NavigationLayoutParams.m */; };
 		77A389FD21DF17EF00042B04 /* NavigationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389FC21DF17EF00042B04 /* NavigationViewModel.m */; };
 		77A389FF21DF26D000042B04 /* WebVewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A389FE21DF26D000042B04 /* WebVewController.xml */; };
+		77A38A0421DF2BCD00042B04 /* ProfileEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A0321DF2BCD00042B04 /* ProfileEditController.m */; };
+		77A38A0621DF2C2600042B04 /* ProfileEditController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A0521DF2C2600042B04 /* ProfileEditController.xml */; };
+		77A38A0A21DF2F5900042B04 /* SettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A0921DF2F5900042B04 /* SettingController.m */; };
+		77A38A0C21DF2F6B00042B04 /* SettingController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A0B21DF2F6B00042B04 /* SettingController.xml */; };
+		77A38A0F21DF2FF600042B04 /* PayQRCodeController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A0E21DF2FF600042B04 /* PayQRCodeController.xml */; };
+		77A38A1821DF30D100042B04 /* PayQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A1721DF30D100042B04 /* PayQRCodeController.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -623,6 +629,15 @@
 		77A389FB21DF17EF00042B04 /* NavigationViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewModel.h; sourceTree = "<group>"; };
 		77A389FC21DF17EF00042B04 /* NavigationViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewModel.m; sourceTree = "<group>"; };
 		77A389FE21DF26D000042B04 /* WebVewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WebVewController.xml; sourceTree = "<group>"; };
+		77A38A0221DF2BCD00042B04 /* ProfileEditController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileEditController.h; sourceTree = "<group>"; };
+		77A38A0321DF2BCD00042B04 /* ProfileEditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileEditController.m; sourceTree = "<group>"; };
+		77A38A0521DF2C2600042B04 /* ProfileEditController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ProfileEditController.xml; sourceTree = "<group>"; };
+		77A38A0821DF2F5900042B04 /* SettingController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingController.h; sourceTree = "<group>"; };
+		77A38A0921DF2F5900042B04 /* SettingController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingController.m; sourceTree = "<group>"; };
+		77A38A0B21DF2F6B00042B04 /* SettingController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SettingController.xml; sourceTree = "<group>"; };
+		77A38A0E21DF2FF600042B04 /* PayQRCodeController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PayQRCodeController.xml; sourceTree = "<group>"; };
+		77A38A1621DF30D100042B04 /* PayQRCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayQRCodeController.h; sourceTree = "<group>"; };
+		77A38A1721DF30D100042B04 /* PayQRCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayQRCodeController.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1539,6 +1554,7 @@
 		774F017121B9726400CB482F /* Mine */ = {
 			isa = PBXGroup;
 			children = (
+				77A38A0121DF2BAA00042B04 /* SubPage */,
 				77CEA53D21D5CEB400B388E4 /* Navigation */,
 				77CEA54521D5D80C00B388E4 /* Components */,
 				774F017221B9728900CB482F /* MineViewController.h */,
@@ -1636,6 +1652,46 @@
 				77A389F921DF17D500042B04 /* NavigationLayoutParams.m */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		77A38A0021DF2A2000042B04 /* Eidt */ = {
+			isa = PBXGroup;
+			children = (
+				77A38A0221DF2BCD00042B04 /* ProfileEditController.h */,
+				77A38A0321DF2BCD00042B04 /* ProfileEditController.m */,
+				77A38A0521DF2C2600042B04 /* ProfileEditController.xml */,
+			);
+			path = Eidt;
+			sourceTree = "<group>";
+		};
+		77A38A0121DF2BAA00042B04 /* SubPage */ = {
+			isa = PBXGroup;
+			children = (
+				77A38A0D21DF2FDD00042B04 /* QrCode */,
+				77A38A0721DF2F2500042B04 /* Setting */,
+				77A38A0021DF2A2000042B04 /* Eidt */,
+			);
+			path = SubPage;
+			sourceTree = "<group>";
+		};
+		77A38A0721DF2F2500042B04 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				77A38A0821DF2F5900042B04 /* SettingController.h */,
+				77A38A0921DF2F5900042B04 /* SettingController.m */,
+				77A38A0B21DF2F6B00042B04 /* SettingController.xml */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		77A38A0D21DF2FDD00042B04 /* QrCode */ = {
+			isa = PBXGroup;
+			children = (
+				77A38A0E21DF2FF600042B04 /* PayQRCodeController.xml */,
+				77A38A1621DF30D100042B04 /* PayQRCodeController.h */,
+				77A38A1721DF30D100042B04 /* PayQRCodeController.m */,
+			);
+			path = QrCode;
 			sourceTree = "<group>";
 		};
 		77B0541D21C943760045A489 /* WebImage */ = {
@@ -2814,6 +2870,7 @@
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
 				771CA3E321DCDCAA00B00F11 /* ClubDetailProject.xml in Resources */,
 				77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */,
+				77A38A0F21DF2FF600042B04 /* PayQRCodeController.xml in Resources */,
 				77CEA56E21D6588C00B388E4 /* OrderCellItem.json in Resources */,
 				771CA41921DDBE5900B00F11 /* CommentItem.xml in Resources */,
 				771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */,
@@ -2833,6 +2890,7 @@
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
+				77A38A0621DF2C2600042B04 /* ProfileEditController.xml in Resources */,
 				7723E1C421D73F6500B77890 /* Login.xml in Resources */,
 				771CA39F21DC758200B00F11 /* ClubDetail.xml in Resources */,
 				771CA3DD21DCC5B600B00F11 /* ClubDetailTech.xml in Resources */,
@@ -2853,6 +2911,7 @@
 				77FAFCD921C28C2D002A90B0 /* Home.json in Resources */,
 				77CEA4DC21D498F200B388E4 /* DiscoverTech.json in Resources */,
 				771CA3F421DD0AB200B00F11 /* TechDetail.xml in Resources */,
+				77A38A0C21DF2F6B00042B04 /* SettingController.xml in Resources */,
 				771CA3D721DCC2ED00B00F11 /* ClubDetailAd.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -3030,6 +3089,7 @@
 				77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */,
 				7723E1CE21D77F6B00B77890 /* UIView+XML.m in Sources */,
 				77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */,
+				77A38A1821DF30D100042B04 /* PayQRCodeController.m in Sources */,
 				771CA3A721DC9C6000B00F11 /* ClassifyViewController.m in Sources */,
 				77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */,
 				771CA40221DD0ED600B00F11 /* TechDetailPresenter.m in Sources */,
@@ -3055,6 +3115,7 @@
 				771CA3FC21DD0CB700B00F11 /* TechDetailData.m in Sources */,
 				77CEA52121D4FA9100B388E4 /* CollectionViewParams.m in Sources */,
 				771CA41C21DDC1A100B00F11 /* CommentPresenter.m in Sources */,
+				77A38A0A21DF2F5900042B04 /* SettingController.m in Sources */,
 				77A389E321DE50ED00042B04 /* MemberData.m in Sources */,
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
@@ -3101,6 +3162,7 @@
 				77B0545021C943760045A489 /* YYImage.m in Sources */,
 				77EA8F7321B90227001B8959 /* UIEngine.m in Sources */,
 				77EA8F4721B90226001B8959 /* TextViewModel.m in Sources */,
+				77A38A0421DF2BCD00042B04 /* ProfileEditController.m in Sources */,
 				77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */,
 				77B0553821CEAE530045A489 /* Aspects+My.m in Sources */,
 				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,

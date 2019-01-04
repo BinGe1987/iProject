@@ -200,5 +200,13 @@
             "layout_gravity":"center|top",
             "layout_marginTop":"0",
         },
+        {
+            "view_name":"btn_imageAvatar",
+            "view_type":"button",
+            "view_width":"60",
+            "view_height":"60",
+            "layout_gravity":"center|top",
+            "layout_marginTop":"0",
+        },
     ]
 }

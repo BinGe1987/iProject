@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    view_width="full"
+    view_height="full"
+    view_background="#fff0f0f0">
+    <Navigation
+        view_background="#ffffffff">
+        
+    </Navigation>
+</FrameLayout>
+

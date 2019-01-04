@@ -22,6 +22,11 @@
     if (![NSString isEmpty:user.avatarUrl]) {
         [avatar setImageWithURL:[NSURL URLWithString:user.avatarUrl]];
     }
+    //头像
+    UIButton *btnImageAvatar = (UIButton *)[self.view findViewByName:@"btn_imageAvatar"];
+    [btnImageAvatar setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"ProfileEditController" animated:YES data:nil];
+    }];
     
     //会员福利
     UIButton *btnMemberWelfare = (UIButton *)[self.view findViewByName:@"btn_memberWelfare"];

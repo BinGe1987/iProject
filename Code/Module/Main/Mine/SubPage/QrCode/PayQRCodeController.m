@@ -1,26 +1,23 @@
 //
-//  WebViewController.m
+//  PayQRCodeController.m
 //  APP
 //
 //  Created by BinGe on 2019/1/4.
 //
 
-#import "WebViewController.h"
+#import "PayQRCodeController.h"
 
-@interface WebViewController ()
-
-@end
-
-@implementation WebViewController
+@implementation PayQRCodeController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = self.intentData[@"title"];
-    [self setContentViewWithXML:@"WebVewController.xml"];
+    self.title = @"向商家付钱";
+    [self setContentViewWithXML:@"PayQRCodeController.xml"];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
 }
+
 
 @end
