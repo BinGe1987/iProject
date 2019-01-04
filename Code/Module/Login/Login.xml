@@ -19,7 +19,7 @@
         view_orientation="v"
         layout_margin="43"
         layout_fixTop="YES"
-        layout_marginTop="250">
+        layout_marginTop="230">
         <LinearLayout
             view_width="full"
             view_height="full"
@@ -47,14 +47,14 @@
 
     <LinearLayout
         view_width="full"
-        view_height="28"
+        view_height="auto"
         view_orientation="v"
         layout_margin="43"
         layout_fixTop="YES"
-        layout_marginTop="320">
+        layout_marginTop="300">
         <LinearLayout
             view_width="full"
-            view_height="full"
+            view_height="28"
             view_orientation="h">
             <InputView
                 view_name="input_code"
@@ -85,19 +85,31 @@
             view_width="full"
             view_background="#d6d6d6"
             layout_marginRight="106"/>
+            
+        <Label
+            view_name="label_errorInfo"
+            view_height="auto"
+            view_width="full"
+            text_src=""
+            text_color="#e84b65"
+            text_size="12"
+            layout_marginTop="5"/>
+            
     </LinearLayout>
+    
+    
     
     <Button
         view_name="btn_login"
         view_width="222"
         view_height="34"
         view_background="#55b4b2"
-        view_backgroundSelected="#aaffb4b2"
+        view_backgroundSelected="#aa55b4b2"
         view_borderRadius="8"
         view_masksToBounds="YES"
         text_src="登录"
         text_color="#ffffff"
-        layout_marginTop="400"
+        layout_marginTop="380"
         layout_gravity="center|top"
         layout_fixTop="YES"/>
     

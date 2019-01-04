@@ -10,7 +10,7 @@
 @implementation HttpRequest
 
 - (NSTimeInterval)timeout {
-    return 10;
+    return _timeout ? _timeout : 8;
 }
 
 @end

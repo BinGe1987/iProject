@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSDictionary *data;
 
-- (NSTimeInterval)timeout;
+@property (nonatomic, assign) NSTimeInterval timeout;
 
 @end
 

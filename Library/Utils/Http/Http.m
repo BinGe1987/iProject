@@ -16,6 +16,7 @@
     [Http post:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
             NSLog(@"post error :%@",error.localizedDescription);
+            httpResponse.error = error;
         }else {
             // 如果请求成功，则解析数据。
             id object = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];

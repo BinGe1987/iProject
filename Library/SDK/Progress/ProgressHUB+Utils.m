@@ -52,9 +52,15 @@
 }
 
 + (void)dismiss {
-    dispatch_async(dispatch_get_main_queue(), ^{
+    if ([NSThread isMainThread]) {
         [MBProgressHUD hideHUDForView:TOP_WINDOW animated:YES];
-    });
+    }
+    else {
+        [ProgressHUB performSelectorOnMainThread:@selector(dismiss) withObject:nil waitUntilDone:NO];
+    }
+//    dispatch_async(dispatch_get_main_queue(), ^{
+//        [MBProgressHUD hideHUDForView:TOP_WINDOW animated:YES];
+//    });
 }
 
 @end

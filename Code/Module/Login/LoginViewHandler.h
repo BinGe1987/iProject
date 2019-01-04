@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)loginSuccess:(UserData *)user;
 
+- (void)loginError:(NSString *)error;
+
 - (void)error:(NSString *)error;
 
 @end

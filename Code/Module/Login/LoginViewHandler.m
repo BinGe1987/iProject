@@ -14,6 +14,8 @@
 @property (nonatomic, strong) UIButton *btnCode;
 @property (nonatomic, strong) UIButton *btnLogin;
 
+@property (nonatomic, strong) UILabel *errorLabel;
+
 @end
 
 @implementation LoginViewHandler
@@ -22,13 +24,15 @@
     self = [super initWithView:view];
     WeakSelf(self);
     
+    self.errorLabel = (UILabel *)[self.view findViewByName:@"label_errorInfo"];
+    self.errorLabel.textAlignment = NSTextAlignmentLeft;
+    
     UITextField *phoneField = (UITextField *)[view findViewByName:@"input_phone"];
     UITextField *codeField = (UITextField *)[view findViewByName:@"input_code"];
     
     NSString *localPhone = [Store valueForKey:@"login_phone" defaultValue:nil];
     if (![NSString isEmpty:localPhone]) {
         phoneField.text = localPhone;
-        [codeField becomeFirstResponder];
     }
     
     self.btnCode = (UIButton *)[view findViewByName:@"btn_code"];
@@ -38,8 +42,9 @@
             [ProgressHUB toast:@"请输入正确的手机号码"];
         } else {
             [Store setValue:phone forKey:@"login_phone"];
-            [codeField becomeFirstResponder];
+//            [codeField becomeFirstResponder];
             [weakself startCount];
+            weakself.errorLabel.text = @"";
         }
     }];
     
@@ -53,7 +58,11 @@
             [ProgressHUB toast:@"请输入验证码"];
         } else {
             [ProgressHUB loading];
+            [view endEditing:YES];
             [weakself.delegate onViewAction:@"Login" data:@{@"loginName":phone, @"code":code}];
+            
+            UILabel *label = (UILabel *)[weakself.view findViewByName:@"label_errorInfo"];
+            label.text = @"";
         }
     }];
     
@@ -65,9 +74,13 @@
     [self.view dismissViewControllerAnimated:YES completion:nil];
 }
 
-- (void)error:(NSString *)error {
+- (void)loginError:(NSString *)error {
     [ProgressHUB dismiss];
-    [ProgressHUB toast:error];
+    [self error:error];
+}
+
+- (void)error:(NSString *)error {
+    self.errorLabel.text = error;
     [self resetCount];
 }
 
@@ -104,7 +117,7 @@ static int timeValue;
     if (self.timer) {
         [self.timer invalidate];
     }
-    timeValue = 9;
+    timeValue = 59;
     
     self.btnCode.selected = NO;
     self.btnCode.userInteractionEnabled = YES;

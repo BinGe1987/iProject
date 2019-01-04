@@ -42,7 +42,7 @@
                 [handler loginSuccess:(UserData *)data];
             } else {
                 LoginViewHandler *handler = (LoginViewHandler *)self.handler;
-                [handler error:data.errorMessage];
+                [handler loginError:data.errorMessage];
             }
         }];
     }
