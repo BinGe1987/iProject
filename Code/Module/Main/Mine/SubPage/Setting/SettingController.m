@@ -19,9 +19,5 @@
     [self setContentViewWithXML:@"SettingController.xml"];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-}
-
 
 @end

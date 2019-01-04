@@ -34,7 +34,6 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
-    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {

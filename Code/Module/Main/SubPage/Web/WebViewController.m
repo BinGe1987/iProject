@@ -19,8 +19,4 @@
     [self setContentViewWithXML:@"WebVewController.xml"];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-}
-
 @end

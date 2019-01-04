@@ -15,9 +15,5 @@
     [self setContentViewWithXML:@"PayQRCodeController.xml"];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
-}
-
 
 @end

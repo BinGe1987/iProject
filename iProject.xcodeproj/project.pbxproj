@@ -1052,7 +1052,7 @@
 			path = "DOPDropDownMenu - Enhanced";
 			sourceTree = "<group>";
 		};
-		771CA39821DC692900B00F11 /* Sub */ = {
+		771CA39821DC692900B00F11 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
 				77A389ED21DEFE0800042B04 /* Web */,
@@ -1061,7 +1061,7 @@
 				771CA3A021DC989900B00F11 /* TechDetail */,
 				771CA41221DDB1CF00B00F11 /* Comment */,
 			);
-			path = Sub;
+			path = SubPage;
 			sourceTree = "<group>";
 		};
 		771CA39D21DC730800B00F11 /* ClubDetail */ = {
@@ -2413,7 +2413,7 @@
 				77CEA4C821D48A0300B388E4 /* Discover */,
 				77CEA53921D5CE6C00B388E4 /* Order */,
 				774F017121B9726400CB482F /* Mine */,
-				771CA39821DC692900B00F11 /* Sub */,
+				771CA39821DC692900B00F11 /* SubPage */,
 				77B0551A21CD247E0045A489 /* MainModule.h */,
 				77B0551B21CD247E0045A489 /* MainModule.m */,
 				77B0557D21D120DE0045A489 /* TabMapping.xml */,

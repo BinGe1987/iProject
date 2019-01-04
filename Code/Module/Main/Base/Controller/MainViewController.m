@@ -18,6 +18,10 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleDefault;
+}
+
 - (CGRect)safeRect {
     CGSize size = CGSizeMake(SCREENWIDTH, SCREENHEIGHT);
     UIEdgeInsets insets = self.view.safeAreaInsets;
