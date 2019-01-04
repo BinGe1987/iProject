@@ -17,6 +17,12 @@ static const void *maxHeightKey = &maxHeightKey;
 static char widthKey;
 static char heightKey;
 
+- (instancetype)initWithViewParams:(ViewParams *)viewParams {
+    self = [self init];
+    self.viewParams = viewParams;
+    return self;
+}
+
 - (void)setWidth:(CGFloat)width {
     objc_setAssociatedObject(self, &widthKey, @(width), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

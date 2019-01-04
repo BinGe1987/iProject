@@ -6,6 +6,7 @@
 //
 
 #import "SettingController.h"
+#import "SelectorItem.h"
 
 @interface SettingController ()
 
@@ -17,6 +18,11 @@
     [super viewDidLoad];
     self.title = @"设置";
     [self setContentViewWithXML:@"SettingController.xml"];
+    
+    SelectorItem *item = (SelectorItem *)[self findViewByName:@"selector_profile"];
+    [item setItemClickBlock:^(id  _Nonnull target) {
+        [UIViewController pushController:@"ProfileEditController" animated:YES data:nil];
+    }];
 }
 
 

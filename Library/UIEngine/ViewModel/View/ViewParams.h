@@ -57,7 +57,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UIColor *shadowColor;
 
 
--(instancetype)initWithModel:(id<UIModel>)model;
+- (instancetype)initWithModel:(id<UIModel>)model;
+
+- (NSString *)paramWithKey:(NSString *)key;
+
+- (NSString *)paramWithKey:(NSString *)key defValue:(id)defaultValue;
 
 @end
 

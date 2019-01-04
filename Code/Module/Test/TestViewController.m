@@ -104,8 +104,12 @@
 //    menu.menuItems = @[item1,item2,item2];
 //    [self.view addSubview:menu];
 //
-    [UIViewController pushController:@"CommentController" animated:YES data:nil];
+//    [UIViewController pushController:@"CommentController" animated:YES data:nil];
     
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+    self.navigationController.navigationBar.translucent = YES;
+    
+    [UIViewController pushController:@"SettingController" animated:YES data:nil];
 }
 
 

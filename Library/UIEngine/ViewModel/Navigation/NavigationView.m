@@ -19,7 +19,9 @@
 
 - (void)onLayout {
     
-    [self.superview bringSubviewToFront:self];
+    if ([self.superview isKindOfClass:[FrameLayout class]]) {
+        [self.superview bringSubviewToFront:self];
+    }
     
     for (UIView *subView in self.subviews) {
         //布局

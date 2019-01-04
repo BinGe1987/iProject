@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat maxWidth;
 @property (nonatomic, assign) CGFloat maxHeight;
 
+- (instancetype)initWithViewParams:(ViewParams *)viewParams;
+
 - (void)setVisibility:(ViewVisibility)visibility;
 
 @end

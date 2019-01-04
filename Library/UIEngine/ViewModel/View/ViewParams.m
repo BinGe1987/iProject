@@ -8,11 +8,19 @@
 
 #import "ViewParams.h"
 
+@interface ViewParams()
+
+@property (nonatomic, assign) id model;
+
+@end
+
 @implementation ViewParams
 
 -(instancetype)initWithModel:(id<UIModel>)model {
     self = [super init];
     if (self) {
+        self.model = model;
+        
         self.name = [model getString:@"view_name" defaultValue:@""];
        
         [self initVisibilityParams:model];
@@ -114,6 +122,14 @@
 - (void)initBackgroundParams:(id<UIModel>)model {
     self.background = [model getString:@"view_background" defaultValue:nil];
     self.backgroundSelected = [model getString:@"view_backgroundSelected" defaultValue:nil];
+}
+
+- (NSString *)paramWithKey:(NSString *)key {
+    return [self.model getString:key defaultValue:nil];
+}
+
+- (NSString *)paramWithKey:(NSString *)key defValue:(id)defaultValue {
+    return [self.model getString:key defaultValue:defaultValue];
 }
 
 - (NSString *)description

@@ -9,6 +9,13 @@
 
 @implementation Button
 
+- (instancetype)init
+{
+    self = [Button buttonWithType:UIButtonTypeCustom];
+//    [self setShowsTouchWhenHighlighted:YES];
+    return self;
+}
+
 - (CGSize)boundingSizeNeed {
     CGSize size = [self boundingTextSize];
     size.width = size.width + self.viewParams.paddingLeft + self.viewParams.paddingRight;

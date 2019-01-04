@@ -156,6 +156,8 @@
 		77A38A0C21DF2F6B00042B04 /* SettingController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A0B21DF2F6B00042B04 /* SettingController.xml */; };
 		77A38A0F21DF2FF600042B04 /* PayQRCodeController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A0E21DF2FF600042B04 /* PayQRCodeController.xml */; };
 		77A38A1821DF30D100042B04 /* PayQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A1721DF30D100042B04 /* PayQRCodeController.m */; };
+		77A38A1D21DF3EA100042B04 /* SelectorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A1C21DF3EA100042B04 /* SelectorItem.m */; };
+		77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A1E21DF41E100042B04 /* SelectorItem.xml */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -638,6 +640,9 @@
 		77A38A0E21DF2FF600042B04 /* PayQRCodeController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PayQRCodeController.xml; sourceTree = "<group>"; };
 		77A38A1621DF30D100042B04 /* PayQRCodeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PayQRCodeController.h; sourceTree = "<group>"; };
 		77A38A1721DF30D100042B04 /* PayQRCodeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PayQRCodeController.m; sourceTree = "<group>"; };
+		77A38A1B21DF3EA100042B04 /* SelectorItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectorItem.h; sourceTree = "<group>"; };
+		77A38A1C21DF3EA100042B04 /* SelectorItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorItem.m; sourceTree = "<group>"; };
+		77A38A1E21DF41E100042B04 /* SelectorItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SelectorItem.xml; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1694,6 +1699,24 @@
 			path = QrCode;
 			sourceTree = "<group>";
 		};
+		77A38A1921DF357E00042B04 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				77A38A1A21DF358A00042B04 /* SelectorItem */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		77A38A1A21DF358A00042B04 /* SelectorItem */ = {
+			isa = PBXGroup;
+			children = (
+				77A38A1B21DF3EA100042B04 /* SelectorItem.h */,
+				77A38A1C21DF3EA100042B04 /* SelectorItem.m */,
+				77A38A1E21DF41E100042B04 /* SelectorItem.xml */,
+			);
+			path = SelectorItem;
+			sourceTree = "<group>";
+		};
 		77B0541D21C943760045A489 /* WebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1879,12 +1902,12 @@
 		77B054DC21CB34C40045A489 /* Button */ = {
 			isa = PBXGroup;
 			children = (
-				776B55B421BE6BD000793CAF /* ButtonViewParams.h */,
-				776B55B521BE6BD000793CAF /* ButtonViewParams.m */,
-				776B55B121BE6B1500793CAF /* Button.h */,
-				776B55B221BE6B1500793CAF /* Button.m */,
 				776B55AE21BE6A9500793CAF /* ButtonViewModel.h */,
 				776B55AF21BE6A9500793CAF /* ButtonViewModel.m */,
+				776B55B121BE6B1500793CAF /* Button.h */,
+				776B55B221BE6B1500793CAF /* Button.m */,
+				776B55B421BE6BD000793CAF /* ButtonViewParams.h */,
+				776B55B521BE6BD000793CAF /* ButtonViewParams.m */,
 			);
 			path = Button;
 			sourceTree = "<group>";
@@ -2408,6 +2431,7 @@
 		77EA8E8221B8F93C001B8959 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				77A38A1921DF357E00042B04 /* Global */,
 				77B0551D21CD27200045A489 /* Base */,
 				774F017021B9725D00CB482F /* Home */,
 				77CEA4C821D48A0300B388E4 /* Discover */,
@@ -2889,6 +2913,7 @@
 				77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */,
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
+				77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
 				77A38A0621DF2C2600042B04 /* ProfileEditController.xml in Resources */,
 				7723E1C421D73F6500B77890 /* Login.xml in Resources */,
@@ -3000,6 +3025,7 @@
 				77B054FF21CBE6910045A489 /* EventBus.m in Sources */,
 				771CA3C021DCA7A100B00F11 /* Performer+Parser.m in Sources */,
 				77EA8FBE21B94BB5001B8959 /* TestModule.m in Sources */,
+				77A38A1D21DF3EA100042B04 /* SelectorItem.m in Sources */,
 				776B55D321BFA2C600793CAF /* UIViewController+Layout.m in Sources */,
 				77B0553C21D0787B0045A489 /* GlobalModule.m in Sources */,
 				77B0558E21D1DA840045A489 /* ComponentData.m in Sources */,
