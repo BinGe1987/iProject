@@ -12,7 +12,6 @@
 - (instancetype)init
 {
     self = [Button buttonWithType:UIButtonTypeCustom];
-//    [self setShowsTouchWhenHighlighted:YES];
     return self;
 }
 

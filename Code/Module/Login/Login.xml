@@ -70,6 +70,7 @@
                 view_width="96"
                 view_height="28"
                 view_background="#0055b4b2"
+                view_backgroundSelected="#22000000"
                 view_borderRadius="5"
                 view_borderWidth="1"
                 view_borderColor="#55b4b2"

@@ -47,5 +47,21 @@
         view_height="48sp"
         selector_leftText="关于我们"
         selector_rightText="最新版本"/>
+        
+        
+    <Button
+        view_name="btn_code"
+        view_width="full"
+        view_height="40"
+        view_background="#cccccc"
+        view_backgroundSelected="#22000000"
+        view_borderRadius="5"
+        view_masksToBounds="YES"
+        text_src="退出登录"
+        text_size="14"
+        text_color="#ffffff"
+        layout_marginTop="100"
+        layout_marginLeft="77"
+        layout_marginRight="77"/>
     
 </LinearLayout>
