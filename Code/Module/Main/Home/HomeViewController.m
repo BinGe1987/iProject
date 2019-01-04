@@ -19,8 +19,10 @@
     [super viewDidLoad];
 //    [self.navigationController.navigationBar setShadowImage:[UIImage new]];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Home.json" ofType:nil];
-    [self setContentViewWithJSONPath:path];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Home.json" ofType:nil];
+//    [self setContentViewWithJSONPath:path];
+    
+    [self setContentViewWithXML:@"Home.xml"];
 
     HomePresenter *prsenter = [[HomePresenter alloc] initWithView:[self findViewByName:@"table"]];
     [self addPresenter:prsenter];

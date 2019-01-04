@@ -158,6 +158,7 @@
 		77A38A1821DF30D100042B04 /* PayQRCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A1721DF30D100042B04 /* PayQRCodeController.m */; };
 		77A38A1D21DF3EA100042B04 /* SelectorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A1C21DF3EA100042B04 /* SelectorItem.m */; };
 		77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A1E21DF41E100042B04 /* SelectorItem.xml */; };
+		77A38A2121DF6BA800042B04 /* Home.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A2021DF6BA800042B04 /* Home.xml */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -353,7 +354,6 @@
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
-		77FAFCD921C28C2D002A90B0 /* Home.json in Resources */ = {isa = PBXBuildFile; fileRef = 77FAFCD821C28C2D002A90B0 /* Home.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -643,6 +643,7 @@
 		77A38A1B21DF3EA100042B04 /* SelectorItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectorItem.h; sourceTree = "<group>"; };
 		77A38A1C21DF3EA100042B04 /* SelectorItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorItem.m; sourceTree = "<group>"; };
 		77A38A1E21DF41E100042B04 /* SelectorItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SelectorItem.xml; sourceTree = "<group>"; };
+		77A38A2021DF6BA800042B04 /* Home.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Home.xml; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1021,7 +1022,6 @@
 		77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewParams.m; sourceTree = "<group>"; };
 		77FAFCD321C213EC002A90B0 /* ScrollLayoutParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollLayoutParams.h; sourceTree = "<group>"; };
 		77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollLayoutParams.m; sourceTree = "<group>"; };
-		77FAFCD821C28C2D002A90B0 /* Home.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Home.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1551,7 +1551,7 @@
 				7734C0E021D2318E009D1EE8 /* HomeModule.m */,
 				77EA8E9721B8FCF2001B8959 /* HomeViewController.h */,
 				77EA8E9821B8FCF2001B8959 /* HomeViewController.m */,
-				77FAFCD821C28C2D002A90B0 /* Home.json */,
+				77A38A2021DF6BA800042B04 /* Home.xml */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -2919,6 +2919,7 @@
 				7723E1C421D73F6500B77890 /* Login.xml in Resources */,
 				771CA39F21DC758200B00F11 /* ClubDetail.xml in Resources */,
 				771CA3DD21DCC5B600B00F11 /* ClubDetailTech.xml in Resources */,
+				77A38A2121DF6BA800042B04 /* Home.xml in Resources */,
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
 				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
@@ -2933,7 +2934,6 @@
 				77CEA54D21D5FD0F00B388E4 /* MineLevel.json in Resources */,
 				77EA8F2F21B90226001B8959 /* readme-DataCenter in Resources */,
 				77CEA4C721D481D500B388E4 /* Test2.json in Resources */,
-				77FAFCD921C28C2D002A90B0 /* Home.json in Resources */,
 				77CEA4DC21D498F200B388E4 /* DiscoverTech.json in Resources */,
 				771CA3F421DD0AB200B00F11 /* TechDetail.xml in Resources */,
 				77A38A0C21DF2F6B00042B04 /* SettingController.xml in Resources */,

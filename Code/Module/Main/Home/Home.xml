@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    view_name="root_view"
+    view_width="full"
+    view_height="full"
+    view_background="#ffffff">
+    
+    
+    
+    <TableView
+        view_name="table"
+        view_width="full"
+        view_height="full"
+        view_background="#ffffff" />
+        
+    <View
+        view_width="full"
+        view_height="0.5"
+        layout_fixTop="YES"
+        layout_marginTop="44"
+        view_background="#fff5f5f5"/>
+        
+</FrameLayout>
+
