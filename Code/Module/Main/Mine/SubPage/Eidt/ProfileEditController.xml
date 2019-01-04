@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<FrameLayout
+<LinearLayout
     view_width="full"
     view_height="full"
+    view_orientation="V"
     view_background="#fff0f0f0">
     <Navigation
         view_background="#ffffffff">
         
     </Navigation>
-</FrameLayout>
+    
+    <CustomView
+        view_name="selector_profile"
+        view_class="SelectorItem"
+        view_width="full"
+        view_height="48sp"
+        layout_marginTop="15"
+        layout_marginBottom="15"
+        selector_leftText="头像"/>
+    
+    <CustomView
+        view_class="SelectorItem"
+        view_width="full"
+        view_height="48sp"
+        selector_leftText="昵称"/>
+    <CustomView
+        view_class="SelectorItem"
+        view_width="full"
+        view_height="48sp"
+        selector_leftText="性别"/>
+    <CustomView
+        view_class="SelectorItem"
+        view_width="full"
+        view_height="48sp"
+        selector_leftText="手机"/>
+    
+</LinearLayout>
