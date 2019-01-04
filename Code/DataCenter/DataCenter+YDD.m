@@ -26,7 +26,11 @@
 }
 
 + (NSString *)token {
-    return [DataCenter get].userData.token;
+    NSString *token = [DataCenter get].userData.token;
+    if ([NSString isEmpty:token]) {
+        token = [Store valueForKey:@"token"];
+    }
+    return token;
 }
 
 @end

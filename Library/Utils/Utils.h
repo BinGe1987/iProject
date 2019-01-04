@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (BOOL)validateContactNumber:(NSString *)mobileNum;
 
++ (BOOL)compareWithOldArray:(NSArray *)oldArray newArray:(NSArray *)newArray;
+
 @end
 
 NS_ASSUME_NONNULL_END

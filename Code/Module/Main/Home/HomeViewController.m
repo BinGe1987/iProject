@@ -23,7 +23,7 @@
 //    [self setContentViewWithJSONPath:path];
     
     [self setContentViewWithXML:@"Home.xml"];
-
+    Log(@"HomeViewController viewDidLoad...");
     HomePresenter *prsenter = [[HomePresenter alloc] initWithView:[self findViewByName:@"table"]];
     [self addPresenter:prsenter];
 

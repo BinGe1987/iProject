@@ -19,4 +19,13 @@
     }
 }
 
++ (BOOL)compareWithOldArray:(NSArray *)oldArray newArray:(NSArray *)newArray {
+    if (oldArray.count != newArray.count) {
+        return NO;
+    }
+    
+    
+    return NO;
+}
+
 @end

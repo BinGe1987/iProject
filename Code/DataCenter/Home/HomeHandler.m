@@ -22,7 +22,10 @@
     self = [super init];
     if (self) {
         self.data = [HomeData new];
-        [self bind:OperationGetHomeData performer:[HomePerformer new] parser:self];
+        [self bind:OperationGetHomeData         performer:[HomePerformer new] parser:self];
+        [self bind:OperationGetHomeDataBanner   performer:[HomePerformer new] parser:self];
+        [self bind:OperationGetHomeDataClub     performer:[HomePerformer new] parser:self];
+        [self bind:OperationGetHomeDataTech     performer:[HomePerformer new] parser:self];
     }
     return self;
 }

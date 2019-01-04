@@ -42,7 +42,9 @@
         UIImage *image = [UIImage imageWithContentsOfFile:imageUrl];
         [array addObject:image];
     }
-    [self.bannerView setImages:array];
+    if (array && array.count) {
+        [self.bannerView setImages:array];
+    }
 }
 
 @end

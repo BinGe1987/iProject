@@ -3,7 +3,6 @@
     "view_type":"frame",
     "view_width":"full",
     "view_height":"44",
-    "view_background":"#00ff00ff",
     "subviews":[
         {
             "view_name":"qr_code",
@@ -14,7 +13,6 @@
             "view_paddingTop":"20",
             "view_paddingRight":"20",
             "view_paddingBottom":"20",
-            "view_background":"#00f0ff0f",
             "button_imageNormal":"@qrcode",
             "layout_gravity":"center|right",
         },
@@ -24,7 +22,6 @@
             "view_type":"linear",
             "view_width":"auto",
             "view_height":"auto",
-            "view_background":"#00ffff00",
             "layout_gravity":"center|left",
             "subviews":[
                 {
@@ -36,7 +33,6 @@
                     "view_paddingTop":"20",
                     "view_paddingRight":"20",
                     "view_paddingBottom":"20",
-                    "view_background":"#00ff00ff",
                     "image_src":"@location",
                 },
                 {
@@ -48,7 +44,6 @@
                     "view_paddingTop":"20",
                     "view_paddingRight":"5",
                     "view_paddingBottom":"20",
-                    "view_background":"#00000fff",
                     "text_size":"14",
                     "text_src":"深圳",
                     "text_color":"#ff2e2e2e",
@@ -64,9 +59,8 @@
             "view_paddingRight":"20",
             "view_masksToBounds":"YES",
             "view_borderRadius":"12",
-            "view_borderWidth":"0.5",
+            "view_borderWidth":"0.3",
             "view_borderColor":"#ff2e2e2e",
-            "view_background":"#0000ffff",
             "text_color":"#ff000000",
             "text_placeholderColor":"#ffd6d6d6",
             "text_placeholder":"搜索一下附近吧...",

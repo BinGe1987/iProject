@@ -359,7 +359,6 @@
 /* Begin PBXFileReference section */
 		771CA36521D7E95E00B00F11 /* ProgressHUB+Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProgressHUB+Utils.h"; sourceTree = "<group>"; };
 		771CA36621D7E95E00B00F11 /* ProgressHUB+Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUB+Utils.m"; sourceTree = "<group>"; };
-		771CA36821D8A8E100B00F11 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Store/Utils.h; sourceTree = "<group>"; };
 		771CA36921D8A8E100B00F11 /* Utils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		771CA36B21D8AC1C00B00F11 /* LoginPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPresenter.h; sourceTree = "<group>"; };
 		771CA36C21D8AC1C00B00F11 /* LoginPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginPresenter.m; sourceTree = "<group>"; };
@@ -644,6 +643,7 @@
 		77A38A1C21DF3EA100042B04 /* SelectorItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectorItem.m; sourceTree = "<group>"; };
 		77A38A1E21DF41E100042B04 /* SelectorItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SelectorItem.xml; sourceTree = "<group>"; };
 		77A38A2021DF6BA800042B04 /* Home.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Home.xml; sourceTree = "<group>"; };
+		77A38A2221DFDE2900042B04 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Library/Utils/Utils.h; sourceTree = SOURCE_ROOT; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1582,7 +1582,7 @@
 				775B15F921C8A0A700B8D6FF /* Net */,
 				771CA43721DDFB4B00B00F11 /* Http */,
 				77B054B421CA4D5E0045A489 /* Store */,
-				771CA36821D8A8E100B00F11 /* Utils.h */,
+				77A38A2221DFDE2900042B04 /* Utils.h */,
 				771CA36921D8A8E100B00F11 /* Utils.m */,
 				775B15E921C75E7C00B8D6FF /* UtilsHeader.h */,
 			);

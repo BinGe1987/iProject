@@ -20,6 +20,7 @@
     self.handler.delegate = self;
     
     WeakSelf(self)
+    Log(@"HomePresenter new...");
     [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, Data *  _Nullable data) {
         [weakself.handler setData:data];
     }];

@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *club;
 
+- (void)setBannerData:(Data *)data;
+
 @end
 
 NS_ASSUME_NONNULL_END

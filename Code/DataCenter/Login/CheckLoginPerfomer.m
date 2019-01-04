@@ -16,7 +16,7 @@
     }
     NSString *url = [URLConstant URLWithApi:API_CheckLogin];
     HttpRequest *request = [HttpRequest new];
-    request.timeout = 5;
+    request.timeout = 2;
     request.url = url;
     request.data = @{@"token":params};
     HttpResponse *response = [Http post:request];
