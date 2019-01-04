@@ -23,14 +23,26 @@
         [avatar setImageWithURL:[NSURL URLWithString:user.avatarUrl]];
     }
     
+    //会员福利
     UIButton *btnMemberWelfare = (UIButton *)[self.view findViewByName:@"btn_memberWelfare"];
     [btnMemberWelfare setClickBlock:^(UIButton * _Nonnull button) {
         [UIViewController pushController:@"WebViewController" animated:YES data:@{@"title":@"会员福利"}];
     }];
     
+    //充值福利
+    UIButton *btnRechargeWelfare = (UIButton *)[self.view findViewByName:@"btn_rechargeWelfare"];
+    [btnRechargeWelfare setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"WebViewController" animated:YES data:@{@"title":@"充值福利"}];
+    }];
+    
     //手机
     UILabel *phone = (UILabel *)[self.view findViewByName:@"label_phone"];
-    phone.text = [user.phone stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];;
+    if (user.userName) {
+        phone.text = user.userName;
+    } else {
+        phone.text = [user.phone stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
+    }
+    
     
     //累计充值
     UILabel *totalRecharge = (UILabel *)[self.view findViewByName:@"label_totalRecharge"];

@@ -145,6 +145,11 @@
 		77A389E921DE563500042B04 /* PointsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389E821DE563500042B04 /* PointsData.m */; };
 		77A389EC21DE59C400042B04 /* UserPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389EB21DE59C400042B04 /* UserPerformer.m */; };
 		77A389F021DEFE2E00042B04 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389EF21DEFE2E00042B04 /* WebViewController.m */; };
+		77A389F421DF177F00042B04 /* NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389F321DF177F00042B04 /* NavigationView.m */; };
+		77A389F721DF17B700042B04 /* NavigationViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389F621DF17B700042B04 /* NavigationViewParams.m */; };
+		77A389FA21DF17D500042B04 /* NavigationLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389F921DF17D500042B04 /* NavigationLayoutParams.m */; };
+		77A389FD21DF17EF00042B04 /* NavigationViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389FC21DF17EF00042B04 /* NavigationViewModel.m */; };
+		77A389FF21DF26D000042B04 /* WebVewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A389FE21DF26D000042B04 /* WebVewController.xml */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -609,6 +614,15 @@
 		77A389EB21DE59C400042B04 /* UserPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserPerformer.m; sourceTree = "<group>"; };
 		77A389EE21DEFE2E00042B04 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		77A389EF21DEFE2E00042B04 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		77A389F221DF177F00042B04 /* NavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationView.h; sourceTree = "<group>"; };
+		77A389F321DF177F00042B04 /* NavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationView.m; sourceTree = "<group>"; };
+		77A389F521DF17B700042B04 /* NavigationViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewParams.h; sourceTree = "<group>"; };
+		77A389F621DF17B700042B04 /* NavigationViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewParams.m; sourceTree = "<group>"; };
+		77A389F821DF17D500042B04 /* NavigationLayoutParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationLayoutParams.h; sourceTree = "<group>"; };
+		77A389F921DF17D500042B04 /* NavigationLayoutParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationLayoutParams.m; sourceTree = "<group>"; };
+		77A389FB21DF17EF00042B04 /* NavigationViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationViewModel.h; sourceTree = "<group>"; };
+		77A389FC21DF17EF00042B04 /* NavigationViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationViewModel.m; sourceTree = "<group>"; };
+		77A389FE21DF26D000042B04 /* WebVewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = WebVewController.xml; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1604,8 +1618,24 @@
 			children = (
 				77A389EE21DEFE2E00042B04 /* WebViewController.h */,
 				77A389EF21DEFE2E00042B04 /* WebViewController.m */,
+				77A389FE21DF26D000042B04 /* WebVewController.xml */,
 			);
 			path = Web;
+			sourceTree = "<group>";
+		};
+		77A389F121DF172E00042B04 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				77A389FB21DF17EF00042B04 /* NavigationViewModel.h */,
+				77A389FC21DF17EF00042B04 /* NavigationViewModel.m */,
+				77A389F221DF177F00042B04 /* NavigationView.h */,
+				77A389F321DF177F00042B04 /* NavigationView.m */,
+				77A389F521DF17B700042B04 /* NavigationViewParams.h */,
+				77A389F621DF17B700042B04 /* NavigationViewParams.m */,
+				77A389F821DF17D500042B04 /* NavigationLayoutParams.h */,
+				77A389F921DF17D500042B04 /* NavigationLayoutParams.m */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		77B0541D21C943760045A489 /* WebImage */ = {
@@ -2539,6 +2569,7 @@
 				77EA8EF721B90226001B8959 /* ViewGroup */,
 				77B054DE21CB355E0045A489 /* LinearLayout */,
 				77B054DF21CB356E0045A489 /* FrameLayout */,
+				77A389F121DF172E00042B04 /* Navigation */,
 				77B054E021CB35860045A489 /* ScrollView */,
 				77B054E121CB35970045A489 /* TableView */,
 				77CEA51521D4FA2100B388E4 /* CollectionView */,
@@ -2786,6 +2817,7 @@
 				77CEA56E21D6588C00B388E4 /* OrderCellItem.json in Resources */,
 				771CA41921DDBE5900B00F11 /* CommentItem.xml in Resources */,
 				771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */,
+				77A389FF21DF26D000042B04 /* WebVewController.xml in Resources */,
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
 				77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */,
 				77CEA4B821D3AF5500B388E4 /* TechCellList.json in Resources */,
@@ -2874,6 +2906,7 @@
 				771CA3AA21DC9F9200B00F11 /* ClubDetailPresenter.m in Sources */,
 				7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */,
 				77CEA56821D64C3800B388E4 /* OrderData.m in Sources */,
+				77A389F421DF177F00042B04 /* NavigationView.m in Sources */,
 				7734C12121D23A45009D1EE8 /* KafkaReplicatorHeader.m in Sources */,
 				77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */,
 				77B054D821CA9C720045A489 /* TableViewModel.m in Sources */,
@@ -2940,6 +2973,7 @@
 				771CA37821D8B51100B00F11 /* DropdownMenu.m in Sources */,
 				776B55AB21BE62E100793CAF /* UserData.m in Sources */,
 				771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */,
+				77A389FD21DF17EF00042B04 /* NavigationViewModel.m in Sources */,
 				77B054BD21CA51740045A489 /* InputViewModel.m in Sources */,
 				77CEA56521D64C2C00B388E4 /* OrderPerformer.m in Sources */,
 				77B0545521C943760045A489 /* UIButton+YYWebImage.m in Sources */,
@@ -2950,6 +2984,7 @@
 				77B0559521D1FB250045A489 /* ViewHandler.m in Sources */,
 				7734C12221D23A45009D1EE8 /* KafkaReplicatorLayer.m in Sources */,
 				77CEA51B21D4FA6900B388E4 /* CollectionViewModel.m in Sources */,
+				77A389FA21DF17D500042B04 /* NavigationLayoutParams.m in Sources */,
 				771CA40521DD0EED00B00F11 /* TechDetailViewHandler.m in Sources */,
 				77B054F321CB8D240045A489 /* Notification.m in Sources */,
 				77B0558221D122460045A489 /* XMLDictionary.m in Sources */,
@@ -3041,6 +3076,7 @@
 				77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */,
 				771CA36721D7E95E00B00F11 /* ProgressHUB+Utils.m in Sources */,
 				77EA8F6321B90227001B8959 /* TextView.m in Sources */,
+				77A389F721DF17B700042B04 /* NavigationViewParams.m in Sources */,
 				77B0544D21C943760045A489 /* YYMemoryCache.m in Sources */,
 				77B0544C21C943760045A489 /* YYKVStorage.m in Sources */,
 				77B0547B21CA46DC0045A489 /* UIImage+KS.m in Sources */,

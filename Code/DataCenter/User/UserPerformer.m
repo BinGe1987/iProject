@@ -11,6 +11,10 @@
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
     
+    if (!params) {
+        return [Data new];
+    }
+    
     NSString *url = [URLConstant URLWithApi:API_MineGetMineData];
     HttpRequest *request = [HttpRequest new];
     request.url = url;

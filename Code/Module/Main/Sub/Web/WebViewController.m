@@ -16,17 +16,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    
     self.title = self.intentData[@"title"];
-//    self.navigationController.navigationBarHidden = YES;
     
-//    self.view.backgroundColor = [UIColor greenColor];
+    [self setContentViewWithXML:@"WebVewController.xml"];
 
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-//    [self.navigationController.navigationBar setBackgroundImage:[ImageUtils imageWithColorHex:@"#ffffffff" size:CGSizeMake(10, 10)] forBarMetrics:UIBarMetricsDefault];
-}
 
 @end
