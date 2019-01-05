@@ -51,24 +51,24 @@
     self.btnLogin = (UIButton *)[view findViewByName:@"btn_login"];
     [self.btnLogin setClickBlock:^(UIButton * _Nonnull button) {
         
-        [ProgressHUB postTips:@"网络异常"];
+//        [ProgressHUB postTips:@"网络异常"];
         
-//        NSString *phone = phoneField.text;
-//        NSString *code = codeField.text;
-//        if (![Utils validateContactNumber:phone]) {
-//            [ProgressHUB toast:@"请输入正确的手机号码"];
-//            [phoneField becomeFirstResponder];
-//        } else if ([NSString isEmpty:code]){
-//            [ProgressHUB toast:@"请输入验证码"];
-//            [codeField becomeFirstResponder];
-//        } else {
-//            [ProgressHUB loading];
-//            [view endEditing:YES];
-//            [weakself.delegate onViewAction:@"Login" data:@{@"loginName":phone, @"code":code}];
-//            
-//            UILabel *label = (UILabel *)[weakself.view findViewByName:@"label_errorInfo"];
-//            label.text = @"";
-//        }
+        NSString *phone = phoneField.text;
+        NSString *code = codeField.text;
+        if (![Utils validateContactNumber:phone]) {
+            [ProgressHUB toast:@"请输入正确的手机号码"];
+            [phoneField becomeFirstResponder];
+        } else if ([NSString isEmpty:code]){
+            [ProgressHUB toast:@"请输入验证码"];
+            [codeField becomeFirstResponder];
+        } else {
+            [ProgressHUB loading];
+            [view endEditing:YES];
+            [weakself.delegate onViewAction:@"Login" data:@{@"loginName":phone, @"code":code}];
+            
+            UILabel *label = (UILabel *)[weakself.view findViewByName:@"label_errorInfo"];
+            label.text = @"";
+        }
     }];
     
     return self;

@@ -23,16 +23,10 @@
 - (void)setData:(Data *)data {
     [super setData:data];
     
-//    BOOL banner = [Utils compareWithOldArray:self.banner newArray:data[@"banner"]];
-    NSArray *newArray = data.source[@"respData"][@"banner"];
-//    BOOL bannerCompare = [Utils compareWithOldArray:self.banner newArray:newArray];
-//    if (!bannerCompare) {
     if (data.isSuccess) {
         NSArray *newArray = data.source[@"respData"][@"banner"];
         self.banner = [newArray mutableCopy];
     }
-//    Utils compar
-//    Utils com
     
 //    //banner
 //    NSFileManager *manager = [NSFileManager defaultManager];
