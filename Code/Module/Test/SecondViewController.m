@@ -20,7 +20,7 @@
     
 //    NetStatus status = [Net networkStatus];
 //    Log(@"NetStatus %ld", (long)status);
-    [Net addNetworkObserver:self selector:@selector(netChangedLisenter:)];
+//    [Net addNetworkObserver:self selector:@selector(netChangedLisenter:)];
     
     UIButton *btn2 = (UIButton *)[self findViewByName:@"btn2"];
     [btn2 setClickBlock:^(UIButton * _Nonnull button) {
@@ -42,7 +42,7 @@
 - (void)dealloc
 {
     Log(@"removeNetworkObserver");
-    [Net removeNetworkObserver:self];
+//    [Net removeNetworkObserver:self];
 }
 
 - (void)abc:(NSString *)aaa cba:(NSString *)bbb {

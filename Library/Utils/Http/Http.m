@@ -6,6 +6,7 @@
 //
 
 #import "Http.h"
+#import "Network.h"
 
 @implementation Http
 
@@ -13,18 +14,10 @@
     HttpResponse *httpResponse = [HttpResponse new];
     httpResponse.url = request.url;
     
-    //检查网络
-    NetStatus status = [Net networkStatus];
-    if (status == NetStatusUnknow || status == NetStatusUnavailable) {
-        httpResponse.error = [NSError errorWithDomain:@"网络异常，请检查网络。" code:ERROR_CODE_NEWWORK_BROKEN userInfo:nil];
-        return httpResponse;
-    }
-    
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); //创建信号量
     [Http post:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {
-            NSLog(@"post error :%@",error.localizedDescription);
-            httpResponse.error = error;
+            httpResponse.error = [Http errorMsg:error];
         }else {
             // 如果请求成功，则解析数据。
             id object = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
@@ -66,6 +59,33 @@
     NSURLSession *session = [NSURLSession sessionWithConfiguration:configuration];
     NSURLSessionDataTask *task = [session dataTaskWithRequest:request completionHandler:completionHandler];
     [task resume];
+}
+
++ (NSError *)errorMsg:(NSError *)error {
+    switch (error.code) {
+        default:
+        case NSURLErrorUnknown:
+            return [NSError errorWithDomain:@"未知URL错误" code:error.code userInfo:nil];
+        case NSURLErrorBadURL:
+            return [NSError errorWithDomain:@"无效的URL地址" code:error.code userInfo:nil];
+        case NSURLErrorCannotFindHost:
+            return [NSError errorWithDomain:@"找不到服务器" code:error.code userInfo:nil];
+        case NSURLErrorTimedOut:
+            return [NSError errorWithDomain:@"服务器连接超时" code:error.code userInfo:nil];
+        case NSURLErrorUnsupportedURL:
+            return [NSError errorWithDomain:@"不支持此URL" code:error.code userInfo:nil];
+        case NSURLErrorCannotConnectToHost:
+            return [NSError errorWithDomain:@"无法连接到服务器" code:error.code userInfo:nil];
+        case NSURLErrorNetworkConnectionLost:
+            return [NSError errorWithDomain:@"网络连接异常" code:error.code userInfo:nil];
+        case NSURLErrorResourceUnavailable:
+            return [NSError errorWithDomain:@"无网络，请检查设置" code:error.code userInfo:nil];
+        case NSURLErrorNotConnectedToInternet:
+            return [NSError errorWithDomain:@"无效网络，请检查设置" code:error.code userInfo:nil];
+        case NSURLErrorBadServerResponse:
+            return [NSError errorWithDomain:@"服务器无响应" code:error.code userInfo:nil];
+            
+    }
 }
 
 @end

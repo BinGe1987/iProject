@@ -29,7 +29,7 @@ static const void *IsDataUpdatedKey = &IsDataUpdatedKey;
 
 - (NSString *)errorMessage {
     if (self.error) {
-        return self.error.localizedDescription;
+        return self.error.domain;
     }
     else {
         NSString *msg = [self stringWithKey:@"msg"];

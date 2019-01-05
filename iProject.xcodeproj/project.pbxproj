@@ -160,6 +160,7 @@
 		77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A1E21DF41E100042B04 /* SelectorItem.xml */; };
 		77A38A2121DF6BA800042B04 /* Home.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A2021DF6BA800042B04 /* Home.xml */; };
 		77A38A2521E0889600042B04 /* ProgressHUB+Tips.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A2421E0889600042B04 /* ProgressHUB+Tips.m */; };
+		77A38A2D21E0A70F00042B04 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A2C21E0A70F00042B04 /* Network.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -647,6 +648,9 @@
 		77A38A2221DFDE2900042B04 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Library/Utils/Utils.h; sourceTree = SOURCE_ROOT; };
 		77A38A2321E0889600042B04 /* ProgressHUB+Tips.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProgressHUB+Tips.h"; sourceTree = "<group>"; };
 		77A38A2421E0889600042B04 /* ProgressHUB+Tips.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUB+Tips.m"; sourceTree = "<group>"; };
+		77A38A2B21E0A70F00042B04 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		77A38A2C21E0A70F00042B04 /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		77A38A5C21E125EE00042B04 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1273,6 +1277,8 @@
 			children = (
 				771CA43821DDFB5B00B00F11 /* Http.h */,
 				771CA43921DDFB5B00B00F11 /* Http.m */,
+				77A38A2B21E0A70F00042B04 /* Network.h */,
+				77A38A2C21E0A70F00042B04 /* Network.m */,
 				771CA43B21DDFB7300B00F11 /* HttpRequest.h */,
 				771CA43C21DDFB7300B00F11 /* HttpRequest.m */,
 				771CA43E21DDFB9500B00F11 /* HttpResponse.h */,
@@ -1718,6 +1724,14 @@
 				77A38A1E21DF41E100042B04 /* SelectorItem.xml */,
 			);
 			path = SelectorItem;
+			sourceTree = "<group>";
+		};
+		77A38A5B21E125ED00042B04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				77A38A5C21E125EE00042B04 /* SystemConfiguration.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		77B0541D21C943760045A489 /* WebImage */ = {
@@ -2383,6 +2397,7 @@
 				77EA8E6921B8F79F001B8959 /* Code */,
 				77EA8E8A21B8FBE2001B8959 /* Library */,
 				77EA8E6821B8F79F001B8959 /* Products */,
+				77A38A5B21E125ED00042B04 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -2980,6 +2995,7 @@
 				7734C12021D23A45009D1EE8 /* KafkaArrowHeader.m in Sources */,
 				77B0545221C943760045A489 /* YYFrameImage.m in Sources */,
 				7734C0D521D22E7F009D1EE8 /* TechData.m in Sources */,
+				77A38A2D21E0A70F00042B04 /* Network.m in Sources */,
 				7734C0CB21D22D17009D1EE8 /* BannerData.m in Sources */,
 				77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */,
 				77B0545A21C943760045A489 /* YYWebImageOperation.m in Sources */,

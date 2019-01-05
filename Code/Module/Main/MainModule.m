@@ -60,12 +60,12 @@
                 if ([NSString isEmpty:data.imageNormal]) {
                     nornal = [UIImage imageNamed:[tabDic objectForKey:@"icon_normal"]];
                 } else {
-                    nornal = [Net requestImageWithURL:[NSURL URLWithString:data.imageNormal]];
+//                    nornal = [Net requestImageWithURL:[NSURL URLWithString:data.imageNormal]];
                 }
                 if ((!data.imageSelected) || ([data.imageSelected isEqualToString:@""])) {
                     selected = [UIImage imageNamed:[tabDic objectForKey:@"icon_selected"]];
                 } else {
-                    selected = [Net requestImageWithURL:[NSURL URLWithString:data.imageSelected]];
+//                    selected = [Net requestImageWithURL:[NSURL URLWithString:data.imageSelected]];
                 }
                 UIColor *cNormal = [ColorUtils colorWithString:data.titleColorNormal];
                 UIColor *cSelected = [ColorUtils colorWithString:data.titleColorSelected];

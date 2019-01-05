@@ -6,11 +6,12 @@
 //
 
 #import "GlobalModule.h"
+#import "Network.h"
 
 @implementation GlobalModule
 
 - (void)setup:(BuildConfiguration)buildConfiguration {
-
+    [Network start];
 }
 
 @end
