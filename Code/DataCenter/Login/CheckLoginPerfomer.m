@@ -14,10 +14,8 @@
     if ([NSString isEmpty:params]) {
         return [Data new];
     }
-    NSString *url = [URLConstant URLWithApi:API_CheckLogin];
-    HttpRequest *request = [HttpRequest new];
-    request.timeout = 2;
-    request.url = url;
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_CheckLogin];
+    request.timeout = 4;
     request.data = @{@"token":params};
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];

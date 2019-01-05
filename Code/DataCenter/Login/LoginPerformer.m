@@ -14,9 +14,7 @@
     NSMutableDictionary *dict = [params mutableCopy];
     [dict setObject:@"ios" forKey:@"Channel"];
     
-    NSString *url = [URLConstant URLWithApi:API_Login];
-    HttpRequest *request = [HttpRequest new];
-    request.url = url;
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_Login];
     request.data = dict;
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];

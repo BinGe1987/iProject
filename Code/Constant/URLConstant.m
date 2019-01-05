@@ -9,6 +9,10 @@
 
 @implementation URLConstant
 
++ (NSString *)host {
+    return BASE_URL;
+}
+
 + (NSString *)URLWithApi:(NSString *)api {
     return [NSString stringWithFormat:@"%@%@", BASE_URL, api];
 }

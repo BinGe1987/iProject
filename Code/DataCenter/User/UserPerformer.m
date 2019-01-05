@@ -15,9 +15,7 @@
         return [Data new];
     }
     
-    NSString *url = [URLConstant URLWithApi:API_MineGetMineData];
-    HttpRequest *request = [HttpRequest new];
-    request.url = url;
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_MineGetMineData];
     request.data = @{@"token":DataCenter.token};
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];

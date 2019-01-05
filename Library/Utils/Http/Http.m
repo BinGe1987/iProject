@@ -12,7 +12,7 @@
 
 + (HttpResponse *)post:(HttpRequest *)request {
     HttpResponse *httpResponse = [HttpResponse new];
-    httpResponse.url = request.url;
+    httpResponse.url = request.requestURL;
     
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); //创建信号量
     [Http post:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
@@ -38,7 +38,7 @@
 }
 
 + (void)post:(HttpRequest * _Nullable)httpRequest completionHandler:(void (^)(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error))completionHandler {
-    NSURL *url = [[NSURL alloc] initWithString:httpRequest.url];
+    NSURL *url = [[NSURL alloc] initWithString:httpRequest.requestURL];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     [request setTimeoutInterval:httpRequest.timeout];
     [request setHTTPMethod:@"POST"];

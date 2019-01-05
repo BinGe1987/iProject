@@ -35,31 +35,17 @@
         phoneField.text = localPhone;
     }
     
-    self.btnCode = (UIButton *)[view findViewByName:@"btn_code"];
-    [self.btnCode setClickBlock:^(UIButton * _Nonnull button) {
-        NSString *phone = phoneField.text;
-        if (![Utils validateContactNumber:phone]) {
-            [ProgressHUB toast:@"请输入正确的手机号码"];
-            [phoneField becomeFirstResponder];
-        } else {
-            [Store setValue:phone forKey:@"login_phone"];
-            [weakself startCount];
-            weakself.errorLabel.text = @"";
-        }
-    }];
-    
     self.btnLogin = (UIButton *)[view findViewByName:@"btn_login"];
     [self.btnLogin setClickBlock:^(UIButton * _Nonnull button) {
-        
-//        [ProgressHUB postTips:@"网络异常"];
-        
         NSString *phone = phoneField.text;
         NSString *code = codeField.text;
         if (![Utils validateContactNumber:phone]) {
-            [ProgressHUB toast:@"请输入正确的手机号码"];
+            //            [ProgressHUB toast:@"请输入正确的手机号码"];
+            [ProgressHUB postTips:@"请输入正确的手机号码"];
             [phoneField becomeFirstResponder];
         } else if ([NSString isEmpty:code]){
-            [ProgressHUB toast:@"请输入验证码"];
+            [ProgressHUB postTips:@"请输入验证码"];
+            //            [ProgressHUB toast:@"请输入验证码"];
             [codeField becomeFirstResponder];
         } else {
             [ProgressHUB loading];
@@ -70,6 +56,21 @@
             label.text = @"";
         }
     }];
+    
+    self.btnCode = (UIButton *)[view findViewByName:@"btn_code"];
+    [self.btnCode setClickBlock:^(UIButton * _Nonnull button) {
+        NSString *phone = phoneField.text;
+        if (![Utils validateContactNumber:phone]) {
+            [ProgressHUB toast:@"请输入正确的手机号码"];
+            [phoneField becomeFirstResponder];
+        } else {
+            [Store setValue:phone forKey:@"login_phone"];
+            [weakself startCount];
+            
+        }
+    }];
+    
+    
     
     return self;
 }
@@ -105,7 +106,9 @@ static int timeValue;
     [self.btnCode setTitle:@"重新获取" forState:UIControlStateNormal];
     [self.btnCode setTitle:[NSString stringWithFormat:@"%dS", timeValue+1] forState:UIControlStateSelected];
     
-   
+    self.errorLabel.text = @"";
+    self.btnLogin.highlighted = YES;
+    self.btnLogin.userInteractionEnabled = NO;
 }
 
 - (void)count {
@@ -127,6 +130,9 @@ static int timeValue;
     self.btnCode.selected = NO;
     self.btnCode.userInteractionEnabled = YES;
     self.btnCode.layer.borderColor = UIColorMain.CGColor;
+    
+    self.btnLogin.highlighted = NO;
+    self.btnLogin.userInteractionEnabled = YES;
 }
 
 - (void)finish {

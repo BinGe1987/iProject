@@ -136,9 +136,8 @@ respData =     {
     
     NSArray *bannerArray;
     
-    HttpRequest *bannerRequest = [HttpRequest new];
+    HttpRequest *bannerRequest = [HttpRequest withHost:[URLConstant host] api:API_HomeBanner];
     bannerRequest.timeout = 5;
-    bannerRequest.url = [URLConstant URLWithApi:API_HomeBanner];
     bannerRequest.data = @{@"token":DataCenter.token};
     HttpResponse *bannerResponse = [Http post:bannerRequest];
     Data *bannerData = [Data new];

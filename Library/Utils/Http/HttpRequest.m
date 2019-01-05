@@ -9,8 +9,23 @@
 
 @implementation HttpRequest
 
++ (instancetype)withHost:(NSString *)host api:(NSString *)api {
+    return [[HttpRequest alloc] initWithHost:host api:api];
+}
+
+- (instancetype)initWithHost:(NSString *)host api:(NSString *)api {
+    self = [super init];
+    self.host = host;
+    self.api = api;
+    return self;
+}
+
+- (NSString *)requestURL {
+    return [NSString stringWithFormat:@"%@%@", self.host, self.api];
+}
+
 - (NSTimeInterval)timeout {
-    return _timeout ? _timeout : 8;
+    return _timeout ? _timeout : 6;
 }
 
 @end
