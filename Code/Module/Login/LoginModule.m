@@ -17,6 +17,12 @@
         }
         [self loginCheckCompleted];
     }];
+    [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+        if (![data isSuccess]) {
+            //            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
+        }
+//        [self loginCheckCompleted];
+    }];
 }
 
 - (void)loginCheckCompleted {

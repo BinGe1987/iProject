@@ -35,7 +35,7 @@ singleton_implementation(DataCenter)
 - (void)initialize {
     Log(@"UIEngine initialize %@", self);
     self.operationQueue = [[NSOperationQueue alloc] init];
-    self.operationQueue.maxConcurrentOperationCount = 3;
+    self.operationQueue.maxConcurrentOperationCount = 5;
     
     self.handlers = [[NSMutableArray alloc] init];
     [self addSubHandlers:nil];
@@ -85,19 +85,25 @@ singleton_implementation(DataCenter)
     }];
 }
 
+- (void)operationQueueWithHandler {
+    
+}
+
 - (void)dispatch:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callbak {
     for (DataHandler *handler in self.handlers) {
         if ([handler isContainsPerformer: operation]) {
-            id<IPerformer> performer = [handler getPerformer:operation];
-            if ([performer isAsynchronous]) {
-                [performer perform:operation params:params callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+//            @synchronized(handler) {
+                id<IPerformer> performer = [handler getPerformer:operation];
+                if ([performer isAsynchronous]) {
+                    [performer perform:operation params:params callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+                        [self handData:operation data:data callback:callbak];
+                    }];
+                } else {
+                    id data = [performer perform:operation params:params callback:nil];
                     [self handData:operation data:data callback:callbak];
-                }];
-            } else {
-                id data = [performer perform:operation params:params callback:nil];
-                [self handData:operation data:data callback:callbak];
-            }
-            return;
+                }
+                return;
+//            }
         }
     }
     @throw [NSException exceptionWithName:operation reason:@"找不到对应DataHandler处理" userInfo:nil];
@@ -107,7 +113,9 @@ singleton_implementation(DataCenter)
     ///交给数据处理器整理数据，做数据分析、转换，如果没有则直接返回原始数据
     for (DataHandler *handler in self.handlers) {
         if ([handler isContainsParser: operation]) {
-            data = [handler parseData:operation withSourceData:data];
+            @synchronized(handler) {
+                data = [handler parseData:operation withSourceData:data];
+            }
             break;
         }
     }
