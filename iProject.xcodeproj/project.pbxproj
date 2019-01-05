@@ -159,6 +159,7 @@
 		77A38A1D21DF3EA100042B04 /* SelectorItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A1C21DF3EA100042B04 /* SelectorItem.m */; };
 		77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A1E21DF41E100042B04 /* SelectorItem.xml */; };
 		77A38A2121DF6BA800042B04 /* Home.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A2021DF6BA800042B04 /* Home.xml */; };
+		77A38A2521E0889600042B04 /* ProgressHUB+Tips.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A2421E0889600042B04 /* ProgressHUB+Tips.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -644,6 +645,8 @@
 		77A38A1E21DF41E100042B04 /* SelectorItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SelectorItem.xml; sourceTree = "<group>"; };
 		77A38A2021DF6BA800042B04 /* Home.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Home.xml; sourceTree = "<group>"; };
 		77A38A2221DFDE2900042B04 /* Utils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Utils.h; path = Library/Utils/Utils.h; sourceTree = SOURCE_ROOT; };
+		77A38A2321E0889600042B04 /* ProgressHUB+Tips.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ProgressHUB+Tips.h"; sourceTree = "<group>"; };
+		77A38A2421E0889600042B04 /* ProgressHUB+Tips.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ProgressHUB+Tips.m"; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1806,6 +1809,8 @@
 				77B0546621CA30940045A489 /* ProgressHUB.m */,
 				771CA36521D7E95E00B00F11 /* ProgressHUB+Utils.h */,
 				771CA36621D7E95E00B00F11 /* ProgressHUB+Utils.m */,
+				77A38A2321E0889600042B04 /* ProgressHUB+Tips.h */,
+				77A38A2421E0889600042B04 /* ProgressHUB+Tips.m */,
 			);
 			path = Progress;
 			sourceTree = "<group>";
@@ -2956,6 +2961,7 @@
 				77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */,
 				771CA42C21DDD94800B00F11 /* CommentFilterData.m in Sources */,
 				7734C0DE21D22FDD009D1EE8 /* HomePerformer.m in Sources */,
+				77A38A2521E0889600042B04 /* ProgressHUB+Tips.m in Sources */,
 				77EA8F5321B90226001B8959 /* UIViewController+JSON.m in Sources */,
 				77EA8F6D21B90227001B8959 /* UIView+View.m in Sources */,
 				77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */,

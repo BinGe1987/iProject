@@ -11,6 +11,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define ERROR_CODE_NEWWORK_BROKEN       (101000)
+
 @interface Http : NSObject
 
 + (HttpResponse *)post:(HttpRequest *)request;

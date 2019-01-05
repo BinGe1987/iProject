@@ -13,15 +13,9 @@
     NSString *token = [Store valueForKey:@"token" defaultValue:@""];
     [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, Data *  _Nullable data) {
         if (![data isSuccess]) {
-//            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
+            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
         }
         [self loginCheckCompleted];
-    }];
-    [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, Data *  _Nullable data) {
-        if (![data isSuccess]) {
-            //            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
-        }
-//        [self loginCheckCompleted];
     }];
 }
 

@@ -23,6 +23,7 @@
         self.userData = [[UserData alloc] init];
         [self bind:OperationLoginCheck parser:self];
         [self bind:OperationLogin parser:self];
+        
         [self bind:OperationGetMineData performer:[UserPerformer new]];
         [self bind:OperationGetMineData parser:self];
     }

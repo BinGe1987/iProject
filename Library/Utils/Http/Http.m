@@ -12,6 +12,14 @@
 + (HttpResponse *)post:(HttpRequest *)request {
     HttpResponse *httpResponse = [HttpResponse new];
     httpResponse.url = request.url;
+    
+    //检查网络
+    NetStatus status = [Net networkStatus];
+    if (status == NetStatusUnknow || status == NetStatusUnavailable) {
+        httpResponse.error = [NSError errorWithDomain:@"网络异常，请检查网络。" code:ERROR_CODE_NEWWORK_BROKEN userInfo:nil];
+        return httpResponse;
+    }
+    
     dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); //创建信号量
     [Http post:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (error) {

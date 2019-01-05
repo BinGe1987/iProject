@@ -9,6 +9,7 @@
 #define LibrarySDKHeader_h
 
 #import "ProgressHUB+Utils.h"
+#import "ProgressHUB+Tips.h"
 #import "UIImageView+WebImage.h"
 #import "PhotoBrowser.h"
 #import "DropdownMenu.h"
