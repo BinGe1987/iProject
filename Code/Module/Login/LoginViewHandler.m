@@ -40,12 +40,10 @@
         NSString *phone = phoneField.text;
         NSString *code = codeField.text;
         if (![Utils validateContactNumber:phone]) {
-            //            [ProgressHUB toast:@"请输入正确的手机号码"];
-            [ProgressHUB postTips:@"请输入正确的手机号码"];
+            [ProgressHUB showTips:@"请输入正确的手机号码"];
             [phoneField becomeFirstResponder];
         } else if ([NSString isEmpty:code]){
-            [ProgressHUB postTips:@"请输入验证码"];
-            //            [ProgressHUB toast:@"请输入验证码"];
+            [ProgressHUB showTips:@"请输入验证码"];
             [codeField becomeFirstResponder];
         } else {
             [ProgressHUB loading];
@@ -61,7 +59,8 @@
     [self.btnCode setClickBlock:^(UIButton * _Nonnull button) {
         NSString *phone = phoneField.text;
         if (![Utils validateContactNumber:phone]) {
-            [ProgressHUB toast:@"请输入正确的手机号码"];
+//            [ProgressHUB toast:@"请输入正确的手机号码"];
+            [ProgressHUB showTips:@"请输入正确的手机号码"];
             [phoneField becomeFirstResponder];
         } else {
             [Store setValue:phone forKey:@"login_phone"];

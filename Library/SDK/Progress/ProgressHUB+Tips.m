@@ -11,7 +11,22 @@
 
 static NSOperationQueue *operationQueue;
 
+
+
++ (void)showTips:(NSString *)tips {
+    [ProgressHUB showTips:tips completion:nil];
+}
++ (void)showTips:(NSString *)tips completion:(void (^ __nullable)(BOOL finished))completion {
+    if (!operationQueue || operationQueue.operationCount == 0) {
+        [ProgressHUB postTips:tips completion:completion];
+    }
+}
+
+
 + (void)postTips:(NSString *)tips {
+    [ProgressHUB postTips:tips completion:nil];
+}
++ (void)postTips:(NSString *)tips completion:(void (^ __nullable)(BOOL finished))completion {
     
     if (!operationQueue) {
         operationQueue = [[NSOperationQueue alloc] init];
@@ -23,6 +38,9 @@ static NSOperationQueue *operationQueue;
         dispatch_async(dispatch_get_main_queue(), ^{
             [ProgressHUB playTipsAmination:tips completion:^(BOOL finished) {
                 dispatch_semaphore_signal(semaphore);//发送信号
+                if (completion) {
+                    completion(finished);
+                }
             }];
         });
         dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);  //等待
@@ -47,12 +65,12 @@ static NSOperationQueue *operationQueue;
     label.center = CGPointMake(label.center.x, label.center.y - label.bounds.size.height);
     [view addSubview:label];
     
-    [UIView animateWithDuration:0.3 animations:^{
+    [UIView animateWithDuration:0.3 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         CGRect frame = label.frame;
         frame.origin.y = 0;
         label.frame = frame;
     } completion:^(BOOL finished) {
-        [UIView animateWithDuration:0.3 delay:2 options:UIViewAnimationOptionCurveLinear animations:^{
+        [UIView animateWithDuration:0.3 delay:2 options:UIViewAnimationOptionCurveEaseOut animations:^{
             CGRect frame = label.frame;
             frame.origin.y = -frame.size.height;
             label.frame = frame;
