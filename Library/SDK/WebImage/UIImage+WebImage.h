@@ -11,7 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIImage (WebImage)
 
-+ (UIImage *)imageURL:(NSURL *)url;
+//+ (UIImage *)imageURL:(NSURL *)url;
+
++ (UIImage *)imageWithURL:(NSURL *)url;
 
 @end
 

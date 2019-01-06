@@ -4,7 +4,17 @@
     view_width="full"
     view_height="full"
     view_background="#ffffff">
-    <Label
+<!--    <Label-->
+<!--        view_width="auto"-->
+<!--        view_height="auto"-->
+<!--        text_src="登录"-->
+<!--        text_color="#2e2e2e"-->
+<!--        text_size="20"-->
+<!--        layout_fixTop="YES"-->
+<!--        layout_margin="19"-->
+<!--        layout_marginTop="12"/>-->
+    <Button
+        view_name="btn_loginTitle"
         view_width="auto"
         view_height="auto"
         text_src="登录"

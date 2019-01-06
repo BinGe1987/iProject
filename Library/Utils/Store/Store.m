@@ -20,7 +20,7 @@
 
 + (id)valueForKey:(NSString *)key defaultValue:(_Nullable id)value {
     NSUserDefaults *local = [NSUserDefaults standardUserDefaults];
-    NSString *obj = [local objectForKey:key];
+    id obj = [local objectForKey:key];
     return obj ? obj : value;
 }
 

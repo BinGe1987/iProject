@@ -5,7 +5,7 @@
 //  Created by BinGe on 2018/12/6.
 //
 
-
+#import "UIImage+WebImage.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
