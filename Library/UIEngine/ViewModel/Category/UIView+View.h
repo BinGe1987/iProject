@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  根据view的名字找到对应的子view
  */
-- (UIView *)findViewByName:(NSString *)name;
+- (id)findViewByName:(NSString *)name;
 
 - (UIView *)getRootView;
 

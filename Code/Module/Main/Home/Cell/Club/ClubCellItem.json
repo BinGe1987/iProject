@@ -1,4 +1,5 @@
 {
+    "view_name":"root",
     "view_type":"frame",
     "view_width":"full",
     "view_height":"full",
@@ -16,7 +17,7 @@
             "layout_marginBottom":"14",
             "subviews":[
                 {
-                    "view_name":"image",
+                    "view_name":"image_clubLogo",
                     "view_type":"image",
                     "view_width":"90",
                     "view_height":"78",
@@ -27,7 +28,6 @@
                     "image_src":"@default_club",
                 },
                 {
-                    "view_name":"frame1",
                     "view_type":"frame",
                     "view_width":"full",
                     "view_height":"full",
@@ -35,11 +35,12 @@
                     "layout_marginLeft":"12",
                     "subviews":[
                         {
-                            "view_name":"club_name",
+                            "view_name":"label_clubName",
                             "view_type":"label",
                             "view_width":"auto",
                             "view_height":"18",
                             "text_size":"15",
+                            "text_gravity":"left",
                             "text_color":"#ff2e2e2e",
                             "text_src":"休闲养生演示会所",
                         },
@@ -53,31 +54,32 @@
                             "layout_marginTop":"22",
                             "subviews":[
                                 {
-                                    "view_name":"image",
+                                    "view_name":"image_start",
                                     "view_type":"image",
                                     "view_width":"11",
                                     "view_height":"18",
                                     "image_src":"@star",
                                 },
                                 {
-                                    "view_name":"star",
+                                    "view_name":"label_star",
                                     "view_type":"label",
                                     "view_width":"auto",
-                                    "view_height":"full",
+                                    "view_height":"18",
                                     "text_size":"12",
                                     "text_color":"#ffffb925",
                                     "text_src":"5.0",
                                     "layout_marginLeft":"2",
                                 },
                                 {
-                                    "view_name":"evaluate",
+                                    "view_name":"label_commentNun",
                                     "view_type":"label",
                                     "view_width":"auto",
-                                    "view_height":"18",
+                                    "view_height":"16",
                                     "text_size":"10",
                                     "text_color":"#ff999999",
                                     "text_src":"0条评价",
-                                    "layout_marginLeft":"10",
+                                    "layout_marginLeft":"5",
+                                    "layout_marginTop":"2",
                                 },
                             ]
                         },
@@ -99,7 +101,7 @@
                                     "image_src":"@location2",
                                 },
                                 {
-                                    "view_name":"evaluate",
+                                    "view_name":"label_location",
                                     "view_type":"label",
                                     "view_width":"auto",
                                     "view_height":"full",
@@ -111,7 +113,7 @@
                             ]
                         },
                         {
-                            "view_name":"clissity",
+                            "view_name":"label_classify",
                             "view_type":"label",
                             "view_width":"auto",
                             "view_height":"12",
@@ -121,23 +123,25 @@
                             "layout_marginTop":"43",
                         },
                         {
-                            "view_name":"discount",
+                            "view_name":"label_discount",
                             "view_type":"label",
-                            "view_width":"auto",
+                            "view_width":"60",
                             "view_height":"19",
                             "text_size":"17",
                             "text_color":"#ffffb925",
                             "text_src":"7.9折",
+                            "text_gravity":"left",
                             "layout_gravity":"left|bottom",
                         },
                         {
-                            "view_name":"max_discount",
+                            "view_name":"label_maxDiscount",
                             "view_type":"label",
-                            "view_width":"auto",
+                            "view_width":"150",
                             "view_height":"19",
                             "text_size":"11",
                             "text_color":"#ff4abdcf",
                             "text_src":"升级会员最高享5.2折",
+                            "text_gravity":"right",
                             "layout_gravity":"right|bottom",
                         },
                     ]

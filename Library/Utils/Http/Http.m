@@ -27,7 +27,7 @@
                 httpResponse.error = error;
             }else {
                 // 解析成功，处理数据，通过GCD获取主队列，在主线程中刷新界面。
-                NSLog(@"post success :%@",object);
+//                NSLog(@"post success :%@",object);
                 httpResponse.data = object;
             }
         }

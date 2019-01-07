@@ -14,7 +14,7 @@ static int requestLayout;
 static char shapeLayerKey;
 
 
-- (UIView *)findViewByName:(NSString *)name {
+- (id)findViewByName:(NSString *)name {
     return [self findViewByName:name withSuperView:self];
 }
 

@@ -56,6 +56,13 @@
     return [[self.source objectForKey:key] integerValue];
 }
 
+- (CGFloat)floatWithKey:(NSString *)key {
+    return [self floatWithKey:key defaultValue:0];
+}
+- (CGFloat)floatWithKey:(NSString *)key defaultValue:(CGFloat)defaultValue {
+    return [[self.source objectForKey:key] floatValue];
+}
+
 - (NSArray *)arrayWithKey:(NSString *)key {
     NSMutableArray *newArray = [NSMutableArray new];
     NSArray *array = [self.source objectForKey:key];

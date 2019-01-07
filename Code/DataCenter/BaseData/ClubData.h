@@ -22,10 +22,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *consumeCount;   //消费人数
 @property (nonatomic, strong) NSString *commentNum;     //评价
 @property (nonatomic, strong) NSString *distance;       //距离 km
-@property (nonatomic, strong) NSString *discount;       //折扣 (单位分)
-@property (nonatomic, strong) NSString *clubDiscount;   //升级最高折扣 (单位分)
-@property (nonatomic, strong) NSString *laty;           //纬度
-@property (nonatomic, strong) NSString *lngx;           //经度
+
+@property (nonatomic, assign) CGFloat discount;       //折扣 (单位分)
+@property (nonatomic, assign) CGFloat clubDiscount;   //升级最高折扣 (单位分)
+@property (nonatomic, assign) CGFloat laty;           //纬度
+@property (nonatomic, assign) CGFloat lngx;           //经度
 
 
 

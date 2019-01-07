@@ -27,6 +27,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSInteger)integerWithKey:(NSString *)key;
 - (NSInteger)integerWithKey:(NSString *)key defaultValue:(NSInteger)defaultValue;
 
+- (CGFloat)floatWithKey:(NSString *)key;
+- (CGFloat)floatWithKey:(NSString *)key defaultValue:(CGFloat)defaultValue;
+
+
 - (NSArray *)arrayWithKey:(NSString *)key;
 
 - (id)jsonWithKey:(NSString *)key;
