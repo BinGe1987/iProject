@@ -51,9 +51,9 @@
     }
     
     Data *data = [Data new];
-    NSArray *classify = @[@{@"imageUrl":@"", @"name":@""},
-                          @{@"imageUrl":@"", @"name":@""},
-                          @{@"imageUrl":@"", @"name":@""}];
+    NSArray *classify = @[@{@"id":@"1",@"name":@"水疗"},
+                          @{@"id":@"2",@"name":@"推拿"},
+                          @{@"id":@"3",@"name":@"浴足"}];
     data.source = @{@"statusCode":@"200", @"respData":@{@"banner":bannerArray, @"classify":classify}};
     callback(operation, data);
 }

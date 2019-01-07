@@ -23,6 +23,11 @@
     if (banner) {
         [self setBannerData:banner];
     }
+    
+    NSArray *classify = [self checkData:@"classify"];
+    if (classify) {
+        [self setClassifyData:classify];
+    }
 }
 
 - (NSArray *)checkData:(NSString *)dataType {
@@ -45,7 +50,11 @@
 }
 
 - (void)setClassifyData:(NSArray *)array {
-    
+    [self.classify removeAllObjects];
+    for (NSDictionary *dict in array) {
+        ClassifyData *classifyData = [ClassifyData withDictionary:dict];
+        [self.classify addObject:classifyData];
+    }
 }
 
 

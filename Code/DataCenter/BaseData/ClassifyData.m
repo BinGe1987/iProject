@@ -9,4 +9,11 @@
 
 @implementation ClassifyData
 
+- (void)setData:(Data *)data {
+    [super setData:data];
+    self.ID = [data stringWithKey:@"id"];
+    self.name = [data stringWithKey:@"name"];
+    self.imageUrl = [data stringWithKey:@"imageUrl"];
+}
+
 @end
