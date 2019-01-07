@@ -162,6 +162,10 @@
 		77A38A2521E0889600042B04 /* ProgressHUB+Tips.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A2421E0889600042B04 /* ProgressHUB+Tips.m */; };
 		77A38A2D21E0A70F00042B04 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A2C21E0A70F00042B04 /* Network.m */; };
 		77A38A6221E3203200042B04 /* TechCellListItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A6121E3203200042B04 /* TechCellListItem.xml */; };
+		77A38A6621E32EA000042B04 /* RootView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A6521E32EA000042B04 /* RootView.m */; };
+		77A38A6921E32EBA00042B04 /* RootViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A6821E32EBA00042B04 /* RootViewParams.m */; };
+		77A38A6C21E32ECC00042B04 /* RootViewLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A6B21E32ECC00042B04 /* RootViewLayoutParams.m */; };
+		77A38A6F21E32EED00042B04 /* RootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A6E21E32EED00042B04 /* RootViewModel.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -653,6 +657,14 @@
 		77A38A5C21E125EE00042B04 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		77A38A5E21E31E3800042B04 /* ImageConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageConstant.h; sourceTree = "<group>"; };
 		77A38A6121E3203200042B04 /* TechCellListItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechCellListItem.xml; sourceTree = "<group>"; };
+		77A38A6421E32EA000042B04 /* RootView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootView.h; sourceTree = "<group>"; };
+		77A38A6521E32EA000042B04 /* RootView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootView.m; sourceTree = "<group>"; };
+		77A38A6721E32EBA00042B04 /* RootViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewParams.h; sourceTree = "<group>"; };
+		77A38A6821E32EBA00042B04 /* RootViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewParams.m; sourceTree = "<group>"; };
+		77A38A6A21E32ECC00042B04 /* RootViewLayoutParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewLayoutParams.h; sourceTree = "<group>"; };
+		77A38A6B21E32ECC00042B04 /* RootViewLayoutParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewLayoutParams.m; sourceTree = "<group>"; };
+		77A38A6D21E32EED00042B04 /* RootViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewModel.h; sourceTree = "<group>"; };
+		77A38A6E21E32EED00042B04 /* RootViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewModel.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1727,6 +1739,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		77A38A6321E32E6F00042B04 /* RootView */ = {
+			isa = PBXGroup;
+			children = (
+				77A38A6D21E32EED00042B04 /* RootViewModel.h */,
+				77A38A6E21E32EED00042B04 /* RootViewModel.m */,
+				77A38A6421E32EA000042B04 /* RootView.h */,
+				77A38A6521E32EA000042B04 /* RootView.m */,
+				77A38A6721E32EBA00042B04 /* RootViewParams.h */,
+				77A38A6821E32EBA00042B04 /* RootViewParams.m */,
+				77A38A6A21E32ECC00042B04 /* RootViewLayoutParams.h */,
+				77A38A6B21E32ECC00042B04 /* RootViewLayoutParams.m */,
+			);
+			path = RootView;
+			sourceTree = "<group>";
+		};
 		77B0541D21C943760045A489 /* WebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -2653,6 +2680,7 @@
 			isa = PBXGroup;
 			children = (
 				776B55C221BEA4BF00793CAF /* Category */,
+				77A38A6321E32E6F00042B04 /* RootView */,
 				77EA8EF021B90226001B8959 /* View */,
 				771CA40621DD16E000B00F11 /* CustomView */,
 				77B054D921CB34050045A489 /* ImageView */,
@@ -3028,6 +3056,7 @@
 				77EA8F2921B90226001B8959 /* DataHandler.m in Sources */,
 				77B0545921C943760045A489 /* CALayer+YYWebImage.m in Sources */,
 				77CEA4DA21D4974D00B388E4 /* ViewPagerLayoutParams.m in Sources */,
+				77A38A6F21E32EED00042B04 /* RootViewModel.m in Sources */,
 				77B054E521CB47910045A489 /* Reachability.m in Sources */,
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */,
@@ -3073,6 +3102,7 @@
 				771CA3A321DC98AE00B00F11 /* TechDetailController.m in Sources */,
 				771CA37821D8B51100B00F11 /* DropdownMenu.m in Sources */,
 				776B55AB21BE62E100793CAF /* UserData.m in Sources */,
+				77A38A6921E32EBA00042B04 /* RootViewParams.m in Sources */,
 				771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */,
 				77A389FD21DF17EF00042B04 /* NavigationViewModel.m in Sources */,
 				77B054BD21CA51740045A489 /* InputViewModel.m in Sources */,
@@ -3164,6 +3194,7 @@
 				77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */,
 				77CEA56B21D655A500B388E4 /* OrderTableViewAdapter.m in Sources */,
 				77B0553F21D0BE910045A489 /* LoginModule.m in Sources */,
+				77A38A6621E32EA000042B04 /* RootView.m in Sources */,
 				77EA8F3321B90226001B8959 /* JSON.m in Sources */,
 				77B054EB21CB63FD0045A489 /* SecondViewController.m in Sources */,
 				77B0550B21CCD1420045A489 /* ConfigData.m in Sources */,
@@ -3210,6 +3241,7 @@
 				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,
 				77A389EC21DE59C400042B04 /* UserPerformer.m in Sources */,
 				771CA3B721DCA25400B00F11 /* ClubDetailData.m in Sources */,
+				77A38A6C21E32ECC00042B04 /* RootViewLayoutParams.m in Sources */,
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,
 				77A389D721DE196800042B04 /* VerifyCodePerformer.m in Sources */,

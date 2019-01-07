@@ -20,6 +20,7 @@
 #import "CollectionViewModel.h"
 #import "CustomViewModel.h"
 #import "NavigationViewModel.h"
+#import "RootViewModel.h"
 
 
 @implementation DefaultMapping
@@ -29,6 +30,9 @@
     NSString *type = [model getType];
     if (!type) {
         return nil;
+    }
+    else if ([type isEqualToString:@"Root"] || [type isEqualToString:@"root"]) {
+        return [[RootViewModel alloc] initWithUIModel:model];
     }
     else if ([type isEqualToString:@"View"] || [type isEqualToString:@"view"]) {
         return [[ViewModel alloc] initWithUIModel:model];
