@@ -9,6 +9,7 @@
 #define ConstantHeader_h
 
 #import "ColorConstant.h"
+#import "ImageConstant.h"
 #import "URLConstant.h"
 
 #endif /* ConstantHeader_h */

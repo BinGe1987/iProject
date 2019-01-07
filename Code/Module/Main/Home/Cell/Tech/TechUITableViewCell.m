@@ -34,22 +34,35 @@
 }
 
 - (void)setData:(id)data {
-    if (data == self.cellData) {
+    if (self.cellData == data) {
         return;
     }
     self.cellData = data;
+    
+    for (UIView *view in self.scrollView.subviews) {
+        [view removeFromSuperview];
+    }
+    
     CGSize size = CGSizeMake(ScaleValue(84), self.scrollView.height);
     id<ViewGroupDelegate> delegate = (id<ViewGroupDelegate>)self.scrollView;
     for (TechData *tech in data) {
-        UIView *view = [UIView viewWithJSON:@"TechCellListItem.json" size:size];
+        UIView *view = [UIView viewWithXML:@"TechCellListItem.xml" size:size];
+        
+        UIImageView *head = (UIImageView *)[view findViewByName:@"head"];
+        [head setImageWithURL:[NSURL URLWithString:tech.imageUrl] placeholder:UIImageDefault_Tech];
+        
         UILabel *lable = (UILabel *)[view findViewByName:@"name"];
         lable.text = tech.name;
         [delegate addView:view];
+        
+        [(ViewGroup *)view layoutWithMaxWidth:size.width maxHeight:size.height completed:nil];
+        
         UIButton *btn = (UIButton *)[view findViewByName:@"btn"];
         [btn setClickBlock:^(UIButton * _Nonnull button) {
-            [UIViewController pushController:@"TechDetailController" animated:YES data:nil];
+            [UIViewController pushController:@"TechDetailController" animated:YES data:tech];
         }];
     }
+//
     [delegate onLayout];
     
 }

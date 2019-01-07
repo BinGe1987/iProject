@@ -161,6 +161,7 @@
 		77A38A2121DF6BA800042B04 /* Home.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A2021DF6BA800042B04 /* Home.xml */; };
 		77A38A2521E0889600042B04 /* ProgressHUB+Tips.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A2421E0889600042B04 /* ProgressHUB+Tips.m */; };
 		77A38A2D21E0A70F00042B04 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A2C21E0A70F00042B04 /* Network.m */; };
+		77A38A6221E3203200042B04 /* TechCellListItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A38A6121E3203200042B04 /* TechCellListItem.xml */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -651,6 +652,8 @@
 		77A38A2B21E0A70F00042B04 /* Network.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
 		77A38A2C21E0A70F00042B04 /* Network.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
 		77A38A5C21E125EE00042B04 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		77A38A5E21E31E3800042B04 /* ImageConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageConstant.h; sourceTree = "<group>"; };
+		77A38A6121E3203200042B04 /* TechCellListItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechCellListItem.xml; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -2149,6 +2152,7 @@
 				77CEA4B521D3A76500B388E4 /* TechCellHeader.json */,
 				77CEA4B721D3AF5500B388E4 /* TechCellList.json */,
 				77CEA4B921D3B1D000B388E4 /* TechCellListItem.json */,
+				77A38A6121E3203200042B04 /* TechCellListItem.xml */,
 			);
 			path = Tech;
 			sourceTree = "<group>";
@@ -2157,6 +2161,7 @@
 			isa = PBXGroup;
 			children = (
 				77CEA4B421D3A60F00B388E4 /* ColorConstant.h */,
+				77A38A5E21E31E3800042B04 /* ImageConstant.h */,
 				771CA43421DDF26600B00F11 /* URLConstant.h */,
 				771CA43521DDF26600B00F11 /* URLConstant.m */,
 				77CEA4B321D3A58A00B388E4 /* ConstantHeader.h */,
@@ -2949,6 +2954,7 @@
 				77CEA4DC21D498F200B388E4 /* DiscoverTech.json in Resources */,
 				771CA3F421DD0AB200B00F11 /* TechDetail.xml in Resources */,
 				77A38A0C21DF2F6B00042B04 /* SettingController.xml in Resources */,
+				77A38A6221E3203200042B04 /* TechCellListItem.xml in Resources */,
 				771CA3D721DCC2ED00B00F11 /* ClubDetailAd.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

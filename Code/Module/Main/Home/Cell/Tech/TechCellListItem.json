@@ -19,7 +19,6 @@
                     "view_masksToBounds":"YES",
                     "view_borderWidth":"1",
                     "view_borderColor":"#ffffb925",
-                    "image_src":"@default_head_girl",
                 },
                 {
                     "view_name":"name",

@@ -32,6 +32,9 @@
 }
 
 - (void)setData:(id)data {
+    if (self.cellData == data) {
+        return;
+    }
     self.cellData = data;
     NSMutableArray *array = [NSMutableArray new];
     for (BannerData *banner in data) {

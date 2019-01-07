@@ -17,8 +17,6 @@
     [vg layoutWithMaxWidth:size.width maxHeight:size.height completed:nil];
     vg.frame = CGRectMake(0, 0, size.width, size.height);
     return vg;
-    
-    return nil;
 }
 
 @end

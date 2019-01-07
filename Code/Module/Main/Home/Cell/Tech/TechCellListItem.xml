@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    view_width="full"
+    view_height="full">
+    
+    <LinearLayout
+        view_width="full"
+        view_height="auto"
+        view_orientation="V"
+        layout_gravity="center">
+        <FrameLayout
+            view_width="full"
+            view_height="auto">
+            <ImageView
+                view_name="head"
+                view_width="58"
+                view_height="58"
+                view_borderRadius="29"
+                view_borderWidth="1"
+                view_borderColor="#ffb925"
+                view_masksToBounds="YES"
+                layout_gravity="center"/>
+        </FrameLayout>
+        <FrameLayout
+            view_width="full"
+            view_height="auto"
+            layout_marginTop="10">
+            <LinearLayout
+                view_width="auto"
+                view_height="auto"
+                view_orientation="H"
+                layout_gravity="center">
+                <Label
+                    view_name="name"
+                    view_width="auto"
+                    view_height="auto"
+                    text_src="技师"
+                    text_color="#3e3e3e"
+                    text_size="12"/>
+            </LinearLayout>
+        </FrameLayout>
+        
+    </LinearLayout>
+    
+    <Button
+        view_name="btn"
+        view_width="full"
+        view_height="full"/>
+    
+</FrameLayout>
