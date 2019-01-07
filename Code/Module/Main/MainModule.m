@@ -74,8 +74,6 @@
                 Class cls = NSClassFromString(controllerName);
                 UIViewController *vc = [[cls alloc] init];
                 MainNavigationController *nv = [[MainNavigationController alloc] initWithRootViewController:vc];
-//                nv.navigationBar.topItem.title = data.titleComponent.title;
-                
                 CGFloat scale = nornal.scale / 2.0;
                 nornal = [ImageUtils scaleImage:nornal toScale:scale];
                 selected = [ImageUtils scaleImage:selected toScale:scale];

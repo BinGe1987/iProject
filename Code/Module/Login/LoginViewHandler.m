@@ -84,6 +84,11 @@
     [self error:error];
 }
 
+- (void)getCodeSuccess {
+    self.btnLogin.highlighted = NO;
+    self.btnLogin.userInteractionEnabled = YES;
+}
+
 - (void)error:(NSString *)error {
     self.errorLabel.text = error;
     [self resetCount];

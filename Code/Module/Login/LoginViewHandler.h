@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)loginError:(NSString *)error;
 
+- (void)getCodeSuccess;
+
 - (void)error:(NSString *)error;
 
 @end

@@ -16,10 +16,11 @@
     [self.navigationBar setBackgroundImage:[ImageUtils imageWithColorHex:@"#ffffffff" size:CGSizeMake(10, 10)] forBarMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage:[UIImage new]];
     
-    [self.navigationBar setTintColor:UIColorMain];
+//    UIColor *color = UIColorMain;
+    UIColor *color = [UIColor blackColor];
+    [self.navigationBar setTintColor:color];
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor clearColor]}forState:UIControlStateNormal];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColorMain}];
-
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:color}];
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

@@ -26,10 +26,10 @@
     //倒数，获取验证码
     if ([action isEqualToString:@"startCount"]) {
         [DataCenter perform:OperationLoginVerifyCode params:data callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+            LoginViewHandler *handler = (LoginViewHandler *)self.handler;
             if (data.isSuccess) {
-                
+                [handler getCodeSuccess];
             } else {
-                LoginViewHandler *handler = (LoginViewHandler *)self.handler;
                 [handler error:data.errorMessage];
             }
         }];
