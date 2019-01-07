@@ -166,6 +166,8 @@
 		77A38A6921E32EBA00042B04 /* RootViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A6821E32EBA00042B04 /* RootViewParams.m */; };
 		77A38A6C21E32ECC00042B04 /* RootViewLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A6B21E32ECC00042B04 /* RootViewLayoutParams.m */; };
 		77A38A6F21E32EED00042B04 /* RootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A6E21E32EED00042B04 /* RootViewModel.m */; };
+		77A38A7221E3397000042B04 /* ClubListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A7121E3397000042B04 /* ClubListData.m */; };
+		77A38A7521E33C7C00042B04 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A7421E33C7C00042B04 /* Location.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -665,6 +667,10 @@
 		77A38A6B21E32ECC00042B04 /* RootViewLayoutParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewLayoutParams.m; sourceTree = "<group>"; };
 		77A38A6D21E32EED00042B04 /* RootViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewModel.h; sourceTree = "<group>"; };
 		77A38A6E21E32EED00042B04 /* RootViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewModel.m; sourceTree = "<group>"; };
+		77A38A7021E3397000042B04 /* ClubListData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubListData.h; sourceTree = "<group>"; };
+		77A38A7121E3397000042B04 /* ClubListData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubListData.m; sourceTree = "<group>"; };
+		77A38A7321E33C7C00042B04 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		77A38A7421E33C7C00042B04 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1361,6 +1367,8 @@
 			children = (
 				7734C0C921D22D17009D1EE8 /* BannerData.h */,
 				7734C0CA21D22D17009D1EE8 /* BannerData.m */,
+				77A38A7021E3397000042B04 /* ClubListData.h */,
+				77A38A7121E3397000042B04 /* ClubListData.m */,
 			);
 			path = SubDatas;
 			sourceTree = "<group>";
@@ -2598,6 +2606,8 @@
 				77EA8ED321B90226001B8959 /* JSON.m */,
 				776B55D721BFBD0300793CAF /* WeakProxy.h */,
 				776B55D821BFBD0300793CAF /* WeakProxy.m */,
+				77A38A7321E33C7C00042B04 /* Location.h */,
+				77A38A7421E33C7C00042B04 /* Location.m */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -3004,6 +3014,7 @@
 				77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */,
 				771CA3FF21DD0D1800B00F11 /* TechDetailPerformer.m in Sources */,
 				7734C11821D23A45009D1EE8 /* UIScrollView+KafkaRefreshControl.m in Sources */,
+				77A38A7521E33C7C00042B04 /* Location.m in Sources */,
 				7734C11D21D23A45009D1EE8 /* KafkaArrowFooter.m in Sources */,
 				77EA8E9C21B8FCF9001B8959 /* TestViewController.m in Sources */,
 				77EA8F3D21B90226001B8959 /* ViewController.m in Sources */,
@@ -3221,6 +3232,7 @@
 				77EA8E9921B8FCF2001B8959 /* HomeViewController.m in Sources */,
 				77B0554321D0D3120045A489 /* TabData.m in Sources */,
 				771CA39321D9A5B000B00F11 /* DropdownMenuItem.m in Sources */,
+				77A38A7221E3397000042B04 /* ClubListData.m in Sources */,
 				77B0547F21CA47560045A489 /* KSYYImageManager.m in Sources */,
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
 				775B15EC21C78FE500B8D6FF /* ColorUtils.m in Sources */,

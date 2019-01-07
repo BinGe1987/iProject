@@ -9,7 +9,7 @@
 #import "BannerData.h"
 #import "ClassifyData.h"
 #import "TechData.h"
-#import "ClubData.h"
+#import "ClubListData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray *tech;
 
-@property (nonatomic, strong) NSMutableArray *club;
+@property (nonatomic, strong) ClubListData *club;
 
 @end
 

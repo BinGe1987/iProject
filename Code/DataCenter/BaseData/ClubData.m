@@ -9,4 +9,11 @@
 
 @implementation ClubData
 
+- (void)setData:(Data *)data {
+    [super setData:data];
+    self.clubID = [data stringWithKey:@"id"];
+    self.imageUrl = [data stringWithKey:@"logoUrl"];
+    
+}
+
 @end

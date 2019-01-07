@@ -21,22 +21,14 @@
         [self operation:operation techData:callback];
     }
     
+    if ([operation isEqualToString:OperationGetHomeData] ||
+        [operation isEqualToString:OperationGetHomeDataClub]) {
+        [self operation:operation clubData:callback];
+    }
+    
     return nil;
     
 }
-
-- (void)operation:(id)operation techData:(ICallback)callback {
-    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_HomeTech];
-    request.timeout = 5;
-    request.data = @{@"token":DataCenter.token};
-    HttpResponse *response = [Http post:request];
-    Data *data = [Data new];
-    data.source = response.data;
-    data.error = response.error;
-    callback(operation, data);
-}
-
-
 
 - (void)operation:(id)operation bannerAndClassifyData:(ICallback)callback {
     
@@ -68,7 +60,50 @@
     NSArray *classify = @[@{@"id":@"1",@"name":@"水疗"},
                           @{@"id":@"2",@"name":@"推拿"},
                           @{@"id":@"3",@"name":@"浴足"}];
-    data.source = @{@"statusCode":@"200", @"respData":@{@"banner":array, @"classify":classify}};
+    data.source = @{@"statusCode":@"200", @"respData":@{@"bannerList":array, @"classifyList":classify}};
+    callback(operation, data);
+}
+
+- (void)operation:(id)operation techData:(ICallback)callback {
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_HomeTech];
+    request.timeout = 6;
+    request.data = @{@"token":DataCenter.token};
+    HttpResponse *response = [Http post:request];
+    Data *data = [Data new];
+    data.source = response.data;
+    data.error = response.error;
+    callback(operation, data);
+}
+
+static int currentPage = 0;
+- (void)operation:(id)operation clubData:(ICallback)callback {
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_HomeClub];
+    request.timeout = 6;
+    request.data = @{
+                     @"token":DataCenter.token,
+                     @"laty":[NSNumber numberWithInt:0],
+                     @"lngx":[NSNumber numberWithInt:0],
+                     @"areaId":@"0",
+                     @"page":[NSNumber numberWithInt:++currentPage],
+                     @"pageSize":@"10",
+                     @"category":@"0",
+                     @"sort":@"default",
+                     @"type":@"home",
+                     @"search":@""
+                     };
+    HttpResponse *response = [Http post:request];
+    Data *data = [Data new];
+    data.source = response.data;
+    data.error = response.error;
+    if (data.isSuccess) {
+        NSMutableDictionary *source = [data.source mutableCopy];
+        NSMutableDictionary *respData = [data.source[@"respData"] mutableCopy];
+        [respData setObject:[NSNumber numberWithInt:currentPage] forKey:@"pageCurrent"];
+        [source setObject:respData forKey:@"respData"];
+        data.source = source;
+    } else {
+        currentPage--;
+    }
     callback(operation, data);
 }
 
