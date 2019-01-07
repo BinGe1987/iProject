@@ -17,6 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 + (instancetype)AdapterWithSourceData:(NSMutableArray<TableViewSection *> *)data;
 
 - (void)addSection:(TableViewSection *)section;
+- (void)addSection:(TableViewSection *)section index:(NSInteger)insert;
+
+
+- (void)removeSection:(TableViewSection *)section;
 
 @end
 

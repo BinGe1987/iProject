@@ -51,7 +51,7 @@ static NSOperationQueue *operationQueue;
     UIWindow *window = TOP_WINDOW;
     CGSize screenSize = window.bounds.size;
     
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 88, screenSize.width, 32)];
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, STATUSBARHIEGHT+44, screenSize.width, 32)];
     view.layer.masksToBounds = YES;
     [window addSubview:view];
     [window bringSubviewToFront:view];

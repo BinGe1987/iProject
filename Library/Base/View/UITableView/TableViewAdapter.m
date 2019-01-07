@@ -27,7 +27,21 @@
 }
 
 - (void)addSection:(TableViewSection *)section {
-    [self.data addObject:section];
+    if (![self.data containsObject:section]) {
+        [self.data addObject:section];
+    }
+}
+- (void)addSection:(TableViewSection *)section index:(NSInteger)insert {
+    if ([self.data containsObject:section]) {
+        [self.data removeObject:section];
+    }
+    [self.data insertObject:section atIndex:insert];
+}
+
+- (void)removeSection:(TableViewSection *)section {
+    if ([self.data containsObject:section]) {
+        [self.data removeObject:section];
+    }
 }
 
 #pragma mark UITableViewDataSource

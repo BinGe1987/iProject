@@ -9,4 +9,12 @@
 
 @implementation TechData
 
+- (void)setData:(Data *)data {
+    [super setData:data];
+    self.techID = [data stringWithKey:@""];
+    self.imageUrl = [data stringWithKey:@"techAvatar"];
+    self.number = [data stringWithKey:@"serialNo"];
+    self.name = [data stringWithKey:@"name"];
+}
+
 @end

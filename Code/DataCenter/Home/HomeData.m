@@ -28,6 +28,11 @@
     if (classify) {
         [self setClassifyData:classify];
     }
+    NSArray *tech = [self checkData:@"techList"];
+    if (tech) {
+        [self setTechData:tech];
+    }
+    
 }
 
 - (NSArray *)checkData:(NSString *)dataType {
@@ -57,7 +62,13 @@
     }
 }
 
-
+- (void)setTechData:(NSArray *)array {
+    [self.tech removeAllObjects];
+    for (NSDictionary *dict in array) {
+        TechData *data = [TechData withDictionary:dict];
+        [self.tech addObject:data];
+    }
+}
 
 
 

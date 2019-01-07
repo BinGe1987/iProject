@@ -1525,19 +1525,6 @@
 			path = Banner;
 			sourceTree = "<group>";
 		};
-		7734C13821D279E9009D1EE8 /* Contents */ = {
-			isa = PBXGroup;
-			children = (
-				77B0558F21D1F77F0045A489 /* HomePresenter.h */,
-				77B0559021D1F7800045A489 /* HomePresenter.m */,
-				77B0559621D1FCA20045A489 /* HomeViewHandler.h */,
-				77B0559721D1FCA20045A489 /* HomeViewHandler.m */,
-				77B0559F21D20E410045A489 /* HomeViewAdpater.h */,
-				77B055A021D20E410045A489 /* HomeViewAdpater.m */,
-			);
-			path = Contents;
-			sourceTree = "<group>";
-		};
 		7734C13921D27A0F009D1EE8 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -1555,11 +1542,16 @@
 			children = (
 				7734C12B21D268F2009D1EE8 /* Cell */,
 				7734C13921D27A0F009D1EE8 /* Navigation */,
-				7734C13821D279E9009D1EE8 /* Contents */,
 				7734C0DF21D2318E009D1EE8 /* HomeModule.h */,
 				7734C0E021D2318E009D1EE8 /* HomeModule.m */,
 				77EA8E9721B8FCF2001B8959 /* HomeViewController.h */,
 				77EA8E9821B8FCF2001B8959 /* HomeViewController.m */,
+				77B0558F21D1F77F0045A489 /* HomePresenter.h */,
+				77B0559021D1F7800045A489 /* HomePresenter.m */,
+				77B0559621D1FCA20045A489 /* HomeViewHandler.h */,
+				77B0559721D1FCA20045A489 /* HomeViewHandler.m */,
+				77B0559F21D20E410045A489 /* HomeViewAdpater.h */,
+				77B055A021D20E410045A489 /* HomeViewAdpater.m */,
 				77A38A2021DF6BA800042B04 /* Home.xml */,
 			);
 			path = Home;
