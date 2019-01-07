@@ -7,6 +7,7 @@
 
 #import "HomeViewHandler.h"
 #import "HomeViewAdpater.h"
+//#import "KafkaRefresh.h"
 
 @interface HomeViewHandler()
 
@@ -35,7 +36,6 @@
     self.clubSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"club", @"array": @[],@"headerHeight": [NSNumber numberWithFloat:ScaleValue(43)], @"height" : [NSNumber numberWithFloat:106]}];
     [self.tableView.adapter addSection:self.clubSection];
     
-//    [self setAdapter];
     WeakSelf(self)
     [self.tableView setHeadRefreshHandler:^{
         if (weakself.delegate) {
@@ -44,9 +44,12 @@
     }];
     [self.tableView setFootRefreshHandler:^{
         if (weakself.delegate) {
-//            [weakself.delegate onViewAction:@"action_refresh_foot"];
+            [weakself.delegate onViewAction:@"action_refresh_foot" data:nil];
         }
     }];
+    [self.tableView beginFootRefreshing];
+//    self.tableView nolon
+//    [self.tableView.footRefreshControl endRefreshingAndNoLongerRefreshingWithAlertText:@"no more"];
     return self;
 }
 
@@ -56,18 +59,48 @@
 
 - (void)setData:(id)data {
     HomeData *homeData = (HomeData *)data;
-    self.bannerSection.array = @[homeData.banner];
-    self.classifySection.array = @[homeData.classify];
-    self.techSection.array = @[homeData.tech];
+    self.bannerSection.array = [@[homeData.banner] mutableCopy];
+    self.classifySection.array = [@[homeData.classify] mutableCopy];
+    self.techSection.array = [@[homeData.tech] mutableCopy];
     if (homeData.tech && homeData.tech.count > 0) {
         [self.tableView.adapter addSection:self.techSection index:2];
     } else {
         [self.tableView.adapter removeSection:self.techSection];
     }
-    
-    self.clubSection.array = homeData.club.list;
-    
     [self.tableView reloadData];
+}
+
+- (void)setClubData:(NSArray *)clubData {
+    self.clubSection.array = [clubData mutableCopy];
+    [self.tableView reloadData];
+    [self.tableView finishFootRefresh];
+}
+
+- (void)insertClubData:(NSArray *)data {
+    
+    if (data || data.count == 0) {
+        [self.tableView finishFootRefreshWithText:@"没有更多了!"];
+        return;
+    }
+    
+    NSArray *old = [self.clubSection.array mutableCopy];
+    [self.clubSection.array addObjectsFromArray:data];
+    
+    
+    [self.tableView finishFootRefresh];
+    
+    NSInteger row = old.count;
+    NSInteger sectionIndex = [self.tableView.adapter sectionIndex:self.clubSection];
+    NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+    for (NSInteger i=0; i<data.count; i++) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:row+i inSection:sectionIndex];
+        [indexPaths addObject: indexPath];
+    }
+    
+    [self.tableView beginUpdates];
+    [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableView endUpdates];
+    [self.tableView finishFootRefresh];
 }
 
 @end

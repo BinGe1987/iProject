@@ -10,7 +10,6 @@
 @implementation VerifyCodePerformer
 
 - (id)perform:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callback {
-    NSString *url = [URLConstant URLWithApi:API_VerifyCode];
     HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_VerifyCode];
     request.data = @{@"which":@"userLogin", @"phoneNum":params };
     HttpResponse *response = [Http post:request];

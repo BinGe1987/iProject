@@ -21,8 +21,14 @@
         [self operation:operation techData:callback];
     }
     
-    if ([operation isEqualToString:OperationGetHomeData] ||
-        [operation isEqualToString:OperationGetHomeDataClub]) {
+    if (/*[operation isEqualToString:OperationGetHomeData] ||*/
+        [operation isEqualToString:OperationGetHomeDataClubDropdown]) {
+        currentPage = 0;
+        [self operation:operation clubData:callback];
+    }
+    if (/*[operation isEqualToString:OperationGetHomeData] ||*/
+        [operation isEqualToString:OperationGetHomeDataClubDropup]) {
+        sleep(1);
         [self operation:operation clubData:callback];
     }
     

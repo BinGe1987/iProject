@@ -40,7 +40,7 @@
 - (void)setData:(id)data {
     ListData *list = (ListData *)data;
     TableViewSection *orderSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"order", @"array": list.list, @"height" : [NSNumber numberWithFloat:(ScaleValue(217) + 10)], @"headerHeight": @"5",@"footerHeight": @"10"}];
-    OrderTableViewAdapter *adapter = [OrderTableViewAdapter AdapterWithSourceData:@[orderSection]];
+    OrderTableViewAdapter *adapter = [OrderTableViewAdapter AdapterWithSourceData:[NSMutableArray arrayWithObject:orderSection]];
     [self.tableView setAdapter:adapter];
 }
 

@@ -25,24 +25,25 @@
     
     //倒数，获取验证码
     if ([action isEqualToString:@"startCount"]) {
-        [DataCenter perform:OperationLoginVerifyCode params:data callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+        [DataCenter perform:OperationLoginVerifyCode params:data callback:^(id  _Nonnull operation, id  _Nullable data) {
             LoginViewHandler *handler = (LoginViewHandler *)self.handler;
-            if (data.isSuccess) {
+            
+            if ([data isSuccess]) {
                 [handler getCodeSuccess];
             } else {
-                [handler error:data.errorMessage];
+                [handler error:[data errorMessage]];
             }
         }];
     }
     
     else if ([action isEqualToString:@"Login"]) {
-        [DataCenter perform:OperationLogin params:data callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+        [DataCenter perform:OperationLogin params:data callback:^(id  _Nonnull operation, id  _Nullable data) {
             LoginViewHandler *handler = (LoginViewHandler *)self.handler;
-            if (data.isSuccess) {
+            if ([data isSuccess]) {
                 [handler loginSuccess:(UserData *)data];
             } else {
                 LoginViewHandler *handler = (LoginViewHandler *)self.handler;
-                [handler loginError:data.errorMessage];
+                [handler loginError: [data errorMessage]];
             }
         }];
     }

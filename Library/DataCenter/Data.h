@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithData:(Data *)data;
 
+- (id)dataWithKey:(NSString *)key;
+
 - (void)initialize;
 
 - (void)setData:(Data *)data NS_REQUIRES_SUPER;

@@ -36,7 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationGetHomeData                    (@"OperationGetHomeData")
 #define OperationGetHomeDataBanner              (@"OperationGetHomeDataBanner")
 #define OperationGetHomeDataTech                (@"OperationGetHomeDataTech")
-#define OperationGetHomeDataClub                (@"OperationGetHomeDataClub")
+#define OperationGetHomeDataClubDropdown        (@"OperationGetHomeDataClubDropdown")
+#define OperationGetHomeDataClubDropup          (@"OperationGetHomeDataClubDropup")
 
 #pragma make 发现页相关
 ///获取发现页信息

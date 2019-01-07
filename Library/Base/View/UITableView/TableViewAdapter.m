@@ -44,6 +44,10 @@
     }
 }
 
+- (NSInteger)sectionIndex:(TableViewSection *)section {
+    return [self.data indexOfObject:section];
+}
+
 #pragma mark UITableViewDataSource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

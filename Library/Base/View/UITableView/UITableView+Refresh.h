@@ -12,12 +12,16 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UITableView (Refresh)
 
 - (void)setHeadRefreshHandler:(void(^)(void))block;
+- (void)beginHeadRefreshing;
 
 - (void)setFootRefreshHandler:(void(^)(void))block;
+- (void)beginFootRefreshing;
+
 
 - (void)finishHeadRefresh;
 
 - (void)finishFootRefresh;
+- (void)finishFootRefreshWithText:(NSString *)text;
 
 @end
 

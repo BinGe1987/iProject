@@ -21,8 +21,12 @@
     
     WeakSelf(self)
     Log(@"HomePresenter new...");
-    [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+    [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         [weakself.handler setData:data];
+    }];
+    
+    [[DataCenter get] perform:OperationGetHomeDataClubDropdown params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+        [((HomeViewHandler *)weakself.handler) setClubData:data];
     }];
     
     return self;
@@ -30,9 +34,11 @@
 
 - (void)onViewAction:(id)action data:(id)data {
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, Data *  _Nullable data) {
-        [weakself.handler setData:data];
-    }];
+    if ([action isEqualToString:@"action_refresh_foot"]) {
+        [[DataCenter get] perform:OperationGetHomeDataClubDropup params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+            [((HomeViewHandler *)weakself.handler) insertClubData:data];
+        }];
+    }
 }
 
 @end

@@ -145,13 +145,14 @@
             ]
         },
         {
+            "view_name":"line",
             "view_type":"view",
             "view_width":"full",
             "view_height":"1",
             "view_background":"#fff0f0f0",
             "layout_marginLeft":"12",
             "layout_marginRight":"12",
-            "layout_gravity":"bottom",
+            "layout_gravity":"top",
         },
     ]
 }

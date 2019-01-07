@@ -30,13 +30,13 @@
     if (tech) {
         [self setTechData:tech];
     }
-    NSArray *club = [self checkArray:@"clubList"];
-    if (club) {
-        [self setClubData:club];
-        JSON *json = [data jsonWithKey:@"respData"];
-        self.club.pageCount = [json integerWithKey:@"pageCount"];
-        self.club.pageCurrent = [json integerWithKey:@"pageCurrent"];
-    }
+//    NSArray *club = [self checkArray:@"clubList"];
+//    if (club) {
+//        [self setClubData:club];
+//        JSON *json = [data jsonWithKey:@"respData"];
+//        self.club.pageCount = [json integerWithKey:@"pageCount"];
+//        self.club.pageCurrent = [json integerWithKey:@"pageCurrent"];
+//    }
     
 }
 
@@ -74,11 +74,15 @@
         [self.tech addObject:data];
     }
 }
-- (void)setClubData:(NSArray *)array {
-    for (NSDictionary *dict in array) {
-        ClubData *data = [ClubData withDictionary:dict];
-        [self.club addData:data];
-    }
-}
+//- (void)setClubData:(NSArray *)array {
+//    for (NSDictionary *dict in array) {
+//        ClubData *data = [ClubData withDictionary:dict];
+//        [self.club addData:data];
+//        [self.club addData:data];
+//        [self.club addData:data];
+//        [self.club addData:data];
+//        [self.club addData:data];
+//    }
+//}
 
 @end

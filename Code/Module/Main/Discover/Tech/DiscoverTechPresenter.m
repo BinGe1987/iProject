@@ -20,7 +20,7 @@
     self.handler.delegate = self;
 
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetDiscoverTechData params:nil callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+    [[DataCenter get] perform:OperationGetDiscoverTechData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         [weakself.handler setData:data];
     }];
     

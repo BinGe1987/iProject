@@ -20,7 +20,7 @@
     self.handler.delegate = self;
     
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+    [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         ClubDetailData *detail = (ClubDetailData *)data;
 //        [view currentViewController].navigationController.navigationBar.topItem.title = detail.clubData.name;
         [view currentViewController].title = detail.clubData.name;
@@ -32,7 +32,7 @@
 
 - (void)onViewAction:(id)action data:(id)data {
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, Data *  _Nullable data) {
+    [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         [weakself.handler setData:data];
     }];
 }

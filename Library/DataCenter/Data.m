@@ -47,7 +47,7 @@
     return newArray;
 }
 
-- (id)jsonWithKey:(NSString *)key {
+- (id)dataWithKey:(NSString *)key {
     return [Data JSONWithDictionary:[self.source objectForKey:key]];
 }
 

@@ -19,8 +19,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)addSection:(TableViewSection *)section;
 - (void)addSection:(TableViewSection *)section index:(NSInteger)insert;
 
-
 - (void)removeSection:(TableViewSection *)section;
+
+- (NSInteger)sectionIndex:(TableViewSection *)section;
 
 @end
 
