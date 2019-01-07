@@ -39,6 +39,11 @@
             [((HomeViewHandler *)weakself.handler) insertClubData:data];
         }];
     }
+    else if ([action isEqualToString:@"action_refresh_head"]) {
+        [[DataCenter get] perform:OperationGetHomeDataClubDropdown params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+            [((HomeViewHandler *)weakself.handler) setClubData:data];
+        }];
+    }
 }
 
 @end

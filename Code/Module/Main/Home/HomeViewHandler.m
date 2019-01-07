@@ -39,7 +39,7 @@
     WeakSelf(self)
     [self.tableView setHeadRefreshHandler:^{
         if (weakself.delegate) {
-//            [weakself.delegate onViewAction:@"action_refresh_head"];
+            [weakself.delegate onViewAction:@"action_refresh_head" data:nil];
         }
     }];
     [self.tableView setFootRefreshHandler:^{
@@ -74,11 +74,13 @@
     self.clubSection.array = [clubData mutableCopy];
     [self.tableView reloadData];
     [self.tableView finishFootRefresh];
+    [self.tableView finishHeadRefresh];
 }
 
 - (void)insertClubData:(NSArray *)data {
     
     if (data || data.count == 0) {
+        [self.tableView finishHeadRefresh];
         [self.tableView finishFootRefreshWithText:@"没有更多了!"];
         return;
     }
@@ -100,6 +102,7 @@
     [self.tableView beginUpdates];
     [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
     [self.tableView endUpdates];
+    [self.tableView finishHeadRefresh];
     [self.tableView finishFootRefresh];
 }
 
