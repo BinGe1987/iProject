@@ -26,18 +26,6 @@
     if (classify) {
         [self setClassifyData:classify];
     }
-//    NSArray *tech = [self checkArray:@"techList"];
-//    if (tech) {
-//        [self setTechData:tech];
-//    }
-//    NSArray *club = [self checkArray:@"clubList"];
-//    if (club) {
-//        [self setClubData:club];
-//        JSON *json = [data jsonWithKey:@"respData"];
-//        self.club.pageCount = [json integerWithKey:@"pageCount"];
-//        self.club.pageCurrent = [json integerWithKey:@"pageCurrent"];
-//    }
-    
 }
 
 - (NSArray *)checkArray:(NSString *)dataType {
@@ -67,22 +55,5 @@
     }
 }
 
-- (void)setTechData:(NSArray *)array {
-    [self.tech removeAllObjects];
-    for (NSDictionary *dict in array) {
-        TechData *data = [TechData withDictionary:dict];
-        [self.tech addObject:data];
-    }
-}
-//- (void)setClubData:(NSArray *)array {
-//    for (NSDictionary *dict in array) {
-//        ClubData *data = [ClubData withDictionary:dict];
-//        [self.club addData:data];
-//        [self.club addData:data];
-//        [self.club addData:data];
-//        [self.club addData:data];
-//        [self.club addData:data];
-//    }
-//}
 
 @end

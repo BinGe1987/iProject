@@ -32,7 +32,7 @@
 }
 
 - (BOOL)isLogin {
-    return /*self.isSuccess &&*/ self.token;
+    return self.isSuccess && self.token;
 }
 
 @end

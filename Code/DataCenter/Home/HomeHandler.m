@@ -63,11 +63,6 @@
             [clubArray addObject:cd];
             [self.data.club addData:cd];
         }
-//        ClubData *cd = [ClubData new];
-//        [clubArray addObject:cd];
-//        [clubArray addObject:cd];
-//        [clubArray addObject:cd];
-//        [clubArray addObject:cd];
         return clubArray;
     } else {
         [self.data setData:source];

@@ -92,7 +92,7 @@ singleton_implementation(DataCenter)
 - (void)dispatch:(_Nonnull id)operation params:(_Nullable id)params callback:(_Nullable ICallback)callbak {
     for (DataHandler *handler in self.handlers) {
         if ([handler isContainsPerformer: operation]) {
-//            @synchronized(handler) {
+            @synchronized(handler) {
                 id<IPerformer> performer = [handler getPerformer:operation];
                 if ([performer isAsynchronous]) {
                     [performer perform:operation params:params callback:^(id  _Nonnull operation, id  _Nullable data) {
@@ -103,7 +103,7 @@ singleton_implementation(DataCenter)
                     [self handData:operation data:data callback:callbak];
                 }
                 return;
-//            }
+            }
         }
     }
     @throw [NSException exceptionWithName:operation reason:@"找不到对应DataHandler处理" userInfo:nil];

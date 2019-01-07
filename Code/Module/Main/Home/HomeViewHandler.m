@@ -38,14 +38,14 @@
     self.clubSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"club", @"array": @[],@"headerHeight": [NSNumber numberWithFloat:ScaleValue(43)], @"height" : [NSNumber numberWithFloat:106]}];
     
     
-    [self.tableView setFootRefreshHandler:^{
-    }];
-    [self.tableView beginFootRefreshing];
+    
     return self;
 }
 
 - (void)startLoading {
-//    [self.tableView beginFootRefreshing];
+    [self.tableView setFootRefreshHandler:^{
+    }];
+    [self.tableView beginFootRefreshing];
 }
 
 - (void)setAdapter {
