@@ -30,6 +30,9 @@
     }
 }
 
+- (void)refreshLaoyout {
+    [self layoutWithMaxWidth:self.maxWidth maxHeight:self.maxHeight completed:nil];
+}
 
 - (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^)(void))block {
     [self assignmentForMaxSize:CGSizeMake(width, height)];

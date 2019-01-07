@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^ _Nullable )(void))block;
 
+- (void)refreshLaoyout;
+
 @end
 
 NS_ASSUME_NONNULL_END

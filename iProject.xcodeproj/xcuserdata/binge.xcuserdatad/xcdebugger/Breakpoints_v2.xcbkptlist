@@ -137,7 +137,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/DataCenter/Login/LoginPerformer.m"
-            timestampString = "568534752.9993089"
+            timestampString = "568536555.518383"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -169,7 +169,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Library/Utils/Http/Network.m"
-            timestampString = "568534752.9994479"
+            timestampString = "568536555.518527"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "46"
@@ -185,7 +185,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Library/Utils/Http/Network.m"
-            timestampString = "568534752.999524"
+            timestampString = "568536555.518608"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -201,7 +201,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Library/Utils/Http/Network.m"
-            timestampString = "568534752.999593"
+            timestampString = "568536555.51868"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "77"
@@ -217,7 +217,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Library/Utils/Http/Network.m"
-            timestampString = "568534752.999652"
+            timestampString = "568536555.5187401"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "61"
@@ -233,27 +233,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Code/Module/Main/Home/HomeViewHandler.m"
-            timestampString = "568534752.999741"
+            timestampString = "568536555.518802"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
             endingLineNumber = "60"
-            landmarkName = "-setData:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Code/Module/Main/Home/Cell/Tech/TechUITableViewCell.m"
-            timestampString = "568534752.9998159"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
             landmarkName = "-setData:"
             landmarkType = "7">
          </BreakpointContent>

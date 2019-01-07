@@ -47,15 +47,15 @@
     id<ViewGroupDelegate> delegate = (id<ViewGroupDelegate>)self.scrollView;
     for (TechData *tech in data) {
         UIView *view = [UIView viewWithXML:@"TechCellListItem.xml" size:size];
+        [delegate addView:view];
         
         UIImageView *head = (UIImageView *)[view findViewByName:@"head"];
         [head setImageWithURL:[NSURL URLWithString:tech.imageUrl] placeholder:UIImageDefault_Tech];
         
         UILabel *lable = (UILabel *)[view findViewByName:@"name"];
         lable.text = tech.name;
-        [delegate addView:view];
         
-        [(ViewGroup *)view layoutWithMaxWidth:size.width maxHeight:size.height completed:nil];
+        [(ViewGroup *)view refreshLaoyout];
         
         UIButton *btn = (UIButton *)[view findViewByName:@"btn"];
         [btn setClickBlock:^(UIButton * _Nonnull button) {
