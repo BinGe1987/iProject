@@ -22,6 +22,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)finishFootRefresh;
 - (void)finishFootRefreshWithText:(NSString *)text;
+- (void)resetFootRefresh;
 
 @end
 

@@ -156,7 +156,7 @@ static UIImage *placeholderImage;
                 imageView.image = image;
             } else {
                 if ([image hasPrefix: @"@"]) {
-                    imageView.image = [UIImage imageNamed:image];
+                    imageView.image = [UIImage imageNamed:[image substringFromIndex:1]];
                 }
                 else if ([image hasPrefix: @"http"]) {
                     [imageView setImageWithURL:[NSURL URLWithString:image] placeholder:[self getPlaceholderImage]];

@@ -10,38 +10,53 @@
 
 @interface HomePresenter()<ViewHandlerDelegate>
 
+@property (nonatomic, strong) HomeViewHandler *homeHandler;
+
 @end
 
 @implementation HomePresenter
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
-    self.handler = [[HomeViewHandler alloc] initWithView:view];
-    self.handler.delegate = self;
+    self.homeHandler = [[HomeViewHandler alloc] initWithView:view];
+    self.homeHandler.delegate = self;
     
-    WeakSelf(self)
-    Log(@"HomePresenter new...");
-    [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-        [weakself.handler setData:data];
-    }];
+    UserData *user = [DataCenter get].userData;
+    [self onLogin:user];
     
-    [[DataCenter get] perform:OperationGetHomeDataClubDropdown params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-        [((HomeViewHandler *)weakself.handler) setClubData:data];
-    }];
+    [EventBus addObserver:self selector:@selector(onLogin:) event:EventLoginStatusChanged];
     
     return self;
+}
+
+- (void)onLogin:(UserData *)user {
+    if (user.isLogin) {
+        WeakSelf(self)
+        [self.homeHandler startLoading];
+        [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+            [weakself.homeHandler setData:data];
+            [[DataCenter get] perform:OperationGetHomeDataTech params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+                [weakself.homeHandler setTechData:data];
+                [[DataCenter get] perform:OperationGetHomeDataClubDropdown params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+                    [weakself.homeHandler setClubData:data];
+                }];
+            }];
+        }];
+        
+        
+    }
 }
 
 - (void)onViewAction:(id)action data:(id)data {
     WeakSelf(self)
     if ([action isEqualToString:@"action_refresh_foot"]) {
         [[DataCenter get] perform:OperationGetHomeDataClubDropup params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-            [((HomeViewHandler *)weakself.handler) insertClubData:data];
+             [weakself.homeHandler insertClubData:data];
         }];
     }
     else if ([action isEqualToString:@"action_refresh_head"]) {
         [[DataCenter get] perform:OperationGetHomeDataClubDropdown params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-            [((HomeViewHandler *)weakself.handler) setClubData:data];
+             [weakself.homeHandler setClubData:data];
         }];
     }
 }

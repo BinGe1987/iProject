@@ -11,7 +11,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HomeViewHandler : ViewHandler
 
+
+- (void)startLoading;
+
 - (void)setData:(id)data;
+
+- (void)setTechData:(NSArray *)techData;
 
 - (void)setClubData:(NSArray *)clubData;
 

@@ -34,8 +34,17 @@
 
 - (id)parse:(id)operation withSource:(id)source {
     [self.data setData:source];
-    
-    if ([operation isEqualToString:OperationGetHomeDataClubDropdown]) {
+    if ([operation isEqualToString:OperationGetHomeDataTech]) {
+        Data *resp = [source jsonWithKey:@"respData"];
+        NSArray *array = [resp arrayWithKey:@"techList"];
+        [self.data.tech removeAllObjects];
+        for (Data *data in array) {
+            TechData *cd = [TechData withData:data];
+            [self.data.tech addObject:cd];
+        }
+        return [self.data.tech mutableCopy];
+    }
+    else if ([operation isEqualToString:OperationGetHomeDataClubDropdown]) {
         Data *resp = [source jsonWithKey:@"respData"];
         NSArray *array = [resp arrayWithKey:@"clubList"];
         [self.data.club clear];
@@ -54,6 +63,11 @@
             [clubArray addObject:cd];
             [self.data.club addData:cd];
         }
+//        ClubData *cd = [ClubData new];
+//        [clubArray addObject:cd];
+//        [clubArray addObject:cd];
+//        [clubArray addObject:cd];
+//        [clubArray addObject:cd];
         return clubArray;
     } else {
         [self.data setData:source];

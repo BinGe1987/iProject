@@ -11,11 +11,7 @@
 @implementation UITableView (Refresh)
 
 - (void)setHeadRefreshHandler:(void(^)(void))block {
-//    WeakSelf(self)
-//    [self bindHeadRefreshHandler:^{
-//        [weakself performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:1.5];
-//        block();
-//    } themeColor:UIColorMain refreshStyle:KafkaRefreshStyleReplicatorCircle];
+    [self bindGlobalStyleForFootRefreshHandler:nil];
     [self bindHeadRefreshHandler:block themeColor:UIColorMain refreshStyle:KafkaRefreshStyleReplicatorCircle];
 }
 - (void)beginHeadRefreshing {
@@ -23,11 +19,6 @@
 }
 
 - (void)setFootRefreshHandler:(void(^)(void))block {
-//    WeakSelf(self)
-//    [self bindFootRefreshHandler:^{
-//        [weakself performSelector:@selector(finishFootRefresh) withObject:nil afterDelay:1.5];
-//        block();
-//    } themeColor:UIColorMain refreshStyle:KafkaRefreshStyleReplicatorCircle];
     [self bindFootRefreshHandler:block themeColor:UIColorMain refreshStyle:KafkaRefreshStyleReplicatorCircle];
 }
 
@@ -43,7 +34,13 @@
     [self.footRefreshControl endRefreshing];
 }
 - (void)finishFootRefreshWithText:(NSString *)text {
+//    [self.footRefreshControl endRefreshingWithAlertText:text completion:nil];
     [self.footRefreshControl endRefreshingAndNoLongerRefreshingWithAlertText:text];
+//    [self.footRefreshControl resumeRefreshAvailable];
+}
+
+- (void)resetFootRefresh {
+    [self.footRefreshControl resumeRefreshAvailable];
 }
 
 @end

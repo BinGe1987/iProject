@@ -26,10 +26,10 @@
     if (classify) {
         [self setClassifyData:classify];
     }
-    NSArray *tech = [self checkArray:@"techList"];
-    if (tech) {
-        [self setTechData:tech];
-    }
+//    NSArray *tech = [self checkArray:@"techList"];
+//    if (tech) {
+//        [self setTechData:tech];
+//    }
 //    NSArray *club = [self checkArray:@"clubList"];
 //    if (club) {
 //        [self setClubData:club];

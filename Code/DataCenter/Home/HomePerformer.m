@@ -11,12 +11,16 @@
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
     
+    if ([NSString isEmpty:DataCenter.token]) {
+        return nil;
+    }
+    
     if ([operation isEqualToString:OperationGetHomeData] ||
         [operation isEqualToString:OperationGetHomeDataBanner]) {
         [self operation:operation bannerAndClassifyData:callback];
     }
     
-    if ([operation isEqualToString:OperationGetHomeData] ||
+    if (/*[operation isEqualToString:OperationGetHomeData] ||*/
         [operation isEqualToString:OperationGetHomeDataTech]) {
         [self operation:operation techData:callback];
     }
