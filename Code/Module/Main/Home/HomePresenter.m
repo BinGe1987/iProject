@@ -21,9 +21,7 @@
     self.homeHandler = [[HomeViewHandler alloc] initWithView:view];
     self.homeHandler.delegate = self;
     
-    UserData *user = [DataCenter get].userData;
-    [self onLogin:user];
-    
+    [self onLogin:[DataCenter get].userData];
     [EventBus addObserver:self selector:@selector(onLogin:) event:EventLoginStatusChanged];
     
     return self;

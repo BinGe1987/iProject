@@ -48,11 +48,6 @@
     [self.tableView beginFootRefreshing];
 }
 
-- (void)setAdapter {
-    
-}
-
-
 - (void)setData:(id)data {
     HomeData *homeData = (HomeData *)data;
     [self.tableView.adapter addSection:self.bannerSection];
