@@ -247,7 +247,6 @@
 		77CEA4B121D3909900B388E4 /* TechUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4B021D3909900B388E4 /* TechUITableViewCell.m */; };
 		77CEA4B621D3A76500B388E4 /* TechCellHeader.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4B521D3A76500B388E4 /* TechCellHeader.json */; };
 		77CEA4B821D3AF5500B388E4 /* TechCellList.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4B721D3AF5500B388E4 /* TechCellList.json */; };
-		77CEA4BA21D3B1D000B388E4 /* TechCellListItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4B921D3B1D000B388E4 /* TechCellListItem.json */; };
 		77CEA4BE21D3BD4300B388E4 /* ClubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4BD21D3BD4300B388E4 /* ClubTableViewCell.m */; };
 		77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4BF21D3BD8700B388E4 /* ClubCellHeader.json */; };
 		77CEA4C221D3BF5B00B388E4 /* ClubCellItem.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4C121D3BF5B00B388E4 /* ClubCellItem.json */; };
@@ -823,7 +822,6 @@
 		77CEA4B421D3A60F00B388E4 /* ColorConstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColorConstant.h; sourceTree = "<group>"; };
 		77CEA4B521D3A76500B388E4 /* TechCellHeader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TechCellHeader.json; sourceTree = "<group>"; };
 		77CEA4B721D3AF5500B388E4 /* TechCellList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TechCellList.json; sourceTree = "<group>"; };
-		77CEA4B921D3B1D000B388E4 /* TechCellListItem.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TechCellListItem.json; sourceTree = "<group>"; };
 		77CEA4BC21D3BD4300B388E4 /* ClubTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTableViewCell.h; sourceTree = "<group>"; };
 		77CEA4BD21D3BD4300B388E4 /* ClubTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTableViewCell.m; sourceTree = "<group>"; };
 		77CEA4BF21D3BD8700B388E4 /* ClubCellHeader.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ClubCellHeader.json; sourceTree = "<group>"; };
@@ -2151,7 +2149,6 @@
 				77CEA4B021D3909900B388E4 /* TechUITableViewCell.m */,
 				77CEA4B521D3A76500B388E4 /* TechCellHeader.json */,
 				77CEA4B721D3AF5500B388E4 /* TechCellList.json */,
-				77CEA4B921D3B1D000B388E4 /* TechCellListItem.json */,
 				77A38A6121E3203200042B04 /* TechCellListItem.xml */,
 			);
 			path = Tech;
@@ -2899,7 +2896,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77CEA4BA21D3B1D000B388E4 /* TechCellListItem.json in Resources */,
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
 				77CEA4DE21D4990700B388E4 /* DiscoverClub.json in Resources */,
 				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
