@@ -9,4 +9,10 @@
 
 @implementation BannerData
 
+- (void)setData:(Data *)data {
+    [super setData:data];
+    self.bannerID = [data stringWithKey:@"id"];
+    self.imageUrl = [data stringWithKey:@"imageUrl"];
+}
+
 @end

@@ -11,7 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BannerData : Data
 
-@property (nonatomic, strong) NSString *imageUrl;
+@property (nonatomic, copy) NSString *bannerID;
+@property (nonatomic, copy) NSString *imageUrl;
 
 @end
 

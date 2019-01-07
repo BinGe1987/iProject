@@ -14,6 +14,10 @@
     self.yy_imageURL = imageURL;
 }
 
+- (void)setImageWithURL:(NSURL *)imageURL placeholder:(UIImage *)placeholder {
+    [self yy_setImageWithURL:imageURL placeholder:placeholder];
+}
+
 //- (void)test {
 //    YYImageCache *cache = [YYWebImageManager sharedManager].cache;
 //    cache.

@@ -12,9 +12,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewAdapter : NSObject<UITableViewDataSource, UITableViewDelegate>
 
-@property (nonatomic, strong) NSArray<TableViewSection *> *data;
+@property (nonatomic, strong) NSMutableArray<TableViewSection *> *data;
 
-+ (instancetype)AdapterWithSourceData:(NSArray<TableViewSection *> *)data;
++ (instancetype)AdapterWithSourceData:(NSMutableArray<TableViewSection *> *)data;
+
+- (void)addSection:(TableViewSection *)section;
 
 @end
 

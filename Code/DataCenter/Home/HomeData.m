@@ -16,18 +16,45 @@
     self.club       = [NSMutableArray new];
 }
 
-- (void)setBannerData:(Data *)data {
-    
-}
-
 - (void)setData:(Data *)data {
     [super setData:data];
     
-    if (data.isSuccess) {
-        NSArray *newArray = data.source[@"respData"][@"banner"];
-        self.banner = [newArray mutableCopy];
+    NSArray *banner = [self checkData:@"banner"];
+    if (banner) {
+        [self setBannerData:banner];
     }
+}
+
+- (NSArray *)checkData:(NSString *)dataType {
+    if (self.isSuccess) {
+        NSDictionary *dict = self.source[@"respData"];
+        NSArray *array = [dict objectForKey:dataType];
+        if (array && [array isKindOfClass:[NSArray class]] && array.count > 0) {
+            return array;
+        }
+    }
+    return nil;
+}
+
+- (void)setBannerData:(NSArray *)array {
+    [self.banner removeAllObjects];
+    for (NSDictionary *dict in array) {
+        BannerData *bannerData = [BannerData withDictionary:dict];
+        [self.banner addObject:bannerData];
+    }
+}
+
+- (void)setClassifyData:(NSArray *)array {
     
+}
+
+
+
+
+
+
+
+
 //    //banner
 //    NSFileManager *manager = [NSFileManager defaultManager];
 //    NSError *error;
@@ -38,7 +65,7 @@
 //        data.imageUrl = [NSString stringWithFormat:@"%@/%@", folder, name];
 //        [self.banner addObject:data.imageUrl];
 //    }
-//    
+//
 //    //分类
 //    NSArray *classify = @[@{@"name":@"hydrotherapy",@"title":@"水疗",@"image":@"@水疗"},
 //                          @{@"name":@"Tuina",@"title":@"推拿",@"image":@"@推拿"},
@@ -51,7 +78,7 @@
 //        data.image = [dic objectForKey:@"image"];
 //        [self.classify addObject:data];
 //    }
-//    
+//
 //    //技师
 //    NSArray *tech = @[@{@"name":@"沐沐",@"number":@"25",@"image":@""},
 //                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
@@ -76,7 +103,7 @@
 //        data.imageUrl = [dic objectForKey:@"image"];
 //        [self.tech addObject:data];
 //    }
-//    
+//
 //    //商家
 //    NSArray *club = @[@{@"name":@"小摩豆",@"image":@""},
 //                      @{@"name":@"小摩豆",@"image":@""},
@@ -95,7 +122,4 @@
 //        data.imageUrl = [dic objectForKey:@"image"];
 //        [self.club addObject:data];
 //    }
-    
-}
-
 @end

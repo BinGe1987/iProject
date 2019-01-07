@@ -27,10 +27,10 @@
 
 + (NSString *)token {
     NSString *token = [DataCenter get].userData.token;
-    if ([NSString isEmpty:token]) {
-        token = [Store valueForKey:@"token"];
-    }
-    return token;
+//    if ([NSString isEmpty:token]) {
+//        token = [Store valueForKey:@"token"];
+//    }
+    return [NSString isEmpty:token] ? @"" : token;
 }
 
 @end

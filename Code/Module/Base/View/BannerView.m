@@ -23,6 +23,8 @@
 
 @end
 
+static UIImage *placeholderImage;
+
 @implementation BannerView
 
 - (instancetype)initWithFrame:(CGRect)frame {
@@ -113,6 +115,13 @@
     
 }
 
+- (UIImage *)getPlaceholderImage {
+    if (!placeholderImage) {
+        placeholderImage = [ImageUtils imageWithColorHex:@"#ffe5e5e5" size:CGSizeMake(_width, _height)];
+    }
+    return placeholderImage;
+}
+
 //初始化scrollView
 - (UIScrollView *)scrollView
 {
@@ -142,7 +151,18 @@
             UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(_width * i, 0, _width, _height)];
             imageView.contentMode = UIViewContentModeScaleAspectFill;
             imageView.layer.masksToBounds = YES;
-            imageView.image = _dataArray[i];
+            id image = _dataArray[i];
+            if (image && [image isKindOfClass:[UIImage class]]) {
+                imageView.image = image;
+            } else {
+                if ([image hasPrefix: @"@"]) {
+                    imageView.image = [UIImage imageNamed:image];
+                }
+                else if ([image hasPrefix: @"http"]) {
+                    [imageView setImageWithURL:[NSURL URLWithString:image] placeholder:[self getPlaceholderImage]];
+                }
+            }
+            
             
             //添加手势
             UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tapAction:)];

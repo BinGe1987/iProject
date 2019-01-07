@@ -9,6 +9,10 @@
 
 @implementation Data
 
++ (instancetype)withDictionary:(NSDictionary *)dict {
+    return [[self class] withData:[Data JSONWithDictionary:dict]];
+}
+
 + (instancetype)withData:(Data *)data {
     return [[self alloc] initWithData:data];
 }

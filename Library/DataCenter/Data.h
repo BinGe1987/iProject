@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Data : JSON
 
++ (instancetype)withDictionary:(NSDictionary *)dict;
+
 + (instancetype)withData:(Data *)data;
 
 - (instancetype)initWithData:(Data *)data;

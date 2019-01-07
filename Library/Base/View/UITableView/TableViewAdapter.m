@@ -14,8 +14,20 @@
 
 + (instancetype)AdapterWithSourceData:(NSArray<TableViewSection *> *)data {
     TableViewAdapter *adapter = [[[self class] alloc] init];
-    adapter.data = data;
+    adapter.data = [data mutableCopy];
     return adapter;
+}
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.data = [NSMutableArray new];
+    }
+    return self;
+}
+
+- (void)addSection:(TableViewSection *)section {
+    [self.data addObject:section];
 }
 
 #pragma mark UITableViewDataSource

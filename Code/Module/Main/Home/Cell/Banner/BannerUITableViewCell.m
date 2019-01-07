@@ -32,19 +32,13 @@
 }
 
 - (void)setData:(id)data {
-    
-    if (data == self.cellData) {
-        return;
-    }
     self.cellData = data;
     NSMutableArray *array = [NSMutableArray new];
-    for (NSString *imageUrl in data) {
-        UIImage *image = [UIImage imageWithContentsOfFile:imageUrl];
-        [array addObject:image];
+    for (BannerData *banner in data) {
+//        UIImage *image = [UIImage imageWithContentsOfFile:imageUrl];
+        [array addObject:banner.imageUrl];
     }
-    if (array && array.count) {
-        [self.bannerView setImages:array];
-    }
+    [self.bannerView setImages:array];
 }
 
 @end
