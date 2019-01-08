@@ -9,6 +9,15 @@
 
 @implementation ClubData
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (void)setData:(Data *)data {
     [super setData:data];
     self.clubID = [data stringWithKey:@"id"];

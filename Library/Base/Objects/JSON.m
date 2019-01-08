@@ -35,7 +35,6 @@
 - (NSString *)stringWithKey:(NSString *)key {
     return [self stringWithKey:key defaultValue:nil];
 }
-
 - (NSString *)stringWithKey:(NSString *)key defaultValue:(NSString * _Nullable)defaultValue {
     NSString *value = [self.source objectForKey:key];
     if ([value isKindOfClass:[NSNull class]]) {
@@ -46,6 +45,18 @@
     } else {
         return defaultValue;
     }
+}
+- (NSString *)stringWithKeys:(NSArray *)keys {
+    return [self stringWithKeys:keys defaultValue:nil];
+}
+- (NSString *)stringWithKeys:(NSArray *)keys defaultValue:(NSString * _Nullable)defaultValue {
+    for (NSString *key in keys) {
+        NSString *value = [self stringWithKey:key defaultValue:defaultValue];
+        if (value) {
+            return value;
+        }
+    }
+    return defaultValue;
 }
 
 - (NSInteger)integerWithKey:(NSString *)key {

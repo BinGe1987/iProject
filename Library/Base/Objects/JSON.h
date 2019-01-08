@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (NSString *)stringWithKey:(NSString *)key;
 - (NSString *)stringWithKey:(NSString *)key defaultValue:(NSString * _Nullable)defaultValue;
+- (NSString *)stringWithKeys:(NSArray *)keys;
+- (NSString *)stringWithKeys:(NSArray *)keys defaultValue:(NSString * _Nullable)defaultValue;
 
 - (NSInteger)integerWithKey:(NSString *)key;
 - (NSInteger)integerWithKey:(NSString *)key defaultValue:(NSInteger)defaultValue;
