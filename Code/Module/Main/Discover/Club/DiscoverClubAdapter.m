@@ -28,8 +28,9 @@
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-//    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
-    [UIViewController pushController:@"ClubDetailController" animated:YES data:nil];
+    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    Data *club = [data.array objectAtIndex:indexPath.row];
+    [UIViewController pushController:@"ClubDetailController" animated:YES data:club];
 }
 
 

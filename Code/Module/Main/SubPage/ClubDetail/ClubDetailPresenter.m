@@ -19,12 +19,12 @@
     self.handler = [[ClubDetailViewHandler alloc] initWithView:view];
     self.handler.delegate = self;
     
+    ClubData *club = [view currentViewController].intentData;
+    [Store setValue:club.source forKey:@"test_data"];
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+    [[DataCenter get] perform:OperationGetClubDetailData params:club callback:^(id  _Nonnull operation, id  _Nullable data) {
         ClubDetailData *detail = (ClubDetailData *)data;
-//        [view currentViewController].navigationController.navigationBar.topItem.title = detail.clubData.name;
-        [view currentViewController].title = detail.clubData.name;
-        [weakself.handler setData:data];
+        [weakself.handler setData:detail];
     }];
     
     return self;

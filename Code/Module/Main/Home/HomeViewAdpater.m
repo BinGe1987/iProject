@@ -95,7 +95,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     if ([data.name isEqualToString:@"club"]) {
-        [tableView pushController:@"ClubDetailController" data:nil animated:YES];
+        Data *club = [data.array objectAtIndex:indexPath.row];
+        [tableView pushController:@"ClubDetailController" data:club animated:YES];
     }
 }
 
