@@ -168,6 +168,9 @@
 		77A38A6F21E32EED00042B04 /* RootViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A6E21E32EED00042B04 /* RootViewModel.m */; };
 		77A38A7221E3397000042B04 /* ClubListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A7121E3397000042B04 /* ClubListData.m */; };
 		77A38A7521E33C7C00042B04 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A38A7421E33C7C00042B04 /* Location.m */; };
+		77A8B62D21E49FEA00BC8C70 /* Discover.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B62C21E49FEA00BC8C70 /* Discover.xml */; };
+		77A8B62F21E4A0C600BC8C70 /* DiscoverClub.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B62E21E4A0C600BC8C70 /* DiscoverClub.xml */; };
+		77A8B63121E4A1EC00BC8C70 /* DiscoverTech.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B63021E4A1EC00BC8C70 /* DiscoverTech.xml */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -265,13 +268,10 @@
 		77CEA4C521D3D98600B388E4 /* Data+Update.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4C421D3D98600B388E4 /* Data+Update.m */; };
 		77CEA4C721D481D500B388E4 /* Test2.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4C621D481D500B388E4 /* Test2.json */; };
 		77CEA4CB21D48B3C00B388E4 /* DiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4CA21D48B3C00B388E4 /* DiscoverViewController.m */; };
-		77CEA4CD21D48BD000B388E4 /* Discover.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4CC21D48BD000B388E4 /* Discover.json */; };
 		77CEA4D121D496D900B388E4 /* ViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4D021D496D900B388E4 /* ViewPager.m */; };
 		77CEA4D421D4970A00B388E4 /* ViewPagerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4D321D4970A00B388E4 /* ViewPagerModel.m */; };
 		77CEA4D721D4973B00B388E4 /* ViewPagerParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4D621D4973B00B388E4 /* ViewPagerParams.m */; };
 		77CEA4DA21D4974D00B388E4 /* ViewPagerLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4D921D4974D00B388E4 /* ViewPagerLayoutParams.m */; };
-		77CEA4DC21D498F200B388E4 /* DiscoverTech.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4DB21D498F200B388E4 /* DiscoverTech.json */; };
-		77CEA4DE21D4990700B388E4 /* DiscoverClub.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4DD21D4990700B388E4 /* DiscoverClub.json */; };
 		77CEA4E421D4B64F00B388E4 /* DiscoverClubPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4E321D4B64F00B388E4 /* DiscoverClubPresenter.m */; };
 		77CEA4E721D4B69700B388E4 /* DiscoverTechPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4E621D4B69700B388E4 /* DiscoverTechPresenter.m */; };
 		77CEA4EA21D4B79300B388E4 /* DiscoverNvPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4E921D4B79300B388E4 /* DiscoverNvPresenter.m */; };
@@ -677,6 +677,9 @@
 		77A38A7121E3397000042B04 /* ClubListData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubListData.m; sourceTree = "<group>"; };
 		77A38A7321E33C7C00042B04 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		77A38A7421E33C7C00042B04 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		77A8B62C21E49FEA00BC8C70 /* Discover.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Discover.xml; sourceTree = "<group>"; };
+		77A8B62E21E4A0C600BC8C70 /* DiscoverClub.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DiscoverClub.xml; sourceTree = "<group>"; };
+		77A8B63021E4A1EC00BC8C70 /* DiscoverTech.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DiscoverTech.xml; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -866,7 +869,6 @@
 		77CEA4C621D481D500B388E4 /* Test2.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Test2.json; sourceTree = "<group>"; };
 		77CEA4C921D48B3C00B388E4 /* DiscoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverViewController.h; sourceTree = "<group>"; };
 		77CEA4CA21D48B3C00B388E4 /* DiscoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverViewController.m; sourceTree = "<group>"; };
-		77CEA4CC21D48BD000B388E4 /* Discover.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Discover.json; sourceTree = "<group>"; };
 		77CEA4CF21D496D900B388E4 /* ViewPager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewPager.h; sourceTree = "<group>"; };
 		77CEA4D021D496D900B388E4 /* ViewPager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewPager.m; sourceTree = "<group>"; };
 		77CEA4D221D4970A00B388E4 /* ViewPagerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewPagerModel.h; sourceTree = "<group>"; };
@@ -875,8 +877,6 @@
 		77CEA4D621D4973B00B388E4 /* ViewPagerParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewPagerParams.m; sourceTree = "<group>"; };
 		77CEA4D821D4974D00B388E4 /* ViewPagerLayoutParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewPagerLayoutParams.h; sourceTree = "<group>"; };
 		77CEA4D921D4974D00B388E4 /* ViewPagerLayoutParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewPagerLayoutParams.m; sourceTree = "<group>"; };
-		77CEA4DB21D498F200B388E4 /* DiscoverTech.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiscoverTech.json; sourceTree = "<group>"; };
-		77CEA4DD21D4990700B388E4 /* DiscoverClub.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = DiscoverClub.json; sourceTree = "<group>"; };
 		77CEA4E221D4B64F00B388E4 /* DiscoverClubPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverClubPresenter.h; sourceTree = "<group>"; };
 		77CEA4E321D4B64F00B388E4 /* DiscoverClubPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverClubPresenter.m; sourceTree = "<group>"; };
 		77CEA4E521D4B69700B388E4 /* DiscoverTechPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTechPresenter.h; sourceTree = "<group>"; };
@@ -2264,9 +2264,9 @@
 				77CEA4F221D4C25200B388E4 /* Tech */,
 				77CEA4C921D48B3C00B388E4 /* DiscoverViewController.h */,
 				77CEA4CA21D48B3C00B388E4 /* DiscoverViewController.m */,
-				77CEA4CC21D48BD000B388E4 /* Discover.json */,
-				77CEA4DD21D4990700B388E4 /* DiscoverClub.json */,
-				77CEA4DB21D498F200B388E4 /* DiscoverTech.json */,
+				77A8B62C21E49FEA00BC8C70 /* Discover.xml */,
+				77A8B62E21E4A0C600BC8C70 /* DiscoverClub.xml */,
+				77A8B63021E4A1EC00BC8C70 /* DiscoverTech.xml */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -2979,7 +2979,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
-				77CEA4DE21D4990700B388E4 /* DiscoverClub.json in Resources */,
 				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
 				77C3977321E440AC0016CEE3 /* ClassifyViewController.xml in Resources */,
 				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
@@ -2996,7 +2995,9 @@
 				771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */,
 				77A389FF21DF26D000042B04 /* WebVewController.xml in Resources */,
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
+				77A8B63121E4A1EC00BC8C70 /* DiscoverTech.xml in Resources */,
 				77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */,
+				77A8B62F21E4A0C600BC8C70 /* DiscoverClub.xml in Resources */,
 				77CEA4B821D3AF5500B388E4 /* TechCellList.json in Resources */,
 				77CEA4B621D3A76500B388E4 /* TechCellHeader.json in Resources */,
 				77EA8F3721B90226001B8959 /* readme-mvp in Resources */,
@@ -3026,14 +3027,13 @@
 				771CA41121DDAC9800B00F11 /* TechDetailComment.xml in Resources */,
 				776B55F821C11A9200793CAF /* readme-UIEngine in Resources */,
 				771CA3F221DCF0D700B00F11 /* ClubDetailComment.xml in Resources */,
-				77CEA4CD21D48BD000B388E4 /* Discover.json in Resources */,
 				77CEA54D21D5FD0F00B388E4 /* MineLevel.json in Resources */,
 				77EA8F2F21B90226001B8959 /* readme-DataCenter in Resources */,
 				77CEA4C721D481D500B388E4 /* Test2.json in Resources */,
-				77CEA4DC21D498F200B388E4 /* DiscoverTech.json in Resources */,
 				771CA3F421DD0AB200B00F11 /* TechDetail.xml in Resources */,
 				77A38A0C21DF2F6B00042B04 /* SettingController.xml in Resources */,
 				77A38A6221E3203200042B04 /* TechCellListItem.xml in Resources */,
+				77A8B62D21E49FEA00BC8C70 /* Discover.xml in Resources */,
 				771CA3D721DCC2ED00B00F11 /* ClubDetailAd.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

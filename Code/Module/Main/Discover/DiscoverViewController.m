@@ -27,8 +27,9 @@
     self.nvPresenter.delegate = self;
     [self addPresenter:self.nvPresenter];
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"Discover.json" ofType:nil];
-    [self setContentViewWithJSONPath:path];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"Discover.json" ofType:nil];
+//    [self setContentViewWithJSONPath:path];
+    [self setContentViewWithXML:@"Discover.xml"];
     
     ViewPager *pager = (ViewPager *)[self findViewByName:@"pager"];
     pager.viewPagerDelegate = self;
