@@ -28,6 +28,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat laty;           //纬度
 @property (nonatomic, assign) CGFloat lngx;           //经度
 
+@property (nonatomic, strong) ListData *bannerList;     //会所banner
+
 
 
 @end

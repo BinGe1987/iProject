@@ -23,7 +23,7 @@
     
     CommentListData *detail = (CommentListData *)data;
     TableViewSection *commentSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"comment", @"array": detail.list, @"height" : [NSNumber numberWithFloat:225]}];
-    CommentAdapter *adapter = [CommentAdapter AdapterWithSourceData:@[commentSection]];
+    CommentAdapter *adapter = [CommentAdapter AdapterWithSourceData:[NSMutableArray arrayWithObject:commentSection]];
     [tableView setAdapter:adapter];
 }
 

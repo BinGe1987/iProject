@@ -27,6 +27,12 @@
 #define API_DiscoverTechHot             (@"/ydd-manager/api/v1/tech/recommend/hot/tech/list")       //头牌
 #define API_DiscoverTechTop             (@"/ydd-manager/api/v1/tech/recommend/top/tech/list")       //热门
 
+#define API_ClubGetProfile              (@"/ydd-manager/api/v1/find/club/detail")                   //会所信息
+#define API_ClubGetServiceList          (@"/ydd-manager/api/v1/find/club/service/item/list")        //会所服务项目
+#define API_ClubGetTechList             (@"/ydd-manager/api/v1/tech/byclub/list")                   //会所技师列表
+#define API_ClubGetCommentList          (@"/ydd-manager/api/v1/find/club/commentList")              //会所评论列表
+
+
 
 #pragma make 我的页面相关
 #define API_MineGetMineData             (@"/api/v1/personalInfo/getPerInfoDetail")                  //获取我的页面数据
