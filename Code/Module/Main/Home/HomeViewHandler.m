@@ -35,7 +35,7 @@
     
     self.techSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"tech", @"array": @[],@"headerHeight": [NSNumber numberWithFloat:ScaleValue(43)], @"height" : [NSNumber numberWithFloat:ScaleValue(100)]}];
     
-    self.clubSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"club", @"array": @[],@"headerHeight": [NSNumber numberWithFloat:ScaleValue(43)], @"height" : [NSNumber numberWithFloat:106]}];
+    self.clubSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"club", @"array": @[],@"headerHeight": [NSNumber numberWithFloat:ScaleValue(40)], @"height" : [NSNumber numberWithFloat:106]}];
     
     
     

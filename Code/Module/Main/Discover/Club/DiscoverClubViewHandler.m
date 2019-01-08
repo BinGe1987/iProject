@@ -28,7 +28,7 @@
 - (void)setData:(id)data {
     DiscoverData *discoverData = (DiscoverData *)data;
     TableViewSection *clubSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"club", @"array": discoverData.club.list, @"height" : [NSNumber numberWithFloat:106]}];
-    DiscoverClubAdapter *adapter = [DiscoverClubAdapter AdapterWithSourceData:@[clubSection]];
+    DiscoverClubAdapter *adapter = [DiscoverClubAdapter AdapterWithSourceData:[NSMutableArray arrayWithObject:clubSection]];
     [self.tableView setAdapter:adapter];
 }
 

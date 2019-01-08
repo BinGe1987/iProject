@@ -247,6 +247,10 @@
 		77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0559721D1FCA20045A489 /* HomeViewHandler.m */; };
 		77B0559E21D205540045A489 /* TableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B0559D21D205540045A489 /* TableViewAdapter.m */; };
 		77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B055A021D20E410045A489 /* HomeViewAdpater.m */; };
+		77C3977321E440AC0016CEE3 /* ClassifyViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77C3977221E440AC0016CEE3 /* ClassifyViewController.xml */; };
+		77C3977621E443660016CEE3 /* ClassifyPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3977521E443660016CEE3 /* ClassifyPresenter.m */; };
+		77C3977921E444150016CEE3 /* ClassifyMenuViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3977821E444150016CEE3 /* ClassifyMenuViewHandler.m */; };
+		77C3977D21E445700016CEE3 /* ClubMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3977C21E445700016CEE3 /* ClubMenu.m */; };
 		77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4A421D3188E00B388E4 /* UIView+JSON.m */; };
 		77CEA4AA21D3578400B388E4 /* ClassifyUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4A921D3578400B388E4 /* ClassifyUITableViewCell.m */; };
 		77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4AC21D3599F00B388E4 /* ClassifyCell.json */; };
@@ -829,6 +833,13 @@
 		77B0559D21D205540045A489 /* TableViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewAdapter.m; sourceTree = "<group>"; };
 		77B0559F21D20E410045A489 /* HomeViewAdpater.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewAdpater.h; sourceTree = "<group>"; };
 		77B055A021D20E410045A489 /* HomeViewAdpater.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewAdpater.m; sourceTree = "<group>"; };
+		77C3977221E440AC0016CEE3 /* ClassifyViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClassifyViewController.xml; sourceTree = "<group>"; };
+		77C3977421E443660016CEE3 /* ClassifyPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyPresenter.h; sourceTree = "<group>"; };
+		77C3977521E443660016CEE3 /* ClassifyPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyPresenter.m; sourceTree = "<group>"; };
+		77C3977721E444150016CEE3 /* ClassifyMenuViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyMenuViewHandler.h; sourceTree = "<group>"; };
+		77C3977821E444150016CEE3 /* ClassifyMenuViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyMenuViewHandler.m; sourceTree = "<group>"; };
+		77C3977B21E445700016CEE3 /* ClubMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubMenu.h; sourceTree = "<group>"; };
+		77C3977C21E445700016CEE3 /* ClubMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubMenu.m; sourceTree = "<group>"; };
 		77CEA4A321D3188E00B388E4 /* UIView+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JSON.h"; sourceTree = "<group>"; };
 		77CEA4A421D3188E00B388E4 /* UIView+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSON.m"; sourceTree = "<group>"; };
 		77CEA4A821D3578400B388E4 /* ClassifyUITableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyUITableViewCell.h; sourceTree = "<group>"; };
@@ -1133,6 +1144,11 @@
 			children = (
 				771CA3A521DC9C6000B00F11 /* ClassifyViewController.h */,
 				771CA3A621DC9C6000B00F11 /* ClassifyViewController.m */,
+				77C3977421E443660016CEE3 /* ClassifyPresenter.h */,
+				77C3977521E443660016CEE3 /* ClassifyPresenter.m */,
+				77C3977721E444150016CEE3 /* ClassifyMenuViewHandler.h */,
+				77C3977821E444150016CEE3 /* ClassifyMenuViewHandler.m */,
+				77C3977221E440AC0016CEE3 /* ClassifyViewController.xml */,
 			);
 			path = Classify;
 			sourceTree = "<group>";
@@ -2101,6 +2117,7 @@
 			isa = PBXGroup;
 			children = (
 				77B0551E21CD272C0045A489 /* Controller */,
+				77C3977A21E4452D0016CEE3 /* View */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -2165,6 +2182,15 @@
 				77B0559421D1FB250045A489 /* ViewHandler.m */,
 			);
 			path = ViewHandler;
+			sourceTree = "<group>";
+		};
+		77C3977A21E4452D0016CEE3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				77C3977B21E445700016CEE3 /* ClubMenu.h */,
+				77C3977C21E445700016CEE3 /* ClubMenu.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		77CEA4AB21D3578B00B388E4 /* Classify */ = {
@@ -2480,8 +2506,8 @@
 		77EA8E8221B8F93C001B8959 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				77A38A1921DF357E00042B04 /* Global */,
 				77B0551D21CD27200045A489 /* Base */,
+				77A38A1921DF357E00042B04 /* Global */,
 				774F017021B9725D00CB482F /* Home */,
 				77CEA4C821D48A0300B388E4 /* Discover */,
 				77CEA53921D5CE6C00B388E4 /* Order */,
@@ -2937,6 +2963,7 @@
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
 				77CEA4DE21D4990700B388E4 /* DiscoverClub.json in Resources */,
 				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
+				77C3977321E440AC0016CEE3 /* ClassifyViewController.xml in Resources */,
 				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
 				77CEA54421D5D30D00B388E4 /* MineNavigation.json in Resources */,
 				771CA3CF21DCB54800B00F11 /* ClubDetailProfile.xml in Resources */,
@@ -3014,6 +3041,7 @@
 				77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */,
 				771CA3FF21DD0D1800B00F11 /* TechDetailPerformer.m in Sources */,
 				7734C11821D23A45009D1EE8 /* UIScrollView+KafkaRefreshControl.m in Sources */,
+				77C3977921E444150016CEE3 /* ClassifyMenuViewHandler.m in Sources */,
 				77A38A7521E33C7C00042B04 /* Location.m in Sources */,
 				7734C11D21D23A45009D1EE8 /* KafkaArrowFooter.m in Sources */,
 				77EA8E9C21B8FCF9001B8959 /* TestViewController.m in Sources */,
@@ -3168,6 +3196,7 @@
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
+				77C3977621E443660016CEE3 /* ClassifyPresenter.m in Sources */,
 				77A389F021DEFE2E00042B04 /* WebViewController.m in Sources */,
 				77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */,
 				7723E1CE21D77F6B00B77890 /* UIView+XML.m in Sources */,
@@ -3228,6 +3257,7 @@
 				77B0545721C943760045A489 /* MKAnnotationView+YYWebImage.m in Sources */,
 				771CA37021D8AC9400B00F11 /* LoginViewHandler.m in Sources */,
 				7734C13021D26963009D1EE8 /* BannerUITableViewCell.m in Sources */,
+				77C3977D21E445700016CEE3 /* ClubMenu.m in Sources */,
 				77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */,
 				77EA8E9921B8FCF2001B8959 /* HomeViewController.m in Sources */,
 				77B0554321D0D3120045A489 /* TabData.m in Sources */,

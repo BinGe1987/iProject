@@ -33,12 +33,12 @@
         [self.homeHandler startLoading];
         [[DataCenter get] perform:OperationGetHomeData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
             [weakself.homeHandler setData:data];
-        }];
-        [[DataCenter get] perform:OperationGetHomeDataTech params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-            [weakself.homeHandler setTechData:data];
-        }];
-        [[DataCenter get] perform:OperationGetHomeDataClubDropdown params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-            [weakself.homeHandler setClubData:data];
+            [[DataCenter get] perform:OperationGetHomeDataTech params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+                [weakself.homeHandler setTechData:data];
+                [[DataCenter get] perform:OperationGetHomeDataClubDropdown params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+                    [weakself.homeHandler setClubData:data];
+                }];
+            }];
         }];
     }
 }
