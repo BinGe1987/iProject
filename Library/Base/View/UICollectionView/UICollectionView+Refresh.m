@@ -19,6 +19,7 @@
 }
 
 - (void)setFootRefreshHandler:(void(^)(void))block {
+    [self bindGlobalStyleForFootRefreshHandler:nil];
     [self bindFootRefreshHandler:block themeColor:UIColorMain refreshStyle:KafkaRefreshStyleReplicatorCircle];
 }
 

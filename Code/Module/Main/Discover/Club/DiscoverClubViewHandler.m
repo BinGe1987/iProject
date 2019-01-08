@@ -38,7 +38,7 @@
     self.section.array = [discoverData.club.list mutableCopy];
     [self.tableView reloadData];
     
-    [self.tableView finishHeadRefresh];
+//    [self.tableView finishHeadRefresh];
     [self.tableView finishFootRefresh];
 }
 
@@ -62,14 +62,14 @@
     [self.tableView endUpdates];
 //    [self.tableView reloadData];
     
-    [self.tableView finishHeadRefresh];
+//    [self.tableView finishHeadRefresh];
     [self.tableView finishFootRefresh];
 }
 
 - (void)setRefreshHandler  {
     WeakSelf(self)
     [self.tableView setHeadRefreshHandler:^{
-        [weakself.tableView performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:2];
+        [weakself.tableView performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:1];
         if (weakself.delegate) {
             [weakself.delegate onViewAction:@"action_refresh_head" data:nil];
         }

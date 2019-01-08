@@ -83,8 +83,8 @@
         }
     }
     
-#warning TODO 调试
-    [self performSelector:@selector(debug) withObject:nil afterDelay:3];
+//#warning TODO 调试
+//    [self performSelector:@selector(debug) withObject:nil afterDelay:3];
 }
 
 - (void)debug {

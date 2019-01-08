@@ -11,10 +11,14 @@
 
 - (void)setData:(Data *)data {
     [super setData:data];
-    self.techID = [data stringWithKey:@""];
+    self.techID = [data stringWithKey:@"id"];
     self.imageUrl = [data stringWithKey:@"techAvatar"];
     self.number = [data stringWithKey:@"serialNo"];
     self.name = [data stringWithKey:@"name"];
+    self.browseNum = [data stringWithKey:@"browseNum"];
+    self.clubId = [data stringWithKey:@"clubId"];
+    self.commentNum = [data stringWithKey:@"commentNum"];
+    self.followNum = [data stringWithKey:@"favoriteNum"];
 }
 
 @end

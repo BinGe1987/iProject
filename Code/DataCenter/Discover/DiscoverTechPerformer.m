@@ -10,8 +10,19 @@
 @implementation DiscoverTechPerformer
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
-    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_HomeTech];
-    request.data = @{@"token":DataCenter.token};
+    
+    NSString *api;
+    if ([params integerValue] == 0) {
+        api = API_DiscoverTechHot;
+    } else {
+        api = API_DiscoverTechTop;
+    }
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:api];
+    request.data = @{@"token":DataCenter.token,
+                     @"page":@"1",
+                     @"pageSize":@"10",
+                     @"techCount":@"0"
+                     };
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];
     data.source = response.data;

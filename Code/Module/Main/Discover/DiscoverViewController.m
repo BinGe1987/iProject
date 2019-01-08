@@ -64,7 +64,7 @@
 
     UIView *tech = [self findViewByName:@"page_tech"];
     sv = (UIScrollView *)[tech findViewByName:@"collection"];
-    sv.contentInset = UIEdgeInsetsMake(topHeight,0,0,0);
+    sv.contentInset = UIEdgeInsetsMake(topHeight,0,30,0);
     sv.contentOffset = CGPointMake(0, -topHeight);
     
 }
