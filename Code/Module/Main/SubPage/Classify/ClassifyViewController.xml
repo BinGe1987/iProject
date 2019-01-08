@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Root
+    view_name="page_club"
     view_width="full"
     view_height="full"
     view_background="#ffffff">
-
+    
     <TableView
         view_name="table"
         view_width="full"
         view_height="full"
-        view_scrollIndicator="NO"
         view_background="#ffffff"
-        layout_fixTop="YES"
-        layout_marginTop="76"/>
+        layout_marginTop="30"/>
     
-    <FrameLayout
-        view_name="layout_menu"
+    <CustomView
+        view_name="menu"
+        view_class="ClubMenu"
         view_width="full"
         view_height="32"
-        view_background="#ff0fff"
         layout_fixTop="YES"
-        layout_marginTop="44">
-        
-    </FrameLayout>
+        layout_marginTop="44"/>
     
+    <View
+        view_width="full"
+        view_height="0.5"
+        view_background="#ffededed"
+        layout_fixTop="YES"
+        layout_marginTop="44"/>
     
-   
 </Root>

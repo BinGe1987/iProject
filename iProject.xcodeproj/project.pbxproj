@@ -173,6 +173,8 @@
 		77A8B63121E4A1EC00BC8C70 /* DiscoverTech.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B63021E4A1EC00BC8C70 /* DiscoverTech.xml */; };
 		77A8B63421E4B02500BC8C70 /* UICollectionView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63321E4B02500BC8C70 /* UICollectionView+Refresh.m */; };
 		77A8B63721E4DE8200BC8C70 /* DiscoverTechData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63621E4DE8200BC8C70 /* DiscoverTechData.m */; };
+		77A8B63A21E4E72B00BC8C70 /* ClassifyViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63921E4E72B00BC8C70 /* ClassifyViewHandler.m */; };
+		77A8B63D21E4E82300BC8C70 /* ClassifyAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63C21E4E82300BC8C70 /* ClassifyAdapter.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -686,6 +688,10 @@
 		77A8B63321E4B02500BC8C70 /* UICollectionView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Refresh.m"; sourceTree = "<group>"; };
 		77A8B63521E4DE8200BC8C70 /* DiscoverTechData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTechData.h; sourceTree = "<group>"; };
 		77A8B63621E4DE8200BC8C70 /* DiscoverTechData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechData.m; sourceTree = "<group>"; };
+		77A8B63821E4E72B00BC8C70 /* ClassifyViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyViewHandler.h; sourceTree = "<group>"; };
+		77A8B63921E4E72B00BC8C70 /* ClassifyViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewHandler.m; sourceTree = "<group>"; };
+		77A8B63B21E4E82300BC8C70 /* ClassifyAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyAdapter.h; sourceTree = "<group>"; };
+		77A8B63C21E4E82300BC8C70 /* ClassifyAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyAdapter.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1160,6 +1166,10 @@
 				77C3977521E443660016CEE3 /* ClassifyPresenter.m */,
 				77C3977721E444150016CEE3 /* ClassifyMenuViewHandler.h */,
 				77C3977821E444150016CEE3 /* ClassifyMenuViewHandler.m */,
+				77A8B63821E4E72B00BC8C70 /* ClassifyViewHandler.h */,
+				77A8B63921E4E72B00BC8C70 /* ClassifyViewHandler.m */,
+				77A8B63B21E4E82300BC8C70 /* ClassifyAdapter.h */,
+				77A8B63C21E4E82300BC8C70 /* ClassifyAdapter.m */,
 				77C3977221E440AC0016CEE3 /* ClassifyViewController.xml */,
 			);
 			path = Classify;
@@ -3306,6 +3316,7 @@
 				77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */,
 				77CEA4FC21D4C2FF00B388E4 /* DiscoverClubPerformer.m in Sources */,
 				77B0552121CD27480045A489 /* MainNavigationController.m in Sources */,
+				77A8B63A21E4E72B00BC8C70 /* ClassifyViewHandler.m in Sources */,
 				77B0545021C943760045A489 /* YYImage.m in Sources */,
 				77EA8F7321B90227001B8959 /* UIEngine.m in Sources */,
 				77EA8F4721B90226001B8959 /* TextViewModel.m in Sources */,
@@ -3337,6 +3348,7 @@
 				77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */,
 				7734C11921D23A45009D1EE8 /* KafkaCategories.m in Sources */,
 				771CA3F921DD0CA500B00F11 /* TechHandler.m in Sources */,
+				77A8B63D21E4E82300BC8C70 /* ClassifyAdapter.m in Sources */,
 				77A389DD21DE4DAB00042B04 /* MinePresenter.m in Sources */,
 				77B0552821CD82510045A489 /* AppInfo.m in Sources */,
 				7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */,
