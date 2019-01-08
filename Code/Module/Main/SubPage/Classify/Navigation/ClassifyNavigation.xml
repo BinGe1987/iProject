@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout
+    view_name="root_view"
+    view_width="full"
+    view_height="full"
+    view_background="#00ff00ff">
+    
+    <InputView
+        view_name="search"
+        view_width="full"
+        view_height="26"
+        view_paddingLeft="20"
+        view_paddingRight="20"
+        view_masksToBounds="YES"
+        view_borderRadius="12"
+        view_borderWidth="0.3"
+        view_borderColor="#ff2e2e2e"
+        text_color="#ff000000"
+        text_placeholderColor="#ffd6d6d6"
+        text_placeholder="搜索一下附近吧..."
+        layout_marginLeft="30"
+        layout_marginRight="30"
+        layout_gravity="center|left"/>
+    
+</FrameLayout>
+

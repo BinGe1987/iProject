@@ -175,6 +175,9 @@
 		77A8B63721E4DE8200BC8C70 /* DiscoverTechData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63621E4DE8200BC8C70 /* DiscoverTechData.m */; };
 		77A8B63A21E4E72B00BC8C70 /* ClassifyViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63921E4E72B00BC8C70 /* ClassifyViewHandler.m */; };
 		77A8B63D21E4E82300BC8C70 /* ClassifyAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63C21E4E82300BC8C70 /* ClassifyAdapter.m */; };
+		77A8B64121E4EA8000BC8C70 /* ClassifyNvPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64021E4EA8000BC8C70 /* ClassifyNvPresenter.m */; };
+		77A8B64421E4EA9700BC8C70 /* ClassifyNvViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64321E4EA9700BC8C70 /* ClassifyNvViewHandler.m */; };
+		77A8B64621E4EAB000BC8C70 /* ClassifyNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B64521E4EAB000BC8C70 /* ClassifyNavigation.xml */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -692,6 +695,11 @@
 		77A8B63921E4E72B00BC8C70 /* ClassifyViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyViewHandler.m; sourceTree = "<group>"; };
 		77A8B63B21E4E82300BC8C70 /* ClassifyAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyAdapter.h; sourceTree = "<group>"; };
 		77A8B63C21E4E82300BC8C70 /* ClassifyAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyAdapter.m; sourceTree = "<group>"; };
+		77A8B63F21E4EA8000BC8C70 /* ClassifyNvPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyNvPresenter.h; sourceTree = "<group>"; };
+		77A8B64021E4EA8000BC8C70 /* ClassifyNvPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyNvPresenter.m; sourceTree = "<group>"; };
+		77A8B64221E4EA9700BC8C70 /* ClassifyNvViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyNvViewHandler.h; sourceTree = "<group>"; };
+		77A8B64321E4EA9700BC8C70 /* ClassifyNvViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyNvViewHandler.m; sourceTree = "<group>"; };
+		77A8B64521E4EAB000BC8C70 /* ClassifyNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClassifyNavigation.xml; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1160,6 +1168,7 @@
 		771CA3A421DC9C4D00B00F11 /* Classify */ = {
 			isa = PBXGroup;
 			children = (
+				77A8B63E21E4EA6800BC8C70 /* Navigation */,
 				771CA3A521DC9C6000B00F11 /* ClassifyViewController.h */,
 				771CA3A621DC9C6000B00F11 /* ClassifyViewController.m */,
 				77C3977421E443660016CEE3 /* ClassifyPresenter.h */,
@@ -1799,6 +1808,18 @@
 				77A38A6B21E32ECC00042B04 /* RootViewLayoutParams.m */,
 			);
 			path = RootView;
+			sourceTree = "<group>";
+		};
+		77A8B63E21E4EA6800BC8C70 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				77A8B63F21E4EA8000BC8C70 /* ClassifyNvPresenter.h */,
+				77A8B64021E4EA8000BC8C70 /* ClassifyNvPresenter.m */,
+				77A8B64221E4EA9700BC8C70 /* ClassifyNvViewHandler.h */,
+				77A8B64321E4EA9700BC8C70 /* ClassifyNvViewHandler.m */,
+				77A8B64521E4EAB000BC8C70 /* ClassifyNavigation.xml */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 		77B0541D21C943760045A489 /* WebImage */ = {
@@ -3001,6 +3022,7 @@
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
 				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
 				77C3977321E440AC0016CEE3 /* ClassifyViewController.xml in Resources */,
+				77A8B64621E4EAB000BC8C70 /* ClassifyNavigation.xml in Resources */,
 				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
 				77CEA54421D5D30D00B388E4 /* MineNavigation.json in Resources */,
 				771CA3CF21DCB54800B00F11 /* ClubDetailProfile.xml in Resources */,
@@ -3334,11 +3356,13 @@
 				771CA3ED21DCEFC000B00F11 /* CommentData.m in Sources */,
 				7734C0DB21D22EFD009D1EE8 /* ClassifyData.m in Sources */,
 				771CA39621DC59E500B00F11 /* DescoverClubMenuViewHandler.m in Sources */,
+				77A8B64121E4EA8000BC8C70 /* ClassifyNvPresenter.m in Sources */,
 				776B55B321BE6B1500793CAF /* Button.m in Sources */,
 				77CEA4D421D4970A00B388E4 /* ViewPagerModel.m in Sources */,
 				776B55BB21BE966800793CAF /* GroupViewParams.m in Sources */,
 				77EA8F7B21B90732001B8959 /* BaseViewController.m in Sources */,
 				77B0559121D1F7800045A489 /* HomePresenter.m in Sources */,
+				77A8B64421E4EA9700BC8C70 /* ClassifyNvViewHandler.m in Sources */,
 				77EA8F4B21B90226001B8959 /* FrameViewModel.m in Sources */,
 				77CEA4D721D4973B00B388E4 /* ViewPagerParams.m in Sources */,
 				77EA8F4521B90226001B8959 /* ImageViewModel.m in Sources */,

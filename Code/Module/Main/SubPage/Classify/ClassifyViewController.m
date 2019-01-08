@@ -7,6 +7,7 @@
 
 #import "ClassifyViewController.h"
 #import "ClassifyPresenter.h"
+#import "ClassifyNvPresenter.h"
 
 @interface ClassifyViewController ()
 
@@ -20,6 +21,14 @@
     [self setContentViewWithXML:@"ClassifyViewController.xml"];
     
     [self addPresenter:[[ClassifyPresenter alloc] initWithView:[self findViewByName:@"page_club"]]];
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 90, NVBARHIEGHT)];
+    self.navigationItem.titleView = view;
+    [self addPresenter:[[ClassifyNvPresenter alloc] initWithView:view]];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    
 }
 
 - (void)onLayoutSubViewsCompleted {
