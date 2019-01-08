@@ -131,19 +131,6 @@
     Data *clubSource = [respData dataWithKey:@"club_profile"];
     detail.clubData = [ClubData withData:clubSource];
     
-    //banner
-    detail.clubData.bannerList = [ListData new];
-    NSFileManager *manager = [NSFileManager defaultManager];
-    NSError *error;
-    NSString *folder = [[NSBundle mainBundle] pathForResource:@"banner" ofType:nil];
-    NSArray *fileList = [manager contentsOfDirectoryAtPath:folder error:&error];
-    for (NSString *name in fileList) {
-        BannerData *data = [BannerData new];
-        data.imageUrl = [NSString stringWithFormat:@"%@/%@", folder, name];
-        [detail.clubData.bannerList addData:data.imageUrl];
-    }
-    
-    
     //技师
     detail.techList = [ListData new];
     NSArray *tech = @[@{@"name":@"沐沐",@"number":@"25",@"image":@""},

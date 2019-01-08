@@ -22,6 +22,16 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *consumeCount;   //消费人数
 @property (nonatomic, strong) NSString *commentNum;     //评价
 @property (nonatomic, strong) NSString *distance;       //距离 km
+@property (nonatomic, strong) NSString *address;        //地址
+@property (nonatomic, strong) NSString *startTime;      //开始时间
+@property (nonatomic, strong) NSString *endTime;        //结束时间
+@property (nonatomic, strong) NSString *telPhone;       //电话号码
+@property (nonatomic, strong) NSString *category;       //分类
+
+@property (nonatomic, assign) NSInteger followCount;    //关注数量
+@property (nonatomic, assign) NSInteger isFollow;       //当前用户是否已关注
+@property (nonatomic, assign) NSInteger serviceCount;   //项目数量
+@property (nonatomic, assign) NSInteger techCount;      //技师数量
 
 @property (nonatomic, assign) CGFloat discount;       //折扣 (单位分)
 @property (nonatomic, assign) CGFloat clubDiscount;   //升级最高折扣 (单位分)
