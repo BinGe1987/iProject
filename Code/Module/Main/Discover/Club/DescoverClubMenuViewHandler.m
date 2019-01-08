@@ -12,10 +12,13 @@
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
-    ClubMenu *clubMenu = [ClubMenu new];
-    [view addSubview:clubMenu];
-    
     return self;
+}
+
+- (void)setData:(id)data {
+
+    ClubMenu *clubMenu = (ClubMenu *)self.view;
+    [clubMenu setMenuData:data];
 }
 
 @end

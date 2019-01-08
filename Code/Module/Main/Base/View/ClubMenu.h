@@ -11,6 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ClubMenu : DropdownMenu
 
+- (void)setMenuData:(Data *)data;
 
 @end
 

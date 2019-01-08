@@ -85,6 +85,13 @@
     
 //#warning TODO 调试
 //    main.selectedIndex = 3;
+    [self performSelector:@selector(debug) withObject:nil afterDelay:2];
+}
+
+- (void)debug {
+    AppDelegate *app = (AppDelegate*)[UIApplication sharedApplication].delegate;
+    MainTabbarController *main = (MainTabbarController *)app.window.rootViewController;
+    main.selectedIndex = 1;
 }
 
 

@@ -23,14 +23,14 @@
     self.handler = [[DiscoverClubViewHandler alloc] initWithView:[view findViewByName:@"table"]];
     self.handler.delegate = self;
     
-    self.menuViewHandler = [[DescoverClubMenuViewHandler alloc] initWithView:view];
+    self.menuViewHandler = [[DescoverClubMenuViewHandler alloc] initWithView:[view findViewByName:@"menu"]];
     self.menuViewHandler.delegate = self;
     
     
     
     WeakSelf(self)
     [[DataCenter get] perform:OperationGetClubFilterData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-//        [weakself.handler setData:data];
+        [weakself.menuViewHandler setData:data];
     }];
     [[DataCenter get] perform:OperationGetDiscoverClubData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         [weakself.handler setData:data];

@@ -9,11 +9,11 @@
 
 @implementation DropdownMenuItem
 
-- (instancetype)initWithID:(NSInteger)itemID name:(NSString *)name {
+- (instancetype)initWithID:(NSString *)itemID name:(NSString *)name {
     return [self initWithID:itemID name:name icon:nil];
 }
 
-- (instancetype)initWithID:(NSInteger)itemID name:(NSString *)name icon:(UIImage * _Nullable)icon {
+- (instancetype)initWithID:(NSString *)itemID name:(NSString *)name icon:(UIImage * _Nullable)icon {
     self = [super init];
     self.itemID = itemID;
     self.name = name;
