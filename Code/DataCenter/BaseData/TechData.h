@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *imageUrl;
 @property (nonatomic, strong) NSString *browseNum;
 @property (nonatomic, strong) NSString *followNum;
-@property (nonatomic, strong) NSString *clubId;
 @property (nonatomic, strong) NSString *commentNum;
 
 @end

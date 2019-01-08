@@ -172,6 +172,7 @@
 		77A8B62F21E4A0C600BC8C70 /* DiscoverClub.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B62E21E4A0C600BC8C70 /* DiscoverClub.xml */; };
 		77A8B63121E4A1EC00BC8C70 /* DiscoverTech.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B63021E4A1EC00BC8C70 /* DiscoverTech.xml */; };
 		77A8B63421E4B02500BC8C70 /* UICollectionView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63321E4B02500BC8C70 /* UICollectionView+Refresh.m */; };
+		77A8B63721E4DE8200BC8C70 /* DiscoverTechData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63621E4DE8200BC8C70 /* DiscoverTechData.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -683,6 +684,8 @@
 		77A8B63021E4A1EC00BC8C70 /* DiscoverTech.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DiscoverTech.xml; sourceTree = "<group>"; };
 		77A8B63221E4B02500BC8C70 /* UICollectionView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Refresh.h"; sourceTree = "<group>"; };
 		77A8B63321E4B02500BC8C70 /* UICollectionView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Refresh.m"; sourceTree = "<group>"; };
+		77A8B63521E4DE8200BC8C70 /* DiscoverTechData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiscoverTechData.h; sourceTree = "<group>"; };
+		77A8B63621E4DE8200BC8C70 /* DiscoverTechData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiscoverTechData.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -2343,6 +2346,8 @@
 				77CEA4FE21D4C30D00B388E4 /* DiscoverTechPerformer.m */,
 				77CEA4F421D4C2BF00B388E4 /* DiscoverData.h */,
 				77CEA4F521D4C2BF00B388E4 /* DiscoverData.m */,
+				77A8B63521E4DE8200BC8C70 /* DiscoverTechData.h */,
+				77A8B63621E4DE8200BC8C70 /* DiscoverTechData.m */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -3138,6 +3143,7 @@
 				77B0558E21D1DA840045A489 /* ComponentData.m in Sources */,
 				7734C11B21D23A45009D1EE8 /* KafkaRingIndicatorFooter.m in Sources */,
 				77B0545121C943760045A489 /* YYImageCoder.m in Sources */,
+				77A8B63721E4DE8200BC8C70 /* DiscoverTechData.m in Sources */,
 				7723E1D121D780C000B77890 /* XMLModel.m in Sources */,
 				771CA38921D94EB800B00F11 /* DOPDropDownMenu.m in Sources */,
 				771CA42321DDC2F500B00F11 /* CommentListHandler.m in Sources */,

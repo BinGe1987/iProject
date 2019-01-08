@@ -7,6 +7,7 @@
 
 #import "Data.h"
 #import "ListData.h"
+#import "DiscoverTechData.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

@@ -4,8 +4,6 @@
     "view_height":"full",
     "view_masksToBounds":"YES",
     "view_borderRadius":"5",
-    "view_borderWidth":"1",
-    "view_borderColor":"#00ffb925",
     "subviews":[
         {
             "view_name":"image",
@@ -14,6 +12,12 @@
             "view_height":"full",
             "image_scaleType":"full",
             "image_src":"@default_head_girl",
+        },
+        {
+            "view_type":"view",
+            "view_width":"full",
+            "view_height":"30",
+            "view_background":"#10000000",
         },
         {
             "view_name":"club_name",
@@ -34,7 +38,7 @@
             "layout_gravity":"bottom",
             "subviews":[
                 {
-                    "view_name":"name",
+                    "view_name":"tech_name",
                     "view_type":"label",
                     "view_width":"auto",
                     "view_height":"18",
@@ -45,7 +49,7 @@
                     "layout_marginTop":"6",
                 },
                 {
-                    "view_name":"",
+                    "view_name":"browse",
                     "view_type":"label",
                     "view_width":"auto",
                     "view_height":"18",
@@ -58,7 +62,7 @@
                 },
                 {
                     "view_name":"follow",
-                    "view_type":"button",
+                    "view_type":"label",
                     "view_width":"auto",
                     "view_height":"16",
                     "view_masksToBounds":"YES",
@@ -76,7 +80,7 @@
                 },
                 {
                     "view_name":"comment",
-                    "view_type":"button",
+                    "view_type":"label",
                     "view_width":"auto",
                     "view_height":"16",
                     "view_masksToBounds":"YES",
@@ -93,6 +97,6 @@
                     "layout_marginRight":"6",
                 },
             ]
-        }
+        },
     ]
 }

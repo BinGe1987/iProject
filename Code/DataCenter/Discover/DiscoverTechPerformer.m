@@ -16,7 +16,7 @@ static int page;
     if ([operation isEqualToString:OperationGetDiscoverTechData]) {
         page = 1;
     } else {
-//        page += 1;
+        page += 1;
     }
     
     NSString *api;

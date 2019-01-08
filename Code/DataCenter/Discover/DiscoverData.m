@@ -40,13 +40,7 @@
         Data *respData = [data dataWithKey:@"respData"];
         NSArray *techList = [respData arrayWithKey:@"list"];
         for (Data *dic in techList) {
-            [self.tech addData:[TechData withData:dic]];
-        }
-        for (Data *dic in techList) {
-            [self.tech addData:[TechData withData:dic]];
-        }
-        for (Data *dic in techList) {
-            [self.tech addData:[TechData withData:dic]];
+            [self.tech addData:[DiscoverTechData withData:dic]];
         }
     }
 }
@@ -56,7 +50,7 @@
         Data *respData = [data dataWithKey:@"respData"];
         NSArray *techList = [respData arrayWithKey:@"list"];
         for (Data *dic in techList) {
-            [self.tech addData:[TechData withData:dic]];
+            [self.tech addData:[DiscoverTechData withData:dic]];
         }
     }
 }
