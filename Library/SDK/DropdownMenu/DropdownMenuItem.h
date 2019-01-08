@@ -11,7 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DropdownMenuItem : NSObject
 
-@property (nonatomic, assign)   NSString                        *itemID;
+@property (nonatomic, retain)   id                              data;
+
+@property (nonatomic, copy)     NSString                        *itemID;
 @property (nonatomic, copy)     NSString                        *name;
 @property (nonatomic, strong)   UIImage                         *icon;
 @property (nonatomic, strong)   NSArray<DropdownMenuItem *>     *childItems;

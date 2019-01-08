@@ -51,5 +51,10 @@
     return [Data JSONWithDictionary:[self.source objectForKey:key]];
 }
 
+-(id)copyWithZone:(NSZone *)zone {
+    Data *newClass = [[[self class] alloc] init];
+    [newClass setData:self];
+    return newClass;
+}
 
 @end

@@ -7,15 +7,25 @@
 
 #import "ClubMenu.h"
 
+@interface ClubMenu()<DropDownMenuDelegate>
+
+@end
+
 @implementation ClubMenu
 
 - (instancetype)init
 {
     self = [super initWithFrame:CGRectMake(0, 0, SCREENWIDTH, 32) andDropdownViewHeight:700];
     if (self) {
-        
+        self.delegate = self;
     }
     return self;
+}
+
+- (void)didMenuItemSelectSelete:(DropdownMenuItem *)item {
+    if (item.data) {
+        
+    }
 }
 
 - (void)setMenuData:(Data *)data {
@@ -35,6 +45,7 @@
             NSString *name = [child stringWithKey:@"placeName"];
             NSString *itemId = [child stringWithKey:@"id"];
             DropdownMenuItem *itemChild  = [[DropdownMenuItem alloc] initWithID:itemId name:name];
+            itemChild.data = child;
             [array addObject:itemChild];
         }
         item.childItems = array;
@@ -50,6 +61,7 @@
         NSString *name = [itemData stringWithKey:@"name"];
         NSString *itemId = [itemData stringWithKey:@"id"];
         DropdownMenuItem *item  = [[DropdownMenuItem alloc] initWithID:itemId name:name];
+        item.data = itemData;
         [menu addObject:item];
     }
     return menu;
@@ -62,6 +74,7 @@
         NSString *name = [itemData stringWithKey:@"name"];
         NSString *itemId = [itemData stringWithKey:@"id"];
         DropdownMenuItem *item  = [[DropdownMenuItem alloc] initWithID:itemId name:name];
+        item.data = itemData;
         [menu addObject:item];
     }
     return menu;

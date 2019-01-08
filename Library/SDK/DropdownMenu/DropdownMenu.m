@@ -158,10 +158,16 @@
 
 - (void)menu:(DOPDropDownMenu *)menu didSelectRowAtIndexPath:(DOPIndexPath *)indexPath
 {
+    NSArray *arr = self.menuItems[indexPath.column];
+    DropdownMenuItem *item = arr[indexPath.row];
     if (indexPath.item >= 0) {
         NSLog(@"点击了 %ld - %ld - %ld 项目",indexPath.column,indexPath.row,indexPath.item);
+        item = item.childItems[indexPath.item];
     }else {
         NSLog(@"点击了 %ld - %ld 项目",indexPath.column,indexPath.row);
+    }
+    if (self.delegate) {
+        [self.delegate didMenuItemSelectSelete:item];
     }
 }
 
