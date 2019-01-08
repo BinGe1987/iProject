@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DiscoverTechViewHandler : ViewHandler
 
+- (void)setHotData:(id)data;
+- (void)setTopData:(id)data;
+
 @end
 
 NS_ASSUME_NONNULL_END

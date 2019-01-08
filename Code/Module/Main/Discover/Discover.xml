@@ -11,8 +11,8 @@
         view_width="full"
         view_height="full">
         
-        <include name="DiscoverClub.xml"/>
         <include name="DiscoverTech.xml"/>
+        <include name="DiscoverClub.xml"/>
         
     </ViewPager>
 </LinearLayout>

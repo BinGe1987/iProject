@@ -10,8 +10,13 @@
 @implementation DiscoverTechPerformer
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
-    //    sleep(2);
-    return [Data new];
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_HomeTech];
+    request.data = @{@"token":DataCenter.token};
+    HttpResponse *response = [Http post:request];
+    Data *data = [Data new];
+    data.source = response.data;
+    data.error = response.error;
+    return data;
 }
 
 @end

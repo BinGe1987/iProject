@@ -171,6 +171,7 @@
 		77A8B62D21E49FEA00BC8C70 /* Discover.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B62C21E49FEA00BC8C70 /* Discover.xml */; };
 		77A8B62F21E4A0C600BC8C70 /* DiscoverClub.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B62E21E4A0C600BC8C70 /* DiscoverClub.xml */; };
 		77A8B63121E4A1EC00BC8C70 /* DiscoverTech.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B63021E4A1EC00BC8C70 /* DiscoverTech.xml */; };
+		77A8B63421E4B02500BC8C70 /* UICollectionView+Refresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B63321E4B02500BC8C70 /* UICollectionView+Refresh.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -680,6 +681,8 @@
 		77A8B62C21E49FEA00BC8C70 /* Discover.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Discover.xml; sourceTree = "<group>"; };
 		77A8B62E21E4A0C600BC8C70 /* DiscoverClub.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DiscoverClub.xml; sourceTree = "<group>"; };
 		77A8B63021E4A1EC00BC8C70 /* DiscoverTech.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = DiscoverTech.xml; sourceTree = "<group>"; };
+		77A8B63221E4B02500BC8C70 /* UICollectionView+Refresh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Refresh.h"; sourceTree = "<group>"; };
+		77A8B63321E4B02500BC8C70 /* UICollectionView+Refresh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Refresh.m"; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -2362,6 +2365,8 @@
 		77CEA52521D506C400B388E4 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				77A8B63221E4B02500BC8C70 /* UICollectionView+Refresh.h */,
+				77A8B63321E4B02500BC8C70 /* UICollectionView+Refresh.m */,
 				77CEA52621D506F100B388E4 /* UICollectionView+Adapter.h */,
 				77CEA52721D506F100B388E4 /* UICollectionView+Adapter.m */,
 				77CEA52921D5071200B388E4 /* CollectionViewAdapter.h */,
@@ -3281,6 +3286,7 @@
 				77EA8E9921B8FCF2001B8959 /* HomeViewController.m in Sources */,
 				77B0554321D0D3120045A489 /* TabData.m in Sources */,
 				771CA39321D9A5B000B00F11 /* DropdownMenuItem.m in Sources */,
+				77A8B63421E4B02500BC8C70 /* UICollectionView+Refresh.m in Sources */,
 				77A38A7221E3397000042B04 /* ClubListData.m in Sources */,
 				77B0547F21CA47560045A489 /* KSYYImageManager.m in Sources */,
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
