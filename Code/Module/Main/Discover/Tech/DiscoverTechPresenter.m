@@ -38,10 +38,10 @@
         [self refreshData];
     }
     else if ([action isEqualToString:@"action_refresh_foot"]) {
-//        WeakSelf(self)
-//        [[DataCenter get] perform:OperationGetDiscoverClubDataDropUp params:[Data withDictionary:self.menuDict] callback:^(id  _Nonnull operation, id  _Nullable data) {
-//            [weakself.clubViewHandler updateData:data];
-//        }];
+        WeakSelf(self)
+        [[DataCenter get] perform:OperationGetDiscoverTechDataDropUp params:@(self.current) callback:^(id  _Nonnull operation, id  _Nullable data) {
+            [weakself.techHandler updateData:data];
+        }];
     }
 }
 

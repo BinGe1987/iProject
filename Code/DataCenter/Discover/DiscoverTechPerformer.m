@@ -9,7 +9,15 @@
 
 @implementation DiscoverTechPerformer
 
+
+static int page;
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
+    
+    if ([operation isEqualToString:OperationGetDiscoverTechData]) {
+        page = 1;
+    } else {
+//        page += 1;
+    }
     
     NSString *api;
     if ([params integerValue] == 0) {
@@ -19,7 +27,7 @@
     }
     HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:api];
     request.data = @{@"token":DataCenter.token,
-                     @"page":@"1",
+                     @"page":@(page),
                      @"pageSize":@"10",
                      @"techCount":@"0"
                      };

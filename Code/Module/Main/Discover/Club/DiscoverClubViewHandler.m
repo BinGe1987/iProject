@@ -43,10 +43,15 @@
 }
 
 - (void)updateData:(id)data {
+    [self.tableView finishFootRefresh];
+    
     DiscoverData *discoverData = (DiscoverData *)data;
     
     NSArray *old = self.section.array;
     NSMutableArray *new = [discoverData.club.list mutableCopy];
+    if (old.count == new.count) {
+        return;
+    }
     self.section.array = new;
     
     NSInteger sectionIndex = [self.tableView.adapter sectionIndex:self.section];
@@ -60,10 +65,8 @@
     [self.tableView beginUpdates];
     [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
     [self.tableView endUpdates];
-//    [self.tableView reloadData];
     
-//    [self.tableView finishHeadRefresh];
-    [self.tableView finishFootRefresh];
+    
 }
 
 - (void)setRefreshHandler  {

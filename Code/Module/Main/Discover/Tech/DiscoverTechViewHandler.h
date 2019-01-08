@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setRefreshHandler;
 
+- (void)updateData:(id)data;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -25,7 +25,10 @@
         DiscoverClubPerformer *club = [DiscoverClubPerformer new];
         [self bind:OperationGetDiscoverClubData performer:club parser:self];
         [self bind:OperationGetDiscoverClubDataDropUp performer:club parser:self];
-        [self bind:OperationGetDiscoverTechData performer:[DiscoverTechPerformer new] parser:self];
+        
+        DiscoverTechPerformer *tech = [DiscoverTechPerformer new];
+        [self bind:OperationGetDiscoverTechData performer:tech parser:self];
+        [self bind:OperationGetDiscoverTechDataDropUp performer:tech parser:self];
     }
     return self;
 }
@@ -39,6 +42,9 @@
     }
     else if ([operation isEqualToString:OperationGetDiscoverTechData]) {
         [self.data setTechData:source];
+    }
+    else if ([operation isEqualToString:OperationGetDiscoverTechDataDropUp]) {
+        [self.data addTechData:source];
     }
     return [self getData];
 }

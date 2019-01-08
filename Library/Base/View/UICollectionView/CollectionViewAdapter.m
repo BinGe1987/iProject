@@ -27,6 +27,10 @@
     return [cSection.array count];
 }
 
+- (NSInteger)sectionIndex:(CollectionViewSection *)section {
+    return [self.data indexOfObject:section];
+}
+
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:cellId forIndexPath:indexPath];

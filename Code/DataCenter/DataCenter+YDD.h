@@ -47,6 +47,7 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationGetDiscoverClubData            (@"OperationGetDiscoverClubData")
 #define OperationGetDiscoverClubDataDropUp      (@"OperationGetDiscoverClubDataDropUp")
 #define OperationGetDiscoverTechData            (@"OperationGetDiscoverTechData")
+#define OperationGetDiscoverTechDataDropUp      (@"OperationGetDiscoverTechDataDropUp")
 
 #pragma make  订单相关
 #define OperationGetOrderData                   (@"OperationGetOrderData")

@@ -71,7 +71,7 @@
 - (void)setRefreshHandler {
     WeakSelf(self)
     [self.collectionView setHeadRefreshHandler:^{
-        [weakself.collectionView performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:1];
+        [weakself.collectionView performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:1.5];
         if (weakself.delegate) {
             [weakself.delegate onViewAction:@"action_refresh_head" data:nil];
         }
@@ -85,11 +85,40 @@
 
 - (void)setData:(id)data {
     DiscoverData *discoverData = (DiscoverData *)data;
-    self.section.array = discoverData.tech.list;
+    self.section.array = [discoverData.tech.list mutableCopy];
     [self.collectionView reloadData];
+//    self.collectionView.contentOffset = CGPointMake(0, -(STATUSBARHIEGHT + 44));
+    
+//    [self.collectionView finishFootRefresh];
+    
+}
+
+- (void)updateData:(id)data {
+    
+//    DiscoverData *discoverData = (DiscoverData *)data;
+//    self.section.array = discoverData.tech.list;
+//    [self.collectionView reloadData];
+//
+    DiscoverData *discoverData = (DiscoverData *)data;
+//
+    NSArray *old = self.section.array;
+    NSMutableArray *new = [discoverData.tech.list mutableCopy];
+    self.section.array = new;
+    
+    NSInteger sectionIndex = [self.collectionView.adapter sectionIndex:self.section];
+    NSMutableArray *indexPaths = [[NSMutableArray alloc] init];
+
+    for (NSInteger i=old.count; i<new.count; i++) {
+        NSIndexPath *indexPath = [NSIndexPath indexPathForRow:i inSection:sectionIndex];
+        [indexPaths addObject: indexPath];
+    }
+    [self.collectionView insertItemsAtIndexPaths:indexPaths];
+//
+//    [self.collectionView beginUpdates];
+//    [self.collectionView insertRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationFade];
+//    [self.collectionView endUpdates];
     
     [self.collectionView finishFootRefresh];
-    
 }
 
 @end

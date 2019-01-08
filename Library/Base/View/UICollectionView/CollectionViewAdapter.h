@@ -23,6 +23,8 @@ static NSString *const footerId = @"footerId";
 
 + (instancetype)adapterWithSourceData:(NSArray<CollectionViewSection *> *)data;
 
+- (NSInteger)sectionIndex:(CollectionViewSection *)section;
+
 @end
 
 NS_ASSUME_NONNULL_END
