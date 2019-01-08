@@ -13,6 +13,8 @@
 
 @property (nonatomic, strong) ViewHandler *menuViewHandler;
 
+@property (nonatomic, strong) NSDictionary *menuDict;
+
 @end
 
 
@@ -20,6 +22,9 @@
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
+    
+    self.menuDict = [NSMutableDictionary new];
+    
     self.handler = [[DiscoverClubViewHandler alloc] initWithView:[view findViewByName:@"table"]];
     self.handler.delegate = self;
     
@@ -43,7 +48,22 @@
 
 - (void)refreshClubData:(Data *)data {
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetDiscoverClubData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+    Data *params = [Data withData:data];
+    NSString *type = [params stringWithKey:@"type"];
+    if (!type) {
+        NSString *areaId = [params stringWithKey:@"id"];
+        if (areaId) {
+            [self.menuDict setValue:areaId forKey:@"areaId"];
+        }
+    }
+    else if ([type isEqualToString:@"club_category"]) {
+        [self.menuDict setValue:[params stringWithKey:@"id"] forKey:@"category"];
+    }
+    else if ([type isEqualToString:@"club_sort"]) {
+        [self.menuDict setValue:[params stringWithKey:@"value"] forKey:@"sort"];
+    }
+    
+    [[DataCenter get] perform:OperationGetDiscoverClubData params:[Data withDictionary:self.menuDict] callback:^(id  _Nonnull operation, id  _Nullable data) {
         [weakself.handler setData:data];
     }];
 }

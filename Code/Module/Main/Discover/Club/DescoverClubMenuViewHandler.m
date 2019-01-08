@@ -10,12 +10,15 @@
 
 @interface DescoverClubMenuViewHandler()<DropDownMenuDelegate>
 
+
+
 @end
 
 @implementation DescoverClubMenuViewHandler
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
+    
     
     ClubMenu *clubMenu = (ClubMenu *)self.view;
     clubMenu.delegate = self;

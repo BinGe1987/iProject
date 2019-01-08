@@ -29,7 +29,13 @@
 }
 
 - (void)setMenuData:(Data *)data {
-    self.menuItems = @[[self areaMenu:data],[self classifyMenu:data],[self sortMenu:data]];
+    NSArray *area = [self areaMenu:data];
+    NSArray *classify = [self classifyMenu:data];
+    NSArray *sort = [self sortMenu:data];
+    if (area && area.count && classify && classify.count && sort && sort.count) {
+         self.menuItems = @[area,classify,sort];
+    }
+   
 }
 
 - (NSArray *)areaMenu:(Data *)data {

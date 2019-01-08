@@ -15,23 +15,13 @@
 }
 
 - (void)setClubData:(Data *)data {
-    //商家
-    NSArray *club = @[@{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""},
-                      @{@"name":@"小摩豆",@"image":@""}
-                      ];
-    for (NSDictionary *dic in club) {
-        ClubData *data = [ClubData new];
-        data.name = [dic objectForKey:@"name"];
-        data.imageUrl = [dic objectForKey:@"image"];
-        [self.club addData:data];
+    
+    if ([data isSuccess]) {
+        Data *respData = [data dataWithKey:@"respData"];
+        NSArray *club = [respData arrayWithKey:@"clubList"];
+        for (Data *clubData in club) {
+            [self.club addData:[ClubData withData:clubData]];
+        }
     }
 }
 
