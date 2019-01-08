@@ -22,7 +22,9 @@
     self = [super init];
     if (self) {
         self.data = [DiscoverData new];
-        [self bind:OperationGetDiscoverClubData performer:[DiscoverClubPerformer new] parser:self];
+        DiscoverClubPerformer *club = [DiscoverClubPerformer new];
+        [self bind:OperationGetDiscoverClubData performer:club parser:self];
+        [self bind:OperationGetDiscoverClubDataDropUp performer:club parser:self];
         [self bind:OperationGetDiscoverTechData performer:[DiscoverTechPerformer new] parser:self];
     }
     return self;
@@ -31,6 +33,9 @@
 - (id)parse:(id)operation withSource:(id)source {
     if ([operation isEqualToString:OperationGetDiscoverClubData]) {
         [self.data setClubData:source];
+    }
+    else if ([operation isEqualToString:OperationGetDiscoverClubDataDropUp]) {
+        [self.data addClubData:source];
     }
     else if ([operation isEqualToString:OperationGetDiscoverTechData]) {
         [self.data setTechData:source];

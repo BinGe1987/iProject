@@ -17,6 +17,12 @@
 - (UITableViewCell *)clubCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubTableViewCell * cell = [ClubTableViewCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
+    UIView *line = [cell.contentView findViewByName:@"line"];
+    if (indexPath.row == 0) {
+        [line setVisibility:ViewVisibilityInvisible];
+    } else {
+        [line setVisibility:ViewVisibilityVisible];
+    }
     [cell setData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }

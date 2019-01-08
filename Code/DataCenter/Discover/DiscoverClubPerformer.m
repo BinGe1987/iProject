@@ -10,6 +10,13 @@
 static int currentPage = 0;
 @implementation DiscoverClubPerformer
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
+    
+    if ([operation isEqualToString:OperationGetDiscoverClubDataDropUp]) {
+        currentPage += 1;
+    } else {
+        currentPage = 1;
+    }
+    
     Data *paramsData = [Data withData:params];
     
     HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_HomeClub];
@@ -18,7 +25,7 @@ static int currentPage = 0;
                      @"laty"        :[NSNumber numberWithInt:0],
                      @"lngx"        :[NSNumber numberWithInt:0],
                      @"areaId"      :[paramsData stringWithKey:@"areaId" defaultValue:@"0"],
-                     @"page"        :[NSNumber numberWithInt:++currentPage],
+                     @"page"        :[NSNumber numberWithInt:currentPage],
                      @"pageSize"    :@"10",
                      @"category"    :[paramsData stringWithKey:@"category" defaultValue:@"0"],
                      @"sort"        :[paramsData stringWithKey:@"sort" defaultValue:@"default"],
@@ -36,8 +43,6 @@ static int currentPage = 0;
         [respData setObject:[NSNumber numberWithInt:currentPage] forKey:@"pageCurrent"];
         [source setObject:respData forKey:@"respData"];
         data.source = source;
-    } else {
-        currentPage--;
     }
     return data;
 }

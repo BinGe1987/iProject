@@ -19,13 +19,23 @@
     if ([data isSuccess]) {
         Data *respData = [data dataWithKey:@"respData"];
         NSArray *club = [respData arrayWithKey:@"clubList"];
+        [self.club clear];
         for (Data *clubData in club) {
             [self.club addData:[ClubData withData:clubData]];
         }
     }
 }
 
+- (void)addClubData:(Data *)data {
+    Data *respData = [data dataWithKey:@"respData"];
+    NSArray *club = [respData arrayWithKey:@"clubList"];
+    for (Data *clubData in club) {
+        [self.club addData:[ClubData withData:clubData]];
+    }
+}
+
 - (void)setTechData:(Data *)data {
+    [self.club clear];
     //tech
     //技师
     NSArray *techList = @[@{@"name":@"沐沐",@"number":@"25",@"image":@""},
@@ -577,6 +587,10 @@
         techData.imageUrl = [dic objectForKey:@"image"];
         [self.tech addData:techData];
     }
+    
+}
+
+- (void)addTechData:(Data *)data {
     
 }
 

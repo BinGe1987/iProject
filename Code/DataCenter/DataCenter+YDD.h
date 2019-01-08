@@ -45,6 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma make 发现页相关
 ///获取发现页信息
 #define OperationGetDiscoverClubData            (@"OperationGetDiscoverClubData")
+#define OperationGetDiscoverClubDataDropUp      (@"OperationGetDiscoverClubDataDropUp")
 #define OperationGetDiscoverTechData            (@"OperationGetDiscoverTechData")
 
 #pragma make  订单相关

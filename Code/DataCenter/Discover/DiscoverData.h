@@ -17,8 +17,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (void)setClubData:(Data *)data;
+- (void)addClubData:(Data *)data;
 
 - (void)setTechData:(Data *)data;
+- (void)addTechData:(Data *)data;
 
 @end
 

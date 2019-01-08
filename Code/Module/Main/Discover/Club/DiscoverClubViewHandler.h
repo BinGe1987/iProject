@@ -11,6 +11,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DiscoverClubViewHandler : ViewHandler
 
+- (void)setRefreshHandler;
+
+- (void)updateData:(id)data;
+
 @end
 
 NS_ASSUME_NONNULL_END

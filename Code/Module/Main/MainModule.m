@@ -83,9 +83,8 @@
         }
     }
     
-//#warning TODO 调试
-//    main.selectedIndex = 3;
-    [self performSelector:@selector(debug) withObject:nil afterDelay:2];
+#warning TODO 调试
+    [self performSelector:@selector(debug) withObject:nil afterDelay:3];
 }
 
 - (void)debug {
