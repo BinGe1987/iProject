@@ -22,8 +22,14 @@
 #define API_HomeClub                    (@"/ydd-manager/api/v1/home/club/list")
 #define API_HomeTech                    (@"/ydd-manager/api/v1/home/recommend/list")
 
+#pragma make 会所相关
+#define API_ClubGetFilters              (@"/ydd-manager/api/v1/config/club/search/param")           //会所过滤哭
+
+
 #pragma make 我的页面相关
-#define API_MineGetMineData             (@"/api/v1/personalInfo/getPerInfoDetail")      //获取我的页面数据
+#define API_MineGetMineData             (@"/api/v1/personalInfo/getPerInfoDetail")                  //获取我的页面数据
+
+
 
 
 

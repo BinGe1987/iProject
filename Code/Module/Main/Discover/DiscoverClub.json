@@ -12,15 +12,15 @@
             "view_height":"full",
             "view_background":"#ffffffff",
         },
+       
         {
-            "view_name":"layout_menu",
-            "view_type":"frame",
+            "view_type":"custom",
+            "view_class":"ClubMenu",
             "view_width":"full",
-            "view_height":"30",
-            "view_orientation":"V",
-            "view_background":"#03f00fff",
+            "view_height":"32",
             "layout_fixTop":"YES",
             "layout_marginTop":"44",
+            "view_background":"#ff00ff00",
         },
         {
             "view_type":"view",

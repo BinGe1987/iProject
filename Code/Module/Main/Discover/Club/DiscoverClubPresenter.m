@@ -26,7 +26,12 @@
     self.menuViewHandler = [[DescoverClubMenuViewHandler alloc] initWithView:view];
     self.menuViewHandler.delegate = self;
     
+    
+    
     WeakSelf(self)
+    [[DataCenter get] perform:OperationGetClubFilterData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+//        [weakself.handler setData:data];
+    }];
     [[DataCenter get] perform:OperationGetDiscoverClubData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
         [weakself.handler setData:data];
     }];

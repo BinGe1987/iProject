@@ -7,6 +7,7 @@
 
 #import "ClubHandler.h"
 #import "ClubDetailPerformer.h"
+#import "ClubFilterPerformer.h"
 
 @implementation ClubHandler
 
@@ -15,6 +16,7 @@
     self = [super init];
     if (self) {
         [self bind:OperationGetClubDetailData performerPlus:[ClubDetailPerformer class]];
+        [self bind:OperationGetClubFilterData performerPlus:[ClubFilterPerformer class]];
     }
     return self;
 }

@@ -39,6 +39,9 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationGetHomeDataClubDropdown        (@"OperationGetHomeDataClubDropdown")
 #define OperationGetHomeDataClubDropup          (@"OperationGetHomeDataClubDropup")
 
+///获取会所过滤器
+#define OperationGetClubFilterData              (@"OperationGetClubFilterData")
+
 #pragma make 发现页相关
 ///获取发现页信息
 #define OperationGetDiscoverClubData            (@"OperationGetDiscoverClubData")

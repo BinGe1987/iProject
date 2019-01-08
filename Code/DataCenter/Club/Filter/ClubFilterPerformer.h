@@ -1,16 +1,15 @@
 //
-//  ClubMenu.h
+//  ClubFilterPerformer.h
 //  APP
 //
 //  Created by BinGe on 2019/1/8.
 //
 
-#import "DropdownMenu.h"
+#import "Performer.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ClubMenu : DropdownMenu
-
+@interface ClubFilterPerformer : Performer
 
 @end
 

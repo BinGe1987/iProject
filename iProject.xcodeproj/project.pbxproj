@@ -251,6 +251,8 @@
 		77C3977621E443660016CEE3 /* ClassifyPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3977521E443660016CEE3 /* ClassifyPresenter.m */; };
 		77C3977921E444150016CEE3 /* ClassifyMenuViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3977821E444150016CEE3 /* ClassifyMenuViewHandler.m */; };
 		77C3977D21E445700016CEE3 /* ClubMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3977C21E445700016CEE3 /* ClubMenu.m */; };
+		77C3978021E459620016CEE3 /* ClubFilterPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3977F21E459620016CEE3 /* ClubFilterPerformer.m */; };
+		77C3978421E45A4F0016CEE3 /* ClubFilterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77C3978321E45A4F0016CEE3 /* ClubFilterData.m */; };
 		77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4A421D3188E00B388E4 /* UIView+JSON.m */; };
 		77CEA4AA21D3578400B388E4 /* ClassifyUITableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77CEA4A921D3578400B388E4 /* ClassifyUITableViewCell.m */; };
 		77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */ = {isa = PBXBuildFile; fileRef = 77CEA4AC21D3599F00B388E4 /* ClassifyCell.json */; };
@@ -840,6 +842,10 @@
 		77C3977821E444150016CEE3 /* ClassifyMenuViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyMenuViewHandler.m; sourceTree = "<group>"; };
 		77C3977B21E445700016CEE3 /* ClubMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubMenu.h; sourceTree = "<group>"; };
 		77C3977C21E445700016CEE3 /* ClubMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubMenu.m; sourceTree = "<group>"; };
+		77C3977E21E459620016CEE3 /* ClubFilterPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubFilterPerformer.h; sourceTree = "<group>"; };
+		77C3977F21E459620016CEE3 /* ClubFilterPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubFilterPerformer.m; sourceTree = "<group>"; };
+		77C3978221E45A4F0016CEE3 /* ClubFilterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubFilterData.h; sourceTree = "<group>"; };
+		77C3978321E45A4F0016CEE3 /* ClubFilterData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubFilterData.m; sourceTree = "<group>"; };
 		77CEA4A321D3188E00B388E4 /* UIView+JSON.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JSON.h"; sourceTree = "<group>"; };
 		77CEA4A421D3188E00B388E4 /* UIView+JSON.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JSON.m"; sourceTree = "<group>"; };
 		77CEA4A821D3578400B388E4 /* ClassifyUITableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyUITableViewCell.h; sourceTree = "<group>"; };
@@ -1156,6 +1162,7 @@
 		771CA3B121DCA1EB00B00F11 /* Club */ = {
 			isa = PBXGroup;
 			children = (
+				77C3978121E459680016CEE3 /* Filter */,
 				771CA3B221DCA20B00B00F11 /* ClubHandler.h */,
 				771CA3B321DCA20B00B00F11 /* ClubHandler.m */,
 				771CA3B821DCA26D00B00F11 /* ClubDetailPerformer.h */,
@@ -2191,6 +2198,17 @@
 				77C3977C21E445700016CEE3 /* ClubMenu.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		77C3978121E459680016CEE3 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				77C3977E21E459620016CEE3 /* ClubFilterPerformer.h */,
+				77C3977F21E459620016CEE3 /* ClubFilterPerformer.m */,
+				77C3978221E45A4F0016CEE3 /* ClubFilterData.h */,
+				77C3978321E45A4F0016CEE3 /* ClubFilterData.m */,
+			);
+			path = Filter;
 			sourceTree = "<group>";
 		};
 		77CEA4AB21D3578B00B388E4 /* Classify */ = {
@@ -3244,6 +3262,7 @@
 				771CA43D21DDFB7300B00F11 /* HttpRequest.m in Sources */,
 				77CEA4EA21D4B79300B388E4 /* DiscoverNvPresenter.m in Sources */,
 				77B0544B21C943760045A489 /* YYCache.m in Sources */,
+				77C3978021E459620016CEE3 /* ClubFilterPerformer.m in Sources */,
 				7734C11A21D23A45009D1EE8 /* KafkaNativeFooter.m in Sources */,
 				77EA8F3F21B90226001B8959 /* MVPViewController.m in Sources */,
 				77EA8F4121B90226001B8959 /* PresenterViewController.m in Sources */,
@@ -3267,6 +3286,7 @@
 				77EA8F6521B90227001B8959 /* ViewGroup.m in Sources */,
 				775B15EC21C78FE500B8D6FF /* ColorUtils.m in Sources */,
 				77B0553221CE96ED0045A489 /* Aspects.m in Sources */,
+				77C3978421E45A4F0016CEE3 /* ClubFilterData.m in Sources */,
 				77CEA52821D506F100B388E4 /* UICollectionView+Adapter.m in Sources */,
 				77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */,
 				771CA3F021DCF07A00B00F11 /* ClubDetailCommentCell.m in Sources */,
