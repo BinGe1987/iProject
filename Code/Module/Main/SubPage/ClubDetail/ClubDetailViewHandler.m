@@ -50,7 +50,7 @@
     
     //banner
     if (detailData.clubData.bannerList.list && detailData.clubData.bannerList.list.count > 0) {
-        TableViewSection *bannerSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"banner", @"array": @[detailData.clubData.bannerList.list], @"height" : [NSNumber numberWithFloat:ScaleValue(138)]}];
+        TableViewSection *bannerSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"banner", @"array": @[detailData.clubData.bannerList.list], @"height" : [NSNumber numberWithFloat:ScaleValue(188)]}];
         [sectionArray addObject:bannerSection];
     }
     

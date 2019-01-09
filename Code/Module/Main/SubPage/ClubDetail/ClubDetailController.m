@@ -12,6 +12,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
+//    self.navigationController.navigationBar.translucent = YES;
+    
     [self setContentViewWithXML:@"ClubDetail.xml"];
     
     ClubData *club = self.intentData;
