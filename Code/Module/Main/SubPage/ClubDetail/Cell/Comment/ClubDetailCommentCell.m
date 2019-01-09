@@ -47,15 +47,18 @@
     
     UILabel *tech = [root findViewByName:@"tech"];
     if ([NSString isEmpty:comment.tech.name] && [NSString isEmpty:comment.tech.number]) {
-        [tech setVisibility:ViewVisibilityInvisible];
+        [tech setVisibility:ViewVisibilityGone];
     } else {
         [tech setVisibility:ViewVisibilityVisible];
         tech.text = [NSString stringWithFormat:@"技师：%@", [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name];
     }
     
+    UILabel *score = [root findViewByName:@"score"];
+    score.text = [NSString stringWithFormat:@"评分：%0.1f", comment.score];
+    
+    
     UILabel *content = [root findViewByName:@"content"];
-    content.numberOfLines = 0;
-    content.text = @"关于UILabel的多行显示关于的多行显示关于的多行显示关于的多行显示关于的多行显示关于UILabel的多行显示关于的多行显示UILabelnumberOfLines关于UILabel的多行显示 UILabel numberOfLines关于UILabel的多行显示UILabelnumberOfLines";
+    content.text = comment.content ? comment.content : @"暂无评论。";
     
     [root refreshLaoyout];
 }

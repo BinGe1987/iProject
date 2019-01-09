@@ -23,7 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *content;          //评论内容
 @property (nonatomic, copy) NSString *commentCount;     //回复条数
 @property (nonatomic, copy) NSString *likeCount;        //点赞数
-@property (nonatomic, copy) NSString *score;            //评分
+
+@property (nonatomic, assign) CGFloat score;              //评分
 
 
 

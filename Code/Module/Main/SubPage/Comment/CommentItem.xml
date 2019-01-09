@@ -36,21 +36,35 @@
         layout_marginTop="15"
         layout_marginRight="15" />
     
-    <Label
-        view_name="tech"
+    <LinearLayout
         view_width="auto"
         view_height="auto"
-        text_size="12"
-        text_color="#ffb925"
-        text_src="技师：N/A"
+        view_orientation="H"
         layout_gravity="left|top"
         layout_marginTop="40"
-        layout_marginLeft="85" />
+        layout_marginLeft="85">
+        <Label
+            view_name="tech"
+            view_width="auto"
+            view_height="auto"
+            text_size="12"
+            text_color="#ffb925"
+            text_src="技师：N/A"
+            layout_marginRight="10"/>
+        <Label
+            view_name="score"
+            view_width="auto"
+            view_height="auto"
+            text_size="12"
+            text_color="#ffb925"
+            text_src="评分：5.0"/>
+    </LinearLayout>
+    
     
     <Label
         view_name="content"
         view_width="full"
-        view_height="40"
+        view_height="auto"
         text_size="15"
         text_color="#2e2e2e"
         text_src="暂无评论"
@@ -58,7 +72,8 @@
         layout_gravity="left|top"
         layout_marginTop="60"
         layout_marginLeft="85"
-        layout_marginRight="15"/>
+        layout_marginRight="15"
+        layout_marginBottom="140"/>
     
     <LinearLayout
         view_width="272sp"

@@ -75,7 +75,7 @@ static char heightKey;
             self.hidden = YES;
             break;
         case ViewVisibilityGone:
-            
+            self.hidden = YES;
             break;
         default:
             break;

@@ -20,7 +20,7 @@
     self.createTime = [data stringWithKey:@"createTime"];
     self.commentType = [data stringWithKey:@"commentType"];
     self.likeCount = [data stringWithKey:@"like"];
-    self.score = [data stringWithKey:@"score"];
+    self.score = [data floatWithKey:@"score"];
 
     self.imageList = [ListData new];
     NSArray *imageList = [data arrayWithKey:@"imgList"];

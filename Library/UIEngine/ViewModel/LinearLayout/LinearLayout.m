@@ -16,6 +16,9 @@
     CGFloat width = size.width, height = size.height;
     CGFloat maxWidth = width, maxHeight = height;
     for (UIView *view in self.subviews) {
+        if (view.viewParams.visibility == ViewVisibilityGone) {
+            continue;
+        }
         LayoutParams *lp = view.layoutParams;
         CGFloat viewMaxWidth = maxWidth - lp.marginLeft - lp.marginRight;
         CGFloat viewMaxHeight = maxHeight - lp.marginTop - lp.marginBottom;
@@ -40,6 +43,9 @@
     CGFloat width = 0;
     CGFloat height = 0;
     for (UIView *subView in self.subviews) {
+        if (subView.viewParams.visibility == ViewVisibilityGone) {
+            continue;
+        }
         CGSize size = [subView boundingSize];
         width = MAX(width, size.width + subView.layoutParams.marginLeft + subView.layoutParams.marginRight);
         height += (size.height + subView.layoutParams.marginTop + subView.layoutParams.marginBottom);
@@ -51,6 +57,9 @@
     CGFloat width = 0;
     CGFloat height = 0;
     for (UIView *subView in self.subviews) {
+        if (subView.viewParams.visibility == ViewVisibilityGone) {
+            continue;
+        }
         CGSize size = [subView boundingSize];
         height = MAX(height, size.height + subView.layoutParams.marginTop + subView.layoutParams.marginBottom);
         width += (size.width + subView.layoutParams.marginLeft + subView.layoutParams.marginRight);
@@ -72,7 +81,9 @@
     CGFloat maxWidth = 0;
     CGFloat maxHeight = 0;
     for (UIView *subView in self.subviews) {
-        
+        if (subView.viewParams.visibility == ViewVisibilityGone) {
+            continue;
+        }
         NSInteger ml = subView.layoutParams.marginLeft;
         NSInteger mt = subView.layoutParams.marginTop;
         NSInteger mb = subView.layoutParams.marginBottom;
@@ -101,7 +112,9 @@
     CGFloat maxWidth = 0;
     CGFloat maxHeight = 0;
     for (UIView *subView in self.subviews) {
-        
+        if (subView.viewParams.visibility == ViewVisibilityGone) {
+            continue;
+        }
         NSInteger ml = subView.layoutParams.marginLeft;
         NSInteger mt = subView.layoutParams.marginTop;
         NSInteger mr = subView.layoutParams.marginRight;

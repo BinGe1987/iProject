@@ -92,6 +92,14 @@ static char shapeLayerKey;
 }
 
 - (CGSize)boundingSize {
+    
+//    if (self.viewParams.visibility == ViewVisibilityGone) {
+//        self.width = 0;
+//        self.height = 0;
+//        [self boundSizeChanged];
+//        return CGSizeMake(0, 0);
+//    }
+    
     CGSize need = [self boundingSizeNeed];
     ViewParams *vp = self.viewParams;
     CGFloat maxWidth = self.maxWidth, maxHeight = self.maxHeight;
@@ -138,7 +146,6 @@ static char shapeLayerKey;
     self.width = width;
     self.height = height;
     [self boundSizeChanged];
-    
     return CGSizeMake(width, height);
 }
 
