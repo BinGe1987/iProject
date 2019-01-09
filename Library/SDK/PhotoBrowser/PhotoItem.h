@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *imageUrl;
 @property (nonatomic, weak) UIImageView *view;
 
-- (instancetype)initWithView:(UIImageView *)view imageUrl:(NSString *)url;
+- (instancetype)initWithView:( UIImageView * _Nullable )view imageUrl:(NSString *)url;
 
 @end
 

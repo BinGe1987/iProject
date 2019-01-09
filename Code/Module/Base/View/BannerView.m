@@ -67,13 +67,18 @@ static UIImage *placeholderImage;
 - (void)addTimer
 {
     _timer = [NSTimer timerWithTimeInterval:3 target:self selector:@selector(change) userInfo:nil repeats:YES];
-    
     [[NSRunLoop currentRunLoop] addTimer:_timer forMode:NSRunLoopCommonModes];
 }
 
 //定时器方法
 - (void)change
 {
+    UIViewController *current = [self currentViewController];
+    UIViewController *top = [UIViewController topViewController];
+    if (current != top) {
+        return;
+    }
+    
     //获取起始位置
     CGFloat startX = _scrollView.contentOffset.x;
     
@@ -184,9 +189,17 @@ static UIImage *placeholderImage;
 - (void)tapAction:(UITapGestureRecognizer *)recognizer
 {
     //如果代理响应该方法 , 就走该方法
-    if ([self.delegate respondsToSelector:@selector(selectImage:currentImage:)])
+    if ([self.delegate respondsToSelector:@selector(bannerView:imageView:selectedIndex:)])
     {
-        [self.delegate selectImage:self currentImage:self.pageControl.currentPage];
+        NSInteger index = self.pageControl.currentPage;
+        UIImageView *imageView = _scrollView.subviews[index+1];
+        [self.delegate bannerView:self imageView:imageView selectedIndex:index];
+    }
+    if ([self.delegate respondsToSelector:@selector(bannerView:imageView:)])
+    {
+        NSInteger index = self.pageControl.currentPage;
+        UIImageView *imageView = _scrollView.subviews[index];
+        [self.delegate bannerView:self imageView:imageView];
     }
 }
 

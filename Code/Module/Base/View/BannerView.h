@@ -13,7 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol BannerViewDelegate <NSObject>
 
 @optional //可选
-- (void)selectImage:(BannerView *)bannerView currentImage:(NSInteger )currentImage;
+- (void)bannerView:(BannerView *)bannerView imageView:(UIImageView *)imageView;
+- (void)bannerView:(BannerView *)bannerView imageView:(UIImageView *)imageView selectedIndex:(NSInteger)selected;
 
 @end
 
