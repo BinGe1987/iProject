@@ -1,16 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FrameLayout
+    view_name="root"
     view_width="full"
     view_height="full"
     view_background="#ffead3">
     
-    <Label
+    <LinearLayout
         view_width="auto"
         view_height="auto"
-        text_size="13"
-        text_color="#4abdcf"
-        text_src="通过约多多在此会所消费可享受8.4折优惠哦~"
-        layout_gravity="center"/>
+        view_orientation="H"
+        layout_gravity="center">
+        <Label
+            view_width="20"
+            view_height="20"
+            view_background="#18d3d3"
+            view_borderRadius="2"
+            view_masksToBounds="YES"
+            text_size="13"
+            text_color="#ffffff"
+            text_src="折"
+            layout_marginRight="8"/>
+        <Label
+            view_width="auto"
+            view_height="20"
+            text_size="13"
+            text_color="#4abdcf"
+            text_src="通过约多多在此会所消费可享受"/>
+        <Label
+            view_name="label_ad"
+            view_width="auto"
+            view_height="16"
+            layout_marginTop="1"
+            text_size="16"
+            text_color="#ffb925"
+            text_src="8.4折"/>
+        <Label
+            view_width="auto"
+            view_height="20"
+            text_size="13"
+            text_color="#4abdcf"
+            text_src="优惠哦~"/>
+    </LinearLayout>
+    
     
     
 </FrameLayout>

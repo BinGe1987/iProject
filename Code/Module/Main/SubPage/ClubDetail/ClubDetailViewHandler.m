@@ -48,7 +48,7 @@
     [sectionArray addObject:profileSection];
     
     //广告条
-    TableViewSection *adSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"ad", @"array": @[@""], @"height" : [NSNumber numberWithFloat:ScaleValue(31)]}];
+    TableViewSection *adSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"ad", @"array": @[detailData.clubData], @"height" : [NSNumber numberWithFloat:ScaleValue(31)]}];
     [sectionArray addObject:adSection];
     
     //技师数据
