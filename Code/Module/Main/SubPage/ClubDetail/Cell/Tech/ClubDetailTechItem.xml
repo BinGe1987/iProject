@@ -8,6 +8,7 @@
         view_orientation="V"
         layout_gravity="center">
         <ImageView
+            view_name="image"
             view_width="full"
             view_height="67"
             view_borderRadius="33.5"
