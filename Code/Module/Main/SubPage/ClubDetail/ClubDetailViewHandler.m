@@ -24,6 +24,9 @@
     [bg setVisibility:ViewVisibilityInvisible];
     self.commentButton = [view findViewByName:@"btn_comment"];
     [self.commentButton setVisibility:ViewVisibilityInvisible];
+    [self.commentButton setClickBlock:^(UIButton * _Nonnull button) {
+        
+    }];
     
     self.tableView = [view findViewByName:@"table"];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];

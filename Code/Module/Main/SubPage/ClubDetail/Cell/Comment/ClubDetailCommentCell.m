@@ -62,10 +62,19 @@
     
     NSInteger imageCount = comment.imageList.list.count > 4 ? 4 : comment.imageList.list.count;
     ViewGroup *imageViewGroup = [root findViewByName:@"images"];
+    NSArray *imageArray = [comment.imageList.list mutableCopy];
+    NSMutableArray<PhotoItem *> *imageUrls = [NSMutableArray new];
     for (int i=0; i<imageCount; i++) {
-        UIImageView *imageView = imageViewGroup.subviews[i];
-        ImageData *imageData = comment.imageList.list[i];
+        ViewGroup *imageGroup = imageViewGroup.subviews[i];
+        UIImageView *imageView = [imageGroup findViewByName:@"image"];
+        ImageData *imageData = imageArray[i];
         [imageView setImageWithURL:[NSURL URLWithString:imageData.imageUrl] placeholder: UIImageDefault];
+        [imageUrls addObject:[[PhotoItem alloc] initWithView:imageView imageUrl:imageData.imageUrl]];
+        UIButton *button = [imageGroup findViewByName:@"button"];
+        button.tag = i;
+        [button setClickBlock:^(UIButton * _Nonnull button) {
+            [PhotoBrowser browserPhotoItems:imageUrls selectedIndex:button.tag];
+        }];
     }
     
     UILabel *like = [root findViewByName:@"like"];

@@ -28,6 +28,8 @@
     NSArray *imageList = [data arrayWithKey:@"imgList"];
     for (Data *img in imageList) {
         [self.imageList addData:[ImageData withData:img]];
+        [self.imageList addData:[ImageData withData:img]];
+        [self.imageList addData:[ImageData withData:img]];
     }
     
 }

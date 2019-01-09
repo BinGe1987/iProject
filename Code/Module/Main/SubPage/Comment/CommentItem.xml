@@ -88,34 +88,71 @@
         layout_marginTop="110"
         layout_marginLeft="81"
         view_orientation="H" >
-        <ImageView
+        <FrameLayout
             view_width="65sp"
             view_height="65sp"
-            view_masksToBounds="YES"
-            layout_marginLeft="4"
-            image_src="#UIImageDefault"
-            image_scaleType="full"/>
-        <ImageView
+            layout_marginLeft="4">
+            <ImageView
+                view_name="image"
+                view_width="65sp"
+                view_height="65sp"
+                view_masksToBounds="YES"
+                image_src="#UIImageDefault"
+                image_scaleType="full"/>
+            <Button
+                view_name="button"
+                view_width="65sp"
+                view_height="65sp"/>
+        </FrameLayout>
+        
+        <FrameLayout
             view_width="65sp"
             view_height="65sp"
-            view_masksToBounds="YES"
-            layout_marginLeft="4"
-            image_src="#UIImageDefault"
-            image_scaleType="full"/>
-        <ImageView
+            layout_marginLeft="4">
+            <ImageView
+                view_name="image"
+                view_width="65sp"
+                view_height="65sp"
+                view_masksToBounds="YES"
+                image_src="#UIImageDefault"
+                image_scaleType="full"/>
+            <Button
+                view_name="button"
+                view_width="65sp"
+                view_height="65sp"/>
+        </FrameLayout>
+        <FrameLayout
             view_width="65sp"
             view_height="65sp"
-            view_masksToBounds="YES"
-            layout_marginLeft="4"
-            image_src="#UIImageDefault"
-            image_scaleType="full"/>
-        <ImageView
+            layout_marginLeft="4">
+            <ImageView
+                view_name="image"
+                view_width="65sp"
+                view_height="65sp"
+                view_masksToBounds="YES"
+                image_src="#UIImageDefault"
+                image_scaleType="full"/>
+            <Button
+                view_name="button"
+                view_width="65sp"
+                view_height="65sp"/>
+        </FrameLayout>
+        <FrameLayout
             view_width="65sp"
             view_height="65sp"
-            view_masksToBounds="YES"
-            layout_marginLeft="4"
-            image_src="#UIImageDefault"
-            image_scaleType="full"/>
+            layout_marginLeft="4">
+            <ImageView
+                view_name="image"
+                view_width="65sp"
+                view_height="65sp"
+                view_masksToBounds="YES"
+                image_src="#UIImageDefault"
+                image_scaleType="full"/>
+            <Button
+                view_name="button"
+                view_width="65sp"
+                view_height="65sp"/>
+        </FrameLayout>
     </LinearLayout>
     <LinearLayout
         view_width="auto"
