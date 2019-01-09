@@ -26,6 +26,7 @@
     self.textView.font = params.font;
     self.textView.text = params.text;
     self.textView.textColor = params.textColor;
+    self.textView.numberOfLines = params.lines;
     
     if (params.textGravity & TextGravityCenter) {
         self.textView.textAlignment = NSTextAlignmentCenter;

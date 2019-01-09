@@ -30,6 +30,8 @@ typedef NS_OPTIONS(NSInteger, TextGravity) {
 
 @property (nonatomic, assign) TextGravity    textGravity;
 
+@property (nonatomic, assign) NSInteger     lines;
+
 @end
 
 NS_ASSUME_NONNULL_END

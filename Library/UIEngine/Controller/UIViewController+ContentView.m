@@ -34,7 +34,7 @@ static const void *contentViewKey = &contentViewKey;
     [self refreshLayout];
 }
 
-- (UIView *)findViewByName:(NSString *)name {
+- (id)findViewByName:(NSString *)name {
     return [self.view findViewByName:name];
 }
 

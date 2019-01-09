@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///设置controller的rootview（主界面），同时添加一个loop，当view调用requestLayout时，loop会要求根view刷新
 - (void)setContentView:(UIView *)view;
 ///可以通过此方法在controller查找名字为name的view出来
-- (UIView *)findViewByName:(NSString *)name;
+- (id)findViewByName:(NSString *)name;
 
 @end
 

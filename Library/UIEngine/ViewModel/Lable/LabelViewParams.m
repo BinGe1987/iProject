@@ -22,7 +22,9 @@
         NSString *color = [model getString:@"text_color" defaultValue:@"#ff000000"];
         self.textColor = [ColorUtils colorWithString:color];
         
-        NSString *textGravity = [model getString:@"text_gravity" defaultValue:nil];
+        self.lines = [model getInteger:@"text_lines" defaultValue:0];
+        
+        NSString *textGravity = [model getString:@"text_gravity" defaultValue:@"left"];
         if (textGravity) {
             if (self) {
                 NSArray  *array = [[textGravity stringByReplacingOccurrencesOfString:@" " withString:@""]

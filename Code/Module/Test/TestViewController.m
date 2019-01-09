@@ -32,9 +32,13 @@
         } else {
             [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
         }
-        
+
     }];
-    
+////
+//    
+//    [self setContentViewWithXML:@"Test.xml"];
+//    UILabel *label = [self findViewByName:@"label"];
+//    label.text = @"实现是直接给NSString类添加一个分类，并添加了计算文本高度的两个方法实现是直接给NSString类添加一个分类类添加一个分类类添加一个分类类添加一个分类类添加一个分类";
     
 }
 
