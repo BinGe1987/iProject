@@ -10,29 +10,29 @@
 @implementation UserData
 
 - (void)setLoginData:(id)data {
-    [self setData:data];
-    JSON *json =    [data jsonWithKey:@"respData"];
-    self.token =    [json stringWithKey:@"token"];
-    self.userID =   [json stringWithKey:@"userId"];
-    self.userName = [json stringWithKey:@"name"];
-    self.phone =    [json stringWithKey:@"phoneNum"];
-    self.gender =   [json stringWithKey:@"gender" defaultValue:@"male"];
-    self.level =    [json stringWithKey:@"level"];
-    
-    self.member =   [MemberData new];
-    self.recharge = [RechargeData new];
-    self.points =   [PointsData new];
+    [self setData:[data dataWithKey:@"respData"]];
 }
 
 - (void)setMineData:(id)data {
     [self setData:data];
-    [self.member setData:data];
-    [self.recharge setData:data];
-    [self.points setData:data];
+}
+
+- (void)setData:(Data *)data {
+    [super setData:data];
+    self.token =    [data stringWithKey:@"token"];
+    self.userID =   [data stringWithKey:@"userId"];
+    self.userName = [data stringWithKeys:@[@"name",@"userName"]];
+    self.phone =    [data stringWithKey:@"phoneNum"];
+    self.gender =   [data stringWithKey:@"gender" defaultValue:@"male"];
+    self.level =    [data stringWithKey:@"level"];
+    
+    self.member =   [MemberData withData:data];
+    self.recharge = [RechargeData withData:data];
+    self.points =   [PointsData withData:data];
 }
 
 - (BOOL)isLogin {
-    return self.isSuccess && self.token;
+    return self.token;
 }
 
 @end

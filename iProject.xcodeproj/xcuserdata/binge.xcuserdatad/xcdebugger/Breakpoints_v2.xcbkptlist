@@ -25,13 +25,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Code/DataCenter/Club/ClubDetailPerformer.m"
-            timestampString = "568657194.9449331"
+            filePath = "Code/DataCenter/BaseData/CommentData.m"
+            timestampString = "568698820.0474"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
-            landmarkName = "-parse:withSource:"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "-setData:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

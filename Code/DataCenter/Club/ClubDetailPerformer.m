@@ -42,7 +42,7 @@
         return service;
     }
     
-    Data *comment = [self service:club];
+    Data *comment = [self comment:club];
     if ([comment isSuccess]) {
         Data *resp = [comment dataWithKey:@"respData"];
         [respDict setObject:resp.source forKey:@"club_comment"];
@@ -131,35 +131,30 @@
     Data *clubSource = [respData dataWithKey:@"club_profile"];
     detail.clubData = [ClubData withData:clubSource];
     
+    
     //技师
     detail.techList = [ListData new];
-    NSArray *tech = @[@{@"name":@"沐沐",@"number":@"25",@"image":@""},
-                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
-                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
-                      @{@"name":@"果果",@"number":@"9",@"image":@""},
-                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
-                      @{@"name":@"沐沐",@"number":@"25",@"image":@""},
-                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
-                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
-                      @{@"name":@"果果",@"number":@"9",@"image":@""},
-                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
-                      @{@"name":@"沐沐",@"number":@"25",@"image":@""},
-                      @{@"name":@"夏夏",@"number":@"46",@"image":@""},
-                      @{@"name":@"甜甜",@"number":@"666",@"image":@""},
-                      @{@"name":@"果果",@"number":@"9",@"image":@""},
-                      @{@"name":@"莉莉",@"number":@"88",@"image":@""},
-                      ];
-    for (NSDictionary *dic in tech) {
-        TechData *data = [TechData new];
-        data.number = [dic objectForKey:@"number"];
-        data.name = [dic objectForKey:@"name"];
-        data.imageUrl = [dic objectForKey:@"image"];
-        [detail.techList addData:data];
+    Data *techSource = [respData dataWithKey:@"club_tech"];
+    NSArray *techList = [techSource arrayWithKey:@"list"];
+    for (Data *tech in techList) {
+        [detail.techList addData:[TechData withData:tech]];
     }
     
-    detail.projectList = [ListData new];
+    // 项目
+    detail.serviceList = [ListData new];
+    Data *serviceSource = [respData dataWithKey:@"club_service"];
+    NSArray *serviceList = [serviceSource arrayWithKey:@"list"];
+    for (Data *service in serviceList) {
+        [detail.serviceList addData:[ClubServiceData withData:service]];
+    }
     
+    //评价
     detail.commentList = [ListData new];
+    Data *commentSource = [respData dataWithKey:@"club_comment"];
+    NSArray *commentList = [commentSource arrayWithKey:@"list"];
+    for (Data *comment in commentList) {
+        [detail.commentList addData:[CommentData withData:comment]];
+    }
     
     return detail;
 }

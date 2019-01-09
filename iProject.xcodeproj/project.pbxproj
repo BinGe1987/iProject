@@ -27,7 +27,6 @@
 		771CA3B721DCA25400B00F11 /* ClubDetailData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3B621DCA25400B00F11 /* ClubDetailData.m */; };
 		771CA3BA21DCA26D00B00F11 /* ClubDetailPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3B921DCA26D00B00F11 /* ClubDetailPerformer.m */; };
 		771CA3C021DCA7A100B00F11 /* Performer+Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3BF21DCA7A100B00F11 /* Performer+Parser.m */; };
-		771CA3C321DCABC800B00F11 /* ProjectData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3C221DCABC700B00F11 /* ProjectData.m */; };
 		771CA3C721DCAE3500B00F11 /* ClubDetailBannerCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3C621DCAE3500B00F11 /* ClubDetailBannerCell.m */; };
 		771CA3CA21DCB1D100B00F11 /* ClubDetailProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3C921DCB1D100B00F11 /* ClubDetailProfileCell.m */; };
 		771CA3CD21DCB2AB00B00F11 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3CC21DCB2AB00B00F11 /* TableViewCell.m */; };
@@ -178,6 +177,8 @@
 		77A8B64121E4EA8000BC8C70 /* ClassifyNvPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64021E4EA8000BC8C70 /* ClassifyNvPresenter.m */; };
 		77A8B64421E4EA9700BC8C70 /* ClassifyNvViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64321E4EA9700BC8C70 /* ClassifyNvViewHandler.m */; };
 		77A8B64621E4EAB000BC8C70 /* ClassifyNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B64521E4EAB000BC8C70 /* ClassifyNavigation.xml */; };
+		77A8B64921E596F700BC8C70 /* ClubServiceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64821E596F700BC8C70 /* ClubServiceData.m */; };
+		77A8B64C21E5A0EF00BC8C70 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64B21E5A0EF00BC8C70 /* ImageData.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -415,8 +416,6 @@
 		771CA3B921DCA26D00B00F11 /* ClubDetailPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailPerformer.m; sourceTree = "<group>"; };
 		771CA3BE21DCA7A100B00F11 /* Performer+Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Performer+Parser.h"; sourceTree = "<group>"; };
 		771CA3BF21DCA7A100B00F11 /* Performer+Parser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Performer+Parser.m"; sourceTree = "<group>"; };
-		771CA3C121DCABC700B00F11 /* ProjectData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProjectData.h; sourceTree = "<group>"; };
-		771CA3C221DCABC700B00F11 /* ProjectData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectData.m; sourceTree = "<group>"; };
 		771CA3C521DCAE3500B00F11 /* ClubDetailBannerCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailBannerCell.h; sourceTree = "<group>"; };
 		771CA3C621DCAE3500B00F11 /* ClubDetailBannerCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailBannerCell.m; sourceTree = "<group>"; };
 		771CA3C821DCB1D100B00F11 /* ClubDetailProfileCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailProfileCell.h; sourceTree = "<group>"; };
@@ -700,6 +699,10 @@
 		77A8B64221E4EA9700BC8C70 /* ClassifyNvViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassifyNvViewHandler.h; sourceTree = "<group>"; };
 		77A8B64321E4EA9700BC8C70 /* ClassifyNvViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassifyNvViewHandler.m; sourceTree = "<group>"; };
 		77A8B64521E4EAB000BC8C70 /* ClassifyNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClassifyNavigation.xml; sourceTree = "<group>"; };
+		77A8B64721E596F700BC8C70 /* ClubServiceData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubServiceData.h; sourceTree = "<group>"; };
+		77A8B64821E596F700BC8C70 /* ClubServiceData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubServiceData.m; sourceTree = "<group>"; };
+		77A8B64A21E5A0EF00BC8C70 /* ImageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
+		77A8B64B21E5A0EF00BC8C70 /* ImageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1432,8 +1435,8 @@
 				7734C0D721D22ED5009D1EE8 /* ClubData.m */,
 				7734C0D921D22EFD009D1EE8 /* ClassifyData.h */,
 				7734C0DA21D22EFD009D1EE8 /* ClassifyData.m */,
-				771CA3C121DCABC700B00F11 /* ProjectData.h */,
-				771CA3C221DCABC700B00F11 /* ProjectData.m */,
+				77A8B64721E596F700BC8C70 /* ClubServiceData.h */,
+				77A8B64821E596F700BC8C70 /* ClubServiceData.m */,
 				771CA3EB21DCEFC000B00F11 /* CommentData.h */,
 				771CA3EC21DCEFC000B00F11 /* CommentData.m */,
 				77A389E121DE50ED00042B04 /* MemberData.h */,
@@ -1442,6 +1445,8 @@
 				77A389E521DE554C00042B04 /* RechargeData.m */,
 				77A389E721DE563500042B04 /* PointsData.h */,
 				77A389E821DE563500042B04 /* PointsData.m */,
+				77A8B64A21E5A0EF00BC8C70 /* ImageData.h */,
+				77A8B64B21E5A0EF00BC8C70 /* ImageData.m */,
 			);
 			path = BaseData;
 			sourceTree = "<group>";
@@ -3253,7 +3258,6 @@
 				77B0559E21D205540045A489 /* TableViewAdapter.m in Sources */,
 				775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */,
 				77CEA51121D4DBAD00B388E4 /* UIView+Controller.m in Sources */,
-				771CA3C321DCABC800B00F11 /* ProjectData.m in Sources */,
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
@@ -3380,6 +3384,7 @@
 				77EA8F8921B90A18001B8959 /* UserHandler.m in Sources */,
 				77CEA50821D4CA1700B388E4 /* DiscoverClubAdapter.m in Sources */,
 				776B55FB21C14A0800793CAF /* ScrollView.m in Sources */,
+				77A8B64C21E5A0EF00BC8C70 /* ImageData.m in Sources */,
 				77B054FB21CBC5F10045A489 /* Notification+Category.m in Sources */,
 				776B55F621C10F7100793CAF /* UIView+Params.m in Sources */,
 				77EA8F5F21B90227001B8959 /* JSONModel.m in Sources */,
@@ -3387,6 +3392,7 @@
 				77B054D221CA9AB40045A489 /* TableView.m in Sources */,
 				775B15EF21C7A2FF00B8D6FF /* BaseTabbarController.m in Sources */,
 				77EA8F5521B90226001B8959 /* FrameLayoutParams.m in Sources */,
+				77A8B64921E596F700BC8C70 /* ClubServiceData.m in Sources */,
 				7734C13C21D27A3F009D1EE8 /* HomeNvPresenter.m in Sources */,
 				77EA8F9B21B91F8C001B8959 /* NavigationController.m in Sources */,
 				77B0552E21CE8B280045A489 /* AppModule.m in Sources */,

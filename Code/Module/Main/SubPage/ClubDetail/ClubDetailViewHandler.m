@@ -39,7 +39,7 @@
     TableViewSection *profileSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"profile", @"array": @[detailData.clubData], @"height" : [NSNumber numberWithFloat:125]}];
     TableViewSection *adSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"ad", @"array": @[@""], @"height" : [NSNumber numberWithFloat:ScaleValue(31)]}];
     TableViewSection *techSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"tech", @"array": @[detailData.techList.list], @"height" : [NSNumber numberWithFloat:157]}];
-    TableViewSection *projectSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"project", @"array": @[detailData.projectList.list], @"height" : [NSNumber numberWithFloat:312]}];
+    TableViewSection *projectSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"project", @"array": @[detailData.serviceList.list], @"height" : [NSNumber numberWithFloat:312]}];
     TableViewSection *commentSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"comment", @"array": @[detailData.commentList.list], @"height" : [NSNumber numberWithFloat:316]}];
     ClubDetailAdapter *adapter = [ClubDetailAdapter AdapterWithSourceData:[NSMutableArray arrayWithObjects:bannerSection,profileSection,adSection,techSection,projectSection,commentSection, nil]];
     [self.tableView setAdapter:adapter];

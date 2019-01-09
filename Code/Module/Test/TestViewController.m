@@ -25,13 +25,12 @@
     
     NSString *token = [Store valueForKey:@"token" defaultValue:@""];
     [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, id  _Nullable data) {
-        if (![data isSuccess]) {
-            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
-            
-        } else {
+        if ([data isKindOfClass:[UserData class]] && [data isLogin]) {
             NSDictionary *testData = [Store valueForKey:@"test_data"];
             ClubData *club = [ClubData withDictionary:testData];
             [UIViewController pushController:@"ClubDetailController" animated:YES data:club];
+        } else {
+            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
         }
         
     }];

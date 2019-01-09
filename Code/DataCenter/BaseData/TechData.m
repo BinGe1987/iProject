@@ -11,7 +11,7 @@
 
 - (void)setData:(Data *)data {
     [super setData:data];
-    self.techID = [data stringWithKey:@"id"];
+    self.techID = [data stringWithKeys:@[@"techId",@"id"]];
     self.imageUrl = [data stringWithKey:@"techAvatar"];
     self.number = [data stringWithKey:@"serialNo"];
     self.name = [data stringWithKey:@"name"];

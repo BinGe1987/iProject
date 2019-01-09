@@ -20,7 +20,7 @@
 
 - (void)setData:(Data *)data {
     [super setData:data];
-    self.clubID = [data stringWithKeys:@[@"id", @"clubId"]];
+    self.clubID = [data stringWithKeys:@[@"clubId",@"id"]];
     self.name = [data stringWithKeys:@[@"name", @"clubName"]];
     self.address = [data stringWithKey:@"address"];
     self.startTime = [data stringWithKey:@"businessStart"];
