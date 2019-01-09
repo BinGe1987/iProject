@@ -29,12 +29,13 @@ static NSString *identifier = @"DiscoverTechAdapter_Cell";
     DiscoverTechCell *cell = (DiscoverTechCell *)[collectionView dequeueReusableCellWithReuseIdentifier:identifier forIndexPath:indexPath];
     CollectionViewSection *data = [self.data objectAtIndex:indexPath.section];
     [cell setData:[data.array objectAtIndex:indexPath.row]];
-//    cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    [UIViewController pushController:@"TechDetailController" animated:YES data:nil];
+    CollectionViewSection *data = [self.data objectAtIndex:indexPath.section];
+    TechData *techData = [data.array[indexPath.row] copy];
+    [UIViewController pushController:@"TechDetailController" animated:YES data:techData];
 }
 
 @end

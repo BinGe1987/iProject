@@ -1208,7 +1208,7 @@
 				771CA3D121DCC1C600B00F11 /* Profile */,
 				771CA3D221DCC1D800B00F11 /* Ad */,
 				771CA3D821DCC42B00B00F11 /* Tech */,
-				771CA3DE21DCC8DD00B00F11 /* Project */,
+				771CA3DE21DCC8DD00B00F11 /* Service */,
 				771CA3EA21DCEF9700B00F11 /* Comment */,
 			);
 			path = Cell;
@@ -1254,7 +1254,7 @@
 			path = Tech;
 			sourceTree = "<group>";
 		};
-		771CA3DE21DCC8DD00B00F11 /* Project */ = {
+		771CA3DE21DCC8DD00B00F11 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				771CA3DF21DCC91500B00F11 /* ClubDetailProjectCell.h */,
@@ -1262,7 +1262,7 @@
 				771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */,
 				771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */,
 			);
-			path = Project;
+			path = Service;
 			sourceTree = "<group>";
 		};
 		771CA3EA21DCEF9700B00F11 /* Comment */ = {
