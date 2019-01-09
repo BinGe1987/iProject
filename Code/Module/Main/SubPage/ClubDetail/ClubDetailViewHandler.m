@@ -24,14 +24,6 @@
     [bg setVisibility:ViewVisibilityInvisible];
     self.commentButton = [view findViewByName:@"btn_comment"];
     [self.commentButton setVisibility:ViewVisibilityInvisible];
-    [self.commentButton setClickBlock:^(UIButton * _Nonnull button) {
-        // 首先拼接urlStr  前面相当于固定的  只要再后面拼上返回的链接
-        NSString *url = @"alipayqr://platformapi/startapp?saId=10000007&qrcode=https://qr.alipay.com/bax05299bjty5xvbkjii8018";
-        
-        // 打开链接
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
-    }];
-    
     
     self.tableView = [view findViewByName:@"table"];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];

@@ -11,7 +11,6 @@
 @implementation UITableView (Refresh)
 
 - (void)setHeadRefreshHandler:(void(^)(void))block {
-    [self bindGlobalStyleForFootRefreshHandler:nil];
     [self bindHeadRefreshHandler:block themeColor:UIColorMain refreshStyle:KafkaRefreshStyleReplicatorCircle];
 }
 - (void)beginHeadRefreshing {
