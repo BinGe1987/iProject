@@ -11,7 +11,7 @@
 @interface ClubDetailViewHandler()
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIButton *commentView;
+@property (nonatomic, strong) UIButton *commentButton;
 
 @end
 
@@ -20,9 +20,18 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     WeakSelf(self)
+    UIView *bg = [view findViewByName:@"bottomBg"];
+    [bg setVisibility:ViewVisibilityInvisible];
+    self.commentButton = [view findViewByName:@"btn_comment"];
+    [self.commentButton setVisibility:ViewVisibilityInvisible];
+    [self.commentButton setClickBlock:^(UIButton * _Nonnull button) {
+        // 首先拼接urlStr  前面相当于固定的  只要再后面拼上返回的链接
+        NSString *url = @"alipayqr://platformapi/startapp?saId=10000007&qrcode=https://qr.alipay.com/bax05299bjty5xvbkjii8018";
+        
+        // 打开链接
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+    }];
     
-    self.commentView = [view findViewByName:@"btn_comment"];
-    [self.commentView setVisibility:ViewVisibilityInvisible];
     
     self.tableView = [view findViewByName:@"table"];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
@@ -50,26 +59,26 @@
     //banner
     if (detailData.clubData.bannerList.list && detailData.clubData.bannerList.list.count > 0) {
         TableViewSection *bannerSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"banner", @"array": @[detailData.clubData.bannerList.list], @"height" : [NSNumber numberWithFloat:ScaleValue(138)]}];
-        [sectionArray addObject:bannerSection];
+//        [sectionArray addObject:bannerSection];
     }
     
     //会所信息
     TableViewSection *profileSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"profile", @"array": @[detailData.clubData], @"height" : [NSNumber numberWithFloat:125]}];
-    [sectionArray addObject:profileSection];
+//    [sectionArray addObject:profileSection];
     
     //广告条
     TableViewSection *adSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"ad", @"array": @[detailData.clubData], @"height" : [NSNumber numberWithFloat:ScaleValue(31)]}];
-    [sectionArray addObject:adSection];
+//    [sectionArray addObject:adSection];
     
     //技师数据
     if (detailData.techList.list && detailData.techList.list.count > 0) {
         TableViewSection *techSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"tech", @"array": @[detailData.techList.list], @"height" : [NSNumber numberWithFloat:157]}];
-        [sectionArray addObject:techSection];
+//        [sectionArray addObject:techSection];
     }
     
     //项目数据
     TableViewSection *projectSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"service", @"array": detailData.serviceList.list, @"height" : [NSNumber numberWithFloat:84],@"headerHeight" : [NSNumber numberWithFloat:42],@"footerHeight" : [NSNumber numberWithFloat:32]}];
-    [sectionArray addObject:projectSection];
+//    [sectionArray addObject:projectSection];
     
     //评论数据
     TableViewSection *commentSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"comment", @"array": @[detailData.commentList.list], @"height" : [NSNumber numberWithFloat:316]}];
@@ -79,7 +88,9 @@
     [self.tableView setAdapter:adapter];
     [self.tableView reloadData];
     
-    [self.commentView setVisibility:ViewVisibilityVisible];
+    UIView *bg = [self.view findViewByName:@"bottomBg"];
+    [bg setVisibility:ViewVisibilityVisible];
+    [self.commentButton setVisibility:ViewVisibilityVisible];
 }
 
 @end

@@ -12,6 +12,7 @@
         view_background="#ffffffff" />
     
     <FrameLayout
+        view_name="bottomBg"
         view_width="full"
         view_height="100"
         layout_gravity="bottom"

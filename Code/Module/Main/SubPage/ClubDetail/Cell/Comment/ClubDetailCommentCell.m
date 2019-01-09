@@ -29,7 +29,35 @@
 }
 
 - (void)setData:(id)data {
+    CommentData *comment = data[0];
     
+    ViewGroup *root = [self.contentView findViewByName:@"root"];
+    
+    UILabel *count = [root findViewByName:@"commentCount"];
+    count.text = [NSString stringWithFormat:@"全部（%ld）",[data count]];
+    
+    UIImageView *imageView = [root findViewByName:@"headImage"];
+    [imageView setImageWithURL:[NSURL URLWithString:comment.user.avatarUrl] placeholder:UIImageDefault_UserMan];
+    
+    UILabel *name = [root findViewByName:@"name"];
+    name.text = comment.user.userName ? comment.user.userName : @"匿名用户";
+    
+    UILabel *time = [root findViewByName:@"time"];
+    time.text = comment.createTime;
+    
+    UILabel *tech = [root findViewByName:@"tech"];
+    if ([NSString isEmpty:comment.tech.name] && [NSString isEmpty:comment.tech.number]) {
+        [tech setVisibility:ViewVisibilityInvisible];
+    } else {
+        [tech setVisibility:ViewVisibilityVisible];
+        tech.text = [NSString stringWithFormat:@"技师：%@", [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name];
+    }
+    
+    UILabel *content = [root findViewByName:@"content"];
+    content.numberOfLines = 0;
+    content.text = @"关于UILabel的多行显示关于的多行显示关于的多行显示关于的多行显示关于的多行显示关于UILabel的多行显示关于的多行显示UILabelnumberOfLines关于UILabel的多行显示 UILabel numberOfLines关于UILabel的多行显示UILabelnumberOfLines";
+    
+    [root refreshLaoyout];
 }
 
 @end

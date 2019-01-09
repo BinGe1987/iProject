@@ -5,6 +5,7 @@
     view_background="#00ff0fff">
     
     <ImageView
+        view_name="headImage"
         view_width="52"
         view_height="52"
         view_borderRadius="26"
@@ -14,6 +15,7 @@
         layout_marginTop="18"/>
     
     <Label
+        view_name="name"
         view_width="auto"
         view_height="auto"
         text_size="15"
@@ -24,6 +26,7 @@
         layout_marginLeft="85" />
     
     <Label
+        view_name="time"
         view_width="auto"
         view_height="auto"
         text_size="15"
@@ -34,6 +37,7 @@
         layout_marginRight="15" />
     
     <Label
+        view_name="tech"
         view_width="auto"
         view_height="auto"
         text_size="12"
@@ -44,14 +48,17 @@
         layout_marginLeft="85" />
     
     <Label
-        view_width="auto"
-        view_height="auto"
+        view_name="content"
+        view_width="full"
+        view_height="40"
         text_size="15"
         text_color="#2e2e2e"
         text_src="暂无评论"
+        text_gravity="left"
         layout_gravity="left|top"
         layout_marginTop="60"
-        layout_marginLeft="85" />
+        layout_marginLeft="85"
+        layout_marginRight="15"/>
     
     <LinearLayout
         view_width="272sp"
