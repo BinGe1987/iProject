@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FrameLayout
+    view_name="root"
     view_width="full"
     view_height="84">
     
     <ImageView
+        view_name="image"
         view_width="82"
         view_height="62"
         layout_gravity="center|left"
@@ -14,6 +16,7 @@
         view_borderRadius="3" />
     
     <Label
+        view_name="name"
         view_width="auto"
         view_height="auto"
         text_size="16"
@@ -23,6 +26,7 @@
         layout_marginLeft="110"/>
         
     <Label
+        view_name="price"
         view_width="auto"
         view_height="auto"
         text_size="14"
@@ -33,6 +37,7 @@
         layout_marginLeft="110"/>
         
     <Label
+        view_name="savePrice"
         view_width="auto"
         view_height="16"
         view_borderRadius="3"
@@ -46,6 +51,7 @@
         layout_marginLeft="210" />
         
     <Label
+        view_name="originalPrice"
         view_width="auto"
         view_height="auto"
         text_size="12"

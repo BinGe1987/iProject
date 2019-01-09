@@ -19,13 +19,4 @@
     return self;
 }
 
-//- (void)appendDataArray:(NSArray *)dataArray {
-//    
-//    [self.array addObjectsFromArray:dataArray];
-//    
-//    [self.tableView beginUpdates];
-//    self.tableView insertRowsAtIndexPaths:<#(nonnull NSArray<NSIndexPath *> *)#> withRowAnimation:<#(UITableViewRowAnimation)#>
-//    [self.tableView endUpdates];
-//}
-
 @end

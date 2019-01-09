@@ -25,6 +25,7 @@
                     "view_borderRadius":"3",
                     "view_borderWidth":"1",
                     "view_borderColor":"#00ffb925",
+                    "image_scaleType":"full",
                     "image_src":"@default_club",
                 },
                 {

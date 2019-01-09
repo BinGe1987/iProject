@@ -88,7 +88,7 @@
                 text_src="获取验证码"
                 text_size="13"
                 text_color="#2e2e2e"
-                layout_marginLeft="10"/>
+                layout_marginLeft="-96"/>
         </LinearLayout>
         <View
             view_height="0.5"

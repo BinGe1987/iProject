@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="root"
+    view_width="full"
+    view_height="32"
+    view_background="#ffffff">
+    
+    <LinearLayout
+        view_name="more"
+        view_width="auto"
+        view_orientation="H"
+        view_height="12"
+        layout_gravity="center">
+        <Label
+            view_width="auto"
+            view_height="12"
+            text_size="11"
+            text_color="#999999"
+            text_src="更多"/>
+        <ImageView
+            view_width="auto"
+            view_height="12"
+            image_src="@arrow3"
+            layout_marginLeft="6"/>
+    </LinearLayout>
+    <LinearLayout
+        view_name="nomore"
+        view_width="auto"
+        view_orientation="H"
+        view_height="12"
+        layout_gravity="center">
+        <Label
+            view_width="auto"
+            view_height="12"
+            text_size="11"
+            text_color="#999999"
+            text_src="收起"/>
+        <ImageView
+            view_width="auto"
+            view_height="12"
+            image_src="@arrow4"
+            layout_marginLeft="6"/>
+    </LinearLayout>
+    
+    <Button
+        view_name="btn_more"
+        view_width="full"
+        view_height="full"/>
+    
+</FrameLayout>

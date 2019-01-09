@@ -146,6 +146,9 @@
     NSArray *serviceList = [serviceSource arrayWithKey:@"list"];
     for (Data *service in serviceList) {
         [detail.serviceList addData:[ClubServiceData withData:service]];
+//        if (detail.serviceList.list.count > 1) {
+//            break;
+//        }
     }
     
     //评价

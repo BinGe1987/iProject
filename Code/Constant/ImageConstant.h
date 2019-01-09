@@ -9,6 +9,7 @@
 #define ImageConstant_h
 
 
+#define UIImageDefault          ([ImageUtils imageWithColorHex:@"#e2e2e2" size:CGSizeMake(10, 10)])
 #define UIImageDefault_Tech     ([UIImage imageNamed:@"default_head_girl"])
 #define UIImageDefault_Club     ([UIImage imageNamed:@"default_club"])
 

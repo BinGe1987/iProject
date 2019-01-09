@@ -19,6 +19,14 @@
     return self;
 }
 
+- (UITableView *)myTableView {
+    UIView *tableView = self.superview;
+    while (![tableView isKindOfClass:[UITableView class]] && tableView) {
+        tableView = tableView.superview;
+    }
+    return (UITableView *)tableView;
+}
+
 - (void)setData:(id)data {
     
 }

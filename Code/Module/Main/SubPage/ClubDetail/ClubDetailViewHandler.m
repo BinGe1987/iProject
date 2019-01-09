@@ -22,8 +22,8 @@
     self.tableView.showsVerticalScrollIndicator = FALSE; //垂直滚动条
     self.tableView.showsHorizontalScrollIndicator = FALSE;//水平滚动条
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-    [self.tableView setHeadRefreshHandler:^{
-    }];
+//    [self.tableView setHeadRefreshHandler:^{
+//    }];
     
     UIButton *btn = (UIButton *)[view findViewByName:@"btn_allComment"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
@@ -34,6 +34,10 @@
 }
 
 - (void)setData:(id)data {
+    if (![data isKindOfClass:[ClubDetailData class]]) {
+        return;
+    }
+    
     ClubDetailData *detailData = (ClubDetailData *)data;
     NSMutableArray *sectionArray = [NSMutableArray new];
     
@@ -58,7 +62,7 @@
     }
     
     //项目数据
-    TableViewSection *projectSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"project", @"array": @[detailData.serviceList.list], @"height" : [NSNumber numberWithFloat:312]}];
+    TableViewSection *projectSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"service", @"array": detailData.serviceList.list, @"height" : [NSNumber numberWithFloat:84],@"headerHeight" : [NSNumber numberWithFloat:42],@"footerHeight" : [NSNumber numberWithFloat:32]}];
     [sectionArray addObject:projectSection];
     
     //评论数据

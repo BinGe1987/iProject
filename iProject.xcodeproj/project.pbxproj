@@ -36,9 +36,9 @@
 		771CA3DB21DCC45500B00F11 /* ClubDetailTechCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3DA21DCC45500B00F11 /* ClubDetailTechCell.m */; };
 		771CA3DD21DCC5B600B00F11 /* ClubDetailTech.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3DC21DCC5B600B00F11 /* ClubDetailTech.xml */; };
 		771CA3E121DCC91500B00F11 /* ClubDetailProjectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3E021DCC91500B00F11 /* ClubDetailProjectCell.m */; };
-		771CA3E321DCDCAA00B00F11 /* ClubDetailProject.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */; };
+		771CA3E321DCDCAA00B00F11 /* ClubDetailServiceHead.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E221DCDCAA00B00F11 /* ClubDetailServiceHead.xml */; };
 		771CA3E521DCDF8A00B00F11 /* ClubDetailTechItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E421DCDF8A00B00F11 /* ClubDetailTechItem.xml */; };
-		771CA3E921DCED0500B00F11 /* ClubDetailProjectItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */; };
+		771CA3E921DCED0500B00F11 /* ClubDetailServiceItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3E821DCED0500B00F11 /* ClubDetailServiceItem.xml */; };
 		771CA3ED21DCEFC000B00F11 /* CommentData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3EC21DCEFC000B00F11 /* CommentData.m */; };
 		771CA3F021DCF07A00B00F11 /* ClubDetailCommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA3EF21DCF07A00B00F11 /* ClubDetailCommentCell.m */; };
 		771CA3F221DCF0D700B00F11 /* ClubDetailComment.xml in Resources */ = {isa = PBXBuildFile; fileRef = 771CA3F121DCF0D700B00F11 /* ClubDetailComment.xml */; };
@@ -179,6 +179,7 @@
 		77A8B64621E4EAB000BC8C70 /* ClassifyNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B64521E4EAB000BC8C70 /* ClassifyNavigation.xml */; };
 		77A8B64921E596F700BC8C70 /* ClubServiceData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64821E596F700BC8C70 /* ClubServiceData.m */; };
 		77A8B64C21E5A0EF00BC8C70 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64B21E5A0EF00BC8C70 /* ImageData.m */; };
+		77A8B64E21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B64D21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -431,9 +432,9 @@
 		771CA3DC21DCC5B600B00F11 /* ClubDetailTech.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailTech.xml; sourceTree = "<group>"; };
 		771CA3DF21DCC91500B00F11 /* ClubDetailProjectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailProjectCell.h; sourceTree = "<group>"; };
 		771CA3E021DCC91500B00F11 /* ClubDetailProjectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubDetailProjectCell.m; sourceTree = "<group>"; };
-		771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailProject.xml; sourceTree = "<group>"; };
+		771CA3E221DCDCAA00B00F11 /* ClubDetailServiceHead.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailServiceHead.xml; sourceTree = "<group>"; };
 		771CA3E421DCDF8A00B00F11 /* ClubDetailTechItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailTechItem.xml; sourceTree = "<group>"; };
-		771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailProjectItem.xml; sourceTree = "<group>"; };
+		771CA3E821DCED0500B00F11 /* ClubDetailServiceItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailServiceItem.xml; sourceTree = "<group>"; };
 		771CA3EB21DCEFC000B00F11 /* CommentData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentData.h; sourceTree = "<group>"; };
 		771CA3EC21DCEFC000B00F11 /* CommentData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentData.m; sourceTree = "<group>"; };
 		771CA3EE21DCF07A00B00F11 /* ClubDetailCommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubDetailCommentCell.h; sourceTree = "<group>"; };
@@ -703,6 +704,7 @@
 		77A8B64821E596F700BC8C70 /* ClubServiceData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubServiceData.m; sourceTree = "<group>"; };
 		77A8B64A21E5A0EF00BC8C70 /* ImageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageData.h; sourceTree = "<group>"; };
 		77A8B64B21E5A0EF00BC8C70 /* ImageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
+		77A8B64D21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailServiceFoot.xml; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1259,8 +1261,9 @@
 			children = (
 				771CA3DF21DCC91500B00F11 /* ClubDetailProjectCell.h */,
 				771CA3E021DCC91500B00F11 /* ClubDetailProjectCell.m */,
-				771CA3E221DCDCAA00B00F11 /* ClubDetailProject.xml */,
-				771CA3E821DCED0500B00F11 /* ClubDetailProjectItem.xml */,
+				771CA3E221DCDCAA00B00F11 /* ClubDetailServiceHead.xml */,
+				771CA3E821DCED0500B00F11 /* ClubDetailServiceItem.xml */,
+				77A8B64D21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -3034,7 +3037,7 @@
 				771CA41721DDBA7A00B00F11 /* Comment.xml in Resources */,
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
-				771CA3E321DCDCAA00B00F11 /* ClubDetailProject.xml in Resources */,
+				771CA3E321DCDCAA00B00F11 /* ClubDetailServiceHead.xml in Resources */,
 				77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */,
 				77A38A0F21DF2FF600042B04 /* PayQRCodeController.xml in Resources */,
 				77CEA56E21D6588C00B388E4 /* OrderCellItem.json in Resources */,
@@ -3067,7 +3070,8 @@
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
 				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
-				771CA3E921DCED0500B00F11 /* ClubDetailProjectItem.xml in Resources */,
+				77A8B64E21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml in Resources */,
+				771CA3E921DCED0500B00F11 /* ClubDetailServiceItem.xml in Resources */,
 				771CA40F21DD237700B00F11 /* TechProfile.xml in Resources */,
 				77EA8F5121B90226001B8959 /* demo.json in Resources */,
 				77EA8F9021B90C64001B8959 /* res.json in Resources */,

@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)tableView:(UITableView *)tableView cellWithSize:(CGSize)size;
 
+- (UITableView *)myTableView;
+
 - (void)setData:(id)data;
 
 @end
