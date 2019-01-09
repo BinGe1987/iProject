@@ -13,14 +13,15 @@
         text_src="休闲养生演示会所"
         layout_margin="16"/>
         
-    <Button
+    <Label
+        view_name="label_follow"
         view_width="auto"
         view_height="16"
         view_borderRadius="3"
         view_borderWidth="1"
         view_borderColor="#4abdcf"
-        view_padding="10"
-        text_src="0人收藏"
+        view_padding="5"
+        text_src="0人关注"
         text_size="11"
         text_color="#4abdcf"
         layout_margin="16"
@@ -33,6 +34,7 @@
         layout_marginLeft="16"
         layout_marginTop="48"/>
     <Label
+        view_name="label_star"
         view_width="auto"
         view_height="15"
         text_size="12"
@@ -41,6 +43,7 @@
         layout_marginLeft="33"
         layout_marginTop="47"/>
     <Label
+        view_name="label_consumeAvg"
         view_width="auto"
         view_height="15"
         text_size="12"
@@ -51,18 +54,19 @@
 <!--    地址    -->
     <ImageView
         view_width="13"
-        view_height="13"
+        view_height="15"
         image_src="@icon_club"
         layout_marginLeft="16"
-        layout_marginTop="76"/>
+        layout_marginTop="69"/>
     <Label
+        view_name="label_address"
         view_width="auto"
         view_height="15"
         text_size="13"
         text_color="#2e2e2e"
         text_src="会所地址 距离0公里"
         layout_marginLeft="33"
-        layout_marginTop="75"/>
+        layout_marginTop="69"/>
     <ImageView
         view_width="13"
         view_height="13"
@@ -78,6 +82,7 @@
         layout_marginLeft="16"
         layout_marginTop="105"/>
     <Label
+        view_name="label_time"
         view_width="auto"
         view_height="15"
         text_size="13"

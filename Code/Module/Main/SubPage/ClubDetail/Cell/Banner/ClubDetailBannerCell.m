@@ -33,14 +33,8 @@
 }
 
 - (void)setData:(id)data {
-    
-//    if (self.bannerList) {
-//        return;
-//    }
-//    self.bannerList = data;
     NSMutableArray *array = [NSMutableArray new];
     for (BannerData *banner in data) {
-//        UIImage *image = [UIImage imageWithContentsOfFile:imageUrl];
         [array addObject:banner.imageUrl];
     }
     [self.bannerView setImages:array];

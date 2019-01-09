@@ -30,7 +30,7 @@
     self.regionName = [data stringWithKey:@"regionName"];
     self.areaName = [data stringWithKey:@"areaName"];
     self.tag = [data stringWithKey:@"tag"];
-    self.star = [data stringWithKey:@"star"];
+    self.star = [data integerWithKey:@"star"];
     self.consumeAvg = [data stringWithKey:@"consumeAvg"];
     self.consumeCount = [data stringWithKeys:@[@"consumeCount"]];
     self.commentNum = [data stringWithKeys:@[@"commentNum", @"commentCount"]];

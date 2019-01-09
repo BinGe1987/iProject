@@ -17,7 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSString *regionName;     //区域名称
 @property (nonatomic, strong) NSString *areaName;       //区域下属名称
 @property (nonatomic, strong) NSString *tag;            //会所标签
-@property (nonatomic, strong) NSString *star;           //星级
 @property (nonatomic, strong) NSString *consumeAvg;     //人均
 @property (nonatomic, strong) NSString *consumeCount;   //消费人数
 @property (nonatomic, strong) NSString *commentNum;     //评价
@@ -33,6 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger serviceCount;   //项目数量
 @property (nonatomic, assign) NSInteger techCount;      //技师数量
 
+@property (nonatomic, assign) CGFloat star;           //星级
 @property (nonatomic, assign) CGFloat discount;       //折扣 (单位分)
 @property (nonatomic, assign) CGFloat clubDiscount;   //升级最高折扣 (单位分)
 @property (nonatomic, assign) CGFloat laty;           //纬度

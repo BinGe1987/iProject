@@ -40,7 +40,7 @@
     label.text = club.name;
     
     UILabel *star = [self.contentView findViewByName:@"label_star"];
-    star.text = club.star;
+    star.text = [NSString stringWithFormat:@"%.1f", club.star];
     
     UILabel *commentNum = [self.contentView findViewByName:@"label_commentNun"];
     commentNum.text = [NSString stringWithFormat:@"%@条评价", club.commentNum];
