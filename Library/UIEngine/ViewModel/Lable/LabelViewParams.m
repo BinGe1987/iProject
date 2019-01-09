@@ -24,7 +24,7 @@
         
         self.lines = [model getInteger:@"text_lines" defaultValue:0];
         
-        NSString *textGravity = [model getString:@"text_gravity" defaultValue:@"left"];
+        NSString *textGravity = [model getString:@"text_gravity" defaultValue:@"center"];
         if (textGravity) {
             if (self) {
                 NSArray  *array = [[textGravity stringByReplacingOccurrencesOfString:@" " withString:@""]

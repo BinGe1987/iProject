@@ -19,8 +19,10 @@
     self.content = [data stringWithKey:@"content"];
     self.createTime = [data stringWithKey:@"createTime"];
     self.commentType = [data stringWithKey:@"commentType"];
-    self.likeCount = [data stringWithKey:@"like"];
+    
     self.score = [data floatWithKey:@"score"];
+    self.likeCount = [data integerWithKey:@"like"];
+    self.commentCount = [data integerWithKey:@"commentCount"];
 
     self.imageList = [ListData new];
     NSArray *imageList = [data arrayWithKey:@"imgList"];

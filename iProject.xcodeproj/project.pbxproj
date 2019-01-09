@@ -181,6 +181,7 @@
 		77A8B64C21E5A0EF00BC8C70 /* ImageData.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B64B21E5A0EF00BC8C70 /* ImageData.m */; };
 		77A8B64E21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B64D21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml */; };
 		77A8B65021E612FF00BC8C70 /* Test.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77A8B64F21E612FF00BC8C70 /* Test.xml */; };
+		77A8B65321E62A6000BC8C70 /* TableViewSectionRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A8B65221E62A6000BC8C70 /* TableViewSectionRow.m */; };
 		77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */ = {isa = PBXBuildFile; fileRef = 77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */; };
 		77B053CE21C8A5F90045A489 /* Net.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053CD21C8A5F90045A489 /* Net.m */; };
 		77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 77B053D421C8BDCA0045A489 /* NetResponse.m */; };
@@ -707,6 +708,8 @@
 		77A8B64B21E5A0EF00BC8C70 /* ImageData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageData.m; sourceTree = "<group>"; };
 		77A8B64D21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailServiceFoot.xml; sourceTree = "<group>"; };
 		77A8B64F21E612FF00BC8C70 /* Test.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Test.xml; sourceTree = "<group>"; };
+		77A8B65121E62A6000BC8C70 /* TableViewSectionRow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewSectionRow.h; sourceTree = "<group>"; };
+		77A8B65221E62A6000BC8C70 /* TableViewSectionRow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewSectionRow.m; sourceTree = "<group>"; };
 		77AC224D21D7D07600C0B7E8 /* UIViewController+XML.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+XML.h"; sourceTree = "<group>"; };
 		77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+XML.m"; sourceTree = "<group>"; };
 		77B053CC21C8A5F90045A489 /* Net.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Net.h; sourceTree = "<group>"; };
@@ -1412,6 +1415,8 @@
 				77B0559D21D205540045A489 /* TableViewAdapter.m */,
 				7734C0BB21D2119A009D1EE8 /* TableViewSection.h */,
 				7734C0BC21D2119A009D1EE8 /* TableViewSection.m */,
+				77A8B65121E62A6000BC8C70 /* TableViewSectionRow.h */,
+				77A8B65221E62A6000BC8C70 /* TableViewSectionRow.m */,
 				771CA3CB21DCB2AB00B00F11 /* TableViewCell.h */,
 				771CA3CC21DCB2AB00B00F11 /* TableViewCell.m */,
 			);
@@ -3108,6 +3113,7 @@
 				77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */,
 				771CA42C21DDD94800B00F11 /* CommentFilterData.m in Sources */,
 				7734C0DE21D22FDD009D1EE8 /* HomePerformer.m in Sources */,
+				77A8B65321E62A6000BC8C70 /* TableViewSectionRow.m in Sources */,
 				77A38A2521E0889600042B04 /* ProgressHUB+Tips.m in Sources */,
 				77EA8F5321B90226001B8959 /* UIViewController+JSON.m in Sources */,
 				77EA8F6D21B90227001B8959 /* UIView+View.m in Sources */,

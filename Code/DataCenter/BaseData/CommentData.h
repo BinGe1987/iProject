@@ -21,8 +21,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *commentType;      //评论类型
 @property (nonatomic, copy) NSString *createTime;       //评论时间
 @property (nonatomic, copy) NSString *content;          //评论内容
-@property (nonatomic, copy) NSString *commentCount;     //回复条数
-@property (nonatomic, copy) NSString *likeCount;        //点赞数
+
+@property (nonatomic, assign) NSInteger commentCount;     //回复条数
+@property (nonatomic, assign) NSInteger likeCount;        //点赞数
 
 @property (nonatomic, assign) CGFloat score;              //评分
 

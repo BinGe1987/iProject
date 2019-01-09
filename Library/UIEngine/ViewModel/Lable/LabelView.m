@@ -23,7 +23,7 @@
     }
     CGFloat maxWidth = self.maxWidth;
     if (self.numberOfLines == 0) {
-        maxWidth *= 1000000;
+        maxWidth *= 10000000;
     } else {
         maxWidth *= self.numberOfLines;
     }

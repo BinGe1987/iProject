@@ -27,8 +27,14 @@
     
     //本地图片
     if (params.imageSrc) {
-        UIImage *image = [UIImage imageNamed:params.imageSrc];
-        self.imageView.image = image;
+        if ([params.imageSrc hasPrefix:@"@"]) {
+            UIImage *image = [UIImage imageNamed:[params.imageSrc substringFromIndex:1]];
+            self.imageView.image = image;
+        }
+        else if ([params.imageSrc hasPrefix:@"#"]){
+            UIImage *image = [UIImage imageNamed:[params.imageSrc substringFromIndex:1]];
+            self.imageView.image = image;
+        }
     }
     //网络图片
     else if (params.imageUrl){

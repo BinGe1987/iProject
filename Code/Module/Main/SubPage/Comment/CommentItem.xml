@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FrameLayout
     view_width="full"
-    view_height="242"
+    view_height="full"
     view_background="#00ff0fff">
     
     <ImageView
@@ -60,22 +60,29 @@
             text_src="评分：5.0"/>
     </LinearLayout>
     
-    
-    <Label
-        view_name="content"
+    <FrameLayout
         view_width="full"
-        view_height="auto"
-        text_size="15"
-        text_color="#2e2e2e"
-        text_src="暂无评论"
-        text_gravity="left"
+        view_height="38"
         layout_gravity="left|top"
         layout_marginTop="60"
         layout_marginLeft="85"
-        layout_marginRight="15"
-        layout_marginBottom="140"/>
+        layout_marginRight="15">
+        
+        <Label
+            view_name="content"
+            view_width="full"
+            view_height="auto"
+            text_size="15"
+            text_color="#2e2e2e"
+            text_src="暂无评论"
+            text_gravity="left"/>
+        
+    </FrameLayout>
+    
+    
     
     <LinearLayout
+        view_name="images"
         view_width="272sp"
         view_height="65sp"
         layout_marginTop="110"
@@ -86,28 +93,28 @@
             view_height="65sp"
             view_masksToBounds="YES"
             layout_marginLeft="4"
-            image_src="@default_club"
+            image_src="#UIImageDefault"
             image_scaleType="full"/>
         <ImageView
             view_width="65sp"
             view_height="65sp"
             view_masksToBounds="YES"
             layout_marginLeft="4"
-            image_src="@default_club"
+            image_src="#UIImageDefault"
             image_scaleType="full"/>
         <ImageView
             view_width="65sp"
             view_height="65sp"
             view_masksToBounds="YES"
             layout_marginLeft="4"
-            image_src="@default_club"
+            image_src="#UIImageDefault"
             image_scaleType="full"/>
         <ImageView
             view_width="65sp"
             view_height="65sp"
             view_masksToBounds="YES"
             layout_marginLeft="4"
-            image_src="@default_club"
+            image_src="#UIImageDefault"
             image_scaleType="full"/>
     </LinearLayout>
     <LinearLayout
@@ -122,6 +129,7 @@
             view_height="auto"
             image_src="@icon_like"/>
         <Label
+            view_name="like"
             view_width="auto"
             view_height="auto"
             text_size="14"
@@ -135,6 +143,7 @@
             layout_marginLeft="15"
             image_src="@icon_comment"/>
         <Label
+            view_name="commentCount2"
             view_width="auto"
             view_height="auto"
             text_size="14"

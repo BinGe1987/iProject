@@ -62,6 +62,9 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSInteger section = indexPath.section;
     TableViewSection *tvSection = [self.data objectAtIndex:section];
+    if (tvSection.rows && tvSection.rows.count > indexPath.row) {
+        return tvSection.rows[indexPath.row].height;
+    }
     return tvSection.height;
 }
 

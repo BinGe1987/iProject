@@ -15,7 +15,7 @@
         
         self.imageSrc = [model getString:@"image_src" defaultValue:nil];
         if ([self.imageSrc hasPrefix:@"@"]) {
-            self.imageSrc = [self.imageSrc substringFromIndex:1];
+//            self.imageSrc = [self.imageSrc substringFromIndex:1];
         }
         self.imageUrl = [model getString:@"image_url" defaultValue:nil];
         

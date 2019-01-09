@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TableViewSectionRow.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -20,6 +21,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) CGFloat footerHeight;
 
 @property (nonatomic, strong) NSMutableArray *array;
+
+@property (nonatomic, strong) NSMutableArray<TableViewSectionRow *> *rows;
+
+
 
 - (instancetype)initWithDictionary:(NSDictionary *)dic;
 

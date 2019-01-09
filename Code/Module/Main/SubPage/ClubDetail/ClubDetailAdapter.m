@@ -137,7 +137,8 @@
 
 - (UITableViewCell *)commentCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
-    ClubDetailCommentCell * cell = [ClubDetailCommentCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
+    CGFloat height = [self tableView:tableView heightForRowAtIndexPath:indexPath];
+    ClubDetailCommentCell * cell = [ClubDetailCommentCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, height)];
     [cell setData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }

@@ -12,7 +12,7 @@
         view_background="#ffffffff">
         
         <Label
-            view_name="commentCount"
+            view_name="allCommentCount"
             view_width="auto"
             view_height="auto"
             text_size="17"

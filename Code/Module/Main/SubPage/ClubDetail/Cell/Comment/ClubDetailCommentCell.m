@@ -33,8 +33,8 @@
     
     ViewGroup *root = [self.contentView findViewByName:@"root"];
     
-    UILabel *count = [root findViewByName:@"commentCount"];
-    count.text = [NSString stringWithFormat:@"全部（%ld）",[data count]];
+    UILabel *count = [root findViewByName:@"allCommentCount"];
+    count.text = [NSString stringWithFormat:@"用户评价（%ld）",[data count]];
     
     UIImageView *imageView = [root findViewByName:@"headImage"];
     [imageView setImageWithURL:[NSURL URLWithString:comment.user.avatarUrl] placeholder:UIImageDefault_UserMan];
@@ -59,6 +59,20 @@
     
     UILabel *content = [root findViewByName:@"content"];
     content.text = comment.content ? comment.content : @"暂无评论。";
+    
+    NSInteger imageCount = comment.imageList.list.count > 4 ? 4 : comment.imageList.list.count;
+    ViewGroup *imageViewGroup = [root findViewByName:@"images"];
+    for (int i=0; i<imageCount; i++) {
+        UIImageView *imageView = imageViewGroup.subviews[i];
+        ImageData *imageData = comment.imageList.list[i];
+        [imageView setImageWithURL:[NSURL URLWithString:imageData.imageUrl] placeholder: UIImageDefault];
+    }
+    
+    UILabel *like = [root findViewByName:@"like"];
+    like.text = [NSString stringWithFormat:@"%ld", comment.likeCount];
+    
+    UILabel *commentCount = [root findViewByName:@"commentCount2"];
+    commentCount.text = [NSString stringWithFormat:@"%ld", comment.commentCount];
     
     [root refreshLaoyout];
 }

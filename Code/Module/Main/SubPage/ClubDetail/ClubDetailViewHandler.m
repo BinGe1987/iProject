@@ -59,29 +59,40 @@
     //banner
     if (detailData.clubData.bannerList.list && detailData.clubData.bannerList.list.count > 0) {
         TableViewSection *bannerSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"banner", @"array": @[detailData.clubData.bannerList.list], @"height" : [NSNumber numberWithFloat:ScaleValue(138)]}];
-//        [sectionArray addObject:bannerSection];
+        [sectionArray addObject:bannerSection];
     }
     
     //会所信息
     TableViewSection *profileSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"profile", @"array": @[detailData.clubData], @"height" : [NSNumber numberWithFloat:125]}];
-//    [sectionArray addObject:profileSection];
+    [sectionArray addObject:profileSection];
     
     //广告条
     TableViewSection *adSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"ad", @"array": @[detailData.clubData], @"height" : [NSNumber numberWithFloat:ScaleValue(31)]}];
-//    [sectionArray addObject:adSection];
+    [sectionArray addObject:adSection];
     
     //技师数据
     if (detailData.techList.list && detailData.techList.list.count > 0) {
         TableViewSection *techSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"tech", @"array": @[detailData.techList.list], @"height" : [NSNumber numberWithFloat:157]}];
-//        [sectionArray addObject:techSection];
+        [sectionArray addObject:techSection];
     }
     
     //项目数据
     TableViewSection *projectSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"service", @"array": detailData.serviceList.list, @"height" : [NSNumber numberWithFloat:84],@"headerHeight" : [NSNumber numberWithFloat:42],@"footerHeight" : [NSNumber numberWithFloat:32]}];
-//    [sectionArray addObject:projectSection];
+    [sectionArray addObject:projectSection];
     
     //评论数据
     TableViewSection *commentSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"comment", @"array": @[detailData.commentList.list], @"height" : [NSNumber numberWithFloat:316]}];
+    NSMutableArray *rows = [NSMutableArray new];
+    for (CommentData *comment in detailData.commentList.list) {
+        TableViewSectionRow *row = [TableViewSectionRow new];
+        if (comment.imageList.list.count > 0) {
+            row.height = commentSection.height;
+        } else {
+            row.height = 225;
+        }
+        [rows addObject:row];
+    }
+    commentSection.rows = rows;
     [sectionArray addObject:commentSection];
     
     ClubDetailAdapter *adapter = [ClubDetailAdapter AdapterWithSourceData:sectionArray];
