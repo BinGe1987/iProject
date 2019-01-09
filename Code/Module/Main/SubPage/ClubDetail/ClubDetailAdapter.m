@@ -16,6 +16,7 @@
 @interface ClubDetailAdapter()
 
 @property (nonatomic, strong) UIView *serviceFootView;
+@property (nonatomic, assign) BOOL noMore;
 
 @end
 
@@ -79,12 +80,11 @@
     return cell;
 }
 
-static bool noMore;
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     TableViewSection *tvSection = [self.data objectAtIndex:section];
     NSInteger count = [tvSection.array count];
     if ([tvSection.name isEqualToString:@"service"]) {
-        count = noMore ? count : (count < 3 ? count : 3);
+        count = _noMore ? count : (count < 3 ? count : 3);
     }
     return count;
 }
@@ -113,11 +113,11 @@ static bool noMore;
             [nomoreView setVisibility:ViewVisibilityInvisible];
             UIButton *btn = [self.serviceFootView findViewByName:@"btn_more"];
             [btn setClickBlock:^(UIButton * _Nonnull button) {
-                noMore = !noMore;
+                _noMore = !_noMore;
                 NSIndexSet *indexSet=[[NSIndexSet alloc]initWithIndex:section];
                 [tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
                 
-                if (!noMore) {
+                if (!_noMore) {
                     [moreView setVisibility:ViewVisibilityVisible];
                     [nomoreView setVisibility:ViewVisibilityInvisible];
                 } else {

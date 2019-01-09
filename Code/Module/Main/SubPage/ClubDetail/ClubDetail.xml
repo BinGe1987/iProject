@@ -8,6 +8,7 @@
         view_name="table"
         view_width="full"
         view_height="full"
+        view_scrollIndicator="NO"
         view_background="#ffffffff" />
     
     <FrameLayout
@@ -20,7 +21,7 @@
     <Button
         view_name="btn_comment"
         view_width="full"
-        view_height="34"
+        view_height="40"
         text_src="发表评论"
         text_size="14"
         layout_gravity="bottom"

@@ -17,7 +17,7 @@
     ClubData *club = self.intentData;
     self.title = club.name;
     
-    ClubDetailPresenter *prsenter = [[ClubDetailPresenter alloc] initWithView:[self findViewByName:@"table"]];
+    ClubDetailPresenter *prsenter = [[ClubDetailPresenter alloc] initWithView:[self findViewByName:@"root"]];
     [self addPresenter:prsenter];
 }
 

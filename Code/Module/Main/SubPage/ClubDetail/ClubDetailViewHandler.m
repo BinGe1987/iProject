@@ -11,6 +11,7 @@
 @interface ClubDetailViewHandler()
 
 @property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) UIButton *commentView;
 
 @end
 
@@ -18,12 +19,17 @@
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
-    self.tableView = (UITableView *)view;
-    self.tableView.showsVerticalScrollIndicator = FALSE; //垂直滚动条
-    self.tableView.showsHorizontalScrollIndicator = FALSE;//水平滚动条
+    WeakSelf(self)
+    
+    self.commentView = [view findViewByName:@"btn_comment"];
+    [self.commentView setVisibility:ViewVisibilityInvisible];
+    
+    self.tableView = [view findViewByName:@"table"];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-//    [self.tableView setHeadRefreshHandler:^{
-//    }];
+    
+    [self.tableView setHeadRefreshHandler:^{
+        [weakself.tableView performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:1.5];
+    }];
     
     UIButton *btn = (UIButton *)[view findViewByName:@"btn_allComment"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
@@ -72,6 +78,8 @@
     ClubDetailAdapter *adapter = [ClubDetailAdapter AdapterWithSourceData:sectionArray];
     [self.tableView setAdapter:adapter];
     [self.tableView reloadData];
+    
+    [self.commentView setVisibility:ViewVisibilityVisible];
 }
 
 @end
