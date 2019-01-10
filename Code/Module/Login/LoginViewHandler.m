@@ -28,7 +28,7 @@
     [btn setClickBlock:^(UIButton * _Nonnull button) {
         [button dismissViewControllerAnimated:YES completion:nil];
         UserData *user = [DataCenter get].userData;
-        user.source = @{@"statusCode":@"200"};
+        user.source = [@{@"statusCode":@"200"} mutableCopy];
         user.token = @"d8074ffc47d045f092cb529ed252ad4f";
         [Store setValue:user.token forKey:@"token"];
         [EventBus postEvent:EventLoginStatusChanged data:user];

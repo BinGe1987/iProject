@@ -15,15 +15,17 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *number;
 @property (nonatomic, copy) NSString *name;
 @property (nonatomic, copy) NSString *imageUrl;
-@property (nonatomic, copy) NSString *browseNum;
-@property (nonatomic, copy) NSString *followNum;
-@property (nonatomic, copy) NSString *commentNum;
 @property (nonatomic, copy) NSString *phone;
 @property (nonatomic, copy) NSString *clubId;
 @property (nonatomic, copy) NSString *createTime;
 @property (nonatomic, copy) NSString *status;
 @property (nonatomic, copy) NSString *gender;
-@property (nonatomic, copy) NSString *score;
+
+@property (nonatomic, assign) CGFloat score;
+
+@property (nonatomic, assign) NSInteger browseNum;
+@property (nonatomic, assign) NSInteger followNum;
+@property (nonatomic, assign) NSInteger commentNum;
 
 @property (nonatomic, strong) NSArray *images;
 

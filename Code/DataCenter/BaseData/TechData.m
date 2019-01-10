@@ -15,14 +15,15 @@
     self.imageUrl = [data stringWithKey:@"techAvatar"];
     self.number = [data stringWithKey:@"serialNo"];
     self.name = [data stringWithKey:@"name"];
-    self.browseNum = [data stringWithKey:@"browseNum"];
-    self.commentNum = [data stringWithKeys:@[@"commentNum", @"commentCount"]];
-    self.followNum = [data stringWithKey:@"favoriteNum"];
     self.phone = [data stringWithKey:@"phoneNum"];
     self.status = [data stringWithKey:@"status"];
     self.gender = [data stringWithKey:@"gender"];
-    self.score = [data stringWithKey:@"score"];
     self.clubId = [data stringWithKey:@"clubId"];
+    
+    self.score = [data floatWithKey:@"score"];
+    self.browseNum = [data integerWithKey:@"browseNum"];
+    self.commentNum = [data integerWithKeys:@[@"commentNum", @"commentCount"]];
+    self.followNum = [data integerWithKey:@"favoriteNum"];
     
     NSMutableArray *imageArray = [NSMutableArray new];
     NSArray *array = [data arrayWithKey:@"imgList"];

@@ -24,7 +24,7 @@
     
     [self setContentViewWithXML:@"TechDetail.xml"];
     
-    [self addPresenter:[[TechDetailPresenter alloc] initWithView:[self findViewByName:@"scroll"]]];
+    [self addPresenter:[[TechDetailPresenter alloc] initWithView:[self findViewByName:@"root"]]];
 }
 
 - (void)onLayoutSubViewsCompleted {

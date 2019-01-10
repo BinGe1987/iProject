@@ -70,7 +70,7 @@
     NSArray *classify = @[@{@"id":@"1",@"name":@"水疗"},
                           @{@"id":@"2",@"name":@"推拿"},
                           @{@"id":@"3",@"name":@"浴足"}];
-    data.source = @{@"statusCode":@"200", @"respData":@{@"bannerList":array, @"classifyList":classify}};
+    data.source = [@{@"statusCode":@"200", @"respData":@{@"bannerList":array, @"classifyList":classify}} mutableCopy];
     callback(operation, data);
 }
 

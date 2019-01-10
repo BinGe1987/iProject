@@ -36,13 +36,13 @@
     label.text = [NSString stringWithFormat:@"%@ %@",techData.tech.name ,techData.tech.number];
     
     label = [self.itemView findViewByName:@"browse"];
-    label.text = [NSString stringWithFormat:@"%@浏览",techData.tech.browseNum];
+    label.text = [NSString stringWithFormat:@"%ld浏览",techData.tech.browseNum];
     
     label = [self.itemView findViewByName:@"follow"];
-    label.text = [NSString stringWithFormat:@"%@关注",techData.tech.followNum];
+    label.text = [NSString stringWithFormat:@"%ld关注",techData.tech.followNum];
     
     label = [self.itemView findViewByName:@"comment"];
-    label.text = [NSString stringWithFormat:@"%@评论",techData.tech.commentNum];
+    label.text = [NSString stringWithFormat:@"%ld评论",techData.tech.commentNum];
     
     ViewGroup *vg = (ViewGroup *)self.itemView;
     [vg boundsAndRefreshLayout];

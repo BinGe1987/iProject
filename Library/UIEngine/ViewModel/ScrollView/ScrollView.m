@@ -36,7 +36,7 @@
 - (void)boundsAndRefreshLayout {
     [self assignmentForMaxSize:CGSizeMake(self.maxWidth, self.maxHeight)];
     [self boundingSize];
-    [self onLayout];
+    [self layoutWithSuperView:self];
 }
 
 - (void)assignmentForMaxSize:(CGSize)size {
@@ -143,20 +143,26 @@
         subView.frame = r;
         left = (r.origin.x + r.size.width);
         
-//        CGRect b = subView.bounds;
-//        b.origin.x = subView.viewParams.paddingLeft;
-//        b.origin.y = subView.viewParams.paddingTop;
-//        b.size.width = subView.boundWidth;
-//        b.size.height = subView.boundHeight;
-//        subView.bounds = b;
-        
         maxHeight = MAX(maxHeight, subView.height);
         maxWidth += subView.width;
         maxWidth += subView.layoutParams.marginLeft;
         maxWidth += subView.layoutParams.marginRight;
-        
     }
     return CGSizeMake(maxWidth, maxHeight);
+}
+
+- (void)layoutWithSuperView:(UIView *)superView {
+    for (UIView *sub in superView.subviews) {
+        if ([sub conformsToProtocol:@protocol(ViewGroupDelegate)]) {
+            [self layoutWithSuperView:sub];
+        }
+    }
+    if (!(superView.viewParams.visibility == ViewVisibilityGone)) {
+        if ([superView conformsToProtocol:@protocol(ViewGroupDelegate)]) {
+            id<ViewGroupDelegate> delegate = (id<ViewGroupDelegate>)superView;
+            [delegate onLayout];
+        }
+    }
 }
 
 

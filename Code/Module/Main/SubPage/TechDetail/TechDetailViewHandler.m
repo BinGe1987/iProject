@@ -38,9 +38,13 @@
     TechDetailData *detail = (TechDetailData *)data;
     
     [self banner:detail];
+    [self profile:detail];
     
-    [((ViewGroup *)self.view) boundsAndRefreshLayout];
+//    [((ViewGroup *)self.view) boundsAndRefreshLayout];
+    [[self.view findViewByName:@"scroll"] boundsAndRefreshLayout];
 }
+
+#pragma mask banner
 
 - (void)banner:(TechDetailData *)detail {
     NSMutableArray *array = [NSMutableArray new];
@@ -75,5 +79,20 @@
     }
 }
 
+#pragma mask 技师数据
+- (void)profile:(TechDetailData *)detail {
+    ViewGroup *view = [self.view findViewByName:@"profile"];
+    
+    UILabel *label = [view findViewByName:@"label_name"];
+    label.text = detail.techData.name;
+    
+    label = [view findViewByName:@"label_follow"];
+    label.text = [NSString stringWithFormat:@"%ld人关注",detail.techData.followNum];
+    
+    label = [view findViewByName:@"label_score"];
+    label.text = [NSString stringWithFormat:@"%.1f",detail.techData.score];
+    
+//    [view boundsAndRefreshLayout];
+}
 
 @end

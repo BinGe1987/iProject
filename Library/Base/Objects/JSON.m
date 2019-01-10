@@ -66,6 +66,18 @@
 - (NSInteger)integerWithKey:(NSString *)key defaultValue:(NSInteger)defaultValue {
     return [[self.source objectForKey:key] integerValue];
 }
+- (NSInteger)integerWithKeys:(NSArray *)keys {
+    return [self integerWithKeys:keys defaultValue:0];
+}
+- (NSInteger)integerWithKeys:(NSArray *)keys defaultValue:(NSInteger)defaultValue {
+    for (NSString *key in keys) {
+        NSString *value = [self stringWithKey:key];
+        if (value) {
+            return [value integerValue];
+        }
+    }
+    return defaultValue;
+}
 
 - (CGFloat)floatWithKey:(NSString *)key {
     return [self floatWithKey:key defaultValue:0];

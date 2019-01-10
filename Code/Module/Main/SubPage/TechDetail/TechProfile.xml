@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <FrameLayout
+    view_name="profile"
     view_width="full"
     view_height="100"
     view_background="#000ff000">
     
     <Label
-        view_name="label_clubName"
+        view_name="label_name"
         view_width="auto"
         view_height="20"
         text_size="21"
         text_color="#2e2e2e"
         text_src="技师名字"
+        text_gravity="left"
         layout_margin="16"/>
     
-    <Button
+    <Label
+        view_name="label_follow"
         view_width="auto"
         view_height="16"
         view_borderRadius="3"
@@ -41,11 +44,12 @@
         layout_marginLeft="16"
         layout_marginTop="47"/>
     <Label
+        view_name="label_score"
         view_width="auto"
         view_height="15"
         text_size="12"
         text_color="#ffb925"
-        text_src="5.0"
+        text_src="0.0"
         layout_marginLeft="62"
         layout_marginTop="47"/>
     
