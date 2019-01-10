@@ -51,6 +51,7 @@ static char heightKey;
 
 - (void)setViewParams:(ViewParams *)params {
     objc_setAssociatedObject(self, viewParamsKey, params, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    [self applyViewParams:params];
 }
 
 - (ViewParams *)viewParams {

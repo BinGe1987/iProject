@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "ViewParams.h"
 #import "LayoutParams.h"
+#import "UIView+ApplyViewParams.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

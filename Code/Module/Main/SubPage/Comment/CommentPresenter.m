@@ -10,20 +10,37 @@
 
 @interface CommentPresenter()<ViewHandlerDelegate>
 
+@property (nonatomic, strong) CommentViewHandler *viewHandler;
+
 @end
 
 @implementation CommentPresenter
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
-    self.handler = [[CommentViewHandler alloc] initWithView:view];
-    self.handler.delegate = self;
+    self.viewHandler = [[CommentViewHandler alloc] initWithView:view];
+    self.viewHandler.delegate = self;
     
-    WeakSelf(self)
-    [[DataCenter get] perform:OperationGetCommentListData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-        CommentListData *list = (CommentListData *)data;
-        [weakself.handler setData:list];
-    }];
+    UIViewController *vc = [view currentViewController];
+    id data = vc.intentData;
+    NSDictionary *params;
+    if (data && [data isKindOfClass:[TechData class]]) {
+        TechData *tech = data;
+        params = @{@"relationId":tech.techID,
+                   @"category":@"tech"};
+    }
+    if (params) {
+        WeakSelf(self)
+        [[DataCenter get] perform:OperationGetCommentCategoryData params:params callback:^(id  _Nonnull operation, id  _Nullable data) {
+            if ([data isSuccess]) {
+                [weakself.viewHandler setCagetoryData:data];
+            } 
+        }];
+    }
+//    [[DataCenter get] perform:OperationGetCommentListData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+//        CommentListData *list = (CommentListData *)data;
+//        [weakself.handler setData:list];
+//    }];
     
     return self;
 }

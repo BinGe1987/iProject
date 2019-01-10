@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CommentViewHandler : ViewHandler
 
+- (void)setCagetoryData:(id)data;
+
 @end
 
 NS_ASSUME_NONNULL_END

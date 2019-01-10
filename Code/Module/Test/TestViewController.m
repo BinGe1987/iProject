@@ -28,7 +28,7 @@
         if ([data isKindOfClass:[UserData class]] && [data isLogin]) {
             NSDictionary *testData = [Store valueForKey:@"test_data"];
             TechData *test = [TechData withDictionary:testData];
-            [UIViewController pushController:@"TechDetailController" animated:YES data:test];
+            [UIViewController pushController:@"CommentController" animated:YES data:test];
         } else {
             [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
         }

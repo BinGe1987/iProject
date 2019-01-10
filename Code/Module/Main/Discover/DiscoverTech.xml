@@ -37,7 +37,7 @@
         view_masksToBounds="YES"
         text_src="头牌技师"
         text_colorSelected="#ffffff"
-        text_color="4abdcf"
+        text_color="#4abdcf"
         layout_gravity="center|bottom"
         layout_marginBottom="15"
         layout_marginLeft="55"/>

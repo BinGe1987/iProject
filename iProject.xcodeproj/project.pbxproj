@@ -60,7 +60,6 @@
 		771CA42321DDC2F500B00F11 /* CommentListHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42221DDC2F500B00F11 /* CommentListHandler.m */; };
 		771CA42621DDC30E00B00F11 /* CommentListPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42521DDC30E00B00F11 /* CommentListPerformer.m */; };
 		771CA42921DDC32400B00F11 /* CommentListData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42821DDC32400B00F11 /* CommentListData.m */; };
-		771CA42C21DDD94800B00F11 /* CommentFilterData.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42B21DDD94800B00F11 /* CommentFilterData.m */; };
 		771CA42F21DDE15300B00F11 /* CommentAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA42E21DDE15300B00F11 /* CommentAdapter.m */; };
 		771CA43221DDE25400B00F11 /* CommentItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA43121DDE25400B00F11 /* CommentItemCell.m */; };
 		771CA43621DDF26600B00F11 /* URLConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 771CA43521DDF26600B00F11 /* URLConstant.m */; };
@@ -111,6 +110,10 @@
 		7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7734C14021D2843B009D1EE8 /* HomeNavigation.json */; };
 		7739C41821E782B60052D2CA /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 7739C41721E782B60052D2CA /* back.png */; };
 		7739C41C21E78B350052D2CA /* ViewHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C41B21E78B350052D2CA /* ViewHolder.m */; };
+		7739C41F21E78C5D0052D2CA /* CommentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C41E21E78C5D0052D2CA /* CommentItemView.m */; };
+		7739C42221E78FED0052D2CA /* CommentCategoryPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C42121E78FEC0052D2CA /* CommentCategoryPerformer.m */; };
+		7739C42521E792A90052D2CA /* CommentCagetoryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C42421E792A90052D2CA /* CommentCagetoryData.m */; };
+		7739C42921E7A46F0052D2CA /* UIView+ApplyViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C42821E7A46F0052D2CA /* UIView+ApplyViewParams.m */; };
 		774F017421B9728900CB482F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774F017321B9728900CB482F /* MineViewController.m */; };
 		775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E221C3DDBA00B8D6FF /* UIViewController+Util.m */; };
 		775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E721C75DF600B8D6FF /* ImageUtils.m */; };
@@ -477,8 +480,6 @@
 		771CA42521DDC30E00B00F11 /* CommentListPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListPerformer.m; sourceTree = "<group>"; };
 		771CA42721DDC32400B00F11 /* CommentListData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentListData.h; sourceTree = "<group>"; };
 		771CA42821DDC32400B00F11 /* CommentListData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentListData.m; sourceTree = "<group>"; };
-		771CA42A21DDD94800B00F11 /* CommentFilterData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentFilterData.h; sourceTree = "<group>"; };
-		771CA42B21DDD94800B00F11 /* CommentFilterData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentFilterData.m; sourceTree = "<group>"; };
 		771CA42D21DDE15300B00F11 /* CommentAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentAdapter.h; sourceTree = "<group>"; };
 		771CA42E21DDE15300B00F11 /* CommentAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentAdapter.m; sourceTree = "<group>"; };
 		771CA43021DDE25400B00F11 /* CommentItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentItemCell.h; sourceTree = "<group>"; };
@@ -578,6 +579,14 @@
 		7739C41721E782B60052D2CA /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		7739C41A21E78B350052D2CA /* ViewHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHolder.h; sourceTree = "<group>"; };
 		7739C41B21E78B350052D2CA /* ViewHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewHolder.m; sourceTree = "<group>"; };
+		7739C41D21E78C5D0052D2CA /* CommentItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentItemView.h; sourceTree = "<group>"; };
+		7739C41E21E78C5D0052D2CA /* CommentItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentItemView.m; sourceTree = "<group>"; };
+		7739C42021E78FEC0052D2CA /* CommentCategoryPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentCategoryPerformer.h; sourceTree = "<group>"; };
+		7739C42121E78FEC0052D2CA /* CommentCategoryPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCategoryPerformer.m; sourceTree = "<group>"; };
+		7739C42321E792A90052D2CA /* CommentCagetoryData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentCagetoryData.h; sourceTree = "<group>"; };
+		7739C42421E792A90052D2CA /* CommentCagetoryData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCagetoryData.m; sourceTree = "<group>"; };
+		7739C42721E7A46F0052D2CA /* UIView+ApplyViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ApplyViewParams.h"; sourceTree = "<group>"; };
+		7739C42821E7A46F0052D2CA /* UIView+ApplyViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ApplyViewParams.m"; sourceTree = "<group>"; };
 		774F017221B9728900CB482F /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		774F017321B9728900CB482F /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		775B15E121C3DDBA00B8D6FF /* UIViewController+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Util.h"; sourceTree = "<group>"; };
@@ -1342,8 +1351,10 @@
 				771CA42E21DDE15300B00F11 /* CommentAdapter.m */,
 				771CA43021DDE25400B00F11 /* CommentItemCell.h */,
 				771CA43121DDE25400B00F11 /* CommentItemCell.m */,
-				771CA41621DDBA7A00B00F11 /* Comment.xml */,
+				7739C41D21E78C5D0052D2CA /* CommentItemView.h */,
+				7739C41E21E78C5D0052D2CA /* CommentItemView.m */,
 				771CA41821DDBE5900B00F11 /* CommentItem.xml */,
+				771CA41621DDBA7A00B00F11 /* Comment.xml */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -1353,12 +1364,12 @@
 			children = (
 				771CA42121DDC2F500B00F11 /* CommentListHandler.h */,
 				771CA42221DDC2F500B00F11 /* CommentListHandler.m */,
+				7739C42021E78FEC0052D2CA /* CommentCategoryPerformer.h */,
+				7739C42121E78FEC0052D2CA /* CommentCategoryPerformer.m */,
 				771CA42421DDC30E00B00F11 /* CommentListPerformer.h */,
 				771CA42521DDC30E00B00F11 /* CommentListPerformer.m */,
 				771CA42721DDC32400B00F11 /* CommentListData.h */,
 				771CA42821DDC32400B00F11 /* CommentListData.m */,
-				771CA42A21DDD94800B00F11 /* CommentFilterData.h */,
-				771CA42B21DDD94800B00F11 /* CommentFilterData.m */,
 			);
 			path = Comment;
 			sourceTree = "<group>";
@@ -1462,6 +1473,8 @@
 				77A8B64821E596F700BC8C70 /* ClubServiceData.m */,
 				771CA3EB21DCEFC000B00F11 /* CommentData.h */,
 				771CA3EC21DCEFC000B00F11 /* CommentData.m */,
+				7739C42321E792A90052D2CA /* CommentCagetoryData.h */,
+				7739C42421E792A90052D2CA /* CommentCagetoryData.m */,
 				77A389E121DE50ED00042B04 /* MemberData.h */,
 				77A389E221DE50ED00042B04 /* MemberData.m */,
 				77A389E421DE554C00042B04 /* RechargeData.h */,
@@ -1729,8 +1742,6 @@
 		776B55C221BEA4BF00793CAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				776B55F421C10F7100793CAF /* UIView+Params.h */,
-				776B55F521C10F7100793CAF /* UIView+Params.m */,
 				77EA8F1921B90226001B8959 /* UIView+View.h */,
 				77EA8F2021B90226001B8959 /* UIView+View.m */,
 				77CEA4A321D3188E00B388E4 /* UIView+JSON.h */,
@@ -2843,6 +2854,10 @@
 				77EA8EF521B90226001B8959 /* ViewModel.m */,
 				77EA8F0621B90226001B8959 /* ViewParams.h */,
 				77EA8F0D21B90226001B8959 /* ViewParams.m */,
+				776B55F421C10F7100793CAF /* UIView+Params.h */,
+				776B55F521C10F7100793CAF /* UIView+Params.m */,
+				7739C42721E7A46F0052D2CA /* UIView+ApplyViewParams.h */,
+				7739C42821E7A46F0052D2CA /* UIView+ApplyViewParams.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3138,7 +3153,6 @@
 				7734C12321D23A45009D1EE8 /* KafkaArcLayer.m in Sources */,
 				7723E1CB21D74B4F00B77890 /* XMLObject.m in Sources */,
 				77B053DE21C8E0C70045A489 /* NetRequest.m in Sources */,
-				771CA42C21DDD94800B00F11 /* CommentFilterData.m in Sources */,
 				7734C0DE21D22FDD009D1EE8 /* HomePerformer.m in Sources */,
 				77A8B65321E62A6000BC8C70 /* TableViewSectionRow.m in Sources */,
 				77A38A2521E0889600042B04 /* ProgressHUB+Tips.m in Sources */,
@@ -3241,6 +3255,7 @@
 				7734C0C021D223F5009D1EE8 /* UITableView+Adapter.m in Sources */,
 				776B55C121BEA10200793CAF /* FrameLayoutViewParams.m in Sources */,
 				77B0547921CA46DC0045A489 /* KSPhotoItem.m in Sources */,
+				7739C42921E7A46F0052D2CA /* UIView+ApplyViewParams.m in Sources */,
 				771CA3E121DCC91500B00F11 /* ClubDetailProjectCell.m in Sources */,
 				77CEA52E21D50B7B00B388E4 /* CollectionViewSection.m in Sources */,
 				77EA8F3921B90226001B8959 /* Presenter.m in Sources */,
@@ -3269,6 +3284,7 @@
 				77B054F321CB8D240045A489 /* Notification.m in Sources */,
 				77B0558221D122460045A489 /* XMLDictionary.m in Sources */,
 				7734C13321D26ED3009D1EE8 /* HomeTableViewCell.m in Sources */,
+				7739C41F21E78C5D0052D2CA /* CommentItemView.m in Sources */,
 				77B0544A21C943760045A489 /* YYDiskCache.m in Sources */,
 				77CEA4EE21D4BB3A00B388E4 /* DiscoverNvViewHandler.m in Sources */,
 				77EA8F4D21B90226001B8959 /* ViewGroupModel.m in Sources */,
@@ -3382,6 +3398,7 @@
 				77CEA52821D506F100B388E4 /* UICollectionView+Adapter.m in Sources */,
 				77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */,
 				771CA3F021DCF07A00B00F11 /* ClubDetailCommentCell.m in Sources */,
+				7739C42221E78FED0052D2CA /* CommentCategoryPerformer.m in Sources */,
 				7734C13721D2704B009D1EE8 /* BannerView.m in Sources */,
 				77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */,
 				77CEA4FC21D4C2FF00B388E4 /* DiscoverClubPerformer.m in Sources */,
@@ -3397,6 +3414,7 @@
 				77A389EC21DE59C400042B04 /* UserPerformer.m in Sources */,
 				771CA3B721DCA25400B00F11 /* ClubDetailData.m in Sources */,
 				77A38A6C21E32ECC00042B04 /* RootViewLayoutParams.m in Sources */,
+				7739C42521E792A90052D2CA /* CommentCagetoryData.m in Sources */,
 				77B0545321C943760045A489 /* YYAnimatedImageView.m in Sources */,
 				77EA8F4F21B90226001B8959 /* LinearViewModel.m in Sources */,
 				77A389D721DE196800042B04 /* VerifyCodePerformer.m in Sources */,

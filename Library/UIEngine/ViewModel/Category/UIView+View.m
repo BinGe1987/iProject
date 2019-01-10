@@ -214,4 +214,10 @@ static char shapeLayerKey;
             ];
 }
 
+- (id)copy {
+    UIView *view = [[[self class] alloc] initWithViewParams:self.viewParams];
+    view.layoutParams = self.layoutParams;
+    return view;
+}
+
 @end

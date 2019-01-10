@@ -19,7 +19,6 @@
     if (self) {
         self.model = model;
         self.view = [[[self ViewClass] alloc] initWithViewParams:[[[self ViewParamsClass] alloc] initWithModel:model]];
-        [self setupViewParams:self.view.viewParams];
         [self initialize];
     }
     return self;

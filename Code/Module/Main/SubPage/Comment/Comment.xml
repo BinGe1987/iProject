@@ -14,6 +14,7 @@
         layout_marginTop="44"/>
     
     <LinearLayout
+        view_name="layout_cagetory"
         view_width="full"
         view_height="auto"
         view_background="#00f0ffff"
@@ -21,39 +22,46 @@
         layout_margin="5">
         
         <Button
-            view_width="60"
+            view_name="button"
+            view_width="auto"
             view_height="22"
+            view_paddingLeft="6"
+            view_paddingRight="6"
             view_borderRadius="2"
             view_background="#3355b4b2"
+            view_backgroundSelected="#FF55b4b2"
+            text_color="#FF55b4b2"
+            text_colorSelected="#ffffff"
+            text_src="Button"
             layout_margin="8"/>
             
-        <Button
-            view_width="60"
-            view_height="22"
-            view_borderRadius="2"
-            view_background="#3355b4b2"
-            layout_margin="8"/>
-            
-        <Button
-            view_width="60"
-            view_height="22"
-            view_borderRadius="2"
-            view_background="#3355b4b2"
-            layout_margin="8"/>
+<!--        <Button-->
+<!--            view_width="60"-->
+<!--            view_height="22"-->
+<!--            view_borderRadius="2"-->
+<!--            view_background="#3355b4b2"-->
+<!--            layout_margin="8"/>-->
+<!--            -->
+<!--        <Button-->
+<!--            view_width="60"-->
+<!--            view_height="22"-->
+<!--            view_borderRadius="2"-->
+<!--            view_background="#3355b4b2"-->
+<!--            layout_margin="8"/>-->
 
     </LinearLayout>
     
-    <View
-        view_width="full"
-        view_height="10"
-        view_background="#f0f0f0"/>
-    
-    <TableView
-        view_name="table"
-        view_width="full"
-        view_height="full"
-        view_background="#ffffffff"
-        view_masksToBounds="YES"
-        view_scrollIndicator="NO"/>
+<!--    <View-->
+<!--        view_width="full"-->
+<!--        view_height="10"-->
+<!--        view_background="#f0f0f0"/>-->
+<!--    -->
+<!--    <TableView-->
+<!--        view_name="table"-->
+<!--        view_width="full"-->
+<!--        view_height="full"-->
+<!--        view_background="#ffffffff"-->
+<!--        view_masksToBounds="YES"-->
+<!--        view_scrollIndicator="NO"/>-->
 </LinearLayout>
 

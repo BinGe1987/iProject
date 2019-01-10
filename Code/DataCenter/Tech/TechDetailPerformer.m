@@ -11,7 +11,7 @@
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
     TechData *tech = params;
-    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_TechGeProfile];
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_TechGetProfile];
     request.data = @{
                      @"token":DataCenter.token,
                      @"techId":tech.techID,
@@ -29,7 +29,7 @@
     NSMutableDictionary *newSource = [data.source mutableCopy];
     Data *newData = [Data withDictionary:newSource];
     
-    request = [HttpRequest withHost:[URLConstant host] api:API_TechGeComment];
+    request = [HttpRequest withHost:[URLConstant host] api:API_TechGetComment];
     request.data = @{
                      @"token":DataCenter.token,
                      @"techId":tech.techID,

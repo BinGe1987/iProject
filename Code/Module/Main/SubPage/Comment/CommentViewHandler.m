@@ -7,6 +7,7 @@
 
 #import "CommentViewHandler.h"
 #import "CommentAdapter.h"
+#import "Button.h"
 
 @implementation CommentViewHandler
 
@@ -16,6 +17,19 @@
     [tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
 //    [tableView setSeparatorInset:UIEdgeInsetsMake(0, 85, 0, 15)];
     return self;
+}
+
+- (void)setCagetoryData:(id)data {
+    ViewGroup *vg = [self.view findViewByName:@"layout_cagetory"];
+    
+    UIButton *button = [vg findViewByName:@"button"];
+//    UIButton *button2 = [button copy];
+//    [vg addView:button2];
+//    
+//    for (CommentCagetoryData *cagetory in ((ListData *)data).list) {
+//        
+//    }
+//    [((ViewGroup *)self.view) boundsAndRefreshLayout];
 }
 
 - (void)setData:(id)data {
