@@ -24,6 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setImages:(NSArray *)addImageArray;
 
+- (NSArray *)getImageViews;
+
+- (void)scrollToView:(UIImageView *)view;
+
 @end
 
 NS_ASSUME_NONNULL_END

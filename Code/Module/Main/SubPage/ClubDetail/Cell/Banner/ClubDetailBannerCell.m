@@ -8,9 +8,10 @@
 #import "ClubDetailBannerCell.h"
 #import "BannerView.h"
 
-@interface ClubDetailBannerCell()<BannerViewDelegate>
+@interface ClubDetailBannerCell()<BannerViewDelegate, PhotoBrowserDelegate>
 
 @property (nonatomic, strong) BannerView *bannerView;
+@property (nonatomic, strong) PhotoBrowser *browser;
 @property (nonatomic, strong) NSArray *bannerList;
 
 @end
@@ -44,10 +45,23 @@
 
 - (void)bannerView:(BannerView *)bannerView imageView:(UIImageView *)imageView selectedIndex:(NSInteger)selected{
     NSMutableArray<PhotoItem *> *array = [NSMutableArray new];
-    for (BannerData *banner in self.bannerList) {
-        [array addObject:[[PhotoItem alloc] initWithView:imageView imageUrl:banner.imageUrl]];
+    NSArray *views = [bannerView getImageViews];
+    for (int i=0;i<views.count;i++) {
+        BannerData *banner = self.bannerList[i];
+        UIImageView *view = views[i];
+        [array addObject:[[PhotoItem alloc] initWithView:view imageUrl:banner.imageUrl]];
     }
-    [PhotoBrowser browserPhotoItems:array selectedIndex:selected];
+    if (!self.browser) {
+        self.browser = [PhotoBrowser new];
+    }
+    [self.browser browserPhotoItems:array selectedIndex:selected delegate:self];
+}
+
+- (void)photoBrowser:(PhotoBrowser *)browser didSelectItem:(PhotoItem *)item atIndex:(NSUInteger)index {
+    UIImageView *view = item.view;
+    if (view) {
+        [self.bannerView scrollToView:view];
+    }
 }
 
 @end

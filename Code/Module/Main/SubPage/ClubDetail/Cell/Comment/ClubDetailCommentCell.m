@@ -7,6 +7,12 @@
 
 #import "ClubDetailCommentCell.h"
 
+@interface ClubDetailCommentCell()<PhotoBrowserDelegate>
+
+@property (nonatomic, strong)PhotoBrowser *broswer;
+
+@end
+
 @implementation ClubDetailCommentCell
 
 + (instancetype)tableView:(UITableView *)tableView cellWithSize:(CGSize)size {
@@ -15,6 +21,7 @@
     if (cell == nil){
         cell = [[ClubDetailCommentCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
         [cell initWithSize:size];
+        cell.broswer = [PhotoBrowser new];
     }
     return cell;
 }
@@ -72,8 +79,9 @@
         [imageUrls addObject:[[PhotoItem alloc] initWithView:imageView imageUrl:imageData.imageUrl]];
         UIButton *button = [imageGroup findViewByName:@"button"];
         button.tag = i;
+        WeakSelf(self)
         [button setClickBlock:^(UIButton * _Nonnull button) {
-            [PhotoBrowser browserPhotoItems:imageUrls selectedIndex:button.tag];
+            [weakself.broswer browserPhotoItems:imageUrls selectedIndex:button.tag];
         }];
     }
     
@@ -84,6 +92,10 @@
     commentCount.text = [NSString stringWithFormat:@"%ld", comment.commentCount];
     
     [root refreshLaoyout];
+}
+
+- (void)photoBrowser:(PhotoBrowser *)browser didSelectItem:(PhotoItem *)item atIndex:(NSUInteger)index {
+    Log(@"12312312312");
 }
 
 @end

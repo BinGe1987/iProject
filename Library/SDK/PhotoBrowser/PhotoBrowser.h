@@ -10,13 +10,21 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+
+@protocol PhotoBrowserDelegate;
 @interface PhotoBrowser : NSObject
 
-+ (void)browserPhotoItems:(NSArray<PhotoItem *> *)items selectedIndex:(NSInteger)selected;
+@property (nonatomic, assign) id<PhotoBrowserDelegate> delegate;
 
-+ (void)browserPhoto:(NSArray *)imageUrls selectedIndex:(NSInteger)selected fromSourceView:(UIImageView *)view;
+- (void)browserPhotoItems:(NSArray<PhotoItem *> *)items selectedIndex:(NSInteger)selected;
 
-+ (void)controller:(UIViewController *)controller browser:(NSArray *)array selectedIndex:(NSInteger)index;
+- (void)browserPhotoItems:(NSArray<PhotoItem *> *)items selectedIndex:(NSInteger)selected delegate:(_Nullable id<PhotoBrowserDelegate>)delegate;
+
+@end
+
+@protocol PhotoBrowserDelegate <NSObject>
+
+- (void)photoBrowser:(PhotoBrowser *)browser didSelectItem:(PhotoItem  * _Nullable)item atIndex:(NSUInteger)index;
 
 @end
 

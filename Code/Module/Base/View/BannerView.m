@@ -76,6 +76,7 @@ static UIImage *placeholderImage;
     UIViewController *current = [self currentViewController];
     UIViewController *top = [UIViewController topViewController];
     if (current != top) {
+        [_timer setFireDate:[NSDate dateWithTimeIntervalSinceNow:2]];
         return;
     }
     
@@ -183,6 +184,29 @@ static UIImage *placeholderImage;
     }
     
     return _scrollView;
+}
+
+- (void)scrollToView:(UIImageView *)view {
+    for (UIImageView *page in _scrollView.subviews) {
+        if (page == view) {
+            CGFloat x = page.frame.origin.x;
+            CGFloat offsety = _scrollView.contentOffset.y;
+            Log(@"x %f", x);
+            _scrollView.contentOffset = CGPointMake(x, offsety);
+            //走到对应的点
+            NSInteger tmpPage = _scrollView.contentOffset.x / _width;
+            
+            _pageControl.currentPage = tmpPage - 1;
+        }
+    }
+}
+
+- (NSArray *)getImageViews {
+    NSMutableArray *arrray = [NSMutableArray new];
+    for (int i=1;i<_scrollView.subviews.count-2; i++) {
+        [arrray addObject:_scrollView.subviews[i]];
+    }
+    return arrray;
 }
 
 //手势方法

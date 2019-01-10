@@ -8,26 +8,17 @@
 #import "PhotoBrowser.h"
 #import "KSPhotoBrowser.h"
 
+@interface PhotoBrowser()<KSPhotoBrowserDelegate>
+
+@end
+
 @implementation PhotoBrowser
 
-+ (void)browserPhoto:(NSArray *)imageUrls selectedIndex:(NSInteger)selected fromSourceView:(UIImageView *)view {
-    UIViewController *controller = [UIViewController topViewController];
-    NSMutableArray *items = @[].mutableCopy;
-    for (int i = 0; i < imageUrls.count; i++) {
-        NSString *url = [imageUrls[i] stringByReplacingOccurrencesOfString:@"bmiddle" withString:@"large"];
-        KSPhotoItem *item = [KSPhotoItem itemWithSourceView:view imageUrl:[NSURL URLWithString:url]];
-        [items addObject:item];
-    }
-    KSPhotoBrowser *browser = [KSPhotoBrowser browserWithPhotoItems:items selectedIndex:selected];
-    browser.dismissalStyle = KSPhotoBrowserInteractiveDismissalStyleScale;
-    browser.backgroundStyle = KSPhotoBrowserBackgroundStyleBlur;
-    browser.loadingStyle = KSPhotoBrowserImageLoadingStyleIndeterminate;
-    browser.pageindicatorStyle = KSPhotoBrowserPageIndicatorStyleDot;
-    browser.bounces = NO;
-    [browser showFromViewController:controller];
+- (void)browserPhotoItems:(NSArray<PhotoItem *> *)items selectedIndex:(NSInteger)selected {
+    [self browserPhotoItems:items selectedIndex:selected delegate:nil];
 }
 
-+ (void)browserPhotoItems:(NSArray<PhotoItem *> *)items selectedIndex:(NSInteger)selected {
+- (void)browserPhotoItems:(NSArray<PhotoItem *> *)items selectedIndex:(NSInteger)selected delegate:(_Nullable id<PhotoBrowserDelegate>)delegate{
     UIViewController *controller = [UIViewController topViewController];
     NSMutableArray *ksItems = @[].mutableCopy;
     for (int i = 0; i < items.count; i++) {
@@ -41,24 +32,17 @@
     browser.loadingStyle = KSPhotoBrowserImageLoadingStyleIndeterminate;
     browser.pageindicatorStyle = KSPhotoBrowserPageIndicatorStyleDot;
     browser.bounces = NO;
+    browser.delegate = self;
     [browser showFromViewController:controller];
+    
+    self.delegate = delegate;
 }
 
-+ (void)controller:(UIViewController *)controller browser:(NSArray *)array selectedIndex:(NSInteger)index {
-    NSMutableArray *items = @[].mutableCopy;
-    for (int i = 0; i < array.count; i++) {
-        NSString *url = [array[i] stringByReplacingOccurrencesOfString:@"bmiddle" withString:@"large"];
-        KSPhotoItem *item = [KSPhotoItem itemWithSourceView:nil imageUrl:[NSURL URLWithString:url]];
-        [items addObject:item];
+- (void)ks_photoBrowser:(KSPhotoBrowser *)browser didSelectItem:(KSPhotoItem *)item atIndex:(NSUInteger)index {
+    if (self.delegate) {
+        PhotoItem *photoItem = [[PhotoItem alloc] initWithView:(UIImageView *)item.sourceView imageUrl:@""];
+        [self.delegate photoBrowser:self didSelectItem:photoItem atIndex:index];
     }
-    KSPhotoBrowser *browser = [KSPhotoBrowser browserWithPhotoItems:items selectedIndex:index];
-//    browser.delegate = self;
-    browser.dismissalStyle = KSPhotoBrowserInteractiveDismissalStyleNone;
-//    browser.backgroundStyle = _backgroundStyle;
-//    browser.loadingStyle = _loadingStyle;
-//    browser.pageindicatorStyle = _pageindicatorStyle;
-//    browser.bounces = _bounces;
-    [browser showFromViewController:controller];
 }
 
 @end
