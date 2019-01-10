@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (XML)
 
-+ (UIView *)viewWithXML:(NSString *)name size:(CGSize)size;
++ (id)viewWithXML:(NSString *)name size:(CGSize)size;
 
 @end
 

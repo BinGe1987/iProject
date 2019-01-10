@@ -11,6 +11,7 @@
 @interface CommentPresenter()<ViewHandlerDelegate>
 
 @property (nonatomic, strong) CommentViewHandler *viewHandler;
+@property (nonatomic, strong) NSMutableDictionary *params;
 
 @end
 
@@ -28,6 +29,9 @@
         TechData *tech = data;
         params = @{@"relationId":tech.techID,
                    @"category":@"tech"};
+        self.params = [@{@"techId":tech.techID} mutableCopy];
+    } else {
+//        self.params = [@{@"techId":tech.techID} mutableCopy];
     }
     if (params) {
         WeakSelf(self)
@@ -37,19 +41,18 @@
             } 
         }];
     }
-//    [[DataCenter get] perform:OperationGetCommentListData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-//        CommentListData *list = (CommentListData *)data;
-//        [weakself.handler setData:list];
-//    }];
-    
     return self;
 }
 
 - (void)onViewAction:(id)action data:(id)data {
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetCommentListData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-        [weakself.handler setData:data];
-    }];
+    if ([action isEqualToString:@"cagetory"]) {
+        CommentCagetoryData *cagetoryData = data;
+        [self.params setObject:cagetoryData.type forKey:@"type"];
+        [[DataCenter get] perform:OperationGetCommentListData params:self.params callback:^(id  _Nonnull operation, id  _Nullable data) {
+            [weakself.viewHandler setData:data];
+        }];
+    }
 }
 
 @end

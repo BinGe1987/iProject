@@ -18,13 +18,23 @@
     return nil;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    CommentData *comment = data.array[indexPath.row];
+    if (comment.imageList.list.count) {
+        return 225;
+    } else {
+        return 172;
+    }
+}
+
 - (UITableViewCell *)commentCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     CommentItemCell * cell = [CommentItemCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
     UIView *line = [cell.contentView findViewByName:@"line"];
     if (indexPath.row == 0) {
 //        line.hidden = YES;
-        [line setVisibility:ViewVisibilityVisible];
+        [line setVisibility:ViewVisibilityInvisible];
     } else {
 //        line.hidden = NO;
         [line setVisibility:ViewVisibilityVisible];

@@ -24,10 +24,11 @@
         <Button
             view_name="button"
             view_width="auto"
-            view_height="22"
-            view_paddingLeft="6"
-            view_paddingRight="6"
-            view_borderRadius="2"
+            view_height="22sp"
+            view_paddingLeft="15"
+            view_paddingRight="15"
+            view_borderRadius="3"
+            view_masksToBounds="YES"
             view_background="#3355b4b2"
             view_backgroundSelected="#FF55b4b2"
             text_color="#FF55b4b2"
@@ -51,17 +52,17 @@
 
     </LinearLayout>
     
-<!--    <View-->
-<!--        view_width="full"-->
-<!--        view_height="10"-->
-<!--        view_background="#f0f0f0"/>-->
-<!--    -->
-<!--    <TableView-->
-<!--        view_name="table"-->
-<!--        view_width="full"-->
-<!--        view_height="full"-->
-<!--        view_background="#ffffffff"-->
-<!--        view_masksToBounds="YES"-->
-<!--        view_scrollIndicator="NO"/>-->
+    <View
+        view_width="full"
+        view_height="10"
+        view_background="#f0f0f0"/>
+    
+    <TableView
+        view_name="table"
+        view_width="full"
+        view_height="full"
+        view_background="#ffffffff"
+        view_masksToBounds="YES"
+        view_scrollIndicator="NO"/>
 </LinearLayout>
 

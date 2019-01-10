@@ -9,4 +9,14 @@
 
 @implementation CommentListData
 
+- (void)setData:(Data *)data {
+    [super setData:data];
+    
+    Data *resp = [data dataWithKey:@"respData"];
+    NSArray *commentList = [resp arrayWithKey:@"list"];
+    for (Data *comment in commentList) {
+        [self addData:[CommentData withData:comment]];
+    }
+}
+
 @end
