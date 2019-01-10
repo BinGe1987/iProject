@@ -10,8 +10,10 @@
 @implementation Store
 
 + (void)setValue:(id)value forKey:(NSString *)key {
-    NSUserDefaults *local = [NSUserDefaults standardUserDefaults];
-    [local setObject:value forKey:key];
+    if (value && key) {
+        NSUserDefaults *local = [NSUserDefaults standardUserDefaults];
+        [local setObject:value forKey:key];
+    }
 }
 
 + (id)valueForKey:(NSString *)key {

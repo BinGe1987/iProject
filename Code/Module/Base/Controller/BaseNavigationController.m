@@ -21,6 +21,9 @@
     [self.navigationBar setTintColor:color];
     [[UIBarButtonItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor clearColor]}forState:UIControlStateNormal];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:color}];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName : [UIFont fontWithName:@"Helvetica" size:17]}];
+    
+    
 }
 
 -(void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated {

@@ -99,19 +99,27 @@
         
             
         
-        <Button
-            view_name="btn_comment"
-            view_width="full"
-            view_height="40"
-            text_src="发表评论"
-            text_size="14"
-            view_background="#55b4b2"
-            text_color="#ffffff" />
-        <View
-            view_width="full"
-            view_height="10000"
-            view_background="#55b4b2">
-        </View>
+        
     </ScrollView>
+    
+    <View
+        view_width="full"
+        view_height="100"
+        layout_marginBottom="-60"
+        layout_gravity="bottom"
+        view_background="#55b4b2"/>
+    
+    <Button
+        view_name="btn_comment"
+        view_width="full"
+        view_height="40"
+        text_src="发表评论"
+        text_size="14"
+        view_background="#55b4b2"
+        layout_gravity="bottom"
+        text_color="#ffffff" />
+    
+    </View>
+    
 </FrameLayout>
 

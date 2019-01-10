@@ -109,6 +109,7 @@
 		7734C13C21D27A3F009D1EE8 /* HomeNvPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C13B21D27A3F009D1EE8 /* HomeNvPresenter.m */; };
 		7734C13F21D27AFA009D1EE8 /* HomeNvViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C13E21D27AFA009D1EE8 /* HomeNvViewHandler.m */; };
 		7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7734C14021D2843B009D1EE8 /* HomeNavigation.json */; };
+		7739C41821E782B60052D2CA /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 7739C41721E782B60052D2CA /* back.png */; };
 		774F017421B9728900CB482F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774F017321B9728900CB482F /* MineViewController.m */; };
 		775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E221C3DDBA00B8D6FF /* UIViewController+Util.m */; };
 		775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E721C75DF600B8D6FF /* ImageUtils.m */; };
@@ -573,6 +574,7 @@
 		7734C13D21D27AFA009D1EE8 /* HomeNvViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNvViewHandler.h; sourceTree = "<group>"; };
 		7734C13E21D27AFA009D1EE8 /* HomeNvViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNvViewHandler.m; sourceTree = "<group>"; };
 		7734C14021D2843B009D1EE8 /* HomeNavigation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeNavigation.json; sourceTree = "<group>"; };
+		7739C41721E782B60052D2CA /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		774F017221B9728900CB482F /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		774F017321B9728900CB482F /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		775B15E121C3DDBA00B8D6FF /* UIViewController+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Util.h"; sourceTree = "<group>"; };
@@ -2966,6 +2968,7 @@
 				7723E1B421D6715D00B77890 /* Category */,
 				77EA8F9921B91F8C001B8959 /* NavigationController.h */,
 				77EA8F9A21B91F8C001B8959 /* NavigationController.m */,
+				7739C41721E782B60052D2CA /* back.png */,
 				77EA8FA121B92022001B8959 /* TabbarController.h */,
 				77EA8FA221B92022001B8959 /* TabbarController.m */,
 				77EA8EE621B90226001B8959 /* ViewController.h */,
@@ -3046,6 +3049,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
+				7739C41821E782B60052D2CA /* back.png in Resources */,
 				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
 				77C3977321E440AC0016CEE3 /* ClassifyViewController.xml in Resources */,
 				77A8B64621E4EAB000BC8C70 /* ClassifyNavigation.xml in Resources */,
