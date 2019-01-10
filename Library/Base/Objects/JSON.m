@@ -13,7 +13,7 @@
 + (instancetype)JSONWithDictionary:(NSDictionary *)dictionary {
     Class cls = [self class];
     JSON *obj = [[cls alloc] init];;
-    obj.source = dictionary;
+    obj.source = [dictionary mutableCopy];
     return obj;
 }
 
@@ -85,6 +85,15 @@
 
 - (id)jsonWithKey:(NSString *)key {
     return [JSON JSONWithDictionary:[self.source objectForKey:key]];
+}
+
+- (void)putObject:(id)object forKey:(NSString *)key {
+    [self.source setObject:object forKey:key];
+}
+
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"%@", self.source?self.source:self.error];
 }
 
 @end

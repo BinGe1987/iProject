@@ -32,10 +32,12 @@
 #define API_ClubGetTechList             (@"/ydd-manager/api/v1/tech/byclub/list")                   //会所技师列表
 #define API_ClubGetCommentList          (@"/ydd-manager/api/v1/find/club/commentList")              //会所评论列表
 
+#pragma make 技师相关
+#define API_TechGeProfile               (@"/ydd-manager/api/v1/tech/home/detail")                   //获取技师数据
 
 
 #pragma make 我的页面相关
-#define API_MineGetMineData             (@"/api/v1/personalInfo/getPerInfoDetail")                  //获取我的页面数据
+#define API_MineGetMineData             (@"/ydd-manager/api/v1/personalInfo/getPerInfoDetail")      //获取我的页面数据
 
 
 

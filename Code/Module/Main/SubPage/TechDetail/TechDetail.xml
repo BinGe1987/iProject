@@ -95,6 +95,7 @@
         view_height="100"
         layout_gravity="bottom"
         layout_marginBottom="-66"
+        view_visibility="invisible"
         view_background="#55b4b2">
     </FrameLayout>
     <Button
@@ -105,7 +106,8 @@
         text_size="14"
         layout_gravity="bottom"
         view_background="#55b4b2"
-        text_color="#ffffff" />
+        view_visibility="gone"
+        text_color="#invisible" />
     
 </FrameLayout>
 

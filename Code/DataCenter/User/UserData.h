@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) RechargeData *recharge;   //充值信息
 @property (nonatomic, strong) PointsData *points;       //积分信息
 
+@property (nonatomic, assign) CGFloat laty;            //积分信息
+@property (nonatomic, assign) CGFloat lngx;         //积分信息
+
 
 
 ///判断用户是否登录

@@ -19,12 +19,14 @@
     self.handler = [[TechDetailViewHandler alloc] initWithView:view];
     self.handler.delegate = self;
     
+    TechData *tech = [view currentViewController].intentData;
+    [Store setValue:tech.source forKey:@"test_data"];
+    
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetTechDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+    [[DataCenter get] perform:OperationGetTechDetailData params:tech callback:^(id  _Nonnull operation, id  _Nullable data) {
         TechDetailData *detail = (TechDetailData *)data;
-//        [view currentViewController].navigationController.navigationBar.topItem.title = detail.clubData.name;
         [view currentViewController].title = detail.clubData.name;
-        [weakself.handler setData:data];
+        [weakself.handler setData:detail];
     }];
     
     return self;

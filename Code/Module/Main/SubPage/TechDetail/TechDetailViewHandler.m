@@ -29,11 +29,12 @@
     TechDetailData *detail = (TechDetailData *)data;
     BannerView *bannerView = (BannerView *)[self.view findViewByName:@"banner"];
     NSMutableArray *array = [NSMutableArray new];
-    for (NSString *imageUrl in detail.bannerList.list) {
-        UIImage *image = [UIImage imageWithContentsOfFile:imageUrl];
-        [array addObject:image];
+    for (ImageData *imageData in detail.techData.images) {
+        [array addObject:imageData.imageUrl];
     }
-    [bannerView setImages:array];
+    if (array.count) {
+        [bannerView setImages:array];
+    }
 }
 
 

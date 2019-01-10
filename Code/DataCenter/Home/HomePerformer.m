@@ -80,7 +80,7 @@
     request.data = @{@"token":DataCenter.token};
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];
-    data.source = response.data;
+    data.source = [response.data mutableCopy];
     data.error = response.error;
     callback(operation, data);
 }
@@ -91,8 +91,8 @@ static int currentPage = 0;
     request.timeout = 6;
     request.data = @{
                      @"token":DataCenter.token,
-                     @"laty":[NSNumber numberWithInt:0],
-                     @"lngx":[NSNumber numberWithInt:0],
+                     @"laty":@([DataCenter get].userData.laty),
+                     @"lngx":@([DataCenter get].userData.lngx),
                      @"areaId":@"0",
                      @"page":[NSNumber numberWithInt:++currentPage],
                      @"pageSize":@"10",
@@ -103,7 +103,7 @@ static int currentPage = 0;
                      };
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];
-    data.source = response.data;
+    data.source = [response.data mutableCopy];
     data.error = response.error;
     if (data.isSuccess) {
         NSMutableDictionary *source = [data.source mutableCopy];

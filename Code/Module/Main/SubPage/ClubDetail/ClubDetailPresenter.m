@@ -20,7 +20,7 @@
     self.handler.delegate = self;
     
     ClubData *club = [view currentViewController].intentData;
-    [Store setValue:club.source forKey:@"test_data"];
+//    [Store setValue:club.source forKey:@"test_data"];
     WeakSelf(self)
     [[DataCenter get] perform:OperationGetClubDetailData params:club callback:^(id  _Nonnull operation, id  _Nullable data) {
         ClubDetailData *detail = (ClubDetailData *)data;

@@ -10,28 +10,23 @@
 @implementation TechDetailPerformer
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
-    
-    return [Data new];
+    TechData *tech = params;
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_TechGeProfile];
+    request.data = @{
+                     @"token":DataCenter.token,
+                     @"techId":tech.techID,
+                     @"laty":@([DataCenter get].userData.laty),
+                     @"lngx":@([DataCenter get].userData.lngx),
+                     };
+    HttpResponse *response = [Http post:request];
+    Data *data = [Data new];
+    data.source = [response.data mutableCopy];
+    data.error = response.error;
+    return data;
 }
 
 - (id)parse:(_Nonnull id)operation withSource:(id)source {
-    TechDetailData *detail = [TechDetailData new];
-    //banner
-    detail.bannerList = [ListData new];
-    NSFileManager *manager = [NSFileManager defaultManager];
-    NSError *error;
-    NSString *folder = [[NSBundle mainBundle] pathForResource:@"banner" ofType:nil];
-    NSArray *fileList = [manager contentsOfDirectoryAtPath:folder error:&error];
-    for (NSString *name in fileList) {
-        BannerData *data = [BannerData new];
-        data.imageUrl = [NSString stringWithFormat:@"%@/%@", folder, name];
-        [detail.bannerList addData:data.imageUrl];
-    }
-    //会所数据
-    detail.clubData = [ClubData new];
-    detail.clubData.name = @"休闲养生演示会所";
-    
-    
+    TechDetailData *detail = [TechDetailData withData:source];
     return detail;
 }
 

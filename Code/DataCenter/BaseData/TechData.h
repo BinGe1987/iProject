@@ -11,13 +11,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TechData : Data
 
-@property (nonatomic, strong) NSString *techID;
-@property (nonatomic, strong) NSString *number;
-@property (nonatomic, strong) NSString *name;
-@property (nonatomic, strong) NSString *imageUrl;
-@property (nonatomic, strong) NSString *browseNum;
-@property (nonatomic, strong) NSString *followNum;
-@property (nonatomic, strong) NSString *commentNum;
+@property (nonatomic, copy) NSString *techID;
+@property (nonatomic, copy) NSString *number;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *imageUrl;
+@property (nonatomic, copy) NSString *browseNum;
+@property (nonatomic, copy) NSString *followNum;
+@property (nonatomic, copy) NSString *commentNum;
+@property (nonatomic, copy) NSString *phone;
+@property (nonatomic, copy) NSString *clubId;
+@property (nonatomic, copy) NSString *createTime;
+@property (nonatomic, copy) NSString *status;
+@property (nonatomic, copy) NSString *gender;
+@property (nonatomic, copy) NSString *score;
+
+@property (nonatomic, strong) NSArray *images;
 
 @end
 

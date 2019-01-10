@@ -16,6 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    TechData *techData = self.intentData;
+    if (!techData) {
+        [ProgressHUB toast:@"技师信息为空"];
+        return;
+    }
+    
     [self setContentViewWithXML:@"TechDetail.xml"];
     
     [self addPresenter:[[TechDetailPresenter alloc] initWithView:[self findViewByName:@"scroll"]]];

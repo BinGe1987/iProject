@@ -33,7 +33,7 @@ static int page;
                      };
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];
-    data.source = response.data;
+    data.source = [response.data mutableCopy];
     data.error = response.error;
     return data;
 }

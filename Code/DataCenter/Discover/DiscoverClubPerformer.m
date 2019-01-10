@@ -35,7 +35,7 @@ static int currentPage = 0;
     Log(@"请求参数 %@", request.data);
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];
-    data.source = response.data;
+    data.source = [response.data mutableCopy];
     data.error = response.error;
     if (data.isSuccess) {
         NSMutableDictionary *source = [data.source mutableCopy];

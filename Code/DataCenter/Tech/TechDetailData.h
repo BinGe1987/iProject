@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TechDetailData : Data
 
-@property (nonatomic, strong) ListData *bannerList;
+@property (nonatomic, strong) TechData *techData;
 @property (nonatomic, strong) ClubData *clubData;
 
 @end

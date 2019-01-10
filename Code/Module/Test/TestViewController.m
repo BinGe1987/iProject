@@ -27,18 +27,13 @@
     [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, id  _Nullable data) {
         if ([data isKindOfClass:[UserData class]] && [data isLogin]) {
             NSDictionary *testData = [Store valueForKey:@"test_data"];
-            ClubData *club = [ClubData withDictionary:testData];
-            [UIViewController pushController:@"ClubDetailController" animated:YES data:club];
+            TechData *test = [TechData withDictionary:testData];
+            [UIViewController pushController:@"TechDetailController" animated:YES data:test];
         } else {
             [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
         }
 
     }];
-////
-//    
-//    [self setContentViewWithXML:@"Test.xml"];
-//    UILabel *label = [self findViewByName:@"label"];
-//    label.text = @"实现是直接给NSString类添加一个分类，并添加了计算文本高度的两个方法实现是直接给NSString类添加一个分类类添加一个分类类添加一个分类类添加一个分类类添加一个分类";
     
 }
 

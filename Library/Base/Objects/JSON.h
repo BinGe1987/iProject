@@ -15,7 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///错误信息
 @property (nonatomic, strong) NSError *error;
 
-@property (nonatomic, strong) NSDictionary *source;
+@property (nonatomic, strong) NSMutableDictionary *source;
 
 + (instancetype)JSONWithDictionary:(NSDictionary *)dictionary;
 
@@ -34,8 +34,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (NSArray *)arrayWithKey:(NSString *)key;
-
 - (id)jsonWithKey:(NSString *)key;
+
+- (void)putObject:(id)object forKey:(NSString *)key;
 
 @end
 
