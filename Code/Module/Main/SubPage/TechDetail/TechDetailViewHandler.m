@@ -99,12 +99,17 @@
 
 #pragma mask 技师评论
 - (void)comment:(TechDetailData *)detail {
+    
+    UIButton *btn1 = (UIButton *)[self.view findViewByName:@"btn_allComment1"];
     UIButton *btn2 = (UIButton *)[self.view findViewByName:@"btn_allComment2"];
+    
     NSArray *array = detail.commentList;
     [self commentItem:[self.view findViewByName:@"comment1"] data:array.count>0 ? array[0] : nil];
     [self commentItem:[self.view findViewByName:@"comment2"] data:array.count>0 ? array[1] : nil];
+    [btn1 setVisibility:ViewVisibilityVisible];
     [btn2 setVisibility:ViewVisibilityVisible];
     if (!array.count) {
+        [btn1 setVisibility:ViewVisibilityInvisible];
         [btn2 setVisibility:ViewVisibilityInvisible];
     }
 }
