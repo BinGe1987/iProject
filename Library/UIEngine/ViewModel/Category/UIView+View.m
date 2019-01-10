@@ -159,6 +159,7 @@ static char shapeLayerKey;
 
 - (void)requestLayout {
 //    Log(@"requestLayout");
+    UIViewController *current = [self currentViewController];
     requestLayout = 1;
 }
 

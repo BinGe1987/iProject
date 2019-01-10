@@ -30,7 +30,23 @@ static const void *contentViewKey = &contentViewKey;
     return objc_getAssociatedObject(self, contentViewKey);
 }
 
+static const void *safeAreaKey = &safeAreaKey;
+- (void)setSafeAreaString:(NSString *)areaString {
+    objc_setAssociatedObject(self, &safeAreaKey, areaString, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(NSString *)safeAreaString {
+    return objc_getAssociatedObject(self, &safeAreaKey);
+}
+
 - (void)viewSafeAreaInsetsDidChange {
+    UIEdgeInsets insets = self.view.safeAreaInsets;
+    NSString *new = [NSString stringWithFormat:@"%.0f|%.00f|%.0f|%.0f",insets.left,insets.top,insets.right,insets.bottom];
+    NSString *old = self.safeAreaString;
+    if (new && old && [new isEqualToString:old]) {
+        return;
+    }
+    self.safeAreaString = new;
+    old = self.safeAreaString;
     [self refreshLayout];
 }
 

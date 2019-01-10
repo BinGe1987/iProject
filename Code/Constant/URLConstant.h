@@ -34,6 +34,7 @@
 
 #pragma make 技师相关
 #define API_TechGeProfile               (@"/ydd-manager/api/v1/tech/home/detail")                   //获取技师数据
+#define API_TechGeComment               (@"/ydd-manager/api/v1/tech/comment/list")                  //获取技师评论
 
 
 #pragma make 我的页面相关

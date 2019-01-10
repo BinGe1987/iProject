@@ -30,7 +30,7 @@
 - (void)onLayoutSubViewsCompleted {
     CGFloat topHeight = STATUSBARHIEGHT + NVBARHIEGHT;
     ScrollView *sv = (ScrollView *)[self findViewByName:@"scroll"];
-    sv.contentInset = UIEdgeInsetsMake(topHeight,0,0,0);
+    sv.contentInset = UIEdgeInsetsMake(topHeight,0,-10000,0);
     sv.contentOffset = CGPointMake(0, -topHeight);
 }
 
@@ -42,6 +42,5 @@
     CGFloat height = size.height - insets.top - insets.bottom;
     return CGRectMake(insets.left, insets.top, width, height);
 }
-
 
 @end

@@ -22,7 +22,33 @@
     Data *data = [Data new];
     data.source = [response.data mutableCopy];
     data.error = response.error;
-    return data;
+    if (![data isSuccess]) {
+        return data;
+    }
+    
+    NSMutableDictionary *newSource = [data.source mutableCopy];
+    Data *newData = [Data withDictionary:newSource];
+    
+    request = [HttpRequest withHost:[URLConstant host] api:API_TechGeComment];
+    request.data = @{
+                     @"token":DataCenter.token,
+                     @"techId":tech.techID,
+                     @"page":@"1",
+                     @"pageSize":@"2",
+                     @"type":@"selected",
+                     };
+    response = [Http post:request];
+    data = [Data new];
+    data.source = [response.data mutableCopy];
+    data.error = response.error;
+    
+    if ([data isSuccess]) {
+        Data *respData = [data dataWithKey:@"respData"];
+        NSArray *list = respData.source[@"list"];
+        [newData putObject:list forKey:@"commentList"];
+    }
+    
+    return newData;
 }
 
 - (id)parse:(_Nonnull id)operation withSource:(id)source {

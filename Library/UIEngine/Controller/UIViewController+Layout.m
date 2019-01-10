@@ -21,8 +21,8 @@ static const void *displayLinkKey = &displayLinkKey;
     if (!self.displayLink) {
         ///需要使用弱引用targer，controller才会正常的执行dealloc方法。
         WeakProxy *weakProxy = [WeakProxy weakProxyForObject:self];
-        self.displayLink = [CADisplayLink displayLinkWithTarget:weakProxy selector:@selector(layoutSubViews)];
-        [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+//        self.displayLink = [CADisplayLink displayLinkWithTarget:weakProxy selector:@selector(layoutSubViews)];
+//        [self.displayLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
     }
 }
 

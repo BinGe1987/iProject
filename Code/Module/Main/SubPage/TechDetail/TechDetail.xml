@@ -33,10 +33,12 @@
             text_color="#ffffff"/>
             
         <FrameLayout
+            view_name="comment"
             view_width="full"
             view_height="44">
             
             <Label
+                view_name="label_commentCount"
                 view_width="auto"
                 view_height="auto"
                 text_size="17"
@@ -67,7 +69,12 @@
                 view_height="full"/>
         </FrameLayout>
         
-        <include name="TechDetailComment.xml"/>
+        <FrameLayout
+            view_name="comment1"
+            view_width="full"
+            view_height="170">
+            <include name="CommentItem.xml"/>
+        </FrameLayout>
         
         <View
             view_width="full"
@@ -76,38 +83,35 @@
             layout_marginLeft="85"
             layout_marginRight="15"/>
         
-        <include name="TechDetailComment.xml"/>
+        <FrameLayout
+            view_name="comment2"
+            view_width="full"
+            view_height="170">
+            <include name="CommentItem.xml"/>
+        </FrameLayout>
         
         <Button
             view_name="btn_allComment2"
             view_width="full"
-            view_height="34"
+            view_height="40"
             text_src="查看全部评论"
             text_color="#5a9ef7"/>
         
+            
+        
+        <Button
+            view_name="btn_comment"
+            view_width="full"
+            view_height="40"
+            text_src="发表评论"
+            text_size="14"
+            view_background="#55b4b2"
+            text_color="#ffffff" />
         <View
             view_width="full"
-            view_height="34"/>
+            view_height="10000"
+            view_background="#55b4b2">
+        </View>
     </ScrollView>
-    
-    <FrameLayout
-        view_width="full"
-        view_height="100"
-        layout_gravity="bottom"
-        layout_marginBottom="-66"
-        view_visibility="invisible"
-        view_background="#55b4b2">
-    </FrameLayout>
-    <Button
-        view_name="btn_comment"
-        view_width="full"
-        view_height="34"
-        text_src="发表评论"
-        text_size="14"
-        layout_gravity="bottom"
-        view_background="#55b4b2"
-        view_visibility="gone"
-        text_color="#invisible" />
-    
 </FrameLayout>
 

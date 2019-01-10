@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) TechData *techData;
 @property (nonatomic, strong) ClubData *clubData;
 
+@property (nonatomic, strong) NSMutableArray *commentList;
+
 @end
 
 NS_ASSUME_NONNULL_END
