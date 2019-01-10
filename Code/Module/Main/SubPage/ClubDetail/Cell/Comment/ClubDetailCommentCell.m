@@ -91,7 +91,7 @@
     UILabel *commentCount = [root findViewByName:@"commentCount2"];
     commentCount.text = [NSString stringWithFormat:@"%ld", comment.commentCount];
     
-    [root refreshLaoyout];
+    [root boundsAndRefreshLayout];
 }
 
 - (void)photoBrowser:(PhotoBrowser *)browser didSelectItem:(PhotoItem *)item atIndex:(NSUInteger)index {

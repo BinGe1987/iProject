@@ -45,7 +45,7 @@
     
     
     
-    [root refreshLaoyout];
+    [root boundsAndRefreshLayout];
 }
 
 

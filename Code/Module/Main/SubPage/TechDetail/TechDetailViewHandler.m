@@ -33,8 +33,13 @@
         [array addObject:imageData.imageUrl];
     }
     if (array.count) {
+        [bannerView setVisibility:ViewVisibilityVisible];
         [bannerView setImages:array];
+    } else {
+        [bannerView setVisibility:ViewVisibilityGone];
     }
+    
+    [((ViewGroup *)self.view) boundsAndRefreshLayout];
 }
 
 

@@ -54,7 +54,7 @@
             [UIViewController pushController:@"TechDetailController" animated:YES data:tech];
         }];
     }
-    [linearView refreshLaoyout];
+    [linearView boundsAndRefreshLayout];
 }
 
 @end

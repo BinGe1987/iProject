@@ -80,7 +80,7 @@
     maxDiscount.attributedText = attributMax;
     
     ViewGroup *vg = [self.contentView findViewByName:@"root"];
-    [vg refreshLaoyout];
+    [vg boundsAndRefreshLayout];
     
 }
 @end

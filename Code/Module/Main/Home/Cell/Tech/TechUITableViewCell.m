@@ -55,7 +55,7 @@
         UILabel *lable = (UILabel *)[view findViewByName:@"name"];
         lable.text = tech.name;
         
-        [(ViewGroup *)view refreshLaoyout];
+        [(ViewGroup *)view boundsAndRefreshLayout];
         
         UIButton *btn = (UIButton *)[view findViewByName:@"btn"];
         [btn setClickBlock:^(UIButton * _Nonnull button) {

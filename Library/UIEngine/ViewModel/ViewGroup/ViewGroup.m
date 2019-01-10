@@ -30,7 +30,7 @@
     }
 }
 
-- (void)refreshLaoyout {
+- (void)boundsAndRefreshLayout {
     [self layoutWithMaxWidth:self.maxWidth maxHeight:self.maxHeight completed:nil];
 }
 

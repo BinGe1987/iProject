@@ -45,7 +45,7 @@
     label.text = [NSString stringWithFormat:@"%@评论",techData.tech.commentNum];
     
     ViewGroup *vg = (ViewGroup *)self.itemView;
-    [vg refreshLaoyout];
+    [vg boundsAndRefreshLayout];
     
 }
 

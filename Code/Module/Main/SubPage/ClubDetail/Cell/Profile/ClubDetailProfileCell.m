@@ -51,7 +51,7 @@
     label = [self.view findViewByName:@"label_time"];
     label.text = [NSString stringWithFormat:@"营业时间: %@-%@", club.startTime, club.endTime];
     
-    [self.view refreshLaoyout];
+    [self.view boundsAndRefreshLayout];
 }
 
 @end

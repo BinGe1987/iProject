@@ -17,6 +17,8 @@
 
 - (void)removeView:(UIView *_Nonnull)subView;
 
+- (void)boundsAndRefreshLayout;
+
 @end
 
 NS_ASSUME_NONNULL_BEGIN
@@ -25,7 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^ _Nullable )(void))block;
 
-- (void)refreshLaoyout;
+- (void)boundsAndRefreshLayout;
 
 @end
 
