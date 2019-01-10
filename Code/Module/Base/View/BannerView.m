@@ -15,7 +15,9 @@
 
 @property (nonatomic , assign) CGFloat height;
 
-@property (nonatomic , strong) NSMutableArray *dataArray;
+//@property (nonatomic , strong) NSMutableArray *dataArray;
+
+@property (nonatomic , strong) NSMutableArray *itemArray;
 
 @property (nonatomic , strong) UIPageControl *pageControl;
 
@@ -35,6 +37,8 @@ static UIImage *placeholderImage;
         //获取self高度
         _height = self.frame.size.height;
         
+        _itemArray = [NSMutableArray new];
+        
     }
     return self;
 }
@@ -43,15 +47,20 @@ static UIImage *placeholderImage;
     if (_timer) {
         return;
     }
-    
     //改变图片数组 1 2 3 4 5 6
-    _dataArray = [NSMutableArray arrayWithArray:addImageArray];
-    
+    NSMutableArray *newArray = [addImageArray mutableCopy];
     //在数组的最后一位添加上第一张图片 1 2 3 4 5 6 1
-    [_dataArray addObject:addImageArray[0]];
-    
+    [newArray addObject:addImageArray[0]];
     //在第一个位置插入图片6 | 6 1 2 3 4 5 6 1
-    [_dataArray insertObject:[addImageArray lastObject] atIndex:0];
+    [newArray insertObject:[addImageArray lastObject] atIndex:0];
+    
+    [_itemArray removeAllObjects];
+    for (int i=0;i<newArray.count;i++) {
+        BannerItem *item = [BannerItem new];
+        item.url = newArray[i];
+        item.view = [[UIImageView alloc] init];
+        [_itemArray addObject:item];
+    }
     
     //将scrollView添加到self上
     [self addSubview:self.scrollView];
@@ -86,7 +95,7 @@ static UIImage *placeholderImage;
     //获取终点
     CGFloat endX = startX + _width;
     
-    if (endX == (_dataArray.count - 1) * _width)
+    if (endX == (_itemArray.count - 1) * _width)
     {
         //动画时长  animateWithDuration
         [UIView animateWithDuration:0.25 animations:
@@ -136,7 +145,7 @@ static UIImage *placeholderImage;
         _scrollView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.frame.size.width, self.frame.size.height)];
         
         //滚动范围
-        _scrollView.contentSize = CGSizeMake(_width * _dataArray.count, _height);
+        _scrollView.contentSize = CGSizeMake(_width * _itemArray.count, _height);
         
         //起始页
         _scrollView.contentOffset = CGPointMake(_width, 0);
@@ -152,12 +161,14 @@ static UIImage *placeholderImage;
         //禁止水平滚动
         _scrollView.showsHorizontalScrollIndicator = NO;
         
-        for (int i = 0; i < _dataArray.count; i++)
+        for (int i = 0; i < _itemArray.count; i++)
         {
-            UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(_width * i, 0, _width, _height)];
+            BannerItem *item = _itemArray[i];
+            UIImageView *imageView = item.view;
+            imageView.frame = CGRectMake(_width * i, 0, _width, _height);
             imageView.contentMode = UIViewContentModeScaleAspectFill;
             imageView.layer.masksToBounds = YES;
-            id image = _dataArray[i];
+            id image = item.url;
             if (image && [image isKindOfClass:[UIImage class]]) {
                 imageView.image = image;
             } else {
@@ -209,6 +220,14 @@ static UIImage *placeholderImage;
     return arrray;
 }
 
+- (NSArray *)getBannerItems {
+    NSMutableArray *arrray = [NSMutableArray new];
+    for (int i=1;i<_itemArray.count-2; i++) {
+        [arrray addObject:_itemArray[i]];
+    }
+    return arrray;
+}
+
 //手势方法
 - (void)tapAction:(UITapGestureRecognizer *)recognizer
 {
@@ -225,6 +244,11 @@ static UIImage *placeholderImage;
         UIImageView *imageView = _scrollView.subviews[index];
         [self.delegate bannerView:self imageView:imageView];
     }
+    if ([self.delegate respondsToSelector:@selector(bannerView:selectedIndex:)])
+    {
+        NSInteger index = self.pageControl.currentPage;
+        [self.delegate bannerView:self selectedIndex:index];
+    }
 }
 
 //初始化pageControl
@@ -235,7 +259,7 @@ static UIImage *placeholderImage;
         _pageControl = [[UIPageControl  alloc]initWithFrame:CGRectMake(20, _height - 30, _width - 20 * 2, 30)];
         
         //小圆点的数量
-        _pageControl.numberOfPages = _dataArray.count - 2;
+        _pageControl.numberOfPages = _itemArray.count - 2;
         
         _pageControl.currentPageIndicatorTintColor  = [UIColor whiteColor];
         
@@ -269,7 +293,7 @@ static UIImage *placeholderImage;
     CGPoint currentOffSet = scrollView.contentOffset;
     
     //如果是在最后一页的话 , 让scrollView滚到第一页
-    if (currentOffSet.x == (_dataArray.count - 1)* _width)
+    if (currentOffSet.x == (_itemArray.count - 1)* _width)
     {
         _scrollView.contentOffset = CGPointMake(_width, 0);
     }
@@ -277,7 +301,7 @@ static UIImage *placeholderImage;
     //如果是第一页的时候 , 偏移量为0
     if (currentOffSet.x == 0)
     {
-        _scrollView.contentOffset = CGPointMake((_dataArray.count - 2) * _width, 0);
+        _scrollView.contentOffset = CGPointMake((_itemArray.count - 2) * _width, 0);
     }
     
     //获取最新偏移量

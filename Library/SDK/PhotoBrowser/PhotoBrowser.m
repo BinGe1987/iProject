@@ -22,14 +22,15 @@
     UIViewController *controller = [UIViewController topViewController];
     NSMutableArray *ksItems = @[].mutableCopy;
     for (int i = 0; i < items.count; i++) {
-        NSString *url = [items[i].imageUrl stringByReplacingOccurrencesOfString:@"bmiddle" withString:@"large"];
+//        NSString *url = [items[i].imageUrl stringByReplacingOccurrencesOfString:@"bmiddle" withString:@"large"];
+        NSString *url = items[i].imageUrl;
         KSPhotoItem *item = [KSPhotoItem itemWithSourceView:items[i].view imageUrl:[NSURL URLWithString:url]];
         [ksItems addObject:item];
     }
     KSPhotoBrowser *browser = [KSPhotoBrowser browserWithPhotoItems:ksItems selectedIndex:selected];
     browser.dismissalStyle = KSPhotoBrowserInteractiveDismissalStyleScale;
     browser.backgroundStyle = KSPhotoBrowserBackgroundStyleBlur;
-    browser.loadingStyle = KSPhotoBrowserImageLoadingStyleIndeterminate;
+//    browser.loadingStyle = KSPhotoBrowserImageLoadingStyleDeterminate;
     browser.pageindicatorStyle = KSPhotoBrowserPageIndicatorStyleDot;
     browser.bounces = NO;
     browser.delegate = self;

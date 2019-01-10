@@ -8,6 +8,13 @@
 #import "TechDetailViewHandler.h"
 #import "BannerView.h"
 
+@interface TechDetailViewHandler()<BannerViewDelegate, PhotoBrowserDelegate>
+
+@property (nonatomic, strong) BannerView *bannerView;
+@property (nonatomic, strong) PhotoBrowser *browser;
+
+@end
+
 @implementation TechDetailViewHandler
 
 - (instancetype)initWithView:(UIView *)view {
@@ -22,24 +29,50 @@
         [UIViewController pushController:@"CommentController" animated:YES data:nil];
     }];
     
+    self.bannerView = [self.view findViewByName:@"banner"];
+    self.bannerView.delegate = self;
     return self;
 }
 
 - (void)setData:(id)data {
     TechDetailData *detail = (TechDetailData *)data;
-    BannerView *bannerView = (BannerView *)[self.view findViewByName:@"banner"];
+    
+    [self banner:detail];
+    
+    [((ViewGroup *)self.view) boundsAndRefreshLayout];
+}
+
+- (void)banner:(TechDetailData *)detail {
     NSMutableArray *array = [NSMutableArray new];
     for (ImageData *imageData in detail.techData.images) {
         [array addObject:imageData.imageUrl];
     }
     if (array.count) {
-        [bannerView setVisibility:ViewVisibilityVisible];
-        [bannerView setImages:array];
+        [self.bannerView setVisibility:ViewVisibilityVisible];
+        [self.bannerView setImages:array];
     } else {
-        [bannerView setVisibility:ViewVisibilityGone];
+        [self.bannerView setVisibility:ViewVisibilityGone];
     }
-    
-    [((ViewGroup *)self.view) boundsAndRefreshLayout];
+}
+
+- (void)bannerView:(BannerView *)bannerView selectedIndex:(NSInteger)selected {
+    NSMutableArray<PhotoItem *> *array = [NSMutableArray new];
+    NSArray *items = [bannerView getBannerItems];
+    for (int i=0;i<items.count;i++) {
+        BannerItem *item = items[i];
+        [array addObject:[[PhotoItem alloc] initWithView:item.view imageUrl:item.url]];
+    }
+    if (!self.browser) {
+        self.browser = [PhotoBrowser new];
+    }
+    [self.browser browserPhotoItems:array selectedIndex:selected delegate:self];
+}
+
+- (void)photoBrowser:(PhotoBrowser *)browser didSelectItem:(PhotoItem *)item atIndex:(NSUInteger)index {
+    UIImageView *view = item.view;
+    if (view) {
+        [self.bannerView scrollToView:view];
+    }
 }
 
 

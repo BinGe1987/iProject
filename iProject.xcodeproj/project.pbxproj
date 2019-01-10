@@ -136,6 +136,7 @@
 		776B55F821C11A9200793CAF /* readme-UIEngine in Resources */ = {isa = PBXBuildFile; fileRef = 776B55F721C11A9200793CAF /* readme-UIEngine */; };
 		776B55FB21C14A0800793CAF /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55FA21C14A0800793CAF /* ScrollView.m */; };
 		7771843321E648C400B3DDD8 /* PhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771843221E648C300B3DDD8 /* PhotoItem.m */; };
+		7771843921E71E7D00B3DDD8 /* BannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771843821E71E7D00B3DDD8 /* BannerItem.m */; };
 		77A389D721DE196800042B04 /* VerifyCodePerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D621DE196800042B04 /* VerifyCodePerformer.m */; };
 		77A389DA21DE3F2200042B04 /* LoginPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D921DE3F2200042B04 /* LoginPerformer.m */; };
 		77A389DD21DE4DAB00042B04 /* MinePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389DC21DE4DAB00042B04 /* MinePresenter.m */; };
@@ -629,6 +630,8 @@
 		776B55FA21C14A0800793CAF /* ScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollView.m; sourceTree = "<group>"; };
 		7771843121E648C300B3DDD8 /* PhotoItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoItem.h; sourceTree = "<group>"; };
 		7771843221E648C300B3DDD8 /* PhotoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoItem.m; sourceTree = "<group>"; };
+		7771843721E71E7D00B3DDD8 /* BannerItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerItem.h; sourceTree = "<group>"; };
+		7771843821E71E7D00B3DDD8 /* BannerItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerItem.m; sourceTree = "<group>"; };
 		77A389D521DE196800042B04 /* VerifyCodePerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyCodePerformer.h; sourceTree = "<group>"; };
 		77A389D621DE196800042B04 /* VerifyCodePerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyCodePerformer.m; sourceTree = "<group>"; };
 		77A389D821DE3F2200042B04 /* LoginPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPerformer.h; sourceTree = "<group>"; };
@@ -1315,6 +1318,8 @@
 			children = (
 				7734C13521D2704B009D1EE8 /* BannerView.h */,
 				7734C13621D2704B009D1EE8 /* BannerView.m */,
+				7771843721E71E7D00B3DDD8 /* BannerItem.h */,
+				7771843821E71E7D00B3DDD8 /* BannerItem.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -3200,6 +3205,7 @@
 				77B0558E21D1DA840045A489 /* ComponentData.m in Sources */,
 				7734C11B21D23A45009D1EE8 /* KafkaRingIndicatorFooter.m in Sources */,
 				77B0545121C943760045A489 /* YYImageCoder.m in Sources */,
+				7771843921E71E7D00B3DDD8 /* BannerItem.m in Sources */,
 				77A8B63721E4DE8200BC8C70 /* DiscoverTechData.m in Sources */,
 				7723E1D121D780C000B77890 /* XMLModel.m in Sources */,
 				771CA38921D94EB800B00F11 /* DOPDropDownMenu.m in Sources */,

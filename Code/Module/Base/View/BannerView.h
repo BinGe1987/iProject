@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BannerItem.h"
 
 NS_ASSUME_NONNULL_BEGIN
 @class BannerView;
@@ -13,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol BannerViewDelegate <NSObject>
 
 @optional //可选
+- (void)bannerView:(BannerView *)bannerView selectedIndex:(NSInteger)selected;
 - (void)bannerView:(BannerView *)bannerView imageView:(UIImageView *)imageView;
 - (void)bannerView:(BannerView *)bannerView imageView:(UIImageView *)imageView selectedIndex:(NSInteger)selected;
 
@@ -25,6 +27,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setImages:(NSArray *)addImageArray;
 
 - (NSArray *)getImageViews;
+
+- (NSArray *)getBannerItems;
 
 - (void)scrollToView:(UIImageView *)view;
 

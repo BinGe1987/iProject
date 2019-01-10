@@ -43,13 +43,12 @@
     [self.bannerView setImages:array];
 }
 
-- (void)bannerView:(BannerView *)bannerView imageView:(UIImageView *)imageView selectedIndex:(NSInteger)selected{
+- (void)bannerView:(BannerView *)bannerView selectedIndex:(NSInteger)selected {
     NSMutableArray<PhotoItem *> *array = [NSMutableArray new];
-    NSArray *views = [bannerView getImageViews];
-    for (int i=0;i<views.count;i++) {
-        BannerData *banner = self.bannerList[i];
-        UIImageView *view = views[i];
-        [array addObject:[[PhotoItem alloc] initWithView:view imageUrl:banner.imageUrl]];
+    NSArray *items = [bannerView getBannerItems];
+    for (int i=0;i<items.count;i++) {
+        BannerItem *item = items[i];
+        [array addObject:[[PhotoItem alloc] initWithView:item.view imageUrl:item.url]];
     }
     if (!self.browser) {
         self.browser = [PhotoBrowser new];
