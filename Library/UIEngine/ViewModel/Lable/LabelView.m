@@ -35,7 +35,11 @@
         return textSize;
     } else {
         int lines = textSize.width / self.maxWidth + 1;
-        return CGSizeMake(self.maxWidth, textSize.height * lines);
+        CGFloat height = textSize.height * lines;
+        while (height > self.maxHeight) {
+            height = textSize.height * lines--;
+        }
+        return CGSizeMake(self.maxWidth, height);
     }
     
 }

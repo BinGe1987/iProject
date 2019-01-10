@@ -39,8 +39,8 @@
     
     [self banner:detail];
     [self profile:detail];
+    [self comment:detail];
     
-//    [((ViewGroup *)self.view) boundsAndRefreshLayout];
     [[self.view findViewByName:@"scroll"] boundsAndRefreshLayout];
 }
 
@@ -92,7 +92,26 @@
     label = [view findViewByName:@"label_score"];
     label.text = [NSString stringWithFormat:@"%.1f",detail.techData.score];
     
-//    [view boundsAndRefreshLayout];
+    label = [view findViewByName:@"label_address"];
+    label.text = [NSString stringWithFormat:@"%@",detail.clubData.address];
 }
+
+#pragma mask 技师评论
+- (void)comment:(TechDetailData *)detail {
+    ViewGroup *view = [self.view findViewByName:@"profile"];
+    
+    UILabel *label = [view findViewByName:@"label_name"];
+    label.text = detail.techData.name;
+    
+    label = [view findViewByName:@"label_follow"];
+    label.text = [NSString stringWithFormat:@"%ld人关注",detail.techData.followNum];
+    
+    label = [view findViewByName:@"label_score"];
+    label.text = [NSString stringWithFormat:@"%.1f",detail.techData.score];
+    
+    label = [view findViewByName:@"label_address"];
+    label.text = [NSString stringWithFormat:@"%@",detail.clubData.address];
+}
+
 
 @end

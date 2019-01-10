@@ -2,7 +2,7 @@
 <FrameLayout
     view_name="profile"
     view_width="full"
-    view_height="100"
+    view_height="110"
     view_background="#000ff000">
     
     <Label
@@ -55,12 +55,14 @@
     
     <!--    地址    -->
     <Label
+        view_name="label_address"
         view_width="auto"
-        view_height="15"
+        view_height="auto"
         text_size="13"
         text_color="#2e2e2e"
         text_src="会所地址 距离0公里"
         layout_marginLeft="16"
+        layout_marginRight="60"
         layout_marginTop="75"/>
     <ImageView
         view_width="13"
@@ -68,6 +70,6 @@
         image_src="@arrow2"
         layout_gravity="right|top"
         layout_marginRight="16"
-        layout_marginTop="70"/>
+        layout_marginTop="77"/>
     
 </FrameLayout>
