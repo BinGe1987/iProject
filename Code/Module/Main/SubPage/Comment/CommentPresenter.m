@@ -31,7 +31,10 @@
                    @"category":@"tech"};
         self.params = [@{@"techId":tech.techID} mutableCopy];
     } else {
-//        self.params = [@{@"techId":tech.techID} mutableCopy];
+        ClubData *club = data;
+        params = @{@"relationId":club.clubID,
+                   @"category":@"club"};
+        self.params = [@{@"clubId":club.clubID} mutableCopy];
     }
     if (params) {
         WeakSelf(self)

@@ -25,6 +25,20 @@
         data.source = [response.data mutableCopy];
         data.error = response.error;
         return data;
+    } else {
+        HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_ClubGetCommentList];
+        request.data = @{
+                         @"token":DataCenter.token,
+                         @"clubId":params[@"clubId"],
+                         @"page":@"1",
+                         @"pageSize":@"10",
+                         @"type":params[@"type"],
+                         };
+        HttpResponse *response = [Http post:request];
+        Data *data = [Data new];
+        data.source = [response.data mutableCopy];
+        data.error = response.error;
+        return data;
     }
     
     return [Data new];

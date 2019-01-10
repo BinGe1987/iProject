@@ -43,6 +43,12 @@
     UILabel *count = [root findViewByName:@"allCommentCount"];
     count.text = [NSString stringWithFormat:@"用户评价（%ld）",[data count]];
     
+    UIButton *button = [root findViewByName:@"btn_allComment"];
+    [button setClickBlock:^(UIButton * _Nonnull button) {
+        ClubData *club = [button currentViewController].intentData;
+        [UIViewController pushController:@"CommentController" animated:YES data:club];
+    }];
+    
     UIImageView *imageView = [root findViewByName:@"headImage"];
     [imageView setImageWithURL:[NSURL URLWithString:comment.user.avatarUrl] placeholder:UIImageDefault_UserMan];
     

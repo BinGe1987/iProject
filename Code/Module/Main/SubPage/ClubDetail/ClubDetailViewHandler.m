@@ -25,7 +25,7 @@
     self.commentButton = [view findViewByName:@"btn_comment"];
     [self.commentButton setVisibility:ViewVisibilityInvisible];
     [self.commentButton setClickBlock:^(UIButton * _Nonnull button) {
-        
+       
     }];
     
     self.tableView = [view findViewByName:@"table"];
@@ -37,7 +37,8 @@
     
     UIButton *btn = (UIButton *)[view findViewByName:@"btn_allComment"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [UIViewController pushController:@"CommentController" animated:YES data:nil];
+//        ClubData *club = [button currentViewController].intentData;
+//        [UIViewController pushController:@"CommentController" animated:YES data:club];
     }];
     
     return self;
