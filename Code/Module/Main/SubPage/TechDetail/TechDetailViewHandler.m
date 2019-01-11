@@ -32,6 +32,11 @@
     
     self.bannerView = [self.view findViewByName:@"banner"];
     self.bannerView.delegate = self;
+    
+    UIScrollView *scroll = [self.view findViewByName:@"scroll"];
+    scroll.hidden = YES;
+    
+    
     return self;
 }
 
@@ -42,7 +47,13 @@
     [self profile:detail];
     [self comment:detail];
     
-    [[self.view findViewByName:@"scroll"] boundsAndRefreshLayout];
+    ViewGroup *scroll = [self.view findViewByName:@"scroll"];
+    [scroll boundsAndRefreshLayout];
+    scroll.hidden = NO;
+    scroll.alpha = 0;
+    [UIView animateWithDuration:0.5 animations:^{
+        scroll.alpha = 1;
+    }];
 }
 
 #pragma mask banner

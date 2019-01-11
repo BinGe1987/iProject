@@ -9,7 +9,9 @@
 
 
 #pragma make 域名
-#define BASE_URL                        (@"http://192.168.0.16:8081")
+//#define BASE_URL                        (@"http://192.168.0.16:8081")
+#define BASE_URL                        (@"https://encontro.xiaomodo.com")
+
 
 
 #pragma make 登录相关

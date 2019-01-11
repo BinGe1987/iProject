@@ -20,7 +20,7 @@
     self.handler.delegate = self;
     
     TechData *tech = [view currentViewController].intentData;
-    [Store setValue:tech.source forKey:@"test_data"];
+//    [Store setValue:tech.source forKey:@"test_data"];
     
     WeakSelf(self)
     [[DataCenter get] perform:OperationGetTechDetailData params:tech callback:^(id  _Nonnull operation, id  _Nullable data) {
