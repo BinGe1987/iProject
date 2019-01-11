@@ -222,7 +222,7 @@ static UIImage *placeholderImage;
 
 - (NSArray *)getBannerItems {
     NSMutableArray *arrray = [NSMutableArray new];
-    for (int i=1;i<_itemArray.count-2; i++) {
+    for (int i=1;i<_itemArray.count-1; i++) {
         [arrray addObject:_itemArray[i]];
     }
     return arrray;
