@@ -18,7 +18,7 @@
 
 //计算textview所需要的宽高
 - (CGSize)boundingTextSize {
-    if (!self.text) {
+    if (!self.text || self.maxWidth == 0 || self.maxHeight == 0) {
         return CGSizeZero;
     }
     CGFloat maxWidth = self.maxWidth;

@@ -19,11 +19,13 @@
         if (view.viewParams.visibility == ViewVisibilityGone) {
             continue;
         }
+        
         LayoutParams *lp = view.layoutParams;
         CGFloat viewMaxWidth = maxWidth - lp.marginLeft - lp.marginRight;
         CGFloat viewMaxHeight = maxHeight - lp.marginTop - lp.marginBottom;
         [view assignmentForMaxSize:CGSizeMake(viewMaxWidth, viewMaxHeight)];
         CGSize size = view.boundingSize;
+        
         if (self.orientation == OrientationVertical) {
             maxHeight = maxHeight - size.height - view.layoutParams.marginTop - view.layoutParams.marginBottom;
         } else {

@@ -119,7 +119,5 @@
         layout_gravity="bottom"
         text_color="#ffffff" />
     
-    </View>
-    
 </FrameLayout>
 

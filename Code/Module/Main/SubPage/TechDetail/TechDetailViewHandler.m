@@ -180,8 +180,7 @@
         
         
     } else {
-//        [root setViewVisibility:ViewVisibilityGone];
-        [root removeFromSuperview];
+        [root setViewVisibility:ViewVisibilityGone];
     }
 }
 
