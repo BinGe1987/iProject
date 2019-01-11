@@ -17,9 +17,9 @@ typedef enum : NSUInteger {
 } SizeValueType;
 
 typedef enum : NSUInteger {
-    ViewVisibilityVisible,
-    ViewVisibilityInvisible,
-    ViewVisibilityGone
+    ViewVisibilityVisible = 0,
+    ViewVisibilityInvisible = 1,
+    ViewVisibilityGone = 2
 } ViewVisibility;
 
 NS_ASSUME_NONNULL_BEGIN

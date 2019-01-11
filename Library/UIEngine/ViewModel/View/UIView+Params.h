@@ -33,7 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithViewParams:(ViewParams *)viewParams;
 
-- (void)setVisibility:(ViewVisibility)visibility;
+- (void)setViewVisibility:(ViewVisibility)visibility;
 
 @end
 

@@ -21,9 +21,9 @@
     self = [super initWithView:view];
     WeakSelf(self)
     UIView *bg = [view findViewByName:@"bottomBg"];
-    [bg setVisibility:ViewVisibilityInvisible];
+    [bg setViewVisibility:ViewVisibilityInvisible];
     self.commentButton = [view findViewByName:@"btn_comment"];
-    [self.commentButton setVisibility:ViewVisibilityInvisible];
+    [self.commentButton setViewVisibility:ViewVisibilityInvisible];
     [self.commentButton setClickBlock:^(UIButton * _Nonnull button) {
        
     }];
@@ -96,8 +96,8 @@
     [self.tableView reloadData];
     
     UIView *bg = [self.view findViewByName:@"bottomBg"];
-    [bg setVisibility:ViewVisibilityVisible];
-    [self.commentButton setVisibility:ViewVisibilityVisible];
+    [bg setViewVisibility:ViewVisibilityVisible];
+    [self.commentButton setViewVisibility:ViewVisibilityVisible];
 }
 
 @end

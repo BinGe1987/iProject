@@ -109,8 +109,8 @@
             self.serviceFootView = [UIView viewWithXML:@"ClubDetailServiceFoot.xml" size:size];
             UIView *moreView = [self.serviceFootView findViewByName:@"more"];
             UIView *nomoreView = [self.serviceFootView findViewByName:@"nomore"];
-            [moreView setVisibility:ViewVisibilityVisible];
-            [nomoreView setVisibility:ViewVisibilityInvisible];
+            [moreView setViewVisibility:ViewVisibilityVisible];
+            [nomoreView setViewVisibility:ViewVisibilityInvisible];
             UIButton *btn = [self.serviceFootView findViewByName:@"btn_more"];
             [btn setClickBlock:^(UIButton * _Nonnull button) {
                 _noMore = !_noMore;
@@ -118,11 +118,11 @@
                 [tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
                 
                 if (!_noMore) {
-                    [moreView setVisibility:ViewVisibilityVisible];
-                    [nomoreView setVisibility:ViewVisibilityInvisible];
+                    [moreView setViewVisibility:ViewVisibilityVisible];
+                    [nomoreView setViewVisibility:ViewVisibilityInvisible];
                 } else {
-                    [moreView setVisibility:ViewVisibilityInvisible];
-                    [nomoreView setVisibility:ViewVisibilityVisible];
+                    [moreView setViewVisibility:ViewVisibilityInvisible];
+                    [nomoreView setViewVisibility:ViewVisibilityVisible];
                 }
                 
             }];

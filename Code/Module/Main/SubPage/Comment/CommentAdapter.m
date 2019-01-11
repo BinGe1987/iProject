@@ -34,10 +34,10 @@
     UIView *line = [cell.contentView findViewByName:@"line"];
     if (indexPath.row == 0) {
 //        line.hidden = YES;
-        [line setVisibility:ViewVisibilityInvisible];
+        [line setViewVisibility:ViewVisibilityInvisible];
     } else {
 //        line.hidden = NO;
-        [line setVisibility:ViewVisibilityVisible];
+        [line setViewVisibility:ViewVisibilityVisible];
     }
     [cell setData:[data.array objectAtIndex:indexPath.row]];
     return cell;

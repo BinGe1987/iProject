@@ -16,8 +16,8 @@
 }
 
 - (void)applyViewParams:(ViewParams *)viewParams {
-    ButtonViewParams *params = (ButtonViewParams *)viewParams;
     [super applyViewParams:viewParams];
+    ButtonViewParams *params = (ButtonViewParams *)viewParams;
     self.titleLabel.font = params.font;
     [self setTitle:params.text forState:UIControlStateNormal];
     [self setTitleColor:params.textColor forState:UIControlStateNormal];

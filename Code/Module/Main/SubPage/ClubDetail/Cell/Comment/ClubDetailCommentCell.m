@@ -60,9 +60,9 @@
     
     UILabel *tech = [root findViewByName:@"tech"];
     if ([NSString isEmpty:comment.tech.name] && [NSString isEmpty:comment.tech.number]) {
-        [tech setVisibility:ViewVisibilityGone];
+        [tech setViewVisibility:ViewVisibilityGone];
     } else {
-        [tech setVisibility:ViewVisibilityVisible];
+        [tech setViewVisibility:ViewVisibilityVisible];
         tech.text = [NSString stringWithFormat:@"技师：%@", [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name];
     }
     

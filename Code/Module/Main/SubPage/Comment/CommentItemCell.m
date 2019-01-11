@@ -56,9 +56,9 @@
     
     UILabel *tech = [root findViewByName:@"tech"];
     if ([NSString isEmpty:comment.tech.name] && [NSString isEmpty:comment.tech.number]) {
-        [tech setVisibility:ViewVisibilityGone];
+        [tech setViewVisibility:ViewVisibilityGone];
     } else {
-        [tech setVisibility:ViewVisibilityVisible];
+        [tech setViewVisibility:ViewVisibilityVisible];
         tech.text = [NSString stringWithFormat:@"技师：%@", [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name];
     }
     
@@ -74,11 +74,11 @@
     NSArray *imageArray = [comment.imageList.list mutableCopy];
     NSMutableArray<PhotoItem *> *imageUrls = [NSMutableArray new];
     for (ViewGroup *imageGroup in imageViewGroup.subviews) {
-        [imageGroup setVisibility:ViewVisibilityInvisible];
+        [imageGroup setViewVisibility:ViewVisibilityInvisible];
     }
     for (int i=0; i<imageCount; i++) {
         ViewGroup *imageGroup = imageViewGroup.subviews[i];
-         [imageGroup setVisibility:ViewVisibilityVisible];
+         [imageGroup setViewVisibility:ViewVisibilityVisible];
         UIImageView *imageView = [imageGroup findViewByName:@"image"];
         ImageData *imageData = imageArray[i];
         [imageView setImageWithURL:[NSURL URLWithString:imageData.imageUrl] placeholder: UIImageDefault];

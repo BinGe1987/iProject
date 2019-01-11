@@ -11,7 +11,7 @@
 
 - (void)applyViewParams:(ViewParams *)viewParams {
 //    self.alpha = viewParams.alpha;
-    [self setVisibility:viewParams.visibility];
+//    [self setViewVisibility:viewParams.visibility];
     NSString *background = viewParams.background;
     if (background) {
         if ([background hasPrefix:@"#"]) {

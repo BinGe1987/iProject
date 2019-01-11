@@ -52,7 +52,7 @@ static char shapeLayerKey;
 - (void)assignmentForMaxSize:(CGSize)size {
     CGFloat maxWidth, maxHeight;
     ViewParams *vp = self.viewParams;
-    if (self.viewParams.visibility != ViewVisibilityGone) {
+    if (self.viewParams.visibility != ViewVisibilityGone ) {
         switch (vp.widthValueType) {
             default:
             case AUTO:

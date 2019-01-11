@@ -34,10 +34,10 @@
     ViewGroup *vg = [self.view findViewByName:@"layout_cagetory"];
     UIButton *button = [vg findViewByName:@"button"];
     if (!list || list.list.count == 0) {
-        [button setVisibility:ViewVisibilityInvisible];
+        [button setViewVisibility:ViewVisibilityInvisible];
         return;
     }
-    [button setVisibility:ViewVisibilityVisible];
+    [button setViewVisibility:ViewVisibilityVisible];
     for (int i=0;i<list.list.count;i++) {
         UIButton *btn;
         if (i > 0) {

@@ -84,9 +84,9 @@
     ClubTableViewCell * cell = [ClubTableViewCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
     UIView *line = [cell.contentView findViewByName:@"line"];
     if (indexPath.row == 0) {
-        [line setVisibility:ViewVisibilityInvisible];
+        [line setViewVisibility:ViewVisibilityInvisible];
     } else {
-        [line setVisibility:ViewVisibilityVisible];
+        [line setViewVisibility:ViewVisibilityVisible];
     }
     [cell setData:[data.array objectAtIndex:indexPath.row]];
     return cell;

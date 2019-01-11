@@ -22,7 +22,7 @@
     
     id click = ^(UIButton * _Nonnull button) {
         TechData *tech = [button currentViewController].intentData;
-        [UIViewController pushController:@"CommentController" animated:YES data:tech];
+//        [UIViewController pushController:@"CommentController" animated:YES data:tech];
     };
     
     UIButton *btn1 = (UIButton *)[view findViewByName:@"btn_allComment1"];
@@ -53,10 +53,10 @@
         [array addObject:imageData.imageUrl];
     }
     if (array.count) {
-        [self.bannerView setVisibility:ViewVisibilityVisible];
+        [self.bannerView setViewVisibility:ViewVisibilityVisible];
         [self.bannerView setImages:array];
     } else {
-        [self.bannerView setVisibility:ViewVisibilityGone];
+        [self.bannerView setViewVisibility:ViewVisibilityGone];
     }
 }
 
@@ -106,12 +106,14 @@
     NSArray *array = detail.commentList;
     [self commentItem:[self.view findViewByName:@"comment1"] data:array.count>0 ? array[0] : nil];
     [self commentItem:[self.view findViewByName:@"comment2"] data:array.count>0 ? array[1] : nil];
-    [btn1 setVisibility:ViewVisibilityVisible];
-    [btn2 setVisibility:ViewVisibilityVisible];
+    [btn1 setViewVisibility:ViewVisibilityVisible];
+    [btn2 setViewVisibility:ViewVisibilityVisible];
     if (!array.count) {
-        [btn1 setVisibility:ViewVisibilityInvisible];
-        [btn2 setVisibility:ViewVisibilityInvisible];
+        [btn1 setViewVisibility:ViewVisibilityInvisible];
+        [btn2 setViewVisibility:ViewVisibilityInvisible];
     }
+    
+    
 }
 
 - (void)commentItem:(ViewGroup *)root data:(CommentData *)comment {
@@ -133,9 +135,9 @@
         
         UILabel *tech = [root findViewByName:@"tech"];
         if ([NSString isEmpty:comment.tech.name] && [NSString isEmpty:comment.tech.number]) {
-            [tech setVisibility:ViewVisibilityGone];
+            [tech setViewVisibility:ViewVisibilityGone];
         } else {
-            [tech setVisibility:ViewVisibilityVisible];
+            [tech setViewVisibility:ViewVisibilityVisible];
             tech.text = [NSString stringWithFormat:@"技师：%@", [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name];
         }
         
@@ -175,7 +177,8 @@
         
         
     } else {
-        [root setVisibility:ViewVisibilityGone];
+//        [root setViewVisibility:ViewVisibilityGone];
+        [root removeFromSuperview];
     }
 }
 

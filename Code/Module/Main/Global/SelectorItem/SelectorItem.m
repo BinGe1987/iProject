@@ -26,7 +26,7 @@
     
     NSString *arrow = [vp paramWithKey:@"selector_arrow"];
     if (![NSString isEmpty:arrow] && [arrow isEqualToString:@"NO"]) {
-        [[view findViewByName:@"right_arrow"] setVisibility:ViewVisibilityGone];
+        [[view findViewByName:@"right_arrow"] setViewVisibility:ViewVisibilityGone];
     }
     
     UIButton *button = (UIButton *)[view findViewByName:@"button"];
