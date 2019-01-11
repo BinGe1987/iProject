@@ -59,7 +59,10 @@
         [tech setViewVisibility:ViewVisibilityGone];
     } else {
         [tech setViewVisibility:ViewVisibilityVisible];
-        tech.text = [NSString stringWithFormat:@"技师：%@", [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name];
+        tech.text = [NSString stringWithFormat:@"技师：%@%@",
+                     [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name,
+                     [NSString isEmpty:comment.tech.number] ? @"" : comment.tech.number
+                     ];
     }
     
     UILabel *score = [root findViewByName:@"score"];

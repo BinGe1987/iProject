@@ -159,7 +159,7 @@
         view_height="auto"
         layout_gravity="right|bottom"
         layout_marginRight="16"
-        layout_marginBottom="30"
+        layout_marginBottom="20"
         view_orientation="H" >
         <ImageView
             view_width="auto"
