@@ -123,7 +123,7 @@
         } else {
             root.viewParams.height = 242;
         }
-        
+        [root setViewVisibility:ViewVisibilityVisible];
         UIImageView *imageView = [root findViewByName:@"headImage"];
         [imageView setImageWithURL:[NSURL URLWithString:comment.user.avatarUrl] placeholder:UIImageDefault_UserMan];
         

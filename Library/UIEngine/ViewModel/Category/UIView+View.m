@@ -10,8 +10,8 @@
 
 @implementation UIView (View)
 
-static int requestLayout;
 static char shapeLayerKey;
+
 
 
 - (id)findViewByName:(NSString *)name {
@@ -157,18 +157,7 @@ static char shapeLayerKey;
     return CGSizeZero;
 }
 
-- (void)requestLayout {
-//    Log(@"requestLayout");
-//    UIViewController *current = [self currentViewController];
-    requestLayout = 1;
-}
-
-- (BOOL)isNeedRefrealLayout {
-    return requestLayout == 1;
-}
-
 - (void)refreshLayoutCompleted {
-    requestLayout = 0;
 }
 
 - (void)setShapeLayer:(CAShapeLayer *)shapeLayer {
@@ -177,31 +166,6 @@ static char shapeLayerKey;
 -(CAShapeLayer *)shapeLayer {
     return objc_getAssociatedObject(self, &shapeLayerKey);
 }
-
-///显示边框，界面调试的时候可以打开
-- (void)showframe {
-    /*
-     *画虚线
-     */
-    if (!self.shapeLayer) {
-        self.shapeLayer = [CAShapeLayer layer];
-        [self.layer addSublayer:self.shapeLayer];
-    }
-    CAShapeLayer *dotteShapeLayer = self.shapeLayer;
-    CGMutablePathRef dotteShapePath =  CGPathCreateMutable();
-    [dotteShapeLayer setFillColor:[[UIColor clearColor] CGColor]];
-    [dotteShapeLayer setStrokeColor:[self.backgroundColor CGColor]];
-    dotteShapeLayer.lineWidth = 2.0f ;
-    NSArray *dotteShapeArr = [[NSArray alloc] initWithObjects:[NSNumber numberWithInt:10],[NSNumber numberWithInt:5], nil];
-    [dotteShapeLayer setLineDashPattern:dotteShapeArr];
-    CGPathMoveToPoint(dotteShapePath, NULL, 0,0);
-    CGPathAddLineToPoint(dotteShapePath, NULL, self.width, 0);
-    CGPathAddLineToPoint(dotteShapePath, NULL, self.width,self.height);
-    CGPathAddLineToPoint(dotteShapePath, NULL, 0,self.height);
-    [dotteShapeLayer setPath:dotteShapePath];
-    CGPathRelease(dotteShapePath);
-}
-
 
 - (NSString *)description
 {

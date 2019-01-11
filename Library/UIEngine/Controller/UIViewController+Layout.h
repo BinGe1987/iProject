@@ -11,10 +11,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIViewController (Layout)
 
--(void)addRefreshLayoutRunLoop;
-
--(void)removeRefreshLayoutRunLoop;
-
 //刷新页面 布局
 - (void)refreshLayout;
 

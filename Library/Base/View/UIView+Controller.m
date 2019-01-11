@@ -14,7 +14,7 @@
 }
 
 - (UIViewController *)viewControllerSupportView:(UIView *)view {
-    for (UIView* next = [view superview]; next; next = next.superview) {
+    for (UIView* next = view; next; next = next.superview) {
         UIResponder *nextResponder = [next nextResponder];
         if ([nextResponder isKindOfClass:[UIViewController class]]) {
             return (UIViewController *)nextResponder;

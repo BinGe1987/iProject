@@ -12,12 +12,10 @@
 
 - (void)addView:(UIView *)view {
     [self addSubview:view];
-//    [self requestLayout];
 }
 
 - (void)removeView:(UIView *)view {
     [view removeFromSuperview];
-//    [self requestLayout];
 }
 
 - (void)assignmentForMaxSize:(CGSize)size {

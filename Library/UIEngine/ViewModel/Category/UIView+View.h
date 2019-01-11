@@ -31,12 +31,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)boundSizeChanged;
 
-///申请父布局刷新
-- (void)requestLayout;
-
-//提供给父布局判断是否需要刷新布局
-- (BOOL)isNeedRefrealLayout;
-
 //刷新布局完成
 - (void)refreshLayoutCompleted;
 
