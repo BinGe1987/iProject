@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="root"
+    view_width="full"
+    view_height="44">
+    
+    <Button
+        view_name="qr_code"
+        view_width="22"
+        view_height="22"
+        view_image="@qrcode"
+        view_paddingLeft="20"
+        view_paddingRight="20"
+        view_paddingTop="20"
+        view_paddingBottom="20"
+        layout_gravity="center|right">
+    </Button>
+    
+    <LinearLayout
+        view_name=""
+        view_width="auto"
+        view_height="auto"
+        view_orientation="horizontal"
+        layout_gravity="center|left">
+        <ImageView
+            view_width="12"
+            view_height="20"
+            image_src="@location"
+            view_paddingLeft="20"
+            view_paddingRight="20"
+            view_paddingTop="20"
+            view_paddingBottom="20">
+        </ImageView>
+        <Button
+            view_name="location"
+            view_width="auto"
+            view_height="20"
+            view_paddingLeft="5"
+            view_paddingRight="5"
+            view_paddingTop="20"
+            view_paddingBottom="20"
+            text_src="深圳"
+            text_color="#ff2e2e2e"
+            text_size="14">
+        </Button>
+    </LinearLayout>
+    
+    <FrameLayout
+        view_width="full"
+        view_height="28"
+        view_borderRadius="14"
+        view_borderWidth="0.5"
+        view_borderColor="#2e2e2e"
+        view_masksToBounds="YES"
+        layout_marginLeft="84"
+        layout_marginRight="60"
+        layout_gravity="center|left">
+        <Label
+            view_width="full"
+            view_height="full"
+            text_src="搜索一下附近吧..."
+            text_color="#d6d6d6"
+            text_size="12"
+            text_gravity="left"
+            layout_marginLeft="20"
+            layout_marginRight="20">
+        </Label>
+        <ImageView
+            view_width="auto"
+            view_height="auto"
+            image_src="@icon_search"
+            layout_gravity="center|right"
+            layout_marginRight="20">
+        </ImageView>
+        <Button
+            view_name="btn_search"
+            view_width="full"
+            view_height="full">
+        </Button>
+    </FrameLayout>
+    
+    
+</FrameLayout>
+
+

@@ -24,14 +24,14 @@
         NSString *colorSelected = [model getString:@"text_colorSelected" defaultValue:@"#ff000000"];
         self.textColorSelected = [ColorUtils colorWithString:colorSelected];
         
-        NSString *imageNormal = [model getString:@"button_imageNormal" defaultValue:nil];
+        NSString *imageNormal = [model getString:@"view_image" defaultValue:nil];
         if (imageNormal) {
             if ([imageNormal hasPrefix:@"@"]) {
                 imageNormal = [imageNormal substringFromIndex:1];
                 self.imageNormal = [UIImage imageNamed:imageNormal];
             }
         }
-        NSString *imageSelected = [model getString:@"button_imageSelected" defaultValue:nil];
+        NSString *imageSelected = [model getString:@"view_imageSelected" defaultValue:nil];
         if (imageSelected) {
             if ([imageSelected hasPrefix:@"@"]) {
                 imageSelected = [imageSelected substringFromIndex:1];

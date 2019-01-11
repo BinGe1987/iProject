@@ -107,7 +107,6 @@
 		7734C13721D2704B009D1EE8 /* BannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C13621D2704B009D1EE8 /* BannerView.m */; };
 		7734C13C21D27A3F009D1EE8 /* HomeNvPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C13B21D27A3F009D1EE8 /* HomeNvPresenter.m */; };
 		7734C13F21D27AFA009D1EE8 /* HomeNvViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7734C13E21D27AFA009D1EE8 /* HomeNvViewHandler.m */; };
-		7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */ = {isa = PBXBuildFile; fileRef = 7734C14021D2843B009D1EE8 /* HomeNavigation.json */; };
 		7739C41821E782B60052D2CA /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = 7739C41721E782B60052D2CA /* back.png */; };
 		7739C41C21E78B350052D2CA /* ViewHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C41B21E78B350052D2CA /* ViewHolder.m */; };
 		7739C41F21E78C5D0052D2CA /* CommentItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C41E21E78C5D0052D2CA /* CommentItemView.m */; };
@@ -386,6 +385,7 @@
 		77EA8FB221B94ADE001B8959 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FB121B94ADE001B8959 /* BaseNavigationController.m */; };
 		77EA8FBE21B94BB5001B8959 /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FBD21B94BB5001B8959 /* TestModule.m */; };
 		77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FC521B95584001B8959 /* MainTabbarController.m */; };
+		77FAA0C221E90ED00099473E /* HomeNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0C121E90ED00099473E /* HomeNavigation.xml */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -578,7 +578,6 @@
 		7734C13B21D27A3F009D1EE8 /* HomeNvPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNvPresenter.m; sourceTree = "<group>"; };
 		7734C13D21D27AFA009D1EE8 /* HomeNvViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeNvViewHandler.h; sourceTree = "<group>"; };
 		7734C13E21D27AFA009D1EE8 /* HomeNvViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeNvViewHandler.m; sourceTree = "<group>"; };
-		7734C14021D2843B009D1EE8 /* HomeNavigation.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = HomeNavigation.json; sourceTree = "<group>"; };
 		7739C41721E782B60052D2CA /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
 		7739C41A21E78B350052D2CA /* ViewHolder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewHolder.h; sourceTree = "<group>"; };
 		7739C41B21E78B350052D2CA /* ViewHolder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewHolder.m; sourceTree = "<group>"; };
@@ -1117,6 +1116,7 @@
 		77EA8FBD21B94BB5001B8959 /* TestModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestModule.m; sourceTree = "<group>"; };
 		77EA8FC421B95584001B8959 /* MainTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarController.h; sourceTree = "<group>"; };
 		77EA8FC521B95584001B8959 /* MainTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabbarController.m; sourceTree = "<group>"; };
+		77FAA0C121E90ED00099473E /* HomeNavigation.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HomeNavigation.xml; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -1651,7 +1651,7 @@
 				7734C13B21D27A3F009D1EE8 /* HomeNvPresenter.m */,
 				7734C13D21D27AFA009D1EE8 /* HomeNvViewHandler.h */,
 				7734C13E21D27AFA009D1EE8 /* HomeNvViewHandler.m */,
-				7734C14021D2843B009D1EE8 /* HomeNavigation.json */,
+				77FAA0C121E90ED00099473E /* HomeNavigation.xml */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -3113,6 +3113,7 @@
 				771CA3E321DCDCAA00B00F11 /* ClubDetailServiceHead.xml in Resources */,
 				77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */,
 				77A38A0F21DF2FF600042B04 /* PayQRCodeController.xml in Resources */,
+				77FAA0C221E90ED00099473E /* HomeNavigation.xml in Resources */,
 				77CEA56E21D6588C00B388E4 /* OrderCellItem.json in Resources */,
 				771CA41921DDBE5900B00F11 /* CommentItem.xml in Resources */,
 				771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */,
@@ -3129,7 +3130,6 @@
 				77B0544821C943760045A489 /* README.md in Resources */,
 				771CA3E521DCDF8A00B00F11 /* ClubDetailTechItem.xml in Resources */,
 				77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */,
-				7734C14121D2843B009D1EE8 /* HomeNavigation.json in Resources */,
 				77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */,
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
