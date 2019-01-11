@@ -12,14 +12,16 @@
         view_width="full"
         view_height="full"
         view_scrollIndicator="NO"
-        view_background="#ffffff" />
+        view_background="#ffffff" >
+    </TableView>
         
     <View
         view_width="full"
         view_height="0.5"
         layout_fixTop="YES"
         layout_marginTop="44"
-        view_background="#fff5f5f5"/>
+        view_background="#fff5f5f5">
+    </View>
         
 </FrameLayout>
 

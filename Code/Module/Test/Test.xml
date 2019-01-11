@@ -4,8 +4,22 @@
     view_width="full"
     view_height="full"
     view_background="#f0f0f0">
- 
-        
+    <Label
+        view_name="label"
+        view_width="auto"
+        view_height="auto"
+        text_size="25"
+        text_color="#2e2e2e"
+        text_src="Label"
+        view_background="#ff00ff"/>
+     <Label
+         view_name="label"
+         view_width="auto"
+         view_height="auto"
+         text_size="25"
+         text_color="#2e2e2e"
+         text_src="Label"
+         view_background="#ff00ff"/>
     <Label
         view_name="label"
         view_width="auto"

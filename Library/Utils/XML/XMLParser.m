@@ -10,6 +10,7 @@
 
 @interface XMLParser()<NSXMLParserDelegate>
 
+@property (nonatomic, strong) NSString  *xml;
 @property (nonatomic, strong) XMLObject *data;
 @property (nonatomic, strong) XMLObject *current;
 
@@ -19,14 +20,24 @@
 @implementation XMLParser
 
 + (XMLObject *)objectFromXML:(NSString *)xml {
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:xml ofType:nil];
-    XMLParser *parser = [XMLParser new];
-    NSData *data = [NSData dataWithContentsOfFile:filePath];
-    NSXMLParser * xmlParse = [[NSXMLParser alloc]initWithData:data];
-    xmlParse.delegate = parser;
-    [xmlParse parse];
+    
+    XMLParser *parser = [[XMLParser alloc] initWithXML:xml];
     XMLObject *xmlObject = parser.data.childs[0];
     return  xmlObject;
+}
+
+- (instancetype)initWithXML:(NSString *)xml
+{
+    self = [super init];
+    if (self) {
+        self.xml = xml;
+        NSString *filePath = [[NSBundle mainBundle] pathForResource:xml ofType:nil];
+        NSData *data = [NSData dataWithContentsOfFile:filePath];
+        NSXMLParser * xmlParse = [[NSXMLParser alloc]initWithData:data];
+        xmlParse.delegate = self;
+        [xmlParse parse];
+    }
+    return self;
 }
 
 - (void)parserDidStartDocument:(NSXMLParser *)parser {
@@ -52,6 +63,16 @@
 
 //step 5：解析结束
 - (void)parserDidEndDocument:(NSXMLParser *)parser {
+    if (self.current == self.data || self.current == self.data.childs[0]) {
+        NSLog(@"解析成功");
+    } else {
+        NSLog(@"解析出错 : %@", self.xml);
+    }
+}
+
+- (void)parser:(NSXMLParser *)parser parseErrorOccurred:(NSError *)parseError {
+    NSDictionary *info = parseError.userInfo;
+    @throw [NSException exceptionWithName:self.xml reason:[NSString stringWithFormat:@"%@",info] userInfo:info];
 }
 
 
