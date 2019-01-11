@@ -20,6 +20,7 @@ static char heightKey;
 - (instancetype)initWithViewParams:(ViewParams *)viewParams {
     self = [self init];
     self.viewParams = viewParams;
+    [self applyViewParams:self.viewParams];
     return self;
 }
 
@@ -51,8 +52,6 @@ static char heightKey;
 
 - (void)setViewParams:(ViewParams *)params {
     objc_setAssociatedObject(self, viewParamsKey, params, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    Log(@"11111");
-    [self applyViewParams:params];
 }
 
 - (ViewParams *)viewParams {
@@ -68,8 +67,6 @@ static char heightKey;
 }
 
 - (void)setViewVisibility:(ViewVisibility)visibility {
-//    ViewParams *vp = self.viewParams;
-//    vp.visibility = visibility;
     [self.viewParams setVisibility:visibility];
     switch (visibility) {
         case ViewVisibilityVisible:

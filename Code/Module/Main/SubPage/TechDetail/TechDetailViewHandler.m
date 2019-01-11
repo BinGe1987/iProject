@@ -21,7 +21,7 @@
     self = [super initWithView:view];
     
     id click = ^(UIButton * _Nonnull button) {
-        TechData *tech = [button currentViewController].intentData;
+//        TechData *tech = [button currentViewController].intentData;
 //        [UIViewController pushController:@"CommentController" animated:YES data:tech];
     };
     
@@ -138,7 +138,10 @@
             [tech setViewVisibility:ViewVisibilityGone];
         } else {
             [tech setViewVisibility:ViewVisibilityVisible];
-            tech.text = [NSString stringWithFormat:@"技师：%@", [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name];
+            tech.text = [NSString stringWithFormat:@"技师：%@%@",
+                         [NSString isEmpty:comment.tech.name] ? @"" : comment.tech.name,
+                         [NSString isEmpty:comment.tech.number] ? @"" : comment.tech.number
+                         ];
         }
         
         UILabel *score = [root findViewByName:@"score"];
