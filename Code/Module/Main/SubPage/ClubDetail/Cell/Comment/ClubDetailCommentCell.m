@@ -36,9 +36,15 @@
 }
 
 - (void)setData:(id)data {
+    NSArray *array = data;
+    ViewGroup *root = [self.contentView findViewByName:@"root"];
+    if (array && array.count == 0) {
+        [root removeFromSuperview];
+        return;
+    }
     CommentData *comment = data[0];
     
-    ViewGroup *root = [self.contentView findViewByName:@"root"];
+    
     
     UILabel *count = [root findViewByName:@"allCommentCount"];
     count.text = [NSString stringWithFormat:@"用户评价（%ld）",[data count]];
