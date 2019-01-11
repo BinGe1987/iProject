@@ -10,8 +10,8 @@
 @implementation UIView (ApplyViewParams)
 
 - (void)applyViewParams:(ViewParams *)viewParams {
-//    self.alpha = viewParams.alpha;
-//    [self setViewVisibility:viewParams.visibility];
+    self.alpha = viewParams.alpha;
+    [self setViewVisibility:viewParams.visibility];
     NSString *background = viewParams.background;
     if (background) {
         if ([background hasPrefix:@"#"]) {
