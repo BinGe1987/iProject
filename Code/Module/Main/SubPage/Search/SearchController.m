@@ -7,6 +7,7 @@
 
 #import "SearchController.h"
 #import "SearchNavigationController.h"
+#import "SearchPresenter.h"
 
 @interface SearchController ()
 
@@ -15,17 +16,32 @@
 @implementation SearchController
 
 + (void)open {
-    [UIViewController presentController:@"SearchController" animated:NO data:nil completion:nil];
+//    [UIViewController presentController:@"SearchController" animated:NO data:nil completion:nil];
     SearchController *vc = [SearchController new];
+   
     SearchNavigationController *nv = [[SearchNavigationController alloc] initWithRootViewController:vc];
     UIViewController *topController = [UIViewController topViewController];
-    [topController presentViewController:nv animated:NO completion:nil];
+    [nv setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+    [topController presentViewController:nv animated:YES completion:nil];
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"搜索";
+    
+    [self setNavigationColor:[ColorUtils colorWithString:@"#f4f4f4"]];
+    [self setNavigationXML:@"SearchNavigation.xml"];
+    [self addPresenter:[[SearchPresenter alloc] initWithView:self.navigationView]];
+    
     [self setContentViewWithXML:@"SearchController.xml"];
+    
+    UIButton *btn = [self.navigationView findViewByName:@"btn_cancel"];
+    [btn setClickBlock:^(UIButton * _Nonnull button) {
+//        [self setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
+//        [self dismissViewControllerAnimated:YES completion:nil];
+//        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        [self dismissViewControllerAnimated:YES completion:nil];
+//        [button dismissViewControllerAnimated:YES completion:nil];
+    }];
 }
 
 

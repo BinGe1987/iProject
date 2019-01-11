@@ -387,6 +387,9 @@
 		77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FC521B95584001B8959 /* MainTabbarController.m */; };
 		77FAA0C221E90ED00099473E /* HomeNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0C121E90ED00099473E /* HomeNavigation.xml */; };
 		77FAA0C521E9122A0099473E /* UIViewController+NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0C421E9122A0099473E /* UIViewController+NavigationView.m */; };
+		77FAA0C821E914AD0099473E /* SearchNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0C721E914AD0099473E /* SearchNavigation.xml */; };
+		77FAA0CB21E91D430099473E /* SearchPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0CA21E91D430099473E /* SearchPresenter.m */; };
+		77FAA0CE21E91E010099473E /* SearchViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0CD21E91E010099473E /* SearchViewHandler.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1120,6 +1123,11 @@
 		77FAA0C121E90ED00099473E /* HomeNavigation.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HomeNavigation.xml; sourceTree = "<group>"; };
 		77FAA0C321E9122A0099473E /* UIViewController+NavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationView.h"; sourceTree = "<group>"; };
 		77FAA0C421E9122A0099473E /* UIViewController+NavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationView.m"; sourceTree = "<group>"; };
+		77FAA0C721E914AD0099473E /* SearchNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SearchNavigation.xml; sourceTree = "<group>"; };
+		77FAA0C921E91D430099473E /* SearchPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchPresenter.h; sourceTree = "<group>"; };
+		77FAA0CA21E91D430099473E /* SearchPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchPresenter.m; sourceTree = "<group>"; };
+		77FAA0CC21E91E010099473E /* SearchViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewHandler.h; sourceTree = "<group>"; };
+		77FAA0CD21E91E010099473E /* SearchViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewHandler.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -1767,6 +1775,7 @@
 		7780FEB921E8BF7A0045ABC5 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				77FAA0C621E914970099473E /* Navigation */,
 				7780FEBA21E8BFA70045ABC5 /* SearchController.h */,
 				7780FEBB21E8BFA70045ABC5 /* SearchController.m */,
 				7780FEBD21E8C00F0045ABC5 /* SearchController.xml */,
@@ -3046,6 +3055,18 @@
 			path = SDK;
 			sourceTree = "<group>";
 		};
+		77FAA0C621E914970099473E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA0C921E91D430099473E /* SearchPresenter.h */,
+				77FAA0CA21E91D430099473E /* SearchPresenter.m */,
+				77FAA0CC21E91E010099473E /* SearchViewHandler.h */,
+				77FAA0CD21E91E010099473E /* SearchViewHandler.m */,
+				77FAA0C721E914AD0099473E /* SearchNavigation.xml */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3141,6 +3162,7 @@
 				77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
 				77A38A0621DF2C2600042B04 /* ProfileEditController.xml in Resources */,
+				77FAA0C821E914AD0099473E /* SearchNavigation.xml in Resources */,
 				7723E1C421D73F6500B77890 /* Login.xml in Resources */,
 				771CA39F21DC758200B00F11 /* ClubDetail.xml in Resources */,
 				771CA3DD21DCC5B600B00F11 /* ClubDetailTech.xml in Resources */,
@@ -3268,6 +3290,7 @@
 				7734C11B21D23A45009D1EE8 /* KafkaRingIndicatorFooter.m in Sources */,
 				77B0545121C943760045A489 /* YYImageCoder.m in Sources */,
 				7771843921E71E7D00B3DDD8 /* BannerItem.m in Sources */,
+				77FAA0CB21E91D430099473E /* SearchPresenter.m in Sources */,
 				77A8B63721E4DE8200BC8C70 /* DiscoverTechData.m in Sources */,
 				7723E1D121D780C000B77890 /* XMLModel.m in Sources */,
 				771CA38921D94EB800B00F11 /* DOPDropDownMenu.m in Sources */,
@@ -3451,6 +3474,7 @@
 				7734C11C21D23A45009D1EE8 /* KafkaReplicatorFooter.m in Sources */,
 				771CA3ED21DCEFC000B00F11 /* CommentData.m in Sources */,
 				7734C0DB21D22EFD009D1EE8 /* ClassifyData.m in Sources */,
+				77FAA0CE21E91E010099473E /* SearchViewHandler.m in Sources */,
 				771CA39621DC59E500B00F11 /* DescoverClubMenuViewHandler.m in Sources */,
 				77A8B64121E4EA8000BC8C70 /* ClassifyNvPresenter.m in Sources */,
 				776B55B321BE6B1500793CAF /* Button.m in Sources */,

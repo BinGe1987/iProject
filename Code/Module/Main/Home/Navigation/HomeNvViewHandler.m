@@ -18,10 +18,10 @@
         [SearchController open];
     }];
     
-    UIButton *button = [self.view findViewByName:@"qr_code"];
-    [button setClickBlock:^(UIButton * _Nonnull button) {
-        [MVPViewController pushSelf];
-    }];
+//    UIButton *button = [self.view findViewByName:@"qr_code"];
+//    [button setClickBlock:^(UIButton * _Nonnull button) {
+//        [MVPViewController pushSelf];
+//    }];
     
     return self;
 }

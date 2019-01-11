@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) UIView *navigationView;
 
+- (void)setNavigationColor:(UIColor *)color;
 - (void)setNavigationXML:(NSString *)xml;
 
 @end

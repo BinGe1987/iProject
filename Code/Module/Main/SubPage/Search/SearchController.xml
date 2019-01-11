@@ -12,7 +12,8 @@
         text_color="#000000"
         text_size="12"
         layout_fixTop="YES"
-        layout_marginTop="44">
+        layout_marginTop="44"
+        layout_gravity="center">
     </Button>
     
 </FrameLayout>

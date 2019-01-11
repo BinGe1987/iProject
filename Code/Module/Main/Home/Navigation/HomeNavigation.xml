@@ -17,7 +17,7 @@
     </Button>
     
     <LinearLayout
-        view_name=""
+        view_name="layout_location"
         view_width="auto"
         view_height="auto"
         view_orientation="horizontal"
@@ -46,6 +46,7 @@
     </LinearLayout>
     
     <FrameLayout
+        view_name="layout_search"
         view_width="full"
         view_height="28"
         view_borderRadius="14"
@@ -56,6 +57,7 @@
         layout_marginRight="60"
         layout_gravity="center|left">
         <Label
+            view_name="input"
             view_width="full"
             view_height="full"
             text_src="搜索一下附近吧..."
@@ -66,6 +68,7 @@
             layout_marginRight="20">
         </Label>
         <ImageView
+            view_name="icon"
             view_width="auto"
             view_height="auto"
             image_src="@icon_search"
