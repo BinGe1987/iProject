@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="root"
+    view_width="full"
+    view_height="full">
+    
+    <Button
+        view_name="btn_1"
+        view_width="auto"
+        view_height="auto"
+        text_src="button_text"
+        text_color="#000000"
+        text_size="12"
+        layout_fixTop="YES"
+        layout_marginTop="44">
+    </Button>
+    
+</FrameLayout>
+
+

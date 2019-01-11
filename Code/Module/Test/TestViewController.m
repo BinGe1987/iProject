@@ -7,6 +7,7 @@
 
 #import "TestViewController.h"
 #import "SecondViewController.h"
+#import "SearchController.h"
 
 @interface NotificationLogin : NSObject
 
@@ -35,7 +36,12 @@
 //
 //    }];
     
-    [self setContentViewWithXML:@"Test.xml"];
+//    [self setContentViewWithXML:@"Test.xml"];
+//    [UIViewController presentController:@"SearchController" animated:NO data:nil completion:nil];
+//    [UIViewController pushController:@"SearchController" animated:NO data:nil];
+    
+    [SearchController open];
+    
 }
 
 - (void)onLayoutSubViewsCompleted {

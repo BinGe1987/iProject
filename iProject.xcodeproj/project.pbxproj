@@ -142,6 +142,9 @@
 		776B55FB21C14A0800793CAF /* ScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55FA21C14A0800793CAF /* ScrollView.m */; };
 		7771843321E648C400B3DDD8 /* PhotoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771843221E648C300B3DDD8 /* PhotoItem.m */; };
 		7771843921E71E7D00B3DDD8 /* BannerItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7771843821E71E7D00B3DDD8 /* BannerItem.m */; };
+		7780FEBC21E8BFA70045ABC5 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7780FEBB21E8BFA70045ABC5 /* SearchController.m */; };
+		7780FEBE21E8C00F0045ABC5 /* SearchController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7780FEBD21E8C00F0045ABC5 /* SearchController.xml */; };
+		7780FEC121E8C1270045ABC5 /* SearchNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7780FEC021E8C1270045ABC5 /* SearchNavigationController.m */; };
 		77A389D721DE196800042B04 /* VerifyCodePerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D621DE196800042B04 /* VerifyCodePerformer.m */; };
 		77A389DA21DE3F2200042B04 /* LoginPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D921DE3F2200042B04 /* LoginPerformer.m */; };
 		77A389DD21DE4DAB00042B04 /* MinePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389DC21DE4DAB00042B04 /* MinePresenter.m */; };
@@ -646,6 +649,11 @@
 		7771843221E648C300B3DDD8 /* PhotoItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoItem.m; sourceTree = "<group>"; };
 		7771843721E71E7D00B3DDD8 /* BannerItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BannerItem.h; sourceTree = "<group>"; };
 		7771843821E71E7D00B3DDD8 /* BannerItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BannerItem.m; sourceTree = "<group>"; };
+		7780FEBA21E8BFA70045ABC5 /* SearchController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchController.h; sourceTree = "<group>"; };
+		7780FEBB21E8BFA70045ABC5 /* SearchController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchController.m; sourceTree = "<group>"; };
+		7780FEBD21E8C00F0045ABC5 /* SearchController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SearchController.xml; sourceTree = "<group>"; };
+		7780FEBF21E8C1270045ABC5 /* SearchNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchNavigationController.h; sourceTree = "<group>"; };
+		7780FEC021E8C1270045ABC5 /* SearchNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchNavigationController.m; sourceTree = "<group>"; };
 		77A389D521DE196800042B04 /* VerifyCodePerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyCodePerformer.h; sourceTree = "<group>"; };
 		77A389D621DE196800042B04 /* VerifyCodePerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyCodePerformer.m; sourceTree = "<group>"; };
 		77A389D821DE3F2200042B04 /* LoginPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPerformer.h; sourceTree = "<group>"; };
@@ -1153,6 +1161,7 @@
 		771CA39821DC692900B00F11 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				7780FEB921E8BF7A0045ABC5 /* Search */,
 				77A389ED21DEFE0800042B04 /* Web */,
 				771CA3A421DC9C4D00B00F11 /* Classify */,
 				771CA39D21DC730800B00F11 /* ClubDetail */,
@@ -1750,6 +1759,18 @@
 				7723E1CD21D77F6B00B77890 /* UIView+XML.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		7780FEB921E8BF7A0045ABC5 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				7780FEBA21E8BFA70045ABC5 /* SearchController.h */,
+				7780FEBB21E8BFA70045ABC5 /* SearchController.m */,
+				7780FEBD21E8C00F0045ABC5 /* SearchController.xml */,
+				7780FEBF21E8C1270045ABC5 /* SearchNavigationController.h */,
+				7780FEC021E8C1270045ABC5 /* SearchNavigationController.m */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		77A389ED21DEFE0800042B04 /* Web */ = {
@@ -3079,6 +3100,7 @@
 				7734C12A21D2577A009D1EE8 /* banner in Resources */,
 				7739C41821E782B60052D2CA /* back.png in Resources */,
 				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
+				7780FEBE21E8C00F0045ABC5 /* SearchController.xml in Resources */,
 				77C3977321E440AC0016CEE3 /* ClassifyViewController.xml in Resources */,
 				77A8B64621E4EAB000BC8C70 /* ClassifyNavigation.xml in Resources */,
 				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
@@ -3212,6 +3234,7 @@
 				776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */,
 				771CA42921DDC32400B00F11 /* CommentListData.m in Sources */,
 				77B0552B21CE8AE30045A489 /* BaseModule.m in Sources */,
+				7780FEC121E8C1270045ABC5 /* SearchNavigationController.m in Sources */,
 				775B15F221C7D4AC00B8D6FF /* UIViewController+ContentView.m in Sources */,
 				77B0544921C943760045A489 /* YYImageCache.m in Sources */,
 				77EA8F2921B90226001B8959 /* DataHandler.m in Sources */,
@@ -3223,6 +3246,7 @@
 				7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */,
 				776B55F021C00D6000793CAF /* Parser.m in Sources */,
 				771CA3CA21DCB1D100B00F11 /* ClubDetailProfileCell.m in Sources */,
+				7780FEBC21E8BFA70045ABC5 /* SearchController.m in Sources */,
 				77EA8FA321B92022001B8959 /* TabbarController.m in Sources */,
 				77CEA52421D4FAA200B388E4 /* CollectionView.m in Sources */,
 				77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */,
