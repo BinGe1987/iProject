@@ -17,8 +17,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSString *safeAreaString;
 
-- (void)setContentView:(UIView *)view;
-
 - (id)findViewByName:(NSString *)name;
 
 @end

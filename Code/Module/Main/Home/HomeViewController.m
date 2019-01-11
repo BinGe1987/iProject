@@ -22,9 +22,8 @@
     HomePresenter *prsenter = [[HomePresenter alloc] initWithView:[self findViewByName:@"table"]];
     [self addPresenter:prsenter];
 
-    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREENWIDTH - 20, NVBARHIEGHT)];
-    self.navigationItem.titleView = view;
-    [self addPresenter:[[HomeNvPresenter alloc] initWithView:view]];
+    [self setNavigationXML:@"HomeNavigation.xml"];
+    [self addPresenter:[[HomeNvPresenter alloc] initWithView:self.navigationView]];
 }
 
 - (void)viewWillAppear:(BOOL)animated {

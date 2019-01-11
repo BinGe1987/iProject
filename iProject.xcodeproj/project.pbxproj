@@ -386,6 +386,7 @@
 		77EA8FBE21B94BB5001B8959 /* TestModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FBD21B94BB5001B8959 /* TestModule.m */; };
 		77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77EA8FC521B95584001B8959 /* MainTabbarController.m */; };
 		77FAA0C221E90ED00099473E /* HomeNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0C121E90ED00099473E /* HomeNavigation.xml */; };
+		77FAA0C521E9122A0099473E /* UIViewController+NavigationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0C421E9122A0099473E /* UIViewController+NavigationView.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1117,6 +1118,8 @@
 		77EA8FC421B95584001B8959 /* MainTabbarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainTabbarController.h; sourceTree = "<group>"; };
 		77EA8FC521B95584001B8959 /* MainTabbarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainTabbarController.m; sourceTree = "<group>"; };
 		77FAA0C121E90ED00099473E /* HomeNavigation.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = HomeNavigation.xml; sourceTree = "<group>"; };
+		77FAA0C321E9122A0099473E /* UIViewController+NavigationView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NavigationView.h"; sourceTree = "<group>"; };
+		77FAA0C421E9122A0099473E /* UIViewController+NavigationView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NavigationView.m"; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -2907,6 +2910,8 @@
 				77AC224E21D7D07600C0B7E8 /* UIViewController+XML.m */,
 				775B15F021C7D4AC00B8D6FF /* UIViewController+ContentView.h */,
 				775B15F121C7D4AC00B8D6FF /* UIViewController+ContentView.m */,
+				77FAA0C321E9122A0099473E /* UIViewController+NavigationView.h */,
+				77FAA0C421E9122A0099473E /* UIViewController+NavigationView.m */,
 				776B55D121BFA2C600793CAF /* UIViewController+Layout.h */,
 				776B55D221BFA2C600793CAF /* UIViewController+Layout.m */,
 			);
@@ -3226,6 +3231,7 @@
 				7734C0E121D2318E009D1EE8 /* HomeModule.m in Sources */,
 				771CA3B421DCA20B00B00F11 /* ClubHandler.m in Sources */,
 				77A389E021DE4E0E00042B04 /* MineViewHandler.m in Sources */,
+				77FAA0C521E9122A0099473E /* UIViewController+NavigationView.m in Sources */,
 				7734C12821D23A93009D1EE8 /* UITableView+Refresh.m in Sources */,
 				771CA40921DD172E00B00F11 /* CustomViewModel.m in Sources */,
 				7739C41C21E78B350052D2CA /* ViewHolder.m in Sources */,
