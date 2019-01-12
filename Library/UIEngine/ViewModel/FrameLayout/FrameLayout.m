@@ -24,6 +24,12 @@
 }
 
 - (void)onLayout {
+    
+    CGFloat paddingLeft = self.viewParams.paddingLeft;
+    CGFloat paddingRight = self.viewParams.paddingRight;
+    CGFloat paddingTop = self.viewParams.paddingTop;
+    CGFloat paddingBottom = self.viewParams.paddingBottom;
+    
     for (UIView *subView in self.subviews) {
         //布局
         CGRect r = subView.frame;
@@ -41,15 +47,19 @@
         }
         if (params.gravity & FrameLayoutGravityLeft) {
             r.origin.x = subView.layoutParams.marginLeft;
+            r.origin.x += paddingLeft;
         }
         else if (params.gravity & FrameLayoutGravityRight) {
             r.origin.x = self.width - subView.width - subView.layoutParams.marginRight;
+            r.origin.x -= paddingRight;
         }
         if (params.gravity & FrameLayoutGravityTop) {
             r.origin.y = subView.layoutParams.marginTop;
+            r.origin.y += paddingTop;
         }
         else if (params.gravity & FrameLayoutGravityBottom) {
             r.origin.y = self.height - subView.height - subView.layoutParams.marginBottom;
+            r.origin.y -= paddingBottom;
         }
         subView.frame = r;
     }
