@@ -103,11 +103,13 @@
     </ScrollView>
     
     <View
+        view_name="bg_commtnt"
         view_width="full"
         view_height="100"
         layout_marginBottom="-60"
         layout_gravity="bottom"
-        view_background="#55b4b2"/>
+        view_background="#55b4b2"
+        view_visibility="invisible"/>
     
     <Button
         view_name="btn_comment"
@@ -117,7 +119,8 @@
         text_size="14"
         view_background="#55b4b2"
         layout_gravity="bottom"
-        text_color="#ffffff" />
+        text_color="#ffffff"
+        view_visibility="invisible"/>
     
 </FrameLayout>
 

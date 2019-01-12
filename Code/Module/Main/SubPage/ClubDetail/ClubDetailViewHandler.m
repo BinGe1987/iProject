@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) UITableView *tableView;
 @property (nonatomic, strong) UIButton *commentButton;
+@property (nonatomic, assign) BOOL first;
 
 @end
 
@@ -28,12 +29,17 @@
        
     }];
     
+    self.first = YES;
     self.tableView = [view findViewByName:@"table"];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     
     [self.tableView setHeadRefreshHandler:^{
         [weakself.tableView performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:1.5];
     }];
+    [self.tableView setFootRefreshHandler:^{
+        
+    }];
+    [self.tableView beginFootRefreshing];
     
     UIButton *btn = (UIButton *)[view findViewByName:@"btn_allComment"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
@@ -45,6 +51,8 @@
 }
 
 - (void)setData:(id)data {
+    [self.tableView finishFootRefresh];
+    
     if (![data isKindOfClass:[ClubDetailData class]]) {
         return;
     }
@@ -91,9 +99,19 @@
     commentSection.rows = rows;
     [sectionArray addObject:commentSection];
     
+    if (self.first) {
+        self.tableView.alpha = 0;
+        self.first = NO;
+    }
+    
     ClubDetailAdapter *adapter = [ClubDetailAdapter AdapterWithSourceData:sectionArray];
     [self.tableView setAdapter:adapter];
     [self.tableView reloadData];
+    WeakSelf(self)
+    [UIView animateWithDuration:0.25 animations:^{
+        weakself.tableView.alpha = 1;
+    }];
+    
     
     UIView *bg = [self.view findViewByName:@"bottomBg"];
     [bg setViewVisibility:ViewVisibilityVisible];
