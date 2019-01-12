@@ -196,7 +196,7 @@
             "view_borderWidth":"1",
             "view_borderColor":"#00ffb925",
             "image_scaleType":"full",
-            "image_src":"@default_head_girl",
+            "image_src":"@default_user_man",
             "layout_gravity":"center|top",
             "layout_marginTop":"0",
         },
