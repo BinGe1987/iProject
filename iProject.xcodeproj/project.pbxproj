@@ -396,6 +396,8 @@
 		77FAA0DC21EA1F340099473E /* SearchDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0DB21EA1F340099473E /* SearchDataHandler.m */; };
 		77FAA0DF21EA1F580099473E /* SearchPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0DE21EA1F580099473E /* SearchPerformer.m */; };
 		77FAA0E221EA26AB0099473E /* SearchResultAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0E121EA26AB0099473E /* SearchResultAdapter.m */; };
+		77FAA0E621EA6FB00099473E /* ClubTechListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0E521EA6FB00099473E /* ClubTechListController.m */; };
+		77FAA0E821EA6FC20099473E /* ClubTechListController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0E721EA6FC20099473E /* ClubTechListController.xml */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1145,6 +1147,9 @@
 		77FAA0DE21EA1F580099473E /* SearchPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchPerformer.m; sourceTree = "<group>"; };
 		77FAA0E021EA26AB0099473E /* SearchResultAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultAdapter.h; sourceTree = "<group>"; };
 		77FAA0E121EA26AB0099473E /* SearchResultAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultAdapter.m; sourceTree = "<group>"; };
+		77FAA0E421EA6FB00099473E /* ClubTechListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListController.h; sourceTree = "<group>"; };
+		77FAA0E521EA6FB00099473E /* ClubTechListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListController.m; sourceTree = "<group>"; };
+		77FAA0E721EA6FC20099473E /* ClubTechListController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubTechListController.xml; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -1202,6 +1207,7 @@
 		771CA39D21DC730800B00F11 /* ClubDetail */ = {
 			isa = PBXGroup;
 			children = (
+				77FAA0E321EA6F880099473E /* TechList */,
 				771CA3C421DCAE0F00B00F11 /* Cell */,
 				771CA39921DC695400B00F11 /* ClubDetailController.h */,
 				771CA39A21DC695400B00F11 /* ClubDetailController.m */,
@@ -3119,6 +3125,16 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		77FAA0E321EA6F880099473E /* TechList */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA0E421EA6FB00099473E /* ClubTechListController.h */,
+				77FAA0E521EA6FB00099473E /* ClubTechListController.m */,
+				77FAA0E721EA6FC20099473E /* ClubTechListController.xml */,
+			);
+			path = TechList;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3207,6 +3223,7 @@
 				77CEA55821D649D300B388E4 /* Order.json in Resources */,
 				77B0544821C943760045A489 /* README.md in Resources */,
 				771CA3E521DCDF8A00B00F11 /* ClubDetailTechItem.xml in Resources */,
+				77FAA0E821EA6FC20099473E /* ClubTechListController.xml in Resources */,
 				77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */,
 				77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */,
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
@@ -3568,6 +3585,7 @@
 				77EA8F5521B90226001B8959 /* FrameLayoutParams.m in Sources */,
 				77A8B64921E596F700BC8C70 /* ClubServiceData.m in Sources */,
 				7734C13C21D27A3F009D1EE8 /* HomeNvPresenter.m in Sources */,
+				77FAA0E621EA6FB00099473E /* ClubTechListController.m in Sources */,
 				77EA8F9B21B91F8C001B8959 /* NavigationController.m in Sources */,
 				77B0552E21CE8B280045A489 /* AppModule.m in Sources */,
 				77CEA4B121D3909900B388E4 /* TechUITableViewCell.m in Sources */,

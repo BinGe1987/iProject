@@ -32,6 +32,12 @@
     scrollView.showsVerticalScrollIndicator = FALSE; //垂直滚动条
     scrollView.showsHorizontalScrollIndicator = FALSE;//水平滚动条
     [self.contentView addSubview:view];
+    UIButton *btn = [view findViewByName:@"btn_allTech"];
+    [btn setClickBlock:^(UIButton * _Nonnull button) {
+        ClubData *club = [button currentViewController].intentData;
+//        [Store setValue:club.source forKey:@"test_data"];
+        [UIViewController pushController:@"ClubTechListController" animated:YES data:club];
+    }];
     
 }
 
@@ -54,6 +60,7 @@
             [UIViewController pushController:@"TechDetailController" animated:YES data:tech];
         }];
     }
+    
     [linearView boundsAndRefreshLayout];
 }
 

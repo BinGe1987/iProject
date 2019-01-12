@@ -31,7 +31,8 @@
     [self.contentView addSubview:view];
     UIButton *btn = (UIButton *)[view findViewByName:@"btn_allComment"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [UIViewController pushController:@"CommentController" animated:YES data:nil];
+        ClubData *club = [button currentViewController].intentData;
+        [UIViewController pushController:@"CommentController" animated:YES data:club];
     }];
 }
 
@@ -110,7 +111,6 @@
 }
 
 - (void)photoBrowser:(PhotoBrowser *)browser didSelectItem:(PhotoItem *)item atIndex:(NSUInteger)index {
-    Log(@"12312312312");
 }
 
 @end

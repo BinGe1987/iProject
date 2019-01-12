@@ -35,6 +35,11 @@
             layout_gravity="right|top"
             layout_marginRight="12"
             layout_marginTop="15"/>
+        <Button
+            view_name="btn_allTech"
+            view_width="full"
+            view_height="40">
+        </Button>
         <LinearLayout
             view_name="linear"
             view_width="full"
