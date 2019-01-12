@@ -15,4 +15,12 @@
     return self;
 }
 
+- (void)setData:(id)data {
+    if ([NSString isEmpty:data]) {
+        [self.view setViewVisibility:ViewVisibilityInvisible];
+    } else {
+        [self.view setViewVisibility:ViewVisibilityVisible];
+    }
+}
+
 @end

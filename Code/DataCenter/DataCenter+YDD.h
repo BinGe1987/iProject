@@ -41,6 +41,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 ///获取会所过滤器
 #define OperationGetClubFilterData              (@"OperationGetClubFilterData")
+///获取会所搜索结果
+#define OperationGetClubSearchData              (@"OperationGetClubSearchData")
 
 #pragma make 发现页相关
 ///获取发现页信息

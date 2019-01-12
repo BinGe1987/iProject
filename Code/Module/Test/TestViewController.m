@@ -24,24 +24,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    NSString *token = [Store valueForKey:@"token" defaultValue:@""];
-//    [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, id  _Nullable data) {
-//        if ([data isKindOfClass:[UserData class]] && [data isLogin]) {
-//            NSDictionary *testData = [Store valueForKey:@"test_data"];
-//            TechData *test = [TechData withDictionary:testData];
-//            [UIViewController pushController:@"CommentController" animated:YES data:test];
-//        } else {
-//            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
-//        }
-//
-//    }];
-    
-//    [self setContentViewWithXML:@"Test.xml"];
-//    [UIViewController presentController:@"SearchController" animated:NO data:nil completion:nil];
-//    [UIViewController pushController:@"SearchController" animated:NO data:nil];
-    
-    [SearchController open];
-    
+    NSString *token = [Store valueForKey:@"token" defaultValue:@""];
+    [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, id  _Nullable data) {
+        if ([data isKindOfClass:[UserData class]] && [data isLogin]) {
+            [SearchController open];
+        } else {
+            [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
+        }
+    }];
 }
 
 - (void)onLayoutSubViewsCompleted {

@@ -393,6 +393,8 @@
 		77FAA0D021EA133C0099473E /* SearchHistoryItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0CF21EA133C0099473E /* SearchHistoryItem.xml */; };
 		77FAA0D521EA18B10099473E /* SearchNavigationViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0D421EA18B10099473E /* SearchNavigationViewHandler.m */; };
 		77FAA0D821EA18C60099473E /* SearchResultViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0D721EA18C60099473E /* SearchResultViewHandler.m */; };
+		77FAA0DC21EA1F340099473E /* SearchDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0DB21EA1F340099473E /* SearchDataHandler.m */; };
+		77FAA0DF21EA1F580099473E /* SearchPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0DE21EA1F580099473E /* SearchPerformer.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1136,6 +1138,10 @@
 		77FAA0D421EA18B10099473E /* SearchNavigationViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchNavigationViewHandler.m; sourceTree = "<group>"; };
 		77FAA0D621EA18C60099473E /* SearchResultViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultViewHandler.h; sourceTree = "<group>"; };
 		77FAA0D721EA18C60099473E /* SearchResultViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewHandler.m; sourceTree = "<group>"; };
+		77FAA0DA21EA1F340099473E /* SearchDataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchDataHandler.h; sourceTree = "<group>"; };
+		77FAA0DB21EA1F340099473E /* SearchDataHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchDataHandler.m; sourceTree = "<group>"; };
+		77FAA0DD21EA1F580099473E /* SearchPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchPerformer.h; sourceTree = "<group>"; };
+		77FAA0DE21EA1F580099473E /* SearchPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchPerformer.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -2998,6 +3004,7 @@
 				77CEA4F321D4C28E00B388E4 /* Discover */,
 				77CEA55F21D64BEC00B388E4 /* Order */,
 				771CA3B121DCA1EB00B00F11 /* Club */,
+				77FAA0D921EA1F080099473E /* Search */,
 				771CA3F621DD0C8600B00F11 /* Tech */,
 				771CA42021DDC2D000B00F11 /* Comment */,
 				776B55A621BE628900793CAF /* DataCenter+YDD.h */,
@@ -3092,6 +3099,17 @@
 				77FAA0CC21E91E010099473E /* SearchViewHandler.h */,
 				77FAA0CD21E91E010099473E /* SearchViewHandler.m */,
 				77FAA0CF21EA133C0099473E /* SearchHistoryItem.xml */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		77FAA0D921EA1F080099473E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA0DA21EA1F340099473E /* SearchDataHandler.h */,
+				77FAA0DB21EA1F340099473E /* SearchDataHandler.m */,
+				77FAA0DD21EA1F580099473E /* SearchPerformer.h */,
+				77FAA0DE21EA1F580099473E /* SearchPerformer.m */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -3256,6 +3274,7 @@
 				7734C12021D23A45009D1EE8 /* KafkaArrowHeader.m in Sources */,
 				77B0545221C943760045A489 /* YYFrameImage.m in Sources */,
 				7734C0D521D22E7F009D1EE8 /* TechData.m in Sources */,
+				77FAA0DF21EA1F580099473E /* SearchPerformer.m in Sources */,
 				77A38A2D21E0A70F00042B04 /* Network.m in Sources */,
 				7734C0CB21D22D17009D1EE8 /* BannerData.m in Sources */,
 				77B0547C21CA46DC0045A489 /* KSSDImageManager.m in Sources */,
@@ -3274,6 +3293,7 @@
 				7734C0BD21D2119A009D1EE8 /* TableViewSection.m in Sources */,
 				77CEA56821D64C3800B388E4 /* OrderData.m in Sources */,
 				77A389F421DF177F00042B04 /* NavigationView.m in Sources */,
+				77FAA0DC21EA1F340099473E /* SearchDataHandler.m in Sources */,
 				7734C12121D23A45009D1EE8 /* KafkaReplicatorHeader.m in Sources */,
 				77EA8FC621B95584001B8959 /* MainTabbarController.m in Sources */,
 				77B054D821CA9C720045A489 /* TableViewModel.m in Sources */,
