@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="layout_history"
+    view_width="full"
+    view_height="auto">
+    <LinearLayout
+        view_width="full"
+        view_height="36sp"
+        view_orientation="horizontal">
+        <ImageView
+            view_width="auto"
+            view_height="full"
+            image_src="@icon_history"
+            layout_marginLeft="10">
+        </ImageView>
+        <Label
+            view_name="label_history"
+            view_width="auto"
+            view_height="full"
+            text_src="搜索记录1"
+            text_color="#7e7e7e"
+            text_size="14"
+            layout_marginLeft="10">
+        </Label>
+    </LinearLayout>
+    <View
+        view_width="full"
+        view_height="0.5"
+        view_background="#f4f4f4"
+        layout_gravity="bottom">
+    </View>
+    
+</FrameLayout>
+
+

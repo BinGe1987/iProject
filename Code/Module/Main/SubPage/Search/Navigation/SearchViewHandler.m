@@ -12,6 +12,24 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     [self searchAnimation];
+    
+    UIButton *button = [self.view findViewByName:@"btn_search"];
+    [button setViewVisibility:ViewVisibilityInvisible];
+    
+    UITextField *input = [self.view findViewByName:@"input"];
+    [input becomeFirstResponder];
+    
+    UIButton *cancel = [self.view findViewByName:@"btn_cancel"];
+    [cancel setClickBlock:^(UIButton * _Nonnull button) {
+        
+        [UIView animateWithDuration:0.3 animations:^{
+//            ViewGroup *vg = (ViewGroup *)self.view;
+//            [vg boundsAndRefreshLayout];
+            [button dismissViewControllerAnimated:YES completion:nil];
+        }];
+        
+    }];
+    
     return self;
 }
 
@@ -34,6 +52,7 @@
     }];
     
     UIView *search = [self.view findViewByName:@"layout_search"];
+    search.layer.borderColor = [ColorUtils colorWithString:@"#e5e5e5"].CGColor;
     [UIView animateWithDuration:0.3 animations:^{
         CGRect rect = search.frame;
         rect.size.width += rect.origin.x;
@@ -49,13 +68,16 @@
         icon.frame = rect;
     }];
     
-    UILabel *input = [self.view findViewByName:@"input"];
+    UITextField *input = [self.view findViewByName:@"input"];
+//    input.backgroundColor = [UIColor redColor];
+    [input becomeFirstResponder];
+    input.placeholder = @"搜索人或角色名";
+    CGRect searchRect = search.frame;
     [UIView animateWithDuration:0.3 animations:^{
         CGRect rect = input.frame;
         rect.origin.x += 10;
-        rect.size.width -= 20;
+        rect.size.width = searchRect.size.width - 50;
         input.frame = rect;
-        input.text = @"搜索人或角色名";
     }];
 }
 

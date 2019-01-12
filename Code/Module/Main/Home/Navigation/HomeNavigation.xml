@@ -56,17 +56,17 @@
         layout_marginLeft="84"
         layout_marginRight="60"
         layout_gravity="center|left">
-        <Label
+        <InputView
             view_name="input"
             view_width="full"
             view_height="full"
-            text_src="搜索一下附近吧..."
-            text_color="#d6d6d6"
+            text_placeholder="搜索一下附近吧..."
+            text_placeholderColor="#d6d6d6"
             text_size="12"
             text_gravity="left"
             layout_marginLeft="20"
             layout_marginRight="20">
-        </Label>
+        </InputView>
         <ImageView
             view_name="icon"
             view_width="auto"

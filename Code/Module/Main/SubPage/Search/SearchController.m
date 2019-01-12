@@ -34,14 +34,6 @@
     
     [self setContentViewWithXML:@"SearchController.xml"];
     
-    UIButton *btn = [self.navigationView findViewByName:@"btn_cancel"];
-    [btn setClickBlock:^(UIButton * _Nonnull button) {
-//        [self setModalTransitionStyle:UIModalTransitionStyleCrossDissolve];
-//        [self dismissViewControllerAnimated:YES completion:nil];
-//        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-        [self dismissViewControllerAnimated:YES completion:nil];
-//        [button dismissViewControllerAnimated:YES completion:nil];
-    }];
 }
 
 
