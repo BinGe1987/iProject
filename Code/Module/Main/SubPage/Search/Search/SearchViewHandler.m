@@ -13,7 +13,7 @@
     self = [super initWithView:view];
     
     
-    
+//    [[view currentViewController].navigationView endEditing:YES];
     return self;
 }
 

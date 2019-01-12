@@ -31,6 +31,8 @@
     self.resultHandler = [[SearchResultViewHandler alloc] initWithView: [view findViewByName:@"table"]];
     self.resultHandler.delegate = self;
     
+    [self onViewAction:@"action_search" data:@"小"];
+    
     return self;
 }
 

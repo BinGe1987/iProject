@@ -33,4 +33,8 @@
     [UIViewController pushController:@"ClubDetailController" animated:YES data:club];
 }
 
+- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
+    [[scrollView currentViewController].navigationView endEditing:YES];
+}
+
 @end

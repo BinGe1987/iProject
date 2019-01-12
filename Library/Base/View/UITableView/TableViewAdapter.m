@@ -95,9 +95,7 @@
     if (cell == nil){
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:showUserInfoCellIdentifier];
-    }
-//    cell.textLabel.text = @"456";
-    
+    }    
     return cell;
 }
 
