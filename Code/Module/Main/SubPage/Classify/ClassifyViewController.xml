@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Root
+<FrameLayout
     view_name="page_club"
     view_width="full"
     view_height="full"
@@ -27,4 +27,4 @@
         layout_fixTop="YES"
         layout_marginTop="44"/>
     
-</Root>
+</FrameLayout>

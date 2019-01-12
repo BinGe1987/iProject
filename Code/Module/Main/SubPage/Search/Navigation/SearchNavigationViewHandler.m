@@ -29,15 +29,11 @@
 
     [input becomeFirstResponder];
     
+    WeakSelf(self)
     UIButton *cancel = [self.view findViewByName:@"btn_cancel"];
     [cancel setClickBlock:^(UIButton * _Nonnull button) {
-        
-        [UIView animateWithDuration:0.3 animations:^{
-            //            ViewGroup *vg = (ViewGroup *)self.view;
-            //            [vg boundsAndRefreshLayout];
-            [button dismissViewControllerAnimated:YES completion:nil];
-        }];
-        
+        [button dismissViewControllerAnimated:YES completion:nil];
+        [weakself.view endEditing:YES];
     }];
     
     return self;
