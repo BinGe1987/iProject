@@ -2,10 +2,10 @@
 <FrameLayout
     view_name="layout_history"
     view_width="full"
-    view_height="auto">
+    view_height="36sp">
     <LinearLayout
         view_width="full"
-        view_height="36sp"
+        view_height="full"
         view_orientation="horizontal">
         <ImageView
             view_width="auto"

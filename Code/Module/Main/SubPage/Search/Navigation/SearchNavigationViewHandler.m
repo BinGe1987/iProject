@@ -1,13 +1,13 @@
 //
-//  SearchViewHandler.m
+//  SearchNavigationViewHandler.m
 //  APP
 //
 //  Created by BinGe on 2019/1/12.
 //
 
-#import "SearchViewHandler.h"
+#import "SearchNavigationViewHandler.h"
 
-@implementation SearchViewHandler
+@implementation SearchNavigationViewHandler
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
@@ -23,8 +23,8 @@
     [cancel setClickBlock:^(UIButton * _Nonnull button) {
         
         [UIView animateWithDuration:0.3 animations:^{
-//            ViewGroup *vg = (ViewGroup *)self.view;
-//            [vg boundsAndRefreshLayout];
+            //            ViewGroup *vg = (ViewGroup *)self.view;
+            //            [vg boundsAndRefreshLayout];
             [button dismissViewControllerAnimated:YES completion:nil];
         }];
         
@@ -69,7 +69,7 @@
     }];
     
     UITextField *input = [self.view findViewByName:@"input"];
-//    input.backgroundColor = [UIColor redColor];
+    //    input.backgroundColor = [UIColor redColor];
     [input becomeFirstResponder];
     input.placeholder = @"搜索人或角色名";
     CGRect searchRect = search.frame;

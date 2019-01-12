@@ -391,6 +391,8 @@
 		77FAA0CB21E91D430099473E /* SearchPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0CA21E91D430099473E /* SearchPresenter.m */; };
 		77FAA0CE21E91E010099473E /* SearchViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0CD21E91E010099473E /* SearchViewHandler.m */; };
 		77FAA0D021EA133C0099473E /* SearchHistoryItem.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0CF21EA133C0099473E /* SearchHistoryItem.xml */; };
+		77FAA0D521EA18B10099473E /* SearchNavigationViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0D421EA18B10099473E /* SearchNavigationViewHandler.m */; };
+		77FAA0D821EA18C60099473E /* SearchResultViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0D721EA18C60099473E /* SearchResultViewHandler.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1130,6 +1132,10 @@
 		77FAA0CC21E91E010099473E /* SearchViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewHandler.h; sourceTree = "<group>"; };
 		77FAA0CD21E91E010099473E /* SearchViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewHandler.m; sourceTree = "<group>"; };
 		77FAA0CF21EA133C0099473E /* SearchHistoryItem.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SearchHistoryItem.xml; sourceTree = "<group>"; };
+		77FAA0D321EA18B10099473E /* SearchNavigationViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchNavigationViewHandler.h; sourceTree = "<group>"; };
+		77FAA0D421EA18B10099473E /* SearchNavigationViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchNavigationViewHandler.m; sourceTree = "<group>"; };
+		77FAA0D621EA18C60099473E /* SearchResultViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultViewHandler.h; sourceTree = "<group>"; };
+		77FAA0D721EA18C60099473E /* SearchResultViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultViewHandler.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -1778,10 +1784,13 @@
 			isa = PBXGroup;
 			children = (
 				77FAA0C621E914970099473E /* Navigation */,
+				77FAA0D221EA183D0099473E /* Search */,
+				77FAA0D121EA18010099473E /* SearchResult */,
 				7780FEBA21E8BFA70045ABC5 /* SearchController.h */,
 				7780FEBB21E8BFA70045ABC5 /* SearchController.m */,
+				77FAA0C921E91D430099473E /* SearchPresenter.h */,
+				77FAA0CA21E91D430099473E /* SearchPresenter.m */,
 				7780FEBD21E8C00F0045ABC5 /* SearchController.xml */,
-				77FAA0CF21EA133C0099473E /* SearchHistoryItem.xml */,
 				7780FEBF21E8C1270045ABC5 /* SearchNavigationController.h */,
 				7780FEC021E8C1270045ABC5 /* SearchNavigationController.m */,
 			);
@@ -3061,13 +3070,30 @@
 		77FAA0C621E914970099473E /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				77FAA0C921E91D430099473E /* SearchPresenter.h */,
-				77FAA0CA21E91D430099473E /* SearchPresenter.m */,
-				77FAA0CC21E91E010099473E /* SearchViewHandler.h */,
-				77FAA0CD21E91E010099473E /* SearchViewHandler.m */,
 				77FAA0C721E914AD0099473E /* SearchNavigation.xml */,
+				77FAA0D321EA18B10099473E /* SearchNavigationViewHandler.h */,
+				77FAA0D421EA18B10099473E /* SearchNavigationViewHandler.m */,
 			);
 			path = Navigation;
+			sourceTree = "<group>";
+		};
+		77FAA0D121EA18010099473E /* SearchResult */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA0D621EA18C60099473E /* SearchResultViewHandler.h */,
+				77FAA0D721EA18C60099473E /* SearchResultViewHandler.m */,
+			);
+			path = SearchResult;
+			sourceTree = "<group>";
+		};
+		77FAA0D221EA183D0099473E /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA0CC21E91E010099473E /* SearchViewHandler.h */,
+				77FAA0CD21E91E010099473E /* SearchViewHandler.m */,
+				77FAA0CF21EA133C0099473E /* SearchHistoryItem.xml */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3384,9 +3410,11 @@
 				7723E1CE21D77F6B00B77890 /* UIView+XML.m in Sources */,
 				77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */,
 				77A38A1821DF30D100042B04 /* PayQRCodeController.m in Sources */,
+				77FAA0D821EA18C60099473E /* SearchResultViewHandler.m in Sources */,
 				771CA3A721DC9C6000B00F11 /* ClassifyViewController.m in Sources */,
 				77CEA50221D4C3CB00B388E4 /* ListData.m in Sources */,
 				771CA40221DD0ED600B00F11 /* TechDetailPresenter.m in Sources */,
+				77FAA0D521EA18B10099473E /* SearchNavigationViewHandler.m in Sources */,
 				77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,
 				77CEA55B21D64A6500B388E4 /* OrderPresenter.m in Sources */,

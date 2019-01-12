@@ -1,104 +1,120 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<LinearLayout
+<FrameLayout
     view_width="full"
-    view_height="full"
-    view_orientation="vertical">
-    <FrameLayout
-        view_width="full"
-        view_height="auto"
-        view_padding="10"
-        layout_fixTop="YES"
-        layout_marginTop="44"
-        view_background="#00ff000f">
-        <Label
-            view_width="auto"
-            view_height="auto"
-            text_src="热门搜索"
-            text_color="#99999"
-            text_size="12">
-        </Label>
-        <Button
-            view_name="btn_refresh"
-            view_width="auto"
-            view_height="auto"
-            view_padding="10"
-            view_image="@icon_refresh"
-            layout_marginRight="5"
-            layout_gravity="top|right">
-        </Button>
-        <LinearLayout
-            view_name="layout_hot"
-            view_width="full"
-            view_height="auto"
-            view_orientation="vertical"
-            view_background="#00ff00ff"
-            layout_marginTop="25">
-            <LinearLayout
-                view_width="full"
-                view_height="auto"
-                view_orientation="horizontal"
-                view_background="#00ff00ff">
-                <Button
-                    view_name="btn_hot"
-                    view_width="auto"
-                    view_height="auto"
-                    text_src="热搜"
-                    text_color="#3c3c3c"
-                    text_size="12"
-                    view_padding="10"
-                    view_background="#efefef"
-                    view_borderRadius="3"
-                    view_masksToBounds="YES"
-                    layout_marginRight="10">
-                </Button>
-            </LinearLayout>
-        </LinearLayout>
-    </FrameLayout>
-    <View
-        view_width="full"
-        view_height="10"
-        view_background="#f4f4f4">
-    </View>
-    <FrameLayout
-        view_width="full"
-        view_height="auto">
-        <Label
-            view_width="auto"
-            view_height="auto"
-            text_src="历史搜索"
-            text_color="#999999"
-            text_size="12"
-            layout_marginLeft="10"
-            layout_gravity="center|left">
-        </Label>
-        <Button
-            view_name="btn_clear"
-            view_width="auto"
-            view_height="auto"
-            view_image="@icon_clear"
-            view_padding="20"
-            view_paddingRight="10"
-            layout_marginRight="10"
-            layout_gravity="center|right">
-        </Button>
-    </FrameLayout>
-    <ScrollView
+    view_height="full">
+    <LinearLayout
+        view_name="layout_search"
         view_width="full"
         view_height="full"
-        view_orientation="vertical"
-        view_scrollIndicator="NO">
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-        <include name="SearchHistoryItem.xml"/>
-    </ScrollView>
-</LinearLayout>
+        view_orientation="vertical">
+        <FrameLayout
+            view_width="full"
+            view_height="auto"
+            view_padding="10"
+            layout_fixTop="YES"
+            layout_marginTop="44"
+            view_background="#00ff000f">
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_src="热门搜索"
+                text_color="#99999"
+                text_size="12">
+            </Label>
+            <Button
+                view_name="btn_refresh"
+                view_width="auto"
+                view_height="auto"
+                view_padding="10"
+                view_image="@icon_refresh"
+                layout_marginRight="5"
+                layout_gravity="top|right">
+            </Button>
+            <LinearLayout
+                view_name="layout_hot"
+                view_width="full"
+                view_height="auto"
+                view_orientation="vertical"
+                view_background="#00ff00ff"
+                layout_marginTop="25">
+                <LinearLayout
+                    view_width="full"
+                    view_height="auto"
+                    view_orientation="horizontal"
+                    view_background="#00ff00ff">
+                    <Button
+                        view_name="btn_hot"
+                        view_width="auto"
+                        view_height="auto"
+                        text_src="热搜"
+                        text_color="#3c3c3c"
+                        text_size="12"
+                        view_padding="10"
+                        view_background="#efefef"
+                        view_borderRadius="3"
+                        view_masksToBounds="YES"
+                        layout_marginRight="10">
+                    </Button>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+        <View
+            view_width="full"
+            view_height="10"
+            view_background="#f4f4f4">
+        </View>
+        <FrameLayout
+            view_width="full"
+            view_height="auto">
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_src="历史搜索"
+                text_color="#999999"
+                text_size="12"
+                layout_marginLeft="10"
+                layout_gravity="center|left">
+            </Label>
+            <Button
+                view_name="btn_clear"
+                view_width="auto"
+                view_height="auto"
+                view_image="@icon_clear"
+                view_padding="20"
+                view_paddingRight="10"
+                layout_marginRight="10"
+                layout_gravity="center|right">
+            </Button>
+        </FrameLayout>
+        <ScrollView
+            view_width="full"
+            view_height="full"
+            view_orientation="vertical"
+            view_scrollIndicator="NO">
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+            <include name="SearchHistoryItem.xml"/>
+        </ScrollView>
+    </LinearLayout>
+    
+    <TableView
+        view_name="table"
+        view_width="full"
+        view_height="full"
+        view_scrollIndicator="NO"
+        view_background="#ffffff"
+        view_visibility="invisible">
+    </TableView>
+    
+</FrameLayout>
+
 
 
