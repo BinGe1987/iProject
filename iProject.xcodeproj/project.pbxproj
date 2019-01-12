@@ -395,6 +395,7 @@
 		77FAA0D821EA18C60099473E /* SearchResultViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0D721EA18C60099473E /* SearchResultViewHandler.m */; };
 		77FAA0DC21EA1F340099473E /* SearchDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0DB21EA1F340099473E /* SearchDataHandler.m */; };
 		77FAA0DF21EA1F580099473E /* SearchPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0DE21EA1F580099473E /* SearchPerformer.m */; };
+		77FAA0E221EA26AB0099473E /* SearchResultAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0E121EA26AB0099473E /* SearchResultAdapter.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1142,6 +1143,8 @@
 		77FAA0DB21EA1F340099473E /* SearchDataHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchDataHandler.m; sourceTree = "<group>"; };
 		77FAA0DD21EA1F580099473E /* SearchPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchPerformer.h; sourceTree = "<group>"; };
 		77FAA0DE21EA1F580099473E /* SearchPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchPerformer.m; sourceTree = "<group>"; };
+		77FAA0E021EA26AB0099473E /* SearchResultAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultAdapter.h; sourceTree = "<group>"; };
+		77FAA0E121EA26AB0099473E /* SearchResultAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultAdapter.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -3089,6 +3092,8 @@
 			children = (
 				77FAA0D621EA18C60099473E /* SearchResultViewHandler.h */,
 				77FAA0D721EA18C60099473E /* SearchResultViewHandler.m */,
+				77FAA0E021EA26AB0099473E /* SearchResultAdapter.h */,
+				77FAA0E121EA26AB0099473E /* SearchResultAdapter.m */,
 			);
 			path = SearchResult;
 			sourceTree = "<group>";
@@ -3306,6 +3311,7 @@
 				77FAA0C521E9122A0099473E /* UIViewController+NavigationView.m in Sources */,
 				7734C12821D23A93009D1EE8 /* UITableView+Refresh.m in Sources */,
 				771CA40921DD172E00B00F11 /* CustomViewModel.m in Sources */,
+				77FAA0E221EA26AB0099473E /* SearchResultAdapter.m in Sources */,
 				7739C41C21E78B350052D2CA /* ViewHolder.m in Sources */,
 				77CEA4A521D3188E00B388E4 /* UIView+JSON.m in Sources */,
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,

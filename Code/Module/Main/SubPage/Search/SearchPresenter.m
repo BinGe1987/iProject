@@ -31,8 +31,6 @@
     self.resultHandler = [[SearchResultViewHandler alloc] initWithView: [view findViewByName:@"table"]];
     self.resultHandler.delegate = self;
     
-    [self onViewAction:@"action_search" data:@"小"];
-    
     return self;
 }
 
@@ -40,9 +38,10 @@
     if ([action isEqualToString:@"action_search"]) {
 //        [self.resultHandler search:data];
         if ([NSString isEmpty:data]) {
-            [self.resultHandler setData:@""];
+            [self.resultHandler show:NO];
         } else {
             WeakSelf(self)
+            [self.resultHandler show:YES];
             [DataCenter perform:OperationGetClubSearchData params:@{@"search":data} callback:^(id  _Nonnull operation, Data * _Nullable data) {
                 [weakself.resultHandler setData:data];
             }];

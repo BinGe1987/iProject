@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SearchResultViewHandler : ViewHandler
 
-//- (void)search:(NSString *)text;
+- (void)show:(BOOL)show;
 
 @end
 

@@ -7,6 +7,12 @@
 
 #import "SearchNavigationViewHandler.h"
 
+@interface SearchNavigationViewHandler()
+
+@property (nonatomic, copy) NSString *text;
+
+@end
+
 @implementation SearchNavigationViewHandler
 
 - (instancetype)initWithView:(UIView *)view {
@@ -17,6 +23,8 @@
     [button setViewVisibility:ViewVisibilityInvisible];
     
     UITextField *input = [self.view findViewByName:@"input"];
+    [input addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
+
     [input becomeFirstResponder];
     
     UIButton *cancel = [self.view findViewByName:@"btn_cancel"];
@@ -31,6 +39,19 @@
     }];
     
     return self;
+}
+
+- (void)textFieldChanged:(UITextField*)textField{
+    NSString *string = textField.text;
+    self.text = string;
+    [self performSelector:@selector(startSearch:) withObject:string afterDelay:0.6];
+}
+
+- (void)startSearch:(NSString *)string {
+    if ([string isEqualToString:self.text]) {
+        NSLog(@"开始搜索 %@",string);
+        [self.delegate onViewAction:@"action_search" data:string];
+    }
 }
 
 - (void)searchAnimation {
