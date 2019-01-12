@@ -61,16 +61,6 @@
         rect.origin.x -= 60;
         cancel.frame = rect;
     }];
-    UIView *qrCode = [self.view findViewByName:@"qr_code"];
-    [UIView animateWithDuration:0.3 animations:^{
-        qrCode.alpha = 0;
-    }];
-    UIView *location = [self.view findViewByName:@"layout_location"];
-    [UIView animateWithDuration:0.3 animations:^{
-        CGRect rect = location.frame;
-        rect.origin.x -= 84;
-        location.frame = rect;
-    }];
     
     UIView *search = [self.view findViewByName:@"layout_search"];
     search.layer.borderColor = [ColorUtils colorWithString:@"#e5e5e5"].CGColor;

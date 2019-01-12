@@ -5,22 +5,38 @@
     view_height="full"
     view_background="#00ff00ff">
     
-    <InputView
-        view_name="search"
+    <FrameLayout
         view_width="full"
-        view_height="26"
-        view_paddingLeft="20"
-        view_paddingRight="20"
-        view_masksToBounds="YES"
-        view_borderRadius="12"
+        view_height="28"
+        view_borderRadius="14"
         view_borderWidth="0.3"
         view_borderColor="#ff2e2e2e"
-        text_color="#ff000000"
-        text_placeholderColor="#ffd6d6d6"
-        text_placeholder="搜索一下附近吧..."
+        view_masksToBounds="YES"
         layout_marginLeft="30"
         layout_marginRight="30"
-        layout_gravity="center|left"/>
-    
+        layout_gravity="center|left">
+        <InputView
+            view_width="full"
+            view_height="full"
+            view_paddingLeft="20"
+            view_paddingRight="20"
+            text_color="#ff000000"
+            text_placeholderColor="#ffd6d6d6"
+            text_placeholder="搜索一下附近吧...">
+        </InputView>
+        <ImageView
+            view_name="icon"
+            view_width="auto"
+            view_height="auto"
+            image_src="@icon_search"
+            layout_gravity="center|right"
+            layout_marginRight="20">
+        </ImageView>
+        <Button
+            view_name="btn_search"
+            view_width="full"
+            view_height="full">
+        </Button>
+    </FrameLayout>
 </FrameLayout>
 

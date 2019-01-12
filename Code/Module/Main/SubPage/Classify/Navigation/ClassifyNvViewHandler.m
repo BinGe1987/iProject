@@ -6,6 +6,7 @@
 //
 
 #import "ClassifyNvViewHandler.h"
+#import "SearchController.h"
 
 @implementation ClassifyNvViewHandler
 
@@ -15,8 +16,10 @@
     UIView *titleView = [UIView viewWithXML:@"ClassifyNavigation.xml" size:view.bounds.size];
     [view addSubview:titleView];
     
-    UIView *search = [view findViewByName:@"search"];
-    search.userInteractionEnabled = NO;
+    UIButton *search = [view findViewByName:@"btn_search"];
+    [search setClickBlock:^(UIButton * _Nonnull button) {
+        [SearchController open];
+    }];
     
     return self;
 }
