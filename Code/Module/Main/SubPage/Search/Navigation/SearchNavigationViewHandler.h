@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SearchNavigationViewHandler : ViewHandler
 
+- (void)setSearchText:(NSString *)text;
+
 @end
 
 NS_ASSUME_NONNULL_END

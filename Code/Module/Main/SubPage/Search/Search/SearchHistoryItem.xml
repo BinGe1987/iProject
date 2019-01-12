@@ -29,7 +29,13 @@
         view_background="#f4f4f4"
         layout_gravity="bottom">
     </View>
-    
+    <Button
+        view_name="btn_item"
+        view_width="full"
+        view_height="full"
+        view_background="#00ffffff"
+        view_backgroundSelected="#22000000">
+    </Button>
 </FrameLayout>
 
 

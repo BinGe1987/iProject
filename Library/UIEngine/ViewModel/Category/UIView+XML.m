@@ -10,6 +10,12 @@
 
 @implementation UIView (XML)
 
++ (id)viewWithXML:(NSString *)name {
+    XMLModel *model = [[XMLModel alloc] initWithXML:name];
+    ViewGroup *vg = (ViewGroup *)[[UIEngine get]parse:model];
+    return vg;
+}
+
 + (id)viewWithXML:(NSString *)name size:(CGSize)size {
     
     XMLModel *model = [[XMLModel alloc] initWithXML:name];

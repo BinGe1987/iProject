@@ -7,7 +7,7 @@
 
 #import "SearchNavigationViewHandler.h"
 
-@interface SearchNavigationViewHandler()
+@interface SearchNavigationViewHandler()<UITextFieldDelegate>
 
 @property (nonatomic, copy) NSString *text;
 
@@ -23,6 +23,8 @@
     [button setViewVisibility:ViewVisibilityInvisible];
     
     UITextField *input = [self.view findViewByName:@"input"];
+    input.delegate = self;
+    input.returnKeyType = UIReturnKeySearch;
     [input addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
 
     [input becomeFirstResponder];
@@ -39,6 +41,36 @@
     }];
     
     return self;
+}
+
+- (void)setSearchText:(NSString *)text {
+    UITextField *input = [self.view findViewByName:@"input"];
+    input.text = text;
+    [self textFieldChanged:input];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    [self startSearch:textField.text];
+    if (![NSString isEmpty:textField.text]) {
+        NSMutableArray *array = [[Store valueForKey:@"search_history"] mutableCopy];
+        if (!array) {
+            array = [NSMutableArray new];
+        }
+        if (![array containsObject:textField.text]) {
+            [array addObject:textField.text];
+            if (array.count > 20) {
+                [array removeObjectAtIndex:0];
+            }
+            [Store setValue:array forKey:@"search_history"];
+            [self.delegate onViewAction:@"action_search_history_changed" data:array];
+        }
+        
+        [textField resignFirstResponder];
+        
+        [self startSearch:textField.text];
+    }
+    return YES;
 }
 
 - (void)textFieldChanged:(UITextField*)textField{

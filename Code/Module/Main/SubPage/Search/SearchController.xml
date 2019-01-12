@@ -87,21 +87,22 @@
             </Button>
         </FrameLayout>
         <ScrollView
+            view_name="history_list"
             view_width="full"
             view_height="full"
             view_orientation="vertical"
             view_scrollIndicator="NO">
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
-            <include name="SearchHistoryItem.xml"/>
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
+<!--            <include name="SearchHistoryItem.xml"/>-->
         </ScrollView>
     </LinearLayout>
     

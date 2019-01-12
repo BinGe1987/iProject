@@ -15,11 +15,11 @@ static int currentPage = 0;
     HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_HomeClub];
     request.data = @{
                      @"token"       :DataCenter.token,
-                     @"laty"        :[NSNumber numberWithInt:0],
-                     @"lngx"        :[NSNumber numberWithInt:0],
+                     @"laty"        :@([DataCenter get].userData.laty),
+                     @"lngx"        :@([DataCenter get].userData.lngx),
                      @"areaId"      :[searchData stringWithKey:@"areaId" defaultValue:@"0"],
                      @"page"        :[NSNumber numberWithInt:currentPage],
-                     @"pageSize"    :@"10",
+                     @"pageSize"    :@"20",
                      @"category"    :[searchData stringWithKey:@"category" defaultValue:@"0"],
                      @"sort"        :[searchData stringWithKey:@"sort" defaultValue:@"default"],
                      @"type"        :@"all",
