@@ -15,7 +15,7 @@
             "view_paddingRight":"20",
             "view_paddingBottom":"20",
             "view_background":"#00f0ff0f",
-            "button_imageNormal":"@mine_set",
+            "view_image":"@mine_set",
             "layout_gravity":"center|left",
         },
         {
@@ -28,7 +28,7 @@
             "view_paddingRight":"20",
             "view_paddingBottom":"20",
             "view_background":"#00f0ff0f",
-            "button_imageNormal":"@pay_code",
+            "view_image":"@pay_code",
             "layout_gravity":"center|right",
         },
     ]
