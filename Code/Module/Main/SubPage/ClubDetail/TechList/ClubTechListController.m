@@ -19,8 +19,15 @@
     ClubData *club = self.intentData;
     self.title = club.name;
     
-    [self setNavigationXML:@"ClubTechListController.xml"];
+    [self setContentViewWithXML:@"ClubTechListController.xml"];
     [self addPresenter:[[ClubTechListPresenter alloc] initWithView:self.view]];
+}
+
+- (void)onLayoutSubViewsCompleted {
+    CGFloat topHeight = STATUSBARHIEGHT + NVBARHIEGHT;
+    ScrollView *sv = (ScrollView *)[self findViewByName:@"table"];
+    sv.contentInset = UIEdgeInsetsMake(topHeight,0,0,0);
+    sv.contentOffset = CGPointMake(0, -topHeight);
 }
 
 @end

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="root"
+    view_width="full"
+    view_height="full"
+    view_background="@ff00ff">
+    
+    <ImageView
+        view_name="image"
+        view_width="54sp"
+        view_height="54sp"
+        view_borderRadius="27sp"
+        view_masksToBounds="YES"
+        layout_gravity="center|left"
+        layout_marginLeft="20sp">
+    </ImageView>
+    
+    <LinearLayout
+        view_width="auto"
+        view_height="auto"
+        view_orientation="horizontal"
+        layout_marginLeft="94sp"
+        layout_marginTop="20sp">
+        <Label
+            view_name="label_name"
+            view_width="auto"
+            view_height="16"
+            text_src="名字"
+            text_color="#2e2e2e"
+            text_size="15">
+        </Label>
+        <Label
+            view_name="label_name"
+            view_width="auto"
+            view_height="16"
+            text_src="评分"
+            text_color="#ffb925"
+            text_size="12"
+            layout_marginLeft="10sp">
+        </Label>
+    </LinearLayout>
+    
+    <LinearLayout
+        view_width="auto"
+        view_height="auto"
+        view_orientation="horizontal"
+        layout_marginLeft="94sp"
+        layout_marginTop="45sp">
+        <Label
+            view_name="label_follow"
+            view_width="auto"
+            view_height="16"
+            text_src="0人关注"
+            text_color="#4abdcf"
+            text_size="11"
+            view_padding="5"
+            view_borderRadius="3"
+            view_borderWidth="1"
+            view_borderColor="#4abdcf"
+            view_masksToBounds="YES">
+        </Label>
+        <Label
+            view_name="label_follow"
+            view_width="auto"
+            view_height="16"
+            text_src="0人评价"
+            text_color="#4abdcf"
+            text_size="11"
+            view_padding="5"
+            view_borderRadius="3"
+            view_borderWidth="1"
+            view_borderColor="#4abdcf"
+            view_masksToBounds="YES"
+            layout_marginLeft="10sp">
+        </Label>
+    </LinearLayout>
+    <ImageView
+        view_width="11sp"
+        view_height="19sp"
+        image_src="@arrow1"
+        layout_gravity="center|right"
+        layout_marginRight="18sp">
+    </ImageView>
+</FrameLayout>
+
+

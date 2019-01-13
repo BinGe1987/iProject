@@ -15,13 +15,13 @@ NS_ASSUME_NONNULL_BEGIN
 ///位置是否往下推，状态栏的高度
 @property (nonatomic, assign) BOOL fixTop;
 ///view的外左边距
-@property (nonatomic, assign) NSInteger marginLeft;
+@property (nonatomic, assign) CGFloat marginLeft;
 ///view的外上边距
-@property (nonatomic, assign) NSInteger marginTop;
+@property (nonatomic, assign) CGFloat marginTop;
 ///view的外右边距
-@property (nonatomic, assign) NSInteger marginRight;
+@property (nonatomic, assign) CGFloat marginRight;
 ///view的外下边距
-@property (nonatomic, assign) NSInteger marginBottom;
+@property (nonatomic, assign) CGFloat marginBottom;
 
 -(instancetype)initWithModel:(id<UIModel>)model;
 

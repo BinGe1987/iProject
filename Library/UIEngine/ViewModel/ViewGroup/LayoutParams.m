@@ -13,12 +13,12 @@
 -(instancetype)initWithModel:(id<UIModel>)model {
     self = [super  init];
     if (self) {
-        self.marginLeft = [model getInteger:@"layout_marginLeft" defaultValue:0];
-        self.marginRight = [model getInteger:@"layout_marginRight" defaultValue:0];
-        self.marginTop = [model getInteger:@"layout_marginTop" defaultValue:0];
-        self.marginBottom = [model getInteger:@"layout_marginBottom" defaultValue:0];
+        self.marginLeft = [model getFloat:@"layout_marginLeft" defaultValue:0];
+        self.marginRight = [model getFloat:@"layout_marginRight" defaultValue:0];
+        self.marginTop = [model getFloat:@"layout_marginTop" defaultValue:0];
+        self.marginBottom = [model getFloat:@"layout_marginBottom" defaultValue:0];
         
-        NSInteger margin = [model getInteger:@"layout_margin" defaultValue:0];
+        NSInteger margin = [model getFloat:@"layout_margin" defaultValue:0];
         if (margin) {
             self.marginLeft = self.marginLeft ? self.marginLeft : margin;
             self.marginRight = self.marginRight ? self.marginRight : margin;

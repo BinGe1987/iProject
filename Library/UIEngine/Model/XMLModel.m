@@ -69,6 +69,10 @@
 
 - (CGFloat)getFloat:(NSString *)key defaultValue:(CGFloat)defValue {
     NSString *value = [self getString:key defaultValue:[NSString stringWithFormat:@"%fl", defValue]];
+    if ([value hasSuffix:@"sp"]) {
+        value = [value substringToIndex:[value length] -2];
+        return ScaleValue([value floatValue]);
+    }
     return [value floatValue];
 }
 

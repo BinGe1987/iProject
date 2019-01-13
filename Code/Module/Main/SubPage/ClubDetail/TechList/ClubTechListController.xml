@@ -8,7 +8,8 @@
         view_name="table"
         view_width="full"
         view_height="full"
-        view_scrollIndicator="NO">
+        view_scrollIndicator="NO"
+        view_background="#ffffff">
     </TableView>
     
 </FrameLayout>

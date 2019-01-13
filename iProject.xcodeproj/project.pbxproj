@@ -401,6 +401,9 @@
 		77FAA0EB21EB0AFF0099473E /* ClubTechListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0EA21EB0AFF0099473E /* ClubTechListPresenter.m */; };
 		77FAA0EE21EB0B7D0099473E /* ClubTechListViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0ED21EB0B7D0099473E /* ClubTechListViewHandler.m */; };
 		77FAA0F121EB0CA20099473E /* ClubTechListPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0F021EB0CA20099473E /* ClubTechListPerformer.m */; };
+		77FAA0F521EB0F590099473E /* ClubTechListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0F421EB0F590099473E /* ClubTechListAdapter.m */; };
+		77FAA0F821EB10240099473E /* ClubTechListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0F721EB10240099473E /* ClubTechListCell.m */; };
+		77FAA0FA21EB11A30099473E /* ClubTechListCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0F921EB11A30099473E /* ClubTechListCell.xml */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1159,6 +1162,11 @@
 		77FAA0ED21EB0B7D0099473E /* ClubTechListViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListViewHandler.m; sourceTree = "<group>"; };
 		77FAA0EF21EB0CA20099473E /* ClubTechListPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListPerformer.h; sourceTree = "<group>"; };
 		77FAA0F021EB0CA20099473E /* ClubTechListPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListPerformer.m; sourceTree = "<group>"; };
+		77FAA0F321EB0F590099473E /* ClubTechListAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListAdapter.h; sourceTree = "<group>"; };
+		77FAA0F421EB0F590099473E /* ClubTechListAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListAdapter.m; sourceTree = "<group>"; };
+		77FAA0F621EB10240099473E /* ClubTechListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListCell.h; sourceTree = "<group>"; };
+		77FAA0F721EB10240099473E /* ClubTechListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListCell.m; sourceTree = "<group>"; };
+		77FAA0F921EB11A30099473E /* ClubTechListCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubTechListCell.xml; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -3145,6 +3153,11 @@
 				77FAA0EA21EB0AFF0099473E /* ClubTechListPresenter.m */,
 				77FAA0EC21EB0B7D0099473E /* ClubTechListViewHandler.h */,
 				77FAA0ED21EB0B7D0099473E /* ClubTechListViewHandler.m */,
+				77FAA0F321EB0F590099473E /* ClubTechListAdapter.h */,
+				77FAA0F421EB0F590099473E /* ClubTechListAdapter.m */,
+				77FAA0F621EB10240099473E /* ClubTechListCell.h */,
+				77FAA0F721EB10240099473E /* ClubTechListCell.m */,
+				77FAA0F921EB11A30099473E /* ClubTechListCell.xml */,
 			);
 			path = TechList;
 			sourceTree = "<group>";
@@ -3263,6 +3276,7 @@
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
 				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
+				77FAA0FA21EB11A30099473E /* ClubTechListCell.xml in Resources */,
 				77A8B64E21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml in Resources */,
 				771CA3E921DCED0500B00F11 /* ClubDetailServiceItem.xml in Resources */,
 				771CA40F21DD237700B00F11 /* TechProfile.xml in Resources */,
@@ -3476,6 +3490,7 @@
 				77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */,
 				7723E1CE21D77F6B00B77890 /* UIView+XML.m in Sources */,
 				77CEA54221D5D2C800B388E4 /* MineNvPresenter.m in Sources */,
+				77FAA0F821EB10240099473E /* ClubTechListCell.m in Sources */,
 				77A38A1821DF30D100042B04 /* PayQRCodeController.m in Sources */,
 				77FAA0D821EA18C60099473E /* SearchResultViewHandler.m in Sources */,
 				771CA3A721DC9C6000B00F11 /* ClassifyViewController.m in Sources */,
@@ -3539,6 +3554,7 @@
 				7734C13021D26963009D1EE8 /* BannerUITableViewCell.m in Sources */,
 				77C3977D21E445700016CEE3 /* ClubMenu.m in Sources */,
 				77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */,
+				77FAA0F521EB0F590099473E /* ClubTechListAdapter.m in Sources */,
 				77EA8E9921B8FCF2001B8959 /* HomeViewController.m in Sources */,
 				77B0554321D0D3120045A489 /* TabData.m in Sources */,
 				771CA39321D9A5B000B00F11 /* DropdownMenuItem.m in Sources */,
