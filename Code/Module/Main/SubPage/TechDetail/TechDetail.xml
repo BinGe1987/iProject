@@ -10,7 +10,8 @@
         view_height="full"
         view_orientation="V"
         view_scrollIndicator="NO"
-        view_background="#ffffffff">
+        view_background="#ffffffff"
+        view_visibility="invisible">
         <CustomView
             view_name="banner"
             view_class="BannerView"
@@ -102,25 +103,23 @@
         
     </ScrollView>
     
-    <View
-        view_name="bg_commtnt"
+    <FrameLayout
+        view_name="bottomBg"
         view_width="full"
         view_height="100"
-        layout_marginBottom="-60"
         layout_gravity="bottom"
-        view_background="#55b4b2"
-        view_visibility="invisible"/>
-    
+        layout_marginBottom="-66"
+        view_background="#55b4b2">
+    </FrameLayout>
     <Button
         view_name="btn_comment"
         view_width="full"
         view_height="40"
         text_src="发表评论"
         text_size="14"
-        view_background="#55b4b2"
         layout_gravity="bottom"
-        text_color="#ffffff"
-        view_visibility="invisible"/>
+        view_background="#55b4b2"
+        text_color="#ffffff" />
     
 </FrameLayout>
 

@@ -26,7 +26,7 @@
     self.commentButton = [view findViewByName:@"btn_comment"];
     [self.commentButton setViewVisibility:ViewVisibilityInvisible];
     [self.commentButton setClickBlock:^(UIButton * _Nonnull button) {
-       
+        [UIViewController pushController:@"PublicCommentController" animated:YES data:[button currentViewController].intentData];
     }];
     
     self.first = YES;

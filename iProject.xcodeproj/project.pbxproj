@@ -404,6 +404,7 @@
 		77FAA0F521EB0F590099473E /* ClubTechListAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0F421EB0F590099473E /* ClubTechListAdapter.m */; };
 		77FAA0F821EB10240099473E /* ClubTechListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0F721EB10240099473E /* ClubTechListCell.m */; };
 		77FAA0FA21EB11A30099473E /* ClubTechListCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0F921EB11A30099473E /* ClubTechListCell.xml */; };
+		77FAA0FE21EB249F0099473E /* PublicCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0FD21EB249F0099473E /* PublicCommentController.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1167,6 +1168,8 @@
 		77FAA0F621EB10240099473E /* ClubTechListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListCell.h; sourceTree = "<group>"; };
 		77FAA0F721EB10240099473E /* ClubTechListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListCell.m; sourceTree = "<group>"; };
 		77FAA0F921EB11A30099473E /* ClubTechListCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubTechListCell.xml; sourceTree = "<group>"; };
+		77FAA0FC21EB249F0099473E /* PublicCommentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentController.h; sourceTree = "<group>"; };
+		77FAA0FD21EB249F0099473E /* PublicCommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentController.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -1402,6 +1405,7 @@
 		771CA41221DDB1CF00B00F11 /* Comment */ = {
 			isa = PBXGroup;
 			children = (
+				77FAA0FB21EB247F0099473E /* PublicComment */,
 				771CA41321DDB2E500B00F11 /* CommentController.h */,
 				771CA41421DDB2E500B00F11 /* CommentController.m */,
 				771CA41A21DDC1A100B00F11 /* CommentPresenter.h */,
@@ -3171,6 +3175,15 @@
 			path = TechList;
 			sourceTree = "<group>";
 		};
+		77FAA0FB21EB247F0099473E /* PublicComment */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA0FC21EB249F0099473E /* PublicCommentController.h */,
+				77FAA0FD21EB249F0099473E /* PublicCommentController.m */,
+			);
+			path = PublicComment;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3342,6 +3355,7 @@
 				77B0546721CA30940045A489 /* ProgressHUB.m in Sources */,
 				776B55BE21BE979100793CAF /* LinearLayoutViewParams.m in Sources */,
 				77EA8F5721B90226001B8959 /* LinearLayoutParams.m in Sources */,
+				77FAA0FE21EB249F0099473E /* PublicCommentController.m in Sources */,
 				77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */,
 				776B55B621BE6BD000793CAF /* ButtonViewParams.m in Sources */,
 				77CEA4E721D4B69700B388E4 /* DiscoverTechPresenter.m in Sources */,

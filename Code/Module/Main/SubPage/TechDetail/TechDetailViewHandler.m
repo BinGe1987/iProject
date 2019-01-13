@@ -13,6 +13,9 @@
 @property (nonatomic, strong) BannerView *bannerView;
 @property (nonatomic, strong) PhotoBrowser *broswer;
 
+@property (nonatomic, strong) UIButton *commentButton;
+@property (nonatomic, assign) BOOL first;
+
 @end
 
 @implementation TechDetailViewHandler
@@ -33,14 +36,27 @@
     self.bannerView = [self.view findViewByName:@"banner"];
     self.bannerView.delegate = self;
     
-    UIScrollView *scroll = [self.view findViewByName:@"scroll"];
-    scroll.hidden = YES;
+//    UIScrollView *scroll = [self.view findViewByName:@"scroll"];
+//    scroll.hidden = YES;
     
+    UIView *bg = [view findViewByName:@"bottomBg"];
+    [bg setViewVisibility:ViewVisibilityInvisible];
+    self.commentButton = [view findViewByName:@"btn_comment"];
+    [self.commentButton setViewVisibility:ViewVisibilityInvisible];
+    [self.commentButton setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"PublicCommentController" animated:YES data:[button currentViewController].intentData];
+    }];
+    
+    self.first = YES;
     
     return self;
 }
 
 - (void)setData:(id)data {
+    UIView *bg = [self.view findViewByName:@"bottomBg"];
+    [bg setViewVisibility:ViewVisibilityVisible];
+    [self.commentButton setViewVisibility:ViewVisibilityVisible];
+    
     TechDetailData *detail = (TechDetailData *)data;
     
     [self banner:detail];
@@ -49,11 +65,14 @@
     
     ViewGroup *scroll = [self.view findViewByName:@"scroll"];
     [scroll boundsAndRefreshLayout];
-    scroll.hidden = NO;
-    scroll.alpha = 0;
-    [UIView animateWithDuration:0.5 animations:^{
-        scroll.alpha = 1;
-    }];
+    if (self.first) {
+        scroll.hidden = NO;
+        scroll.alpha = 0;
+        [UIView animateWithDuration:0.5 animations:^{
+            scroll.alpha = 1;
+        }];
+        self.first = NO;
+    }
 }
 
 #pragma mask banner
