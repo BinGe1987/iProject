@@ -6,6 +6,7 @@
 //
 
 #import "UIViewController+ContentView.h"
+#import "RootView.h"
 
 static const void *contentViewKey = &contentViewKey;
 
@@ -13,15 +14,11 @@ static const void *contentViewKey = &contentViewKey;
 
 -(void)setContentView:(UIView *)contentView {
     objc_setAssociatedObject(self, contentViewKey, contentView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-//    FrameLayout *vg = [[FrameLayout alloc] init];
-//    ViewParams *vp = [[ViewParams alloc] init];
-//    vp.width = FULL;
-//    vp.height = FULL;
-//    vg.viewParams = vp;
+    RootView *root = [[RootView alloc] init];
+    self.view = root;
     
-//    [vg addSubview:contentView];
-    self.view = contentView;
-//    self.view.backgroundColor = self.contentView.backgroundColor;
+    [self.view addSubview: contentView];
+    self.view.backgroundColor = contentView.backgroundColor;
 }
 
 - (ViewGroup *)contentView {

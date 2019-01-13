@@ -28,9 +28,11 @@
 - (void)onLayoutSubViewsCompleted {
     CGFloat topHeight = STATUSBARHIEGHT + NVBARHIEGHT;
     ScrollView *sv = (ScrollView *)[self findViewByName:@"table"];
-    sv.contentInset = UIEdgeInsetsMake(topHeight,0,0,0);
+    sv.contentInset = UIEdgeInsetsMake(topHeight,0,10,0);
     sv.contentOffset = CGPointMake(0, -topHeight);
 }
+
+
 
 - (void)dealloc {
     
