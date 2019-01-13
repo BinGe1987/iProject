@@ -398,6 +398,9 @@
 		77FAA0E221EA26AB0099473E /* SearchResultAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0E121EA26AB0099473E /* SearchResultAdapter.m */; };
 		77FAA0E621EA6FB00099473E /* ClubTechListController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0E521EA6FB00099473E /* ClubTechListController.m */; };
 		77FAA0E821EA6FC20099473E /* ClubTechListController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0E721EA6FC20099473E /* ClubTechListController.xml */; };
+		77FAA0EB21EB0AFF0099473E /* ClubTechListPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0EA21EB0AFF0099473E /* ClubTechListPresenter.m */; };
+		77FAA0EE21EB0B7D0099473E /* ClubTechListViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0ED21EB0B7D0099473E /* ClubTechListViewHandler.m */; };
+		77FAA0F121EB0CA20099473E /* ClubTechListPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0F021EB0CA20099473E /* ClubTechListPerformer.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1150,6 +1153,12 @@
 		77FAA0E421EA6FB00099473E /* ClubTechListController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListController.h; sourceTree = "<group>"; };
 		77FAA0E521EA6FB00099473E /* ClubTechListController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListController.m; sourceTree = "<group>"; };
 		77FAA0E721EA6FC20099473E /* ClubTechListController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubTechListController.xml; sourceTree = "<group>"; };
+		77FAA0E921EB0AFF0099473E /* ClubTechListPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListPresenter.h; sourceTree = "<group>"; };
+		77FAA0EA21EB0AFF0099473E /* ClubTechListPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListPresenter.m; sourceTree = "<group>"; };
+		77FAA0EC21EB0B7D0099473E /* ClubTechListViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListViewHandler.h; sourceTree = "<group>"; };
+		77FAA0ED21EB0B7D0099473E /* ClubTechListViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListViewHandler.m; sourceTree = "<group>"; };
+		77FAA0EF21EB0CA20099473E /* ClubTechListPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClubTechListPerformer.h; sourceTree = "<group>"; };
+		77FAA0F021EB0CA20099473E /* ClubTechListPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClubTechListPerformer.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -1260,6 +1269,7 @@
 		771CA3B121DCA1EB00B00F11 /* Club */ = {
 			isa = PBXGroup;
 			children = (
+				77FAA0F221EB0E000099473E /* TechList */,
 				77C3978121E459680016CEE3 /* Filter */,
 				771CA3B221DCA20B00B00F11 /* ClubHandler.h */,
 				771CA3B321DCA20B00B00F11 /* ClubHandler.m */,
@@ -3131,6 +3141,19 @@
 				77FAA0E421EA6FB00099473E /* ClubTechListController.h */,
 				77FAA0E521EA6FB00099473E /* ClubTechListController.m */,
 				77FAA0E721EA6FC20099473E /* ClubTechListController.xml */,
+				77FAA0E921EB0AFF0099473E /* ClubTechListPresenter.h */,
+				77FAA0EA21EB0AFF0099473E /* ClubTechListPresenter.m */,
+				77FAA0EC21EB0B7D0099473E /* ClubTechListViewHandler.h */,
+				77FAA0ED21EB0B7D0099473E /* ClubTechListViewHandler.m */,
+			);
+			path = TechList;
+			sourceTree = "<group>";
+		};
+		77FAA0F221EB0E000099473E /* TechList */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA0EF21EB0CA20099473E /* ClubTechListPerformer.h */,
+				77FAA0F021EB0CA20099473E /* ClubTechListPerformer.m */,
 			);
 			path = TechList;
 			sourceTree = "<group>";
@@ -3402,6 +3425,7 @@
 				77CEA4FF21D4C30D00B388E4 /* DiscoverTechPerformer.m in Sources */,
 				77EA8F4921B90226001B8959 /* ViewModel.m in Sources */,
 				771CA3B021DCA17E00B00F11 /* ClubDetailAdapter.m in Sources */,
+				77FAA0EB21EB0AFF0099473E /* ClubTechListPresenter.m in Sources */,
 				77B0559521D1FB250045A489 /* ViewHandler.m in Sources */,
 				7734C12221D23A45009D1EE8 /* KafkaReplicatorLayer.m in Sources */,
 				77CEA51B21D4FA6900B388E4 /* CollectionViewModel.m in Sources */,
@@ -3459,6 +3483,7 @@
 				771CA40221DD0ED600B00F11 /* TechDetailPresenter.m in Sources */,
 				77FAA0D521EA18B10099473E /* SearchNavigationViewHandler.m in Sources */,
 				77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */,
+				77FAA0F121EB0CA20099473E /* ClubTechListPerformer.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,
 				77CEA55B21D64A6500B388E4 /* OrderPresenter.m in Sources */,
 				77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */,
@@ -3482,6 +3507,7 @@
 				771CA41C21DDC1A100B00F11 /* CommentPresenter.m in Sources */,
 				77A38A0A21DF2F5900042B04 /* SettingController.m in Sources */,
 				77A389E321DE50ED00042B04 /* MemberData.m in Sources */,
+				77FAA0EE21EB0B7D0099473E /* ClubTechListViewHandler.m in Sources */,
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
 				77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */,

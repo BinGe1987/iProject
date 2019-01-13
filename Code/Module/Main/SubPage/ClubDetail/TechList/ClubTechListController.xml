@@ -3,6 +3,14 @@
     view_name="root"
     view_width="full"
     view_height="full">
+    
+    <TableView
+        view_name="table"
+        view_width="full"
+        view_height="full"
+        view_scrollIndicator="NO">
+    </TableView>
+    
 </FrameLayout>
 
 

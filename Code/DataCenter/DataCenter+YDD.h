@@ -57,6 +57,8 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma make 二级页面
 ///获取会所主页数据
 #define OperationGetClubDetailData              (@"OperationGetClubDetailData")
+///获取会所技师列表
+#define OperationGetClubTechListData             (@"OperationGetClubTechListData")
 ///获取技师主页数据
 #define OperationGetTechDetailData              (@"OperationGetTechDetailData")
 ///获取评论列表数据

@@ -6,6 +6,7 @@
 //
 
 #import "ClubTechListController.h"
+#import "ClubTechListPresenter.h"
 
 @interface ClubTechListController ()
 
@@ -17,6 +18,9 @@
     [super viewDidLoad];
     ClubData *club = self.intentData;
     self.title = club.name;
+    
+    [self setNavigationXML:@"ClubTechListController.xml"];
+    [self addPresenter:[[ClubTechListPresenter alloc] initWithView:self.view]];
 }
 
 @end
