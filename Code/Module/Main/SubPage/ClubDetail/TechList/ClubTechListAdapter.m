@@ -17,5 +17,10 @@
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    TableViewSection *data = [self.data objectAtIndex:indexPath.section];
+    TechData *tech = data.array[indexPath.row];
+    [UIViewController pushController:@"TechDetailController" animated:YES data:tech];
+}
 
 @end

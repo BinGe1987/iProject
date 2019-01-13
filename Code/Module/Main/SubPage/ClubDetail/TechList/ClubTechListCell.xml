@@ -30,7 +30,7 @@
             text_size="15">
         </Label>
         <Label
-            view_name="label_name"
+            view_name="label_score"
             view_width="auto"
             view_height="16"
             text_src="评分"
@@ -60,7 +60,7 @@
             view_masksToBounds="YES">
         </Label>
         <Label
-            view_name="label_follow"
+            view_name="label_comment"
             view_width="auto"
             view_height="16"
             text_src="0人评价"
