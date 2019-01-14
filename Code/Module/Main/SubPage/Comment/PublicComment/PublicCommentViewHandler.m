@@ -6,13 +6,16 @@
 //
 
 #import "PublicCommentViewHandler.h"
-#import "TZImagePickerController.h"
+#import "PublicCommentTechListCell.h"
 
 @interface PublicCommentViewHandler()<UITextViewDelegate, ImagePickerControllerDelegate>
 
 @property (nonatomic, strong) ImagePickerController *picker;
 @property (nonatomic, strong) NSMutableArray *images;
 @property (nonatomic, strong) PhotoBrowser *browser;
+@property (nonatomic, strong) UITableView *techTable;
+@property (nonatomic, strong) TableViewSection *section;
+@property (nonatomic, copy) NSString *text;
 
 @end
 
@@ -21,14 +24,61 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     
+    [self setTechNumberInput];
     [self setCommentLevel:5];
     [self setSuggestion];
     [self imagePicker];
     
     return self;
 }
+ 
+#pragma mask 选择技师
+- (void)setTechNumberInput {
+    self.techTable = [self.view findViewByName:@"table_tech"];
+    self.techTable.layer.masksToBounds = YES;
+    self.section = [[TableViewSection alloc] initWithDictionary: @{@"name": @"tech", @"array": @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",], @"height" : [NSNumber numberWithFloat:ScaleValue(42)]}];
+    self.section.cell = [PublicCommentTechListCell class];
+    [self.techTable setAdapter:[TableViewAdapter AdapterWithSourceData:[@[self.section] mutableCopy]]];
+    
+    UITextField *input = [self.view findViewByName:@"input_tech"];
+    [input addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
+    [input addTarget:self action:@selector(textFieldEnd:) forControlEvents:UIControlEventEditingDidEnd];
+}
+- (void)textFieldChanged:(UITextField*)textField {
+    NSString *string = textField.text;
+    self.text = string;
+    [self performSelector:@selector(startSearch:) withObject:string afterDelay:0.6];
+}
+- (void)startSearch:(NSString *)string {
+    if ([string isEqualToString:self.text]) {
+        NSLog(@"开始搜索 %@",string);
+        [self.delegate onViewAction:@"action_search" data:string];
+        NSInteger count = [string length] > 4 ? 4 :[string length];
+        WeakSelf(self)
+        [UIView animateWithDuration:0.3 animations:^{
+            CGRect frame = weakself.techTable.frame;
+            frame.size.height = count * ScaleValue(42)-1;
+            weakself.techTable.frame = frame;
+        } completion:^(BOOL finished) {
+        }];
+    }
+}
+- (void)textFieldEnd:(UITextField*)textField {
+    WeakSelf(self)
+    [UIView animateWithDuration:0.3 animations:^{
+        CGRect frame = weakself.techTable.frame;
+        frame.size.height = 0;
+        weakself.techTable.frame = frame;
+    } completion:^(BOOL finished) {
+    }];
+}
+- (void)reloadTechList {
+//    [self.techTable reloadData];
+}
 
-//选择表情
+
+
+#pragma mask 选择表情
 - (void)setCommentLevel:(NSInteger)level {
     
     for (NSInteger i=1; i<=5; i++) {
@@ -54,7 +104,7 @@
     
 }
 
-//意见输入
+#pragma mask 意见输入
 - (void)setSuggestion {
     UITextView *textView = [self.view findViewByName:@"input_suggestion"];
     textView.delegate = self;
@@ -67,7 +117,7 @@
     UITextView *label = [self.view findViewByName:@"label_suggestion_count"];
     label.text = [textView.text length] >= 15 ? nil : [NSString stringWithFormat:@"加油，还差%ld个字！", 15-textView.text.length];
 }
-//图片选择
+#pragma mask 图片选择
 - (void)imagePicker {
     self.images = [NSMutableArray new];
     UIButton *btn = [self.view findViewByName:@"btn_image_picker"];

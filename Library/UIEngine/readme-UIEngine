@@ -33,3 +33,5 @@ ScrollView属性说明：
 
 //scrollview 显不显示滚动条的属性（YES/NO）
 view_scrollIndicator
+
+/应用程序/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/File Templates

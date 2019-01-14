@@ -144,6 +144,8 @@
 		7780FEBC21E8BFA70045ABC5 /* SearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7780FEBB21E8BFA70045ABC5 /* SearchController.m */; };
 		7780FEBE21E8C00F0045ABC5 /* SearchController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7780FEBD21E8C00F0045ABC5 /* SearchController.xml */; };
 		7780FEC121E8C1270045ABC5 /* SearchNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7780FEC021E8C1270045ABC5 /* SearchNavigationController.m */; };
+		7786D5E121ECEC1600A18AC3 /* PublicCommentTechListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786D5E021ECEC1600A18AC3 /* PublicCommentTechListCell.m */; };
+		7786D5E321ECF53300A18AC3 /* PublicCommentTechListCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7786D5E221ECF53300A18AC3 /* PublicCommentTechListCell.xml */; };
 		77A389D721DE196800042B04 /* VerifyCodePerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D621DE196800042B04 /* VerifyCodePerformer.m */; };
 		77A389DA21DE3F2200042B04 /* LoginPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D921DE3F2200042B04 /* LoginPerformer.m */; };
 		77A389DD21DE4DAB00042B04 /* MinePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389DC21DE4DAB00042B04 /* MinePresenter.m */; };
@@ -696,6 +698,9 @@
 		7780FEBD21E8C00F0045ABC5 /* SearchController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SearchController.xml; sourceTree = "<group>"; };
 		7780FEBF21E8C1270045ABC5 /* SearchNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchNavigationController.h; sourceTree = "<group>"; };
 		7780FEC021E8C1270045ABC5 /* SearchNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchNavigationController.m; sourceTree = "<group>"; };
+		7786D5DF21ECEC1600A18AC3 /* PublicCommentTechListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentTechListCell.h; sourceTree = "<group>"; };
+		7786D5E021ECEC1600A18AC3 /* PublicCommentTechListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentTechListCell.m; sourceTree = "<group>"; };
+		7786D5E221ECF53300A18AC3 /* PublicCommentTechListCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PublicCommentTechListCell.xml; sourceTree = "<group>"; };
 		77A389D521DE196800042B04 /* VerifyCodePerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyCodePerformer.h; sourceTree = "<group>"; };
 		77A389D621DE196800042B04 /* VerifyCodePerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyCodePerformer.m; sourceTree = "<group>"; };
 		77A389D821DE3F2200042B04 /* LoginPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPerformer.h; sourceTree = "<group>"; };
@@ -3257,6 +3262,9 @@
 				77FAA10521EC704D0099473E /* PublicCommentViewHandler.m */,
 				77FAA0FF21EB35B60099473E /* PublicCommentController.xml */,
 				77FAA13B21ECC36B0099473E /* PublicCommentControllerNavigation.xml */,
+				7786D5DF21ECEC1600A18AC3 /* PublicCommentTechListCell.h */,
+				7786D5E021ECEC1600A18AC3 /* PublicCommentTechListCell.m */,
+				7786D5E221ECF53300A18AC3 /* PublicCommentTechListCell.xml */,
 			);
 			path = PublicComment;
 			sourceTree = "<group>";
@@ -3416,6 +3424,7 @@
 				77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */,
 				77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */,
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
+				7786D5E321ECF53300A18AC3 /* PublicCommentTechListCell.xml in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
@@ -3468,6 +3477,7 @@
 				77A38A2521E0889600042B04 /* ProgressHUB+Tips.m in Sources */,
 				77EA8F5321B90226001B8959 /* UIViewController+JSON.m in Sources */,
 				77EA8F6D21B90227001B8959 /* UIView+View.m in Sources */,
+				7786D5E121ECEC1600A18AC3 /* PublicCommentTechListCell.m in Sources */,
 				77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */,
 				771CA3FF21DD0D1800B00F11 /* TechDetailPerformer.m in Sources */,
 				7734C11821D23A45009D1EE8 /* UIScrollView+KafkaRefreshControl.m in Sources */,

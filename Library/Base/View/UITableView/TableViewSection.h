@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "TableViewSectionRow.h"
+#import "TableViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray<TableViewSectionRow *> *rows;
 
-
+@property (nonatomic, strong) Class cell;
 
 - (instancetype)initWithDictionary:(NSDictionary *)dic;
 

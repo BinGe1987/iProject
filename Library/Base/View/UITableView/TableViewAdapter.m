@@ -90,13 +90,24 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString * showUserInfoCellIdentifier = @"TableViewAdapterCell";
-    UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
-    if (cell == nil){
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                      reuseIdentifier:showUserInfoCellIdentifier];
-    }    
-    return cell;
+    TableViewSection *tvSection = [self.data objectAtIndex:indexPath.section];
+    if (tvSection.cell) {
+        CGSize size = CGSizeMake(tableView.width, tvSection.height);
+        NSValue *value = [NSValue valueWithCGSize:size];
+        TableViewCell *cell = [tvSection.cell performSelector:@selector(tableView:cellSizeValue:) withObject:tableView withObject:value];
+        [cell setData:tvSection.array[indexPath.row]];
+        return cell;
+    } else {
+        static NSString * showUserInfoCellIdentifier = @"TableViewAdapterCell";
+        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+        if (cell == nil){
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                              reuseIdentifier:showUserInfoCellIdentifier];
+        }
+        return cell;
+    }
+    
+    
 }
 
 @end

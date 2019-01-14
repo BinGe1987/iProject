@@ -12,6 +12,9 @@
 + (instancetype)tableView:(UITableView *)tableView cellWithSize:(CGSize)size {
     return nil;
 }
++ (instancetype)tableView:(UITableView *)tableView cellSizeValue:(NSValue *)size {
+    return [[self class] tableView:tableView cellWithSize:size.CGSizeValue];
+}
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
@@ -29,6 +32,11 @@
 
 - (void)setData:(id)data {
     
+}
+
+static NSString * showUserInfoCellIdentifier = @"TableViewAdapterCell";
+- (NSString *)cellIdentifier {
+    return showUserInfoCellIdentifier;
 }
 
 @end

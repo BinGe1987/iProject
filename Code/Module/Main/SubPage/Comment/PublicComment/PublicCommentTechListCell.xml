@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="root"
+    view_width="full"
+    view_height="full">
+    
+    <ImageView
+        view_name="name"
+        view_width="30sp"
+        view_height="30sp"
+        view_borderRadius="15sp"
+        view_masksToBounds="YES"
+        image_src="@default_head_girl"
+        layout_gravity="center|left"
+        layout_marginLeft="10sp">
+    </ImageView>
+    
+    <LinearLayout
+        view_width="auto"
+        view_height="full"
+        view_orientation="horizontal"
+        layout_marginLeft="50sp">
+        <Label
+            view_name="label_name"
+            view_width="auto"
+            view_height="full"
+            text_src="技师"
+            text_color="#000000"
+            text_size="15"
+            layout_marginLeft="10sp">
+        </Label>
+        <Label
+            view_name="label_num"
+            view_width="auto"
+            view_height="full"
+            text_src="(100)"
+            text_color="#000000"
+            text_size="15">
+        </Label>
+    </LinearLayout>
+    
+</FrameLayout>
+
+
