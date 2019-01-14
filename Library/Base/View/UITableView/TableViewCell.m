@@ -34,6 +34,10 @@
     
 }
 
+- (void)tableViewCellDidSelect:(UITableView *)tableView {
+    
+}
+
 static NSString * showUserInfoCellIdentifier = @"TableViewAdapterCell";
 - (NSString *)cellIdentifier {
     return showUserInfoCellIdentifier;

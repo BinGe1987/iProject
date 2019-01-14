@@ -30,4 +30,8 @@
     [vg boundsAndRefreshLayout];
 }
 
+- (void)tableViewCellDidSelect:(UITableView *)tableView {
+    
+}
+
 @end

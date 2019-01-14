@@ -36,9 +36,6 @@
 - (void)setTechNumberInput {
     self.techTable = [self.view findViewByName:@"table_tech"];
     self.techTable.layer.masksToBounds = YES;
-//    self.section = [[TableViewSection alloc] initWithDictionary: @{@"name": @"tech", @"array": @[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",], @"height" : [NSNumber numberWithFloat:ScaleValue(42)]}];
-//    self.section.cell = [PublicCommentTechListCell class];
-    
     self.section = [TableViewSection sectionWithCell:[PublicCommentTechListCell class] height:ScaleValue(42) dataArray:@[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",]];
     
     [self.techTable setAdapter:[TableViewAdapter AdapterWithSourceData:[@[self.section] mutableCopy]]];

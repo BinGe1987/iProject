@@ -27,7 +27,7 @@
             text_src="技师"
             text_color="#000000"
             text_size="15"
-            layout_marginLeft="10sp">
+            layout_marginRight="10sp">
         </Label>
         <Label
             view_name="label_num"

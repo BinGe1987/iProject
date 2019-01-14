@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setData:(id)data;
 
-+ (NSString *)cellIdentifier;
+- (void)tableViewCellDidSelect:(UITableView *)tableView;
 
 @end
 

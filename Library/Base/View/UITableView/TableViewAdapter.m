@@ -110,4 +110,12 @@
     
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if ([cell isKindOfClass:[TableViewCell class]]) {
+        TableViewCell *tc = (TableViewCell *)cell;
+        [tc tableViewCellDidSelect:tableView];
+    }
+}
+
 @end

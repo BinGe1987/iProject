@@ -21,7 +21,7 @@
     
     [self setContentViewWithXML:@"PublicCommentController.xml"];
     [self addPresenter:[[PublicCommentPresenter alloc] initWithView:self.contentView]];
-    [self endEditingWithViewTouch:self.contentView];
+//    [self endEditingWithViewTouch:self.contentView];
 }
     
 - (void)dealloc
