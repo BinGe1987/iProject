@@ -16,6 +16,7 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     
+    
     [self setCommentLevel:5];
     [self setSuggestion];
     
@@ -48,25 +49,18 @@
     
 }
 
-//
+//意见输入
 - (void)setSuggestion {
     UITextView *textView = [self.view findViewByName:@"input_suggestion"];
     textView.delegate = self;
 }
 - (void)textViewDidChange:(UITextView *)textView {
+    //处理中文时算上了拼间或笔画字数
     UITextRange *selectedRange = [textView markedTextRange];
-    NSString * newText = [textView textInRange:selectedRange];    //获取高亮部分
-    if(newText.length>0)
-    {
-        return;
-    }
+    if([textView textInRange:selectedRange].length>0) return;
+    
     UITextView *label = [self.view findViewByName:@"label_suggestion_count"];
-    if ([textView.text length] >= 15) {
-        label.hidden = YES;
-    } else {
-        label.hidden = NO;
-        label.text = [NSString stringWithFormat:@"加油，还差%ld个字！", 15-textView.text.length];
-    }
+    label.text = [textView.text length] >= 15 ? nil : [NSString stringWithFormat:@"加油，还差%ld个字！", 15-textView.text.length];
 }
 
 - (void)setUploadLayout {
