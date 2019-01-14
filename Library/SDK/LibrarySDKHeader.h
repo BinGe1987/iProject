@@ -13,6 +13,7 @@
 #import "UIImageView+WebImage.h"
 #import "PhotoBrowser.h"
 #import "DropdownMenu.h"
+#import "ImagePickerController.h"
 //#import "IQKeyboardManager.h"
 
 #endif /* LibrarySDKHeader_h */

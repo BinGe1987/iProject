@@ -408,6 +408,23 @@
 		77FAA10021EB35B60099473E /* PublicCommentController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0FF21EB35B60099473E /* PublicCommentController.xml */; };
 		77FAA10321EC6C450099473E /* PublicCommentPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA10221EC6C450099473E /* PublicCommentPresenter.m */; };
 		77FAA10621EC704D0099473E /* PublicCommentViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA10521EC704D0099473E /* PublicCommentViewHandler.m */; };
+		77FAA12821EC849D0099473E /* TZImageCropManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA10B21EC849D0099473E /* TZImageCropManager.m */; };
+		77FAA12921EC849D0099473E /* TZAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA10D21EC849D0099473E /* TZAssetCell.m */; };
+		77FAA12A21EC849D0099473E /* TZVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA10E21EC849D0099473E /* TZVideoPlayerController.m */; };
+		77FAA12B21EC849D0099473E /* TZAssetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA10F21EC849D0099473E /* TZAssetModel.m */; };
+		77FAA12C21EC849D0099473E /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA11021EC849D0099473E /* NSBundle+TZImagePicker.m */; };
+		77FAA12D21EC849D0099473E /* UIView+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA11321EC849D0099473E /* UIView+Layout.m */; };
+		77FAA12E21EC849D0099473E /* TZPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA11421EC849D0099473E /* TZPhotoPreviewController.m */; };
+		77FAA12F21EC849D0099473E /* TZImagePickerController.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA11521EC849D0099473E /* TZImagePickerController.bundle */; };
+		77FAA13021EC849D0099473E /* TZProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA11621EC849D0099473E /* TZProgressView.m */; };
+		77FAA13121EC849D0099473E /* TZImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA11A21EC849D0099473E /* TZImageManager.m */; };
+		77FAA13221EC849D0099473E /* TZPhotoPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA11C21EC849D0099473E /* TZPhotoPickerController.m */; };
+		77FAA13321EC849D0099473E /* TZPhotoPreviewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA11D21EC849D0099473E /* TZPhotoPreviewCell.m */; };
+		77FAA13421EC849D0099473E /* TZImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA12321EC849D0099473E /* TZImagePickerController.m */; };
+		77FAA13521EC849D0099473E /* TZLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA12421EC849D0099473E /* TZLocationManager.m */; };
+		77FAA13621EC849D0099473E /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA12521EC849D0099473E /* TZGifPhotoPreviewController.m */; };
+		77FAA13721EC849D0099473E /* TZImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA12621EC849D0099473E /* TZImageRequestOperation.m */; };
+		77FAA13A21EC85140099473E /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA13921EC85140099473E /* ImagePickerController.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1178,6 +1195,39 @@
 		77FAA10221EC6C450099473E /* PublicCommentPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentPresenter.m; sourceTree = "<group>"; };
 		77FAA10421EC704D0099473E /* PublicCommentViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentViewHandler.h; sourceTree = "<group>"; };
 		77FAA10521EC704D0099473E /* PublicCommentViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentViewHandler.m; sourceTree = "<group>"; };
+		77FAA10921EC849D0099473E /* TZPhotoPreviewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewCell.h; sourceTree = "<group>"; };
+		77FAA10A21EC849D0099473E /* TZPhotoPickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPickerController.h; sourceTree = "<group>"; };
+		77FAA10B21EC849D0099473E /* TZImageCropManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageCropManager.m; sourceTree = "<group>"; };
+		77FAA10C21EC849D0099473E /* TZImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageManager.h; sourceTree = "<group>"; };
+		77FAA10D21EC849D0099473E /* TZAssetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetCell.m; sourceTree = "<group>"; };
+		77FAA10E21EC849D0099473E /* TZVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZVideoPlayerController.m; sourceTree = "<group>"; };
+		77FAA10F21EC849D0099473E /* TZAssetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZAssetModel.m; sourceTree = "<group>"; };
+		77FAA11021EC849D0099473E /* NSBundle+TZImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+TZImagePicker.m"; sourceTree = "<group>"; };
+		77FAA11121EC849D0099473E /* TZLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZLocationManager.h; sourceTree = "<group>"; };
+		77FAA11221EC849D0099473E /* TZImagePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImagePickerController.h; sourceTree = "<group>"; };
+		77FAA11321EC849D0099473E /* UIView+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Layout.m"; sourceTree = "<group>"; };
+		77FAA11421EC849D0099473E /* TZPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewController.m; sourceTree = "<group>"; };
+		77FAA11521EC849D0099473E /* TZImagePickerController.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TZImagePickerController.bundle; sourceTree = "<group>"; };
+		77FAA11621EC849D0099473E /* TZProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZProgressView.m; sourceTree = "<group>"; };
+		77FAA11721EC849D0099473E /* TZGifPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZGifPhotoPreviewController.h; sourceTree = "<group>"; };
+		77FAA11821EC849D0099473E /* TZImageRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageRequestOperation.h; sourceTree = "<group>"; };
+		77FAA11921EC849D0099473E /* TZAssetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetCell.h; sourceTree = "<group>"; };
+		77FAA11A21EC849D0099473E /* TZImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageManager.m; sourceTree = "<group>"; };
+		77FAA11B21EC849D0099473E /* TZImageCropManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZImageCropManager.h; sourceTree = "<group>"; };
+		77FAA11C21EC849D0099473E /* TZPhotoPickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPickerController.m; sourceTree = "<group>"; };
+		77FAA11D21EC849D0099473E /* TZPhotoPreviewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZPhotoPreviewCell.m; sourceTree = "<group>"; };
+		77FAA11E21EC849D0099473E /* NSBundle+TZImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+TZImagePicker.h"; sourceTree = "<group>"; };
+		77FAA11F21EC849D0099473E /* TZAssetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZAssetModel.h; sourceTree = "<group>"; };
+		77FAA12021EC849D0099473E /* TZVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZVideoPlayerController.h; sourceTree = "<group>"; };
+		77FAA12121EC849D0099473E /* TZPhotoPreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZPhotoPreviewController.h; sourceTree = "<group>"; };
+		77FAA12221EC849D0099473E /* UIView+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Layout.h"; sourceTree = "<group>"; };
+		77FAA12321EC849D0099473E /* TZImagePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImagePickerController.m; sourceTree = "<group>"; };
+		77FAA12421EC849D0099473E /* TZLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZLocationManager.m; sourceTree = "<group>"; };
+		77FAA12521EC849D0099473E /* TZGifPhotoPreviewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZGifPhotoPreviewController.m; sourceTree = "<group>"; };
+		77FAA12621EC849D0099473E /* TZImageRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TZImageRequestOperation.m; sourceTree = "<group>"; };
+		77FAA12721EC849D0099473E /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
+		77FAA13821EC85140099473E /* ImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
+		77FAA13921EC85140099473E /* ImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePickerController.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -3102,6 +3152,7 @@
 		77EA8FA921B92262001B8959 /* SDK */ = {
 			isa = PBXGroup;
 			children = (
+				77FAA10721EC84900099473E /* ImagePickerController */,
 				771CA37121D8B47C00B00F11 /* DropdownMenu */,
 				7734C0E221D23A45009D1EE8 /* KafkaRefresh */,
 				77B054E221CB477C0045A489 /* Reachability */,
@@ -3197,6 +3248,54 @@
 			path = PublicComment;
 			sourceTree = "<group>";
 		};
+		77FAA10721EC84900099473E /* ImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA10821EC849D0099473E /* TZImagePickerController */,
+				77FAA13821EC85140099473E /* ImagePickerController.h */,
+				77FAA13921EC85140099473E /* ImagePickerController.m */,
+			);
+			path = ImagePickerController;
+			sourceTree = "<group>";
+		};
+		77FAA10821EC849D0099473E /* TZImagePickerController */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA10921EC849D0099473E /* TZPhotoPreviewCell.h */,
+				77FAA10A21EC849D0099473E /* TZPhotoPickerController.h */,
+				77FAA10B21EC849D0099473E /* TZImageCropManager.m */,
+				77FAA10C21EC849D0099473E /* TZImageManager.h */,
+				77FAA10D21EC849D0099473E /* TZAssetCell.m */,
+				77FAA10E21EC849D0099473E /* TZVideoPlayerController.m */,
+				77FAA10F21EC849D0099473E /* TZAssetModel.m */,
+				77FAA11021EC849D0099473E /* NSBundle+TZImagePicker.m */,
+				77FAA11121EC849D0099473E /* TZLocationManager.h */,
+				77FAA11221EC849D0099473E /* TZImagePickerController.h */,
+				77FAA11321EC849D0099473E /* UIView+Layout.m */,
+				77FAA11421EC849D0099473E /* TZPhotoPreviewController.m */,
+				77FAA11521EC849D0099473E /* TZImagePickerController.bundle */,
+				77FAA11621EC849D0099473E /* TZProgressView.m */,
+				77FAA11721EC849D0099473E /* TZGifPhotoPreviewController.h */,
+				77FAA11821EC849D0099473E /* TZImageRequestOperation.h */,
+				77FAA11921EC849D0099473E /* TZAssetCell.h */,
+				77FAA11A21EC849D0099473E /* TZImageManager.m */,
+				77FAA11B21EC849D0099473E /* TZImageCropManager.h */,
+				77FAA11C21EC849D0099473E /* TZPhotoPickerController.m */,
+				77FAA11D21EC849D0099473E /* TZPhotoPreviewCell.m */,
+				77FAA11E21EC849D0099473E /* NSBundle+TZImagePicker.h */,
+				77FAA11F21EC849D0099473E /* TZAssetModel.h */,
+				77FAA12021EC849D0099473E /* TZVideoPlayerController.h */,
+				77FAA12121EC849D0099473E /* TZPhotoPreviewController.h */,
+				77FAA12221EC849D0099473E /* UIView+Layout.h */,
+				77FAA12321EC849D0099473E /* TZImagePickerController.m */,
+				77FAA12421EC849D0099473E /* TZLocationManager.m */,
+				77FAA12521EC849D0099473E /* TZGifPhotoPreviewController.m */,
+				77FAA12621EC849D0099473E /* TZImageRequestOperation.m */,
+				77FAA12721EC849D0099473E /* TZProgressView.h */,
+			);
+			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -3286,6 +3385,7 @@
 				77B0544821C943760045A489 /* README.md in Resources */,
 				771CA3E521DCDF8A00B00F11 /* ClubDetailTechItem.xml in Resources */,
 				77FAA0E821EA6FC20099473E /* ClubTechListController.xml in Resources */,
+				77FAA12F21EC849D0099473E /* TZImagePickerController.bundle in Resources */,
 				77CEA54F21D5FD8900B388E4 /* MineNavigation2.json in Resources */,
 				77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */,
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
@@ -3410,6 +3510,7 @@
 				77B054E521CB47910045A489 /* Reachability.m in Sources */,
 				77EA8F6F21B90227001B8959 /* FrameLayout.m in Sources */,
 				7723E1BA21D70DDE00B77890 /* LoginData.m in Sources */,
+				77FAA13621EC849D0099473E /* TZGifPhotoPreviewController.m in Sources */,
 				776B55F021C00D6000793CAF /* Parser.m in Sources */,
 				771CA3CA21DCB1D100B00F11 /* ClubDetailProfileCell.m in Sources */,
 				7780FEBC21E8BFA70045ABC5 /* SearchController.m in Sources */,
@@ -3429,6 +3530,7 @@
 				77B0545121C943760045A489 /* YYImageCoder.m in Sources */,
 				7771843921E71E7D00B3DDD8 /* BannerItem.m in Sources */,
 				77FAA0CB21E91D430099473E /* SearchPresenter.m in Sources */,
+				77FAA12E21EC849D0099473E /* TZPhotoPreviewController.m in Sources */,
 				77A8B63721E4DE8200BC8C70 /* DiscoverTechData.m in Sources */,
 				7723E1D121D780C000B77890 /* XMLModel.m in Sources */,
 				771CA38921D94EB800B00F11 /* DOPDropDownMenu.m in Sources */,
@@ -3455,9 +3557,12 @@
 				7734C11421D23A45009D1EE8 /* UIScrollView+KafkaConfiguration.m in Sources */,
 				77CEA51421D4F99A00B388E4 /* DiscoverTechViewHandler.m in Sources */,
 				771CA3A321DC98AE00B00F11 /* TechDetailController.m in Sources */,
+				77FAA13721EC849D0099473E /* TZImageRequestOperation.m in Sources */,
 				771CA37821D8B51100B00F11 /* DropdownMenu.m in Sources */,
 				776B55AB21BE62E100793CAF /* UserData.m in Sources */,
+				77FAA13521EC849D0099473E /* TZLocationManager.m in Sources */,
 				77A38A6921E32EBA00042B04 /* RootViewParams.m in Sources */,
+				77FAA13121EC849D0099473E /* TZImageManager.m in Sources */,
 				771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */,
 				77A389FD21DF17EF00042B04 /* NavigationViewModel.m in Sources */,
 				77B054BD21CA51740045A489 /* InputViewModel.m in Sources */,
@@ -3484,6 +3589,7 @@
 				776B55EA21BFF7DC00793CAF /* CheckLoginPerfomer.m in Sources */,
 				771CA42621DDC30E00B00F11 /* CommentListPerformer.m in Sources */,
 				77EA8F5B21B90227001B8959 /* LayoutParams.m in Sources */,
+				77FAA12A21EC849D0099473E /* TZVideoPlayerController.m in Sources */,
 				77EA8F5921B90227001B8959 /* TextViewParams.m in Sources */,
 				77B054CC21CA55E70045A489 /* LabelViewModel.m in Sources */,
 				77CEA4F921D4C2DD00B388E4 /* DiscoverHandler.m in Sources */,
@@ -3527,6 +3633,7 @@
 				77FAA0D521EA18B10099473E /* SearchNavigationViewHandler.m in Sources */,
 				77B0559821D1FCA20045A489 /* HomeViewHandler.m in Sources */,
 				77FAA0F121EB0CA20099473E /* ClubTechListPerformer.m in Sources */,
+				77FAA13421EC849D0099473E /* TZImagePickerController.m in Sources */,
 				776B55C721BEACD800793CAF /* ImageViewParams.m in Sources */,
 				77CEA55B21D64A6500B388E4 /* OrderPresenter.m in Sources */,
 				77B0550E21CCD34C0045A489 /* ConfigPerformer.m in Sources */,
@@ -3554,6 +3661,7 @@
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
 				77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */,
+				77FAA13221EC849D0099473E /* TZPhotoPickerController.m in Sources */,
 				77CEA56B21D655A500B388E4 /* OrderTableViewAdapter.m in Sources */,
 				77B0553F21D0BE910045A489 /* LoginModule.m in Sources */,
 				77A38A6621E32EA000042B04 /* RootView.m in Sources */,
@@ -3563,11 +3671,14 @@
 				775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */,
 				77A389E621DE554C00042B04 /* RechargeData.m in Sources */,
 				7734C11721D23A45009D1EE8 /* KafkaFootRefreshControl.m in Sources */,
+				77FAA12C21EC849D0099473E /* NSBundle+TZImagePicker.m in Sources */,
 				771CA43D21DDFB7300B00F11 /* HttpRequest.m in Sources */,
 				77CEA4EA21D4B79300B388E4 /* DiscoverNvPresenter.m in Sources */,
+				77FAA12821EC849D0099473E /* TZImageCropManager.m in Sources */,
 				77B0544B21C943760045A489 /* YYCache.m in Sources */,
 				77C3978021E459620016CEE3 /* ClubFilterPerformer.m in Sources */,
 				7734C11A21D23A45009D1EE8 /* KafkaNativeFooter.m in Sources */,
+				77FAA13021EC849D0099473E /* TZProgressView.m in Sources */,
 				77EA8F3F21B90226001B8959 /* MVPViewController.m in Sources */,
 				77EA8F4121B90226001B8959 /* PresenterViewController.m in Sources */,
 				77B053D521C8BDCA0045A489 /* NetResponse.m in Sources */,
@@ -3577,12 +3688,14 @@
 				77B0544D21C943760045A489 /* YYMemoryCache.m in Sources */,
 				77B0544C21C943760045A489 /* YYKVStorage.m in Sources */,
 				77B0547B21CA46DC0045A489 /* UIImage+KS.m in Sources */,
+				77FAA13A21EC85140099473E /* ImagePickerController.m in Sources */,
 				77B0545721C943760045A489 /* MKAnnotationView+YYWebImage.m in Sources */,
 				771CA37021D8AC9400B00F11 /* LoginViewHandler.m in Sources */,
 				7734C13021D26963009D1EE8 /* BannerUITableViewCell.m in Sources */,
 				77C3977D21E445700016CEE3 /* ClubMenu.m in Sources */,
 				77EA8E6C21B8F79F001B8959 /* AppDelegate.m in Sources */,
 				77FAA0F521EB0F590099473E /* ClubTechListAdapter.m in Sources */,
+				77FAA12D21EC849D0099473E /* UIView+Layout.m in Sources */,
 				77EA8E9921B8FCF2001B8959 /* HomeViewController.m in Sources */,
 				77B0554321D0D3120045A489 /* TabData.m in Sources */,
 				771CA39321D9A5B000B00F11 /* DropdownMenuItem.m in Sources */,
@@ -3601,6 +3714,7 @@
 				77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */,
 				77FAA10321EC6C450099473E /* PublicCommentPresenter.m in Sources */,
 				77CEA4FC21D4C2FF00B388E4 /* DiscoverClubPerformer.m in Sources */,
+				77FAA12921EC849D0099473E /* TZAssetCell.m in Sources */,
 				77B0552121CD27480045A489 /* MainNavigationController.m in Sources */,
 				77A8B63A21E4E72B00BC8C70 /* ClassifyViewHandler.m in Sources */,
 				77B0545021C943760045A489 /* YYImage.m in Sources */,
@@ -3625,6 +3739,7 @@
 				771CA39621DC59E500B00F11 /* DescoverClubMenuViewHandler.m in Sources */,
 				77A8B64121E4EA8000BC8C70 /* ClassifyNvPresenter.m in Sources */,
 				776B55B321BE6B1500793CAF /* Button.m in Sources */,
+				77FAA12B21EC849D0099473E /* TZAssetModel.m in Sources */,
 				77CEA4D421D4970A00B388E4 /* ViewPagerModel.m in Sources */,
 				776B55BB21BE966800793CAF /* GroupViewParams.m in Sources */,
 				77EA8F7B21B90732001B8959 /* BaseViewController.m in Sources */,
@@ -3665,6 +3780,7 @@
 				77B0550821CCD0D90045A489 /* ConfigHandler.m in Sources */,
 				771CA42F21DDE15300B00F11 /* CommentAdapter.m in Sources */,
 				771CA43221DDE25400B00F11 /* CommentItemCell.m in Sources */,
+				77FAA13321EC849D0099473E /* TZPhotoPreviewCell.m in Sources */,
 				77EA8F6721B90227001B8959 /* LinearLayout.m in Sources */,
 				771CA3BA21DCA26D00B00F11 /* ClubDetailPerformer.m in Sources */,
 			);

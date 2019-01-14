@@ -359,6 +359,7 @@
                 layout_marginTop="48sp">
             </Label>
             <Button
+                view_name="btn_image_picker"
                 view_width="60sp"
                 view_height="60sp"
                 layout_gravity="center"

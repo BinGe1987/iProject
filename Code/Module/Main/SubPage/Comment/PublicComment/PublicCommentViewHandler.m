@@ -6,6 +6,7 @@
 //
 
 #import "PublicCommentViewHandler.h"
+#import "TZImagePickerController.h"
 
 @interface PublicCommentViewHandler()<UITextViewDelegate>
 
@@ -19,6 +20,7 @@
     
     [self setCommentLevel:5];
     [self setSuggestion];
+    [self imagePicker];
     
     return self;
 }
@@ -61,6 +63,13 @@
     
     UITextView *label = [self.view findViewByName:@"label_suggestion_count"];
     label.text = [textView.text length] >= 15 ? nil : [NSString stringWithFormat:@"加油，还差%ld个字！", 15-textView.text.length];
+}
+
+- (void)imagePicker {
+    UIButton *btn = [self.view findViewByName:@"btn_image_picker"];
+    [btn setClickBlock:^(UIButton * _Nonnull button) {
+        [ImagePickerController open];
+    }];
 }
 
 - (void)setUploadLayout {
