@@ -31,6 +31,16 @@
         [self setImage:params.imageSelected forState:UIControlStateHighlighted];
     }
     
+    if (params.background) {
+        if ([params.background hasPrefix:@"#"]) {
+            self.backgroundColor = [UIColor clearColor];
+        }
+        else if ([params.background hasPrefix:@"@"]) {
+            self.layer.contents = nil;
+        }
+        [self setBackgroundImage:params.background];
+    }
+    
     if (params.backgroundSelected) {
         NSString *backgroundSelected = params.backgroundSelected;
         if ([backgroundSelected hasPrefix:@"#"]) {

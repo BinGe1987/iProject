@@ -406,6 +406,8 @@
 		77FAA0FA21EB11A30099473E /* ClubTechListCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0F921EB11A30099473E /* ClubTechListCell.xml */; };
 		77FAA0FE21EB249F0099473E /* PublicCommentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA0FD21EB249F0099473E /* PublicCommentController.m */; };
 		77FAA10021EB35B60099473E /* PublicCommentController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA0FF21EB35B60099473E /* PublicCommentController.xml */; };
+		77FAA10321EC6C450099473E /* PublicCommentPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA10221EC6C450099473E /* PublicCommentPresenter.m */; };
+		77FAA10621EC704D0099473E /* PublicCommentViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA10521EC704D0099473E /* PublicCommentViewHandler.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1172,6 +1174,10 @@
 		77FAA0FC21EB249F0099473E /* PublicCommentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentController.h; sourceTree = "<group>"; };
 		77FAA0FD21EB249F0099473E /* PublicCommentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentController.m; sourceTree = "<group>"; };
 		77FAA0FF21EB35B60099473E /* PublicCommentController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PublicCommentController.xml; sourceTree = "<group>"; };
+		77FAA10121EC6C450099473E /* PublicCommentPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentPresenter.h; sourceTree = "<group>"; };
+		77FAA10221EC6C450099473E /* PublicCommentPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentPresenter.m; sourceTree = "<group>"; };
+		77FAA10421EC704D0099473E /* PublicCommentViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentViewHandler.h; sourceTree = "<group>"; };
+		77FAA10521EC704D0099473E /* PublicCommentViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentViewHandler.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -3182,6 +3188,10 @@
 			children = (
 				77FAA0FC21EB249F0099473E /* PublicCommentController.h */,
 				77FAA0FD21EB249F0099473E /* PublicCommentController.m */,
+				77FAA10121EC6C450099473E /* PublicCommentPresenter.h */,
+				77FAA10221EC6C450099473E /* PublicCommentPresenter.m */,
+				77FAA10421EC704D0099473E /* PublicCommentViewHandler.h */,
+				77FAA10521EC704D0099473E /* PublicCommentViewHandler.m */,
 				77FAA0FF21EB35B60099473E /* PublicCommentController.xml */,
 			);
 			path = PublicComment;
@@ -3589,12 +3599,14 @@
 				7739C42221E78FED0052D2CA /* CommentCategoryPerformer.m in Sources */,
 				7734C13721D2704B009D1EE8 /* BannerView.m in Sources */,
 				77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */,
+				77FAA10321EC6C450099473E /* PublicCommentPresenter.m in Sources */,
 				77CEA4FC21D4C2FF00B388E4 /* DiscoverClubPerformer.m in Sources */,
 				77B0552121CD27480045A489 /* MainNavigationController.m in Sources */,
 				77A8B63A21E4E72B00BC8C70 /* ClassifyViewHandler.m in Sources */,
 				77B0545021C943760045A489 /* YYImage.m in Sources */,
 				77EA8F7321B90227001B8959 /* UIEngine.m in Sources */,
 				77EA8F4721B90226001B8959 /* TextViewModel.m in Sources */,
+				77FAA10621EC704D0099473E /* PublicCommentViewHandler.m in Sources */,
 				77A38A0421DF2BCD00042B04 /* ProfileEditController.m in Sources */,
 				77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */,
 				77B0553821CEAE530045A489 /* Aspects+My.m in Sources */,

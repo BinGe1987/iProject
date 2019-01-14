@@ -6,6 +6,7 @@
     view_background="#ffffff">
     
     <ScrollView
+        view_name="scroll"
         view_width="full"
         view_height="full"
         view_orientation="vertical"
@@ -182,51 +183,37 @@
         </FrameLayout>
         
 <!--留言-->
-    <LinearLayout
+    <FrameLayout
         view_width="full"
-        view_height="auto"
-        view_orientation="vertical">
-        <View
+        view_height="80sp"
+        layout_margin="20"
+        layout_marginTop="10"
+        layout_marginBottom="10">
+        <TextView
+            view_name="input_suggestion"
             view_width="full"
-            view_height="0.5"
-            view_background="#00000000"
-            layout_marginTop="20">
-        </View>
-        <FrameLayout
+            view_height="full"
+            text_placeholder="请为我的服务，留下您宝贵的意见吧～"
+            text_placeholderColor="#cccccc"
+            text_size="12"
+            text_gravity="left">
+        </TextView>
+        <Label
+            view_name="label_suggestion_count"
             view_width="full"
-            view_height="80sp"
-            layout_margin="20"
-            layout_marginTop="10"
-            layout_marginBottom="10">
-            <TextView
-                view_name="input_suggestion"
-                view_width="full"
-                view_height="full"
-                text_placeholder="请为我的服务，留下您宝贵的意见吧～"
-                text_placeholderColor="#cccccc"
-                text_size="12"
-                text_gravity="left">
-            </TextView>
-            <Label
-                view_width="auto"
-                view_height="auto"
-                text_src="加油，还差15个字！"
-                text_color="#808080"
-                text_size="12"
-                layout_gravity="right|bottom">
-            </Label>
-        </FrameLayout>
-        <View
-            view_width="full"
-            view_height="0.5"
-            view_background="#00000000"
-            layout_marginBottom="20">
-        </View>
-    </LinearLayout>
+            view_height="auto"
+            text_src="加油，还差15个字！"
+            text_color="#808080"
+            text_size="12"
+            text_gravity="right"
+            layout_gravity="right|bottom">
+        </Label>
+    </FrameLayout>
 
     
 <!--图片-->
     <FrameLayout
+        view_name="layout_upload"
         view_width="full"
         view_height="80sp"
         layout_marginLeft="10sp"
@@ -351,7 +338,7 @@
         </FrameLayout>
         
         <FrameLayout
-            view_name="layout_upload"
+            view_name="layout_upload_button"
             view_width="80sp"
             view_height="80sp"
             layout_gravity="center|left">
