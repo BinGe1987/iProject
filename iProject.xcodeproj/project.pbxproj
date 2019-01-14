@@ -425,6 +425,9 @@
 		77FAA13621EC849D0099473E /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA12521EC849D0099473E /* TZGifPhotoPreviewController.m */; };
 		77FAA13721EC849D0099473E /* TZImageRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA12621EC849D0099473E /* TZImageRequestOperation.m */; };
 		77FAA13A21EC85140099473E /* ImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA13921EC85140099473E /* ImagePickerController.m */; };
+		77FAA13C21ECC36B0099473E /* PublicCommentControllerNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA13B21ECC36B0099473E /* PublicCommentControllerNavigation.xml */; };
+		77FAA14021ECCF270099473E /* NavigationItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA13F21ECCF270099473E /* NavigationItemView.m */; };
+		77FAA14321ECCF4F0099473E /* NavigationItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA14221ECCF4F0099473E /* NavigationItemViewModel.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1228,6 +1231,11 @@
 		77FAA12721EC849D0099473E /* TZProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TZProgressView.h; sourceTree = "<group>"; };
 		77FAA13821EC85140099473E /* ImagePickerController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerController.h; sourceTree = "<group>"; };
 		77FAA13921EC85140099473E /* ImagePickerController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePickerController.m; sourceTree = "<group>"; };
+		77FAA13B21ECC36B0099473E /* PublicCommentControllerNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PublicCommentControllerNavigation.xml; sourceTree = "<group>"; };
+		77FAA13E21ECCF270099473E /* NavigationItemView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemView.h; sourceTree = "<group>"; };
+		77FAA13F21ECCF270099473E /* NavigationItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemView.m; sourceTree = "<group>"; };
+		77FAA14121ECCF4F0099473E /* NavigationItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemViewModel.h; sourceTree = "<group>"; };
+		77FAA14221ECCF4F0099473E /* NavigationItemViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemViewModel.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -2978,6 +2986,7 @@
 				77EA8EF721B90226001B8959 /* ViewGroup */,
 				77B054DE21CB355E0045A489 /* LinearLayout */,
 				77B054DF21CB356E0045A489 /* FrameLayout */,
+				77FAA13D21ECCEE20099473E /* NavigationItem */,
 				77A389F121DF172E00042B04 /* Navigation */,
 				77B054E021CB35860045A489 /* ScrollView */,
 				77B054E121CB35970045A489 /* TableView */,
@@ -3244,6 +3253,7 @@
 				77FAA10421EC704D0099473E /* PublicCommentViewHandler.h */,
 				77FAA10521EC704D0099473E /* PublicCommentViewHandler.m */,
 				77FAA0FF21EB35B60099473E /* PublicCommentController.xml */,
+				77FAA13B21ECC36B0099473E /* PublicCommentControllerNavigation.xml */,
 			);
 			path = PublicComment;
 			sourceTree = "<group>";
@@ -3294,6 +3304,17 @@
 				77FAA12721EC849D0099473E /* TZProgressView.h */,
 			);
 			path = TZImagePickerController;
+			sourceTree = "<group>";
+		};
+		77FAA13D21ECCEE20099473E /* NavigationItem */ = {
+			isa = PBXGroup;
+			children = (
+				77FAA14121ECCF4F0099473E /* NavigationItemViewModel.h */,
+				77FAA14221ECCF4F0099473E /* NavigationItemViewModel.m */,
+				77FAA13E21ECCF270099473E /* NavigationItemView.h */,
+				77FAA13F21ECCF270099473E /* NavigationItemView.m */,
+			);
+			path = NavigationItem;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -3366,6 +3387,7 @@
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
 				771CA3E321DCDCAA00B00F11 /* ClubDetailServiceHead.xml in Resources */,
+				77FAA13C21ECC36B0099473E /* PublicCommentControllerNavigation.xml in Resources */,
 				77CEA53F21D5CEED00B388E4 /* Mine.json in Resources */,
 				77A38A0F21DF2FF600042B04 /* PayQRCodeController.xml in Resources */,
 				77FAA0C221E90ED00099473E /* HomeNavigation.xml in Resources */,
@@ -3566,6 +3588,7 @@
 				771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */,
 				77A389FD21DF17EF00042B04 /* NavigationViewModel.m in Sources */,
 				77B054BD21CA51740045A489 /* InputViewModel.m in Sources */,
+				77FAA14321ECCF4F0099473E /* NavigationItemViewModel.m in Sources */,
 				77CEA56521D64C2C00B388E4 /* OrderPerformer.m in Sources */,
 				77B0545521C943760045A489 /* UIButton+YYWebImage.m in Sources */,
 				776B55CC21BF81B300793CAF /* UIButton+EnlargeEdge.m in Sources */,
@@ -3655,6 +3678,7 @@
 				771CA3FC21DD0CB700B00F11 /* TechDetailData.m in Sources */,
 				77CEA52121D4FA9100B388E4 /* CollectionViewParams.m in Sources */,
 				771CA41C21DDC1A100B00F11 /* CommentPresenter.m in Sources */,
+				77FAA14021ECCF270099473E /* NavigationItemView.m in Sources */,
 				77A38A0A21DF2F5900042B04 /* SettingController.m in Sources */,
 				77A389E321DE50ED00042B04 /* MemberData.m in Sources */,
 				77FAA0EE21EB0B7D0099473E /* ClubTechListViewHandler.m in Sources */,

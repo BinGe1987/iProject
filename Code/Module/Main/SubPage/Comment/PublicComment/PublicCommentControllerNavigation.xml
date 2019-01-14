@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NavigationItem
+    view_name="root"
+    view_width="full"
+    view_height="full">
+    
+    <Button
+        view_name="btn_public"
+        view_width="auto"
+        view_height="full"
+        view_padding="10"
+        text_src="发布"
+        text_color="#55b4b2"
+        text_size="17"
+        layout_gravity="right">
+    </Button>
+    
+</NavigationItem>
+
+

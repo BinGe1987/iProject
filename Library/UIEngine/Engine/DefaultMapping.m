@@ -21,6 +21,7 @@
 #import "CustomViewModel.h"
 #import "NavigationViewModel.h"
 #import "RootViewModel.h"
+#import "NavigationItemViewModel.h"
 
 
 @implementation DefaultMapping
@@ -75,6 +76,9 @@
     }
     else if ([type isEqualToString:@"Navigation"] || [type isEqualToString:@"navigation"]) {
         return [[NavigationViewModel alloc] initWithUIModel:model];
+    }
+    else if ([type isEqualToString:@"NavigationItem"] || [type isEqualToString:@"navigationItem"]) {
+        return [[NavigationItemViewModel alloc] initWithUIModel:model];
     }
     return [[ViewModel alloc] initWithUIModel:model];
 }

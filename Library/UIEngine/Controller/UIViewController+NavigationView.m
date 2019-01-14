@@ -19,6 +19,16 @@
     UIView *view = [UIView viewWithXML:xml size:CGSizeMake([UIScreen mainScreen].bounds.size.width-24, 44)];
     [self setNavigationView:view];
     self.navigationItem.titleView = self.navigationView;
+    CGSize size = CGSizeMake([UIScreen mainScreen].bounds.size.width-24, 44);
+    for (UIView *view in self.navigationController.navigationBar.subviews) {
+        NSLog(@"1%@", NSStringFromClass(view.class));
+        for (UIView *subView in view.subviews) {
+            NSLog(@"2%@", NSStringFromClass(subView.class));
+            if ([NSStringFromClass(subView.class) isEqualToString:@"_UITAMICAdaptorView"]) {
+                size = CGSizeMake(subView.frame.size.width, subView.frame.size.height);
+            }
+        }
+    }
     
     self.navigationController.navigationBar.backgroundColor = view.backgroundColor;
     view.backgroundColor = [UIColor clearColor];
