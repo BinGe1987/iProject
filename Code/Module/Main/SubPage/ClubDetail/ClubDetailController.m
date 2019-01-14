@@ -20,7 +20,7 @@
     
     ClubData *club = self.intentData;
     self.title = club.name;
-    
+    [Store setValue:club.source forKey:@"test_data"];
     ClubDetailPresenter *prsenter = [[ClubDetailPresenter alloc] initWithView:[self findViewByName:@"root"]];
     [self addPresenter:prsenter];
 }

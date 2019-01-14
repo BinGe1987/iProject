@@ -14,14 +14,7 @@
     [self setViewVisibility:viewParams.visibility];
     NSString *background = viewParams.background;
     if (background) {
-        if ([background hasPrefix:@"#"]) {
-            self.backgroundColor = [ColorUtils colorWithString:background];
-        }
-        else if ([background hasPrefix:@"@"]) {
-            background = [background substringFromIndex:1];
-            UIImage *image = [UIImage imageNamed:background];
-            self.layer.contents = (id)image.CGImage;
-        }
+        [self setBackground:background];
     }
     
     self.layer.masksToBounds = viewParams.masksToBounds;
@@ -38,6 +31,17 @@
         self.layer.shadowOffset = CGSizeMake(viewParams.shadowOffsetX, viewParams.shadowOffsetY);
         self.layer.shadowRadius = viewParams.shadowRadius;
         self.layer.shadowOpacity = viewParams.shadowOpacity;
+    }
+}
+
+- (void)setBackground:(NSString *)background {
+    if ([background hasPrefix:@"#"]) {
+        self.backgroundColor = [ColorUtils colorWithString:background];
+    }
+    else if ([background hasPrefix:@"@"]) {
+        background = [background substringFromIndex:1];
+        UIImage *image = [UIImage imageNamed:background];
+        self.layer.contents = (id)image.CGImage;
     }
 }
 

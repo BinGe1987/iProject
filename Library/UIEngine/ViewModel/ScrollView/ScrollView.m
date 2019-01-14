@@ -47,7 +47,9 @@
         maxWidth = 10000000;
     }
     for (UIView *view in self.subviews) {
-        [view assignmentForMaxSize:CGSizeMake(maxWidth, maxHeight)];
+        CGFloat realWidth = maxWidth - view.layoutParams.marginLeft - view.layoutParams.marginRight;
+        CGFloat realHeight= maxHeight - view.layoutParams.marginTop - view.layoutParams.marginBottom;
+        [view assignmentForMaxSize:CGSizeMake(realWidth, realHeight)];
         if (self.orientation == ScrollOrientationVertical) {
             maxHeight -= view.boundingSize.height;
         } else {

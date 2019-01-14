@@ -17,6 +17,8 @@
     [super viewDidLoad];
     Data *data = self.intentData;
     self.title = @"发布评论";
+    
+    [self setContentViewWithXML:@"PublicCommentController.xml"];
 }
 
 @end

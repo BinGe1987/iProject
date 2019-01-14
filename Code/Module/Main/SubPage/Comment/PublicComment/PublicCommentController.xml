@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="root"
+    view_width="full"
+    view_height="full"
+    view_background="#ffffff">
+    
+    <ScrollView
+        view_width="full"
+        view_height="full"
+        view_orientation="vertical"
+        view_scrollIndicator="NO">
+        
+        <InputView
+            view_name="input_tech"
+            view_height="33sp"
+            view_width="full"
+            view_paddingLeft="10"
+            view_paddingRight="10"
+            view_borderRadius="5"
+            view_borderWidth="1"
+            view_borderColor="#4abdcf"
+            view_masksToBounds="YES"
+            text_placeholder="请输入技师编号"
+            text_placeholderColor="#cccccc"
+            text_size="14"
+            layout_fixTop="YES"
+            layout_marginTop="55"
+            layout_marginLeft="20sp"
+            layout_marginRight="20sp">
+        </InputView>
+        
+        <FrameLayout
+            view_width="full"
+            view_height="63sp"
+            layout_marginTop="20"
+            layout_marginLeft="20sp"
+            layout_marginRight="20sp"
+            view_background="#00ff00ff">
+            
+            <!--一般-->
+            <FrameLayout
+                view_width="50%"
+                view_height="full"
+                layout_marginLeft="11.25sp">
+                <LinearLayout
+                    view_width="45sp"
+                    view_height="full"
+                    view_orientation="vertical"
+                    layout_gravity="center">
+                    <Button
+                        view_name="image_commentIcon3"
+                        view_width="45sp"
+                        view_height="45sp"
+                        view_background="@comment_icon20"
+                        view_backgroundSelected="@comment_icon21"
+                        layout_marginBottom="5">
+                    </Button>
+                    <Label
+                        view_width="full"
+                        view_height="full"
+                        text_src="一般"
+                        text_color="#cccccc"
+                        text_size="11">
+                    </Label>
+                </LinearLayout>
+            </FrameLayout>
+            <!--很满意-->
+            <FrameLayout
+                view_width="50%"
+                view_height="full"
+                layout_marginRight="11.25sp"
+                layout_gravity="center|right">
+                <LinearLayout
+                    view_width="45sp"
+                    view_height="full"
+                    view_orientation="vertical"
+                    layout_gravity="center">
+                    <Button
+                        view_name="image_commentIcon3"
+                        view_width="45sp"
+                        view_height="45sp"
+                        view_background="@comment_icon40"
+                        view_backgroundSelected="@comment_icon41"
+                        layout_marginBottom="5">
+                    </Button>
+                    <Label
+                        view_width="full"
+                        view_height="full"
+                        text_src="很满意"
+                        text_color="#cccccc"
+                        text_size="11">
+                    </Label>
+                </LinearLayout>
+            </FrameLayout>
+            <!--差-->
+            <LinearLayout
+                view_width="45sp"
+                view_height="full"
+                view_orientation="vertical">
+                <Button
+                    view_name="image_commentIcon3"
+                    view_width="45sp"
+                    view_height="45sp"
+                    view_background="@comment_icon10"
+                    view_backgroundSelected="@comment_icon11"
+                    layout_marginBottom="5">
+                </Button>
+                <Label
+                    view_width="full"
+                    view_height="full"
+                    text_src="差"
+                    text_color="#cccccc"
+                    text_size="11">
+                </Label>
+            </LinearLayout>
+            <!--3还不错-->
+            <LinearLayout
+                view_width="45sp"
+                view_height="full"
+                view_orientation="vertical"
+                layout_gravity="center">
+                <Button
+                    view_name="image_commentIcon3"
+                    view_width="45sp"
+                    view_height="45sp"
+                    view_background="@comment_icon30"
+                    view_backgroundSelected="@comment_icon31"
+                    layout_marginBottom="5">
+                </Button>
+                <Label
+                    view_width="full"
+                    view_height="full"
+                    text_src="还不错"
+                    text_color="#cccccc"
+                    text_size="11">
+                </Label>
+            </LinearLayout>
+            
+            <!--强烈推荐-->
+            <LinearLayout
+                view_width="45sp"
+                view_height="full"
+                view_orientation="vertical"
+                layout_gravity="right">
+                <Button
+                    view_name="image_commentIcon3"
+                    view_width="45sp"
+                    view_height="45sp"
+                    view_background="@comment_icon50"
+                    view_backgroundSelected="@comment_icon51"
+                    layout_marginBottom="5">
+                </Button>
+                <Label
+                    view_width="full"
+                    view_height="full"
+                    text_src="强烈推荐"
+                    text_color="#cccccc"
+                    text_size="11">
+                </Label>
+            </LinearLayout>
+            
+            
+        
+            
+        </FrameLayout>
+        
+    </ScrollView>
+    
+    <View
+        view_width="full"
+        view_height="0.5"
+        view_background="#11000000"
+        layout_fixTop="YES"
+        layout_marginTop="44">
+    </View>
+
+    
+</FrameLayout>
+
+

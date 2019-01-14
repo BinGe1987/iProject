@@ -32,11 +32,31 @@
     }
     
     if (params.backgroundSelected) {
-        self.backgroundColor = [UIColor clearColor];
-        
-        [self setBackgroundImage:[ImageUtils imageWithColorHex:params.background size:CGSizeMake(10, 10)] forState:UIControlStateNormal];
-        [self setBackgroundImage:[ImageUtils imageWithColorHex:params.backgroundSelected size:CGSizeMake(10, 10)] forState:UIControlStateSelected];
-        [self setBackgroundImage:[ImageUtils imageWithColorHex:params.backgroundSelected size:CGSizeMake(10, 10)] forState:UIControlStateHighlighted];
+        NSString *backgroundSelected = params.backgroundSelected;
+        if ([backgroundSelected hasPrefix:@"#"]) {
+            backgroundSelected = [backgroundSelected substringFromIndex:1];
+            UIImage *selectedImage = [ImageUtils imageWithColorHex:backgroundSelected size:CGSizeMake(10, 10)];
+            [self setBackgroundImage:selectedImage forState:UIControlStateSelected];
+            [self setBackgroundImage:selectedImage forState:UIControlStateHighlighted];
+        }
+        else if ([params.backgroundSelected hasPrefix:@"@"]) {
+            backgroundSelected = [backgroundSelected substringFromIndex:1];
+            UIImage *image = [UIImage imageNamed:backgroundSelected];
+            [self setBackgroundImage:image forState:UIControlStateSelected];
+            [self setBackgroundImage:image forState:UIControlStateHighlighted];
+        }
+    }
+}
+
+- (void)setBackgroundImage:(NSString *)background {
+    if ([background hasPrefix:@"#"]) {
+        background = [background substringFromIndex:1];
+        [self setBackgroundImage:[ImageUtils imageWithColorHex:background size:CGSizeMake(10, 10)] forState:UIControlStateNormal];
+    }
+    else  if ([background hasPrefix:@"@"]) {
+        background = [background substringFromIndex:1];
+        UIImage *image = [UIImage imageNamed:background];
+        [self setBackgroundImage:image forState:UIControlStateNormal];
     }
 }
 

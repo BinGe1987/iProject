@@ -35,7 +35,6 @@
     UIButton *btn = [view findViewByName:@"btn_allTech"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
         ClubData *club = [button currentViewController].intentData;
-//        [Store setValue:club.source forKey:@"test_data"];
         [UIViewController pushController:@"ClubTechListController" animated:YES data:club];
     }];
     
