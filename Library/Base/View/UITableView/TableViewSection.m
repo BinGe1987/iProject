@@ -19,4 +19,12 @@
     return self;
 }
 
++ (TableViewSection *)sectionWithCell:(Class)cell height:(NSInteger)height dataArray:(NSArray *)array {
+    TableViewSection *section = [TableViewSection new];
+    section.cell = cell;
+    section.height = height;
+    section.array = [array mutableCopy];
+    return section;
+}
+
 @end

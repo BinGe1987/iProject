@@ -29,6 +29,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithDictionary:(NSDictionary *)dic;
 
++ (TableViewSection *)sectionWithCell:(Class)cell height:(NSInteger)height dataArray:(NSArray *)array;
+
 @end
 
 NS_ASSUME_NONNULL_END
