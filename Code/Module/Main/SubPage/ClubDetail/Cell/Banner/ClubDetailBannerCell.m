@@ -57,7 +57,7 @@
 }
 
 - (void)photoBrowser:(PhotoBrowser *)browser didSelectItem:(PhotoItem *)item atIndex:(NSUInteger)index {
-    UIImageView *view = item.view;
+    UIImageView *view = (UIImageView *)item.view;
     if (view) {
         [self.bannerView scrollToView:view];
     }

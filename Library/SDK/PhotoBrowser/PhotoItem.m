@@ -9,7 +9,14 @@
 
 @implementation PhotoItem
 
-- (instancetype)initWithView:( UIImageView * _Nullable )view imageUrl:(NSString *)url {
+- (instancetype)initWithView:( UIView * _Nullable )view image:(UIImage *)image {
+    self = [super init];
+    self.view = view;
+    self.image = image;
+    return self;
+}
+
+- (instancetype)initWithView:( UIView * _Nullable )view imageUrl:(NSString *)url {
     self = [super init];
     self.view = view;
     self.imageUrl = url;

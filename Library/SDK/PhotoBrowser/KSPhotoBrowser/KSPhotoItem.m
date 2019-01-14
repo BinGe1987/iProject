@@ -38,7 +38,7 @@
                            imageUrl:url];
 }
 
-- (instancetype)initWithSourceView:(UIImageView *)view
+- (instancetype)initWithSourceView:(UIView *)view
                              image:(UIImage *)image {
     self = [super init];
     if (self) {
@@ -59,14 +59,14 @@
                                       imageUrl:url];
 }
 
-+ (instancetype)itemWithSourceView:(UIImageView *)view
++ (instancetype)itemWithSourceView:(UIView *)view
                           imageUrl:(NSURL *)url
 {
     return [[KSPhotoItem alloc] initWithSourceView:view
                                           imageUrl:url];
 }
 
-+ (instancetype)itemWithSourceView:(UIImageView *)view
++ (instancetype)itemWithSourceView:(UIView *)view
                              image:(UIImage *)image
 {
     return [[KSPhotoItem alloc] initWithSourceView:view

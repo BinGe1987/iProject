@@ -19,17 +19,17 @@
 - (nonnull instancetype)initWithSourceView:(nullable UIView *)view
                                 thumbImage:(nullable UIImage *)image
                                   imageUrl:(nullable NSURL *)url;
-- (nonnull instancetype)initWithSourceView:(nullable UIImageView * )view
+- (nonnull instancetype)initWithSourceView:(nullable UIView * )view
                                   imageUrl:(nullable NSURL *)url;
-- (nonnull instancetype)initWithSourceView:(nullable UIImageView *)view
+- (nonnull instancetype)initWithSourceView:(nullable UIView *)view
                                      image:(nullable UIImage *)image;
 
 + (nonnull instancetype)itemWithSourceView:(nullable UIView *)view
                                 thumbImage:(nullable UIImage *)image
                                   imageUrl:(nullable NSURL *)url;
-+ (nonnull instancetype)itemWithSourceView:(nullable UIImageView *)view
++ (nonnull instancetype)itemWithSourceView:(nullable UIView *)view
                                   imageUrl:(nullable NSURL *)url;
-+ (nonnull instancetype)itemWithSourceView:(nullable UIImageView *)view
++ (nonnull instancetype)itemWithSourceView:(nullable UIView *)view
                                      image:(nullable UIImage *)image;
 
 @end

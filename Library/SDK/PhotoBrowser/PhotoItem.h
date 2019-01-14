@@ -12,9 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 @interface PhotoItem : NSObject
 
 @property (nonatomic, copy) NSString *imageUrl;
-@property (nonatomic, weak) UIImageView *view;
+@property (nonatomic, weak) UIView *view;
+@property (nonatomic, weak) UIImage *image;
 
-- (instancetype)initWithView:( UIImageView * _Nullable )view imageUrl:(NSString *)url;
+- (instancetype)initWithView:( UIView * _Nullable )view imageUrl:(NSString *)url;
+
+- (instancetype)initWithView:( UIView * _Nullable )view image:(UIImage *)image;
 
 @end
 

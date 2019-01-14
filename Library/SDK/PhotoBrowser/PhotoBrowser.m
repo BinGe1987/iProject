@@ -23,9 +23,14 @@
     NSMutableArray *ksItems = @[].mutableCopy;
     for (int i = 0; i < items.count; i++) {
 //        NSString *url = [items[i].imageUrl stringByReplacingOccurrencesOfString:@"bmiddle" withString:@"large"];
-        NSString *url = items[i].imageUrl;
-        KSPhotoItem *item = [KSPhotoItem itemWithSourceView:items[i].view imageUrl:[NSURL URLWithString:url]];
-        [ksItems addObject:item];
+        if (!items[i].image) {
+            NSString *url = items[i].imageUrl;
+            KSPhotoItem *item = [KSPhotoItem itemWithSourceView:items[i].view imageUrl:[NSURL URLWithString:url]];
+            [ksItems addObject:item];
+        } else {
+            KSPhotoItem *item = [KSPhotoItem itemWithSourceView:items[i].view image:items[i].image];
+            [ksItems addObject:item];
+        }
     }
     KSPhotoBrowser *browser = [KSPhotoBrowser browserWithPhotoItems:ksItems selectedIndex:selected];
     browser.dismissalStyle = KSPhotoBrowserInteractiveDismissalStyleScale;

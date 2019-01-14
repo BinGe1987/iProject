@@ -225,21 +225,22 @@
             view_height="80sp"
             layout_gravity="center|left"
             view_visibility="invisible">
-            <ImageView
-                view_name="name"
+            <Button
+                view_name="image"
                 view_width="60sp"
                 view_height="60sp"
                 view_borderRadius="1"
                 view_borderWidth="0.5"
                 view_borderColor="#7f7f7f"
                 view_masksToBounds="YES"
+                image_scaleType="full"
                 layout_gravity="center">
-            </ImageView>
+            </Button>
             <Button
                 view_name="btn_close"
                 view_width="13sp"
                 view_height="13sp"
-                view_padding="20sp"
+                view_padding="10sp"
                 view_background="@icon_close"
                 layout_gravity="right|top"
                 layout_marginRight="5sp"
@@ -254,8 +255,8 @@
             layout_gravity="center|left"
             layout_marginLeft="92sp"
             view_visibility="invisible">
-            <ImageView
-                view_name="name"
+            <Button
+                view_name="image"
                 view_width="60sp"
                 view_height="60sp"
                 view_background="#eeeeee"
@@ -263,13 +264,14 @@
                 view_borderWidth="0.5"
                 view_borderColor="#7f7f7f"
                 view_masksToBounds="YES"
+                image_scaleType="full"
                 layout_gravity="center">
-            </ImageView>
+            </Button>
             <Button
                 view_name="btn_close"
                 view_width="13sp"
                 view_height="13sp"
-                view_padding="20sp"
+                view_padding="10sp"
                 view_background="@icon_close"
                 layout_gravity="right|top"
                 layout_marginRight="5sp"
@@ -285,8 +287,8 @@
             layout_marginRight="92sp"
             view_visibility="invisible">
 
-            <ImageView
-                view_name="name"
+            <Button
+                view_name="image"
                 view_width="60sp"
                 view_height="60sp"
                 view_background="#eeeeee"
@@ -294,13 +296,14 @@
                 view_borderWidth="0.5"
                 view_borderColor="#7f7f7f"
                 view_masksToBounds="YES"
+                image_scaleType="full"
                 layout_gravity="center">
-            </ImageView>
+            </Button>
             <Button
                 view_name="btn_close"
                 view_width="13sp"
                 view_height="13sp"
-                view_padding="20sp"
+                view_padding="10sp"
                 view_background="@icon_close"
                 layout_gravity="right|top"
                 layout_marginRight="5sp"
@@ -314,8 +317,8 @@
             view_height="80sp"
             layout_gravity="center|right"
             view_visibility="invisible">
-            <ImageView
-                view_name="name"
+            <Button
+                view_name="image"
                 view_width="60sp"
                 view_height="60sp"
                 view_background="#eeeeee"
@@ -323,13 +326,14 @@
                 view_borderWidth="0.5"
                 view_borderColor="#7f7f7f"
                 view_masksToBounds="YES"
+                image_scaleType="full"
                 layout_gravity="center">
-            </ImageView>
+            </Button>
             <Button
                 view_name="btn_close"
                 view_width="13sp"
                 view_height="13sp"
-                view_padding="20sp"
+                view_padding="10sp"
                 view_background="@icon_close"
                 layout_gravity="right|top"
                 layout_marginRight="5sp"

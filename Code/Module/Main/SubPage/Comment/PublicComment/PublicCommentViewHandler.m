@@ -8,7 +8,11 @@
 #import "PublicCommentViewHandler.h"
 #import "TZImagePickerController.h"
 
-@interface PublicCommentViewHandler()<UITextViewDelegate>
+@interface PublicCommentViewHandler()<UITextViewDelegate, ImagePickerControllerDelegate>
+
+@property (nonatomic, strong) ImagePickerController *picker;
+@property (nonatomic, strong) NSMutableArray *images;
+@property (nonatomic, strong) PhotoBrowser *browser;
 
 @end
 
@@ -16,7 +20,6 @@
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
-    
     
     [self setCommentLevel:5];
     [self setSuggestion];
@@ -64,17 +67,62 @@
     UITextView *label = [self.view findViewByName:@"label_suggestion_count"];
     label.text = [textView.text length] >= 15 ? nil : [NSString stringWithFormat:@"加油，还差%ld个字！", 15-textView.text.length];
 }
-
+//图片选择
 - (void)imagePicker {
+    self.images = [NSMutableArray new];
     UIButton *btn = [self.view findViewByName:@"btn_image_picker"];
+    WeakSelf(self)
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [ImagePickerController open];
+        if (!weakself.picker) {
+            weakself.picker = [ImagePickerController new];
+        }
+        [weakself.picker imagePickerMaxCount:(4-weakself.images.count) delegate:self];
     }];
+    [self showImages];
 }
-
-- (void)setUploadLayout {
-//    ViewGroup *vg = [self.view findViewByName:@"layout_upload"];
+- (void)pickController:(id)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos {
+    [self.images addObjectsFromArray:photos];
+    [self showImages];
     
+}
+- (void)showImages {
+    ViewGroup *uploadButton = [self.view findViewByName:@"layout_upload_button"];
+    if (self.images.count >= 4) {
+        [uploadButton setViewVisibility:ViewVisibilityInvisible];
+    } else {
+        [uploadButton setViewVisibility:ViewVisibilityVisible];
+    }
+    for (NSInteger i=3; i>=0; i--) {
+        NSString *name = [NSString stringWithFormat:@"image%ld", i+1];
+        ViewGroup *vg = [self.view findViewByName:name];
+        UIButton *imageButton = [vg findViewByName:@"image"];
+        imageButton.imageView.contentMode = UIViewContentModeScaleAspectFill;
+        if (self.images.count > i) {
+            [vg setViewVisibility:ViewVisibilityVisible];
+            UIImage *image = self.images[i];
+            [imageButton setImage:image forState:UIControlStateNormal];
+            
+            WeakSelf(self)
+            [imageButton setClickBlock:^(UIButton * _Nonnull button) {
+                if (!weakself.browser) {
+                    weakself.browser = [PhotoBrowser new];
+                }
+                [weakself.browser browserPhotoItems:@[[[PhotoItem alloc] initWithView:button image:image]] selectedIndex:0];
+            }];
+            
+            UIButton *close = [vg findViewByName:@"btn_close"];
+            [close setClickBlock:^(UIButton * _Nonnull button) {
+                [weakself.images removeObject:image];
+                [weakself showImages];
+            }];
+        } else {
+            [vg setViewVisibility:ViewVisibilityGone];
+            uploadButton.layoutParams = vg.layoutParams;
+
+        }
+    }
+    ViewGroup *vg = [self.view findViewByName:@"layout_upload"];
+    [vg boundsAndRefreshLayout];
 }
 
 @end
