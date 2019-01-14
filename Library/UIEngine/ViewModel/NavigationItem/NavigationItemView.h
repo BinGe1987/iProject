@@ -6,6 +6,7 @@
 //
 
 #import "FrameLayout.h"
+#import "NavigationItemViewParams.h"
 
 NS_ASSUME_NONNULL_BEGIN
 

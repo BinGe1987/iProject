@@ -13,7 +13,7 @@
     return [NavigationItemView class];
 }
 - (Class)ViewParamsClass {
-    return [FrameLayoutViewParams class];
+    return [NavigationItemViewParams class];
 }
 
 - (Class)LayoutParamsClass {

@@ -428,6 +428,7 @@
 		77FAA13C21ECC36B0099473E /* PublicCommentControllerNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 77FAA13B21ECC36B0099473E /* PublicCommentControllerNavigation.xml */; };
 		77FAA14021ECCF270099473E /* NavigationItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA13F21ECCF270099473E /* NavigationItemView.m */; };
 		77FAA14321ECCF4F0099473E /* NavigationItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA14221ECCF4F0099473E /* NavigationItemViewModel.m */; };
+		77FAA14621ECD51F0099473E /* NavigationItemViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAA14521ECD51F0099473E /* NavigationItemViewParams.m */; };
 		77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */; };
 		77FAFCD221C213C2002A90B0 /* ScrollViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD121C213C2002A90B0 /* ScrollViewParams.m */; };
 		77FAFCD521C213EC002A90B0 /* ScrollLayoutParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 77FAFCD421C213EC002A90B0 /* ScrollLayoutParams.m */; };
@@ -1236,6 +1237,8 @@
 		77FAA13F21ECCF270099473E /* NavigationItemView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemView.m; sourceTree = "<group>"; };
 		77FAA14121ECCF4F0099473E /* NavigationItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemViewModel.h; sourceTree = "<group>"; };
 		77FAA14221ECCF4F0099473E /* NavigationItemViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemViewModel.m; sourceTree = "<group>"; };
+		77FAA14421ECD51F0099473E /* NavigationItemViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationItemViewParams.h; sourceTree = "<group>"; };
+		77FAA14521ECD51F0099473E /* NavigationItemViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationItemViewParams.m; sourceTree = "<group>"; };
 		77FAFCCD21C2132B002A90B0 /* ScrollViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewModel.h; sourceTree = "<group>"; };
 		77FAFCCE21C2132B002A90B0 /* ScrollViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScrollViewModel.m; sourceTree = "<group>"; };
 		77FAFCD021C213C2002A90B0 /* ScrollViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScrollViewParams.h; sourceTree = "<group>"; };
@@ -3313,6 +3316,8 @@
 				77FAA14221ECCF4F0099473E /* NavigationItemViewModel.m */,
 				77FAA13E21ECCF270099473E /* NavigationItemView.h */,
 				77FAA13F21ECCF270099473E /* NavigationItemView.m */,
+				77FAA14421ECD51F0099473E /* NavigationItemViewParams.h */,
+				77FAA14521ECD51F0099473E /* NavigationItemViewParams.m */,
 			);
 			path = NavigationItem;
 			sourceTree = "<group>";
@@ -3783,6 +3788,7 @@
 				77B0552821CD82510045A489 /* AppInfo.m in Sources */,
 				7723E1B721D6717A00B77890 /* UIViewController+Data.m in Sources */,
 				77B0545421C943760045A489 /* _YYWebImageSetter.m in Sources */,
+				77FAA14621ECD51F0099473E /* NavigationItemViewParams.m in Sources */,
 				77EA8F8921B90A18001B8959 /* UserHandler.m in Sources */,
 				77CEA50821D4CA1700B388E4 /* DiscoverClubAdapter.m in Sources */,
 				776B55FB21C14A0800793CAF /* ScrollView.m in Sources */,

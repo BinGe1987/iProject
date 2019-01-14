@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<NavigationItem
-    view_name="root"
-    view_width="full"
-    view_height="full">
+<NavigationItem>
+    
+    <Label
+        view_name="label_name"
+        view_width="auto"
+        view_height="auto"
+        text_src="发表评论"
+        text_color="#000000"
+        text_size="17"
+        layout_gravity="center">
+    </Label>
     
     <Button
         view_name="btn_public"
@@ -14,7 +21,6 @@
         text_size="17"
         layout_gravity="right">
     </Button>
-    
 </NavigationItem>
 
 
