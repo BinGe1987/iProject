@@ -6,11 +6,11 @@
 //  Copyright © 2018 Bin. All rights reserved.
 //
 
-#import "LabelViewParams.h"
+#import "InputViewParams.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface TextViewParams : LabelViewParams
+@interface TextViewParams : InputViewParams
 
 @end
 

@@ -210,15 +210,6 @@
             <Label
                 view_width="auto"
                 view_height="auto"
-                text_src="请为我的服务，留下您宝贵的意见吧~"
-                text_color="#cccccc"
-                text_size="12"
-                layout_gravity="left|top"
-                layout_margin="8">
-            </Label>
-            <Label
-                view_width="auto"
-                view_height="auto"
                 text_src="加油，还差15个字！"
                 text_color="#808080"
                 text_size="12"

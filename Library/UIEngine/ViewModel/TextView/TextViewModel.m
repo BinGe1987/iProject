@@ -26,6 +26,13 @@
     self.textView.font = params.font;
     self.textView.text = params.text;
     self.textView.textColor = params.textColor;
+    
+    if (params.placeholder) {
+        [self.textView setPlaceholder:params.placeholder];
+    }
+    if (params.placeholderColor) {
+        [self.textView setPlaceholderColor:params.placeholderColor];
+    }
 }
 
 - (Class)ViewClass {

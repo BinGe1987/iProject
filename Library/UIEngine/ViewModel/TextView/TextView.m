@@ -8,6 +8,12 @@
 
 #import "TextView.h"
 
+@interface TextView()
+
+@property (nonatomic, strong) UILabel *placeHolderLabel;
+
+@end
+
 @implementation TextView
 
 - (instancetype)init
@@ -15,8 +21,26 @@
     self = [super init];
     if (self) {
         
+        self.placeHolderLabel = [[UILabel alloc] init];
+        self.placeHolderLabel.numberOfLines = 0;
+        [self addSubview:self.placeHolderLabel];
+        
+        [self setValue:self.placeHolderLabel forKey:@"_placeholderLabel"];
     }
     return self;
+}
+
+- (void)setPlaceholder:(NSString *)text {
+    self.placeHolderLabel.text = text;
+}
+
+- (void)setPlaceholderColor:(UIColor *)color {
+    self.placeHolderLabel.textColor = color;
+}
+
+- (void)setFont:(UIFont *)font {
+    [super setFont:font];
+    [self.placeHolderLabel setFont:font];
 }
 
 - (CGSize)boundingSizeNeed {
