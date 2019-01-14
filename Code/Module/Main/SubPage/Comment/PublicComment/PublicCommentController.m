@@ -19,6 +19,11 @@
     self.title = @"发布评论";
     
     [self setContentViewWithXML:@"PublicCommentController.xml"];
+    ViewGroup *v5 = [self findViewByName:@"comment_level5"];
+    UIButton *button = [v5 findViewByName:@"image"];
+    button.selected = YES;
+    UIButton *label = [v5 findViewByName:@"label"];
+    label.selected = YES;
 }
 
 @end

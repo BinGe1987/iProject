@@ -9,8 +9,9 @@
         view_width="full"
         view_height="full"
         view_orientation="vertical"
-        view_scrollIndicator="NO">
-        
+        view_scrollIndicator="NO"
+        view_background="#ffffff">
+<!--输入技师编号-->
         <InputView
             view_name="input_tech"
             view_height="33sp"
@@ -29,7 +30,7 @@
             layout_marginLeft="20sp"
             layout_marginRight="20sp">
         </InputView>
-        
+<!--表情-->
         <FrameLayout
             view_width="full"
             view_height="63sp"
@@ -44,25 +45,28 @@
                 view_height="full"
                 layout_marginLeft="11.25sp">
                 <LinearLayout
+                    view_name="comment_level2"
                     view_width="45sp"
                     view_height="full"
                     view_orientation="vertical"
                     layout_gravity="center">
                     <Button
-                        view_name="image_commentIcon3"
+                        view_name="image"
                         view_width="45sp"
                         view_height="45sp"
                         view_background="@comment_icon20"
                         view_backgroundSelected="@comment_icon21"
                         layout_marginBottom="5">
                     </Button>
-                    <Label
+                    <Button
+                        view_name="label"
                         view_width="full"
                         view_height="full"
                         text_src="一般"
                         text_color="#cccccc"
+                        text_colorSelected="#ff4d00"
                         text_size="11">
-                    </Label>
+                    </Button>
                 </LinearLayout>
             </FrameLayout>
             <!--很满意-->
@@ -72,92 +76,104 @@
                 layout_marginRight="11.25sp"
                 layout_gravity="center|right">
                 <LinearLayout
+                    view_name="comment_level4"
                     view_width="45sp"
                     view_height="full"
                     view_orientation="vertical"
                     layout_gravity="center">
                     <Button
-                        view_name="image_commentIcon3"
+                        view_name="image"
                         view_width="45sp"
                         view_height="45sp"
                         view_background="@comment_icon40"
                         view_backgroundSelected="@comment_icon41"
                         layout_marginBottom="5">
                     </Button>
-                    <Label
+                    <Button
+                        view_name="label"
                         view_width="full"
                         view_height="full"
                         text_src="很满意"
                         text_color="#cccccc"
+                        text_colorSelected="#ff4d00"
                         text_size="11">
-                    </Label>
+                    </Button>
                 </LinearLayout>
             </FrameLayout>
             <!--差-->
             <LinearLayout
+                view_name="comment_level1"
                 view_width="45sp"
                 view_height="full"
                 view_orientation="vertical">
                 <Button
-                    view_name="image_commentIcon3"
+                    view_name="image"
                     view_width="45sp"
                     view_height="45sp"
                     view_background="@comment_icon10"
                     view_backgroundSelected="@comment_icon11"
                     layout_marginBottom="5">
                 </Button>
-                <Label
+                <Button
+                    view_name="label"
                     view_width="full"
                     view_height="full"
                     text_src="差"
                     text_color="#cccccc"
+                    text_colorSelected="#ff4d00"
                     text_size="11">
-                </Label>
+                </Button>
             </LinearLayout>
             <!--3还不错-->
             <LinearLayout
+                view_name="comment_level3"
                 view_width="45sp"
                 view_height="full"
                 view_orientation="vertical"
                 layout_gravity="center">
                 <Button
-                    view_name="image_commentIcon3"
+                    view_name="image"
                     view_width="45sp"
                     view_height="45sp"
                     view_background="@comment_icon30"
                     view_backgroundSelected="@comment_icon31"
                     layout_marginBottom="5">
                 </Button>
-                <Label
+                <Button
+                    view_name="label"
                     view_width="full"
                     view_height="full"
                     text_src="还不错"
                     text_color="#cccccc"
+                    text_colorSelected="#ff4d00"
                     text_size="11">
-                </Label>
+                </Button>
             </LinearLayout>
             
             <!--强烈推荐-->
             <LinearLayout
+                view_name="comment_level5"
                 view_width="45sp"
                 view_height="full"
                 view_orientation="vertical"
                 layout_gravity="right">
                 <Button
-                    view_name="image_commentIcon3"
+                    view_name="image"
                     view_width="45sp"
                     view_height="45sp"
                     view_background="@comment_icon50"
                     view_backgroundSelected="@comment_icon51"
                     layout_marginBottom="5">
                 </Button>
-                <Label
+                <Button
+                    view_name="label"
                     view_width="full"
                     view_height="full"
                     text_src="强烈推荐"
                     text_color="#cccccc"
+                    text_colorSelected="#ff4d00"
                     text_size="11">
-                </Label>
+                </Button>
             </LinearLayout>
             
             
@@ -165,6 +181,235 @@
             
         </FrameLayout>
         
+<!--留言-->
+    <LinearLayout
+        view_width="full"
+        view_height="auto"
+        view_orientation="vertical">
+        <View
+            view_width="full"
+            view_height="0.5"
+            view_background="#00000000"
+            layout_marginTop="20">
+        </View>
+        <FrameLayout
+            view_width="full"
+            view_height="80sp"
+            layout_margin="20"
+            layout_marginTop="10"
+            layout_marginBottom="10">
+            <TextView
+                view_name="input_suggestion"
+                view_width="full"
+                view_height="full"
+                text_placeholder="请为我的服务，留下您宝贵的意见吧～"
+                text_placeholderColor="#cccccc"
+                text_size="12"
+                text_gravity="left">
+            </TextView>
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_src="请为我的服务，留下您宝贵的意见吧~"
+                text_color="#cccccc"
+                text_size="12"
+                layout_gravity="left|top"
+                layout_margin="8">
+            </Label>
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_src="加油，还差15个字！"
+                text_color="#808080"
+                text_size="12"
+                layout_gravity="right|bottom">
+            </Label>
+        </FrameLayout>
+        <View
+            view_width="full"
+            view_height="0.5"
+            view_background="#00000000"
+            layout_marginBottom="20">
+        </View>
+    </LinearLayout>
+
+    
+<!--图片-->
+    <FrameLayout
+        view_width="full"
+        view_height="80sp"
+        layout_marginLeft="10sp"
+        layout_marginRight="10sp">
+        
+        <FrameLayout
+            view_name="image1"
+            view_width="80sp"
+            view_height="80sp"
+            layout_gravity="center|left">
+            <ImageView
+                view_name="name"
+                view_width="60sp"
+                view_height="60sp"
+                view_background="#eeeeee"
+                view_borderRadius="1"
+                view_borderWidth="0.5"
+                view_borderColor="#7f7f7f"
+                view_masksToBounds="YES"
+                layout_gravity="center">
+            </ImageView>
+            <Button
+                view_name="btn_close"
+                view_width="13sp"
+                view_height="13sp"
+                view_padding="20sp"
+                view_background="@icon_close"
+                layout_gravity="right|top"
+                layout_marginRight="5sp"
+                layout_marginTop="5sp">
+            </Button>
+        </FrameLayout>
+        
+        <FrameLayout
+            view_name="image2"
+            view_width="80sp"
+            view_height="80sp"
+            layout_gravity="center|left"
+            layout_marginLeft="92sp">
+            <ImageView
+                view_name="name"
+                view_width="60sp"
+                view_height="60sp"
+                view_background="#eeeeee"
+                view_borderRadius="1"
+                view_borderWidth="0.5"
+                view_borderColor="#7f7f7f"
+                view_masksToBounds="YES"
+                layout_gravity="center">
+            </ImageView>
+            <Button
+                view_name="btn_close"
+                view_width="13sp"
+                view_height="13sp"
+                view_padding="20sp"
+                view_background="@icon_close"
+                layout_gravity="right|top"
+                layout_marginRight="5sp"
+                layout_marginTop="5sp">
+            </Button>
+        </FrameLayout>
+        
+        <FrameLayout
+            view_name="image3"
+            view_width="80sp"
+            view_height="80sp"
+            layout_gravity="center|right"
+            layout_marginRight="92sp">
+            <ImageView
+                view_name="name"
+                view_width="60sp"
+                view_height="60sp"
+                view_background="#eeeeee"
+                view_borderRadius="1"
+                view_borderWidth="0.5"
+                view_borderColor="#7f7f7f"
+                view_masksToBounds="YES"
+                layout_gravity="center">
+            </ImageView>
+            <Button
+                view_name="btn_close"
+                view_width="13sp"
+                view_height="13sp"
+                view_padding="20sp"
+                view_background="@icon_close"
+                layout_gravity="right|top"
+                layout_marginRight="5sp"
+                layout_marginTop="5sp">
+            </Button>
+        </FrameLayout>
+        
+        <FrameLayout
+            view_name="image4"
+            view_width="80sp"
+            view_height="80sp"
+            layout_gravity="center|right">
+            <ImageView
+                view_name="name"
+                view_width="60sp"
+                view_height="60sp"
+                view_background="#eeeeee"
+                view_borderRadius="1"
+                view_borderWidth="0.5"
+                view_borderColor="#7f7f7f"
+                view_masksToBounds="YES"
+                layout_gravity="center">
+            </ImageView>
+            <Button
+                view_name="btn_close"
+                view_width="13sp"
+                view_height="13sp"
+                view_padding="20sp"
+                view_background="@icon_close"
+                layout_gravity="right|top"
+                layout_marginRight="5sp"
+                layout_marginTop="5sp">
+            </Button>
+        </FrameLayout>
+        
+    </FrameLayout>
+<!--提示-->
+    <FrameLayout
+        view_width="full"
+        view_height="auto"
+        layout_marginTop="10">
+        <Label
+            view_width="full"
+            view_height="auto"
+            text_src="50字+至少一张图片，有机会赢取10积分。"
+            text_color="#808080"
+            text_size="12"
+            layout_marginRight="30"
+            layout_marginLeft="30"
+            layout_marginTop="10"
+            layout_marginBottom="10"
+            text_gravity="left">
+        </Label>
+        <View
+            view_width="full"
+            view_height="0.5"
+            view_background="#11000000"
+            layout_gravity="top">
+        </View>
+        <View
+            view_width="full"
+            view_height="0.5"
+            view_background="#11000000"
+            layout_gravity="bottom">
+        </View>
+    </FrameLayout>
+    
+    <View
+        view_width="full"
+        view_height="15"
+        view_background="#f5f5f5">
+    </View>
+    
+    <FrameLayout
+        view_width="full"
+        view_height="auto"
+        layout_marginTop="100">
+        <Label
+            view_width="full"
+            view_height="auto"
+            text_src="被选为【优质评论】和【精选评论】可获取更高积分哦"
+            text_color="#ff0000"
+            text_size="12"
+            layout_marginRight="30"
+            layout_marginLeft="30"
+            layout_marginTop="10"
+            layout_marginBottom="10">
+        </Label>
+    </FrameLayout>
+    
     </ScrollView>
     
     <View

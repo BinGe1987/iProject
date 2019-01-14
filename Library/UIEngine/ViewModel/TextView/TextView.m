@@ -10,6 +10,15 @@
 
 @implementation TextView
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (CGSize)boundingSizeNeed {
     CGSize size = [self boundingTextSize];
     size.width = size.width + self.viewParams.paddingLeft + self.viewParams.paddingRight;
