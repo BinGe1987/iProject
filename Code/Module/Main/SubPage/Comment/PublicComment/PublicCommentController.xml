@@ -236,12 +236,12 @@
             view_name="image1"
             view_width="80sp"
             view_height="80sp"
-            layout_gravity="center|left">
+            layout_gravity="center|left"
+            view_visibility="invisible">
             <ImageView
                 view_name="name"
                 view_width="60sp"
                 view_height="60sp"
-                view_background="#eeeeee"
                 view_borderRadius="1"
                 view_borderWidth="0.5"
                 view_borderColor="#7f7f7f"
@@ -265,7 +265,8 @@
             view_width="80sp"
             view_height="80sp"
             layout_gravity="center|left"
-            layout_marginLeft="92sp">
+            layout_marginLeft="92sp"
+            view_visibility="invisible">
             <ImageView
                 view_name="name"
                 view_width="60sp"
@@ -294,7 +295,9 @@
             view_width="80sp"
             view_height="80sp"
             layout_gravity="center|right"
-            layout_marginRight="92sp">
+            layout_marginRight="92sp"
+            view_visibility="invisible">
+
             <ImageView
                 view_name="name"
                 view_width="60sp"
@@ -322,7 +325,8 @@
             view_name="image4"
             view_width="80sp"
             view_height="80sp"
-            layout_gravity="center|right">
+            layout_gravity="center|right"
+            view_visibility="invisible">
             <ImageView
                 view_name="name"
                 view_width="60sp"
@@ -343,6 +347,39 @@
                 layout_gravity="right|top"
                 layout_marginRight="5sp"
                 layout_marginTop="5sp">
+            </Button>
+        </FrameLayout>
+        
+        <FrameLayout
+            view_name="layout_upload"
+            view_width="80sp"
+            view_height="80sp"
+            layout_gravity="center|left">
+            <ImageView
+                view_width="auto"
+                view_height="auto"
+                image_src="@icon_camera"
+                layout_gravity="center|bottom"
+                layout_marginBottom="40sp">
+            </ImageView>
+            <Label
+                view_width="auto"
+                view_height="auto"
+                text_src="上传照片"
+                text_color="#808080"
+                text_size="11"
+                layout_gravity="center|top"
+                layout_marginTop="48sp">
+            </Label>
+            <Button
+                view_width="60sp"
+                view_height="60sp"
+                layout_gravity="center"
+                view_borderRadius="1"
+                view_borderWidth="0.5"
+                view_borderColor="#7f7f7f"
+                view_masksToBounds="YES"
+                view_backgroundSelected="#11000000">
             </Button>
         </FrameLayout>
         
@@ -387,7 +424,7 @@
     <FrameLayout
         view_width="full"
         view_height="auto"
-        layout_marginTop="100">
+        layout_marginTop="10">
         <Label
             view_width="full"
             view_height="auto"
