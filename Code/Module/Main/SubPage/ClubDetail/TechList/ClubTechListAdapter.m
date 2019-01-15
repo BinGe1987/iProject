@@ -13,7 +13,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubTechListCell *cell = [ClubTechListCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
-    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    [cell setCellData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 

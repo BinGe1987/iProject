@@ -40,7 +40,7 @@
     
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     NSArray *techList = data;
     NSInteger count = techList.count > 4 ? 4 : techList.count;
     LinearLayout *linearView = (LinearLayout *)[self.contentView findViewByName:@"linear"];

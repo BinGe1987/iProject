@@ -48,35 +48,35 @@
 - (UITableViewCell *)bannerCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubDetailBannerCell * cell = [ClubDetailBannerCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
-    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    [cell setCellData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 
 - (UITableViewCell *)profileCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubDetailProfileCell * cell = [ClubDetailProfileCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
-    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    [cell setCellData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 
 - (UITableViewCell *)adCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubDetailAdCell * cell = [ClubDetailAdCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
-    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    [cell setCellData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 
 - (UITableViewCell *)techCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubDetailTechCell * cell = [ClubDetailTechCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
-    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    [cell setCellData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 
 - (UITableViewCell *)serviceCell:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     ClubDetailProjectCell * cell = [ClubDetailProjectCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, data.height)];
-    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    [cell setCellData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 
@@ -139,7 +139,7 @@
     TableViewSection *data = [self.data objectAtIndex:indexPath.section];
     CGFloat height = [self tableView:tableView heightForRowAtIndexPath:indexPath];
     ClubDetailCommentCell * cell = [ClubDetailCommentCell tableView:tableView cellWithSize:CGSizeMake(tableView.width, height)];
-    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    [cell setCellData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 

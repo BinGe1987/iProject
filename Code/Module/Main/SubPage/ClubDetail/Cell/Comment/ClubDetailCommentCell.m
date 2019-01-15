@@ -36,7 +36,7 @@
     }];
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     NSArray *array = data;
     ViewGroup *root = [self.contentView findViewByName:@"root"];
     if (array && array.count == 0) {

@@ -24,7 +24,7 @@
     [self.contentView addSubview:view];
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     ClubData *club = data;
     UILabel *label = [self.contentView findViewByName:@"label_ad"];
     label.text = [NSString stringWithFormat:@"%.1f折", club.discount/100.0];

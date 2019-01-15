@@ -39,7 +39,7 @@
 //        line.hidden = NO;
         [line setViewVisibility:ViewVisibilityVisible];
     }
-    [cell setData:[data.array objectAtIndex:indexPath.row]];
+    [cell setCellData:[data.array objectAtIndex:indexPath.row]];
     return cell;
 }
 

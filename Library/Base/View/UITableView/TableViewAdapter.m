@@ -58,8 +58,39 @@
     TableViewSection *tvSection = [self.data objectAtIndex:section];
     return [tvSection.array count];
 }
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cellReturn;
+    TableViewSection *tvSection = [self.data objectAtIndex:indexPath.section];
+    if (tvSection.cell) {
+        CGSize size = CGSizeMake(tableView.width, tvSection.height);
+        NSValue *value = [NSValue valueWithCGSize:size];
+        TableViewCell *cell = [tvSection.cell performSelector:@selector(tableView:cellSizeValue:) withObject:tableView withObject:value];
+        [cell setCellData:tvSection.array[indexPath.row]];
+        //        return cell;
+        cellReturn = cell;
+    } else {
+        static NSString * showUserInfoCellIdentifier = @"TableViewAdapterCell";
+        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
+        if (cell == nil){
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+                                          reuseIdentifier:showUserInfoCellIdentifier];
+        }
+        //        return cell;
+        cellReturn = cell;
+    }
+    return cellReturn;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if ([cell isKindOfClass:[TableViewCell class]]) {
+        TableViewCell *tc = (TableViewCell *)cell;
+        [tc tableViewCellDidSelect:tableView];
+    }
+}
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
     NSInteger section = indexPath.section;
     TableViewSection *tvSection = [self.data objectAtIndex:section];
     if (tvSection.rows && tvSection.rows.count > indexPath.row) {
@@ -89,33 +120,6 @@
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    TableViewSection *tvSection = [self.data objectAtIndex:indexPath.section];
-    if (tvSection.cell) {
-        CGSize size = CGSizeMake(tableView.width, tvSection.height);
-        NSValue *value = [NSValue valueWithCGSize:size];
-        TableViewCell *cell = [tvSection.cell performSelector:@selector(tableView:cellSizeValue:) withObject:tableView withObject:value];
-        [cell setData:tvSection.array[indexPath.row]];
-        return cell;
-    } else {
-        static NSString * showUserInfoCellIdentifier = @"TableViewAdapterCell";
-        UITableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:showUserInfoCellIdentifier];
-        if (cell == nil){
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                              reuseIdentifier:showUserInfoCellIdentifier];
-        }
-        return cell;
-    }
-    
-    
-}
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
-    if ([cell isKindOfClass:[TableViewCell class]]) {
-        TableViewCell *tc = (TableViewCell *)cell;
-        [tc tableViewCellDidSelect:tableView];
-    }
-}
 
 @end

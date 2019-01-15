@@ -30,7 +30,7 @@
     [self.contentView addSubview:self.view];
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     ClubData *club = data;
     
     UILabel *label = [self.view findViewByName:@"label_clubName"];

@@ -32,7 +32,7 @@
     [self.contentView addSubview:self.view];
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     
     CommentData *comment = data;
     ViewGroup *root = self.view;

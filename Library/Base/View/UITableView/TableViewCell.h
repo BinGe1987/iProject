@@ -17,9 +17,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (UITableView *)myTableView;
 
-- (void)setData:(id)data;
+- (void)setCellData:(id)data;
 
 - (void)tableViewCellDidSelect:(UITableView *)tableView;
+
+- (CGFloat)heightForCell;
 
 @end
 

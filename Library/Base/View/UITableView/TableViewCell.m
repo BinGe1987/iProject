@@ -30,7 +30,7 @@
     return (UITableView *)tableView;
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     
 }
 
@@ -38,9 +38,8 @@
     
 }
 
-static NSString * showUserInfoCellIdentifier = @"TableViewAdapterCell";
-- (NSString *)cellIdentifier {
-    return showUserInfoCellIdentifier;
+- (CGFloat)heightForCell {
+    return 0;
 }
 
 @end

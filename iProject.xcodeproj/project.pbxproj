@@ -146,6 +146,11 @@
 		7780FEC121E8C1270045ABC5 /* SearchNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7780FEC021E8C1270045ABC5 /* SearchNavigationController.m */; };
 		7786D5E121ECEC1600A18AC3 /* PublicCommentTechListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786D5E021ECEC1600A18AC3 /* PublicCommentTechListCell.m */; };
 		7786D5E321ECF53300A18AC3 /* PublicCommentTechListCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7786D5E221ECF53300A18AC3 /* PublicCommentTechListCell.xml */; };
+		7786D5E621ED851F00A18AC3 /* TestTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786D5E521ED851F00A18AC3 /* TestTableViewCell.m */; };
+		7786D5E921ED926400A18AC3 /* AutoTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786D5E821ED926400A18AC3 /* AutoTableViewAdapter.m */; };
+		7786D5EC21ED92ED00A18AC3 /* AutoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786D5EB21ED92ED00A18AC3 /* AutoTableViewCell.m */; };
+		7786D5EF21ED930B00A18AC3 /* AutoTableViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786D5EE21ED930B00A18AC3 /* AutoTableViewSection.m */; };
+		7786D5F321EDA45D00A18AC3 /* UITableView+Section.m in Sources */ = {isa = PBXBuildFile; fileRef = 7786D5F221EDA45D00A18AC3 /* UITableView+Section.m */; };
 		77A389D721DE196800042B04 /* VerifyCodePerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D621DE196800042B04 /* VerifyCodePerformer.m */; };
 		77A389DA21DE3F2200042B04 /* LoginPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389D921DE3F2200042B04 /* LoginPerformer.m */; };
 		77A389DD21DE4DAB00042B04 /* MinePresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 77A389DC21DE4DAB00042B04 /* MinePresenter.m */; };
@@ -701,6 +706,16 @@
 		7786D5DF21ECEC1600A18AC3 /* PublicCommentTechListCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentTechListCell.h; sourceTree = "<group>"; };
 		7786D5E021ECEC1600A18AC3 /* PublicCommentTechListCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentTechListCell.m; sourceTree = "<group>"; };
 		7786D5E221ECF53300A18AC3 /* PublicCommentTechListCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PublicCommentTechListCell.xml; sourceTree = "<group>"; };
+		7786D5E421ED851F00A18AC3 /* TestTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestTableViewCell.h; sourceTree = "<group>"; };
+		7786D5E521ED851F00A18AC3 /* TestTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestTableViewCell.m; sourceTree = "<group>"; };
+		7786D5E721ED926400A18AC3 /* AutoTableViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoTableViewAdapter.h; sourceTree = "<group>"; };
+		7786D5E821ED926400A18AC3 /* AutoTableViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoTableViewAdapter.m; sourceTree = "<group>"; };
+		7786D5EA21ED92ED00A18AC3 /* AutoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoTableViewCell.h; sourceTree = "<group>"; };
+		7786D5EB21ED92ED00A18AC3 /* AutoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoTableViewCell.m; sourceTree = "<group>"; };
+		7786D5ED21ED930B00A18AC3 /* AutoTableViewSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutoTableViewSection.h; sourceTree = "<group>"; };
+		7786D5EE21ED930B00A18AC3 /* AutoTableViewSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutoTableViewSection.m; sourceTree = "<group>"; };
+		7786D5F121EDA45D00A18AC3 /* UITableView+Section.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+Section.h"; sourceTree = "<group>"; };
+		7786D5F221EDA45D00A18AC3 /* UITableView+Section.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Section.m"; sourceTree = "<group>"; };
 		77A389D521DE196800042B04 /* VerifyCodePerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VerifyCodePerformer.h; sourceTree = "<group>"; };
 		77A389D621DE196800042B04 /* VerifyCodePerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VerifyCodePerformer.m; sourceTree = "<group>"; };
 		77A389D821DE3F2200042B04 /* LoginPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginPerformer.h; sourceTree = "<group>"; };
@@ -1570,6 +1585,7 @@
 		7734C0C121D223FB009D1EE8 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				7786D5F021EDA43C00A18AC3 /* AutoAdapter */,
 				7734C12621D23A93009D1EE8 /* UITableView+Refresh.h */,
 				7734C12721D23A93009D1EE8 /* UITableView+Refresh.m */,
 				7734C0BE21D223F5009D1EE8 /* UITableView+Adapter.h */,
@@ -1906,6 +1922,21 @@
 				7780FEC021E8C1270045ABC5 /* SearchNavigationController.m */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		7786D5F021EDA43C00A18AC3 /* AutoAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				7786D5F121EDA45D00A18AC3 /* UITableView+Section.h */,
+				7786D5F221EDA45D00A18AC3 /* UITableView+Section.m */,
+				7786D5E721ED926400A18AC3 /* AutoTableViewAdapter.h */,
+				7786D5E821ED926400A18AC3 /* AutoTableViewAdapter.m */,
+				7786D5ED21ED930B00A18AC3 /* AutoTableViewSection.h */,
+				7786D5EE21ED930B00A18AC3 /* AutoTableViewSection.m */,
+				7786D5EA21ED92ED00A18AC3 /* AutoTableViewCell.h */,
+				7786D5EB21ED92ED00A18AC3 /* AutoTableViewCell.m */,
+			);
+			path = AutoAdapter;
 			sourceTree = "<group>";
 		};
 		77A389ED21DEFE0800042B04 /* Web */ = {
@@ -2814,14 +2845,16 @@
 		77EA8E8921B8FBD4001B8959 /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				77EA8FBC21B94BB5001B8959 /* TestModule.h */,
+				77EA8FBD21B94BB5001B8959 /* TestModule.m */,
 				77EA8E9A21B8FCF9001B8959 /* TestViewController.h */,
 				77EA8E9B21B8FCF9001B8959 /* TestViewController.m */,
+				7786D5E421ED851F00A18AC3 /* TestTableViewCell.h */,
+				7786D5E521ED851F00A18AC3 /* TestTableViewCell.m */,
 				77B054E921CB63FD0045A489 /* SecondViewController.h */,
 				77B054EA21CB63FD0045A489 /* SecondViewController.m */,
 				77B0545B21C9E3A70045A489 /* Test.json */,
 				77CEA4C621D481D500B388E4 /* Test2.json */,
-				77EA8FBC21B94BB5001B8959 /* TestModule.h */,
-				77EA8FBD21B94BB5001B8959 /* TestModule.m */,
 				77A8B64F21E612FF00BC8C70 /* Test.xml */,
 			);
 			path = Test;
@@ -3560,6 +3593,7 @@
 				771CA3C021DCA7A100B00F11 /* Performer+Parser.m in Sources */,
 				77EA8FBE21B94BB5001B8959 /* TestModule.m in Sources */,
 				77A38A1D21DF3EA100042B04 /* SelectorItem.m in Sources */,
+				7786D5E921ED926400A18AC3 /* AutoTableViewAdapter.m in Sources */,
 				776B55D321BFA2C600793CAF /* UIViewController+Layout.m in Sources */,
 				77B0553C21D0787B0045A489 /* GlobalModule.m in Sources */,
 				77B0558E21D1DA840045A489 /* ComponentData.m in Sources */,
@@ -3579,6 +3613,7 @@
 				77CEA4CB21D48B3C00B388E4 /* DiscoverViewController.m in Sources */,
 				77B054D521CA9B220045A489 /* TableLayoutParams.m in Sources */,
 				77B0548221CA48BB0045A489 /* PhotoBrowser.m in Sources */,
+				7786D5EC21ED92ED00A18AC3 /* AutoTableViewCell.m in Sources */,
 				77B054CF21CA9A890045A489 /* TableViewParams.m in Sources */,
 				77CEA4D121D496D900B388E4 /* ViewPager.m in Sources */,
 				7734C11521D23A45009D1EE8 /* KafkaHeadRefreshControl.m in Sources */,
@@ -3658,6 +3693,7 @@
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
 				77C3977621E443660016CEE3 /* ClassifyPresenter.m in Sources */,
+				7786D5EF21ED930B00A18AC3 /* AutoTableViewSection.m in Sources */,
 				77A389F021DEFE2E00042B04 /* WebViewController.m in Sources */,
 				77CEA51E21D4FA8100B388E4 /* CollectionLayoutParams.m in Sources */,
 				7723E1CE21D77F6B00B77890 /* UIView+XML.m in Sources */,
@@ -3793,6 +3829,7 @@
 				77B055A121D20E410045A489 /* HomeViewAdpater.m in Sources */,
 				7734C11921D23A45009D1EE8 /* KafkaCategories.m in Sources */,
 				771CA3F921DD0CA500B00F11 /* TechHandler.m in Sources */,
+				7786D5F321EDA45D00A18AC3 /* UITableView+Section.m in Sources */,
 				77A8B63D21E4E82300BC8C70 /* ClassifyAdapter.m in Sources */,
 				77A389DD21DE4DAB00042B04 /* MinePresenter.m in Sources */,
 				77B0552821CD82510045A489 /* AppInfo.m in Sources */,
@@ -3811,6 +3848,7 @@
 				775B15EF21C7A2FF00B8D6FF /* BaseTabbarController.m in Sources */,
 				77EA8F5521B90226001B8959 /* FrameLayoutParams.m in Sources */,
 				77A8B64921E596F700BC8C70 /* ClubServiceData.m in Sources */,
+				7786D5E621ED851F00A18AC3 /* TestTableViewCell.m in Sources */,
 				7734C13C21D27A3F009D1EE8 /* HomeNvPresenter.m in Sources */,
 				77FAA0E621EA6FB00099473E /* ClubTechListController.m in Sources */,
 				77EA8F9B21B91F8C001B8959 /* NavigationController.m in Sources */,

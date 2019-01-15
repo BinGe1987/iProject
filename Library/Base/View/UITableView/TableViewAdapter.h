@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSMutableArray<TableViewSection *> *data;
 
-+ (instancetype)AdapterWithSourceData:(NSMutableArray<TableViewSection *> *)data;
++ (instancetype)AdapterWithSourceData:(NSArray<TableViewSection *> *)data;
 
 - (void)addSection:(TableViewSection *)section;
 - (void)addSection:(TableViewSection *)section index:(NSInteger)insert;

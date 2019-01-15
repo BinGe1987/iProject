@@ -30,7 +30,7 @@
     [self.contentView addSubview:view];
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     TechData *tech = data;
     ViewGroup *root = [self.contentView findViewByName:@"root"];
     

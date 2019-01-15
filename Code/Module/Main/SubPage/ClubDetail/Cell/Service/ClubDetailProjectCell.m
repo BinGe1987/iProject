@@ -24,7 +24,7 @@
     [self.contentView addSubview:view];
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     ClubServiceData *service = data;
     ViewGroup *root = [self.contentView findViewByName:@"root"];
     

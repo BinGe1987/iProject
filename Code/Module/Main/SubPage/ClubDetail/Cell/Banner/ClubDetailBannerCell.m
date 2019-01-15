@@ -34,7 +34,7 @@
     [self.contentView addSubview:self.bannerView];
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     self.bannerList = [data mutableCopy];
     NSMutableArray *array = [NSMutableArray new];
     for (BannerData *banner in data) {

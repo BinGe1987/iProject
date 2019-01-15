@@ -24,7 +24,7 @@
     [self.contentView addSubview:vg];
 }
 
-- (void)setData:(id)data {
+- (void)setCellData:(id)data {
     ViewGroup *vg = [self.contentView findViewByName:@"root"];
     
     [vg boundsAndRefreshLayout];
