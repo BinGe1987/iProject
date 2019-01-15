@@ -57,7 +57,7 @@ static NSOperationQueue *operationQueue;
     [window bringSubviewToFront:view];
     
     UILabel *label = [[UILabel alloc] initWithFrame:view.bounds];
-    label.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:0.5];
+    label.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:1];
     label.text = tips;
     label.textColor = [UIColor whiteColor];
     label.textAlignment = NSTextAlignmentCenter;

@@ -12,6 +12,7 @@
 
 @property (nonatomic, strong) ImagePickerController *picker;
 @property (nonatomic, strong) NSMutableArray *images;
+@property (nonatomic, strong) NSMutableArray *uploadImages;
 @property (nonatomic, strong) PhotoBrowser *browser;
 @property (nonatomic, strong) UITableView *techTable;
 @property (nonatomic, strong) TableViewSection *section;
@@ -135,6 +136,7 @@
 #pragma mask 图片选择
 - (void)imagePicker {
     self.images = [NSMutableArray new];
+    self.uploadImages = [NSMutableArray new];
     UIButton *btn = [self.view findViewByName:@"btn_image_picker"];
     WeakSelf(self)
     [btn setClickBlock:^(UIButton * _Nonnull button) {
@@ -147,8 +149,8 @@
 }
 - (void)pickController:(id)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos {
     [self.images addObjectsFromArray:photos];
+    [self.delegate onViewAction:@"action_upload" data:photos];
     [self showImages];
-    
 }
 - (void)showImages {
     ViewGroup *uploadButton = [self.view findViewByName:@"layout_upload_button"];
@@ -161,11 +163,25 @@
         NSString *name = [NSString stringWithFormat:@"image%ld", i+1];
         ViewGroup *vg = [self.view findViewByName:name];
         UIButton *imageButton = [vg findViewByName:@"image"];
+        UIActivityIndicatorView *indicator = [imageButton viewWithTag:99];
+        if (!indicator) {
+            indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:(UIActivityIndicatorViewStyleGray)];
+            indicator.tag = 99;
+            indicator.hidesWhenStopped = YES;
+            indicator.backgroundColor = [ColorUtils colorWithString:@"#88ffffff"];
+            indicator.color = [UIColor blackColor];
+            [imageButton addSubview:indicator];
+        }
+    
         imageButton.imageView.contentMode = UIViewContentModeScaleAspectFill;
         if (self.images.count > i) {
             [vg setViewVisibility:ViewVisibilityVisible];
             UIImage *image = self.images[i];
             [imageButton setImage:image forState:UIControlStateNormal];
+            if (![self.uploadImages containsObject:image]) {
+                indicator.frame = CGRectMake(0, 0, imageButton.width, imageButton.height);
+                [indicator startAnimating];
+            }
             
             WeakSelf(self)
             [imageButton setClickBlock:^(UIButton * _Nonnull button) {
@@ -178,6 +194,7 @@
             UIButton *close = [vg findViewByName:@"btn_close"];
             [close setClickBlock:^(UIButton * _Nonnull button) {
                 [weakself.images removeObject:image];
+                [weakself.uploadImages removeObject:image];
                 [weakself showImages];
             }];
         } else {
@@ -188,6 +205,29 @@
     }
     ViewGroup *vg = [self.view findViewByName:@"layout_upload"];
     [vg boundsAndRefreshLayout];
+}
+
+- (void)uploadResponse:(Data *)data {
+    UIImage *image = data.source[@"image"];
+    for (NSInteger i=3; i>=0; i--) {
+        NSString *name = [NSString stringWithFormat:@"image%ld", i+1];
+        ViewGroup *vg = [self.view findViewByName:name];
+        UIButton *imageButton = [vg findViewByName:@"image"];
+        UIActivityIndicatorView *indicator = [imageButton viewWithTag:99];
+        UIImage *buttonImage = imageButton.imageView.image;
+        if (buttonImage == image) {
+            [indicator stopAnimating];
+            if ([data isSuccess]) {
+                if ([self.images containsObject:image]) {
+                    [self.uploadImages addObject:image];
+                }
+            } else {
+                [ProgressHUB showTips:@"图片上传失败"];
+                [self.images removeObject:image];
+                [self showImages];
+            }
+        }
+    }
 }
 
 @end

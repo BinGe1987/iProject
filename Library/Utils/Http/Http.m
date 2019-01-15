@@ -88,4 +88,87 @@
     }
 }
 
++ (HttpResponse *)uploadImageRequest:(HttpRequest *)httpRequest {
+    
+    HttpResponse *httpResponse = [HttpResponse new];
+    
+    UIImage *image = httpRequest.uploadImage;
+    NSString *url = httpRequest.requestURL;
+    NSDictionary *params = httpRequest.data;
+    
+    NSString *TWITTERFON_FORM_BOUNDARY = @"0xKhTmLbOuNdArY";
+    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:url] cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
+    //分界线 --AaB03x
+    NSString *MPboundary=[[NSString alloc]initWithFormat:@"--%@",TWITTERFON_FORM_BOUNDARY];
+    //结束符 AaB03x--
+    NSString *endMPboundary=[[NSString alloc]initWithFormat:@"%@--",MPboundary];
+    //得到图片的data
+    NSData* data;
+    //判断图片是不是png格式的文件
+    NSString *imageName = nil;
+    NSString *type = params[@"name"] ? params[@"name"] : @"pic";
+    if (UIImagePNGRepresentation(image)) {
+        //返回为png图像。
+        data = UIImagePNGRepresentation(image);
+        imageName = [NSString stringWithFormat:@"%@.png",type];
+    }else {
+        //返回为JPEG图像。
+        data = UIImageJPEGRepresentation(image, 1.0);
+        imageName = [NSString stringWithFormat:@"%@.jpg",type];
+    }
+    //    User *user = [User getInstance];
+    NSMutableString *body=[[NSMutableString alloc]init];
+    
+    for (NSString *key in [params allKeys]) {
+        [body appendFormat:@"%@\r\n",MPboundary];
+        [body appendFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n",key];
+        [body appendFormat:@"%@\r\n",params[key]];
+    }
+    
+    [body appendFormat:@"%@\r\n",MPboundary];
+    [body appendFormat:@"Content-Disposition: form-data; name=\"%@\"; filename=\"%@\"\r\n",@"imageFile",imageName];
+    [body appendFormat:@"Content-Type: image/jpge,image/gif, image/jpeg, image/pjpeg, image/pjpeg\r\n\r\n"];
+    
+    NSString *end=[[NSString alloc]initWithFormat:@"\r\n%@",endMPboundary];
+    NSMutableData *requestData=[NSMutableData data];
+    [requestData appendData:[body dataUsingEncoding:NSUTF8StringEncoding]];
+    [requestData appendData:data];
+    [requestData appendData:[end dataUsingEncoding:NSUTF8StringEncoding]];
+    NSString *content=[[NSString alloc]initWithFormat:@"multipart/form-data; boundary=%@",TWITTERFON_FORM_BOUNDARY];
+    [request setValue:content forHTTPHeaderField:@"Content-Type"];
+    [request setValue:[NSString stringWithFormat:@"%lu", (unsigned long)[requestData length]] forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPBody:requestData];
+    [request setHTTPMethod:@"POST"];
+    
+    //3.创建网络会话
+    NSURLSession *session=[NSURLSession sharedSession];
+    
+    dispatch_semaphore_t semaphore = dispatch_semaphore_create(0); //创建信号量
+    //4.创建网络上传任务
+    NSURLSessionUploadTask *dataTask=[session uploadTaskWithRequest:request fromData:requestData completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
+        if (error) {
+            httpResponse.error = [Http errorMsg:error];
+        }else {
+            // 如果请求成功，则解析数据。
+            id object = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
+            // 11、判断是否解析成功
+            if (error) {
+                NSLog(@"post error :%@",error.localizedDescription);
+                httpResponse.error = error;
+            }else {
+                // 解析成功，处理数据，通过GCD获取主队列，在主线程中刷新界面。
+                //                NSLog(@"post success :%@",object);
+                httpResponse.data = object;
+            }
+        }
+        dispatch_semaphore_signal(semaphore);//发送信号
+    }];
+    
+    //5.发送网络任务
+    [dataTask resume];
+    dispatch_semaphore_wait(semaphore,DISPATCH_TIME_FOREVER);  //等待
+    
+    return httpResponse;
+}
+
 @end

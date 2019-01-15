@@ -19,6 +19,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong) NSDictionary *data;
 
+@property (nonatomic, strong) UIImage *uploadImage;
+
 @property (nonatomic, assign) NSTimeInterval timeout;
 
 + (instancetype)withHost:(NSString *)host api:(NSString *)api;

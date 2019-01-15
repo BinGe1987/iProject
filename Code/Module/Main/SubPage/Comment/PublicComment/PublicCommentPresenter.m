@@ -36,6 +36,16 @@
             }
         }];
     }
+    else if ([action isEqualToString:@"action_upload"]) {
+        NSArray *photos = data;
+        for (UIImage *img in photos) {
+            WeakSelf(self)
+            [DataCenter perform:OperationUploadData params:img callback:^(id  _Nonnull operation, Data * _Nullable data) {
+                PublicCommentViewHandler *handler = (PublicCommentViewHandler *)weakself.handler;
+                [handler uploadResponse:data];
+            }];
+        }
+    }
 }
 
 @end

@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (HttpResponse *)post:(HttpRequest *)request;
 
++ (HttpResponse *)uploadImageRequest:(HttpRequest *)httpRequest;
+
 @end
 
 NS_ASSUME_NONNULL_END

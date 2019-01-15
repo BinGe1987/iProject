@@ -120,6 +120,8 @@
 		775B15EF21C7A2FF00B8D6FF /* BaseTabbarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15EE21C7A2FF00B8D6FF /* BaseTabbarController.m */; };
 		775B15F221C7D4AC00B8D6FF /* UIViewController+ContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15F121C7D4AC00B8D6FF /* UIViewController+ContentView.m */; };
 		775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15F721C89A3D00B8D6FF /* MainViewController.m */; };
+		7763865921EDE6EE00572C50 /* GlobalDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763865821EDE6EE00572C50 /* GlobalDataHandler.m */; };
+		7763865F21EDE8C600572C50 /* UploadPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763865E21EDE8C600572C50 /* UploadPerformer.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -657,6 +659,10 @@
 		775B15F721C89A3D00B8D6FF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		775B15FB21C8A18700B8D6FF /* BGHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BGHeader.h; sourceTree = "<group>"; };
 		775B15FC21C8A1AD00B8D6FF /* NetHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetHeader.h; sourceTree = "<group>"; };
+		7763865721EDE6EE00572C50 /* GlobalDataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlobalDataHandler.h; sourceTree = "<group>"; };
+		7763865821EDE6EE00572C50 /* GlobalDataHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalDataHandler.m; sourceTree = "<group>"; };
+		7763865D21EDE8C600572C50 /* UploadPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadPerformer.h; sourceTree = "<group>"; };
+		7763865E21EDE8C600572C50 /* UploadPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadPerformer.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1892,6 +1898,17 @@
 				775B15FB21C8A18700B8D6FF /* BGHeader.h */,
 			);
 			path = "Imgae+Color";
+			sourceTree = "<group>";
+		};
+		7763865621EDE6D300572C50 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				7763865721EDE6EE00572C50 /* GlobalDataHandler.h */,
+				7763865821EDE6EE00572C50 /* GlobalDataHandler.m */,
+				7763865D21EDE8C600572C50 /* UploadPerformer.h */,
+				7763865E21EDE8C600572C50 /* UploadPerformer.m */,
+			);
+			path = Global;
 			sourceTree = "<group>";
 		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
@@ -3136,6 +3153,7 @@
 			isa = PBXGroup;
 			children = (
 				7734C0D221D22E66009D1EE8 /* BaseData */,
+				7763865621EDE6D300572C50 /* Global */,
 				77B0550521CCCDEE0045A489 /* Config */,
 				7723E1BB21D70DE900B77890 /* Login */,
 				77EA8F7F21B90A18001B8959 /* User */,
@@ -3520,6 +3538,7 @@
 				77EA8E9C21B8FCF9001B8959 /* TestViewController.m in Sources */,
 				77EA8F3D21B90226001B8959 /* ViewController.m in Sources */,
 				7734C11E21D23A45009D1EE8 /* KafkaNativeHeader.m in Sources */,
+				7763865921EDE6EE00572C50 /* GlobalDataHandler.m in Sources */,
 				775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */,
 				77EA8FAC21B92704001B8959 /* UIImageView+WebImage.m in Sources */,
 				77CEA56221D64C1400B388E4 /* OrderHandler.m in Sources */,
@@ -3783,6 +3802,7 @@
 				77C3978421E45A4F0016CEE3 /* ClubFilterData.m in Sources */,
 				77CEA52821D506F100B388E4 /* UICollectionView+Adapter.m in Sources */,
 				77CEA50521D4C87D00B388E4 /* DiscoverClubViewHandler.m in Sources */,
+				7763865F21EDE8C600572C50 /* UploadPerformer.m in Sources */,
 				771CA3F021DCF07A00B00F11 /* ClubDetailCommentCell.m in Sources */,
 				7739C42221E78FED0052D2CA /* CommentCategoryPerformer.m in Sources */,
 				7734C13721D2704B009D1EE8 /* BannerView.m in Sources */,

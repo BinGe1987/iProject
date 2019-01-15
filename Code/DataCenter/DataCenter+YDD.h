@@ -20,6 +20,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 #pragma make 全局
+///上传文件
+#define OperationUploadData                     (@"OperationUploadData")
 ///获取配置信息
 #define OperationGetConfig                      (@"OperationGetConfig")
 

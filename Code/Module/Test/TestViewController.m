@@ -24,7 +24,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [Store setValue:@"f22c94425da84049a30ba1482cdeb2fc" forKey:@"token"];
+//    [Store setValue:@"f22c94425da84049a30ba1482cdeb2fc" forKey:@"token"];
     NSString *token = [Store valueForKey:@"token" defaultValue:@""];
     [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, id  _Nullable data) {
         if ([data isKindOfClass:[UserData class]] && [data isLogin]) {

@@ -13,6 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setTechList:(ListData *)listData;
 
+- (void)uploadResponse:(Data *)data;
+
 @end
 
 NS_ASSUME_NONNULL_END
