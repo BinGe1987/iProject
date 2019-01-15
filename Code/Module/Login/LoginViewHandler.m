@@ -29,7 +29,7 @@
         [button dismissViewControllerAnimated:YES completion:nil];
         UserData *user = [DataCenter get].userData;
         user.source = [@{@"statusCode":@"200"} mutableCopy];
-        user.token = @"d8074ffc47d045f092cb529ed252ad4f";
+        user.token = @"f22c94425da84049a30ba1482cdeb2fc";
         [Store setValue:user.token forKey:@"token"];
         [EventBus postEvent:EventLoginStatusChanged data:user];
     }];

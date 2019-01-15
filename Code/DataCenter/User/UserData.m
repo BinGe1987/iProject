@@ -10,10 +10,12 @@
 @implementation UserData
 
 - (void)setLoginData:(id)data {
+    [super setData:data];
     [self setData:[data dataWithKey:@"respData"]];
 }
 
 - (void)setMineData:(id)data {
+    [super setData:data];
     [self setData:data];
 }
 
@@ -33,6 +35,10 @@
 
 - (BOOL)isLogin {
     return self.token;
+}
+
+- (BOOL)isSuccess {
+    return [self isLogin];
 }
 
 @end

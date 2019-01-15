@@ -46,14 +46,16 @@
 - (void)textFieldChanged:(UITextField*)textField {
     NSString *string = textField.text;
     self.text = string;
-    [self performSelector:@selector(startSearch:) withObject:string afterDelay:0.6];
+    if ([NSString isEmpty:string]) {
+        [self setTechList:[ListData new]];
+    } else {
+        [self performSelector:@selector(startSearch:) withObject:string afterDelay:0.6];
+    }
 }
 - (void)startSearch:(NSString *)string {
     if ([string isEqualToString:self.text]) {
         NSLog(@"开始搜索 %@",string);
         [self.delegate onViewAction:@"action_search" data:string];
-
-        
     }
 }
 - (void)textFieldEnd:(UITextField*)textField {
@@ -72,7 +74,7 @@
     WeakSelf(self)
     [UIView animateWithDuration:0.3 animations:^{
         CGRect frame = weakself.techTable.frame;
-        frame.size.height = count * ScaleValue(42)-1;
+        frame.size.height = count * ScaleValue(42);
         weakself.techTable.frame = frame;
     } completion:^(BOOL finished) {
     }];
