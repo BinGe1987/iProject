@@ -42,9 +42,10 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     AutoTableViewSection *section = [self.sectionArray objectAtIndex:indexPath.section];
-    static NSString *identifier = @"dequeueReusableCellWithIdentifier";
+    NSString *identifier = NSStringFromClass(section.cellClass);
     AutoTableViewCell * cell = [tableView dequeueReusableCellWithIdentifier:identifier];
     if (!cell) {
+//        NSLog(@"tableViewcellForRowAtIndexPath: %@", indexPath);
         cell = [[section.cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
     }
     if (!self.cellCache) {
@@ -59,7 +60,8 @@
     AutoTableViewCell * cell = [self.cellCache objectForKey:indexPath];
     [self.cellCache removeObjectForKey:indexPath];
     [cell setCellData:section.dataArray[indexPath.row]];
-    return [cell heightForCell];
+//    NSLog(@"tableViewheightForRowAtIndexPath:%@ %f", indexPath, cell.cellHeight);
+    return cell.cellHeight;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

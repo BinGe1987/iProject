@@ -25,8 +25,8 @@
     
 }
 
-- (CGFloat)heightForCell {
-    return 20;
+- (CGFloat)cellHeight {
+    return _cellHeight ? _cellHeight : 20;
 }
 
 @end

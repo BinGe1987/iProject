@@ -7,21 +7,15 @@
 
 #import "TestTableViewCell.h"
 
-@interface TestTableViewCell()
-
-@property (nonatomic,assign) NSInteger height;
-
-@end
 
 @implementation TestTableViewCell
 
 - (void)setCellData:(id)data {
-    self.height = [data integerValue];
+    self.cellHeight = [data floatValue];
 }
 
-
-- (CGFloat)heightForCell {
-    return self.height;
+- (void)tableViewCellDidSelect:(UITableView *)tableView {
+    
 }
 
 @end
