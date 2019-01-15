@@ -10,13 +10,21 @@
 @implementation ClubTechListPerformer
 
 - (id)perform:(id)operation params:(id)params callback:(ICallback)callback {
-    ClubData *club = params;
+    ClubData *club;
+    NSString *techName = @"";
+    if ([params isKindOfClass:[ClubData class]]) {
+        club = params;
+    } else {
+        club = params[@"club"];
+        techName = params[@"tech"];
+    }
+    
     //会所数据
     HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_ClubGetTechList];
     request.data = @{
                      @"token":DataCenter.token,
                      @"clubId":club.clubID,
-                     @"name":@"",
+                     @"name":techName,
                      @"page":@(1),
                      @"pageSize":@(20)
                      };

@@ -36,8 +36,7 @@
 - (void)setTechNumberInput {
     self.techTable = [self.view findViewByName:@"table_tech"];
     self.techTable.layer.masksToBounds = YES;
-    self.section = [TableViewSection sectionWithCell:[PublicCommentTechListCell class] height:ScaleValue(42) dataArray:@[@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",@"",]];
-    
+    self.section = [TableViewSection sectionWithCell:[PublicCommentTechListCell class] height:ScaleValue(42) dataArray:@[]];
     [self.techTable setAdapter:[TableViewAdapter AdapterWithSourceData:[@[self.section] mutableCopy]]];
     
     UITextField *input = [self.view findViewByName:@"input_tech"];
@@ -53,14 +52,8 @@
     if ([string isEqualToString:self.text]) {
         NSLog(@"开始搜索 %@",string);
         [self.delegate onViewAction:@"action_search" data:string];
-        NSInteger count = [string length] > 4 ? 4 :[string length];
-        WeakSelf(self)
-        [UIView animateWithDuration:0.3 animations:^{
-            CGRect frame = weakself.techTable.frame;
-            frame.size.height = count * ScaleValue(42)-1;
-            weakself.techTable.frame = frame;
-        } completion:^(BOOL finished) {
-        }];
+
+        
     }
 }
 - (void)textFieldEnd:(UITextField*)textField {
@@ -68,6 +61,18 @@
     [UIView animateWithDuration:0.3 animations:^{
         CGRect frame = weakself.techTable.frame;
         frame.size.height = 0;
+        weakself.techTable.frame = frame;
+    } completion:^(BOOL finished) {
+    }];
+}
+- (void)setTechList:(ListData *)listData {
+    self.section.array = [listData.list mutableCopy];
+    [self.techTable reloadData];
+    NSInteger count = self.section.array.count > 4 ? 4 : self.section.array.count;
+    WeakSelf(self)
+    [UIView animateWithDuration:0.3 animations:^{
+        CGRect frame = weakself.techTable.frame;
+        frame.size.height = count * ScaleValue(42)-1;
         weakself.techTable.frame = frame;
     } completion:^(BOOL finished) {
     }];

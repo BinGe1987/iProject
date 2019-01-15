@@ -25,7 +25,17 @@
 }
 
 - (void)setCellData:(id)data {
+    TechData *tech = data;
     ViewGroup *vg = [self.contentView findViewByName:@"root"];
+    
+    UIImageView *image = [vg findViewByName:@"image"];
+    [image setImageWithURL:[NSURL URLWithString:tech.imageUrl] placeholder:UIImageDefault_Tech];
+    
+    UILabel *name = [vg findViewByName:@"label_name"];
+    name.text = tech.name;
+    
+    UILabel *num = [vg findViewByName:@"label_num"];
+    num.text = [NSString stringWithFormat:@"(%@)", tech.number ? tech.number : @"--"];
     
     [vg boundsAndRefreshLayout];
 }

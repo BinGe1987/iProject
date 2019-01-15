@@ -5,12 +5,13 @@
     view_height="full">
     
     <ImageView
-        view_name="name"
+        view_name="image"
         view_width="30sp"
         view_height="30sp"
         view_borderRadius="15sp"
         view_masksToBounds="YES"
         image_src="@default_head_girl"
+        image_scaleType="full"
         layout_gravity="center|left"
         layout_marginLeft="10sp">
     </ImageView>

@@ -8,14 +8,34 @@
 #import "PublicCommentPresenter.h"
 #import "PublicCommentViewHandler.h"
 
+@interface PublicCommentPresenter()<ViewHandlerDelegate>
+
+@end
+
 @implementation PublicCommentPresenter
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
 
     self.handler = [[PublicCommentViewHandler alloc] initWithView:view];
-    
+    self.handler.delegate = self;
     return self;
+}
+
+- (void)onViewAction:(id)action data:(id)data {
+    UIViewController *vc = [self.handler.view currentViewController];
+    if ([action isEqualToString:@"action_search"]) {
+        NSDictionary *params = @{@"club":vc.intentData,
+                                 @"tech":data
+                                 };
+        WeakSelf(self)
+        [DataCenter perform:OperationGetClubTechListData params:params callback:^(id  _Nonnull operation, Data * _Nullable data) {
+            if (data.isSuccess) {
+                PublicCommentViewHandler *handler = (PublicCommentViewHandler *)weakself.handler;
+                [handler setTechList:(ListData *)data];
+            }
+        }];
+    }
 }
 
 @end

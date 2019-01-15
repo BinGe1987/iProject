@@ -33,6 +33,7 @@
         </InputView>
 <!--表情-->
         <FrameLayout
+            view_name="layout_comment_level"
             view_width="full"
             view_height="63sp"
             layout_marginTop="20"
