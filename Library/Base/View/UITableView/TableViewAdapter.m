@@ -86,7 +86,11 @@
     if ([cell isKindOfClass:[TableViewCell class]]) {
         TableViewCell *tc = (TableViewCell *)cell;
         [tc tableViewCellDidSelect:tableView];
+        if (self.delegate) {
+            [self.delegate adapter:self didCellSelected:tc];
+        }
     }
+    
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

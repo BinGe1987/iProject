@@ -8,7 +8,7 @@
 #import "PublicCommentViewHandler.h"
 #import "PublicCommentTechListCell.h"
 
-@interface PublicCommentViewHandler()<UITextViewDelegate, ImagePickerControllerDelegate>
+@interface PublicCommentViewHandler()<UITextViewDelegate, ImagePickerControllerDelegate, TableViewAdapterDelegate>
 
 @property (nonatomic, strong) ImagePickerController *picker;
 @property (nonatomic, strong) NSMutableArray *images;
@@ -37,7 +37,9 @@
     self.techTable = [self.view findViewByName:@"table_tech"];
     self.techTable.layer.masksToBounds = YES;
     self.section = [TableViewSection sectionWithCell:[PublicCommentTechListCell class] height:ScaleValue(42) dataArray:@[]];
-    [self.techTable setAdapter:[TableViewAdapter AdapterWithSourceData:[@[self.section] mutableCopy]]];
+    TableViewAdapter *adapter = [TableViewAdapter AdapterWithSourceData:[@[self.section] mutableCopy]];
+    adapter.delegate = self;
+    [self.techTable setAdapter:adapter];
     
     UITextField *input = [self.view findViewByName:@"input_tech"];
     [input addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
@@ -68,22 +70,28 @@
     }];
 }
 - (void)setTechList:(ListData *)listData {
+    NSInteger old = self.section.array.count;
     self.section.array = [listData.list mutableCopy];
-    [self.techTable reloadData];
     NSInteger count = self.section.array.count > 4 ? 4 : self.section.array.count;
+    if (old < count) {
+        [self.techTable reloadData];
+    }
     WeakSelf(self)
     [UIView animateWithDuration:0.3 animations:^{
         CGRect frame = weakself.techTable.frame;
         frame.size.height = count * ScaleValue(42);
         weakself.techTable.frame = frame;
     } completion:^(BOOL finished) {
+        [weakself.techTable reloadData];
     }];
 }
-- (void)reloadTechList {
-//    [self.techTable reloadData];
+- (void)adapter:(TableViewAdapter *)adapter didCellSelected:(TableViewCell *)cell {
+    TechData *tech = cell.data;
+    UITextField *input = [self.view findViewByName:@"input_tech"];
+    input.text = [NSString stringWithFormat:@"%@ (%@)",tech.name?tech.name:@"", tech.number];
+    [self setTechList:[ListData new]];
+    [self.view endEditing:YES];
 }
-
-
 
 #pragma mask 选择表情
 - (void)setCommentLevel:(NSInteger)level {

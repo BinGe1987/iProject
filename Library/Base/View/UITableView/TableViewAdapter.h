@@ -8,11 +8,14 @@
 #import <Foundation/Foundation.h>
 #import "TableViewSection.h"
 
+@protocol TableViewAdapterDelegate;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TableViewAdapter : NSObject<UITableViewDataSource, UITableViewDelegate>
 
 @property (nonatomic, strong) NSMutableArray<TableViewSection *> *data;
+@property (nonatomic, assign) id delegate;
 
 + (instancetype)AdapterWithSourceData:(NSArray<TableViewSection *> *)data;
 
@@ -22,6 +25,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)removeSection:(TableViewSection *)section;
 
 - (NSInteger)sectionIndex:(TableViewSection *)section;
+
+@end
+
+@protocol TableViewAdapterDelegate <NSObject>
+
+- (void)adapter:(TableViewAdapter *)adapter didCellSelected:(TableViewCell *)cell;
 
 @end
 

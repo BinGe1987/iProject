@@ -27,7 +27,7 @@
             text_placeholderColor="#cccccc"
             text_size="14"
             layout_fixTop="YES"
-            layout_marginTop="50sp"
+            layout_marginTop="55sp"
             layout_marginLeft="20sp"
             layout_marginRight="20sp">
         </InputView>
@@ -449,7 +449,7 @@
         view_borderColor="#7f000000"
         view_masksToBounds="YES"
         layout_fixTop="YES"
-        layout_marginTop="83sp"
+        layout_marginTop="88sp"
         layout_marginLeft="20sp"
         layout_marginRight="20sp">
     </TableView>

@@ -25,6 +25,8 @@
 }
 
 - (void)setCellData:(id)data {
+    self.data = data;
+    
     TechData *tech = data;
     ViewGroup *vg = [self.contentView findViewByName:@"root"];
     
