@@ -38,4 +38,21 @@
     return [[UIDevice currentDevice] identifierForVendor].UUIDString;
 }
 
++ (BOOL)isSimulator {
+    NSString *deviceString = [AppInfo DeviceString];
+    if ([deviceString isEqualToString:@"Simulator"]) {
+        return YES;
+    }
+    return NO;
+}
+
++ (NSString *)DeviceString {
+    struct utsname systemInfo;
+    uname(&systemInfo);
+    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";
+    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";
+    return deviceString;
+}
+
 @end

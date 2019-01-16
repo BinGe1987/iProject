@@ -9,8 +9,8 @@
 
 
 #pragma make 域名
-#define BASE_URL                        (@"http://192.168.0.16:8081")
-//#define BASE_URL                        (@"https://encontro.xiaomodo.com")
+#define BASE_URL_IN                        (@"http://192.168.0.16:8081")
+#define BASE_URL_OUT                        (@"https://encontro.xiaomodo.com")
 
 
 

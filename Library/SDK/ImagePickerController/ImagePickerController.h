@@ -15,12 +15,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)imagePickerMaxCount:(NSInteger)maxCount delegate:(id<ImagePickerControllerDelegate>)delegate;
 
+- (void)imagePickerCrop:(id<ImagePickerControllerDelegate>)delegate;
+
 @end
 
 @protocol ImagePickerControllerDelegate <NSObject>
 
 @optional
 - (void)pickController:(ImagePickerController *)picker didFinishPickingPhotos:(NSArray<UIImage *> *)photos;
+- (void)pickController:(ImagePickerController *)picker didFinishCropPhotos:(UIImage *)photo;
 
 @end
 

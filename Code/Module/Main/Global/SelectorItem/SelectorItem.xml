@@ -29,19 +29,28 @@
         
     <LinearLayout
         view_width="auto"
-        view_height="18"
+        view_height="full"
         layout_gravity="center|right"
         layout_marginRight="17">
+        <ImageView
+            view_name="right_image"
+            view_width="auto"
+            view_height="full"
+            view_alpha="0.8"
+            layout_marginTop="10"
+            layout_marginBottom="10"
+            layout_marginLeft="5"/>
         <Label
             view_name="right_text"
             view_width="auto"
             view_height="full"
             text_size="15"
             text_color="#9c9c9c"
-            text_src="右边文本"/>
+            text_src="右边文本"
+            layout_marginLeft="5"/>
         <ImageView
             view_name="right_arrow"
-            view_width="auto"
+            view_width="10"
             view_height="full"
             view_alpha="0.8"
             image_src="@arrow2"

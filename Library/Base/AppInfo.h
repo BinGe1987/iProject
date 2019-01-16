@@ -21,7 +21,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSString *)Device;
 
++ (NSString *)DeviceString;
+
 + (NSString *)SystemVersion;
+
++ (BOOL)isSimulator;
 
 + (NSString *)UUID;
 
