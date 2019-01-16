@@ -12,7 +12,7 @@
 -(instancetype)initWithModel:(id<UIModel>)model {
     self = [super initWithModel:model];
     if (self) {
-        NSInteger textSize = [model getInteger:@"text_size" defaultValue:12];
+        CGFloat textSize = [model getFloat:@"text_size" defaultValue:12];
         self.font = UIFontMake(textSize);
         
         NSString *text = [model getString:@"text_src" defaultValue:@""];

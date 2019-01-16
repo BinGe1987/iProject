@@ -30,7 +30,7 @@
         if ([data isKindOfClass:[UserData class]] && [data isLogin]) {
 //            NSDictionary *test = [Store valueForKey:@"test_data" defaultValue:nil];
 //            ClubData *club = [ClubData withDictionary:test];
-            [UIViewController pushController:@"SettingController" animated:YES data:nil];
+            [UIViewController pushController:@"PayQRCodeController" animated:YES data:nil];
 //            [UIViewController pushController:@"NiceNameEditController" animated:YES data:nil];
         } else {
             [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];

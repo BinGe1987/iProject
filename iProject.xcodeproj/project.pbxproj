@@ -2078,9 +2078,9 @@
 		77A38A0D21DF2FDD00042B04 /* QrCode */ = {
 			isa = PBXGroup;
 			children = (
-				77A38A0E21DF2FF600042B04 /* PayQRCodeController.xml */,
 				77A38A1621DF30D100042B04 /* PayQRCodeController.h */,
 				77A38A1721DF30D100042B04 /* PayQRCodeController.m */,
+				77A38A0E21DF2FF600042B04 /* PayQRCodeController.xml */,
 			);
 			path = QrCode;
 			sourceTree = "<group>";
