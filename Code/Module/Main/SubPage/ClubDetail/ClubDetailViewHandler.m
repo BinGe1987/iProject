@@ -36,22 +36,17 @@
     [self.tableView setHeadRefreshHandler:^{
         [weakself.tableView performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:1.5];
     }];
-    [self.tableView setFootRefreshHandler:^{
-        
-    }];
-    [self.tableView beginFootRefreshing];
-    
-    UIButton *btn = (UIButton *)[view findViewByName:@"btn_allComment"];
-    [btn setClickBlock:^(UIButton * _Nonnull button) {
-//        ClubData *club = [button currentViewController].intentData;
-//        [UIViewController pushController:@"CommentController" animated:YES data:club];
-    }];
+//    [self.tableView setFootRefreshHandler:^{
+//
+//    }];
+//    [self.tableView beginFootRefreshing];
+    [self.tableView beginHeadRefreshing];
     
     return self;
 }
 
 - (void)setData:(id)data {
-    [self.tableView finishFootRefresh];
+    [self.tableView finishHeadRefresh];
     
     if (![data isKindOfClass:[ClubDetailData class]]) {
         return;
@@ -97,6 +92,10 @@
         [rows addObject:row];
     }
     commentSection.rows = rows;
+    if (commentSection.rows.count == 0) {
+        commentSection.height = 80;
+    }
+    
     [sectionArray addObject:commentSection];
     
     if (self.first) {
@@ -116,6 +115,8 @@
     UIView *bg = [self.view findViewByName:@"bottomBg"];
     [bg setViewVisibility:ViewVisibilityVisible];
     [self.commentButton setViewVisibility:ViewVisibilityVisible];
+    
+//    [self.tableView setFootRefreshHandler:nil];
 }
 
 @end

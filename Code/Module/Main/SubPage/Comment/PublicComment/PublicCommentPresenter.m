@@ -50,8 +50,6 @@
         }
     }
     else if ([action isEqualToString:@"action_public"]) {
-//        [Store setValue:data forKey:@"test_data_public"];
-//        NSLog(@"%@", data);
         [DataCenter perform:OperationPublicCommentData params:data callback:^(id  _Nonnull operation, Data * _Nullable data) {
             WeakSelf(self)
             PublicCommentViewHandler *handler = (PublicCommentViewHandler *)weakself.handler;

@@ -39,12 +39,6 @@
 - (void)setCellData:(id)data {
     NSArray *array = data;
     ViewGroup *root = [self.contentView findViewByName:@"root"];
-    if (array && array.count == 0) {
-        [root removeFromSuperview];
-        return;
-    }
-    CommentData *comment = data[0];
-    
     
     
     UILabel *count = [root findViewByName:@"allCommentCount"];
@@ -55,6 +49,14 @@
         ClubData *club = [button currentViewController].intentData;
         [UIViewController pushController:@"CommentController" animated:YES data:club];
     }];
+    
+    if (array && array.count == 0) {
+        UIView *view = [root findViewByName:@"comment_item"];
+        [view setViewVisibility:ViewVisibilityGone];
+        [root boundsAndRefreshLayout];
+        return;
+    }
+    CommentData *comment = data[0];
     
     UIImageView *imageView = [root findViewByName:@"headImage"];
     [imageView setImageWithURL:[NSURL URLWithString:comment.user.avatarUrl] placeholder:UIImageDefault_UserMan];
