@@ -19,6 +19,10 @@
 - (void)imagePickerMaxCount:(NSInteger)maxCount delegate:(id<ImagePickerControllerDelegate>)delegate {
     self.delegate = delegate;
     TZImagePickerController *vc = [[TZImagePickerController alloc] initWithMaxImagesCount:maxCount delegate:self];
+    vc.naviBgColor = [UIColor whiteColor];
+    vc.naviTitleColor = [UIColor blackColor];
+    vc.barItemTextColor = vc.naviTitleColor;
+    vc.isStatusBarDefault = YES;
     [[UIViewController topViewController] presentViewController:vc animated:YES completion:nil];
 }
 
@@ -31,6 +35,10 @@
     vc.cropRect = CGRectMake(width / 2 - min / 2, height / 2 - min / 2, min, min);
     vc.allowCrop = YES;
     vc.allowPickingImage = YES;
+    vc.naviBgColor = [UIColor whiteColor];
+    vc.naviTitleColor = [UIColor blackColor];
+    vc.barItemTextColor = vc.naviTitleColor;
+    vc.isStatusBarDefault = YES;
     [vc showProgressHUD];
     [[UIViewController topViewController] presentViewController:vc animated:YES completion:^{
         [vc hideProgressHUD];
