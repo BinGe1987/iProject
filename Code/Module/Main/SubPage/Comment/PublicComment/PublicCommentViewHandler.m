@@ -13,10 +13,14 @@
 @property (nonatomic, strong) ImagePickerController *picker;
 @property (nonatomic, strong) NSMutableArray *images;
 @property (nonatomic, strong) NSMutableArray *uploadImages;
+@property (nonatomic, strong) NSMutableDictionary *uploadDatas;
 @property (nonatomic, strong) PhotoBrowser *browser;
 @property (nonatomic, strong) UITableView *techTable;
 @property (nonatomic, strong) TableViewSection *section;
 @property (nonatomic, copy) NSString *text;
+
+@property (nonatomic, strong) NSMutableDictionary *params;
+@property (nonatomic, strong) TechData *currentTech;
 
 @end
 
@@ -24,6 +28,24 @@
 
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
+    self.params = [NSMutableDictionary dictionaryWithObject:@"5" forKey:@"score"];
+    UIViewController *vc = [view currentViewController];
+    UIButton *public = [vc.navigationView findViewByName:@"btn_public"];
+    WeakSelf(self)
+    [public setClickBlock:^(UIButton * _Nonnull button) {
+        [weakself public];
+    }];
+    
+    if ([vc.intentData isKindOfClass:[ClubData class]]) {
+        ClubData *club = vc.intentData;
+        [self.params setObject:club.clubID forKey:@"clubId"];
+        [self.params setObject:club.name forKey:@"clubName"];
+        [self.params setObject:@"club" forKey:@"type"];
+    } else {
+//        [self.params setObject:@"" forKey:@"clubId"];
+//        [self.params setObject:@"" forKey:@"clubName"];
+//        [self.params setObject:@"tech" forKey:@"type"];
+    }
     
     [self setTechNumberInput];
     [self setCommentLevel:5];
@@ -32,7 +54,50 @@
     
     return self;
 }
- 
+
+- (void)public {
+    NSString *content = self.params[@"content"];
+    if ([content length] < 15) {
+        [ProgressHUB showTips:@"评论内容需满15个字哦～"];
+        return;
+    }
+    NSMutableString *urls = [NSMutableString new];
+    for (Data *data in [self.uploadDatas allValues]) {
+        Data *respData = [data dataWithKey:@"respData"];
+        NSString *url = [respData stringWithKey:@"url"];
+        
+        [urls appendString:url];
+        [urls appendString:@","];
+    }
+    if ([urls hasSuffix:@","]) {
+        [urls deleteCharactersInRange:NSMakeRange(urls.length-1, 1)];
+    }
+    NSLog(@"urls : %@", urls);
+    [self.params setObject:urls forKey:@"imgList"];
+    
+    if (self.currentTech) {
+        [self.params setObject:self.currentTech.techID forKey:@"techId"];
+        [self.params setObject:self.currentTech.name forKey:@"techName"];
+        [self.params setObject:self.currentTech.number forKey:@"serialNo"];
+    } else {
+        [self.params setObject:@"0" forKey:@"techId"];
+        [self.params setObject:@"" forKey:@"techName"];
+        [self.params setObject:@"" forKey:@"serialNo"];
+    }
+    
+    [self.delegate onViewAction:@"action_public" data:self.params];
+}
+
+- (void)publicFinish:(Data *)data {
+    if ([data isSuccess]) {
+        [self.view popControllerAnimated:YES];
+        [ProgressHUB toast:@"发布成功"];
+    } else {
+        NSString *info =[NSString stringWithFormat:@"%@(%@)",[data stringWithKey:@"msg"],[data stringWithKey:@"statusCode"]] ;
+        [ProgressHUB showTips:info];
+    }
+}
+
 #pragma mask 选择技师
 - (void)setTechNumberInput {
     self.techTable = [self.view findViewByName:@"table_tech"];
@@ -48,12 +113,26 @@
 }
 - (void)textFieldChanged:(UITextField*)textField {
     NSString *string = textField.text;
+    if (self.currentTech) {
+        TechData *tech = self.currentTech;
+        NSString *text = [NSString stringWithFormat:@"%@ (%@)",tech.name?tech.name:@"", tech.number];
+        if ([string length] > [self.text length]) { //++
+            string = [string stringByReplacingOccurrencesOfString:text withString:@""];
+            textField.text = string;
+        } else {
+            string = @"";
+            textField.text = string;
+        }
+        self.currentTech = nil;
+    }
     self.text = string;
     if ([NSString isEmpty:string]) {
         [self setTechList:[ListData new]];
     } else {
         [self performSelector:@selector(startSearch:) withObject:string afterDelay:0.6];
     }
+    
+    
 }
 - (void)startSearch:(NSString *)string {
     if ([string isEqualToString:self.text]) {
@@ -92,6 +171,9 @@
     input.text = [NSString stringWithFormat:@"%@ (%@)",tech.name?tech.name:@"", tech.number];
     [self setTechList:[ListData new]];
     [self.view endEditing:YES];
+    
+    self.text = input.text;
+    self.currentTech = tech;
 }
 
 #pragma mask 选择表情
@@ -114,6 +196,8 @@
         [button setClickBlock:^(UIButton * _Nonnull button) {
             [weakself setCommentLevel:button.tag];
             [weakself.view endEditing:YES];
+            
+            [weakself.params setObject:@(i) forKey:@"score"];
         }];
     }
     
@@ -132,11 +216,15 @@
     
     UITextView *label = [self.view findViewByName:@"label_suggestion_count"];
     label.text = [textView.text length] >= 15 ? nil : [NSString stringWithFormat:@"加油，还差%ld个字！", 15-textView.text.length];
+    
+    [self.params setObject:textView.text forKey:@"content"];
+    
 }
 #pragma mask 图片选择
 - (void)imagePicker {
     self.images = [NSMutableArray new];
     self.uploadImages = [NSMutableArray new];
+    self.uploadDatas = [NSMutableDictionary new];
     UIButton *btn = [self.view findViewByName:@"btn_image_picker"];
     WeakSelf(self)
     [btn setClickBlock:^(UIButton * _Nonnull button) {
@@ -195,6 +283,7 @@
             [close setClickBlock:^(UIButton * _Nonnull button) {
                 [weakself.images removeObject:image];
                 [weakself.uploadImages removeObject:image];
+                [weakself.uploadDatas removeObjectForKey:[image description]];
                 [weakself showImages];
             }];
         } else {
@@ -220,6 +309,7 @@
             if ([data isSuccess]) {
                 if ([self.images containsObject:image]) {
                     [self.uploadImages addObject:image];
+                    [self.uploadDatas setObject:data forKey:[image description]];
                 }
             } else {
                 [ProgressHUB showTips:@"图片上传失败"];

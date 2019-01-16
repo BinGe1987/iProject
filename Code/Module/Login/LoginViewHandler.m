@@ -26,12 +26,19 @@
     
     UIButton *btn = (UIButton *)[view findViewByName:@"btn_loginTitle"];
     [btn setClickBlock:^(UIButton * _Nonnull button) {
-        [button dismissViewControllerAnimated:YES completion:nil];
-        UserData *user = [DataCenter get].userData;
-        user.source = [@{@"statusCode":@"200"} mutableCopy];
-        user.token = @"f22c94425da84049a30ba1482cdeb2fc";
-        [Store setValue:user.token forKey:@"token"];
-        [EventBus postEvent:EventLoginStatusChanged data:user];
+        NSString *token = @"e678eae481c04aeeb8bf060ec0b02b49";
+        [DataCenter perform:OperationLoginCheck params:token callback:^(id  _Nonnull operation, id  _Nullable data) {
+            if ([data isKindOfClass:[UserData class]] && [data isLogin]) {
+                Log(@"自动登录完成。。。");
+                [button dismissViewControllerAnimated:YES completion:nil];
+            }
+        }];
+//        [button dismissViewControllerAnimated:YES completion:nil];
+//        UserData *user = [DataCenter get].userData;
+//        user.source = [@{@"statusCode":@"200"} mutableCopy];
+//        user.token = @"e678eae481c04aeeb8bf060ec0b02b49";
+//        [Store setValue:user.token forKey:@"token"];
+//        [EventBus postEvent:EventLoginStatusChanged data:user];
     }];
     
     self.errorLabel = (UILabel *)[self.view findViewByName:@"label_errorInfo"];

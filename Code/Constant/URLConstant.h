@@ -39,6 +39,7 @@
 
 #pragma make 评论相关
 #define API_CommentGetCategory           (@"/ydd-manager/api/v1/tech/comment/category/list")         //获取评论分类
+#define API_CommentPublic                (@"/ydd-manager/api/v1/tech/comment/express")               //评论发布
 
 #pragma make 我的页面相关
 #define API_MineGetMineData             (@"/ydd-manager/api/v1/personalInfo/getPerInfoDetail")      //获取我的页面数据

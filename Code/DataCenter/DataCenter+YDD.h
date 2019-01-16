@@ -66,7 +66,7 @@ NS_ASSUME_NONNULL_BEGIN
 ///获取评论列表数据
 #define OperationGetCommentListData             (@"OperationGetCommentListData")
 #define OperationGetCommentCategoryData         (@"OperationGetCommentCategoryData")
-
+#define OperationPublicCommentData              (@"OperationPublicCommentData")
 
 @interface DataCenter (YDD)
 

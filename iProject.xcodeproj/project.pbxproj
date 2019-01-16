@@ -122,6 +122,7 @@
 		775B15F821C89A3D00B8D6FF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15F721C89A3D00B8D6FF /* MainViewController.m */; };
 		7763865921EDE6EE00572C50 /* GlobalDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763865821EDE6EE00572C50 /* GlobalDataHandler.m */; };
 		7763865F21EDE8C600572C50 /* UploadPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763865E21EDE8C600572C50 /* UploadPerformer.m */; };
+		7763866221EE3A2B00572C50 /* PublicCommentPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763866121EE3A2A00572C50 /* PublicCommentPerformer.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -663,6 +664,8 @@
 		7763865821EDE6EE00572C50 /* GlobalDataHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalDataHandler.m; sourceTree = "<group>"; };
 		7763865D21EDE8C600572C50 /* UploadPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadPerformer.h; sourceTree = "<group>"; };
 		7763865E21EDE8C600572C50 /* UploadPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadPerformer.m; sourceTree = "<group>"; };
+		7763866021EE3A2A00572C50 /* PublicCommentPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentPerformer.h; sourceTree = "<group>"; };
+		7763866121EE3A2A00572C50 /* PublicCommentPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentPerformer.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1528,6 +1531,8 @@
 				7739C42121E78FEC0052D2CA /* CommentCategoryPerformer.m */,
 				771CA42421DDC30E00B00F11 /* CommentListPerformer.h */,
 				771CA42521DDC30E00B00F11 /* CommentListPerformer.m */,
+				7763866021EE3A2A00572C50 /* PublicCommentPerformer.h */,
+				7763866121EE3A2A00572C50 /* PublicCommentPerformer.m */,
 				771CA42721DDC32400B00F11 /* CommentListData.h */,
 				771CA42821DDC32400B00F11 /* CommentListData.m */,
 			);
@@ -3738,6 +3743,7 @@
 				776B55D921BFBD0300793CAF /* WeakProxy.m in Sources */,
 				771CA41521DDB2E500B00F11 /* CommentController.m in Sources */,
 				77CEA53C21D5CE8900B388E4 /* OrderViewController.m in Sources */,
+				7763866221EE3A2B00572C50 /* PublicCommentPerformer.m in Sources */,
 				77CEA4F621D4C2BF00B388E4 /* DiscoverData.m in Sources */,
 				77B0558521D1CC510045A489 /* NSString+Utils.m in Sources */,
 				77EA8F6921B90227001B8959 /* ImageView.m in Sources */,

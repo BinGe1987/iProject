@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)uploadResponse:(Data *)data;
 
+- (void)publicFinish:(Data *)data;
+
 @end
 
 NS_ASSUME_NONNULL_END

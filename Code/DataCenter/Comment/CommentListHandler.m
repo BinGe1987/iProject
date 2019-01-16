@@ -8,6 +8,7 @@
 #import "CommentListHandler.h"
 #import "CommentListPerformer.h"
 #import "CommentCategoryPerformer.h"
+#import "PublicCommentPerformer.h"
 
 @implementation CommentListHandler
 
@@ -17,6 +18,7 @@
     if (self) {
         [self bind:OperationGetCommentCategoryData  performerPlus:[CommentCategoryPerformer class]];
         [self bind:OperationGetCommentListData      performerPlus:[CommentListPerformer class]];
+        [self bind:OperationPublicCommentData       performerPlus:[PublicCommentPerformer class]];
     }
     return self;
 }
