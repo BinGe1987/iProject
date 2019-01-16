@@ -87,7 +87,7 @@
         if (comment.imageList.list.count > 0) {
             row.height = commentSection.height;
         } else {
-            row.height = 225;
+            row.height = 215;
         }
         [rows addObject:row];
     }

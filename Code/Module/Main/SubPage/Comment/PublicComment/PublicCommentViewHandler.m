@@ -42,9 +42,13 @@
         [self.params setObject:club.name forKey:@"clubName"];
         [self.params setObject:@"club" forKey:@"type"];
     } else {
-//        [self.params setObject:@"" forKey:@"clubId"];
-//        [self.params setObject:@"" forKey:@"clubName"];
-//        [self.params setObject:@"tech" forKey:@"type"];
+        TechDetailData *detail = vc.intentData;
+        self.currentTech = detail.techData;
+        [self.params setObject:detail.clubData.clubID forKey:@"clubId"];
+        [self.params setObject:detail.clubData.name forKey:@"clubName"];
+        [self.params setObject:@"tech" forKey:@"type"];
+        
+        
     }
     
     [self setTechNumberInput];
@@ -100,16 +104,27 @@
 
 #pragma mask 选择技师
 - (void)setTechNumberInput {
+    
+    UIViewController *vc = [self.view currentViewController];
+    
+    UITextField *input = [self.view findViewByName:@"input_tech"];
+    //如果是技师，隐藏技师输入框
+    if ([vc.intentData isKindOfClass:[TechData class]]) {
+        [input setViewVisibility:ViewVisibilityGone];
+        ViewGroup *scroll = [self.view findViewByName:@"scroll"];
+        [scroll boundsAndRefreshLayout];
+        return;
+    }
+    
+    [input addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
+    [input addTarget:self action:@selector(textFieldEnd:) forControlEvents:UIControlEventEditingDidEnd];
+    
     self.techTable = [self.view findViewByName:@"table_tech"];
     self.techTable.layer.masksToBounds = YES;
     self.section = [TableViewSection sectionWithCell:[PublicCommentTechListCell class] height:ScaleValue(42) dataArray:@[]];
     TableViewAdapter *adapter = [TableViewAdapter AdapterWithSourceData:[@[self.section] mutableCopy]];
     adapter.delegate = self;
     [self.techTable setAdapter:adapter];
-    
-    UITextField *input = [self.view findViewByName:@"input_tech"];
-    [input addTarget:self action:@selector(textFieldChanged:) forControlEvents:UIControlEventEditingChanged];
-    [input addTarget:self action:@selector(textFieldEnd:) forControlEvents:UIControlEventEditingDidEnd];
 }
 - (void)textFieldChanged:(UITextField*)textField {
     NSString *string = textField.text;

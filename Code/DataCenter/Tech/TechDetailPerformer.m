@@ -35,7 +35,7 @@
                      @"techId":tech.techID,
                      @"page":@"1",
                      @"pageSize":@"2",
-                     @"type":@"selected",
+                     @"type":@"common",
                      };
     response = [Http post:request];
     data = [Data new];

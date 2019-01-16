@@ -110,7 +110,7 @@
                      @"clubId":club.clubID,
                      @"page":@(1),
                      @"pageSize":@(1),
-                     @"type":@"high"
+                     @"type":@"common"
                      };
     HttpResponse *response = [Http post:request];
     Data *data = [Data new];

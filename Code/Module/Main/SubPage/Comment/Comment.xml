@@ -34,22 +34,9 @@
             text_color="#FF55b4b2"
             text_colorSelected="#ffffff"
             text_src="Button"
-            layout_margin="8"/>
+            layout_margin="8"
+            view_visibility="invisible"/>
             
-<!--        <Button-->
-<!--            view_width="60"-->
-<!--            view_height="22"-->
-<!--            view_borderRadius="2"-->
-<!--            view_background="#3355b4b2"-->
-<!--            layout_margin="8"/>-->
-<!--            -->
-<!--        <Button-->
-<!--            view_width="60"-->
-<!--            view_height="22"-->
-<!--            view_borderRadius="2"-->
-<!--            view_background="#3355b4b2"-->
-<!--            layout_margin="8"/>-->
-
     </LinearLayout>
     
     <View

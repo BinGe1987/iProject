@@ -16,6 +16,8 @@
 @property (nonatomic, strong) UIButton *commentButton;
 @property (nonatomic, assign) BOOL first;
 
+@property (nonatomic, strong) TechDetailData *detail;
+
 @end
 
 @implementation TechDetailViewHandler
@@ -24,8 +26,8 @@
     self = [super initWithView:view];
     
     id click = ^(UIButton * _Nonnull button) {
-//        TechData *tech = [button currentViewController].intentData;
-//        [UIViewController pushController:@"CommentController" animated:YES data:tech];
+        TechData *tech = [button currentViewController].intentData;
+        [UIViewController pushController:@"CommentController" animated:YES data:tech];
     };
     
     UIButton *btn1 = (UIButton *)[view findViewByName:@"btn_allComment1"];
@@ -36,15 +38,13 @@
     self.bannerView = [self.view findViewByName:@"banner"];
     self.bannerView.delegate = self;
     
-//    UIScrollView *scroll = [self.view findViewByName:@"scroll"];
-//    scroll.hidden = YES;
-    
     UIView *bg = [view findViewByName:@"bottomBg"];
     [bg setViewVisibility:ViewVisibilityInvisible];
     self.commentButton = [view findViewByName:@"btn_comment"];
     [self.commentButton setViewVisibility:ViewVisibilityInvisible];
+    WeakSelf(self)
     [self.commentButton setClickBlock:^(UIButton * _Nonnull button) {
-        [UIViewController pushController:@"PublicCommentController" animated:YES data:[button currentViewController].intentData];
+        [UIViewController pushController:@"PublicCommentController" animated:YES data:weakself.detail];
     }];
     
     self.first = YES;
@@ -58,6 +58,7 @@
     [self.commentButton setViewVisibility:ViewVisibilityVisible];
     
     TechDetailData *detail = (TechDetailData *)data;
+    self.detail = data;
     
     [self banner:detail];
     [self profile:detail];
