@@ -24,38 +24,6 @@
     return self;
 }
 
-- (void)setupViewParams:(ViewParams *)viewParams {
-    self.view.alpha = viewParams.alpha;
-    [self.view setViewVisibility:viewParams.visibility];
-    NSString *background = viewParams.background;
-    if (background) {
-        if ([background hasPrefix:@"#"]) {
-            self.view.backgroundColor = [ColorUtils colorWithString:background];
-        }
-        else if ([background hasPrefix:@"@"]) {
-            background = [background substringFromIndex:1];
-            UIImage *image = [UIImage imageNamed:background];
-            self.view.layer.contents = (id)image.CGImage;
-        }
-    }
-    
-    self.view.layer.masksToBounds = viewParams.masksToBounds;
-    self.view.layer.borderColor = viewParams.borderColor.CGColor;
-    if (viewParams.borderWidth) {
-        self.view.layer.borderWidth = viewParams.borderWidth;
-    }
-    if (viewParams.borderRadius) {
-        self.view.layer.cornerRadius = viewParams.borderRadius;
-    }
-    
-    if (viewParams.shadowColor) {
-        self.view.layer.shadowColor = viewParams.shadowColor.CGColor;
-        self.view.layer.shadowOffset = CGSizeMake(viewParams.shadowOffsetX, viewParams.shadowOffsetY);
-        self.view.layer.shadowRadius = viewParams.shadowRadius;
-        self.view.layer.shadowOpacity = viewParams.shadowOpacity;
-    }
-}
-
 - (void)initialize {
 //    NSLog(@"ViewModel 初始化！");
 }

@@ -124,6 +124,8 @@
 		7763865F21EDE8C600572C50 /* UploadPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763865E21EDE8C600572C50 /* UploadPerformer.m */; };
 		7763866221EE3A2B00572C50 /* PublicCommentPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763866121EE3A2A00572C50 /* PublicCommentPerformer.m */; };
 		7763866621EF0C0000572C50 /* ActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763866521EF0C0000572C50 /* ActionSheet.m */; };
+		7763866921EF6FEA00572C50 /* NiceNameEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763866821EF6FEA00572C50 /* NiceNameEditController.m */; };
+		7763866B21EF72A200572C50 /* NiceNameEditController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763866A21EF72A200572C50 /* NiceNameEditController.xml */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -669,6 +671,9 @@
 		7763866121EE3A2A00572C50 /* PublicCommentPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentPerformer.m; sourceTree = "<group>"; };
 		7763866421EF0C0000572C50 /* ActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionSheet.h; sourceTree = "<group>"; };
 		7763866521EF0C0000572C50 /* ActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionSheet.m; sourceTree = "<group>"; };
+		7763866721EF6FEA00572C50 /* NiceNameEditController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NiceNameEditController.h; sourceTree = "<group>"; };
+		7763866821EF6FEA00572C50 /* NiceNameEditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NiceNameEditController.m; sourceTree = "<group>"; };
+		7763866A21EF72A200572C50 /* NiceNameEditController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NiceNameEditController.xml; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1922,6 +1927,9 @@
 		7763866321EF07E500572C50 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				7763866721EF6FEA00572C50 /* NiceNameEditController.h */,
+				7763866821EF6FEA00572C50 /* NiceNameEditController.m */,
+				7763866A21EF72A200572C50 /* NiceNameEditController.xml */,
 			);
 			path = SubPage;
 			sourceTree = "<group>";
@@ -3494,6 +3502,7 @@
 				77CEA55421D600EC00B388E4 /* MineRecharge.json in Resources */,
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
 				7786D5E321ECF53300A18AC3 /* PublicCommentTechListCell.xml in Resources */,
+				7763866B21EF72A200572C50 /* NiceNameEditController.xml in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
@@ -3774,6 +3783,7 @@
 				77FAA0EE21EB0B7D0099473E /* ClubTechListViewHandler.m in Sources */,
 				77EA8E7A21B8F7AB001B8959 /* main.m in Sources */,
 				77B054C021CA51BF0045A489 /* InputView.m in Sources */,
+				7763866921EF6FEA00572C50 /* NiceNameEditController.m in Sources */,
 				77CEA55E21D64AA000B388E4 /* OrderViewHandler.m in Sources */,
 				77FAA13221EC849D0099473E /* TZPhotoPickerController.m in Sources */,
 				77CEA56B21D655A500B388E4 /* OrderTableViewAdapter.m in Sources */,

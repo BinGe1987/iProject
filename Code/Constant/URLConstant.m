@@ -12,8 +12,9 @@
 + (NSString *)host {
     if (AppInfo.isSimulator) {
         return BASE_URL_IN;
+    } else {
+        return BASE_URL_OUT;
     }
-    return BASE_URL_OUT;
 }
 
 + (NSString *)URLWithApi:(NSString *)api {

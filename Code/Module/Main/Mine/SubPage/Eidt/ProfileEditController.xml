@@ -13,12 +13,13 @@
         view_name="selector_head"
         view_class="SelectorItem"
         view_width="full"
-        view_height="58sp"
+        view_height="52sp"
         layout_marginTop="15"
         layout_marginBottom="15"
         selector_leftText="头像"/>
     
     <CustomView
+        view_name="selector_nicename"
         view_class="SelectorItem"
         view_width="full"
         view_height="48sp"

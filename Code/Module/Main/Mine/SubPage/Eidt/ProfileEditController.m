@@ -29,6 +29,11 @@
         [weakself.picker imagePickerCrop:self];
     }];
     
+    SelectorItem *nicenameItem = [self findViewByName:@"selector_nicename"];
+    [nicenameItem setItemClickBlock:^(id  _Nonnull target) {
+        [UIViewController pushController:@"NiceNameEditController" animated:YES data:nil];
+    }];
+    
     SelectorItem *genderItem = [self findViewByName:@"selector_gender"];
     [genderItem setItemClickBlock:^(id  _Nonnull target) {
         ActionSheet *actionSheet = [ActionSheet new];

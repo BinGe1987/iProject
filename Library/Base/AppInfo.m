@@ -38,20 +38,20 @@
     return [[UIDevice currentDevice] identifierForVendor].UUIDString;
 }
 
+NSString * const SIMULATOR = @"Simulator";
 + (BOOL)isSimulator {
-    NSString *deviceString = [AppInfo DeviceString];
-    if ([deviceString isEqualToString:@"Simulator"]) {
-        return YES;
-    }
-    return NO;
+    return [AppInfo DeviceString] == SIMULATOR;
 }
 
 + (NSString *)DeviceString {
-    struct utsname systemInfo;
-    uname(&systemInfo);
-    NSString *deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
-    if ([deviceString isEqualToString:@"i386"])         return @"Simulator";
-    if ([deviceString isEqualToString:@"x86_64"])       return @"Simulator";
+    static NSString *deviceString;
+    if (!deviceString) {
+        struct utsname systemInfo;
+        uname(&systemInfo);
+        deviceString = [NSString stringWithCString:systemInfo.machine encoding:NSUTF8StringEncoding];
+        if ([deviceString isEqualToString:@"i386"])         deviceString =  SIMULATOR;
+        if ([deviceString isEqualToString:@"x86_64"])       deviceString =  SIMULATOR;
+    }
     return deviceString;
 }
 

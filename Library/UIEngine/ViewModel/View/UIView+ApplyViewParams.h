@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIView (ApplyViewParams)
 
 - (void)applyViewParams:(ViewParams *)viewParams;
-- (void)setBackground:(NSString *)background;
+- (void)setBackgroundWithString:(NSString *)background;
 
 @end
 

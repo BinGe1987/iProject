@@ -14,7 +14,7 @@
     [self setViewVisibility:viewParams.visibility];
     NSString *background = viewParams.background;
     if (background) {
-        [self setBackground:background];
+        [self setBackgroundWithString:background];
     }
     
     self.layer.masksToBounds = viewParams.masksToBounds;
@@ -34,7 +34,7 @@
     }
 }
 
-- (void)setBackground:(NSString *)background {
+- (void)setBackgroundWithString:(NSString *)background {
     if ([background hasPrefix:@"#"]) {
         self.backgroundColor = [ColorUtils colorWithString:background];
     }
