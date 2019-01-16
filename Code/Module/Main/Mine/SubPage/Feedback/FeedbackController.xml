@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="root"
+    view_width="full"
+    view_height="full"
+    view_background="#fff0f0f0">
+    
+    <FrameLayout
+        view_width="full"
+        view_height="194sp"
+        layout_fixTop="YES"
+        layout_marginTop="64"
+        view_background="#ffffff">
+        <TextView
+            view_name="text_feedback"
+            view_width="full"
+            view_height="full"
+            layout_margin="10sp"
+            text_placeholder="请在这里留下您怼平台的意见和建议"
+            text_placeholderColor="#9c9c9c"
+            text_size="13">
+        </TextView>
+    </FrameLayout>
+
+    <Button
+        view_name="btn_commit"
+        view_width="222sp"
+        view_height="40sp"
+        text_src="提交"
+        text_color="#ffffff"
+        text_colorSelected="#ffffff"
+        text_size="14sp"
+        view_borderRadius="8"
+        view_masksToBounds="YES"
+        view_background="#55b4b2"
+        view_backgroundSelected="#aa55b4b2"
+        layout_gravity="center">
+    </Button>
+    
+</FrameLayout>
+
+

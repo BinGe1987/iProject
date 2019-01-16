@@ -128,6 +128,8 @@
 		7763866B21EF72A200572C50 /* NiceNameEditController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763866A21EF72A200572C50 /* NiceNameEditController.xml */; };
 		7763866F21EF7A2100572C50 /* EditPhoneController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763866E21EF7A2100572C50 /* EditPhoneController.xml */; };
 		7763867221EF7A2900572C50 /* EditPhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763867121EF7A2900572C50 /* EditPhoneController.m */; };
+		7763867621EF7E9A00572C50 /* FeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763867521EF7E9A00572C50 /* FeedbackController.m */; };
+		7763867821EF7EA200572C50 /* FeedbackController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763867721EF7EA200572C50 /* FeedbackController.xml */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -679,6 +681,9 @@
 		7763866E21EF7A2100572C50 /* EditPhoneController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EditPhoneController.xml; sourceTree = "<group>"; };
 		7763867021EF7A2900572C50 /* EditPhoneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditPhoneController.h; sourceTree = "<group>"; };
 		7763867121EF7A2900572C50 /* EditPhoneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditPhoneController.m; sourceTree = "<group>"; };
+		7763867421EF7E9A00572C50 /* FeedbackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackController.h; sourceTree = "<group>"; };
+		7763867521EF7E9A00572C50 /* FeedbackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackController.m; sourceTree = "<group>"; };
+		7763867721EF7EA200572C50 /* FeedbackController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FeedbackController.xml; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1958,6 +1963,16 @@
 			path = Phone;
 			sourceTree = "<group>";
 		};
+		7763867321EF7E7B00572C50 /* Feedback */ = {
+			isa = PBXGroup;
+			children = (
+				7763867421EF7E9A00572C50 /* FeedbackController.h */,
+				7763867521EF7E9A00572C50 /* FeedbackController.m */,
+				7763867721EF7EA200572C50 /* FeedbackController.xml */,
+			);
+			path = Feedback;
+			sourceTree = "<group>";
+		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -2045,6 +2060,7 @@
 				77A38A0D21DF2FDD00042B04 /* QrCode */,
 				77A38A0721DF2F2500042B04 /* Setting */,
 				77A38A0021DF2A2000042B04 /* Eidt */,
+				7763867321EF7E7B00572C50 /* Feedback */,
 			);
 			path = SubPage;
 			sourceTree = "<group>";
@@ -3531,6 +3547,7 @@
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
+				7763867821EF7EA200572C50 /* FeedbackController.xml in Resources */,
 				77A38A0621DF2C2600042B04 /* ProfileEditController.xml in Resources */,
 				77FAA0C821E914AD0099473E /* SearchNavigation.xml in Resources */,
 				7723E1C421D73F6500B77890 /* Login.xml in Resources */,
@@ -3861,6 +3878,7 @@
 				7763865F21EDE8C600572C50 /* UploadPerformer.m in Sources */,
 				771CA3F021DCF07A00B00F11 /* ClubDetailCommentCell.m in Sources */,
 				7739C42221E78FED0052D2CA /* CommentCategoryPerformer.m in Sources */,
+				7763867621EF7E9A00572C50 /* FeedbackController.m in Sources */,
 				7734C13721D2704B009D1EE8 /* BannerView.m in Sources */,
 				77CEA53421D5125700B388E4 /* DiscoverTechCell.m in Sources */,
 				77FAA10321EC6C450099473E /* PublicCommentPresenter.m in Sources */,
