@@ -26,4 +26,6 @@
 #import "AppModule.h"
 #import "TestModule.h"
 
+#import "SelectorItem.h"
+
 #endif

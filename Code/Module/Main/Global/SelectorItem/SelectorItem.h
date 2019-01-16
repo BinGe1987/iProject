@@ -14,7 +14,7 @@ typedef void (^onItemClickBlock)(id target);
 @interface SelectorItem : FrameLayout
 
 ///点击事情
-@property (nonatomic, assign) onItemClickBlock itemClickBlock;
+@property (nonatomic, copy) onItemClickBlock itemClickBlock;
 
 @end
 

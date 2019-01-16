@@ -123,6 +123,7 @@
 		7763865921EDE6EE00572C50 /* GlobalDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763865821EDE6EE00572C50 /* GlobalDataHandler.m */; };
 		7763865F21EDE8C600572C50 /* UploadPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763865E21EDE8C600572C50 /* UploadPerformer.m */; };
 		7763866221EE3A2B00572C50 /* PublicCommentPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763866121EE3A2A00572C50 /* PublicCommentPerformer.m */; };
+		7763866621EF0C0000572C50 /* ActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763866521EF0C0000572C50 /* ActionSheet.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -666,6 +667,8 @@
 		7763865E21EDE8C600572C50 /* UploadPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadPerformer.m; sourceTree = "<group>"; };
 		7763866021EE3A2A00572C50 /* PublicCommentPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PublicCommentPerformer.h; sourceTree = "<group>"; };
 		7763866121EE3A2A00572C50 /* PublicCommentPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PublicCommentPerformer.m; sourceTree = "<group>"; };
+		7763866421EF0C0000572C50 /* ActionSheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionSheet.h; sourceTree = "<group>"; };
+		7763866521EF0C0000572C50 /* ActionSheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionSheet.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1916,6 +1919,13 @@
 			path = Global;
 			sourceTree = "<group>";
 		};
+		7763866321EF07E500572C50 /* SubPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SubPage;
+			sourceTree = "<group>";
+		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -1989,6 +1999,7 @@
 		77A38A0021DF2A2000042B04 /* Eidt */ = {
 			isa = PBXGroup;
 			children = (
+				7763866321EF07E500572C50 /* SubPage */,
 				77A38A0221DF2BCD00042B04 /* ProfileEditController.h */,
 				77A38A0321DF2BCD00042B04 /* ProfileEditController.m */,
 				77A38A0521DF2C2600042B04 /* ProfileEditController.xml */,
@@ -2971,6 +2982,8 @@
 				776B55D521BFAB7E00793CAF /* UIButton+OnClick.m */,
 				776B55CA21BF81B300793CAF /* UIButton+EnlargeEdge.h */,
 				776B55C921BF81B300793CAF /* UIButton+EnlargeEdge.m */,
+				7763866421EF0C0000572C50 /* ActionSheet.h */,
+				7763866521EF0C0000572C50 /* ActionSheet.m */,
 				77EA8FAF21B92825001B8959 /* BaseViewHeader.h */,
 			);
 			path = View;
@@ -3561,6 +3574,7 @@
 				77B0545A21C943760045A489 /* YYWebImageOperation.m in Sources */,
 				7734C11F21D23A45009D1EE8 /* KafkaRingIndicatorHeader.m in Sources */,
 				77B0546721CA30940045A489 /* ProgressHUB.m in Sources */,
+				7763866621EF0C0000572C50 /* ActionSheet.m in Sources */,
 				776B55BE21BE979100793CAF /* LinearLayoutViewParams.m in Sources */,
 				77EA8F5721B90226001B8959 /* LinearLayoutParams.m in Sources */,
 				77FAA0FE21EB249F0099473E /* PublicCommentController.m in Sources */,

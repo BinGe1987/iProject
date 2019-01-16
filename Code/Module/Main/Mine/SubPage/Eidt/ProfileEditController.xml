@@ -10,7 +10,7 @@
     </Navigation>
     
     <CustomView
-        view_name="selector_profile"
+        view_name="selector_head"
         view_class="SelectorItem"
         view_width="full"
         view_height="48sp"
@@ -24,6 +24,7 @@
         view_height="48sp"
         selector_leftText="昵称"/>
     <CustomView
+        view_name="selector_gender"
         view_class="SelectorItem"
         view_width="full"
         view_height="48sp"
