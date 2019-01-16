@@ -45,6 +45,11 @@
         }];
         [actionSheet show];
     }];
+    
+    SelectorItem *phoneItem = [self findViewByName:@"selector_phone"];
+    [phoneItem setItemClickBlock:^(id  _Nonnull target) {
+        [UIViewController pushController:@"EditPhoneController" animated:YES data:nil];
+    }];
 }
 
 - (void)pickController:(ImagePickerController *)picker didFinishCropPhotos:(UIImage *)photo {

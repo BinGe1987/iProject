@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<FrameLayout
+    view_name="root"
+    view_width="full"
+    view_height="full"
+    view_background="#fff0f0f0">
+    
+    <LinearLayout
+        view_width="full"
+        view_height="auto"
+        view_orientation="vertical">
+        <View
+            view_width="full"
+            view_height="0.5"
+            view_background="#e9eaea">
+        </View>
+
+        <InputView
+            view_name="input_name"
+            view_width="full"
+            view_height="48sp"
+            view_background="#ffffff"
+            view_paddingLeft="20"
+            view_paddingRight="20"
+            text_placeholder="请输入新手机号"
+            text_placeholderColor="#9c9c9c"
+            text_size="15"
+            layout_fixTop="YES"
+            layout_marginTop="60">
+        </InputView>
+        <View
+            view_width="full"
+            view_height="0.5"
+            view_background="#e9eaea">
+        </View>
+        <FrameLayout
+            view_width="full"
+            view_height="48sp">
+            <InputView
+                view_name="input_name"
+                view_width="full"
+                view_height="full"
+                view_background="#ffffff"
+                view_paddingLeft="20"
+                view_paddingRight="20"
+                text_placeholder="请输入验证码"
+                text_placeholderColor="#9c9c9c"
+                text_size="15">
+            </InputView>
+            <Button
+                view_name="btn_code"
+                view_width="130sp"
+                view_height="full"
+                text_src="获取验证码"
+                text_color="#3c3c3c"
+                text_size="15"
+                layout_gravity="right">
+            </Button>
+        </FrameLayout>
+        <View
+            view_width="full"
+            view_height="0.5"
+            view_background="#e9eaea">
+        </View>
+    </LinearLayout>
+    
+    <Button
+        view_name="btn_commit"
+        view_width="222sp"
+        view_height="40sp"
+        text_src="提交"
+        text_color="#ffffff"
+        text_colorSelected="#ffffff"
+        text_size="14sp"
+        view_borderRadius="8"
+        view_masksToBounds="YES"
+        view_background="#55b4b2"
+        view_backgroundSelected="#aa55b4b2"
+        layout_gravity="center">
+    </Button>
+    
+</FrameLayout>
+
+

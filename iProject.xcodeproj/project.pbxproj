@@ -126,6 +126,8 @@
 		7763866621EF0C0000572C50 /* ActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763866521EF0C0000572C50 /* ActionSheet.m */; };
 		7763866921EF6FEA00572C50 /* NiceNameEditController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763866821EF6FEA00572C50 /* NiceNameEditController.m */; };
 		7763866B21EF72A200572C50 /* NiceNameEditController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763866A21EF72A200572C50 /* NiceNameEditController.xml */; };
+		7763866F21EF7A2100572C50 /* EditPhoneController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763866E21EF7A2100572C50 /* EditPhoneController.xml */; };
+		7763867221EF7A2900572C50 /* EditPhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763867121EF7A2900572C50 /* EditPhoneController.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -674,6 +676,9 @@
 		7763866721EF6FEA00572C50 /* NiceNameEditController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NiceNameEditController.h; sourceTree = "<group>"; };
 		7763866821EF6FEA00572C50 /* NiceNameEditController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NiceNameEditController.m; sourceTree = "<group>"; };
 		7763866A21EF72A200572C50 /* NiceNameEditController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NiceNameEditController.xml; sourceTree = "<group>"; };
+		7763866E21EF7A2100572C50 /* EditPhoneController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = EditPhoneController.xml; sourceTree = "<group>"; };
+		7763867021EF7A2900572C50 /* EditPhoneController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditPhoneController.h; sourceTree = "<group>"; };
+		7763867121EF7A2900572C50 /* EditPhoneController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditPhoneController.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1927,11 +1932,30 @@
 		7763866321EF07E500572C50 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				7763866D21EF7A0A00572C50 /* Phone */,
+				7763866C21EF79F800572C50 /* NiceName */,
+			);
+			path = SubPage;
+			sourceTree = "<group>";
+		};
+		7763866C21EF79F800572C50 /* NiceName */ = {
+			isa = PBXGroup;
+			children = (
 				7763866721EF6FEA00572C50 /* NiceNameEditController.h */,
 				7763866821EF6FEA00572C50 /* NiceNameEditController.m */,
 				7763866A21EF72A200572C50 /* NiceNameEditController.xml */,
 			);
-			path = SubPage;
+			path = NiceName;
+			sourceTree = "<group>";
+		};
+		7763866D21EF7A0A00572C50 /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				7763867021EF7A2900572C50 /* EditPhoneController.h */,
+				7763867121EF7A2900572C50 /* EditPhoneController.m */,
+				7763866E21EF7A2100572C50 /* EditPhoneController.xml */,
+			);
+			path = Phone;
 			sourceTree = "<group>";
 		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
@@ -3473,6 +3497,7 @@
 				77CEA54421D5D30D00B388E4 /* MineNavigation.json in Resources */,
 				771CA3CF21DCB54800B00F11 /* ClubDetailProfile.xml in Resources */,
 				77A8B65021E612FF00BC8C70 /* Test.xml in Resources */,
+				7763866F21EF7A2100572C50 /* EditPhoneController.xml in Resources */,
 				771CA41721DDBA7A00B00F11 /* Comment.xml in Resources */,
 				77B0545C21C9E3A70045A489 /* Test.json in Resources */,
 				7734C12521D23A45009D1EE8 /* Image.bundle in Resources */,
@@ -3708,6 +3733,7 @@
 				77EA8F2D21B90226001B8959 /* CommonHandler.m in Sources */,
 				776B55EA21BFF7DC00793CAF /* CheckLoginPerfomer.m in Sources */,
 				771CA42621DDC30E00B00F11 /* CommentListPerformer.m in Sources */,
+				7763867221EF7A2900572C50 /* EditPhoneController.m in Sources */,
 				77EA8F5B21B90227001B8959 /* LayoutParams.m in Sources */,
 				77FAA12A21EC849D0099473E /* TZVideoPlayerController.m in Sources */,
 				77EA8F5921B90227001B8959 /* TextViewParams.m in Sources */,
