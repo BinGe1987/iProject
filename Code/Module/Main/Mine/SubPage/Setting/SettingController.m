@@ -23,6 +23,11 @@
     [item setItemClickBlock:^(id  _Nonnull target) {
         [UIViewController pushController:@"ProfileEditController" animated:YES data:nil];
     }];
+    
+    SelectorItem *feedback = (SelectorItem *)[self findViewByName:@"selector_feedback"];
+    [feedback setItemClickBlock:^(id  _Nonnull target) {
+        [UIViewController pushController:@"FeedbackController" animated:YES data:nil];
+    }];
 }
 
 

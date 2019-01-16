@@ -19,6 +19,7 @@
         selector_leftText="个人信息"/>
         
     <CustomView
+        view_name="selector_feedback"
         view_class="SelectorItem"
         view_width="full"
         view_height="48sp"
