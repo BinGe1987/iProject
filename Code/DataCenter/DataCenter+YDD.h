@@ -31,7 +31,9 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationLoginVerifyCode                (@"OperationLoginVerifyCode")
 
 #pragma make  我的页面相关
-#define OperationGetMineData                   (@"OperationGetMineData")
+#define OperationGetMineData                    (@"OperationGetMineData")
+#define OperationGetMineFollowClubData          (@"OperationGetMineFollowClubData")
+#define OperationGetMineFollowTechData          (@"OperationGetMineFollowTechData")
 
 #pragma make 首页相关
 ///获取首页信息

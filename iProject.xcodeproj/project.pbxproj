@@ -142,6 +142,9 @@
 		7763869621F0735E00572C50 /* MyFollowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763869521F0735E00572C50 /* MyFollowController.m */; };
 		7763869A21F0802E00572C50 /* MyFollowClubPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763869921F0802E00572C50 /* MyFollowClubPresenter.m */; };
 		7763869D21F0816E00572C50 /* MyFollowClubViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763869C21F0816E00572C50 /* MyFollowClubViewHandler.m */; };
+		776386A121F0BCAE00572C50 /* FollowDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386A021F0BCAE00572C50 /* FollowDataHandler.m */; };
+		776386A421F0BD0800572C50 /* FollowClubPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386A321F0BD0800572C50 /* FollowClubPerformer.m */; };
+		776386A721F0BD3F00572C50 /* FollowTechPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386A621F0BD3F00572C50 /* FollowTechPerformer.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -715,6 +718,12 @@
 		7763869921F0802E00572C50 /* MyFollowClubPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowClubPresenter.m; sourceTree = "<group>"; };
 		7763869B21F0816E00572C50 /* MyFollowClubViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowClubViewHandler.h; sourceTree = "<group>"; };
 		7763869C21F0816E00572C50 /* MyFollowClubViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowClubViewHandler.m; sourceTree = "<group>"; };
+		7763869F21F0BCAE00572C50 /* FollowDataHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowDataHandler.h; sourceTree = "<group>"; };
+		776386A021F0BCAE00572C50 /* FollowDataHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowDataHandler.m; sourceTree = "<group>"; };
+		776386A221F0BD0800572C50 /* FollowClubPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowClubPerformer.h; sourceTree = "<group>"; };
+		776386A321F0BD0800572C50 /* FollowClubPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowClubPerformer.m; sourceTree = "<group>"; };
+		776386A521F0BD3F00572C50 /* FollowTechPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowTechPerformer.h; sourceTree = "<group>"; };
+		776386A621F0BD3F00572C50 /* FollowTechPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowTechPerformer.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -2067,6 +2076,19 @@
 			path = Club;
 			sourceTree = "<group>";
 		};
+		7763869E21F0BC8900572C50 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				7763869F21F0BCAE00572C50 /* FollowDataHandler.h */,
+				776386A021F0BCAE00572C50 /* FollowDataHandler.m */,
+				776386A221F0BD0800572C50 /* FollowClubPerformer.h */,
+				776386A321F0BD0800572C50 /* FollowClubPerformer.m */,
+				776386A521F0BD3F00572C50 /* FollowTechPerformer.h */,
+				776386A621F0BD3F00572C50 /* FollowTechPerformer.m */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -3325,9 +3347,10 @@
 				77CEA4F321D4C28E00B388E4 /* Discover */,
 				77CEA55F21D64BEC00B388E4 /* Order */,
 				771CA3B121DCA1EB00B00F11 /* Club */,
-				77FAA0D921EA1F080099473E /* Search */,
 				771CA3F621DD0C8600B00F11 /* Tech */,
+				77FAA0D921EA1F080099473E /* Search */,
 				771CA42021DDC2D000B00F11 /* Comment */,
+				7763869E21F0BC8900572C50 /* Follow */,
 				776B55A621BE628900793CAF /* DataCenter+YDD.h */,
 				776B55A721BE628900793CAF /* DataCenter+YDD.m */,
 				77CEA4C321D3D98600B388E4 /* Data+Update.h */,
@@ -3767,6 +3790,7 @@
 				7780FEC121E8C1270045ABC5 /* SearchNavigationController.m in Sources */,
 				775B15F221C7D4AC00B8D6FF /* UIViewController+ContentView.m in Sources */,
 				77B0544921C943760045A489 /* YYImageCache.m in Sources */,
+				776386A721F0BD3F00572C50 /* FollowTechPerformer.m in Sources */,
 				77EA8F2921B90226001B8959 /* DataHandler.m in Sources */,
 				77B0545921C943760045A489 /* CALayer+YYWebImage.m in Sources */,
 				77CEA4DA21D4974D00B388E4 /* ViewPagerLayoutParams.m in Sources */,
@@ -3788,6 +3812,7 @@
 				77EA8FBE21B94BB5001B8959 /* TestModule.m in Sources */,
 				77A38A1D21DF3EA100042B04 /* SelectorItem.m in Sources */,
 				7786D5E921ED926400A18AC3 /* AutoTableViewAdapter.m in Sources */,
+				776386A121F0BCAE00572C50 /* FollowDataHandler.m in Sources */,
 				776B55D321BFA2C600793CAF /* UIViewController+Layout.m in Sources */,
 				77B0553C21D0787B0045A489 /* GlobalModule.m in Sources */,
 				77B0558E21D1DA840045A489 /* ComponentData.m in Sources */,
@@ -3887,6 +3912,7 @@
 				77B0559E21D205540045A489 /* TableViewAdapter.m in Sources */,
 				775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */,
 				77CEA51121D4DBAD00B388E4 /* UIView+Controller.m in Sources */,
+				776386A421F0BD0800572C50 /* FollowClubPerformer.m in Sources */,
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
