@@ -5,11 +5,14 @@
     view_height="full"
     view_background="#f0f0f0">
     
+    <Navigation view_background="#ffffff"/>
+    
     <ScrollView
         view_name="scroll"
         view_width="full"
         view_height="full"
         view_orientation="vertical"
+        view_scrollIndicator="NO"
         layout_fixTop="YES"
         layout_marginTop="44">
 <!--        当前等级-->

@@ -18,6 +18,7 @@
     self.title = @"充值";
     
     [self setContentViewWithXML:@"RechargeController.xml"];
+    [self endEditingWithViewTouch:self.contentView];
 }
 
 - (void)onLayoutSubViewsCompleted {

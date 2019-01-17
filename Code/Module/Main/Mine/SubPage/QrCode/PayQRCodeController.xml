@@ -4,10 +4,7 @@
     view_height="full"
     view_orientation="vertical"
     view_background="#ffedeef0">
-    <Navigation
-        view_background="#ff3c465f">
-        
-    </Navigation>
+    <Navigation view_background="#ff3c465f"/>
     <ScrollView
         view_width="full"
         view_height="full"
@@ -140,7 +137,7 @@
             view_width="full"
             view_height="auto"
             view_orientation="vertical"
-            layout_marginTop="22sp">
+            layout_marginTop="18sp">
             <Label
                 view_width="full"
                 view_height="auto"
@@ -154,7 +151,7 @@
                 text_src="二维码货核销码每隔10分钟自动更新！"
                 text_color="#4d4d4d"
                 text_size="13sp"
-                layout_marginTop="15sp">
+                layout_marginTop="12sp">
             </Label>
             <Label
                 view_width="full"
@@ -162,7 +159,7 @@
                 text_src="已经使用过的无法再次使用！"
                 text_color="#4d4d4d"
                 text_size="13sp"
-                layout_marginTop="5sp">
+                layout_marginTop="3sp">
             </Label>
         </LinearLayout>
         

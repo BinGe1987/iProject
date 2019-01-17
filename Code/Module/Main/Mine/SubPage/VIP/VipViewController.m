@@ -18,6 +18,7 @@
     self.title = @"我的会员";
     
     [self setContentViewWithXML:@"VipViewController.xml"];
+    [self endEditingWithViewTouch:self.contentView];
 }
 
 - (void)onLayoutSubViewsCompleted {
