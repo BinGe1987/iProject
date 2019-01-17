@@ -124,14 +124,48 @@
                     <FrameLayout
                         view_width="full"
                         view_height="full"
-                        layout_marginTop="340"
-                        view_background="#00ff00">
-                        
+                        layout_marginTop="340">
+                        <Button
+                            view_name="btn_pay"
+                            view_width="full"
+                            view_height="full"
+                            view_backgroundSelected="#12000000">
+                        </Button>
                     </FrameLayout>
                 </FrameLayout>
                 
             </FrameLayout>
         </FrameLayout>
+        <LinearLayout
+            view_width="full"
+            view_height="auto"
+            view_orientation="vertical"
+            layout_marginTop="22sp">
+            <Label
+                view_width="full"
+                view_height="auto"
+                text_src="消费时请出示二维码或核销码"
+                text_color="#55b4b2"
+                text_size="18sp">
+            </Label>
+            <Label
+                view_width="full"
+                view_height="auto"
+                text_src="二维码货核销码每隔10分钟自动更新！"
+                text_color="#4d4d4d"
+                text_size="13sp"
+                layout_marginTop="15sp">
+            </Label>
+            <Label
+                view_width="full"
+                view_height="auto"
+                text_src="已经使用过的无法再次使用！"
+                text_color="#4d4d4d"
+                text_size="13sp"
+                layout_marginTop="5sp">
+            </Label>
+        </LinearLayout>
+        
     </ScrollView>
 </FrameLayout>
 
