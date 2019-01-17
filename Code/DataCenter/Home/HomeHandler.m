@@ -35,8 +35,8 @@
 - (id)parse:(id)operation withSource:(id)source {
     [self.data setData:source];
     if ([operation isEqualToString:OperationGetHomeDataTech]) {
-        Data *resp = [source jsonWithKey:@"respData"];
-        NSArray *array = [resp arrayWithKey:@"techList"];
+        Data *resp = [source dataWithKey:@"respData"];
+        NSArray *array = [resp arrayWithKeys:@[@"techList", @"list"]];
         [self.data.tech removeAllObjects];
         for (Data *data in array) {
             TechData *cd = [TechData withData:data];

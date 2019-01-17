@@ -9,6 +9,10 @@
 
 @implementation Presenter
 
++ (instancetype)presenterWithView:(UIView *)view {
+    return [[[self class] alloc] initWithView:view];
+}
+
 - (instancetype)initWithView:(UIView *)view {
     return [super init];
 }

@@ -17,7 +17,7 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.handler = [[LoginViewHandler alloc] initWithView:view];
-    self.handler.delegate = self;
+    [self.handler setDelegate:self];
     return self;
 }
 

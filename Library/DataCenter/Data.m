@@ -38,17 +38,6 @@
     self.error = data.error;
 }
 
-- (NSArray *)arrayWithKey:(NSString *)key {
-    NSMutableArray *newArray = [NSMutableArray new];
-    NSArray *array = [self.source objectForKey:key];
-    if (array && [array isKindOfClass:[NSArray class]]) {
-        for (NSDictionary *dic in array) {
-            [newArray addObject:[Data JSONWithDictionary:dic]];
-        }
-    }
-    return newArray;
-}
-
 - (id)dataWithKey:(NSString *)key {
     return [Data JSONWithDictionary:[self.source objectForKey:key]];
 }

@@ -36,6 +36,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 
 - (NSArray *)arrayWithKey:(NSString *)key;
+- (NSArray *)arrayWithKeys:(NSArray *)keys;
 - (id)jsonWithKey:(NSString *)key;
 
 - (void)putObject:(id)object forKey:(NSString *)key;

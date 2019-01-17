@@ -17,7 +17,7 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.handler = [[ClubDetailViewHandler alloc] initWithView:view];
-    self.handler.delegate = self;
+    [self.handler setDelegate:self];
     
     ClubData *club = [view currentViewController].intentData;
     WeakSelf(self)

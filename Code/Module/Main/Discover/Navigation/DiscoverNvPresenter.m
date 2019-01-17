@@ -18,12 +18,12 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.handler = [[DiscoverNvViewHandler alloc] initWithView:view];
-    self.handler.delegate = self;
+    [self.handler setDelegate:self];
     return self;
 }
 
 - (void)onViewAction:(id)action data:(id)data {
-    [self.handler.view currentViewController];
+    [[self.handler view] currentViewController];
     if (self.delegate) {
         [self.delegate onPresenterEvent:action];
     }

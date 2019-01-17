@@ -13,7 +13,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol ViewPagerDelegate <NSObject>
 
+@optional
 - (void)viewPager:(id)viewPager pageIndexDidChanged:(NSInteger)index;
+- (void)viewPager:(id)viewPager contentOffsetDidChanged:(CGPoint)offset;
 
 @end
 

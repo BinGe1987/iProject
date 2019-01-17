@@ -30,6 +30,9 @@
     CGPoint offset = self.contentOffset;
     offset.x = index * self.frame.size.width;
     [self setContentOffset:offset animated:YES];
+    if (self.viewPagerDelegate && [self.viewPagerDelegate respondsToSelector:@selector(viewPager:pageIndexDidChanged:)]) {
+        [self.viewPagerDelegate viewPager:self pageIndexDidChanged:index];
+    }
 }
 
 - (UIView *)pageWithIndex:(NSInteger)index {
@@ -52,8 +55,14 @@
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     int pageNo= scrollView.contentOffset.x/scrollView.frame.size.width;
-    if (self.viewPagerDelegate) {
+    if (self.viewPagerDelegate && [self.viewPagerDelegate respondsToSelector:@selector(viewPager:pageIndexDidChanged:)]) {
         [self.viewPagerDelegate viewPager:self pageIndexDidChanged:pageNo];
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (self.viewPagerDelegate && [self.viewPagerDelegate respondsToSelector:@selector(viewPager:contentOffsetDidChanged:)]) {
+        [self.viewPagerDelegate viewPager:self contentOffsetDidChanged:self.contentOffset];
     }
 }
 

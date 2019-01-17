@@ -18,7 +18,7 @@
     self = [super initWithView:view];
 
     self.handler = [[PublicCommentViewHandler alloc] initWithView:view];
-    self.handler.delegate = self;
+    [self.handler setDelegate:self];
     
 //    [self onViewAction:@"action_public" data:[Store valueForKey:@"test_data_public"]];
     
@@ -26,7 +26,7 @@
 }
 
 - (void)onViewAction:(id)action data:(id)data {
-    UIViewController *vc = [self.handler.view currentViewController];
+    UIViewController *vc = [[self.handler view] currentViewController];
     if ([action isEqualToString:@"action_search"]) {
         NSDictionary *params = @{@"club":vc.intentData,
                                  @"tech":data

@@ -15,15 +15,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface ViewHandler : NSObject
+@protocol IViewHandler <NSObject>
+
+- (void)setDelegate:(id<ViewHandlerDelegate>)delegate;
+- (void)setView:(UIView *)view;
+- (id)view;
+- (void)setData:(id)data;
+
+@end
+
+@interface ViewHandler : NSObject<IViewHandler>
 
 @property (nonatomic, assign) id<ViewHandlerDelegate> delegate;
 
 @property (nonatomic, strong) UIView *view;
 
-- (instancetype)initWithView:(UIView *)view;
++ (instancetype)handlerWithView:(UIView *)view;
++ (instancetype)handlerWithView:(UIView *)view delgate:(_Nullable id<ViewHandlerDelegate>)delgate;
 
-- (void)setData:(id)data;
+- (instancetype)initWithView:(UIView *)view;
 
 @end
 

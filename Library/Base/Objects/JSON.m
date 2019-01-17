@@ -90,9 +90,19 @@
     NSMutableArray *newArray = [NSMutableArray new];
     NSArray *array = [self.source objectForKey:key];
     for (NSDictionary *dic in array) {
-        [newArray addObject:[JSON JSONWithDictionary:dic]];
+        [newArray addObject:[[self class] JSONWithDictionary:dic]];
     }
     return newArray;
+}
+
+- (NSArray *)arrayWithKeys:(NSArray *)keys {
+    for (NSString *key in keys) {
+        NSArray *array = [self arrayWithKey:key];
+        if (array && [array isKindOfClass:[NSArray class]] && array.count > 0) {
+            return array;
+        }
+    }
+    return [NSMutableArray new];
 }
 
 - (id)jsonWithKey:(NSString *)key {

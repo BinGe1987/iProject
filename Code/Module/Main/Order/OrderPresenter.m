@@ -17,7 +17,7 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.handler = [[OrderViewHandler alloc] initWithView:view];
-    self.handler.delegate = self;
+    [self.handler setDelegate:self];
     
     WeakSelf(self)
     [[DataCenter get] perform:OperationGetOrderData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {

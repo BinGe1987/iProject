@@ -17,7 +17,7 @@
 - (instancetype)initWithView:(UIView *)view {
     self = [super initWithView:view];
     self.handler = [[TechDetailViewHandler alloc] initWithView:view];
-    self.handler.delegate = self;
+    [self.handler setDelegate:self];
     
     TechData *tech = [view currentViewController].intentData;
 //    [Store setValue:tech.source forKey:@"test_data"];

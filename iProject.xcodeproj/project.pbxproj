@@ -140,6 +140,8 @@
 		7763869021F0704800572C50 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763868F21F0704800572C50 /* AboutController.m */; };
 		7763869321F0734D00572C50 /* MyFollowController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763869221F0734D00572C50 /* MyFollowController.xml */; };
 		7763869621F0735E00572C50 /* MyFollowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763869521F0735E00572C50 /* MyFollowController.m */; };
+		7763869A21F0802E00572C50 /* MyFollowClubPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763869921F0802E00572C50 /* MyFollowClubPresenter.m */; };
+		7763869D21F0816E00572C50 /* MyFollowClubViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763869C21F0816E00572C50 /* MyFollowClubViewHandler.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -709,6 +711,10 @@
 		7763869221F0734D00572C50 /* MyFollowController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyFollowController.xml; sourceTree = "<group>"; };
 		7763869421F0735E00572C50 /* MyFollowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowController.h; sourceTree = "<group>"; };
 		7763869521F0735E00572C50 /* MyFollowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowController.m; sourceTree = "<group>"; };
+		7763869821F0802E00572C50 /* MyFollowClubPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowClubPresenter.h; sourceTree = "<group>"; };
+		7763869921F0802E00572C50 /* MyFollowClubPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowClubPresenter.m; sourceTree = "<group>"; };
+		7763869B21F0816E00572C50 /* MyFollowClubViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowClubViewHandler.h; sourceTree = "<group>"; };
+		7763869C21F0816E00572C50 /* MyFollowClubViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowClubViewHandler.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -2042,11 +2048,23 @@
 		7763869121F0733700572C50 /* MyFollow */ = {
 			isa = PBXGroup;
 			children = (
+				7763869721F07FEB00572C50 /* Club */,
 				7763869421F0735E00572C50 /* MyFollowController.h */,
 				7763869521F0735E00572C50 /* MyFollowController.m */,
 				7763869221F0734D00572C50 /* MyFollowController.xml */,
 			);
 			path = MyFollow;
+			sourceTree = "<group>";
+		};
+		7763869721F07FEB00572C50 /* Club */ = {
+			isa = PBXGroup;
+			children = (
+				7763869821F0802E00572C50 /* MyFollowClubPresenter.h */,
+				7763869921F0802E00572C50 /* MyFollowClubPresenter.m */,
+				7763869B21F0816E00572C50 /* MyFollowClubViewHandler.h */,
+				7763869C21F0816E00572C50 /* MyFollowClubViewHandler.m */,
+			);
+			path = Club;
 			sourceTree = "<group>";
 		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
@@ -3844,6 +3862,7 @@
 				77FAA12A21EC849D0099473E /* TZVideoPlayerController.m in Sources */,
 				77EA8F5921B90227001B8959 /* TextViewParams.m in Sources */,
 				77B054CC21CA55E70045A489 /* LabelViewModel.m in Sources */,
+				7763869A21F0802E00572C50 /* MyFollowClubPresenter.m in Sources */,
 				77CEA4F921D4C2DD00B388E4 /* DiscoverHandler.m in Sources */,
 				77EA8F8D21B90A18001B8959 /* HomeHandler.m in Sources */,
 				77AC224F21D7D07600C0B7E8 /* UIViewController+XML.m in Sources */,
@@ -3978,6 +3997,7 @@
 				77A8B63A21E4E72B00BC8C70 /* ClassifyViewHandler.m in Sources */,
 				77B0545021C943760045A489 /* YYImage.m in Sources */,
 				77EA8F7321B90227001B8959 /* UIEngine.m in Sources */,
+				7763869D21F0816E00572C50 /* MyFollowClubViewHandler.m in Sources */,
 				77EA8F4721B90226001B8959 /* TextViewModel.m in Sources */,
 				77FAA10621EC704D0099473E /* PublicCommentViewHandler.m in Sources */,
 				77A38A0421DF2BCD00042B04 /* ProfileEditController.m in Sources */,

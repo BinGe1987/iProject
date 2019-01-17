@@ -1,12 +1,88 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<FrameLayout
+<LinearLayout
     view_name="root"
     view_width="full"
-    view_height="full"
+    view_orientation="vertical"
     view_background="#f0f0f0">
     
     <Navigation view_background="#ffffff"/>
     
-</FrameLayout>
+    <FrameLayout
+        view_width="full"
+        view_height="27sp"
+        view_orientation="horizontal"
+        view_background="#ffffff"
+        layout_marginTop="0.2"
+        layout_marginBottom="1">
+        
+        <Button
+            view_name="btn_club"
+            view_width="50%"
+            view_height="full"
+            text_src="商户"
+            text_color="#000000"
+            text_colorSelected="55b4b2"
+            text_size="13sp">
+        </Button>
+        <Button
+            view_name="btn_club1"
+            view_width="50%"
+            view_height="full"
+            view_backgroundSelected="#12000000">
+        </Button>
+        <Button
+            view_name="btn_tech"
+            view_width="50%"
+            view_height="full"
+            text_src="技师"
+            text_color="#000000"
+            text_colorSelected="55b4b2"
+            text_size="13sp"
+            layout_gravity="right">
+        </Button>
+        <Button
+            view_name="btn_tech1"
+            view_width="50%"
+            view_height="full"
+            layout_gravity="right"
+            view_backgroundSelected="#12000000">
+        </Button>
+        <View
+            view_name="view_selected"
+            view_width="50%"
+            view_height="2sp"
+            layout_gravity="bottom"
+            view_background="#55b4b2">
+        </View>
+
+    </FrameLayout>
+    
+    <ViewPager
+        view_name="pager"
+        view_width="full"
+        view_height="full">
+
+        <FrameLayout
+            view_name="page_club"
+            view_width="full"
+            view_height="full">
+            <TableView
+                view_name="table"
+                view_width="full"
+                view_height="full"/>
+        </FrameLayout>
+        <FrameLayout
+            view_name="page_tech"
+            view_width="full"
+            view_height="full">
+            <TableView
+                view_name="table"
+                view_width="full"
+                view_height="full"/>
+        </FrameLayout>
+
+    </ViewPager>
+    
+</LinearLayout>
 
 

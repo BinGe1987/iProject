@@ -20,7 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign) id<PresenterDelegate> delegate;
 
-@property (nonatomic, strong) ViewHandler *handler;
+@property (nonatomic, strong) id handler;
+
++ (instancetype)presenterWithView:(UIView *)view;
 
 - (instancetype)initWithView:(UIView *)view;
 
