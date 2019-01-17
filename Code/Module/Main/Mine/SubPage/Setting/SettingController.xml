@@ -44,6 +44,7 @@
         selector_leftText="清理缓存"
         selector_arrow="NO"/>
     <CustomView
+        view_name="selector_about"
         view_class="SelectorItem"
         view_width="full"
         view_height="48sp"

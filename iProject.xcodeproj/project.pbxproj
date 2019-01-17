@@ -136,6 +136,8 @@
 		7763868521F05A9F00572C50 /* VipViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763868421F05A9F00572C50 /* VipViewController.xml */; };
 		7763868721F063E000572C50 /* ContactController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763868621F063E000572C50 /* ContactController.xml */; };
 		7763868A21F0664A00572C50 /* ContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763868921F0664A00572C50 /* ContactController.m */; };
+		7763868D21F0702F00572C50 /* AboutController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763868C21F0702F00572C50 /* AboutController.xml */; };
+		7763869021F0704800572C50 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763868F21F0704800572C50 /* AboutController.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -699,6 +701,9 @@
 		7763868621F063E000572C50 /* ContactController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ContactController.xml; sourceTree = "<group>"; };
 		7763868821F0664A00572C50 /* ContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactController.h; sourceTree = "<group>"; };
 		7763868921F0664A00572C50 /* ContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactController.m; sourceTree = "<group>"; };
+		7763868C21F0702F00572C50 /* AboutController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AboutController.xml; sourceTree = "<group>"; };
+		7763868E21F0704800572C50 /* AboutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		7763868F21F0704800572C50 /* AboutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -2018,6 +2023,16 @@
 			path = VIP;
 			sourceTree = "<group>";
 		};
+		7763868B21F06E0D00572C50 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				7763868E21F0704800572C50 /* AboutController.h */,
+				7763868F21F0704800572C50 /* AboutController.m */,
+				7763868C21F0702F00572C50 /* AboutController.xml */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -2102,13 +2117,14 @@
 		77A38A0121DF2BAA00042B04 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				77A38A0721DF2F2500042B04 /* Setting */,
 				7763868021F05A8100572C50 /* VIP */,
 				7763867921F0234F00572C50 /* Recharge */,
 				77A38A0D21DF2FDD00042B04 /* QrCode */,
-				77A38A0721DF2F2500042B04 /* Setting */,
 				77A38A0021DF2A2000042B04 /* Eidt */,
 				7763867321EF7E7B00572C50 /* Feedback */,
 				7763867F21F0251000572C50 /* Contact */,
+				7763868B21F06E0D00572C50 /* About */,
 			);
 			path = SubPage;
 			sourceTree = "<group>";
@@ -3572,6 +3588,7 @@
 				77FAA0C221E90ED00099473E /* HomeNavigation.xml in Resources */,
 				77CEA56E21D6588C00B388E4 /* OrderCellItem.json in Resources */,
 				771CA41921DDBE5900B00F11 /* CommentItem.xml in Resources */,
+				7763868D21F0702F00572C50 /* AboutController.xml in Resources */,
 				771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */,
 				77A389FF21DF26D000042B04 /* WebVewController.xml in Resources */,
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
@@ -3780,6 +3797,7 @@
 				771CA36D21D8AC1C00B00F11 /* LoginPresenter.m in Sources */,
 				77A389FD21DF17EF00042B04 /* NavigationViewModel.m in Sources */,
 				77B054BD21CA51740045A489 /* InputViewModel.m in Sources */,
+				7763869021F0704800572C50 /* AboutController.m in Sources */,
 				77FAA14321ECCF4F0099473E /* NavigationItemViewModel.m in Sources */,
 				77CEA56521D64C2C00B388E4 /* OrderPerformer.m in Sources */,
 				77B0545521C943760045A489 /* UIButton+YYWebImage.m in Sources */,

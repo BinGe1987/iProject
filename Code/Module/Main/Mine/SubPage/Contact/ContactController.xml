@@ -5,6 +5,8 @@
     view_height="full"
     view_background="#fff0f0f0">
     
+    <Navigation view_background="#ffffff"/>
+    
     <LinearLayout
         view_width="full"
         view_height="auto"

@@ -33,6 +33,11 @@
     [contact setItemClickBlock:^(id  _Nonnull target) {
         [UIViewController pushController:@"ContactController" animated:YES data:nil];
     }];
+    
+    SelectorItem *about = (SelectorItem *)[self findViewByName:@"selector_about"];
+    [about setItemClickBlock:^(id  _Nonnull target) {
+        [UIViewController pushController:@"AboutController" animated:YES data:nil];
+    }];
 }
 
 

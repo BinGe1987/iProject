@@ -32,6 +32,9 @@
                 Log(@"自动登录完成。。。");
                 [button dismissViewControllerAnimated:YES completion:nil];
             }
+            else {
+                NSLog(@"%@", data);
+            }
         }];
 //        [button dismissViewControllerAnimated:YES completion:nil];
 //        UserData *user = [DataCenter get].userData;
