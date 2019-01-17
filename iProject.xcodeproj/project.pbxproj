@@ -130,6 +130,8 @@
 		7763867221EF7A2900572C50 /* EditPhoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763867121EF7A2900572C50 /* EditPhoneController.m */; };
 		7763867621EF7E9A00572C50 /* FeedbackController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763867521EF7E9A00572C50 /* FeedbackController.m */; };
 		7763867821EF7EA200572C50 /* FeedbackController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763867721EF7EA200572C50 /* FeedbackController.xml */; };
+		7763867B21F0236700572C50 /* RechargeController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763867A21F0236700572C50 /* RechargeController.xml */; };
+		7763867E21F0237800572C50 /* RechargeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763867D21F0237800572C50 /* RechargeController.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -684,6 +686,9 @@
 		7763867421EF7E9A00572C50 /* FeedbackController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedbackController.h; sourceTree = "<group>"; };
 		7763867521EF7E9A00572C50 /* FeedbackController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedbackController.m; sourceTree = "<group>"; };
 		7763867721EF7EA200572C50 /* FeedbackController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = FeedbackController.xml; sourceTree = "<group>"; };
+		7763867A21F0236700572C50 /* RechargeController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RechargeController.xml; sourceTree = "<group>"; };
+		7763867C21F0237800572C50 /* RechargeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RechargeController.h; sourceTree = "<group>"; };
+		7763867D21F0237800572C50 /* RechargeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RechargeController.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1973,6 +1978,23 @@
 			path = Feedback;
 			sourceTree = "<group>";
 		};
+		7763867921F0234F00572C50 /* Recharge */ = {
+			isa = PBXGroup;
+			children = (
+				7763867C21F0237800572C50 /* RechargeController.h */,
+				7763867D21F0237800572C50 /* RechargeController.m */,
+				7763867A21F0236700572C50 /* RechargeController.xml */,
+			);
+			path = Recharge;
+			sourceTree = "<group>";
+		};
+		7763867F21F0251000572C50 /* Upgrade */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Upgrade;
+			sourceTree = "<group>";
+		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -2057,6 +2079,8 @@
 		77A38A0121DF2BAA00042B04 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				7763867F21F0251000572C50 /* Upgrade */,
+				7763867921F0234F00572C50 /* Recharge */,
 				77A38A0D21DF2FDD00042B04 /* QrCode */,
 				77A38A0721DF2F2500042B04 /* Setting */,
 				77A38A0021DF2A2000042B04 /* Eidt */,
@@ -3553,6 +3577,7 @@
 				7723E1C421D73F6500B77890 /* Login.xml in Resources */,
 				771CA39F21DC758200B00F11 /* ClubDetail.xml in Resources */,
 				771CA3DD21DCC5B600B00F11 /* ClubDetailTech.xml in Resources */,
+				7763867B21F0236700572C50 /* RechargeController.xml in Resources */,
 				77FAA0D021EA133C0099473E /* SearchHistoryItem.xml in Resources */,
 				77A38A2121DF6BA800042B04 /* Home.xml in Resources */,
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
@@ -3696,6 +3721,7 @@
 				771CA38921D94EB800B00F11 /* DOPDropDownMenu.m in Sources */,
 				771CA42321DDC2F500B00F11 /* CommentListHandler.m in Sources */,
 				77B053D821C8C53F0045A489 /* NetConfig.m in Sources */,
+				7763867E21F0237800572C50 /* RechargeController.m in Sources */,
 				771CA41F21DDC23E00B00F11 /* CommentViewHandler.m in Sources */,
 				771CA3D521DCC1FC00B00F11 /* ClubDetailAdCell.m in Sources */,
 				774F017421B9728900CB482F /* MineViewController.m in Sources */,

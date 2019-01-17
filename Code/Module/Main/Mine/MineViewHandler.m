@@ -60,6 +60,12 @@
     //我的积分
     UILabel *points = (UILabel *)[self.view findViewByName:@"label_points"];
     points.text = [NSString stringWithFormat:@"我的积分: %ld", user.points.nowPoints];
+    
+    //#################level#################
+    UIButton *rechargeBtn = [self.view findViewByName:@"btn_recharge"];
+    [rechargeBtn setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"RechargeController" animated:YES data:nil];
+    }];
 }
 
 @end
