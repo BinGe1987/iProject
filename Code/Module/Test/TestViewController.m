@@ -33,6 +33,7 @@
             [UIViewController pushController:@"RechargeController" animated:YES data:nil];
 //            [UIViewController pushController:@"NiceNameEditController" animated:YES data:nil];
         } else {
+            NSLog(@"%@",data);
             [UIViewController presentController:@"LoginViewController" animated:NO data:nil completion:nil];
         }
     }];
