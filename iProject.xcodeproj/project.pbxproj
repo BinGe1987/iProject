@@ -132,6 +132,8 @@
 		7763867821EF7EA200572C50 /* FeedbackController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763867721EF7EA200572C50 /* FeedbackController.xml */; };
 		7763867B21F0236700572C50 /* RechargeController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763867A21F0236700572C50 /* RechargeController.xml */; };
 		7763867E21F0237800572C50 /* RechargeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763867D21F0237800572C50 /* RechargeController.m */; };
+		7763868321F05A9500572C50 /* VipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763868221F05A9500572C50 /* VipViewController.m */; };
+		7763868521F05A9F00572C50 /* VipViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763868421F05A9F00572C50 /* VipViewController.xml */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -689,6 +691,9 @@
 		7763867A21F0236700572C50 /* RechargeController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = RechargeController.xml; sourceTree = "<group>"; };
 		7763867C21F0237800572C50 /* RechargeController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RechargeController.h; sourceTree = "<group>"; };
 		7763867D21F0237800572C50 /* RechargeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RechargeController.m; sourceTree = "<group>"; };
+		7763868121F05A9500572C50 /* VipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VipViewController.h; sourceTree = "<group>"; };
+		7763868221F05A9500572C50 /* VipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VipViewController.m; sourceTree = "<group>"; };
+		7763868421F05A9F00572C50 /* VipViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VipViewController.xml; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1995,6 +2000,16 @@
 			path = Upgrade;
 			sourceTree = "<group>";
 		};
+		7763868021F05A8100572C50 /* VIP */ = {
+			isa = PBXGroup;
+			children = (
+				7763868121F05A9500572C50 /* VipViewController.h */,
+				7763868221F05A9500572C50 /* VipViewController.m */,
+				7763868421F05A9F00572C50 /* VipViewController.xml */,
+			);
+			path = VIP;
+			sourceTree = "<group>";
+		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -2079,6 +2094,7 @@
 		77A38A0121DF2BAA00042B04 /* SubPage */ = {
 			isa = PBXGroup;
 			children = (
+				7763868021F05A8100572C50 /* VIP */,
 				7763867F21F0251000572C50 /* Upgrade */,
 				7763867921F0234F00572C50 /* Recharge */,
 				77A38A0D21DF2FDD00042B04 /* QrCode */,
@@ -3551,6 +3567,7 @@
 				771CA38A21D94EB800B00F11 /* DOPDropDownMenu-Enhanced.xcassets in Resources */,
 				77A389FF21DF26D000042B04 /* WebVewController.xml in Resources */,
 				77B0557E21D120DE0045A489 /* TabMapping.xml in Resources */,
+				7763868521F05A9F00572C50 /* VipViewController.xml in Resources */,
 				77A8B63121E4A1EC00BC8C70 /* DiscoverTech.xml in Resources */,
 				77CEA53621D515A100B388E4 /* DiscoverTechCellItem.json in Resources */,
 				77A8B62F21E4A0C600BC8C70 /* DiscoverClub.xml in Resources */,
@@ -3683,6 +3700,7 @@
 				77B0545621C943760045A489 /* UIImageView+YYWebImage.m in Sources */,
 				776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */,
 				771CA42921DDC32400B00F11 /* CommentListData.m in Sources */,
+				7763868321F05A9500572C50 /* VipViewController.m in Sources */,
 				77B0552B21CE8AE30045A489 /* BaseModule.m in Sources */,
 				7780FEC121E8C1270045ABC5 /* SearchNavigationController.m in Sources */,
 				775B15F221C7D4AC00B8D6FF /* UIViewController+ContentView.m in Sources */,

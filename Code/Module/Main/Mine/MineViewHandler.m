@@ -62,6 +62,10 @@
     points.text = [NSString stringWithFormat:@"我的积分: %ld", user.points.nowPoints];
     
     //#################level#################
+    UIButton *vipBtn = [self.view findViewByName:@"btn_vip"];
+    [vipBtn setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"VipViewController" animated:YES data:nil];
+    }];
     UIButton *rechargeBtn = [self.view findViewByName:@"btn_recharge"];
     [rechargeBtn setClickBlock:^(UIButton * _Nonnull button) {
         [UIViewController pushController:@"RechargeController" animated:YES data:nil];
