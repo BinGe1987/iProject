@@ -70,6 +70,16 @@
     [rechargeBtn setClickBlock:^(UIButton * _Nonnull button) {
         [UIViewController pushController:@"RechargeController" animated:YES data:nil];
     }];
+    rechargeBtn = [self.view findViewByName:@"recharge"];
+    [rechargeBtn setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"RechargeController" animated:YES data:nil];
+    }];
+    
+    
+    UIButton *followBtn = [self.view findViewByName:@"btn_follow"];
+    [followBtn setClickBlock:^(UIButton * _Nonnull button) {
+        [UIViewController pushController:@"MyFollowController" animated:YES data:nil];
+    }];
 }
 
 @end

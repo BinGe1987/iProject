@@ -138,6 +138,8 @@
 		7763868A21F0664A00572C50 /* ContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763868921F0664A00572C50 /* ContactController.m */; };
 		7763868D21F0702F00572C50 /* AboutController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763868C21F0702F00572C50 /* AboutController.xml */; };
 		7763869021F0704800572C50 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763868F21F0704800572C50 /* AboutController.m */; };
+		7763869321F0734D00572C50 /* MyFollowController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763869221F0734D00572C50 /* MyFollowController.xml */; };
+		7763869621F0735E00572C50 /* MyFollowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763869521F0735E00572C50 /* MyFollowController.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -704,6 +706,9 @@
 		7763868C21F0702F00572C50 /* AboutController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AboutController.xml; sourceTree = "<group>"; };
 		7763868E21F0704800572C50 /* AboutController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
 		7763868F21F0704800572C50 /* AboutController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		7763869221F0734D00572C50 /* MyFollowController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyFollowController.xml; sourceTree = "<group>"; };
+		7763869421F0735E00572C50 /* MyFollowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowController.h; sourceTree = "<group>"; };
+		7763869521F0735E00572C50 /* MyFollowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowController.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1356,6 +1361,7 @@
 				771CA39D21DC730800B00F11 /* ClubDetail */,
 				771CA3A021DC989900B00F11 /* TechDetail */,
 				771CA41221DDB1CF00B00F11 /* Comment */,
+				7763869121F0733700572C50 /* MyFollow */,
 			);
 			path = SubPage;
 			sourceTree = "<group>";
@@ -2031,6 +2037,16 @@
 				7763868C21F0702F00572C50 /* AboutController.xml */,
 			);
 			path = About;
+			sourceTree = "<group>";
+		};
+		7763869121F0733700572C50 /* MyFollow */ = {
+			isa = PBXGroup;
+			children = (
+				7763869421F0735E00572C50 /* MyFollowController.h */,
+				7763869521F0735E00572C50 /* MyFollowController.m */,
+				7763869221F0734D00572C50 /* MyFollowController.xml */,
+			);
+			path = MyFollow;
 			sourceTree = "<group>";
 		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
@@ -3571,6 +3587,7 @@
 				7739C41821E782B60052D2CA /* back.png in Resources */,
 				77CEA55121D5FE0F00B388E4 /* MineWelfare.json in Resources */,
 				7780FEBE21E8C00F0045ABC5 /* SearchController.xml in Resources */,
+				7763869321F0734D00572C50 /* MyFollowController.xml in Resources */,
 				77C3977321E440AC0016CEE3 /* ClassifyViewController.xml in Resources */,
 				77A8B64621E4EAB000BC8C70 /* ClassifyNavigation.xml in Resources */,
 				77CEA4C021D3BD8700B388E4 /* ClubCellHeader.json in Resources */,
@@ -3666,6 +3683,7 @@
 				77EA8F5321B90226001B8959 /* UIViewController+JSON.m in Sources */,
 				77EA8F6D21B90227001B8959 /* UIView+View.m in Sources */,
 				7786D5E121ECEC1600A18AC3 /* PublicCommentTechListCell.m in Sources */,
+				7763869621F0735E00572C50 /* MyFollowController.m in Sources */,
 				77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */,
 				771CA3FF21DD0D1800B00F11 /* TechDetailPerformer.m in Sources */,
 				7734C11821D23A45009D1EE8 /* UIScrollView+KafkaRefreshControl.m in Sources */,
