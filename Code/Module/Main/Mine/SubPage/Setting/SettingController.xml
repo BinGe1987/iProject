@@ -25,6 +25,7 @@
         view_height="48sp"
         selector_leftText="意见反馈"/>
     <CustomView
+        view_name="selector_contact"
         view_class="SelectorItem"
         view_width="full"
         view_height="48sp"

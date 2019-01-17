@@ -134,6 +134,8 @@
 		7763867E21F0237800572C50 /* RechargeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763867D21F0237800572C50 /* RechargeController.m */; };
 		7763868321F05A9500572C50 /* VipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763868221F05A9500572C50 /* VipViewController.m */; };
 		7763868521F05A9F00572C50 /* VipViewController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763868421F05A9F00572C50 /* VipViewController.xml */; };
+		7763868721F063E000572C50 /* ContactController.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7763868621F063E000572C50 /* ContactController.xml */; };
+		7763868A21F0664A00572C50 /* ContactController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7763868921F0664A00572C50 /* ContactController.m */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -694,6 +696,9 @@
 		7763868121F05A9500572C50 /* VipViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VipViewController.h; sourceTree = "<group>"; };
 		7763868221F05A9500572C50 /* VipViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VipViewController.m; sourceTree = "<group>"; };
 		7763868421F05A9F00572C50 /* VipViewController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = VipViewController.xml; sourceTree = "<group>"; };
+		7763868621F063E000572C50 /* ContactController.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ContactController.xml; sourceTree = "<group>"; };
+		7763868821F0664A00572C50 /* ContactController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactController.h; sourceTree = "<group>"; };
+		7763868921F0664A00572C50 /* ContactController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactController.m; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1993,11 +1998,14 @@
 			path = Recharge;
 			sourceTree = "<group>";
 		};
-		7763867F21F0251000572C50 /* Upgrade */ = {
+		7763867F21F0251000572C50 /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				7763868821F0664A00572C50 /* ContactController.h */,
+				7763868921F0664A00572C50 /* ContactController.m */,
+				7763868621F063E000572C50 /* ContactController.xml */,
 			);
-			path = Upgrade;
+			path = Contact;
 			sourceTree = "<group>";
 		};
 		7763868021F05A8100572C50 /* VIP */ = {
@@ -2095,12 +2103,12 @@
 			isa = PBXGroup;
 			children = (
 				7763868021F05A8100572C50 /* VIP */,
-				7763867F21F0251000572C50 /* Upgrade */,
 				7763867921F0234F00572C50 /* Recharge */,
 				77A38A0D21DF2FDD00042B04 /* QrCode */,
 				77A38A0721DF2F2500042B04 /* Setting */,
 				77A38A0021DF2A2000042B04 /* Eidt */,
 				7763867321EF7E7B00572C50 /* Feedback */,
+				7763867F21F0251000572C50 /* Contact */,
 			);
 			path = SubPage;
 			sourceTree = "<group>";
@@ -3575,6 +3583,7 @@
 				77CEA4B621D3A76500B388E4 /* TechCellHeader.json in Resources */,
 				77EA8F3721B90226001B8959 /* readme-mvp in Resources */,
 				77CEA4C221D3BF5B00B388E4 /* ClubCellItem.json in Resources */,
+				7763868721F063E000572C50 /* ContactController.xml in Resources */,
 				77CEA55821D649D300B388E4 /* Order.json in Resources */,
 				77B0544821C943760045A489 /* README.md in Resources */,
 				771CA3E521DCDF8A00B00F11 /* ClubDetailTechItem.xml in Resources */,
@@ -3882,6 +3891,7 @@
 				775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */,
 				77A389E621DE554C00042B04 /* RechargeData.m in Sources */,
 				7734C11721D23A45009D1EE8 /* KafkaFootRefreshControl.m in Sources */,
+				7763868A21F0664A00572C50 /* ContactController.m in Sources */,
 				77FAA12C21EC849D0099473E /* NSBundle+TZImagePicker.m in Sources */,
 				771CA43D21DDFB7300B00F11 /* HttpRequest.m in Sources */,
 				77CEA4EA21D4B79300B388E4 /* DiscoverNvPresenter.m in Sources */,

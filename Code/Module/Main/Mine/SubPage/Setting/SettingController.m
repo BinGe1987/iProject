@@ -28,6 +28,11 @@
     [feedback setItemClickBlock:^(id  _Nonnull target) {
         [UIViewController pushController:@"FeedbackController" animated:YES data:nil];
     }];
+    
+    SelectorItem *contact = (SelectorItem *)[self findViewByName:@"selector_contact"];
+    [contact setItemClickBlock:^(id  _Nonnull target) {
+        [UIViewController pushController:@"ContactController" animated:YES data:nil];
+    }];
 }
 
 
