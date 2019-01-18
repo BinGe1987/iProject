@@ -33,7 +33,11 @@
     WeakSelf(self)
     if ([action isEqualToString:@"action_follow"]) {
         [[DataCenter get] perform:OperationFollowClub params:data callback:^(id  _Nonnull operation, id  _Nullable data) {
-            [weakself.handler setData:data];
+            if ([data isKindOfClass:[ClubData class]]) {
+                [weakself.handler followStatus:(ClubData *)data];
+            } else {
+                
+            }
         }];
     } else {
         [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {

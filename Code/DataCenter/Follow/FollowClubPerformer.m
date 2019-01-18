@@ -33,8 +33,11 @@
     data.error = response.error;
     if ([data isSuccess]) {
         club.isFollow = !club.isFollow;
+        return club;
+    } else {
+        return data;
     }
-    return club;
+    
 }
 
 - (id)getFollowClubList:(id)params {

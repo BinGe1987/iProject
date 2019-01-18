@@ -11,7 +11,7 @@
 @interface ClubDetailViewHandler()
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIButton *commentButton, *followButton;
+@property (nonatomic, strong) UIButton *commentButton, *followButtonTop, *followButtonBottom;
 @property (nonatomic, assign) BOOL first;
 
 @end
@@ -38,18 +38,25 @@
     }];
     [self.tableView beginHeadRefreshing];
     
-    self.followButton = [[self.view currentViewController].navigationView findViewByName:@"btn_follow"];
+    self.followButtonBottom = [[self.view currentViewController].navigationView findViewByName:@"btn_follow_bottom"];
+    self.followButtonBottom.userInteractionEnabled = NO;
+    
     ClubData *club = [self.view currentViewController].intentData;
-    self.followButton.selected = club.isFollow;
-    [self.followButton setClickBlock:^(UIButton * _Nonnull button) {
+    self.followButtonTop = [[self.view currentViewController].navigationView findViewByName:@"btn_follow_top"];
+    self.followButtonTop.userInteractionEnabled = NO;
+    [self.followButtonTop setClickBlock:^(UIButton * _Nonnull button) {
         [weakself.delegate onViewAction:@"action_follow" data:club];
+        button.userInteractionEnabled = NO;
+        [weakself showNetworkActivityIndicatorVisible:YES];
     }];
     
     return self;
 }
 
 - (void)followStatus:(ClubData *)club {
-    self.followButton.selected = club.isFollow;
+    self.followButtonBottom.selected = club.isFollow;
+    self.followButtonTop.userInteractionEnabled = YES;
+    [self showNetworkActivityIndicatorVisible:NO];
 }
 
 - (void)setData:(id)data {
@@ -59,9 +66,14 @@
         return;
     }
     
-    ClubDetailData *detailData = (ClubDetailData *)data;
-    NSMutableArray *sectionArray = [NSMutableArray new];
     
+    ClubDetailData *detailData = (ClubDetailData *)data;
+    ClubData *club = [self.view currentViewController].intentData;
+    club.isFollow = detailData.clubData.isFollow;
+    [self followStatus:club];
+    
+    
+    NSMutableArray *sectionArray = [NSMutableArray new];
     //banner
     if (detailData.clubData.bannerList.list && detailData.clubData.bannerList.list.count > 0) {
         TableViewSection *bannerSection = [[TableViewSection alloc] initWithDictionary: @{@"name": @"banner", @"array": @[detailData.clubData.bannerList.list], @"height" : [NSNumber numberWithFloat:ScaleValue(188)]}];

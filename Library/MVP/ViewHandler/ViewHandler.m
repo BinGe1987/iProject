@@ -31,4 +31,8 @@
     
 }
 
+- (void)showNetworkActivityIndicatorVisible:(BOOL)visible {
+    [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:visible];
+}
+
 @end

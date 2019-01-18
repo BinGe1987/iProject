@@ -35,6 +35,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (instancetype)initWithView:(UIView *)view;
 
+- (void)showNetworkActivityIndicatorVisible:(BOOL)visible;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ClubDetailViewHandler : ViewHandler
 
+- (void)followStatus:(ClubData *)club;
+
 @end
 
 NS_ASSUME_NONNULL_END
