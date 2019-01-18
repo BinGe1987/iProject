@@ -26,8 +26,12 @@
 - (void)onFocus {
     NSLog(@"on focus : %@",self);
     if (!self.listData) {
+        WeakSelf(self)
         [DataCenter perform:OperationGetMineFollowClubData params:nil callback:^(id  _Nonnull operation, Data * _Nullable data) {
-            
+            if ([data isSuccess]) {
+                weakself.listData = (ListData *)data;
+                [self.handler setClubList:weakself.listData];
+            }
         }];
     }
 }

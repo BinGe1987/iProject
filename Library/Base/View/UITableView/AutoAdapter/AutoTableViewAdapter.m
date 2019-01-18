@@ -47,6 +47,7 @@
     if (!cell) {
 //        NSLog(@"tableViewcellForRowAtIndexPath: %@", indexPath);
         cell = [[section.cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        [cell initSubviews];
     }
     if (!self.cellCache) {
         self.cellCache = [NSMutableDictionary new];
@@ -61,7 +62,7 @@
     [self.cellCache removeObjectForKey:indexPath];
     [cell setCellData:section.dataArray[indexPath.row]];
 //    NSLog(@"tableViewheightForRowAtIndexPath:%@ %f", indexPath, cell.cellHeight);
-    return cell.cellHeight;
+    return [cell cellHeight];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

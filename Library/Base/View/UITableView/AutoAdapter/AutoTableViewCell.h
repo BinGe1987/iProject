@@ -11,9 +11,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface AutoTableViewCell : UITableViewCell
 
+@property (nonatomic, copy) id data;
+
 @property (nonatomic, assign) CGFloat cellHeight;
 
 - (UITableView *)myTableView;
+
+- (void)initSubviews;
 
 - (void)setCellData:(id)data;
 

@@ -17,6 +17,10 @@
     return (UITableView *)tableView;
 }
 
+- (void)initSubviews {
+    
+}
+
 - (void)setCellData:(id)data {
     
 }

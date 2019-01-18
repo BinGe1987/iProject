@@ -85,7 +85,7 @@
     
 //#warning TODO 调试
 //    [self performSelector:@selector(debug) withObject:nil afterDelay:3];
-//    main.selectedIndex = 3;
+    main.selectedIndex = 3;
 }
 
 - (void)debug {

@@ -43,7 +43,9 @@
 
 #pragma make 我的页面相关
 #define API_MineGetMineData             (@"/ydd-manager/api/v1/personalInfo/getPerInfoDetail")      //获取我的页面数据
-#define API_MineFollow                  (@"/ydd-manager/api/v1/myFollow/follow/userRelation")        //关注
+#define API_MineFollow                  (@"/ydd-manager/api/v1/myFollow/follow/userRelation")       //关注
+#define API_MineFollowClub              (@"/ydd-manager/api/v1/myFollow/club/list")                 //关注会所列表
+#define API_MineFollowTech              (@"/ydd-manager/api/v1/myFollow/tech/list")                 //关注技师列表
 
 
 

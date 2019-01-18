@@ -149,6 +149,8 @@
 		776386AE21F0C02F00572C50 /* MyFollowTechViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386AD21F0C02F00572C50 /* MyFollowTechViewHandler.m */; };
 		776386B021F0CD4C00572C50 /* ClubDetailNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 776386AF21F0CD4C00572C50 /* ClubDetailNavigation.xml */; };
 		7765CCA321F17E81007AAD5D /* TechDetailNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7765CCA221F17E81007AAD5D /* TechDetailNavigation.xml */; };
+		7765CCA621F1ADAE007AAD5D /* MyFollowClubCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7765CCA521F1ADAE007AAD5D /* MyFollowClubCell.m */; };
+		7765CCA821F1B215007AAD5D /* MyFollowClubCell.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7765CCA721F1B215007AAD5D /* MyFollowClubCell.xml */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -734,6 +736,9 @@
 		776386AD21F0C02F00572C50 /* MyFollowTechViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowTechViewHandler.m; sourceTree = "<group>"; };
 		776386AF21F0CD4C00572C50 /* ClubDetailNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailNavigation.xml; sourceTree = "<group>"; };
 		7765CCA221F17E81007AAD5D /* TechDetailNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechDetailNavigation.xml; sourceTree = "<group>"; };
+		7765CCA421F1ADAE007AAD5D /* MyFollowClubCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowClubCell.h; sourceTree = "<group>"; };
+		7765CCA521F1ADAE007AAD5D /* MyFollowClubCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowClubCell.m; sourceTree = "<group>"; };
+		7765CCA721F1B215007AAD5D /* MyFollowClubCell.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = MyFollowClubCell.xml; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -2085,6 +2090,9 @@
 				7763869921F0802E00572C50 /* MyFollowClubPresenter.m */,
 				7763869B21F0816E00572C50 /* MyFollowClubViewHandler.h */,
 				7763869C21F0816E00572C50 /* MyFollowClubViewHandler.m */,
+				7765CCA421F1ADAE007AAD5D /* MyFollowClubCell.h */,
+				7765CCA521F1ADAE007AAD5D /* MyFollowClubCell.m */,
+				7765CCA721F1B215007AAD5D /* MyFollowClubCell.xml */,
 			);
 			path = Club;
 			sourceTree = "<group>";
@@ -3693,6 +3701,7 @@
 				77CEA54B21D5ED8300B388E4 /* MineProfile.json in Resources */,
 				7786D5E321ECF53300A18AC3 /* PublicCommentTechListCell.xml in Resources */,
 				7763866B21EF72A200572C50 /* NiceNameEditController.xml in Resources */,
+				7765CCA821F1B215007AAD5D /* MyFollowClubCell.xml in Resources */,
 				77CEA4F021D4BC1600B388E4 /* DiscoverNavigation.json in Resources */,
 				77A38A1F21DF41E100042B04 /* SelectorItem.xml in Resources */,
 				77B0557621D0DE6A0045A489 /* collocation.json in Resources */,
@@ -3940,6 +3949,7 @@
 				775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */,
 				77CEA51121D4DBAD00B388E4 /* UIView+Controller.m in Sources */,
 				776386A421F0BD0800572C50 /* FollowClubPerformer.m in Sources */,
+				7765CCA621F1ADAE007AAD5D /* MyFollowClubCell.m in Sources */,
 				77B0544E21C943760045A489 /* YYWebImageManager.m in Sources */,
 				77FAFCCF21C2132B002A90B0 /* ScrollViewModel.m in Sources */,
 				77EA8E9621B8FCEA001B8959 /* LoginViewController.m in Sources */,
