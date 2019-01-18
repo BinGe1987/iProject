@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TechDetailViewHandler : ViewHandler
 
+- (void)setFollowStatus:(TechData *)tech;
+
 @end
 
 NS_ASSUME_NONNULL_END

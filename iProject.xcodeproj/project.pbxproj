@@ -148,6 +148,7 @@
 		776386AB21F0C01F00572C50 /* MyFollowTechPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386AA21F0C01F00572C50 /* MyFollowTechPresenter.m */; };
 		776386AE21F0C02F00572C50 /* MyFollowTechViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386AD21F0C02F00572C50 /* MyFollowTechViewHandler.m */; };
 		776386B021F0CD4C00572C50 /* ClubDetailNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 776386AF21F0CD4C00572C50 /* ClubDetailNavigation.xml */; };
+		7765CCA321F17E81007AAD5D /* TechDetailNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 7765CCA221F17E81007AAD5D /* TechDetailNavigation.xml */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -732,6 +733,7 @@
 		776386AC21F0C02F00572C50 /* MyFollowTechViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowTechViewHandler.h; sourceTree = "<group>"; };
 		776386AD21F0C02F00572C50 /* MyFollowTechViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowTechViewHandler.m; sourceTree = "<group>"; };
 		776386AF21F0CD4C00572C50 /* ClubDetailNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailNavigation.xml; sourceTree = "<group>"; };
+		7765CCA221F17E81007AAD5D /* TechDetailNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TechDetailNavigation.xml; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1420,6 +1422,7 @@
 				771CA3F321DD0AB200B00F11 /* TechDetail.xml */,
 				771CA40E21DD237700B00F11 /* TechProfile.xml */,
 				771CA41021DDAC9800B00F11 /* TechDetailComment.xml */,
+				7765CCA221F17E81007AAD5D /* TechDetailNavigation.xml */,
 			);
 			path = TechDetail;
 			sourceTree = "<group>";
@@ -3707,6 +3710,7 @@
 				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
 				77FAA0FA21EB11A30099473E /* ClubTechListCell.xml in Resources */,
+				7765CCA321F17E81007AAD5D /* TechDetailNavigation.xml in Resources */,
 				77A8B64E21E5D4CA00BC8C70 /* ClubDetailServiceFoot.xml in Resources */,
 				771CA3E921DCED0500B00F11 /* ClubDetailServiceItem.xml in Resources */,
 				771CA40F21DD237700B00F11 /* TechProfile.xml in Resources */,

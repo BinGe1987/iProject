@@ -23,6 +23,7 @@
     }
     
     [self setContentViewWithXML:@"TechDetail.xml"];
+    [self setNavigationXML:@"TechDetailNavigation.xml"];
     
     [self addPresenter:[[TechDetailPresenter alloc] initWithView:[self findViewByName:@"root"]]];
 }

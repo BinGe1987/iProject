@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign) NSInteger browseNum;
 @property (nonatomic, assign) NSInteger followNum;
 @property (nonatomic, assign) NSInteger commentNum;
+@property (nonatomic, assign) NSInteger isFollow;
 
 @property (nonatomic, strong) NSArray *images;
 

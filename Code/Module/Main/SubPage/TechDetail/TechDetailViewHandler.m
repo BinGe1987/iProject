@@ -14,6 +14,7 @@
 @property (nonatomic, strong) PhotoBrowser *broswer;
 
 @property (nonatomic, strong) UIButton *commentButton;
+@property (nonatomic, strong) UIButton *followBtnBottom, *followBtnTop;
 @property (nonatomic, assign) BOOL first;
 
 @property (nonatomic, strong) TechDetailData *detail;
@@ -49,7 +50,24 @@
     
     self.first = YES;
     
+    self.followBtnBottom = [[self.view currentViewController].navigationView findViewByName:@"btn_follow_bottom"];
+    self.followBtnBottom.userInteractionEnabled = NO;
+    self.followBtnTop = [[self.view currentViewController].navigationView findViewByName:@"btn_follow_top"];
+    self.followBtnTop.userInteractionEnabled = NO;
+    TechData *tech = [self.view currentViewController].intentData;
+    [self.followBtnTop setClickBlock:^(UIButton * _Nonnull button) {
+        [weakself.delegate onViewAction:@"action_follow" data:tech];
+        button.userInteractionEnabled = NO;
+        [weakself showNetworkActivityIndicatorVisible:YES];
+    }];
+    
+    
     return self;
+}
+
+- (void)setFollowStatus:(TechData *)tech {
+    self.followBtnTop.userInteractionEnabled = YES;
+    self.followBtnBottom.selected = tech.isFollow;
 }
 
 - (void)setData:(id)data {
@@ -59,6 +77,13 @@
     
     TechDetailData *detail = (TechDetailData *)data;
     self.detail = data;
+    TechData *tech = [self.view currentViewController].intentData;
+    tech.isFollow = detail.techData.isFollow;
+    
+    UILabel *titleLabel = [[self.view currentViewController].navigationView findViewByName:@"label_title"];
+    titleLabel.text = detail.clubData.name;
+    
+    [self setFollowStatus:detail.techData];
     
     [self banner:detail];
     [self profile:detail];

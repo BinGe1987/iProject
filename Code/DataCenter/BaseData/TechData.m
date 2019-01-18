@@ -24,6 +24,7 @@
     self.browseNum = [data integerWithKey:@"browseNum"];
     self.commentNum = [data integerWithKeys:@[@"commentNum", @"commentCount"]];
     self.followNum = [data integerWithKey:@"favoriteNum"];
+    self.isFollow = [data integerWithKey:@"isFollow"];
     
     NSMutableArray *imageArray = [NSMutableArray new];
     NSArray *array = [data arrayWithKey:@"imgList"];

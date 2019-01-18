@@ -25,7 +25,6 @@
     WeakSelf(self)
     [[DataCenter get] perform:OperationGetTechDetailData params:tech callback:^(id  _Nonnull operation, id  _Nullable data) {
         TechDetailData *detail = (TechDetailData *)data;
-        [view currentViewController].title = detail.clubData.name;
         [weakself.handler setData:detail];
     }];
     
@@ -34,9 +33,19 @@
 
 - (void)onViewAction:(id)action data:(id)data {
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-        [weakself.handler setData:data];
-    }];
+    if ([action isEqualToString:@"action_follow"]) {
+        [[DataCenter get] perform:OperationFollowTech params:data callback:^(id  _Nonnull operation, id  _Nullable data) {
+            if ([data isKindOfClass:[TechData class]]) {
+                [weakself.handler setFollowStatus:(TechData *)data];
+            } else {
+                
+            }
+        }];
+    } else {
+        [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+            [weakself.handler setData:data];
+        }];
+    }
 }
 
 @end

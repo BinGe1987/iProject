@@ -19,8 +19,24 @@
     return nil;
 }
 
-- (id)followTech:(id)params {
-    return nil;
+- (id)followTech:(TechData *)tech {
+    HttpRequest *request = [HttpRequest withHost:[URLConstant host] api:API_MineFollow];
+    request.data = @{
+                     @"token":DataCenter.token,
+                     @"isFollow":tech.isFollow ? @"0" : @"1",
+                     @"relationId":tech.techID,
+                     @"type":@"tech",
+                     };
+    HttpResponse *response = [Http post:request];
+    Data *data = [Data new];
+    data.source = [response.data mutableCopy];
+    data.error = response.error;
+    if ([data isSuccess]) {
+        tech.isFollow = !tech.isFollow;
+        return tech;
+    } else {
+        return data;
+    }
 }
 
 - (id)getFollowTechList:(id)params {
@@ -28,7 +44,7 @@
 }
 
 - (id)parse:(_Nonnull id)operation withSource:(id)source {
-    return nil;
+    return source;
 }
 
 @end
