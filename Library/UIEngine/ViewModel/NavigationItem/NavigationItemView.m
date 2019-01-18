@@ -9,8 +9,6 @@
 
 @implementation NavigationItemView
 
-
-
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     [self assignmentForMaxSize:frame.size];

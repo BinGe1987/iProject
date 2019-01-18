@@ -59,6 +59,17 @@
         NSArray *list = [respData arrayWithKey:@"list"];
         for(Data *d in list) {
             [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
+            [listData addData:[ClubData withData:d]];
         }
         return listData;
     } else {

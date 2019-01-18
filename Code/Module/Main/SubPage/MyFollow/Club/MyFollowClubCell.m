@@ -41,7 +41,14 @@
     UILabel *discount = [vg findViewByName:@"label_discount"];
     discount.text = [NSString stringWithFormat:@"%.1f",club.discount];
     
+    UILabel *yddDiscount = [vg findViewByName:@"label_discount_ydd"];
+    yddDiscount.text = [NSString stringWithFormat:@"升级会员最高享%.1f折",club.clubDiscount/100.0];
+    
     [vg layoutWithMaxWidth:SCREENWIDTH maxHeight:[self cellHeight]];
+}
+
+- (void)tableViewCellDidSelect:(UITableView *)tableView {
+    [UIViewController pushController:@"ClubDetailController" animated:YES data:self.data];
 }
 
 - (CGFloat)cellHeight {

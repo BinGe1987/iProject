@@ -47,6 +47,7 @@
     if (!cell) {
 //        NSLog(@"tableViewcellForRowAtIndexPath: %@", indexPath);
         cell = [[section.cellClass alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         [cell initSubviews];
     }
     if (!self.cellCache) {

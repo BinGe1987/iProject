@@ -44,7 +44,6 @@
 }
 
 - (void)layoutWithMaxWidth:(CGFloat)width maxHeight:(CGFloat)height completed:(void(^)(void))block {
-    self.frame = CGRectMake(0, 0, width, height);
     [self assignmentForMaxSize:CGSizeMake(width, height)];
     [self boundingSize];
     [self refreshLayout];

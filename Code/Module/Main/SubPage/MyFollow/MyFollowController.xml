@@ -65,7 +65,8 @@
         <FrameLayout
             view_name="page_club"
             view_width="full"
-            view_height="full">
+            view_height="full"
+            view_masksToBounds="YES">
             <TableView
                 view_name="table"
                 view_width="full"
@@ -74,7 +75,8 @@
         <FrameLayout
             view_name="page_tech"
             view_width="full"
-            view_height="full">
+            view_height="full"
+            view_masksToBounds="YES">
             <TableView
                 view_name="table"
                 view_width="full"
