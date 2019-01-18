@@ -17,6 +17,7 @@
 @implementation UITableView (Section)
 
 - (void)addSection:(AutoTableViewSection *)section {
+    self.separatorStyle = UITableViewCellSelectionStyleNone;
     if (!self.adapter) {
         self.adapter = [AutoTableViewAdapter adapterWithSection:section];
     } else {

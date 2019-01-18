@@ -3,7 +3,7 @@
     view_name="root"
     view_width="full"
     view_orientation="vertical"
-    view_background="#f0f0f0">
+    view_background="#ffffff">
     
     <Navigation view_background="#ffffff"/>
     
@@ -56,7 +56,12 @@
         </View>
 
     </FrameLayout>
-    
+    <View
+        view_width="full"
+        view_height="2"
+        view_background="#f0f0f0">
+    </View>
+
     <ViewPager
         view_name="pager"
         view_width="full"
@@ -70,7 +75,8 @@
             <TableView
                 view_name="table"
                 view_width="full"
-                view_height="full"/>
+                view_height="full"
+                view_background="#ffffff"/>
         </FrameLayout>
         <FrameLayout
             view_name="page_tech"
@@ -80,7 +86,8 @@
             <TableView
                 view_name="table"
                 view_width="full"
-                view_height="full"/>
+                view_height="full"
+                view_background="#ffffff"/>
         </FrameLayout>
 
     </ViewPager>

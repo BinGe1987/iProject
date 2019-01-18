@@ -74,4 +74,8 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+    [cell setSeparatorInset:UIEdgeInsetsMake(0,0,0.1,0.1)];
+}
+
 @end

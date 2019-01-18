@@ -22,10 +22,16 @@
     self.section = [AutoTableViewSection sectionWithCellClass:[MyFollowClubCell class] dataSource:@[]];
     self.table = [view findViewByName:@"table"];
     [self.table addSection:self.section];
+    WeakSelf(self)
+    [self.table setHeadRefreshHandler:^{
+        [weakself.delegate onViewAction:@"action_refresh" data:nil];
+    }];
+    [self.table beginHeadRefreshing];
     return self;
 }
 
 - (void)setClubList:(ListData *)list {
+    [self.table performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:0.8];
     self.section.dataArray = [list.list mutableCopy];
     [self.table reloadData];
 }
