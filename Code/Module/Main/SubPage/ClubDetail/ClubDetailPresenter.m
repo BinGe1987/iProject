@@ -31,9 +31,15 @@
 
 - (void)onViewAction:(id)action data:(id)data {
     WeakSelf(self)
-    [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
-        [weakself.handler setData:data];
-    }];
+    if ([action isEqualToString:@"action_follow"]) {
+        [[DataCenter get] perform:OperationFollowClub params:data callback:^(id  _Nonnull operation, id  _Nullable data) {
+            [weakself.handler setData:data];
+        }];
+    } else {
+        [[DataCenter get] perform:OperationGetClubDetailData params:nil callback:^(id  _Nonnull operation, id  _Nullable data) {
+            [weakself.handler setData:data];
+        }];
+    }
 }
 
 @end

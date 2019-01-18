@@ -13,13 +13,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    [self.navigationController.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
-//    self.navigationController.navigationBar.translucent = YES;
+    ClubData *club = self.intentData;
     
     [self setContentViewWithXML:@"ClubDetail.xml"];
+    [self setNavigationXML:@"ClubDetailNavigation.xml"];
+    UILabel *title = [self.navigationView findViewByName:@"label_title"];
+    title.text = club.name;
     
-    ClubData *club = self.intentData;
-    self.title = club.name;
+    
     [Store setValue:club.source forKey:@"test_data"];
     ClubDetailPresenter *prsenter = [[ClubDetailPresenter alloc] initWithView:[self findViewByName:@"root"]];
     [self addPresenter:prsenter];

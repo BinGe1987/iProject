@@ -145,6 +145,9 @@
 		776386A121F0BCAE00572C50 /* FollowDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386A021F0BCAE00572C50 /* FollowDataHandler.m */; };
 		776386A421F0BD0800572C50 /* FollowClubPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386A321F0BD0800572C50 /* FollowClubPerformer.m */; };
 		776386A721F0BD3F00572C50 /* FollowTechPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386A621F0BD3F00572C50 /* FollowTechPerformer.m */; };
+		776386AB21F0C01F00572C50 /* MyFollowTechPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386AA21F0C01F00572C50 /* MyFollowTechPresenter.m */; };
+		776386AE21F0C02F00572C50 /* MyFollowTechViewHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 776386AD21F0C02F00572C50 /* MyFollowTechViewHandler.m */; };
+		776386B021F0CD4C00572C50 /* ClubDetailNavigation.xml in Resources */ = {isa = PBXBuildFile; fileRef = 776386AF21F0CD4C00572C50 /* ClubDetailNavigation.xml */; };
 		776B55A821BE628900793CAF /* DataCenter+YDD.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55A721BE628900793CAF /* DataCenter+YDD.m */; };
 		776B55AB21BE62E100793CAF /* UserData.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AA21BE62E100793CAF /* UserData.m */; };
 		776B55B021BE6A9500793CAF /* ButtonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 776B55AF21BE6A9500793CAF /* ButtonViewModel.m */; };
@@ -724,6 +727,11 @@
 		776386A321F0BD0800572C50 /* FollowClubPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowClubPerformer.m; sourceTree = "<group>"; };
 		776386A521F0BD3F00572C50 /* FollowTechPerformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FollowTechPerformer.h; sourceTree = "<group>"; };
 		776386A621F0BD3F00572C50 /* FollowTechPerformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FollowTechPerformer.m; sourceTree = "<group>"; };
+		776386A921F0C01F00572C50 /* MyFollowTechPresenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowTechPresenter.h; sourceTree = "<group>"; };
+		776386AA21F0C01F00572C50 /* MyFollowTechPresenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowTechPresenter.m; sourceTree = "<group>"; };
+		776386AC21F0C02F00572C50 /* MyFollowTechViewHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyFollowTechViewHandler.h; sourceTree = "<group>"; };
+		776386AD21F0C02F00572C50 /* MyFollowTechViewHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyFollowTechViewHandler.m; sourceTree = "<group>"; };
+		776386AF21F0CD4C00572C50 /* ClubDetailNavigation.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = ClubDetailNavigation.xml; sourceTree = "<group>"; };
 		776B55A621BE628900793CAF /* DataCenter+YDD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DataCenter+YDD.h"; sourceTree = "<group>"; };
 		776B55A721BE628900793CAF /* DataCenter+YDD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "DataCenter+YDD.m"; sourceTree = "<group>"; };
 		776B55A921BE62E100793CAF /* UserData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserData.h; sourceTree = "<group>"; };
@@ -1395,6 +1403,7 @@
 				771CA3AE21DCA17E00B00F11 /* ClubDetailAdapter.h */,
 				771CA3AF21DCA17E00B00F11 /* ClubDetailAdapter.m */,
 				771CA39E21DC758200B00F11 /* ClubDetail.xml */,
+				776386AF21F0CD4C00572C50 /* ClubDetailNavigation.xml */,
 			);
 			path = ClubDetail;
 			sourceTree = "<group>";
@@ -2058,6 +2067,7 @@
 			isa = PBXGroup;
 			children = (
 				7763869721F07FEB00572C50 /* Club */,
+				776386A821F0C00200572C50 /* Tech */,
 				7763869421F0735E00572C50 /* MyFollowController.h */,
 				7763869521F0735E00572C50 /* MyFollowController.m */,
 				7763869221F0734D00572C50 /* MyFollowController.xml */,
@@ -2087,6 +2097,17 @@
 				776386A621F0BD3F00572C50 /* FollowTechPerformer.m */,
 			);
 			path = Follow;
+			sourceTree = "<group>";
+		};
+		776386A821F0C00200572C50 /* Tech */ = {
+			isa = PBXGroup;
+			children = (
+				776386A921F0C01F00572C50 /* MyFollowTechPresenter.h */,
+				776386AA21F0C01F00572C50 /* MyFollowTechPresenter.m */,
+				776386AC21F0C02F00572C50 /* MyFollowTechViewHandler.h */,
+				776386AD21F0C02F00572C50 /* MyFollowTechViewHandler.m */,
+			);
+			path = Tech;
 			sourceTree = "<group>";
 		};
 		776B55C221BEA4BF00793CAF /* Category */ = {
@@ -3682,6 +3703,7 @@
 				77FAA0D021EA133C0099473E /* SearchHistoryItem.xml in Resources */,
 				77A38A2121DF6BA800042B04 /* Home.xml in Resources */,
 				77CEA4AD21D3599F00B388E4 /* ClassifyCell.json in Resources */,
+				776386B021F0CD4C00572C50 /* ClubDetailNavigation.xml in Resources */,
 				77CEA53821D5CB3700B388E4 /* Handler.xml in Resources */,
 				77EA8E7421B8F7AB001B8959 /* Assets.xcassets in Resources */,
 				77FAA0FA21EB11A30099473E /* ClubTechListCell.xml in Resources */,
@@ -3726,6 +3748,7 @@
 				7786D5E121ECEC1600A18AC3 /* PublicCommentTechListCell.m in Sources */,
 				7763869621F0735E00572C50 /* MyFollowController.m in Sources */,
 				77B054C621CA54A20045A489 /* LabelViewParams.m in Sources */,
+				776386AE21F0C02F00572C50 /* MyFollowTechViewHandler.m in Sources */,
 				771CA3FF21DD0D1800B00F11 /* TechDetailPerformer.m in Sources */,
 				7734C11821D23A45009D1EE8 /* UIScrollView+KafkaRefreshControl.m in Sources */,
 				77C3977921E444150016CEE3 /* ClassifyMenuViewHandler.m in Sources */,
@@ -4027,6 +4050,7 @@
 				77EA8F4721B90226001B8959 /* TextViewModel.m in Sources */,
 				77FAA10621EC704D0099473E /* PublicCommentViewHandler.m in Sources */,
 				77A38A0421DF2BCD00042B04 /* ProfileEditController.m in Sources */,
+				776386AB21F0C01F00572C50 /* MyFollowTechPresenter.m in Sources */,
 				77EA8F3B21B90226001B8959 /* BasePresenter.m in Sources */,
 				77B0553821CEAE530045A489 /* Aspects+My.m in Sources */,
 				77B0551221CCDB0A0045A489 /* LaunchModule.m in Sources */,

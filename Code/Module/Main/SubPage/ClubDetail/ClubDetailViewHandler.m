@@ -11,7 +11,7 @@
 @interface ClubDetailViewHandler()
 
 @property (nonatomic, strong) UITableView *tableView;
-@property (nonatomic, strong) UIButton *commentButton;
+@property (nonatomic, strong) UIButton *commentButton, *followButton;
 @property (nonatomic, assign) BOOL first;
 
 @end
@@ -36,13 +36,20 @@
     [self.tableView setHeadRefreshHandler:^{
         [weakself.tableView performSelector:@selector(finishHeadRefresh) withObject:nil afterDelay:1.5];
     }];
-//    [self.tableView setFootRefreshHandler:^{
-//
-//    }];
-//    [self.tableView beginFootRefreshing];
     [self.tableView beginHeadRefreshing];
     
+    self.followButton = [[self.view currentViewController].navigationView findViewByName:@"btn_follow"];
+    ClubData *club = [self.view currentViewController].intentData;
+    self.followButton.selected = club.isFollow;
+    [self.followButton setClickBlock:^(UIButton * _Nonnull button) {
+        [weakself.delegate onViewAction:@"action_follow" data:club];
+    }];
+    
     return self;
+}
+
+- (void)followStatus:(ClubData *)club {
+    self.followButton.selected = club.isFollow;
 }
 
 - (void)setData:(id)data {

@@ -10,6 +10,8 @@
 
 @interface MyFollowClubPresenter()<ViewHandlerDelegate>
 
+@property (nonatomic, strong) ListData *listData;
+
 @end
 
 @implementation MyFollowClubPresenter
@@ -18,8 +20,16 @@
     self = [super initWithView:view];
     
     self.handler = [MyFollowClubViewHandler handlerWithView:view delgate:self];
-    [self.handler setClubList:[ListData new]];
     return self;
+}
+
+- (void)onFocus {
+    NSLog(@"on focus : %@",self);
+    if (!self.listData) {
+        [DataCenter perform:OperationGetMineFollowClubData params:nil callback:^(id  _Nonnull operation, Data * _Nullable data) {
+            
+        }];
+    }
 }
 
 - (void)onViewAction:(id)action data:(id)data {

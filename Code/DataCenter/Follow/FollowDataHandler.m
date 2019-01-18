@@ -15,6 +15,10 @@
 {
     self = [super init];
     if (self) {
+        //关注操作
+        [self bind:OperationFollowClub performerPlus:[FollowClubPerformer class]];
+        [self bind:OperationFollowTech performerPlus:[FollowTechPerformer class]];
+        //关注列表
         [self bind:OperationGetMineFollowClubData performerPlus:[FollowClubPerformer class]];
         [self bind:OperationGetMineFollowTechData performerPlus:[FollowTechPerformer class]];
     }

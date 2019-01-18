@@ -89,8 +89,10 @@
 - (NSArray *)arrayWithKey:(NSString *)key {
     NSMutableArray *newArray = [NSMutableArray new];
     NSArray *array = [self.source objectForKey:key];
-    for (NSDictionary *dic in array) {
-        [newArray addObject:[[self class] JSONWithDictionary:dic]];
+    if (array && [array isKindOfClass:[NSArray class]]) {
+        for (NSDictionary *dic in array) {
+            [newArray addObject:[[self class] JSONWithDictionary:dic]];
+        }
     }
     return newArray;
 }

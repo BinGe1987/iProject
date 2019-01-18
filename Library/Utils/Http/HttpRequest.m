@@ -28,4 +28,8 @@
     return _timeout ? _timeout : 6;
 }
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"HttpRequest:\n%@\n%@",self.requestURL, self.data];
+}
+
 @end

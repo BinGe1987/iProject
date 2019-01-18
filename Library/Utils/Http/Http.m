@@ -23,12 +23,18 @@
             id object = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
             // 11、判断是否解析成功
             if (error) {
-                NSLog(@"post error :%@",error.localizedDescription);
+                NSLog(@"post error : %@",error);
                 httpResponse.error = error;
             }else {
                 // 解析成功，处理数据，通过GCD获取主队列，在主线程中刷新界面。
 //                NSLog(@"post success :%@",object);
                 httpResponse.data = object;
+                if ([object[@"statusCode"] integerValue] != 200) {
+                    NSLog(@"\n=============================================");
+                    NSLog(@"post error request  : %@", request);
+                    NSLog(@"post error response : %@", httpResponse);
+                    NSLog(@"\n=============================================");
+                }
             }
         }
         dispatch_semaphore_signal(semaphore);//发送信号

@@ -1,5 +1,5 @@
 //
-//  MyFollowClubPresenter.h
+//  MyFollowTechPresenter.h
 //  APP
 //
 //  Created by BinGe on 2019/1/17.
@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyFollowClubPresenter : Presenter
+@interface MyFollowTechPresenter : Presenter
 
 - (void)onFocus;
 

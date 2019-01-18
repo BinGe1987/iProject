@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<NavigationItem>
+    
+    <Label
+        view_name="label_title"
+        view_width="auto"
+        view_height="auto"
+        text_src="会所详情"
+        text_color="#000000"
+        text_size="17"
+        layout_gravity="center">
+    </Label>
+    
+    <Button
+        view_name="btn_follow"
+        view_width="40"
+        view_height="40"
+        view_image="@icon_follow"
+        view_imageSelected="@icon_follow_1"
+        layout_gravity="right|center">
+    </Button>
+</NavigationItem>
+
+

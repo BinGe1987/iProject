@@ -125,7 +125,7 @@
     }
     
     Data *respData = [source dataWithKey:@"respData"];
-    ClubDetailData *detail = [ClubDetailData new];
+    ClubDetailData *detail = [ClubDetailData withData:respData];
     
     //会所数据
     Data *clubSource = [respData dataWithKey:@"club_profile"];

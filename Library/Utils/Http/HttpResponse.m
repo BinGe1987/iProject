@@ -9,4 +9,8 @@
 
 @implementation HttpResponse
 
+- (NSString *)description {
+    return [NSString stringWithFormat:@"HttpResponse:\n%@\n%@",self.url, self.error ? self.error : self.data];
+}
+
 @end

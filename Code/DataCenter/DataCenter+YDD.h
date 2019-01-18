@@ -32,6 +32,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma make  我的页面相关
 #define OperationGetMineData                    (@"OperationGetMineData")
+#define OperationFollowClub                     (@"OperationFollowClub")
+#define OperationFollowTech                     (@"OperationFollowTech")
 #define OperationGetMineFollowClubData          (@"OperationGetMineFollowClubData")
 #define OperationGetMineFollowTechData          (@"OperationGetMineFollowTechData")
 
