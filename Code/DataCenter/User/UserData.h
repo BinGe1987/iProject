@@ -39,6 +39,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)setMineData:(id)data;
 
+
+- (NSString *)genderLabel;
+
 @end
 
 NS_ASSUME_NONNULL_END

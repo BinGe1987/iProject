@@ -49,7 +49,6 @@
             [self.userData setMineData:source];
         }
         else if ([operation isEqualToString:OperationEditMineData]) {
-//            self.userData.avatarUrl = [source stringWithKey:@"avatarUrl"];
             [self.userData setMineData:source];
         }
         return self.userData;

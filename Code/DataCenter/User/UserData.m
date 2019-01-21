@@ -26,9 +26,9 @@
 
 - (void)set:(Data *)data {
     self.token =    [data stringWithKey:@"token" defaultValue:self.token];
-    self.userID =   [data stringWithKey:@"userId"];
-    self.userName = [data stringWithKeys:@[@"name",@"userName"]];
-    self.phone =    [data stringWithKey:@"phoneNum"];
+    self.userID =   [data stringWithKey:@"userId" defaultValue:self.userID];
+    self.userName = [data stringWithKeys:@[@"name",@"userName",@"nickName"]];
+    self.phone =    [data stringWithKeys:@[@"phoneNum",@"phone"]];
     self.gender =   [data stringWithKey:@"gender" defaultValue:@"male"];
     self.level =    [data stringWithKey:@"level"];
     self.avatarUrl = [data stringWithKey:@"avatarUrl"];
@@ -44,6 +44,10 @@
 
 - (BOOL)isSuccess {
     return [self isLogin];
+}
+
+- (NSString *)genderLabel {
+    return self.gender ? ([self.gender isEqualToString:@"male"] ? @"男":@"女") : @"未知";
 }
 
 @end

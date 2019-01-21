@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LinearLayout
+    view_name="root"
     view_width="full"
     view_height="full"
     view_orientation="V"
@@ -30,24 +31,64 @@
             layout_marginRight="40"/>
     </FrameLayout>
     
+    <FrameLayout
+        view_width="full"
+        view_height="48sp">
+        <CustomView
+            view_name="selector_nickname"
+            view_class="SelectorItem"
+            view_width="full"
+            view_height="full"
+            selector_leftText="昵称"/>
+        <Label
+            view_name="label_nickname"
+            view_width="auto"
+            view_height="full"
+            text_src=""
+            text_color="#000000"
+            text_size="15"
+            layout_marginLeft="70sp">
+        </Label>
+    </FrameLayout>
     
-    <CustomView
-        view_name="selector_nicename"
-        view_class="SelectorItem"
+    <FrameLayout
         view_width="full"
-        view_height="48sp"
-        selector_leftText="昵称"/>
-    <CustomView
-        view_name="selector_gender"
-        view_class="SelectorItem"
+        view_height="48sp">
+        <CustomView
+            view_name="selector_gender"
+            view_class="SelectorItem"
+            view_width="full"
+            view_height="full"
+            selector_leftText="性别"/>
+        <Label
+            view_name="label_gender"
+            view_width="auto"
+            view_height="full"
+            text_src=""
+            text_color="#000000"
+            text_size="15"
+            layout_marginLeft="70sp">
+        </Label>
+    </FrameLayout>
+    
+    <FrameLayout
         view_width="full"
-        view_height="48sp"
-        selector_leftText="性别"/>
-    <CustomView
-        view_name="selector_phone"
-        view_class="SelectorItem"
-        view_width="full"
-        view_height="48sp"
-        selector_leftText="手机"/>
+        view_height="48sp">
+        <CustomView
+            view_name="selector_phone"
+            view_class="SelectorItem"
+            view_width="full"
+            view_height="full"
+            selector_leftText="手机"/>
+        <Label
+            view_name="label_phone"
+            view_width="auto"
+            view_height="full"
+            text_src=""
+            text_color="#000000"
+            text_size="15"
+            layout_marginLeft="70sp">
+        </Label>
+    </FrameLayout>
     
 </LinearLayout>

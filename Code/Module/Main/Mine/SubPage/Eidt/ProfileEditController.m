@@ -28,23 +28,23 @@
         }
         [weakself.picker imagePickerCrop:self];
     }];
-    UIImageView *imageView = [self findViewByName:@"image_head"];
-    UserData *user = [DataCenter get].userData;
-    [imageView setImageWithURL:[NSURL URLWithString:user.avatarUrl]];
     
-    SelectorItem *nicenameItem = [self findViewByName:@"selector_nicename"];
-    [nicenameItem setItemClickBlock:^(id  _Nonnull target) {
+    SelectorItem *nicknameItem = [self findViewByName:@"selector_nickname"];
+    [nicknameItem setItemClickBlock:^(id  _Nonnull target) {
         [UIViewController pushController:@"NiceNameEditController" animated:YES data:nil];
     }];
+    
     
     SelectorItem *genderItem = [self findViewByName:@"selector_gender"];
     [genderItem setItemClickBlock:^(id  _Nonnull target) {
         ActionSheet *actionSheet = [ActionSheet new];
         [actionSheet addItem:@"男" block:^{
             NSLog(@"男");
+            [weakself editGender:@"male"];
         }];
         [actionSheet addItem:@"女" block:^{
             NSLog(@"女");
+            [weakself editGender:@"female"];
         }];
         [actionSheet show];
     }];
@@ -53,6 +53,29 @@
     [phoneItem setItemClickBlock:^(id  _Nonnull target) {
         [UIViewController pushController:@"EditPhoneController" animated:YES data:nil];
     }];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [self updateInfo];
+}
+
+- (void)updateInfo {
+    UserData *user = [DataCenter get].userData;
+    
+    UIImageView *imageView = [self findViewByName:@"image_head"];
+    [imageView setImageWithURL:[NSURL URLWithString:user.avatarUrl]];
+    
+    UILabel *nickNameLabel = [self findViewByName:@"label_nickname"];
+    nickNameLabel.text = user.userName;
+    
+    UILabel *genderLabel = [self findViewByName:@"label_gender"];
+    genderLabel.text = [user genderLabel];
+    
+    UILabel *phoneLabel = [self findViewByName:@"label_phone"];
+    phoneLabel.text = user.phone;
+    
+    ViewGroup *root = [self findViewByName:@"root"];
+    [root boundsAndRefreshLayout];
 }
 
 - (void)pickController:(ImagePickerController *)picker didFinishCropPhotos:(UIImage *)photo {
@@ -89,7 +112,7 @@
                 if ([data isSuccess]) {
                     UIImageView *imageView = [weakself findViewByName:@"image_head"];
                     UserData *user = [DataCenter get].userData;
-                    [imageView setImageWithURL:[NSURL URLWithString:user.avatarUrl]];
+                    [imageView setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholder:image];
                 }
             }];
         } else {
@@ -97,6 +120,23 @@
             UIActivityIndicatorView *indicator = [imageView viewWithTag:99];
             [indicator stopAnimating];
             [ProgressHUB showTips:@"上传失败"];
+        }
+    }];
+}
+
+- (void)editGender:(NSString *)gender {
+    NSDictionary *params = @{@"gender":gender};
+    WeakSelf(self)
+    SelectorItem *genderItem = [self findViewByName:@"selector_gender"];
+    genderItem.userInteractionEnabled = NO;
+    [genderItem showLoadingViewGrivaty:LoadingViewGravityCenter|LoadingViewGravityRight padding:UIEdgeInsetsMake(0, 0, 0, 50)];
+    [DataCenter perform:OperationEditMineData params:params callback:^(id  _Nonnull operation, Data * _Nullable data) {
+        [genderItem stopLoading];
+        genderItem.userInteractionEnabled = YES;
+        if ([data isSuccess]) {
+            [weakself updateInfo];
+        } else {
+            [ProgressHUB showTips:[data errorMessage]];
         }
     }];
 }
