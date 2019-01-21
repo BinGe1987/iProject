@@ -11,7 +11,7 @@
 @implementation GlobalModule
 
 - (void)setup:(BuildConfiguration)buildConfiguration {
-    [Network start];
+//    [Network start];
 }
 
 @end

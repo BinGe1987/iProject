@@ -9,14 +9,27 @@
         
     </Navigation>
     
-    <CustomView
-        view_name="selector_head"
-        view_class="SelectorItem"
+    <FrameLayout
         view_width="full"
         view_height="52sp"
         layout_marginTop="15"
-        layout_marginBottom="15"
-        selector_leftText="头像"/>
+        layout_marginBottom="15">
+        <CustomView
+            view_name="selector_head"
+            view_class="SelectorItem"
+            view_width="full"
+            view_height="full"
+            selector_leftText="头像"/>
+        <ImageView
+            view_name="image_head"
+            view_width="36sp"
+            view_height="36sp"
+            view_borderRadius="18sp"
+            view_masksToBounds="YES"
+            layout_gravity="center|right"
+            layout_marginRight="40"/>
+    </FrameLayout>
+    
     
     <CustomView
         view_name="selector_nicename"

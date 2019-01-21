@@ -11,22 +11,27 @@
 
 - (void)setLoginData:(id)data {
     [super setData:data];
-    [self setData:[data dataWithKey:@"respData"]];
+    [self set:[data dataWithKey:@"respData"]];
 }
 
 - (void)setMineData:(id)data {
     [super setData:data];
-    [self setData:data];
+    [self set:[data dataWithKey:@"respData"]];
 }
 
 - (void)setData:(Data *)data {
     [super setData:data];
-    self.token =    [data stringWithKey:@"token"];
+    [self set:[data dataWithKey:@"respData"]];
+}
+
+- (void)set:(Data *)data {
+    self.token =    [data stringWithKey:@"token" defaultValue:self.token];
     self.userID =   [data stringWithKey:@"userId"];
     self.userName = [data stringWithKeys:@[@"name",@"userName"]];
     self.phone =    [data stringWithKey:@"phoneNum"];
     self.gender =   [data stringWithKey:@"gender" defaultValue:@"male"];
     self.level =    [data stringWithKey:@"level"];
+    self.avatarUrl = [data stringWithKey:@"avatarUrl"];
     
     self.member =   [MemberData withData:data];
     self.recharge = [RechargeData withData:data];

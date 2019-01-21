@@ -36,12 +36,6 @@
                 NSLog(@"%@", data);
             }
         }];
-//        [button dismissViewControllerAnimated:YES completion:nil];
-//        UserData *user = [DataCenter get].userData;
-//        user.source = [@{@"statusCode":@"200"} mutableCopy];
-//        user.token = @"e678eae481c04aeeb8bf060ec0b02b49";
-//        [Store setValue:user.token forKey:@"token"];
-//        [EventBus postEvent:EventLoginStatusChanged data:user];
     }];
     
     self.errorLabel = (UILabel *)[self.view findViewByName:@"label_errorInfo"];

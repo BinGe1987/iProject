@@ -26,6 +26,9 @@
         
         [self bind:OperationGetMineData performer:[UserPerformer new]];
         [self bind:OperationGetMineData parser:self];
+        
+//        self bind:OperationEditMineData performerPlus:[UserPerformer new]
+        [self bind:OperationEditMineData performer:[UserPerformer new] parser:self];
     }
     return self;
 }
@@ -43,6 +46,10 @@
             [EventBus postEvent:EventLoginStatusChanged data:self.userData forceThread:YES];
         }
         else if ([operation isEqualToString:OperationGetMineData]) {
+            [self.userData setMineData:source];
+        }
+        else if ([operation isEqualToString:OperationEditMineData]) {
+//            self.userData.avatarUrl = [source stringWithKey:@"avatarUrl"];
             [self.userData setMineData:source];
         }
         return self.userData;

@@ -113,15 +113,15 @@
     //判断图片是不是png格式的文件
     NSString *imageName = nil;
     NSString *type = params[@"name"] ? params[@"name"] : @"pic";
-    if (UIImagePNGRepresentation(image)) {
-        //返回为png图像。
-        data = UIImagePNGRepresentation(image);
-        imageName = [NSString stringWithFormat:@"%@.png",type];
-    }else {
+//    if (UIImagePNGRepresentation(image)) {
+//        //返回为png图像。
+//        data = UIImagePNGRepresentation(image);
+//        imageName = [NSString stringWithFormat:@"%@.png",type];
+//    }else {
         //返回为JPEG图像。
         data = UIImageJPEGRepresentation(image, 1.0);
         imageName = [NSString stringWithFormat:@"%@.jpg",type];
-    }
+//    }
     //    User *user = [User getInstance];
     NSMutableString *body=[[NSMutableString alloc]init];
     

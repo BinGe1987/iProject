@@ -9,4 +9,11 @@
 
 @implementation MemberData
 
+- (void)setData:(Data *)data {
+    [super setData:data];
+    self.level = [data integerWithKey:@"memberLevel"];
+    self.title = [data stringWithKey:@"memberTitle"];
+    self.remainDays = [data integerWithKey:@"remainDays"];
+}
+
 @end

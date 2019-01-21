@@ -9,6 +9,10 @@
 
 @implementation DataCenter (YDD)
 
++ (NSMutableDictionary *)requestParams {
+    return [NSMutableDictionary dictionaryWithObject:[DataCenter token] forKey:@"token"];
+}
+
 - (ConfigData *)configData {
     return (ConfigData *)[self getData: [ConfigHandler class]];
 }

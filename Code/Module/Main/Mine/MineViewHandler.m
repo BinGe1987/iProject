@@ -20,7 +20,7 @@
     //头像
     UIImageView *avatar = (UIImageView *)[self.view findViewByName:@"image_avatar"];
     if (![NSString isEmpty:user.avatarUrl]) {
-        [avatar setImageWithURL:[NSURL URLWithString:user.avatarUrl]];
+        [avatar setImageWithURL:[NSURL URLWithString:user.avatarUrl] placeholder:UIImageDefault_UserMan];
     }
     //头像
     UIButton *btnImageAvatar = (UIButton *)[self.view findViewByName:@"btn_imageAvatar"];

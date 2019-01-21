@@ -36,4 +36,18 @@
 }
 
 
++ (UIImage *)zipImage:(UIImage *)image toFileSize:(CGFloat)fileSize {
+    UIImage *target = image;
+    for (int i = 0; i < 10; i++) {
+        CGFloat compressionQuality = 1.0 - i / 10.0;
+        NSData *data = UIImageJPEGRepresentation(image, compressionQuality);
+        CGFloat kb = [data length] / 1024.0;
+        target = [UIImage imageWithData:data];
+        if (kb < fileSize) {
+            return target;
+        }
+    }
+    return target;
+}
+
 @end

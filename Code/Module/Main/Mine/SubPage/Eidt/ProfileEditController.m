@@ -28,6 +28,9 @@
         }
         [weakself.picker imagePickerCrop:self];
     }];
+    UIImageView *imageView = [self findViewByName:@"image_head"];
+    UserData *user = [DataCenter get].userData;
+    [imageView setImageWithURL:[NSURL URLWithString:user.avatarUrl]];
     
     SelectorItem *nicenameItem = [self findViewByName:@"selector_nicename"];
     [nicenameItem setItemClickBlock:^(id  _Nonnull target) {
@@ -53,9 +56,49 @@
 }
 
 - (void)pickController:(ImagePickerController *)picker didFinishCropPhotos:(UIImage *)photo {
-    SelectorItem *imageItem = [self findViewByName:@"selector_head"];
-    UIImageView *imageView = [imageItem findViewByName:@"right_image"];
-    imageView.image = photo;
+//    UIImage *image = [ImageUtils scaleImage:photo toScale:0.5];
+//    UIImage *image = [ImageUtils zipImage:photo toFileSize:1000];
+    UIImage *image = photo;
+    UIImageView *imageView = [self findViewByName:@"image_head"];
+    imageView.image = image;
+    UIActivityIndicatorView *indicator = [imageView viewWithTag:99];
+    if (!indicator) {
+        indicator = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:(UIActivityIndicatorViewStyleGray)];
+        indicator.tag = 99;
+        indicator.hidesWhenStopped = YES;
+        indicator.backgroundColor = [ColorUtils colorWithString:@"#88ffffff"];
+        indicator.color = [UIColor blackColor];
+        [imageView addSubview:indicator];
+    }
+    indicator.frame = CGRectMake(0, 0, imageView.width, imageView.height);
+    [indicator startAnimating];
+    
+    [DataCenter perform:OperationUploadData params:image callback:^(id  _Nonnull operation, Data * _Nullable data) {
+        //图片上传成功
+        WeakSelf(self)
+        if ([data isSuccess]) {
+            //更新用户信息
+            Data *respData = [data dataWithKey:@"respData"];
+            NSString *url = [respData stringWithKey:@"url"];
+            NSDictionary *params = @{@"avatarUrl": url};
+            [DataCenter perform:OperationEditMineData params:params callback:^(id  _Nonnull operation, Data * _Nullable data) {
+                //图片上传成功
+                UIImageView *imageView = [weakself findViewByName:@"image_head"];
+                UIActivityIndicatorView *indicator = [imageView viewWithTag:99];
+                [indicator stopAnimating];
+                if ([data isSuccess]) {
+                    UIImageView *imageView = [weakself findViewByName:@"image_head"];
+                    UserData *user = [DataCenter get].userData;
+                    [imageView setImageWithURL:[NSURL URLWithString:user.avatarUrl]];
+                }
+            }];
+        } else {
+            UIImageView *imageView = [weakself findViewByName:@"image_head"];
+            UIActivityIndicatorView *indicator = [imageView viewWithTag:99];
+            [indicator stopAnimating];
+            [ProgressHUB showTips:@"上传失败"];
+        }
+    }];
 }
 
 @end

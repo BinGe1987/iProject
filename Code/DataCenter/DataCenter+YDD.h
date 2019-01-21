@@ -36,6 +36,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationFollowTech                     (@"OperationFollowTech")
 #define OperationGetMineFollowClubData          (@"OperationGetMineFollowClubData")
 #define OperationGetMineFollowTechData          (@"OperationGetMineFollowTechData")
+#define OperationEditMineData                   (@"OperationEditMineData")
+
 
 #pragma make 首页相关
 ///获取首页信息
@@ -73,6 +75,8 @@ NS_ASSUME_NONNULL_BEGIN
 #define OperationPublicCommentData              (@"OperationPublicCommentData")
 
 @interface DataCenter (YDD)
+
++ (NSMutableDictionary *)requestParams;
 
 ///token
 + (NSString *)token;
