@@ -24,4 +24,8 @@
     return self;
 }
 
+- (void)willAppear {
+    [self.handler setData:[[DataCenter get] userData]];
+}
+
 @end
