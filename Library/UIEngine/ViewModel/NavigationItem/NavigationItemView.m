@@ -33,12 +33,9 @@
         r.origin.x = subView.layoutParams.marginLeft;
         r.origin.y = subView.layoutParams.marginTop;
         if (params.gravity & FrameLayoutGravityCenter) {
-            CGRect rect = self.superview.frame;
-            CGFloat offsetLeft = rect.origin.x / 2;
-            CGFloat offsetRight = (SCREENWIDTH -  rect.origin.x - rect.size.width)/2;
             
             r.origin.x = self.width / 2 - subView.width / 2
-            + subView.layoutParams.marginLeft - subView.layoutParams.marginRight - offsetLeft + offsetRight;
+            + subView.layoutParams.marginLeft - subView.layoutParams.marginRight;
             r.origin.y = self.height / 2 - subView.height / 2
             + subView.layoutParams.marginTop - subView.layoutParams.marginBottom;
         }
@@ -59,6 +56,7 @@
             r.origin.y -= paddingBottom;
         }
         subView.frame = r;
+        NSLog(@"subview : %@ ",self);
     }
 }
     

@@ -49,6 +49,9 @@ static UIImage *placeholderImage;
     }
     //改变图片数组 1 2 3 4 5 6
     NSMutableArray *newArray = [addImageArray mutableCopy];
+    if (newArray.count == 0) {
+        return;
+    }
     //在数组的最后一位添加上第一张图片 1 2 3 4 5 6 1
     [newArray addObject:addImageArray[0]];
     //在第一个位置插入图片6 | 6 1 2 3 4 5 6 1

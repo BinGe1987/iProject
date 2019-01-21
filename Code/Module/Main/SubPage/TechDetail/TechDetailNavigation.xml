@@ -8,7 +8,8 @@
         text_src="技师详情"
         text_color="#000000"
         text_size="17"
-        layout_gravity="center">
+        layout_gravity="center"
+        layout_marginRight="11sp">
     </Label>
     
     <Button
