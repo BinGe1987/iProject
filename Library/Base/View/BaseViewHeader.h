@@ -17,5 +17,6 @@
 #import "UIButton+OnClick.h"
 #import "UIButton+EnlargeEdge.h"
 #import "ActionSheet.h"
+#import "UIView+Loading.h"
 
 #endif /* BaseViewHeader_h */

@@ -113,6 +113,7 @@
 		7739C42221E78FED0052D2CA /* CommentCategoryPerformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C42121E78FEC0052D2CA /* CommentCategoryPerformer.m */; };
 		7739C42521E792A90052D2CA /* CommentCagetoryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C42421E792A90052D2CA /* CommentCagetoryData.m */; };
 		7739C42921E7A46F0052D2CA /* UIView+ApplyViewParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739C42821E7A46F0052D2CA /* UIView+ApplyViewParams.m */; };
+		7739EC9C21F57B4000962F41 /* UIView+Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = 7739EC9B21F57B4000962F41 /* UIView+Loading.m */; };
 		774F017421B9728900CB482F /* MineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 774F017321B9728900CB482F /* MineViewController.m */; };
 		775B15E321C3DDBA00B8D6FF /* UIViewController+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E221C3DDBA00B8D6FF /* UIViewController+Util.m */; };
 		775B15E821C75DF600B8D6FF /* ImageUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 775B15E721C75DF600B8D6FF /* ImageUtils.m */; };
@@ -670,6 +671,8 @@
 		7739C42421E792A90052D2CA /* CommentCagetoryData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCagetoryData.m; sourceTree = "<group>"; };
 		7739C42721E7A46F0052D2CA /* UIView+ApplyViewParams.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ApplyViewParams.h"; sourceTree = "<group>"; };
 		7739C42821E7A46F0052D2CA /* UIView+ApplyViewParams.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ApplyViewParams.m"; sourceTree = "<group>"; };
+		7739EC9A21F57B4000962F41 /* UIView+Loading.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Loading.h"; sourceTree = "<group>"; };
+		7739EC9B21F57B4000962F41 /* UIView+Loading.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Loading.m"; sourceTree = "<group>"; };
 		774F017221B9728900CB482F /* MineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MineViewController.h; sourceTree = "<group>"; };
 		774F017321B9728900CB482F /* MineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MineViewController.m; sourceTree = "<group>"; };
 		775B15E121C3DDBA00B8D6FF /* UIViewController+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Util.h"; sourceTree = "<group>"; };
@@ -3184,6 +3187,8 @@
 				776B55C921BF81B300793CAF /* UIButton+EnlargeEdge.m */,
 				7763866421EF0C0000572C50 /* ActionSheet.h */,
 				7763866521EF0C0000572C50 /* ActionSheet.m */,
+				7739EC9A21F57B4000962F41 /* UIView+Loading.h */,
+				7739EC9B21F57B4000962F41 /* UIView+Loading.m */,
 				77EA8FAF21B92825001B8959 /* BaseViewHeader.h */,
 			);
 			path = View;
@@ -4084,6 +4089,7 @@
 				776B55B321BE6B1500793CAF /* Button.m in Sources */,
 				77FAA12B21EC849D0099473E /* TZAssetModel.m in Sources */,
 				77CEA4D421D4970A00B388E4 /* ViewPagerModel.m in Sources */,
+				7739EC9C21F57B4000962F41 /* UIView+Loading.m in Sources */,
 				776B55BB21BE966800793CAF /* GroupViewParams.m in Sources */,
 				77EA8F7B21B90732001B8959 /* BaseViewController.m in Sources */,
 				77B0559121D1F7800045A489 /* HomePresenter.m in Sources */,
