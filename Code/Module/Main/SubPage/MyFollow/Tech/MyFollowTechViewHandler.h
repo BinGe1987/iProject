@@ -11,7 +11,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MyFollowTechViewHandler : ViewHandler
 
-- (void)setClubList:(ListData *)list;
+- (void)setTechList:(ListData *)list;
 
 @end
 

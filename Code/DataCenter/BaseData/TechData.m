@@ -14,7 +14,7 @@
     self.techID = [data stringWithKeys:@[@"techId",@"id"]];
     self.imageUrl = [data stringWithKey:@"techAvatar"];
     self.number = [data stringWithKey:@"serialNo"];
-    self.name = [data stringWithKey:@"name"];
+    self.name = [data stringWithKeys:@[@"techName",@"name"]];
     self.phone = [data stringWithKey:@"phoneNum"];
     self.status = [data stringWithKey:@"status"];
     self.gender = [data stringWithKey:@"gender"];

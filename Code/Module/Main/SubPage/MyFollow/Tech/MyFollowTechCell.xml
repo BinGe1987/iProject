@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<LinearLayout
+    view_name="root"
+    view_width="full"
+    view_height="full"
+    view_orientation="horizontal">
+    
+    <ImageView
+        view_name="image"
+        view_width="54sp"
+        view_height="54sp"
+        view_borderRadius="27sp"
+        view_masksToBounds="YES"
+        image_scaleType="full"
+        layout_gravity="center|left"
+        layout_marginLeft="18sp"
+        layout_margin="14sp">
+    </ImageView>
+    
+    <FrameLayout
+        view_width="full"
+        view_height="full"
+        layout_marginTop="21sp"
+        layout_marginBottom="18sp"
+        layout_marginRight="14sp">
+        
+        <LinearLayout
+            view_width="full"
+            view_height="15sp"
+            view_orientation="horizontal">
+            <Label
+                view_name="label_name"
+                view_width="auto"
+                view_height="full"
+                text_src="技师名字"
+                text_color="#2e2e2e"
+                text_size="15sp">
+            </Label>
+            <ImageView
+                view_width="auto"
+                view_height="full"
+                image_src="@star"
+                layout_marginLeft="20sp">
+            </ImageView>
+            <Label
+                view_name="label_score"
+                view_width="auto"
+                view_height="full"
+                text_src="0.0"
+                text_color="#ffb925"
+                text_size="12sp"
+                layout_marginLeft="2sp">
+            </Label>
+        </LinearLayout>
+        <LinearLayout
+            view_width="full"
+            view_height="16sp"
+            view_orientation="horizontal"
+            layout_gravity="left|bottom">
+            <Label
+                view_name="label_follow"
+                view_width="auto"
+                view_height="full"
+                view_paddingLeft="6sp"
+                view_paddingRight="6sp"
+                text_src="0人关注"
+                text_color="#4abdcf"
+                text_size="11sp"
+                view_borderRadius="3sp"
+                view_borderWidth="1"
+                view_borderColor="#4abdcf"
+                view_masksToBounds="YES">
+            </Label>
+            <Label
+                view_name="label_comment"
+                view_width="auto"
+                view_height="full"
+                view_paddingLeft="6sp"
+                view_paddingRight="6sp"
+                text_src="0人评价"
+                text_color="#4abdcf"
+                text_size="11sp"
+                view_borderRadius="3sp"
+                view_borderWidth="1"
+                view_borderColor="#4abdcf"
+                view_masksToBounds="YES"
+                layout_marginLeft="10sp">
+            </Label>
+        </LinearLayout>
+        
+        <ImageView
+            view_width="auto"
+            view_height="auto"
+            image_src="@arrow1"
+            layout_gravity="center|right"
+            layout_marginRight="20sp">
+        </ImageView>
+        
+    </FrameLayout>
+    
+</LinearLayout>
+
+

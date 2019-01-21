@@ -45,7 +45,7 @@
     self.clubPresenter = [MyFollowClubPresenter presenterWithView:[self findViewByName:@"page_club"]];
     [self addPresenter:self.clubPresenter];
     
-    self.techPresenter = [MyFollowTechPresenter presenterWithView:[self findViewByName:@"page_club"]];
+    self.techPresenter = [MyFollowTechPresenter presenterWithView:[self findViewByName:@"page_tech"]];
     [self addPresenter:self.techPresenter];
     
     self.selectedView = [self findViewByName:@"view_selected"];
